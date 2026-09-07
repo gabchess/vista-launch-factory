@@ -98,7 +98,7 @@
     },
     {
       "path": "codex/launch-factory/knowledge/voice-bank-brief.md",
-      "sha256": "760dd77d66773f757f3883285397769e4415f4a7fd645e251575ef7cf08be2dc"
+      "sha256": "3235f890aa6295abede3a06ff95c67f26fa2e648dc24bd98ef210d9579866461"
     },
     {
       "path": "codex/launch-factory/personas/barry-seat.md",
@@ -299,6 +299,118 @@
     {
       "path": "voice-bank/README.md",
       "sha256": "179a4e8fc0b9171b448f900a441bad874774d953106e2c23d09c69f0fda5e3c3"
+    },
+    {
+      "path": "voice-bank/corpus/01-email-barry-approval-queue.md",
+      "sha256": "d819d4e083cde8eabacceb0ae818b85920d67d6d042f9d294c3b065a9bdf8702"
+    },
+    {
+      "path": "voice-bank/corpus/02-website-homepage.md",
+      "sha256": "d0efdc65bdcdc39e226707aa5ea6649c49616b9cbb8fc836b8b3e4ad79948f74"
+    },
+    {
+      "path": "voice-bank/corpus/03-website-vista-work-page.md",
+      "sha256": "1f42df7f901951984f94516da0338f893f6b7f6ab7b2d81ee2b581e2921017c2"
+    },
+    {
+      "path": "voice-bank/corpus/04-website-publishing-page.md",
+      "sha256": "f7546c793a606cc7416655bf74e743b2d9c6430a17d3d54adc407c7c956e7f47"
+    },
+    {
+      "path": "voice-bank/corpus/05-website-analytics-page.md",
+      "sha256": "247fe65f4716886b88f285e307ae5270e0046ee38ad754926a2f4e6ec73bd953"
+    },
+    {
+      "path": "voice-bank/corpus/06-blog-vista-social-vs-later.md",
+      "sha256": "f30e8539d4d8bea090747bbd3c7f60cbac19bc557d2e874b8551517524c5e996"
+    },
+    {
+      "path": "voice-bank/corpus/07-blog-smm-project-management.md",
+      "sha256": "4bf68f0bca00f08942a01b2cb5556bb0c0f3868c40986ad333f4d118ae624238"
+    },
+    {
+      "path": "voice-bank/corpus/08-blog-introducing-vista-work.md",
+      "sha256": "1d05b744aab37c5f9a57bf09a34c99983ebfc90e153ce3519de657b28da179cd"
+    },
+    {
+      "path": "voice-bank/corpus/09-blog-advanced-social-listening.md",
+      "sha256": "77b1508497dfdd110529e05a14d85c2f24013a92f949e601e2809af6ec32b827"
+    },
+    {
+      "path": "voice-bank/corpus/10-blog-ai-image-video-generation.md",
+      "sha256": "8e448624e9261915bdf39d47b16efdb0387b528a44fa02502a09addbe291850b"
+    },
+    {
+      "path": "voice-bank/corpus/11-blog-reggie-customer-service-2023.md",
+      "sha256": "90202c4ffa20efff0b9516630bf0700d09085c15a698fe1efbe7acfacfe09618"
+    },
+    {
+      "path": "voice-bank/corpus/12-social-x-everything-is-a-task.md",
+      "sha256": "5415337a39e82a65e443a4b46eebfd11047854c036ac17419494c55beead473f"
+    },
+    {
+      "path": "voice-bank/corpus/13-social-x-ai-captions-boring.md",
+      "sha256": "1d02b11d849599c9b3f76ff2d604d7dfc85c368445aefc311c82f4f19d48f666"
+    },
+    {
+      "path": "voice-bank/corpus/14-social-x-3-features.md",
+      "sha256": "b98341fdeeef77feb7b3237234318a6097fb4e68231a239d74311094e9d74dba"
+    },
+    {
+      "path": "voice-bank/corpus/15-social-x-ai-image-video.md",
+      "sha256": "6833a926de8f645000012030f7e4aa4a186545ba64461bdba5ba098bbd3d3bb5"
+    },
+    {
+      "path": "voice-bank/corpus/16-social-x-hootsuite-five-reasons.md",
+      "sha256": "a0e947f7ed012d9839fdb34a867f98d953027d32a4cf23a148a29cc3e4b05bc6"
+    },
+    {
+      "path": "voice-bank/corpus/17-linkedin-company-3-features.md",
+      "sha256": "96bf86297d1ce74d3440398d9b7e521e78a5bdc5f50995a15eba8871258539d0"
+    },
+    {
+      "path": "voice-bank/corpus/18-linkedin-company-cut-the-suite.md",
+      "sha256": "f28a51e52c08052a6428e4e4b1492167b82000cb68c0ef5cd306c8dabba42c14"
+    },
+    {
+      "path": "voice-bank/corpus/19-linkedin-company-affiliate.md",
+      "sha256": "01615ec59ab03cfde13b150a63773c75873d34e8bcb3ab0cbe33b48b134a9a24"
+    },
+    {
+      "path": "voice-bank/corpus/20-linkedin-reggie-profile-headline.md",
+      "sha256": "0c90454c14788f6615602ffff78343073048abf8349072ed8d99006caceb98df"
+    },
+    {
+      "path": "voice-bank/corpus/21-podcast-reggie-plugged-in-productivity.md",
+      "sha256": "47dc1548312624b967e54bafc5b6aa96adff1e1cc3037675688bec6865a51035"
+    },
+    {
+      "path": "voice-bank/corpus/22-podcast-reggie-plugged-in-ai-agents.md",
+      "sha256": "f24d694c60b58a0703d000ed1bda7160a4153584a138f75dd12ddcf60447190e"
+    },
+    {
+      "path": "voice-bank/corpus/23-website-podcast-page.md",
+      "sha256": "72ffe2b1a04a865c4636acc67d92edf74bd19b187bd0ebd320247806c66f23c7"
+    },
+    {
+      "path": "voice-bank/corpus/24-website-reggie-author-bio.md",
+      "sha256": "2ef43260d4cd86cb4cd5852de0f0fc39c29e101fef74843b6c3fdab4a493115d"
+    },
+    {
+      "path": "voice-bank/corpus/25-social-instagram-reggie-snippet.md",
+      "sha256": "a5252355909ab454e6121208d2634ee4eba6f878f3d9fa89b65660d66a6d660f"
+    },
+    {
+      "path": "voice-bank/gaps.md",
+      "sha256": "e78839031517bd9bd37875dbeae18a68456f6ca495286f0d8a41e75e3918a4cf"
+    },
+    {
+      "path": "voice-bank/provenance.md",
+      "sha256": "6f6f9c7cd3fba82a3422d66457f99096d3b73c6fc451060bac7ed8bb009923d8"
+    },
+    {
+      "path": "voice-bank/tone-and-style-brief.md",
+      "sha256": "d62f47f960df747206d8909c6c7ab00dd9c549ef64def95a10d66744aa46cfc8"
     }
   ]
 }

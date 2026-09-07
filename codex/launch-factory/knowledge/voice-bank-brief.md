@@ -1,18 +1,14 @@
-# Voice Bank brief — INTERIM PLACEHOLDER
+# Voice Bank brief — INTERIM (ADR 0015)
 
-**Interim brief; populated from the `voice-bank/` collection, see ADR 0015.**
+The live corpus has landed. Voice checks run against:
 
-Until the corpus lands, voice checks run against the one seed we have:
-
-- **Seed:** Barry's approval-queue email (`engine/fixtures/vista-work/sources/barry_email_transcript.txt`).
-- **Register observed in the seed:** plain, task-shaped sentences; names the artifact ("the post") instead of abstractions; no hype adjectives; decisions framed as what the approver sees and does.
+- **Canonical brief:** `voice-bank/tone-and-style-brief.md` (INTERIM; 12 adapter-checkable voice rules at the end, under "Voice rules for adapters").
+- **Corpus:** `voice-bank/corpus/` — 25 verbatim items (Barry email seed, vistasocial.com pages, insights blog, public X/LinkedIn, Reggie podcast transcript) with source URLs and retrieval dates.
+- **Gaps:** `voice-bank/gaps.md` — what is missing vs a real brand guide (more Barry emails, Reggie's current written voice, approved-claims list). Ask Reggie; do not invent.
+- **Provenance:** `voice-bank/provenance.md` — public-only collection, no logins, no fabricated quotes.
 
 Rules while interim:
 
-1. Label every voice judgment **interim** — derived from a public/seed corpus, not Vista's internal brand guide.
-2. Cite a bank item (or the seed) for each voice call; no uncited taste rulings.
-3. The honesty doc must state: "voice derived from interim public corpus, not Vista's internal brand guide."
-4. Gabe's voice never enters Vista material (GRILL-LOCK #6).
-5. Barry remains the final voice arbiter; a brief is guidance, not authority.
-
-The `voice-bank/` directory at repo root tracks corpus collection status (ADR 0015). When populated, this file is replaced with the derived tone-and-style brief, and the `interim` label drops only when Reggie's brand guide + newsletter examples land (issue #6).
+1. Every voice judgment cites a corpus item or a brief rule by number.
+2. The brief is a warning system, not a truth oracle: it flags drift; Barry decides.
+3. When Vista's real brand guide arrives (issue #6), it supersedes this brief; keep the corpus, re-derive, bump the version.
