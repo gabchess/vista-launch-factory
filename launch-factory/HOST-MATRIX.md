@@ -3,8 +3,8 @@
 | Capability | Codex package | Claude package | Grok-crew / leave-behind | Evidence level |
 |---|---:|---:|---:|---|
 | Skill / pack files included | Yes (`codex/launch-factory/`) | Yes (`claude/launch-factory-v0.1.0.zip`) | N/A for this pack | Package inspection |
-| Canonical engine schemas | **Present** (`engine/schemas/`) Option B SoT | Same SoT (ZIP must not fork) | Not claimed | A3 import — files present |
-| Structural helper scripts | **Present** (`engine/scripts/` validate + build_package; skill `scripts/` README only) | Same SoT intent | Not included | STRUCTURAL_INTEGRITY_ONLY — proven via local Python; host activation unverified |
+| Canonical engine schemas | **Present** at product-root `engine/schemas/` (Option B SoT) | **Not inside ZIP** — same SoT only when product-root `engine/` is kept reachable | Not claimed | A3 files present under `engine/`; ZIP is skill door only |
+| Structural helper scripts | **Present** (`engine/scripts/` when product root kept; skill `scripts/` README only) | Same rule — needs product-root `engine/`, not the ZIP alone | Not included | STRUCTURAL_INTEGRITY_ONLY — proven via local Python on product tree; host activation unverified |
 | Persistent release-run state | Host and workspace dependent | Project/file dependent | Unknown | Not freshly host-verified |
 | CMS, HubSpot, social, or external publishes | Not included | Not included | Not included | Explicit exclusion |
 | Auto-send / auto-publish | Not included | Not included | Not included | Explicit exclusion |
@@ -14,4 +14,4 @@
 
 Codex and Claude should preserve the same Claims Lock gate, Barry authority, non-goals, and HOLD honesty. Identical prose is neither required nor expected.
 
-**A3 engine:** Option B sibling `engine/` is populated (schemas, validators, adapters, fixtures, barry, honesty). `codex/launch-factory/schemas/` is a pointer — one canonical set. **Honest unknowns:** live Codex/Claude activation on a fresh host and semantic fan-out quality remain **not** verified — folder/ZIP visible ≠ Augment active. A7/A8 HOLD.
+**A3 honesty:** Option B `engine/` is populated in the product tree. Skill-only Codex install or Claude ZIP alone does **not** carry the engine — keep product root (or chat-only Claims Lock draft; fail closed on structural proof). Do **not** invent a third schema tree inside the ZIP. **Honest unknowns:** live host activation and semantic fan-out quality remain **not** verified — folder/ZIP visible ≠ Augment active. A7/A8 HOLD.
