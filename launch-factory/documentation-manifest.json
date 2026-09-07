@@ -2,15 +2,15 @@
   "format": "cd-documentation-manifest/v1",
   "product": "launch-factory",
   "version": "0.1.0",
-  "claim_boundary": "Engine structural validate/package proves mechanics only \u2014 not host-activation proof, semantic quality proof, or all-six-slots claim. Slots 1/5/6 HOLD.",
+  "claim_boundary": "Engine structural validate/package proves mechanics only \u2014 not host-activation proof, semantic quality proof, or all-six-slots claim. Slots 1/5/6 HOLD. A5 Barry HITL cards under product-root barry/ are human gates only \u2014 not publish authority.",
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "7589d0b04dac2624001c8a46c6bd97e13a53409df39cd4570b33351336ad3a32"
+      "sha256": "1c6266116780dec5979abc992f99ef1dae1f1f68eb8e2b8e27ba0e3e3d96bbc1"
     },
     {
       "path": "HOST-MATRIX.md",
-      "sha256": "da6500cac15dc024ce347538bd18cff258c53fb5464381666582b9d467e82134"
+      "sha256": "3d86bf924fc1cbd3c6c0fc2d1e4b5dc3e8ba2affc7a382e47899deadf3e74b12"
     },
     {
       "path": "LICENSE-STATUS.md",
@@ -26,15 +26,31 @@
     },
     {
       "path": "README.md",
-      "sha256": "6bc662c8483480683823a9a462986c4270ba59361bfe6e28f8fb2e94f1b6b32a"
+      "sha256": "63ed8ca7a23ed9853b0f8bebd3ccfbdd6bda6c78b374d9fef40d8103b23fa802"
     },
     {
       "path": "START-HERE.md",
-      "sha256": "b1c030bd10983e62307014c653d16795526a86b48f4a40d1f62fbdeec7b7f458"
+      "sha256": "010750f9bf255ba715ad8a565ecb79e3441fff820cafd76b39609f331943904c"
+    },
+    {
+      "path": "barry/README.md",
+      "sha256": "d4e1c703011d3b82d960f3990886ef463702fb1df4855a06f3e832baa852d128"
+    },
+    {
+      "path": "barry/claims-lock.md",
+      "sha256": "4b8738c864d12b617700c914942dd3c39d27d35dd110dfb3b3034f81da0bd5d2"
+    },
+    {
+      "path": "barry/pack-approve.md",
+      "sha256": "33abea2e28608de7fe2060ee322e219aaaed1cf6c59726ed4cdfd6e6529da73b"
+    },
+    {
+      "path": "barry/spot-check.md",
+      "sha256": "5430ee94f870002a96cc7c5290d23ab96f4ee66b3c4522629e9ece6c6c4b4dde"
     },
     {
       "path": "claude/README.md",
-      "sha256": "219824eaee38a8d2857d5b14d5b5b4917d903e995774960c841bab861d485c40"
+      "sha256": "aebbd999f7355e807f143dcdc88f841dd13505e7617b170891d58a3051a889f0"
     },
     {
       "path": "codex/launch-factory/README.md",
@@ -42,19 +58,19 @@
     },
     {
       "path": "codex/launch-factory/SKILL.md",
-      "sha256": "a2b84ec39ee55710d666aabd178bb51cb5750721259a6707949fbf83d58b75fb"
+      "sha256": "6f3ac44190783abfaba9402f6b4e84b30f2b0621bd31659cdd1f296b8809baf6"
     },
     {
       "path": "codex/launch-factory/knowledge/capability-and-authority.md",
-      "sha256": "2b93a2886a9f4c9833fa4a434624661609d09e7deae28afeb658615081da489e"
-    },
-    {
-      "path": "codex/launch-factory/scripts/README.md",
-      "sha256": "6cd33cd01665101066fc8da9e5153d3fe1a21deb45ed689cf6dd2a2a9c936240"
+      "sha256": "d5ca24f5a1c67d421cd56cf9d294b2c7dd2c06b5b4eb5f4d5c3fc63b3aee5cf5"
     },
     {
       "path": "codex/launch-factory/schemas/README.md",
       "sha256": "f1c85e6e7a94d6a8955c270bcd81977fc955978769ce279eaebff49c8d33e44a"
+    },
+    {
+      "path": "codex/launch-factory/scripts/README.md",
+      "sha256": "6cd33cd01665101066fc8da9e5153d3fe1a21deb45ed689cf6dd2a2a9c936240"
     },
     {
       "path": "docs/DOCUMENTATION-CUSTODY.md",
@@ -62,35 +78,35 @@
     },
     {
       "path": "docs/FIRST-RUN.md",
-      "sha256": "b50ffe21669e3f479ca81f69596e110479093479886b5335744db51b514062d4"
+      "sha256": "4523591fba20ee26ce87ea899582a0705217f5beb572684345b190f056ae9da4"
     },
     {
       "path": "docs/HUMAN-GAPS.md",
-      "sha256": "b89c279e2e26b26fe14c153bae8403f121bd870612581fec2812830ab222d568"
+      "sha256": "1f0fb7d940253d15f24d7fac9a968b8833e836070f15c34b5686a16463409c8b"
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
-      "sha256": "0c6c97411426c8f5da3cdbf6512ebcadbeb30a7e1d3c4fe9f8409200012230c6"
+      "sha256": "c58bcdac3bcc61febc39aa62e9c762911283e9becaccfa8e95b7407fb1962360"
     },
     {
       "path": "docs/INSTALL-CODEX.md",
-      "sha256": "80c371fd4e60624f483a468c65056749119dc183ffd58a37bf94579c38139e2b"
+      "sha256": "39b15039b3b22178e2195f92f8a63906ff80128196ad20e98b9a40dcdb1d1e75"
     },
     {
       "path": "docs/OPERATE-LAUNCH-FACTORY.md",
-      "sha256": "38940824718e8070161aee3abe4841faee6ee0b1e8308d0aec3e14ae7c872c6d"
+      "sha256": "bdbeb510ac9424e0ee3a7464f94f75c39901277927687c0222f79c11deaef734"
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
-      "sha256": "3a05b9ca8eed3e2985d037e02e0c5c060be8ce31c6d965ecb5a991224dab58b8"
+      "sha256": "1eebe5f44904e13b6110ce1fb1e34e6ababbce6ea796727b858a5a4be6ea8b6e"
     },
     {
       "path": "docs/TRUST-PRIVACY-AND-AUTHORITY.md",
-      "sha256": "c6a132e54e96dd9f4c03e884913702bbf992584365ded394ae7b1a1d50a64b7b"
+      "sha256": "2b070f63ff2996ad20ad885111b0f9b57f00e19fe8f1dfe3ffb351a825795940"
     },
     {
       "path": "docs/VALIDATION-AND-LIMITS.md",
-      "sha256": "92246da09319b89379b874d0f388206767051e00666c67f354cbbd36bd6e457f"
+      "sha256": "deac4abb4abebae3bf249e8046a7500da3317b05c87ebdca07a5568987389621"
     },
     {
       "path": "engine/README.md",

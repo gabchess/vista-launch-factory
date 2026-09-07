@@ -53,3 +53,7 @@ This skill's `schemas/` directory is a **thin pointer** only — do not create a
 ## Never publish
 
 Drafting is not publishing. Packaging is not sending. Barry (or delegated authorized human) remains the gate.
+
+## Barry HITL (A5)
+
+Enforce three gates: `barry/claims-lock.md` → `barry/spot-check.md` → `barry/pack-approve.md`. WIP=1. Writer≠Barry. No Slack-thumbs. No invent $. No auto-publish. No HubSpot before pack approve. HOLD 1/5/6 = HELD-skip; first real spot-check = blog when O1 held.

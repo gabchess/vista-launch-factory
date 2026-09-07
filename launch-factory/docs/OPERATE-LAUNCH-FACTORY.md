@@ -5,11 +5,12 @@
 1. **Marketer Run** — point at a release folder.
 2. **Ingest + retrieve** — Loom, outline, footage, brand refs.
 3. **Voice pack** — Vista voice; not generic LLM tone.
-4. **Claims Lock (Barry once)** — every claim traces to source; no invent pricing/features/limits.
-5. **Adapters** — see slot map + HELD-skip rule below.
-6. **Validate ≤2** — structural / claim ceiling checks; no endless rewrite loops.
-7. **Barry pack approve** — copy + creative gate.
-8. **Package + honesty** — name HOLDs; HubSpot sandbox email only last and only after Barry + authorized tooling.
+4. **Claims Lock (Barry once)** — see `barry/claims-lock.md`; every claim traces to source; no invent pricing/features/limits.
+5. **Spot-check** — see `barry/spot-check.md` (first real non-HELD slot; blog when 1 HELD).
+6. **Adapters** — see slot map + HELD-skip rule below.
+7. **Validate ≤2** — structural / claim ceiling checks; no endless rewrite loops.
+8. **Barry pack approve** — see `barry/pack-approve.md` — copy + creative gate.
+9. **Package + honesty** — name HOLDs; HubSpot sandbox email only last and only after Barry + authorized tooling.
 
 WIP=1. Writer ≠ Barry. No Temporal-required. No auto-publish.
 

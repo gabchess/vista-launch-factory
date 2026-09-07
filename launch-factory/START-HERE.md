@@ -32,3 +32,7 @@ After the first Run, expect a Claims Lock draft for Barry—not six finished ass
 - [Validation and limits](docs/VALIDATION-AND-LIMITS.md)
 - [Human gaps](docs/HUMAN-GAPS.md)
 - [Host matrix](HOST-MATRIX.md)
+
+## Barry HITL
+
+After install, Runs stop for Barry three times: Claims Lock → spot-check (first real slot) → pack approve. Cards: `barry/claims-lock.md`, `barry/spot-check.md`, `barry/pack-approve.md`. Slack thumbs do not count. Nothing publishes from this pack alone.

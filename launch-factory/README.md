@@ -17,6 +17,7 @@ An installable Augment for marketers and ops: sticky pack wrapping a factory eng
 | `claude/` | Claude host door (ZIP present; must not fork engine schemas) |
 | `docs/` | Install, operate, trust, limits, honesty |
 | `engine/` | **Option B SoT (A3 wired)** — schemas, scripts, adapters, fixtures, barry, honesty |
+| `barry/` | **A5 Barry HITL cards** — Claims Lock → spot-check → pack approve (coexists with `engine/barry/` templates) |
 | `maintainer-source/` | Maintenance only — **never ship as runtime** |
 | `HOST-MATRIX.md` | Verified vs honest unknowns |
 | `PROVENANCE.md` / `LICENSE-STATUS.md` | Custody |
@@ -31,4 +32,4 @@ Begin with [START-HERE.md](START-HERE.md). Engine run notes: [engine/README.md](
 
 ## Version
 
-`0.1.0` — Augment skeleton + **A3 engine wire** (Option B). A7/A8 video/asset tracks HOLD. No auto-publish.
+`0.1.0` — Augment skeleton + **A3 engine wire** (Option B) + **A5 Barry HITL cards** under product-root `barry/`. A7/A8 video/asset tracks HOLD. No auto-publish.

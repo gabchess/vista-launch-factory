@@ -7,12 +7,14 @@
 - **Validate ≤2** — at most two validation/repair loops before escalating to a human with a clear gap list.
 - Do not claim “all six review-ready” while slots 1/5/6 are HOLD.
 - Structural scripts prove package mechanics, not marketing judgment or brand quality.
+- **Barry HITL cards** live under product-root `barry/` (Claims Lock → spot-check → pack approve). Slack thumbs ≠ approve.
 
 ## Verified in this release (A3)
 
 - Pack tree and custody files present (inspection).
 - HITL / non-goals text aligned across START-HERE, SKILL, capability-and-authority, TRUST, VALIDATION, HOST-MATRIX, skill README.
 - Explicit exclusions: auto-publish, auto-send, invent claims.
+- **A5 Barry HITL** product-root cards: `barry/{README,claims-lock,spot-check,pack-approve}.md` (coexist with `engine/barry/` templates).
 - **Engine Option B present** under `engine/` (schemas, `validate_ledger` / `validate_campaign` / `build_package`, adapters, fixtures). Local Python prove: validators OK on `engine/fixtures/vista-work`; repo-root `pytest -q` 13 passed.
 - `codex/launch-factory/schemas/` is pointer-only — one canonical schema set.
 
