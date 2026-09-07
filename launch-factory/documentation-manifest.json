@@ -1,0 +1,100 @@
+{
+  "format": "cd-documentation-manifest/v1",
+  "product": "launch-factory",
+  "version": "0.1.0",
+  "claim_boundary": "Skeleton docs and structure are not host-activation proof, semantic quality proof, or all-six-slots claim.",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "0a5ea854b31be34fe395d2dffcdc7c06d37ce3952e57936a8bfcc649e1f0bce5"
+    },
+    {
+      "path": "HOST-MATRIX.md",
+      "sha256": "213ec22a3dc0228e0d04c883c1128fbfdbf29571be8289e1420d156750b678ae"
+    },
+    {
+      "path": "LICENSE-STATUS.md",
+      "sha256": "c4d46bcd135f9746c2951071e489105ef463ba968ccc6227133fcf47b472222b"
+    },
+    {
+      "path": "Launch Factory T-NOVA v0.1.0.txt",
+      "sha256": "be7825a89cf0b72f0a6a1e2890885fad6daa8a2267095e557a8bb216bf019680"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sha256": "9dee977511ab1991352954f665b3839aad17bd1123a25ca119bcd725304da643"
+    },
+    {
+      "path": "README.md",
+      "sha256": "92114b179ec42a7eea876592770c04e4145b32eb800742ae9a76a0d5d284d5e5"
+    },
+    {
+      "path": "START-HERE.md",
+      "sha256": "7f63e9cb638a41e8eec34d75edda7249672de462f2b3a42273405973b5814067"
+    },
+    {
+      "path": "claude/README.md",
+      "sha256": "cb5c7edf67419c6249251a72bf6905369895a0ad48210cb6a2a72aacd5d0c45d"
+    },
+    {
+      "path": "codex/launch-factory/README.md",
+      "sha256": "c93185f9588a596b09306f635ccefdb82546765803370ce43e2507c8b6478a35"
+    },
+    {
+      "path": "codex/launch-factory/SKILL.md",
+      "sha256": "1ed9451608e77a9d10ff13c057bcecac1d7f1586e0c76b3603f9400cd0f73fb4"
+    },
+    {
+      "path": "codex/launch-factory/knowledge/capability-and-authority.md",
+      "sha256": "2b93a2886a9f4c9833fa4a434624661609d09e7deae28afeb658615081da489e"
+    },
+    {
+      "path": "codex/launch-factory/scripts/README.md",
+      "sha256": "6cd33cd01665101066fc8da9e5153d3fe1a21deb45ed689cf6dd2a2a9c936240"
+    },
+    {
+      "path": "docs/DOCUMENTATION-CUSTODY.md",
+      "sha256": "a56a17b7daaaf94c8e3405c38d60ff33430a66e0d8282472693979bbe312fe22"
+    },
+    {
+      "path": "docs/FIRST-RUN.md",
+      "sha256": "91d639d0afb38c0c5f95d32d074d3298303d51ea5c2dc94578896b89f16e1d7e"
+    },
+    {
+      "path": "docs/HUMAN-GAPS.md",
+      "sha256": "b89c279e2e26b26fe14c153bae8403f121bd870612581fec2812830ab222d568"
+    },
+    {
+      "path": "docs/INSTALL-CLAUDE.md",
+      "sha256": "33729cac99b8578089349c3784e89958622b79f56d949ceea41a9fc4dfdfb554"
+    },
+    {
+      "path": "docs/INSTALL-CODEX.md",
+      "sha256": "2e3fd5298a00b94b4e85fb275d7bd8b4cf38d9395ccec061cd5be77d9b414845"
+    },
+    {
+      "path": "docs/OPERATE-LAUNCH-FACTORY.md",
+      "sha256": "9d3e64a0fc70ccdcb5beebe9f66a4f0dc18308857ad53e1d1ba35238ff2ac8be"
+    },
+    {
+      "path": "docs/TROUBLESHOOTING.md",
+      "sha256": "3a05b9ca8eed3e2985d037e02e0c5c060be8ce31c6d965ecb5a991224dab58b8"
+    },
+    {
+      "path": "docs/TRUST-PRIVACY-AND-AUTHORITY.md",
+      "sha256": "c6a132e54e96dd9f4c03e884913702bbf992584365ded394ae7b1a1d50a64b7b"
+    },
+    {
+      "path": "docs/VALIDATION-AND-LIMITS.md",
+      "sha256": "491eaac1f0a7ff8eb7bf6769283239627bc8570e19988a7f3cbe2f2bfbeb431e"
+    },
+    {
+      "path": "engine/README.md",
+      "sha256": "1f158714f0d6dc839e3aefee879bb0b6eba513d75d28359e1485cd6fdf5d38d2"
+    },
+    {
+      "path": "maintainer-source/README.md",
+      "sha256": "de695f8e585037ba9120770726d33a2afadde5c423e248ceab862323620f374e"
+    }
+  ]
+}

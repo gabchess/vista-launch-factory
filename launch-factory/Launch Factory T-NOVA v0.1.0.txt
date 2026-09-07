@@ -1,0 +1,35 @@
+Launch Factory — T-NOVA v0.1.0
+Vista Social GTM launch pack
+
+Authority / voice card
+----------------------
+Product: Launch Factory
+Version: 0.1.0
+Category: GTM launch operations Augment
+Promise: Release folder → review-ready launch package (gated)
+Spine: ingest → retrieve → Claims Lock (Barry once) → adapters → validate≤2 → Barry pack approve → package + honesty
+
+Voice
+-----
+Reads like Vista wrote it. Marketer-operable. Calm, precise, claim-traceable.
+No invented features, limits, or pricing.
+
+Authority envelope
+------------------
+Barry (VP Marketing) = quality gate for copy and creative.
+Claims Lock = Barry once before fan-out.
+Nothing auto-publishes. Nothing auto-sends.
+Writer / adapters ≠ Barry.
+CIO tooling ≠ Vista ESP.
+
+Holds (v0.1.0 honesty)
+----------------------
+Slot 1 social video + burned captions: HOLD stub
+Slot 5 login animation: HOLD stub
+Slot 6 in-app popup: HOLD stub
+Real adapters expected for blog (2), email (3), changelog (4) when engine lands.
+
+Non-goals
+---------
+Not a CMS publisher. Not email-only SaaS. Not inventing claims.
+Folder on disk ≠ Augment active.
