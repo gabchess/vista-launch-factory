@@ -1,6 +1,6 @@
 format: cd-augment-eval/v1
 product: launch-factory
-version: 0.1.1
+version: 0.2.0
 cases:
   - id: LF-EVAL-001
     name: Claims Lock precedes any asset

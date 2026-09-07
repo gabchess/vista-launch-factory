@@ -1,67 +1,58 @@
-# Engine (Option B — pack source of truth)
+# Engine (Option B — single source of truth)
 
-**A3 wired.** Launch Factory Augment wraps this sibling `engine/` at product root (Tom Decision A; Option B locked). Augment docs/skill sell **Run + Barry HITL**, not a schema catalog. Schemas here are the correctness spine inside the product — not the Wed hero.
+The repo root is the pack (ADR 0012); this `engine/` is its canonical spine. Augment docs/skill sell **Run + Barry HITL**, not a schema catalog. Schemas here are the correctness spine inside the product — not the Wed hero.
 
 ## Canonical layout
 
 ```text
 engine/
-  schemas/     claim_ledger, release_campaign, cadence_binder
-  scripts/     validate_ledger, validate_campaign, build_package  (STRUCTURAL_INTEGRITY_ONLY)
-  adapters/    six slots (2/3/4 real drafts; 1/5/6 HOLD stubs)
-  fixtures/    labelled mock release folders (demo-release, vista-work)
-  barry/       Claims Lock + pack-approve templates
-  honesty/     still-needs-human.md
-  packages/    local build output only — not shipped as engine SoT
+  schemas/         claim_ledger, release_campaign, cadence_binder, release-record
+  scripts/         validate_ledger, validate_campaign, build_package,
+                   init_release, validate_record, transition_slot  (STRUCTURAL_INTEGRITY_ONLY)
+  adapters/        seven slots (2/3/4 real drafts; 07 Campaign Plan; 1/5/6 HOLD stubs)
+  fixtures/        labelled mock release folders (demo-release, vista-work, mock-gtm-ship)
+  barry-templates/ Claims Lock + pack-approve generator templates (NOT the human cards)
+  honesty/         still-needs-human.md
+  packages/        local build output only — not shipped as engine SoT
 ```
 
-`codex/launch-factory/schemas/` is a **thin pointer** only — do not fork a second schema set. Claude ZIP must mirror the same SoT (no third tree).
+`codex/launch-factory/schemas/` is a **thin pointer** only — do not fork a second schema set. The Claude ZIP must mirror the same SoT (no third tree). Human Barry cards live at repo-root `barry/` — `engine/barry-templates/` are pack-builder generator templates; don't open both in a demo.
 
-## Pack SoT vs repo-root SHOW-ME spine
+## How to run (from repo root)
 
-| Location | Role |
-|---|---|
-| **`launch-factory/engine/`** | Pack / Augment **canonical** Option B SoT |
-| Repo-root `schemas/`, `scripts/`, `adapters/`, `fixtures/`, `tests/` | Developer **SHOW-ME** spine — keep working until later consolidation |
-
-Root mirrors are intentional for pytest / SHOW-ME.md. Do **not** delete the root spine in A3. Demo packages under repo-root `packages/camp_*` are outputs, not engine SoT.
-
-## How to run (from this directory)
-
-Requires Python 3 + `jsonschema` (see repo-root `requirements.txt` / `.venv`).
+Requires Python 3 + `jsonschema` (repo-root `requirements.txt` / `.venv`).
 
 ```bash
-cd launch-factory/engine
-# or: source ../../.venv/bin/activate from repo root first
+cd <repo-root>
 
-# 1) Validate Claim Ledger (kill-switch)
-python scripts/validate_ledger.py fixtures/vista-work/claim_ledger.json
+# One-command door (ADR 0014): ingest → validate → package
+./run.sh engine/fixtures/demo-release
 
-# 2) Validate Release Campaign (six slots exist-or-held)
-python scripts/validate_campaign.py fixtures/vista-work/release_campaign.json
-
-# 3) Build Drive-ready package (writes under engine/packages/)
-python scripts/build_package.py fixtures/vista-work/release_campaign.json packages
+# Stage by stage
+.venv/bin/python engine/scripts/init_release.py engine/fixtures/demo-release
+.venv/bin/python engine/scripts/validate_record.py runs/demo-release/release-record.json
+.venv/bin/python engine/scripts/validate_ledger.py engine/fixtures/vista-work/claim_ledger.json
+.venv/bin/python engine/scripts/validate_campaign.py engine/fixtures/vista-work/release_campaign.json
+.venv/bin/python engine/scripts/build_package.py engine/fixtures/vista-work/release_campaign.json packages --work-root engine
 ```
 
-`work_root` defaults to `campaign_json.parents[2]` → for `fixtures/vista-work/*.json` that is this `engine/` directory. Adapter paths resolve as `engine/adapters/...`.
+`build_package`'s `work_root` defaults to `campaign_json.parents[2]` → for `engine/fixtures/<name>/*.json` that is `engine/`, so adapter paths resolve as `engine/adapters/...` with no flag.
 
-Repo-root prove (developer spine, still required):
+Repo prove:
 
 ```bash
-cd <repo-root>   # vista/work
-pytest -q        # expect 13 passed
+.venv/bin/pytest -q        # expect 22 passed
 ```
 
 ## Hard stops
 
 - **STRUCTURAL_INTEGRITY_ONLY** — validate / package structure; **no publish**, no HubSpot send, no CMS/social mutate.
 - **No invent $** / features / limits / competitive claims.
-- **Claims Lock before adapters.** Writer ≠ Barry.
-- **Slots 1 / 5 / 6 HOLD** — honesty stubs only. A7/A8 video/asset tracks **HOLD**. Do not claim “all six review-ready.”
+- **Claims Lock before adapters.** Writer ≠ Barry. `approved`/`packaged` states require a recorded Barry decision (`validate_record.py` enforces; `transition_slot.py` needs `--human-confirmed`).
+- **Slots 1 / 5 / 6 HOLD** — honesty stubs only (ADR 0013). Do not claim "all six review-ready."
 - **ADR 0001:** Demo Assets ≠ Claim Ledger evidence.
-- **No auto-publish. No Temporal-required.**
+- **No auto-publish.**
 
 ## Product wrap
 
-Augment (`START-HERE`, Codex/Claude doors, manifests) is the installable product. This engine is what Run invokes for structural validation when Python is available. Chat-only Runs still obey Claims Lock honesty — structural validators do not replace Barry.
+The repo root (`START-HERE`, Codex/Claude doors, manifests) is the installable product. This engine is what Run invokes for structural validation when Python is available. Chat-only Runs still obey Claims Lock honesty — structural validators do not replace Barry.

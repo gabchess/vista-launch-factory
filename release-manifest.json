@@ -2,54 +2,69 @@
   "format": "cd-customer-release/v1",
   "product": "launch-factory",
   "product_name": "Launch Factory",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "targets": [
     "codex",
     "claude"
   ],
   "license_status": "tbd-gabe",
   "engine_placement": "option-b-sibling-engine",
-  "notes": "A3 Option B engine + A4 mock-gtm-ship + A5 product-root barry/ HITL cards (Claims Lock → spot-check → pack approve). engine/barry templates retained. codex schemas = pointer. 0.1.1: manifests exclude themselves (self-reference fix); regenerate with scripts/regen_manifests.py (STRUCTURAL_INTEGRITY_ONLY).",
+  "notes": "v0.2.0: pack envelope at repo root (ADR 0012 repo-link door); engine/ = single SoT (Option B); one release record + loop-shaped skill; Campaign Plan slot 7 (ADR 0016); interim Voice Bank (ADR 0015); run.sh one-command door (ADR 0014). Manifests exclude themselves, runs/, and packages/; regenerate with scripts/regen_manifests.py (STRUCTURAL_INTEGRITY_ONLY).",
   "files": [
     {
+      "path": ".gitignore",
+      "sha256": "535b9d57158cdc6947a8475acdbf05529f360a5ba6e38b69b24e04f8c40b9929",
+      "bytes": 47
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "362d7e36251441069128ec1e66932d6ca35732994c7d1b388c2c31564702978c",
+      "bytes": 898
+    },
+    {
       "path": "CHANGELOG.md",
-      "sha256": "4818ac8be096cb7d3e04e5694c3e3497b3fe5552597c03259ec7bbb376582d94",
-      "bytes": 3364
+      "sha256": "f2b30950693ea070389c1cf9f0d9673b15652fd7e3bdd4db154af907fb563031",
+      "bytes": 6521
     },
     {
       "path": "HOST-MATRIX.md",
-      "sha256": "d2f72e21c14af4c18c3efed6071ab9e9c358837e5e779f3991c62bb299ec5af6",
+      "sha256": "e71a63f9eaf0b1c6aa5031279eecaaa4d98bf3ba755f0c2a43f6957e50b2931b",
       "bytes": 2017
     },
     {
       "path": "LICENSE-STATUS.md",
-      "sha256": "7899c76992cde15387319fb54cde54f2ad6b6fe72c36703b50c94a82caacdc5a",
+      "sha256": "ca95dfbfb9f22176dbb712b232ab84515fc7948537776b3d5bbb517da0eacb4a",
       "bytes": 423
     },
     {
-      "path": "Launch Factory T-NOVA v0.1.1.txt",
-      "sha256": "fecdc76e55e137d61d1a095ebe88732e566294cd230f9cc55ac5151c58ef8fc7",
-      "bytes": 1117
+      "path": "Launch Factory T-NOVA v0.2.0.txt",
+      "sha256": "2257d83237bd51cd03bdb95d65a427e7156545b019dd9228eff21d6fc38b7444",
+      "bytes": 1265
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "07dafcc324fccf021a8f5943b98e759fe57bbdae626f0b716e4d24b756b95ba1",
-      "bytes": 1419
+      "sha256": "b36a3a8be9a17e587eb9829275cad8359d073130a00e9e31abc25c882347f33c",
+      "bytes": 1763
     },
     {
       "path": "README.md",
-      "sha256": "7636ae4e75299ea19d0158c37d4c4ef57ba1b4cadbb5595cd1b317f682c40b01",
-      "bytes": 1736
+      "sha256": "18d81e1275d8c9c57f452156f9a2dc7b8ac5ac6eb80a11945cc2335d049c6b4f",
+      "bytes": 5197
+    },
+    {
+      "path": "SHOW-ME.md",
+      "sha256": "cba2d557be426fa0b0da0f95066b7591b7793a4c4882d34ea6f7fd5a32747a06",
+      "bytes": 4743
     },
     {
       "path": "START-HERE.md",
-      "sha256": "5020cb87cb97b422db723f1bad285eac68cab35a85464311f14de8a51e2f950e",
-      "bytes": 3148
+      "sha256": "4de2057c97167622f6163cd07f68512d93935a93279bb7ee97285a992e536ee3",
+      "bytes": 3582
     },
     {
       "path": "barry/README.md",
-      "sha256": "09e2f1416a1b4e5106f91ba3d33b0d18f5ed0dd132097500810abac40961e667",
-      "bytes": 1249
+      "sha256": "20b8f6e785fb821164cfe95e66414d5e9f92a7dd62606611116dc774b4387317",
+      "bytes": 1251
     },
     {
       "path": "barry/claims-lock.md",
@@ -68,23 +83,23 @@
     },
     {
       "path": "claude/README.md",
-      "sha256": "1ae76999c500a407813726bdcc479b406f2acd086f782f9db47024d41a3f1552",
+      "sha256": "43f4b12bb4d638a03bd1b53caead91df9af331dde94b13118cfddc41fff7e6f3",
       "bytes": 479
     },
     {
-      "path": "claude/launch-factory-v0.1.1.zip",
-      "sha256": "126c4b23888a0a0cd01c92895d43136f8ebc6cf4c4de076db669b3b8ef763425",
-      "bytes": 23360
+      "path": "claude/launch-factory-v0.2.0.zip",
+      "sha256": "db79b8b86126d4b862a6114a381b18f692ba49c7f69a4c662fc11d23763c1eca",
+      "bytes": 29080
     },
     {
       "path": "codex/launch-factory/README.md",
-      "sha256": "9ad987ef678c614c43513255dfc1076ca4ef28a1b3220fedd67e55150dc3c419",
+      "sha256": "b14b209e545df569acb41611e126ff5648196a25fa5aedb5a41125097cc5fa23",
       "bytes": 1215
     },
     {
       "path": "codex/launch-factory/SKILL.md",
-      "sha256": "6f3ac44190783abfaba9402f6b4e84b30f2b0621bd31659cdd1f296b8809baf6",
-      "bytes": 2639
+      "sha256": "ff018d7ba292937f870d74b4798f2c2a0027cf562ab3d8b6fe9a61ecbb7fa7be",
+      "bytes": 9756
     },
     {
       "path": "codex/launch-factory/agents/.gitkeep",
@@ -98,12 +113,12 @@
     },
     {
       "path": "codex/launch-factory/evals/core-transfer-cases.yaml",
-      "sha256": "db5b114e9bef9b11106df64bca5882a508a2241c46089a9897b670f256fd8cd8",
+      "sha256": "d991c11dd377c3ad2836b2f087454ede879a3a2a17a529d9c2a7242e7f178126",
       "bytes": 4854
     },
     {
       "path": "codex/launch-factory/evals/eval-manifest.yaml",
-      "sha256": "52e79c0b8fbb545ea98c5477daa8901a5c490f2049d1bca03edb46124c01033f",
+      "sha256": "b07ce5613e7e9e31b5ef3a008e7237d290666e5773968d987202492233bb0c75",
       "bytes": 366
     },
     {
@@ -137,8 +152,18 @@
       "bytes": 1683
     },
     {
+      "path": "codex/launch-factory/knowledge/operating-doctrine.md",
+      "sha256": "901657deaea9cc5caf1217f9d46b8d7cc254371f4fdd67b746851da7658e41cf",
+      "bytes": 3300
+    },
+    {
+      "path": "codex/launch-factory/knowledge/voice-bank-brief.md",
+      "sha256": "760dd77d66773f757f3883285397769e4415f4a7fd645e251575ef7cf08be2dc",
+      "bytes": 1230
+    },
+    {
       "path": "codex/launch-factory/manifest.json",
-      "sha256": "41b8963db46c80848fa739761564e315e235bb077b045967971cc02b4d83bd3f",
+      "sha256": "c801781308564cb060db8a2c5cc3dfa6266d8ea437b7b9098210af50cf35d712",
       "bytes": 671
     },
     {
@@ -168,27 +193,52 @@
     },
     {
       "path": "codex/launch-factory/trigger-evals.json",
-      "sha256": "6ac68b6c5898641a1f6b126a0a41ba472d32073976136d3c68c3ce52927cb25b",
+      "sha256": "f0e9dc75a840a90416488ff9278f36cab12eb2e11291758a2c3dca9485b5a5e8",
       "bytes": 1422
     },
     {
+      "path": "docs/2026-09-07-vista-launch-factory-design.md",
+      "sha256": "c6b72714de8e19902e2ff85039316cc6b628b972f07201ec7626e5c092c84ee5",
+      "bytes": 7988
+    },
+    {
+      "path": "docs/2026-09-07-vista-launch-factory-plan.md",
+      "sha256": "de14ad86dae7d1c3774e78c2d2f7b20768f03b212a9c631045afef9a8293d47a",
+      "bytes": 68422
+    },
+    {
+      "path": "docs/CONTEXT.md",
+      "sha256": "3a00fb144839aa2f5e3f04f241829d320791c1cdff642da5eada8ecc7ce7787e",
+      "bytes": 4306
+    },
+    {
+      "path": "docs/DESIGN-LOCK.md",
+      "sha256": "4742e6df5cea4adc178bd082512d1398dbcb657955dcda9f5e8caa3c7745d5d3",
+      "bytes": 1566
+    },
+    {
       "path": "docs/DOCUMENTATION-CUSTODY.md",
-      "sha256": "75689665120bc0b7fe2bfbe25dbf5a73c83c96f2eb159422fb75744e80ee418c",
-      "bytes": 974
+      "sha256": "5fd22b1e8de9b0411bf295ffac9344b1dea7b94de8b105a779774d81e1adddcf",
+      "bytes": 991
     },
     {
       "path": "docs/FIRST-RUN.md",
-      "sha256": "7aeadfebc6488e5ffa5fb0b29069cd81c2a42e0d84ca98c14639e808b2c05e84",
-      "bytes": 2168
+      "sha256": "46dbd0f1d751b8b739f498e3af222c5ca266039b91dfab205ed81c4c02a0d51e",
+      "bytes": 2261
+    },
+    {
+      "path": "docs/GRILL-LOCK.md",
+      "sha256": "7faac1466f61eddd98812654f8acfdfc2b402a19ad2d7aa61658c1f56b153b4d",
+      "bytes": 855
     },
     {
       "path": "docs/HUMAN-GAPS.md",
-      "sha256": "081400b364d690b0cedba4b2c664d049210a33f97055c2b768198a5e41fa0081",
+      "sha256": "d87f31ded664107fd50a95083bcdb7e9f4a4ed0b02b63515facdd44fcd3bd0b9",
       "bytes": 1796
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
-      "sha256": "6d80c060bcd9645fa61940a3189ede662a3c6cc0da48896fe4de42cd63bb1c6f",
+      "sha256": "d885a598f46f8e80a50907ae1d82429b758d2faab442cea4e27e674d25c49882",
       "bytes": 1723
     },
     {
@@ -198,13 +248,13 @@
     },
     {
       "path": "docs/OPERATE-LAUNCH-FACTORY.md",
-      "sha256": "a553ef4f57628c872d356b90316ef9a69ad61f40b435be08c44bdb1c6cff8f88",
-      "bytes": 2255
+      "sha256": "33722be313615a108df8ffd86e8e50dde315b50b67695b17d3ce8c5897caa0a5",
+      "bytes": 2866
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
-      "sha256": "8488a2bb0caa00f828133e7412ecb78386430eea64dd33d44b1791c04962c2cd",
-      "bytes": 1525
+      "sha256": "574626cbc8b16e92330d1c787df1653502febdc677303b4cc1e73d66bd3ed84e",
+      "bytes": 1540
     },
     {
       "path": "docs/TRUST-PRIVACY-AND-AUTHORITY.md",
@@ -213,13 +263,58 @@
     },
     {
       "path": "docs/VALIDATION-AND-LIMITS.md",
-      "sha256": "172343ff721b72ba57a1b91572dfab9da8b6940717235a69a92d43b22fe4ea27",
-      "bytes": 1793
+      "sha256": "c5b292e8d7b74885c48905a434fedf28c6c770517588b6b7317a0cabf51dab54",
+      "bytes": 1850
+    },
+    {
+      "path": "docs/adr/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/adr/0012-recorded-run-hero-repo-link-door.md",
+      "sha256": "e0030086dd1fbf62f4682922cdd943d4622a86ad61dd9e6393c53be635ee1b17",
+      "bytes": 1195
+    },
+    {
+      "path": "docs/adr/0013-hold-156-until-spine.md",
+      "sha256": "e237a244641cb0c5851ee2ec3cb165dc1b112987c8364f4d8412bfa9b96462b3",
+      "bytes": 1001
+    },
+    {
+      "path": "docs/adr/0014-one-command-one-prompt.md",
+      "sha256": "d18624fdb4eb30e3296f4154f76c23502778f29654e34b8ed7730e5ab706183d",
+      "bytes": 980
+    },
+    {
+      "path": "docs/adr/0015-voice-bank-interim.md",
+      "sha256": "7ac586128586659c84762302f4cb54ca88ff64e987d2b3f2c2bcd81fbeff52b9",
+      "bytes": 1303
+    },
+    {
+      "path": "docs/adr/0016-orchestrator-and-campaign-plan.md",
+      "sha256": "b473edf25d41c86875bd956c9a1f89d27a60043ac3364284d14d1ae90e7a3cb4",
+      "bytes": 1757
+    },
+    {
+      "path": "docs/agents/domain.md",
+      "sha256": "3493be161291ea9ede766c7db6eb6e3d74b546c43c77a41b38bf23236c50f288",
+      "bytes": 1992
+    },
+    {
+      "path": "docs/agents/issue-tracker.md",
+      "sha256": "afd6852a80185217bd28aa5cbe456bef1e85be25be7bd1fba382d5b8ee428325",
+      "bytes": 3731
+    },
+    {
+      "path": "docs/agents/triage-labels.md",
+      "sha256": "4f53c9b40ce2651e3611aa090eaedbd6dbc9b71ef8c5f7e65eac0d8263190d0d",
+      "bytes": 1045
     },
     {
       "path": "engine/README.md",
-      "sha256": "561478585646d63e6306931f1809231f6f7c4773edd140c6d6f7153ec3c4f59d",
-      "bytes": 3085
+      "sha256": "e4eaca2af591ae68d8557c83f6128845c6b7f03ef46a252e13b6ecdcd1494ad4",
+      "bytes": 3101
     },
     {
       "path": "engine/adapters/01_social_video.md",
@@ -252,12 +347,17 @@
       "bytes": 273
     },
     {
-      "path": "engine/barry/approve-pack-template.md",
+      "path": "engine/adapters/07_campaign_plan.md",
+      "sha256": "15f823ae609c64d8eab038a094acc3c7d2bc9cbf0d5a0b76f6137297ae3ca335",
+      "bytes": 2317
+    },
+    {
+      "path": "engine/barry-templates/approve-pack-template.md",
       "sha256": "51be616b7963ca7df897851bd07ef3c95c4913bad58e48e9796141833551f0ce",
       "bytes": 1216
     },
     {
-      "path": "engine/barry/claims-lock-template.md",
+      "path": "engine/barry-templates/claims-lock-template.md",
       "sha256": "32dcf038fbec3a668f5b4f28eae3b5457d4b552d7954e789358e5ac5f362bc9e",
       "bytes": 651
     },
@@ -282,9 +382,14 @@
       "bytes": 921
     },
     {
+      "path": "engine/fixtures/demo-release/release-record.json",
+      "sha256": "ea0f9a263ab5d41e122e13b18f522df21f12651c1552b16aa4ae604eff97194d",
+      "bytes": 4303
+    },
+    {
       "path": "engine/fixtures/demo-release/release_campaign.json",
-      "sha256": "7d510c600cf369ddb18d43d7822265d484758870eb997fed82cd92339217bdd7",
-      "bytes": 2321
+      "sha256": "c65d30850fcc93fe9d0432b6a4e1b64d99ef32031df0b5f4a3b5e8aecd240a58",
+      "bytes": 2511
     },
     {
       "path": "engine/fixtures/demo-release/sources/footage_index.json",
@@ -358,8 +463,8 @@
     },
     {
       "path": "engine/fixtures/vista-work/release_campaign.json",
-      "sha256": "dfe314fe7128c2b9f5febe64404e11f10d8f0564c0d630de7005565f9431de68",
-      "bytes": 2855
+      "sha256": "269a1b0ede1164fb48639d9ec31d6c35998345561f9747bbbaeee16a9edd2436",
+      "bytes": 3154
     },
     {
       "path": "engine/fixtures/vista-work/sources/barry_email_transcript.txt",
@@ -382,11 +487,6 @@
       "bytes": 930
     },
     {
-      "path": "engine/packages/.gitkeep",
-      "sha256": "52860a6956e9fad6b8c815f1752234924d6653514e5444be4c851cc124d9b3ba",
-      "bytes": 82
-    },
-    {
       "path": "engine/schemas/cadence_binder.schema.json",
       "sha256": "6158fb90a3ab886b3917a48181c0f88bbcebaaa343a494ce80198d49231e571c",
       "bytes": 1445
@@ -397,9 +497,14 @@
       "bytes": 2286
     },
     {
+      "path": "engine/schemas/release-record.schema.json",
+      "sha256": "8e2146a8b5fced0fe8d3e94260066e1c7769b6e676f46c9ee93e9e726ae64482",
+      "bytes": 7223
+    },
+    {
       "path": "engine/schemas/release_campaign.schema.json",
-      "sha256": "bbab54bcc3551a72448f5bafee75a844a1934c16924ea8a76f75a8ac98c19f6a",
-      "bytes": 3679
+      "sha256": "88cbbb281db8d6a6faa46468367c62ae4ede5108b0d1190b0ff673b3e1e65253",
+      "bytes": 3696
     },
     {
       "path": "engine/scripts/__init__.py",
@@ -408,13 +513,23 @@
     },
     {
       "path": "engine/scripts/build_package.py",
-      "sha256": "55965878df2b312fc288bbc8cc70abfe471bc9997f34351d6d19000dd2f2e2aa",
-      "bytes": 8192
+      "sha256": "fae8e8990233d77518cf3dd817d964a01c37d6d1e35fa149c638144c613057bb",
+      "bytes": 8338
+    },
+    {
+      "path": "engine/scripts/init_release.py",
+      "sha256": "b08f2a31ddaf54862f2542928f476318faa4c227f69e73ae9af5e211c01bcb82",
+      "bytes": 4108
+    },
+    {
+      "path": "engine/scripts/transition_slot.py",
+      "sha256": "0cc742659b47e472835881c820b7f2e5c703519975f176b301fc1e7dbbbc39a7",
+      "bytes": 4878
     },
     {
       "path": "engine/scripts/validate_campaign.py",
-      "sha256": "5a0eeeb47ae818073c77890dcc264b31f7769f4f304386fa76fc8cda11b9b5c9",
-      "bytes": 4325
+      "sha256": "4a9f437ae5e6916a617b44b6ae33aa821ef0b4ba1e808f30428ddcb9bb8db45b",
+      "bytes": 4346
     },
     {
       "path": "engine/scripts/validate_ledger.py",
@@ -422,15 +537,155 @@
       "bytes": 2973
     },
     {
+      "path": "engine/scripts/validate_record.py",
+      "sha256": "d5881ca31a479fef1f06d6889888d61ee12deb18a548752ee37ba178bd6d33db",
+      "bytes": 3455
+    },
+    {
+      "path": "handoff/README.md",
+      "sha256": "8247b9ac48baf73b82a1bcf95082396763221e785ed7e62b00f3e40b8e2b3e8b",
+      "bytes": 1595
+    },
+    {
+      "path": "handoff/REVIEW-PACKET.md",
+      "sha256": "ef7af7167c43c96da34df66a7ced894bf3106be333c5bc36f274748e72717b8e",
+      "bytes": 3433
+    },
+    {
+      "path": "handoff/VISTA-LAUNCH-FACTORY-HANDOFF-SOP.md",
+      "sha256": "c38f1603c8de2b80c78229ecf2af234264bb6da5bd7346974ef03ecb093169e0",
+      "bytes": 27713
+    },
+    {
+      "path": "handoff/assumption-and-gap-log.csv",
+      "sha256": "f3a569873a9fc94f124c72b1ae4fd2ae19065008881c34ee608aa2aed3d70e03",
+      "bytes": 4708
+    },
+    {
+      "path": "handoff/lint-report.json",
+      "sha256": "fb024d8b21e13dcff44d2d11041479b167de607eb73d69bb2e2b6424874b8d2d",
+      "bytes": 125
+    },
+    {
+      "path": "handoff/marketer-run-checklist.md",
+      "sha256": "69f272e2a59f2bc355e0c99c6702beb7ac26612a056d809dc0944f06b6959d10",
+      "bytes": 2604
+    },
+    {
+      "path": "handoff/review-report-v0.1.1.md",
+      "sha256": "fc537a2ad0740c37cd4079413c6f92acfa3ff1fd0677b3634a462f19ef0cf152",
+      "bytes": 10135
+    },
+    {
+      "path": "handoff/review-report.md",
+      "sha256": "3deece443fdbdd551b05a83804e59bf56e4e769a7700282a2fd58a465851d432",
+      "bytes": 10027
+    },
+    {
+      "path": "handoff/risk-assessment.yaml",
+      "sha256": "e4de7afcb33b04f0697ba73602def520d77111f6dec3ebacf8c037282d5cb890",
+      "bytes": 3278
+    },
+    {
+      "path": "handoff/source-register.csv",
+      "sha256": "402045566c8b049f2fb81b35b067e8abfd2c7c85b491f08004ce99b674eea8ab",
+      "bytes": 4425
+    },
+    {
+      "path": "hubspot/sandbox-checklist.md",
+      "sha256": "8624231548ed7831fa7612084092f07454b1cd878948c098187b095a7c91110a",
+      "bytes": 1010
+    },
+    {
       "path": "maintainer-source/README.md",
       "sha256": "de695f8e585037ba9120770726d33a2afadde5c423e248ceab862323620f374e",
       "bytes": 343
     },
     {
+      "path": "notion/campaign-template.md",
+      "sha256": "41b4c45ea6d4484378bc4e7cd96f4dfb6e8dd99aad74233a60f0fa154b2d1501",
+      "bytes": 1415
+    },
+    {
+      "path": "optional/hyperbots-stack-note.md",
+      "sha256": "0d510b1bec0c8aaa55879fd3f7bdd9c31d778d9f1b3d60e8307a9263d1bdcdbd",
+      "bytes": 735
+    },
+    {
+      "path": "prep/tue-wed-checklist.md",
+      "sha256": "0b94b8e6d1c94129c00b6abc5e5bb388fdacbf6cd0dc459e4b2cb038d5cce8a0",
+      "bytes": 1364
+    },
+    {
+      "path": "pytest.ini",
+      "sha256": "f983bd00110ad0489fbeae91385d6f198dd0dd6ac83165d89d9c2469d7f71239",
+      "bytes": 49
+    },
+    {
+      "path": "recording/shot-list.md",
+      "sha256": "95c5951ef1ef9f6a067121124b344994b4aa624fbc86e7220937152577be471b",
+      "bytes": 1019
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "1a2f59308b3e2898dcd510781b78749031809dc1521a9099be2edec41206edd6",
+      "bytes": 33
+    },
+    {
+      "path": "run.sh",
+      "sha256": "5f4b60a999d9667c1b039c3413b58193b26d28f3858d7be96bd923d7912b3117",
+      "bytes": 5093
+    },
+    {
       "path": "scripts/regen_manifests.py",
-      "sha256": "141d3453ec8fe5a433efc77b79d7d284691f0745e59ff5996b71fa7379818af4",
-      "bytes": 3860
+      "sha256": "5dd1dfcd1c2b5368759e809023653cb76db591ebcbda3d7f3bbac2c10ff9ecdc",
+      "bytes": 4521
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "e7f5edf5478c44acc2d9828f01cd18508828121e8552a0fe521c1bd76a15aa81",
+      "bytes": 323
+    },
+    {
+      "path": "tests/test_adapters_present.py",
+      "sha256": "ae502ed661f55316f29407c3da37b419b6991cea066e86e1868b04e0122fc015",
+      "bytes": 514
+    },
+    {
+      "path": "tests/test_build_package.py",
+      "sha256": "5de29ad8b496a9f809a5d05037185cfe17ece2138c528011326236603e7b2cd8",
+      "bytes": 2648
+    },
+    {
+      "path": "tests/test_cadence_binder.py",
+      "sha256": "9fb2321f774a1b4093d4fba33233edde4c8e4867aeefef26978951a5de380f76",
+      "bytes": 702
+    },
+    {
+      "path": "tests/test_release_record.py",
+      "sha256": "4fcc8f3bec6a5c6e73d291519992b299bd1dfc57da5c89177cf5d9883378e525",
+      "bytes": 4486
+    },
+    {
+      "path": "tests/test_validate_campaign.py",
+      "sha256": "1b9823baae08f21a8dd79a111d5f3cc3f1b6bb147f392aaeb7c675c2d3451d39",
+      "bytes": 3634
+    },
+    {
+      "path": "tests/test_validate_ledger.py",
+      "sha256": "7e2150b645bcbe51c087e6d42c4122059f71f5ceff9bc63193bcac99e3533877",
+      "bytes": 2761
+    },
+    {
+      "path": "trigger/notion-run-leavebehind.md",
+      "sha256": "da733f6283b54e1e635fb7ed51695dd14d15e5fcaced91328d3699dd62d1f944",
+      "bytes": 1017
+    },
+    {
+      "path": "voice-bank/README.md",
+      "sha256": "179a4e8fc0b9171b448f900a441bad874774d953106e2c23d09c69f0fda5e3c3",
+      "bytes": 1089
     }
   ],
-  "evidence_boundary": "Proves pack structure, file integrity (sha256/bytes), and documented Barry HITL gates only. Does not prove live host activation, semantic output quality, or customer outcomes; slots 1/5/6 are HELD and A7/A8 remain HOLD. See HOST-MATRIX.md."
+  "evidence_boundary": "Proves pack structure, file integrity (sha256/bytes), and documented Barry HITL gates only. Does not prove live host activation, semantic output quality, or customer outcomes; slots 1/5/6 are HELD (ADR 0013) and the Voice Bank brief is interim (ADR 0015). See HOST-MATRIX.md."
 }

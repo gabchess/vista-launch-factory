@@ -4,7 +4,7 @@
 
 Skill ZIP (host door):
 
-`claude/launch-factory-v0.1.1.zip`
+`claude/launch-factory-v0.2.0.zip`
 
 (one-root zip; mirrors `codex/launch-factory` skill payload — **not** the Option B `engine/` tree)
 
@@ -15,7 +15,7 @@ Engine SoT (structural validate/package):
 ## Steps
 
 1. Close any older Launch Factory project/skill copy in the workspace if present.
-2. Download or locate `claude/launch-factory-v0.1.1.zip` from this product root.
+2. Download or locate `claude/launch-factory-v0.2.0.zip` from this product root.
 3. Install per Claude’s project / skill ZIP convention for your workspace (unzip to a single root; do not scatter nested skill files).
 4. Confirm the Augment loads in a **fresh** chat/project. Folder visible ≠ Augment active until the host binds it.
 5. Ask: “Use Launch Factory. Run on this release folder.”

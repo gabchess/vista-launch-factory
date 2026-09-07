@@ -8,7 +8,7 @@ Three gates inside the Augment — **in order**:
 
 **Spot-check timing:** Draft the first real slot (blog when O1 HELD) → Barry spot-checks **that** artifact → then remaining non-HELD adapters. Never spot-check before a draft exists.
 
-**Which barry folder?** Humans fill/use these product-root cards (`barry/*.md`). `engine/barry/*-template.md` are pack-builder generator templates from A3 — don’t open both in a demo.
+**Which barry folder?** Humans fill/use these product-root cards (`barry/*.md`). `engine/barry-templates/*-template.md` are pack-builder generator templates — don’t open both in a demo.
 
 ## Hard rules
 - Writer ≠ Barry  

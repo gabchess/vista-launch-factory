@@ -24,7 +24,9 @@ Slots marked **HOLD** are **skipped for completion**, not blocked forever:
 - **First real adapter = blog (slot 2)** when the engine is live, then email (3) and changelog (4).
 - Never fake held outputs to look like a six-pack.
 
-## Slot map (v0.1.1)
+## Slot map (v0.2.0)
+
+Slot 7 is the **Campaign Plan** (ADR 0016) — the day-by-day multi-channel sequence drafted from the same locked claims; `cadence_binder.json` is its data shape.
 
 | Slot | Output | Status | Operate rule |
 |---|---|---|---|
@@ -34,6 +36,7 @@ Slots marked **HOLD** are **skipped for completion**, not blocked forever:
 | 4 | Changelog | Real adapter when engine lands | After blog |
 | 5 | Login animation | **HOLD** + honesty stub | HELD-skip |
 | 6 | In-app popup | **HOLD** + honesty stub | HELD-skip |
+| 7 | Campaign Plan | Adapter `07_campaign_plan.md` | One-release cells only; approved in pack gate |
 
 ## Engine
 
@@ -41,4 +44,4 @@ Option B: canonical engine lives under `engine/` (import of `vista/work` schemas
 
 ## Scripts
 
-Any scripts under `codex/launch-factory/scripts/` are **STRUCTURAL_INTEGRITY_ONLY**. They validate structure; they never publish.
+All executable helpers live under `engine/scripts/` (`init_release`, `validate_record`, `transition_slot`, `validate_ledger`, `validate_campaign`, `build_package`) and are **STRUCTURAL_INTEGRITY_ONLY** — they validate structure; they never publish, and `approved`/`packaged` states require Barry's recorded decision (`--human-confirmed`). The one-command door is `./run.sh RELEASE_FOLDER` (ADR 0014). Any scripts under `codex/launch-factory/scripts/` follow the same rule.

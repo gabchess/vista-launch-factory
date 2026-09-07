@@ -1,40 +1,48 @@
 {
   "format": "cd-documentation-manifest/v1",
   "product": "launch-factory",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "claim_boundary": "Engine structural validate/package proves mechanics only — not host-activation proof, semantic quality proof, or all-six-slots claim. Slots 1/5/6 HOLD. A5 Barry HITL cards under product-root barry/ are human gates only — not publish authority.",
   "files": [
     {
+      "path": "AGENTS.md",
+      "sha256": "362d7e36251441069128ec1e66932d6ca35732994c7d1b388c2c31564702978c"
+    },
+    {
       "path": "CHANGELOG.md",
-      "sha256": "4818ac8be096cb7d3e04e5694c3e3497b3fe5552597c03259ec7bbb376582d94"
+      "sha256": "f2b30950693ea070389c1cf9f0d9673b15652fd7e3bdd4db154af907fb563031"
     },
     {
       "path": "HOST-MATRIX.md",
-      "sha256": "d2f72e21c14af4c18c3efed6071ab9e9c358837e5e779f3991c62bb299ec5af6"
+      "sha256": "e71a63f9eaf0b1c6aa5031279eecaaa4d98bf3ba755f0c2a43f6957e50b2931b"
     },
     {
       "path": "LICENSE-STATUS.md",
-      "sha256": "7899c76992cde15387319fb54cde54f2ad6b6fe72c36703b50c94a82caacdc5a"
+      "sha256": "ca95dfbfb9f22176dbb712b232ab84515fc7948537776b3d5bbb517da0eacb4a"
     },
     {
-      "path": "Launch Factory T-NOVA v0.1.1.txt",
-      "sha256": "fecdc76e55e137d61d1a095ebe88732e566294cd230f9cc55ac5151c58ef8fc7"
+      "path": "Launch Factory T-NOVA v0.2.0.txt",
+      "sha256": "2257d83237bd51cd03bdb95d65a427e7156545b019dd9228eff21d6fc38b7444"
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "07dafcc324fccf021a8f5943b98e759fe57bbdae626f0b716e4d24b756b95ba1"
+      "sha256": "b36a3a8be9a17e587eb9829275cad8359d073130a00e9e31abc25c882347f33c"
     },
     {
       "path": "README.md",
-      "sha256": "7636ae4e75299ea19d0158c37d4c4ef57ba1b4cadbb5595cd1b317f682c40b01"
+      "sha256": "18d81e1275d8c9c57f452156f9a2dc7b8ac5ac6eb80a11945cc2335d049c6b4f"
+    },
+    {
+      "path": "SHOW-ME.md",
+      "sha256": "cba2d557be426fa0b0da0f95066b7591b7793a4c4882d34ea6f7fd5a32747a06"
     },
     {
       "path": "START-HERE.md",
-      "sha256": "5020cb87cb97b422db723f1bad285eac68cab35a85464311f14de8a51e2f950e"
+      "sha256": "4de2057c97167622f6163cd07f68512d93935a93279bb7ee97285a992e536ee3"
     },
     {
       "path": "barry/README.md",
-      "sha256": "09e2f1416a1b4e5106f91ba3d33b0d18f5ed0dd132097500810abac40961e667"
+      "sha256": "20b8f6e785fb821164cfe95e66414d5e9f92a7dd62606611116dc774b4387317"
     },
     {
       "path": "barry/claims-lock.md",
@@ -50,15 +58,15 @@
     },
     {
       "path": "claude/README.md",
-      "sha256": "1ae76999c500a407813726bdcc479b406f2acd086f782f9db47024d41a3f1552"
+      "sha256": "43f4b12bb4d638a03bd1b53caead91df9af331dde94b13118cfddc41fff7e6f3"
     },
     {
       "path": "codex/launch-factory/README.md",
-      "sha256": "9ad987ef678c614c43513255dfc1076ca4ef28a1b3220fedd67e55150dc3c419"
+      "sha256": "b14b209e545df569acb41611e126ff5648196a25fa5aedb5a41125097cc5fa23"
     },
     {
       "path": "codex/launch-factory/SKILL.md",
-      "sha256": "6f3ac44190783abfaba9402f6b4e84b30f2b0621bd31659cdd1f296b8809baf6"
+      "sha256": "ff018d7ba292937f870d74b4798f2c2a0027cf562ab3d8b6fe9a61ecbb7fa7be"
     },
     {
       "path": "codex/launch-factory/examples/01-claims-lock-walkthrough.md",
@@ -85,6 +93,14 @@
       "sha256": "d5ca24f5a1c67d421cd56cf9d294b2c7dd2c06b5b4eb5f4d5c3fc63b3aee5cf5"
     },
     {
+      "path": "codex/launch-factory/knowledge/operating-doctrine.md",
+      "sha256": "901657deaea9cc5caf1217f9d46b8d7cc254371f4fdd67b746851da7658e41cf"
+    },
+    {
+      "path": "codex/launch-factory/knowledge/voice-bank-brief.md",
+      "sha256": "760dd77d66773f757f3883285397769e4415f4a7fd645e251575ef7cf08be2dc"
+    },
+    {
       "path": "codex/launch-factory/personas/barry-seat.md",
       "sha256": "6fbc105770ab03916082e2f4049c50bda6dcdf4716061e16474e4730e2e73897"
     },
@@ -105,20 +121,40 @@
       "sha256": "6cd33cd01665101066fc8da9e5153d3fe1a21deb45ed689cf6dd2a2a9c936240"
     },
     {
+      "path": "docs/2026-09-07-vista-launch-factory-design.md",
+      "sha256": "c6b72714de8e19902e2ff85039316cc6b628b972f07201ec7626e5c092c84ee5"
+    },
+    {
+      "path": "docs/2026-09-07-vista-launch-factory-plan.md",
+      "sha256": "de14ad86dae7d1c3774e78c2d2f7b20768f03b212a9c631045afef9a8293d47a"
+    },
+    {
+      "path": "docs/CONTEXT.md",
+      "sha256": "3a00fb144839aa2f5e3f04f241829d320791c1cdff642da5eada8ecc7ce7787e"
+    },
+    {
+      "path": "docs/DESIGN-LOCK.md",
+      "sha256": "4742e6df5cea4adc178bd082512d1398dbcb657955dcda9f5e8caa3c7745d5d3"
+    },
+    {
       "path": "docs/DOCUMENTATION-CUSTODY.md",
-      "sha256": "75689665120bc0b7fe2bfbe25dbf5a73c83c96f2eb159422fb75744e80ee418c"
+      "sha256": "5fd22b1e8de9b0411bf295ffac9344b1dea7b94de8b105a779774d81e1adddcf"
     },
     {
       "path": "docs/FIRST-RUN.md",
-      "sha256": "7aeadfebc6488e5ffa5fb0b29069cd81c2a42e0d84ca98c14639e808b2c05e84"
+      "sha256": "46dbd0f1d751b8b739f498e3af222c5ca266039b91dfab205ed81c4c02a0d51e"
+    },
+    {
+      "path": "docs/GRILL-LOCK.md",
+      "sha256": "7faac1466f61eddd98812654f8acfdfc2b402a19ad2d7aa61658c1f56b153b4d"
     },
     {
       "path": "docs/HUMAN-GAPS.md",
-      "sha256": "081400b364d690b0cedba4b2c664d049210a33f97055c2b768198a5e41fa0081"
+      "sha256": "d87f31ded664107fd50a95083bcdb7e9f4a4ed0b02b63515facdd44fcd3bd0b9"
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
-      "sha256": "6d80c060bcd9645fa61940a3189ede662a3c6cc0da48896fe4de42cd63bb1c6f"
+      "sha256": "d885a598f46f8e80a50907ae1d82429b758d2faab442cea4e27e674d25c49882"
     },
     {
       "path": "docs/INSTALL-CODEX.md",
@@ -126,11 +162,11 @@
     },
     {
       "path": "docs/OPERATE-LAUNCH-FACTORY.md",
-      "sha256": "a553ef4f57628c872d356b90316ef9a69ad61f40b435be08c44bdb1c6cff8f88"
+      "sha256": "33722be313615a108df8ffd86e8e50dde315b50b67695b17d3ce8c5897caa0a5"
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
-      "sha256": "8488a2bb0caa00f828133e7412ecb78386430eea64dd33d44b1791c04962c2cd"
+      "sha256": "574626cbc8b16e92330d1c787df1653502febdc677303b4cc1e73d66bd3ed84e"
     },
     {
       "path": "docs/TRUST-PRIVACY-AND-AUTHORITY.md",
@@ -138,15 +174,131 @@
     },
     {
       "path": "docs/VALIDATION-AND-LIMITS.md",
-      "sha256": "172343ff721b72ba57a1b91572dfab9da8b6940717235a69a92d43b22fe4ea27"
+      "sha256": "c5b292e8d7b74885c48905a434fedf28c6c770517588b6b7317a0cabf51dab54"
+    },
+    {
+      "path": "docs/adr/0012-recorded-run-hero-repo-link-door.md",
+      "sha256": "e0030086dd1fbf62f4682922cdd943d4622a86ad61dd9e6393c53be635ee1b17"
+    },
+    {
+      "path": "docs/adr/0013-hold-156-until-spine.md",
+      "sha256": "e237a244641cb0c5851ee2ec3cb165dc1b112987c8364f4d8412bfa9b96462b3"
+    },
+    {
+      "path": "docs/adr/0014-one-command-one-prompt.md",
+      "sha256": "d18624fdb4eb30e3296f4154f76c23502778f29654e34b8ed7730e5ab706183d"
+    },
+    {
+      "path": "docs/adr/0015-voice-bank-interim.md",
+      "sha256": "7ac586128586659c84762302f4cb54ca88ff64e987d2b3f2c2bcd81fbeff52b9"
+    },
+    {
+      "path": "docs/adr/0016-orchestrator-and-campaign-plan.md",
+      "sha256": "b473edf25d41c86875bd956c9a1f89d27a60043ac3364284d14d1ae90e7a3cb4"
+    },
+    {
+      "path": "docs/agents/domain.md",
+      "sha256": "3493be161291ea9ede766c7db6eb6e3d74b546c43c77a41b38bf23236c50f288"
+    },
+    {
+      "path": "docs/agents/issue-tracker.md",
+      "sha256": "afd6852a80185217bd28aa5cbe456bef1e85be25be7bd1fba382d5b8ee428325"
+    },
+    {
+      "path": "docs/agents/triage-labels.md",
+      "sha256": "4f53c9b40ce2651e3611aa090eaedbd6dbc9b71ef8c5f7e65eac0d8263190d0d"
     },
     {
       "path": "engine/README.md",
-      "sha256": "561478585646d63e6306931f1809231f6f7c4773edd140c6d6f7153ec3c4f59d"
+      "sha256": "e4eaca2af591ae68d8557c83f6128845c6b7f03ef46a252e13b6ecdcd1494ad4"
+    },
+    {
+      "path": "engine/adapters/01_social_video.md",
+      "sha256": "c1c4e85d92eab4acac4a0a07cffed7ccb9937429382d01f2658c725833a15f59"
+    },
+    {
+      "path": "engine/adapters/02_blog.md",
+      "sha256": "1c60fba14af525a22c384c3b87a42e0ac1587c0d599a69a6614c1c0be568095a"
+    },
+    {
+      "path": "engine/adapters/03_email_segments.md",
+      "sha256": "28185881008923c5555c9f42d73852f8e34dee375ea9102e679e9126a93c733a"
+    },
+    {
+      "path": "engine/adapters/04_changelog.md",
+      "sha256": "a9fab86f50c7ff5fa470e18b403de77dea8c272318ae6f6cf50e5fa5b60b3626"
+    },
+    {
+      "path": "engine/adapters/05_login_animation.md",
+      "sha256": "b8204ec5c61d27435ca611ebffed879bc67fda6965e2a056f31527d2c3295e5e"
+    },
+    {
+      "path": "engine/adapters/06_in_app_popup.md",
+      "sha256": "3c2ddfaeb114f82e1257d85db8c4b73da820109210b61fbf445fa7a6641a7fa8"
+    },
+    {
+      "path": "engine/adapters/07_campaign_plan.md",
+      "sha256": "15f823ae609c64d8eab038a094acc3c7d2bc9cbf0d5a0b76f6137297ae3ca335"
+    },
+    {
+      "path": "handoff/README.md",
+      "sha256": "8247b9ac48baf73b82a1bcf95082396763221e785ed7e62b00f3e40b8e2b3e8b"
+    },
+    {
+      "path": "handoff/REVIEW-PACKET.md",
+      "sha256": "ef7af7167c43c96da34df66a7ced894bf3106be333c5bc36f274748e72717b8e"
+    },
+    {
+      "path": "handoff/VISTA-LAUNCH-FACTORY-HANDOFF-SOP.md",
+      "sha256": "c38f1603c8de2b80c78229ecf2af234264bb6da5bd7346974ef03ecb093169e0"
+    },
+    {
+      "path": "handoff/marketer-run-checklist.md",
+      "sha256": "69f272e2a59f2bc355e0c99c6702beb7ac26612a056d809dc0944f06b6959d10"
+    },
+    {
+      "path": "handoff/review-report-v0.1.1.md",
+      "sha256": "fc537a2ad0740c37cd4079413c6f92acfa3ff1fd0677b3634a462f19ef0cf152"
+    },
+    {
+      "path": "handoff/review-report.md",
+      "sha256": "3deece443fdbdd551b05a83804e59bf56e4e769a7700282a2fd58a465851d432"
+    },
+    {
+      "path": "hubspot/sandbox-checklist.md",
+      "sha256": "8624231548ed7831fa7612084092f07454b1cd878948c098187b095a7c91110a"
     },
     {
       "path": "maintainer-source/README.md",
       "sha256": "de695f8e585037ba9120770726d33a2afadde5c423e248ceab862323620f374e"
+    },
+    {
+      "path": "notion/campaign-template.md",
+      "sha256": "41b4c45ea6d4484378bc4e7cd96f4dfb6e8dd99aad74233a60f0fa154b2d1501"
+    },
+    {
+      "path": "optional/hyperbots-stack-note.md",
+      "sha256": "0d510b1bec0c8aaa55879fd3f7bdd9c31d778d9f1b3d60e8307a9263d1bdcdbd"
+    },
+    {
+      "path": "prep/tue-wed-checklist.md",
+      "sha256": "0b94b8e6d1c94129c00b6abc5e5bb388fdacbf6cd0dc459e4b2cb038d5cce8a0"
+    },
+    {
+      "path": "recording/shot-list.md",
+      "sha256": "95c5951ef1ef9f6a067121124b344994b4aa624fbc86e7220937152577be471b"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "1a2f59308b3e2898dcd510781b78749031809dc1521a9099be2edec41206edd6"
+    },
+    {
+      "path": "trigger/notion-run-leavebehind.md",
+      "sha256": "da733f6283b54e1e635fb7ed51695dd14d15e5fcaced91328d3699dd62d1f944"
+    },
+    {
+      "path": "voice-bank/README.md",
+      "sha256": "179a4e8fc0b9171b448f900a441bad874774d953106e2c23d09c69f0fda5e3c3"
     }
   ]
 }

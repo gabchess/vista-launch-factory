@@ -4,43 +4,53 @@ ELI5 end-to-end. **Video/demo PAUSED.** No auto-publish. No HubSpot send. No pri
 
 ## What this is
 
-One release folder in → six review-ready artifact slots + cadence binder out → **STOP**. Humans publish out of band.
+One release folder in → six artifact slots (exists-or-held) + Campaign Plan out → **STOP**. Humans publish out of band.
 
-Barry (VP Marketing) is the only copy/creative ship gate. Writer ≠ Barry.
+Barry (VP Marketing) is the only copy/creative ship gate. Writer ≠ Barry. All run state lives in one release record (`runs/<folder>/release-record.json`).
 
-## Pipeline (ingest → STOP)
+## Loop (Ingest → STOP)
 
 ```
 1. INGEST
-   Marketer Run drops a release folder (Loom/transcript, outline, footage index).
-   Here: fixtures/vista-work/ seeded from demo/ Barry email + outline.
+   ./run.sh drops a release folder (Loom/transcript, outline, footage index)
+   into a workspace; init_release.py hashes every input file into the record.
+   Here: engine/fixtures/vista-work/ seeded from the Barry email + outline.
 
-2. CLAIMS
-   claim_ledger.json = allowed / forbidden / needs-disclaimer + evidence spans.
-   validate_ledger.py → kill-switch arms if allowed claim has no evidence or
+2. GROUND + CLAIMS
+   claim_ledger.json = allowed / forbidden / held + evidence spans, each claim
+   status-labelled (observed/source_stated/inferred/assumed/unknown).
+   validate_ledger.py → kill-switch arms if an allowed claim has no evidence or
    forbidden text leaks into allowed. Adapters stay COLD until Claims Lock passes.
-   Status today: claims_gate (Barry once-per-campaign yes still needed).
+   Status today: claims_gate (Barry's once-per-campaign yes still needed).
 
-3. ADAPTERS (six slots)
+3. CREATE (seven slots)
    From locked claims only — never invent features/limits/$.
    Slot 1 social_video     → HELD (no real footage; Demo Assets ≠ ledger)
-   Slot 2 blog             → adapters/02_blog.md      (real)
-   Slot 3 email_segments   → adapters/03_email_segments.md (real)
-   Slot 4 changelog        → adapters/04_changelog.md (real)
+   Slot 2 blog             → engine/adapters/02_blog.md      (real)
+   Slot 3 email_segments   → engine/adapters/03_email_segments.md (real)
+   Slot 4 changelog        → engine/adapters/04_changelog.md (real)
    Slot 5 login_animation  → HELD
    Slot 6 in_app_popup     → HELD
+   Slot 7 campaign_plan    → engine/adapters/07_campaign_plan.md (ADR 0016;
+                             cadence_binder.json is its data shape)
 
-4. CADENCE
-   cadence_binder.json sequences channels for one release
-   (changelog → email interrupt → story video HELD → written social → IG/TikTok HELD).
+4. REVIEW
+   Four gates recorded in the record: claims/accuracy, voice/composition
+   (interim Voice Bank brief, ADR 0015), completeness (exists-or-held),
+   authority (writer never Barry; approved/packaged need --human-confirmed).
 
 5. PACKAGE
-   build_package.py copies real adapters + HELD.txt + provenance + honesty + cadence
-   into packages/<campaign_id>/. Writes MANIFEST.json with auto_publish: false.
+   build_package.py copies real adapters + HELD.txt + provenance + honesty +
+   cadence into packages/<campaign_id>/. MANIFEST.json: auto_publish: false.
+   BARRY.md review card is filled from campaign state.
 
 6. STOP
-   Review-ready Drive pack. Barry pack-approve later. HubSpot sandbox = draft only,
-   after Barry. Final publish = human CMS/email — never this factory.
+   Review-ready Drive pack. Barry pack-approve later. HubSpot sandbox = draft
+   only, after Barry. Final publish = human CMS/email — never this factory.
+
+7. LEARN
+   Outcomes Barry reports go back into the record's run log. Supplied results
+   only; no fabricated metrics.
 ```
 
 ## Package tree (this run)
@@ -55,6 +65,7 @@ packages/camp_vista_work_001/
 ├── 04_changelog/04_changelog.md
 ├── 05_login_animation/HELD.txt
 ├── 06_in_app_popup/HELD.txt
+├── 07_campaign_plan/          (Held pre-Claims-Lock in this fixture)
 ├── cadence/cadence_binder.json
 ├── honesty/still-needs-human.md
 └── provenance/
@@ -65,28 +76,26 @@ packages/camp_vista_work_001/
 
 MANIFEST highlights: `status=review_ready_pre_claims_lock`, `auto_publish=false`, `fixture_label=barry-email-seed`, `barry_seat=Barry VP Marketing`, note = **STOP — pre-Claims-Lock review bundle; Barry Claims Lock still required before pack-approve**. Package root also has filled `BARRY.md`.
 
-## How to re-run (from work/)
+## How to re-run (from repo root)
 
 ```bash
-cd /home/box/shared/handoffs/reggie-pilot/vista/work
-source .venv/bin/activate   # or use .venv/bin/python
+cd <repo-root>
 
-# 1) Validate Claim Ledger (kill-switch)
-python scripts/validate_ledger.py fixtures/vista-work/claim_ledger.json
+# One command (ADR 0014)
+./run.sh engine/fixtures/vista-work
 
-# 2) Validate Release Campaign (six slots exist-or-held)
-python scripts/validate_campaign.py fixtures/vista-work/release_campaign.json
+# Or stage by stage
+.venv/bin/python engine/scripts/init_release.py engine/fixtures/vista-work
+.venv/bin/python engine/scripts/validate_record.py runs/vista-work/release-record.json
+.venv/bin/python engine/scripts/validate_ledger.py engine/fixtures/vista-work/claim_ledger.json
+.venv/bin/python engine/scripts/validate_campaign.py engine/fixtures/vista-work/release_campaign.json
+.venv/bin/python engine/scripts/build_package.py engine/fixtures/vista-work/release_campaign.json packages --work-root engine
 
-# 3) Build Drive-ready package
-python scripts/build_package.py fixtures/vista-work/release_campaign.json packages
-# optional if fixture depth ever differs:
-# python scripts/build_package.py fixtures/vista-work/release_campaign.json packages --work-root .
-
-# 4) Tests
-pytest -q
+# Tests
+.venv/bin/pytest -q     # 22 passed
 ```
 
-`work_root` default = `campaign_json.parents[2]` → for `fixtures/vista-work/*.json` that is `work/`. Adapter paths resolve as `work/adapters/...`.
+`build_package`'s `work_root` default = `campaign_json.parents[2]` → for `engine/fixtures/vista-work/*.json` that is `engine/`. Adapter paths resolve as `engine/adapters/...`.
 
 ## Hard stops (do not)
 
@@ -94,8 +103,9 @@ pytest -q
 - Encode / ship video (slot 1 held; Demo Assets out of Claim Ledger — ADR 0001)
 - HubSpot send / auto-publish
 - Treat Demo Assets as product evidence
+- Move a slot to approved/packaged without a recorded Barry decision
 - Push to Forge / remote without Gabe
 
 ## Design locks (review copies)
 
-See `docs/DESIGN-LOCK.md`, `docs/GRILL-LOCK.md`, `docs/CONTEXT.md`, plus design + plan markdown in `docs/`.
+See `docs/DESIGN-LOCK.md`, `docs/GRILL-LOCK.md`, `docs/CONTEXT.md`, ADRs 0012–0016 in `docs/adr/`, plus design + plan markdown in `docs/`.

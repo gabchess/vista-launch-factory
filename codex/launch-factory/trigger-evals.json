@@ -1,6 +1,6 @@
 {
   "skill": "launch-factory",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "schema": "cd-augment-trigger-evals/v1",
   "cases": [
     {

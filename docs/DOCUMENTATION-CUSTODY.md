@@ -17,9 +17,9 @@ These must stay lockstep on HITL / non-goals:
 
 ## Runtime vs maintainer
 
-- **Ship:** product root, `docs/`, `codex/`, `claude/` (ZIP when present), `engine/` (customer-visible SoT pointer).
+- **Ship:** repo root (the pack envelope — ADR 0012), `docs/`, `codex/`, `claude/` (ZIP), `engine/` (SoT), `barry/`, `voice-bank/`.
 - **Never ship as runtime:** `maintainer-source/`.
 
 ## Version
 
-Documentation in this tree is for **Launch Factory v0.1.1** (skeleton). Update `CHANGELOG.md` and manifests when docs change claim boundaries.
+Documentation in this tree is for **Launch Factory v0.2.0** (skeleton). Update `CHANGELOG.md` and manifests when docs change claim boundaries.

@@ -7,8 +7,8 @@
 
 ## Claude ZIP missing
 
-**Symptom:** No `claude/launch-factory-v0.1.1.zip`.  
-**Expected in v0.1.1:** ZIP arrives in A2. Use Codex door or wait for A2. See `claude/README.md`.
+**Symptom:** No `claude/launch-factory-v0.2.0.zip`.  
+**Expected in v0.2.0:** the ZIP ships in `claude/`. Use the Codex door if it is missing. See `claude/README.md`.
 
 ## Pack tries to publish or send
 

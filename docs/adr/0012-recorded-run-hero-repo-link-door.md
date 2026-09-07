@@ -20,5 +20,5 @@ schemas were inside it; the machine and its evidence lead, the envelope carries 
 ## Consequences
 
 - Repo root README becomes an install door for agents, not marketing prose.
-- ZIP stays as the Claude-host door inside `launch-factory/claude/`.
+- ZIP stays as the Claude-host door inside `claude/` (repo root, since v0.2.0).
 - The recorded run must be pre-baked (DESIGN-LOCK §3 stands): no live generation waits.

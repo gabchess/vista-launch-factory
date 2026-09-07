@@ -1,6 +1,6 @@
 # launch-factory (Codex skill)
 
-Version **0.1.1** — Launch Factory Augment skill (A3 engine wired Option B).
+Version **0.2.0** — Launch Factory Augment skill (A3 engine wired Option B).
 
 ## Claim ceiling
 
@@ -9,7 +9,7 @@ Version **0.1.1** — Launch Factory Augment skill (A3 engine wired Option B).
 | Draft launch artifacts from release-folder evidence | Yes, after / toward Claims Lock |
 | Invent pricing, features, or limits | **No** |
 | Auto-publish or auto-send | **No** |
-| All six slots review-ready in v0.1.1 | **No** — 1/5/6 HOLD |
+| All six slots review-ready in v0.2.0 | **No** — 1/5/6 HOLD |
 | Structural self_check proves marketing quality | **No** — structure only |
 | Barry replaced by Writer | **No** |
 

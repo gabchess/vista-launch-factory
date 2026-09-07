@@ -21,7 +21,8 @@ Single-context repo (this repo):
 │   ├── CONTEXT.md
 │   ├── agents/          ← issue-tracker, triage-labels, domain
 │   └── adr/             ← ADRs when present
-├── launch-factory/      ← Augment pack / engine (when present)
+├── engine/              ← factory SoT (schemas, scripts, adapters, fixtures)
+├── codex/ claude/ barry/ docs-suite ← Augment pack envelope at repo root
 └── ...
 ```
 

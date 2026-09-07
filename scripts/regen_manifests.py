@@ -3,19 +3,25 @@
 # documentation-manifest.json file lists (sha256 + bytes). This script never
 # publishes, never alters claim boundaries, and never touches content files.
 #
-# Inclusion policy (preserved from 0.1.0 manifests):
-#   - release-manifest.json: ALL shipped files under launch-factory/
-#     (including maintainer-source/README.md, engine/, fixtures, the Claude
-#     ZIP, and this script), EXCLUDING .git and BOTH manifest files
-#     themselves (self-reference fix, 0.1.1 — circular hashes cannot
-#     validate).
+# Inclusion policy (v0.2.0 — repo root IS the pack, ADR 0012):
+#   - release-manifest.json: ALL shipped files under the repo root
+#     (envelope + codex/ + claude/ ZIP + engine/ + barry/ + docs/ +
+#     maintainer-source/ + voice-bank/ + this script), EXCLUDING:
+#       * .git, .venv, .pytest_cache, __pycache__, .DS_Store
+#       * runs/ and packages/ (run outputs, not pack surface)
+#       * BOTH manifest files themselves (self-reference fix, 0.1.1 —
+#         circular hashes cannot validate).
+#     Dev-harness files at root (tests/, pytest.ini, requirements.txt,
+#     run.sh, SHOW-ME.md, AGENTS.md) ARE included: the repo-link door
+#     ships the whole working tree.
 #   - documentation-manifest.json: documentation surface only — .md/.txt files
-#     under launch-factory/ (including maintainer-source/README.md), EXCLUDING
-#     .git, both manifest files, and engine/ internals other than
-#     engine/README.md (policy preserved from the 0.1.0 manifest). Non-doc
-#     files (json, zip, py, yaml, .gitkeep) are not listed here.
+#     anywhere in the included tree, EXCLUDING .git, both manifest files,
+#     engine/ internals other than engine/README.md and engine/adapters/*.md,
+#     and dev-history docs (docs/2026-09-07-*.md are design/plan copies and
+#     stay release-manifest-only). Non-doc files (json, zip, py, yaml,
+#     .gitkeep) are not listed here.
 #
-# Run from anywhere:  python3 launch-factory/scripts/regen_manifests.py
+# Run from anywhere:  python3 scripts/regen_manifests.py
 
 import hashlib
 import json
@@ -24,13 +30,15 @@ import sys
 
 PACK_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MANIFESTS = ("release-manifest.json", "documentation-manifest.json")
-EXCLUDE_DIRS = {".git"}
+EXCLUDE_DIRS = {
+    ".git", ".venv", ".pytest_cache", "__pycache__", "runs", "packages",
+}
 
 EVIDENCE_BOUNDARY = (
     "Proves pack structure, file integrity (sha256/bytes), and documented "
     "Barry HITL gates only. Does not prove live host activation, semantic "
-    "output quality, or customer outcomes; slots 1/5/6 are HELD and A7/A8 "
-    "remain HOLD. See HOST-MATRIX.md."
+    "output quality, or customer outcomes; slots 1/5/6 are HELD (ADR 0013) "
+    "and the Voice Bank brief is interim (ADR 0015). See HOST-MATRIX.md."
 )
 
 
@@ -55,13 +63,19 @@ def digest(rel):
     return hashlib.sha256(data).hexdigest(), len(data)
 
 
+def is_doc(rel):
+    if not rel.endswith((".md", ".txt")):
+        return False
+    if rel.startswith("engine/") and not (
+        rel == "engine/README.md" or rel.startswith("engine/adapters/")
+    ):
+        return False
+    return True
+
+
 def main():
     files = walk_files()
-    doc_files = [
-        f for f in files
-        if f.endswith((".md", ".txt"))
-        and (not f.startswith("engine/") or f == "engine/README.md")
-    ]
+    doc_files = [f for f in files if is_doc(f)]
 
     rel_path = os.path.join(PACK_ROOT, "release-manifest.json")
     doc_path = os.path.join(PACK_ROOT, "documentation-manifest.json")
@@ -70,20 +84,21 @@ def main():
     with open(doc_path) as f:
         docs = json.load(f)
 
-    release["version"] = "0.1.1"
+    release["version"] = "0.2.0"
     release["evidence_boundary"] = EVIDENCE_BOUNDARY
     release["notes"] = (
-        "A3 Option B engine + A4 mock-gtm-ship + A5 product-root barry/ HITL "
-        "cards (Claims Lock → spot-check → pack approve). engine/barry "
-        "templates retained. codex schemas = pointer. 0.1.1: manifests exclude "
-        "themselves (self-reference fix); regenerate with "
+        "v0.2.0: pack envelope at repo root (ADR 0012 repo-link door); "
+        "engine/ = single SoT (Option B); one release record + loop-shaped "
+        "skill; Campaign Plan slot 7 (ADR 0016); interim Voice Bank "
+        "(ADR 0015); run.sh one-command door (ADR 0014). Manifests exclude "
+        "themselves, runs/, and packages/; regenerate with "
         "scripts/regen_manifests.py (STRUCTURAL_INTEGRITY_ONLY)."
     )
     release["files"] = [
         {"path": p, "sha256": s, "bytes": b} for p in files for s, b in [digest(p)]
     ]
 
-    docs["version"] = "0.1.1"
+    docs["version"] = "0.2.0"
     docs["files"] = [
         {"path": p, "sha256": s} for p in doc_files for s, _ in [digest(p)]
     ]
@@ -96,7 +111,7 @@ def main():
     print(
         f"release-manifest.json: {len(release['files'])} files; "
         f"documentation-manifest.json: {len(docs['files'])} files; "
-        f"version 0.1.1; manifests self-excluded."
+        f"version 0.2.0; manifests self-excluded."
     )
     return 0
 
