@@ -2,6 +2,14 @@
 
 ## 0.1.0 — 2026-09-07
 
+### A5 — Barry HITL cards (product-root `barry/`)
+
+- Critiquito Important nit: OPERATE/FIRST-RUN/barry clarify draft first real then spot-check then remaining; product-root `barry/` vs `engine/barry/` humans-vs-templates line.
+- Human card pack: `barry/README.md`, `claims-lock.md`, `spot-check.md`, `pack-approve.md` (three gates in order).
+- Docs/skill aligned: START-HERE, FIRST-RUN, OPERATE, SKILL, capability-and-authority, TRUST, VALIDATION point at `barry/` gates.
+- Locks: WIP=1; Writer≠Barry; Slack thumbs ≠ approve; no invent $; no auto-publish; no HubSpot before pack approve; HOLD 1/5/6 HELD-skip; first real spot-check = blog.
+- Coexists with `engine/barry/` templates from A3; does not delete or replace engine templates.
+
 ### A3 — Wire factory engine (Option B)
 
 - Import live factory spine into `launch-factory/engine/`: schemas, scripts (`validate_ledger`, `validate_campaign`, `build_package`), adapters, fixtures, barry templates, honesty note.

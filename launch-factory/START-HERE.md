@@ -2,7 +2,7 @@
 
 **Launch Factory** turns a feature release folder into a review-ready launch package for Vista Social.
 
-You ingest one release folder (Loom walkthrough, feature outline, raw footage). The pack runs a gated spine: retrieve → voice → **Claims Lock (Barry once)** → fan-out adapters → validate ≤2 → Barry pack approve → package + honesty. Nothing auto-publishes.
+You ingest one release folder (Loom walkthrough, feature outline, raw footage). The pack runs a gated spine: retrieve → voice → **Claims Lock (Barry once)** → draft first real (blog when O1 HELD) → **spot-check** → remaining adapters → validate ≤2 → Barry pack approve → package + honesty. Nothing auto-publishes.
 
 ## Fastest path to value
 
@@ -32,3 +32,7 @@ After the first Run, expect a Claims Lock draft for Barry—not six finished ass
 - [Validation and limits](docs/VALIDATION-AND-LIMITS.md)
 - [Human gaps](docs/HUMAN-GAPS.md)
 - [Host matrix](HOST-MATRIX.md)
+
+## Barry HITL
+
+After install, Runs stop for Barry three times: Claims Lock → spot-check (on the first real **draft**) → pack approve. Order: draft first real → spot-check → remaining adapters. Cards: `barry/claims-lock.md`, `barry/spot-check.md`, `barry/pack-approve.md` (humans; not `engine/barry/` templates). Slack thumbs do not count. Nothing publishes from this pack alone.

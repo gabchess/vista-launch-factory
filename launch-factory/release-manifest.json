@@ -9,17 +9,17 @@
   ],
   "license_status": "tbd-gabe",
   "engine_placement": "option-b-sibling-engine",
-  "notes": "A3 wired Option B: engine/ schemas+scripts+adapters+fixtures+barry+honesty. codex schemas = pointer. Claude ZIP unchanged this PR (thin-pointer policy; no third tree). Hashes computed after write.",
+  "notes": "A3 Option B engine + A4 mock-gtm-ship + A5 product-root barry/ HITL cards (Claims Lock \u2192 spot-check \u2192 pack approve). engine/barry templates retained. codex schemas = pointer. Hashes computed after write.",
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "7589d0b04dac2624001c8a46c6bd97e13a53409df39cd4570b33351336ad3a32",
-      "bytes": 1382
+      "sha256": "3f3901a1094855a38b8f341c6d48a2bd502cc372fb5dc4a5dc9648a540de800f",
+      "bytes": 2125
     },
     {
       "path": "HOST-MATRIX.md",
-      "sha256": "da6500cac15dc024ce347538bd18cff258c53fb5464381666582b9d467e82134",
-      "bytes": 1777
+      "sha256": "3d86bf924fc1cbd3c6c0fc2d1e4b5dc3e8ba2affc7a382e47899deadf3e74b12",
+      "bytes": 2017
     },
     {
       "path": "LICENSE-STATUS.md",
@@ -38,18 +38,38 @@
     },
     {
       "path": "README.md",
-      "sha256": "6bc662c8483480683823a9a462986c4270ba59361bfe6e28f8fb2e94f1b6b32a",
-      "bytes": 1553
+      "sha256": "63ed8ca7a23ed9853b0f8bebd3ccfbdd6bda6c78b374d9fef40d8103b23fa802",
+      "bytes": 1736
     },
     {
       "path": "START-HERE.md",
-      "sha256": "b1c030bd10983e62307014c653d16795526a86b48f4a40d1f62fbdeec7b7f458",
-      "bytes": 2444
+      "sha256": "6c8ac72e7a1cad0c9cd550623421830618d4d3a7cde0e36ed76bc6d950824841",
+      "bytes": 3148
+    },
+    {
+      "path": "barry/README.md",
+      "sha256": "09e2f1416a1b4e5106f91ba3d33b0d18f5ed0dd132097500810abac40961e667",
+      "bytes": 1249
+    },
+    {
+      "path": "barry/claims-lock.md",
+      "sha256": "4b8738c864d12b617700c914942dd3c39d27d35dd110dfb3b3034f81da0bd5d2",
+      "bytes": 995
+    },
+    {
+      "path": "barry/pack-approve.md",
+      "sha256": "33abea2e28608de7fe2060ee322e219aaaed1cf6c59726ed4cdfd6e6529da73b",
+      "bytes": 1159
+    },
+    {
+      "path": "barry/spot-check.md",
+      "sha256": "d3c8929a8a700494b1440ec43d923a7745176de0a387415d8494e81d072786fa",
+      "bytes": 938
     },
     {
       "path": "claude/README.md",
-      "sha256": "219824eaee38a8d2857d5b14d5b5b4917d903e995774960c841bab861d485c40",
-      "bytes": 277
+      "sha256": "aebbd999f7355e807f143dcdc88f841dd13505e7617b170891d58a3051a889f0",
+      "bytes": 479
     },
     {
       "path": "claude/launch-factory-v0.1.0.zip",
@@ -63,8 +83,8 @@
     },
     {
       "path": "codex/launch-factory/SKILL.md",
-      "sha256": "a2b84ec39ee55710d666aabd178bb51cb5750721259a6707949fbf83d58b75fb",
-      "bytes": 2350
+      "sha256": "6f3ac44190783abfaba9402f6b4e84b30f2b0621bd31659cdd1f296b8809baf6",
+      "bytes": 2639
     },
     {
       "path": "codex/launch-factory/agents/.gitkeep",
@@ -93,8 +113,8 @@
     },
     {
       "path": "codex/launch-factory/knowledge/capability-and-authority.md",
-      "sha256": "2b93a2886a9f4c9833fa4a434624661609d09e7deae28afeb658615081da489e",
-      "bytes": 1401
+      "sha256": "d5ca24f5a1c67d421cd56cf9d294b2c7dd2c06b5b4eb5f4d5c3fc63b3aee5cf5",
+      "bytes": 1683
     },
     {
       "path": "codex/launch-factory/manifest.json",
@@ -128,48 +148,48 @@
     },
     {
       "path": "docs/FIRST-RUN.md",
-      "sha256": "b50ffe21669e3f479ca81f69596e110479093479886b5335744db51b514062d4",
-      "bytes": 1864
+      "sha256": "8b1510a26b5a8eaaf461393e7075a0614603504a8934a28736c247e8282f18c4",
+      "bytes": 2168
     },
     {
       "path": "docs/HUMAN-GAPS.md",
-      "sha256": "b89c279e2e26b26fe14c153bae8403f121bd870612581fec2812830ab222d568",
-      "bytes": 1259
+      "sha256": "1f0fb7d940253d15f24d7fac9a968b8833e836070f15c34b5686a16463409c8b",
+      "bytes": 1796
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
-      "sha256": "0c6c97411426c8f5da3cdbf6512ebcadbeb30a7e1d3c4fe9f8409200012230c6",
-      "bytes": 1295
+      "sha256": "c58bcdac3bcc61febc39aa62e9c762911283e9becaccfa8e95b7407fb1962360",
+      "bytes": 1723
     },
     {
       "path": "docs/INSTALL-CODEX.md",
-      "sha256": "80c371fd4e60624f483a468c65056749119dc183ffd58a37bf94579c38139e2b",
-      "bytes": 2056
+      "sha256": "39b15039b3b22178e2195f92f8a63906ff80128196ad20e98b9a40dcdb1d1e75",
+      "bytes": 2586
     },
     {
       "path": "docs/OPERATE-LAUNCH-FACTORY.md",
-      "sha256": "38940824718e8070161aee3abe4841faee6ee0b1e8308d0aec3e14ae7c872c6d",
-      "bytes": 1856
+      "sha256": "347a68f72cac5a8ab73f6a7aeca21052a40b9a44e70f05ef90b9ed2495b130af",
+      "bytes": 2255
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
-      "sha256": "3a05b9ca8eed3e2985d037e02e0c5c060be8ce31c6d965ecb5a991224dab58b8",
-      "bytes": 1305
+      "sha256": "1eebe5f44904e13b6110ce1fb1e34e6ababbce6ea796727b858a5a4be6ea8b6e",
+      "bytes": 1525
     },
     {
       "path": "docs/TRUST-PRIVACY-AND-AUTHORITY.md",
-      "sha256": "c6a132e54e96dd9f4c03e884913702bbf992584365ded394ae7b1a1d50a64b7b",
-      "bytes": 1395
+      "sha256": "2b070f63ff2996ad20ad885111b0f9b57f00e19fe8f1dfe3ffb351a825795940",
+      "bytes": 1622
     },
     {
       "path": "docs/VALIDATION-AND-LIMITS.md",
-      "sha256": "92246da09319b89379b874d0f388206767051e00666c67f354cbbd36bd6e457f",
-      "bytes": 1526
+      "sha256": "deac4abb4abebae3bf249e8046a7500da3317b05c87ebdca07a5568987389621",
+      "bytes": 1793
     },
     {
       "path": "documentation-manifest.json",
-      "sha256": "e1c13160b62f624763129fd331d6fc762d88676189d7b48b416b1e69eb01bcf6",
-      "bytes": 3619
+      "sha256": "e03c2668ec9c59d1e3baefb8d64300f883a1eee21c9ce5a81e8eb4de22ade6ff",
+      "bytes": 4247
     },
     {
       "path": "engine/README.md",
@@ -333,9 +353,8 @@
     },
     {
       "path": "release-manifest.json",
-      "sha256": "PENDING",
-      "bytes": 11425,
-      "note": "Self-hash omitted; recompute externally if needed."
+      "sha256": "a87ccf8be9a76d81d725f79061350423e4d2937496ac522adfb72e7d1c0e95f0",
+      "bytes": 12047
     }
   ]
 }

@@ -22,10 +22,12 @@ Complete one gated Run that ends in a **Claims Lock draft for Barry**, not a pub
 
 1. Ingest / retrieve from the folder.
 2. Draft Claims Lock (traceable claims only — no invent pricing/features).
-3. **Stop for Barry** on Claims Lock before fan-out.
-4. After Barry lock: **first real adapter = blog (slot 2)** (engine adapters live under `engine/adapters/`); then email (3) and changelog (4). **Skip / stub** slots 1, 5, 6 (HELD) — do not block the Run waiting on held slots. Optional: run `engine/scripts/validate_*.py` when **product-root `engine/` + Python + jsonschema** are available (skill folder alone is not enough).
-5. Validate ≤2 loops.
-6. Barry pack approve → package + honesty note (**name the HOLDs**).
+3. **Stop for Barry** on Claims Lock (`barry/claims-lock.md`) before fan-out.
+4. **Draft first real** — blog (slot 2) when O1 is HELD (engine adapters under `engine/adapters/`). **Skip / stub** slots 1, 5, 6 — do not block waiting on held slots.
+5. **Barry spot-check** that draft (`barry/spot-check.md`) — order is **draft first real → spot-check → remaining adapters** (never spot-check before a draft exists).
+6. Remaining non-HELD adapters: email (3), changelog (4). Optional: run `engine/scripts/validate_*.py` when **product-root `engine/` + Python + jsonschema** are available (skill folder alone is not enough).
+7. Validate ≤2 loops.
+8. Barry pack approve (`barry/pack-approve.md`) → package + honesty note (**name the HOLDs**).
 
 ## Do not
 
