@@ -1,0 +1,45 @@
+{
+  "campaign_id": "camp_quorum_desk_001",
+  "fixture": true,
+  "tier_blast": [
+    {
+      "channel": "changelog",
+      "slot": 4,
+      "status": "draft"
+    },
+    {
+      "channel": "email_interrupt",
+      "slot": 3,
+      "status": "draft"
+    },
+    {
+      "channel": "blog",
+      "slot": 2,
+      "status": "draft"
+    },
+    {
+      "channel": "social_video",
+      "slot": 1,
+      "status": "HELD"
+    },
+    {
+      "channel": "written_social",
+      "status": "stub",
+      "note": "depends on blog approve"
+    },
+    {
+      "channel": "login_animation",
+      "slot": 5,
+      "status": "HELD"
+    },
+    {
+      "channel": "in_app_popup",
+      "slot": 6,
+      "status": "HELD"
+    }
+  ],
+  "utm_stubs": {
+    "utm_campaign": "quorum_desk_v010_fixture",
+    "utm_source": "TBD"
+  }
+}

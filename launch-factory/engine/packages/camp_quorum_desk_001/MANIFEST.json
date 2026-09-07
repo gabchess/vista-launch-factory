@@ -1,0 +1,14 @@
+{
+  "campaign_id": "camp_quorum_desk_001",
+  "fixture": true,
+  "slots": {
+    "1": "HELD",
+    "2": "draft_review_ready",
+    "3": "draft_review_ready",
+    "4": "draft_review_ready",
+    "5": "HELD",
+    "6": "HELD"
+  },
+  "barry": "not_submitted",
+  "hubspot": "blocked_until_pack_approve"
+}

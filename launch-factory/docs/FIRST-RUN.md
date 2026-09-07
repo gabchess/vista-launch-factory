@@ -2,7 +2,7 @@
 
 ## Honesty (read first)
 
-v0.1.0 is a **bounded** Augment: Claims Lock + Barry HITL are real doors; slots **1 / 5 / 6** (social video, login animation, in-app popup) are **HOLD stubs** — not review-ready outputs. **A3:** engine is live under product-root `engine/` (schemas + structural validators + adapters). The first **real** adapter is **blog (slot 2)**. When Python is available, structural validate/package helpers in `engine/scripts/` may be used — they never publish. Do not claim a full six-pack ship from this version.
+v0.1.0 is a **bounded** Augment: Claims Lock + Barry HITL are real doors; slots **1 / 5 / 6** (social video, login animation, in-app popup) are **HOLD stubs** — not review-ready outputs. **A3:** engine is live under product-root `engine/` (schemas + structural validators + adapters). The first **real** adapter is **blog (slot 2)**. When Python is available, structural validate/package helpers in `engine/scripts/` may be used — they never publish. Do not claim a full six-pack ship from this version. **A6:** E2E proof package for mock-gtm-ship slots 2/3/4 exists at `engine/packages/camp_quorum_desk_001/` (fixture; not a live Vista ship).
 
 ## Goal
 

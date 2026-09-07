@@ -13,3 +13,5 @@ Release folder input for Launch Factory Run (A4).
 | Claim hints | `claim_hints.md` |
 
 First ask for Launch Factory: `Use Launch Factory. Run on this release folder.`
+
+**A6 E2E output:** `engine/packages/camp_quorum_desk_001/` (slots 2/3/4 claim-mapped drafts; 1/5/6 HELD). Fixture adapter copies: `adapters/`.

@@ -1,0 +1,95 @@
+{
+  "campaign_id": "camp_quorum_desk_001",
+  "release_slug": "quorum-desk-v0.1.0",
+  "fixture": true,
+  "allowed": [
+    {
+      "claim_id": "qd1",
+      "text": "Quorum Desk helps decide the next move on a live B2B opportunity: advance, validate, recover, hold, disqualify, or exit."
+    },
+    {
+      "claim_id": "qd2",
+      "text": "Quorum Desk keeps facts separate from inference (observed, buyer-stated, inferred, assumed, unknown, disputed, disconfirmed)."
+    },
+    {
+      "claim_id": "qd3",
+      "text": "Humans approve outreach, CRM changes, and commercial promises \u2014 Quorum Desk does not send or mutate systems without separately authorized tooling."
+    },
+    {
+      "claim_id": "qd4",
+      "text": "Install doors include a Codex skill folder and a Claude ZIP (parity intent)."
+    }
+  ],
+  "forbidden": [
+    {
+      "claim_id": "qf1",
+      "text": "Vista Social pricing, seat counts, or roadmap dates",
+      "reason": "not in Quorum Desk sources; fixture forbidden"
+    },
+    {
+      "claim_id": "qf2",
+      "text": "win-probability scores or guaranteed outcomes",
+      "reason": "explicit non-goal in loom/outline"
+    },
+    {
+      "claim_id": "qf3",
+      "text": "Launch Factory slots 1/5/6 complete from this fixture",
+      "reason": "HOLD"
+    }
+  ],
+  "needs_disclaimer": [
+    {
+      "claim_id": "qd0",
+      "text": "This campaign package is a labelled fixture for Launch Factory rehearsal \u2014 not a live Vista Social feature ship."
+    }
+  ],
+  "evidence": [
+    {
+      "claim_id": "qd1",
+      "source": "loom_transcript",
+      "path": "engine/fixtures/mock-gtm-ship/sources/loom_transcript.txt",
+      "quote": "buyer-decision Augment for live B2B opportunities"
+    },
+    {
+      "claim_id": "qd1",
+      "source": "loom_transcript",
+      "path": "engine/fixtures/mock-gtm-ship/sources/loom_transcript.txt",
+      "quote": "advance, validate, recover, hold, disqualify, exit"
+    },
+    {
+      "claim_id": "qd2",
+      "source": "loom_transcript",
+      "path": "engine/fixtures/mock-gtm-ship/sources/loom_transcript.txt",
+      "quote": "observed, buyer-stated, inferred, assumed, unknown, disputed, or disconfirmed"
+    },
+    {
+      "claim_id": "qd3",
+      "source": "loom_transcript",
+      "path": "engine/fixtures/mock-gtm-ship/sources/loom_transcript.txt",
+      "quote": "does not send mail, update CRM, or schedule meetings without separate authorized tooling"
+    },
+    {
+      "claim_id": "qd3",
+      "source": "github_outline",
+      "path": "engine/fixtures/mock-gtm-ship/sources/github_outline.md",
+      "quote": "No CRM write, no outbound send"
+    },
+    {
+      "claim_id": "qd4",
+      "source": "loom_transcript",
+      "path": "engine/fixtures/mock-gtm-ship/sources/loom_transcript.txt",
+      "quote": "Install: Codex skills folder or Claude ZIP"
+    },
+    {
+      "claim_id": "qd4",
+      "source": "github_outline",
+      "path": "engine/fixtures/mock-gtm-ship/sources/github_outline.md",
+      "quote": "Codex skill `quorum-desk` + Claude ZIP"
+    }
+  ],
+  "kill_switch": {
+    "armed": false,
+    "reason": null
+  },
+  "barry_claims_lock": "pending"
+}

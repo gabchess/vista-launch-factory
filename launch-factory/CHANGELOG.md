@@ -2,6 +2,14 @@
 
 ## 0.1.0 — 2026-09-07
 
+### A6 — E2E adapters on mock GTM ship (blog / email / changelog)
+
+- E2E package `engine/packages/camp_quorum_desk_001/` from `engine/fixtures/mock-gtm-ship/` (Quorum Desk fixture).
+- Claim-mapped review-ready drafts for slots **2/3/4**; slots **1/5/6** HELD honesty stubs.
+- Fixture adapters also under `engine/fixtures/mock-gtm-ship/adapters/` (canonical package above).
+- Locks: no invent Vista pricing; no auto-publish; no HubSpot send; Writer≠Barry; ADR 0001 fixture ≠ Claim Ledger; A7/A8 HOLD.
+
+
 ### A5 — Barry HITL cards (product-root `barry/`)
 
 - Critiquito Important nit: OPERATE/FIRST-RUN/barry clarify draft first real then spot-check then remaining; product-root `barry/` vs `engine/barry/` humans-vs-templates line.

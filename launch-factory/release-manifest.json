@@ -9,12 +9,12 @@
   ],
   "license_status": "tbd-gabe",
   "engine_placement": "option-b-sibling-engine",
-  "notes": "A3 Option B engine + A4 mock-gtm-ship + A5 product-root barry/ HITL cards (Claims Lock \u2192 spot-check \u2192 pack approve). engine/barry templates retained. codex schemas = pointer. Hashes computed after write.",
+  "notes": "A3 Option B engine + A4 mock-gtm-ship + A5 product-root barry/ HITL cards (Claims Lock \u2192 spot-check \u2192 pack approve). engine/barry templates retained. codex schemas = pointer. Hashes computed after write. A6 E2E package engine/packages/camp_quorum_desk_001/ (slots 2/3/4; 1/5/6 HELD). Package tree not enumerated here (same as mock-gtm-ship fixture pattern).",
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "3f3901a1094855a38b8f341c6d48a2bd502cc372fb5dc4a5dc9648a540de800f",
-      "bytes": 2125
+      "sha256": "6a439b47761ad97bff05e187ad3b7baaa2e07f9828ba1adbc0fd46dfc5cede45",
+      "bytes": 2633
     },
     {
       "path": "HOST-MATRIX.md",
@@ -148,8 +148,8 @@
     },
     {
       "path": "docs/FIRST-RUN.md",
-      "sha256": "8b1510a26b5a8eaaf461393e7075a0614603504a8934a28736c247e8282f18c4",
-      "bytes": 2168
+      "sha256": "34343db5a5bf16586b249a0c856be0e4965dd218703fbbf59ebdb10e2b9035ff",
+      "bytes": 2308
     },
     {
       "path": "docs/HUMAN-GAPS.md",

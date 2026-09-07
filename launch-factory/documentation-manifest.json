@@ -2,11 +2,11 @@
   "format": "cd-documentation-manifest/v1",
   "product": "launch-factory",
   "version": "0.1.0",
-  "claim_boundary": "Engine structural validate/package proves mechanics only \u2014 not host-activation proof, semantic quality proof, or all-six-slots claim. Slots 1/5/6 HOLD. A5 Barry HITL cards under product-root barry/ are human gates only \u2014 not publish authority.",
+  "claim_boundary": "Engine structural validate/package proves mechanics only \u2014 not host-activation proof, semantic quality proof, or all-six-slots claim. Slots 1/5/6 HOLD. A5 Barry HITL cards under product-root barry/ are human gates only \u2014 not publish authority. A6 E2E fixture package camp_quorum_desk_001 proves slots 2/3/4 draft shape only \u2014 not live Vista ship evidence.",
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "3f3901a1094855a38b8f341c6d48a2bd502cc372fb5dc4a5dc9648a540de800f"
+      "sha256": "6a439b47761ad97bff05e187ad3b7baaa2e07f9828ba1adbc0fd46dfc5cede45"
     },
     {
       "path": "HOST-MATRIX.md",
@@ -78,7 +78,7 @@
     },
     {
       "path": "docs/FIRST-RUN.md",
-      "sha256": "8b1510a26b5a8eaaf461393e7075a0614603504a8934a28736c247e8282f18c4"
+      "sha256": "34343db5a5bf16586b249a0c856be0e4965dd218703fbbf59ebdb10e2b9035ff"
     },
     {
       "path": "docs/HUMAN-GAPS.md",
