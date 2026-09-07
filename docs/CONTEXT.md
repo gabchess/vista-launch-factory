@@ -67,3 +67,25 @@ _Avoid_: soft CTA, next steps (when you mean this fork)
 **Tech Demo (Wed)**:
 A mocked/simulated interactive run of the Launch Factory with made-up data for a normie audience. Clips can feed the UGC open. Not Claims Lock evidence.
 _Avoid_: production app, live HubSpot, fixture (claims pack)
+
+**Orchestrator**:
+The front-door seat that routes any arrival (topic, file dump, release folder) into the
+right spine and owns sequencing decisions. Never drafts copy itself; never approves.
+_Avoid_: router, conductor, main agent (when you mean this seat)
+
+**Campaign Plan**:
+The seventh output: one-release, day-by-day, multi-channel sequence drawn from the same
+locked claims. Barry approves it inside the pack. Replaces "Cadence Binder" as the
+customer-facing name; cadence_binder.json remains its data shape.
+_Avoid_: content calendar, blast plan
+
+**Voice Bank**:
+The interim corpus of Vista-authored public material (Barry email seed, site copy,
+social, LinkedIn) plus the tone-and-style brief derived from it. Every voice judgment
+cites a bank item. Interim until the real brand guide lands.
+_Avoid_: brand guide, style corpus
+
+**Run Log**:
+The per-run record: inputs and hashes, claims state, adapter outputs, validation
+results, retries, gate decisions, final package path. Written by both doors.
+_Avoid_: audit trail, history (when you mean this artifact)
