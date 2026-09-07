@@ -1,7 +1,8 @@
 # Barry — Spot-check (first real slot)
 
-**Prerequisite:** Claims Lock **approved**  
-**Purpose:** One creative/copy glance before remaining adapters blast  
+**Prerequisite:** Claims Lock **approved**; first real slot already **drafted** (blog when O1 HELD)  
+**Purpose:** One creative/copy glance on that draft, then remaining adapters may continue  
+**Order:** draft first real → this spot-check → remaining non-HELD adapters  
 
 ## Which slot?
 | Situation | Spot-check target |

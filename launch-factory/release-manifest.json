@@ -13,8 +13,8 @@
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "1c6266116780dec5979abc992f99ef1dae1f1f68eb8e2b8e27ba0e3e3d96bbc1",
-      "bytes": 1949
+      "sha256": "3f3901a1094855a38b8f341c6d48a2bd502cc372fb5dc4a5dc9648a540de800f",
+      "bytes": 2125
     },
     {
       "path": "HOST-MATRIX.md",
@@ -43,13 +43,13 @@
     },
     {
       "path": "START-HERE.md",
-      "sha256": "010750f9bf255ba715ad8a565ecb79e3441fff820cafd76b39609f331943904c",
-      "bytes": 2971
+      "sha256": "6c8ac72e7a1cad0c9cd550623421830618d4d3a7cde0e36ed76bc6d950824841",
+      "bytes": 3148
     },
     {
       "path": "barry/README.md",
-      "sha256": "d4e1c703011d3b82d960f3990886ef463702fb1df4855a06f3e832baa852d128",
-      "bytes": 872
+      "sha256": "09e2f1416a1b4e5106f91ba3d33b0d18f5ed0dd132097500810abac40961e667",
+      "bytes": 1249
     },
     {
       "path": "barry/claims-lock.md",
@@ -63,8 +63,8 @@
     },
     {
       "path": "barry/spot-check.md",
-      "sha256": "5430ee94f870002a96cc7c5290d23ab96f4ee66b3c4522629e9ece6c6c4b4dde",
-      "bytes": 779
+      "sha256": "d3c8929a8a700494b1440ec43d923a7745176de0a387415d8494e81d072786fa",
+      "bytes": 938
     },
     {
       "path": "claude/README.md",
@@ -148,8 +148,8 @@
     },
     {
       "path": "docs/FIRST-RUN.md",
-      "sha256": "4523591fba20ee26ce87ea899582a0705217f5beb572684345b190f056ae9da4",
-      "bytes": 2030
+      "sha256": "8b1510a26b5a8eaaf461393e7075a0614603504a8934a28736c247e8282f18c4",
+      "bytes": 2168
     },
     {
       "path": "docs/HUMAN-GAPS.md",
@@ -168,8 +168,8 @@
     },
     {
       "path": "docs/OPERATE-LAUNCH-FACTORY.md",
-      "sha256": "bdbeb510ac9424e0ee3a7464f94f75c39901277927687c0222f79c11deaef734",
-      "bytes": 2010
+      "sha256": "347a68f72cac5a8ab73f6a7aeca21052a40b9a44e70f05ef90b9ed2495b130af",
+      "bytes": 2255
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
