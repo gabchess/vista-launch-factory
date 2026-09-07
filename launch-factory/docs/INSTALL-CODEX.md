@@ -23,8 +23,9 @@ If the skill is not found, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
 ## After install
 
 - Read [TRUST-PRIVACY-AND-AUTHORITY.md](TRUST-PRIVACY-AND-AUTHORITY.md) before uploading release materials.
-- Engine SoT is Option B under `../../engine/` (sibling of `codex/`) — schemas import lands in later tickets; do not invent a third schema tree.
-- Any scripts under `codex/launch-factory/scripts/` are **STRUCTURAL_INTEGRITY_ONLY** — they never publish.
+- Engine SoT is Option B under product-root `engine/` (sibling of `codex/`) — **A3 imported**: schemas, validators, adapters, fixtures. `codex/launch-factory/schemas/` is a pointer only; do not invent a third schema tree.
+- Run structural validators from `engine/scripts/` when Python is available (`validate_ledger`, `validate_campaign`, `build_package`). Skill-local `codex/launch-factory/scripts/` remain README-only notes — **STRUCTURAL_INTEGRITY_ONLY**; they never publish.
+- Claims Lock honesty still applies even when validators pass — Barry remains the gate.
 
 ## Dual-host
 

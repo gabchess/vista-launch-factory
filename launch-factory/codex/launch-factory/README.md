@@ -1,6 +1,6 @@
 # launch-factory (Codex skill)
 
-Version **0.1.0** — Launch Factory Augment skill stub.
+Version **0.1.0** — Launch Factory Augment skill (A3 engine wired Option B).
 
 ## Claim ceiling
 
@@ -15,14 +15,14 @@ Version **0.1.0** — Launch Factory Augment skill stub.
 
 ## self_check
 
-When structural scripts exist under `scripts/`, they are **STRUCTURAL_INTEGRITY_ONLY**:
+Canonical structural helpers live under product-root **`engine/scripts/`** (`validate_ledger`, `validate_campaign`, `build_package`). They are **STRUCTURAL_INTEGRITY_ONLY**:
 
-- Verify required files / manifest shape.
+- Verify required files / ledger / campaign shape / package mechanics.
 - Do not score brand voice.
 - Do not authorize publish.
-- Fail closed on missing Claims Lock marker when that gate is enforced by engine (later issues).
+- Fail closed on ledger kill-switch / missing evidence when validators run.
 
-Until scripts ship, treat manual checklist in `docs/VALIDATION-AND-LIMITS.md` as the ceiling.
+This skill's local `scripts/` folder is README-only. `schemas/` here is a **pointer** to `../../../engine/schemas/` — do not fork. Manual checklist: `docs/VALIDATION-AND-LIMITS.md`.
 
 ## Authority
 

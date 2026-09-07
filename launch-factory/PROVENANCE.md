@@ -5,16 +5,16 @@
 This Augment pack is built from:
 
 1. **Vista Social trial brief** — feature-release folder → six launch outputs + cadence; Barry VP Marketing as HITL gate.
-2. **Factory engine (vista/work)** — schemas, validators, adapters, and state spine (imported into `engine/` in later issues; A1 ships placeholder only).
+2. **Factory engine (vista/work SHOW-ME spine)** — schemas, validators, adapters, fixtures, barry templates, and honesty notes **imported into `engine/`** (A3 / Option B). Pack SoT = `launch-factory/engine/`. Repo-root spine remains the developer SHOW-ME mirror until later consolidation.
 3. **This pack** — customer envelope, skill door, docs, manifests, and honesty surfaces authored for Launch Factory v0.1.0.
 
 ## What this is not derived from
 
-Domain content, personas, knowledge bases, and deal-strategist materials from third-party finished packs are **not** sources for Launch Factory. Only the **package layout and claim-discipline pattern** (install door, dual-host, custody manifests, aligned HITL surfaces) informed the skeleton.
+Domain content, personas, knowledge bases, and deal-strategist materials from third-party finished packs are **not** sources for Launch Factory. Only the **package layout and claim-discipline pattern** (install door, dual-host, custody manifests, aligned HITL surfaces) informed the skeleton. Demo packages under repo-root `packages/camp_*` are run outputs, not engine SoT.
 
 ## Synthetic / placeholder material
 
-A1 contains no live Vista customer stories and invents no pricing or feature claims. Engine fixtures and demo release folders arrive in later issues and remain labelled as fixtures when present.
+Engine fixtures (`engine/fixtures/demo-release`, `engine/fixtures/vista-work`) are **labelled fixtures** (mock release folders). They do not invent live Vista pricing. Slots 1/5/6 remain HOLD honesty stubs (A7/A8). ADR 0001: Demo Assets ≠ Claim Ledger.
 
 ## Custody note
 

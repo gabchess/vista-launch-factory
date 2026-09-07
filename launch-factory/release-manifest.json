@@ -9,17 +9,17 @@
   ],
   "license_status": "tbd-gabe",
   "engine_placement": "option-b-sibling-engine",
-  "notes": "A1 skeleton. Claude ZIP deferred to A2. Engine schemas not yet imported. Hashes computed after write.",
+  "notes": "A3 wired Option B: engine/ schemas+scripts+adapters+fixtures+barry+honesty. codex schemas = pointer. Claude ZIP unchanged this PR (thin-pointer policy; no third tree). Hashes computed after write.",
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "0a5ea854b31be34fe395d2dffcdc7c06d37ce3952e57936a8bfcc649e1f0bce5",
-      "bytes": 705
+      "sha256": "7589d0b04dac2624001c8a46c6bd97e13a53409df39cd4570b33351336ad3a32",
+      "bytes": 1382
     },
     {
       "path": "HOST-MATRIX.md",
-      "sha256": "213ec22a3dc0228e0d04c883c1128fbfdbf29571be8289e1420d156750b678ae",
-      "bytes": 1416
+      "sha256": "da6500cac15dc024ce347538bd18cff258c53fb5464381666582b9d467e82134",
+      "bytes": 1777
     },
     {
       "path": "LICENSE-STATUS.md",
@@ -33,33 +33,38 @@
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "9dee977511ab1991352954f665b3839aad17bd1123a25ca119bcd725304da643",
-      "bytes": 1143
+      "sha256": "09a90b0a6ed8d9ca5c263cd16e1518ec15f8452a704dfd41992c770f459fcd0c",
+      "bytes": 1419
     },
     {
       "path": "README.md",
-      "sha256": "92114b179ec42a7eea876592770c04e4145b32eb800742ae9a76a0d5d284d5e5",
-      "bytes": 1441
+      "sha256": "6bc662c8483480683823a9a462986c4270ba59361bfe6e28f8fb2e94f1b6b32a",
+      "bytes": 1553
     },
     {
       "path": "START-HERE.md",
-      "sha256": "7f63e9cb638a41e8eec34d75edda7249672de462f2b3a42273405973b5814067",
-      "bytes": 2014
+      "sha256": "b1c030bd10983e62307014c653d16795526a86b48f4a40d1f62fbdeec7b7f458",
+      "bytes": 2444
     },
     {
       "path": "claude/README.md",
-      "sha256": "cb5c7edf67419c6249251a72bf6905369895a0ad48210cb6a2a72aacd5d0c45d",
-      "bytes": 583
+      "sha256": "219824eaee38a8d2857d5b14d5b5b4917d903e995774960c841bab861d485c40",
+      "bytes": 277
+    },
+    {
+      "path": "claude/launch-factory-v0.1.0.zip",
+      "sha256": "5e8a9f79659ab7a5b4e31ecbaf8bfe9dc33044e9714f05aed62655d0d15d43e9",
+      "bytes": 4990
     },
     {
       "path": "codex/launch-factory/README.md",
-      "sha256": "c93185f9588a596b09306f635ccefdb82546765803370ce43e2507c8b6478a35",
-      "bytes": 1009
+      "sha256": "040f063d2712c4bbdaa377142a75d6fbcd42ae0e8a156eb00b2638aa08b13f29",
+      "bytes": 1215
     },
     {
       "path": "codex/launch-factory/SKILL.md",
-      "sha256": "1ed9451608e77a9d10ff13c057bcecac1d7f1586e0c76b3603f9400cd0f73fb4",
-      "bytes": 1939
+      "sha256": "a2b84ec39ee55710d666aabd178bb51cb5750721259a6707949fbf83d58b75fb",
+      "bytes": 2350
     },
     {
       "path": "codex/launch-factory/agents/.gitkeep",
@@ -107,9 +112,9 @@
       "bytes": 0
     },
     {
-      "path": "codex/launch-factory/schemas/.gitkeep",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "path": "codex/launch-factory/schemas/README.md",
+      "sha256": "f1c85e6e7a94d6a8955c270bcd81977fc955978769ce279eaebff49c8d33e44a",
+      "bytes": 336
     },
     {
       "path": "codex/launch-factory/scripts/README.md",
@@ -123,8 +128,8 @@
     },
     {
       "path": "docs/FIRST-RUN.md",
-      "sha256": "91d639d0afb38c0c5f95d32d074d3298303d51ea5c2dc94578896b89f16e1d7e",
-      "bytes": 1118
+      "sha256": "b50ffe21669e3f479ca81f69596e110479093479886b5335744db51b514062d4",
+      "bytes": 1864
     },
     {
       "path": "docs/HUMAN-GAPS.md",
@@ -133,18 +138,18 @@
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
-      "sha256": "33729cac99b8578089349c3784e89958622b79f56d949ceea41a9fc4dfdfb554",
-      "bytes": 799
+      "sha256": "0c6c97411426c8f5da3cdbf6512ebcadbeb30a7e1d3c4fe9f8409200012230c6",
+      "bytes": 1295
     },
     {
       "path": "docs/INSTALL-CODEX.md",
-      "sha256": "2e3fd5298a00b94b4e85fb275d7bd8b4cf38d9395ccec061cd5be77d9b414845",
-      "bytes": 1048
+      "sha256": "80c371fd4e60624f483a468c65056749119dc183ffd58a37bf94579c38139e2b",
+      "bytes": 2056
     },
     {
       "path": "docs/OPERATE-LAUNCH-FACTORY.md",
-      "sha256": "9d3e64a0fc70ccdcb5beebe9f66a4f0dc18308857ad53e1d1ba35238ff2ac8be",
-      "bytes": 1380
+      "sha256": "38940824718e8070161aee3abe4841faee6ee0b1e8308d0aec3e14ae7c872c6d",
+      "bytes": 1856
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
@@ -158,18 +163,168 @@
     },
     {
       "path": "docs/VALIDATION-AND-LIMITS.md",
-      "sha256": "491eaac1f0a7ff8eb7bf6769283239627bc8570e19988a7f3cbe2f2bfbeb431e",
-      "bytes": 1175
+      "sha256": "92246da09319b89379b874d0f388206767051e00666c67f354cbbd36bd6e457f",
+      "bytes": 1526
     },
     {
       "path": "documentation-manifest.json",
-      "sha256": "984f785688307c8671731db93a59e481840e2ccee18acc1023e3868967d07eac",
-      "bytes": 3417
+      "sha256": "e1c13160b62f624763129fd331d6fc762d88676189d7b48b416b1e69eb01bcf6",
+      "bytes": 3619
     },
     {
       "path": "engine/README.md",
-      "sha256": "1f158714f0d6dc839e3aefee879bb0b6eba513d75d28359e1485cd6fdf5d38d2",
-      "bytes": 790
+      "sha256": "561478585646d63e6306931f1809231f6f7c4773edd140c6d6f7153ec3c4f59d",
+      "bytes": 3085
+    },
+    {
+      "path": "engine/adapters/01_social_video.md",
+      "sha256": "c1c4e85d92eab4acac4a0a07cffed7ccb9937429382d01f2658c725833a15f59",
+      "bytes": 329
+    },
+    {
+      "path": "engine/adapters/02_blog.md",
+      "sha256": "1c60fba14af525a22c384c3b87a42e0ac1587c0d599a69a6614c1c0be568095a",
+      "bytes": 6262
+    },
+    {
+      "path": "engine/adapters/03_email_segments.md",
+      "sha256": "28185881008923c5555c9f42d73852f8e34dee375ea9102e679e9126a93c733a",
+      "bytes": 5172
+    },
+    {
+      "path": "engine/adapters/04_changelog.md",
+      "sha256": "a9fab86f50c7ff5fa470e18b403de77dea8c272318ae6f6cf50e5fa5b60b3626",
+      "bytes": 1328
+    },
+    {
+      "path": "engine/adapters/05_login_animation.md",
+      "sha256": "b8204ec5c61d27435ca611ebffed879bc67fda6965e2a056f31527d2c3295e5e",
+      "bytes": 273
+    },
+    {
+      "path": "engine/adapters/06_in_app_popup.md",
+      "sha256": "3c2ddfaeb114f82e1257d85db8c4b73da820109210b61fbf445fa7a6641a7fa8",
+      "bytes": 273
+    },
+    {
+      "path": "engine/barry/approve-pack-template.md",
+      "sha256": "51be616b7963ca7df897851bd07ef3c95c4913bad58e48e9796141833551f0ce",
+      "bytes": 1216
+    },
+    {
+      "path": "engine/barry/claims-lock-template.md",
+      "sha256": "32dcf038fbec3a668f5b4f28eae3b5457d4b552d7954e789358e5ac5f362bc9e",
+      "bytes": 651
+    },
+    {
+      "path": "engine/fixtures/demo-release/FIXTURE_LABEL.md",
+      "sha256": "2b8c16b4861c9a1300c31bf84f9325942d1af2b6ca336664b10f11a408f2966d",
+      "bytes": 405
+    },
+    {
+      "path": "engine/fixtures/demo-release/cadence_binder.json",
+      "sha256": "370bf7f9397b068eac39f03ea2bd6fe6dc55a8ad64ae17e328c7b23b1134a4cf",
+      "bytes": 1708
+    },
+    {
+      "path": "engine/fixtures/demo-release/claim_ledger.json",
+      "sha256": "ce2f962f91d677f3479d8dfd0acbef1990833cd0833c3fe418a9652cf87f581b",
+      "bytes": 921
+    },
+    {
+      "path": "engine/fixtures/demo-release/release_campaign.json",
+      "sha256": "7d510c600cf369ddb18d43d7822265d484758870eb997fed82cd92339217bdd7",
+      "bytes": 2321
+    },
+    {
+      "path": "engine/fixtures/demo-release/sources/footage_index.json",
+      "sha256": "e4eaa2a69b764dea63e85067c5dcb66250358d0a1b32458eb0688cef0898df77",
+      "bytes": 238
+    },
+    {
+      "path": "engine/fixtures/demo-release/sources/github_outline.md",
+      "sha256": "04a4bbed0e35bec03cf6069e29b1b1bdc387ec21252b339e25bbad9e1c3e92cd",
+      "bytes": 237
+    },
+    {
+      "path": "engine/fixtures/demo-release/sources/loom_transcript.txt",
+      "sha256": "cd97de70e95c4fd5331694b11af72283eaca94cd5a022c787ed86e14d5b73bfd",
+      "bytes": 229
+    },
+    {
+      "path": "engine/fixtures/vista-work/cadence_binder.json",
+      "sha256": "e28e01f53f33dd069a7cc444531b2a07d9cc26cb6bebf9b9f23131391d38ecab",
+      "bytes": 2418
+    },
+    {
+      "path": "engine/fixtures/vista-work/claim_ledger.json",
+      "sha256": "d5a4d23559d4ba87d54f7ee96aaa580209bfb3afc988b71e60b149c3682fa80e",
+      "bytes": 3372
+    },
+    {
+      "path": "engine/fixtures/vista-work/release_campaign.json",
+      "sha256": "dfe314fe7128c2b9f5febe64404e11f10d8f0564c0d630de7005565f9431de68",
+      "bytes": 2855
+    },
+    {
+      "path": "engine/fixtures/vista-work/sources/barry_email_transcript.txt",
+      "sha256": "a6f96224e22861056bfdfa702d22413e50f190704f2b95c683475fb36cf3feba",
+      "bytes": 744
+    },
+    {
+      "path": "engine/fixtures/vista-work/sources/footage_index.json",
+      "sha256": "49529b842e1d791ac1b35713b024d27f161f8dcf433b1170699815e0d969a951",
+      "bytes": 203
+    },
+    {
+      "path": "engine/fixtures/vista-work/sources/vista_work_outline.md",
+      "sha256": "9a7be89968d84425e8e86949f42f563e42aae12dbe8fc0228bb76e912768a63e",
+      "bytes": 1151
+    },
+    {
+      "path": "engine/honesty/still-needs-human.md",
+      "sha256": "f5dd4995180ddab6b18daab74e2618b15fc9ff0929e490ff730292e3fab606e1",
+      "bytes": 930
+    },
+    {
+      "path": "engine/packages/.gitkeep",
+      "sha256": "52860a6956e9fad6b8c815f1752234924d6653514e5444be4c851cc124d9b3ba",
+      "bytes": 82
+    },
+    {
+      "path": "engine/schemas/cadence_binder.schema.json",
+      "sha256": "6158fb90a3ab886b3917a48181c0f88bbcebaaa343a494ce80198d49231e571c",
+      "bytes": 1445
+    },
+    {
+      "path": "engine/schemas/claim_ledger.schema.json",
+      "sha256": "edaf7cb9c0b6fa2c27c4987f1f0ff59024fe01868004fcd1a33ebfd21f5ef363",
+      "bytes": 2286
+    },
+    {
+      "path": "engine/schemas/release_campaign.schema.json",
+      "sha256": "bbab54bcc3551a72448f5bafee75a844a1934c16924ea8a76f75a8ac98c19f6a",
+      "bytes": 3679
+    },
+    {
+      "path": "engine/scripts/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "engine/scripts/build_package.py",
+      "sha256": "55965878df2b312fc288bbc8cc70abfe471bc9997f34351d6d19000dd2f2e2aa",
+      "bytes": 8192
+    },
+    {
+      "path": "engine/scripts/validate_campaign.py",
+      "sha256": "5a0eeeb47ae818073c77890dcc264b31f7769f4f304386fa76fc8cda11b9b5c9",
+      "bytes": 4325
+    },
+    {
+      "path": "engine/scripts/validate_ledger.py",
+      "sha256": "2f43c6ccb77e654ba92e2f5cc55991d79468b05dac8ccf42a1688c460894fde3",
+      "bytes": 2973
     },
     {
       "path": "maintainer-source/README.md",
@@ -179,7 +334,7 @@
     {
       "path": "release-manifest.json",
       "sha256": "PENDING",
-      "bytes": 5887,
+      "bytes": 11425,
       "note": "Self-hash omitted; recompute externally if needed."
     }
   ]
