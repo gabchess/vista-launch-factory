@@ -2,11 +2,15 @@
 
 ## Package
 
-Use the ZIP:
+Skill ZIP (host door):
 
 `claude/launch-factory-v0.1.0.zip`
 
-(one-root zip; same skill payload intent as `codex/launch-factory`)
+(one-root zip; mirrors `codex/launch-factory` skill payload — **not** the Option B `engine/` tree)
+
+Engine SoT (structural validate/package):
+
+`engine/` at this **product root**. Keep it reachable after install, same rule as Codex.
 
 ## Steps
 
@@ -17,7 +21,7 @@ Use the ZIP:
 5. Ask: “Use Launch Factory. Run on this release folder.”
 6. Confirm it identifies as **Launch Factory**, routes to Claims Lock before fan-out, and refuses publish/send.
 
-This package was statically packed for dual-host parity. Live Claude activation was **not** freshly verified in this release — treat activation as a host-level check. See [HOST-MATRIX.md](../HOST-MATRIX.md).
+This ZIP was statically packed for dual-host **skill-door** parity. It does **not** vendor `engine/`. Live Claude activation was **not** freshly verified — treat activation as a host-level check. See [HOST-MATRIX.md](../HOST-MATRIX.md).
 
 If install fails, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md). Prefer [INSTALL-CODEX.md](INSTALL-CODEX.md) when your host is Codex.
 
@@ -25,3 +29,4 @@ If install fails, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md). Prefer [INSTALL-
 
 - Read [TRUST-PRIVACY-AND-AUTHORITY.md](TRUST-PRIVACY-AND-AUTHORITY.md) before uploading release materials.
 - Same Barry / no auto-publish / slots 1·5·6 HOLD honesty as Codex.
+- **ZIP = skill door.** Structural engine lives at product-root `engine/` until a later thin-copy / pointer follow-up. Without `engine/` reachable: chat-only Claims Lock draft — no invent paths, no invent claims/pricing.

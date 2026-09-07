@@ -42,7 +42,13 @@ Turn a feature release folder into a gated, review-ready launch package. Retriev
 
 ## Engine
 
-Canonical SoT is sibling `engine/` at product root (Option B). A1 is placeholder — future import of `vista/work` schemas/validators/adapters. Do not create a divergent third schema set under this skill.
+Canonical SoT is sibling `engine/` at product root (**Option B — A3 wired**):
+
+- `engine/schemas/` — claim ledger, release campaign, cadence binder
+- `engine/scripts/` — `validate_ledger.py`, `validate_campaign.py`, `build_package.py` (**STRUCTURAL_INTEGRITY_ONLY**; no publish)
+- `engine/adapters/`, `engine/fixtures/`, `engine/barry/`, `engine/honesty/`
+
+This skill's `schemas/` directory is a **thin pointer** only — do not create a divergent third schema set. When Python is available, Run may invoke engine structural validators; Claims Lock honesty and Barry HITL still apply. Slots 1/5/6 remain HOLD.
 
 ## Never publish
 

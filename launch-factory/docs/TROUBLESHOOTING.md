@@ -25,7 +25,7 @@
 **Symptom:** Reviewer expects video / login / popup as final.  
 **Expected:** Slots 1/5/6 are HOLD stubs — see [HUMAN-GAPS.md](HUMAN-GAPS.md). Package must name the HOLD.
 
-## Engine schemas empty
+## Engine schemas empty or forked
 
-**Symptom:** `engine/` has README only.  
-**Expected in A1:** Option B placeholder. Schemas import in later issues; do not invent parallel schemas under the skill.
+**Symptom:** `engine/schemas/` missing, or a second schema set under `codex/launch-factory/schemas/` / Claude ZIP.  
+**Expected (A3+):** Option B SoT lives under product-root `engine/` (schemas + `engine/scripts/` validators). Codex `schemas/` is a pointer only — do not invent a parallel tree. If `engine/` looks empty, you are on a pre-A3 checkout; pull main / this PR.

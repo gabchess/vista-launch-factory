@@ -2,7 +2,7 @@
 
 ## Honesty (read first)
 
-v0.1.0 is a **bounded** Augment: Claims Lock + Barry HITL are real doors; slots **1 / 5 / 6** (social video, login animation, in-app popup) are **HOLD stubs** — not review-ready outputs. The first **real** adapter when the engine is live is **blog (slot 2)**. Do not claim a full six-pack ship from this version.
+v0.1.0 is a **bounded** Augment: Claims Lock + Barry HITL are real doors; slots **1 / 5 / 6** (social video, login animation, in-app popup) are **HOLD stubs** — not review-ready outputs. **A3:** engine is live under product-root `engine/` (schemas + structural validators + adapters). The first **real** adapter is **blog (slot 2)**. When Python is available, structural validate/package helpers in `engine/scripts/` may be used — they never publish. Do not claim a full six-pack ship from this version.
 
 ## Goal
 
@@ -23,7 +23,7 @@ Complete one gated Run that ends in a **Claims Lock draft for Barry**, not a pub
 1. Ingest / retrieve from the folder.
 2. Draft Claims Lock (traceable claims only — no invent pricing/features).
 3. **Stop for Barry** on Claims Lock before fan-out.
-4. After Barry lock: **first real adapter = blog (slot 2)** when engine is live; then email (3) and changelog (4). **Skip / stub** slots 1, 5, 6 (HELD) — do not block the Run waiting on held slots.
+4. After Barry lock: **first real adapter = blog (slot 2)** (engine adapters live under `engine/adapters/`); then email (3) and changelog (4). **Skip / stub** slots 1, 5, 6 (HELD) — do not block the Run waiting on held slots. Optional: run `engine/scripts/validate_*.py` when **product-root `engine/` + Python + jsonschema** are available (skill folder alone is not enough).
 5. Validate ≤2 loops.
 6. Barry pack approve → package + honesty note (**name the HOLDs**).
 

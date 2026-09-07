@@ -14,7 +14,7 @@ You ingest one release folder (Loom walkthrough, feature outline, raw footage). 
 
 After the first Run, expect a Claims Lock draft for Barry—not six finished assets yet.
 
-**v0.1.0 honesty:** Run *today* is a gated conversation that produces a Claims Lock **draft shape**. The structural engine under `engine/` is not imported yet — do **not** treat chat output as ledger-validated or package-validated. Barry remains the quality gate for copy and creative. See [Trust, privacy, and authority](docs/TRUST-PRIVACY-AND-AUTHORITY.md).
+**v0.1.0 honesty (A3):** The structural engine is imported under product-root `engine/` (Option B). Keep that product root reachable after host install — copying only `codex/launch-factory` into `skills/` does **not** bring `engine/` along. When product-root `engine/` + Python are available, Run can use `engine/scripts/` structural validators (`validate_ledger`, `validate_campaign`, `build_package`) — **STRUCTURAL_INTEGRITY_ONLY**; no publish. If `engine/` is missing, Run is chat-only Claims Lock **draft shape** (fail closed; no invent claims/pricing). Barry remains the quality gate for copy and creative. Slots 1/5/6 HOLD. Claude ZIP is a skill door only (engine not inside the ZIP). See [Trust, privacy, and authority](docs/TRUST-PRIVACY-AND-AUTHORITY.md) and [engine/README.md](engine/README.md).
 
 ## What Launch Factory is not
 

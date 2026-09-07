@@ -8,20 +8,21 @@
 - Do not claim “all six review-ready” while slots 1/5/6 are HOLD.
 - Structural scripts prove package mechanics, not marketing judgment or brand quality.
 
-## Verified in this skeleton release
+## Verified in this release (A3)
 
 - Pack tree and custody files present (inspection).
 - HITL / non-goals text aligned across START-HERE, SKILL, capability-and-authority, TRUST, VALIDATION, HOST-MATRIX, skill README.
 - Explicit exclusions: auto-publish, auto-send, invent claims.
+- **Engine Option B present** under `engine/` (schemas, `validate_ledger` / `validate_campaign` / `build_package`, adapters, fixtures). Local Python prove: validators OK on `engine/fixtures/vista-work`; repo-root `pytest -q` 13 passed.
+- `codex/launch-factory/schemas/` is pointer-only — one canonical schema set.
 
 ## Not verified
 
 - Fresh-host discovery or automatic activation (Codex or Claude).
-- Engine schema import from `vista/work` (A1 placeholder only).
-- Semantic fan-out quality for blog/email/changelog.
+- Semantic fan-out quality for blog/email/changelog (adapters present; judgment not scored).
 - Live HubSpot, CMS, or social behavior (excluded).
-- Claude ZIP install (A2).
 - Grok-crew host behavior.
 - Accessibility or formal compliance testing.
+- A7/A8 encode/assets for slots 1/5/6 (HOLD).
 
-See also [HOST-MATRIX.md](../HOST-MATRIX.md).
+See also [HOST-MATRIX.md](../HOST-MATRIX.md) and [engine/README.md](../engine/README.md).
