@@ -12,7 +12,9 @@ You ingest one release folder (Loom walkthrough, feature outline, raw footage). 
 4. Point Launch Factory at one release folder with the strongest materials you have.
 5. Start with: **“Run Launch Factory on this release folder.”**
 
-After the first Run, expect a Claims Lock draft for Barry—not six finished assets yet. Barry remains the quality gate for copy and creative. See [Trust, privacy, and authority](docs/TRUST-PRIVACY-AND-AUTHORITY.md).
+After the first Run, expect a Claims Lock draft for Barry—not six finished assets yet.
+
+**v0.1.0 honesty:** Run *today* is a gated conversation that produces a Claims Lock **draft shape**. The structural engine under `engine/` is not imported yet — do **not** treat chat output as ledger-validated or package-validated. Barry remains the quality gate for copy and creative. See [Trust, privacy, and authority](docs/TRUST-PRIVACY-AND-AUTHORITY.md).
 
 ## What Launch Factory is not
 
