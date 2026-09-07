@@ -2,7 +2,7 @@
 
 | Capability | Codex package | Claude package | Grok-crew / leave-behind | Evidence level |
 |---|---:|---:|---:|---|
-| Skill / pack files included | Yes (`codex/launch-factory/`) | Yes (`claude/launch-factory-v0.1.0.zip`) | N/A for this pack | Package inspection |
+| Skill / pack files included | Yes (`codex/launch-factory/`) | Yes (`claude/launch-factory-v0.1.1.zip`) | N/A for this pack | Package inspection |
 | Canonical engine schemas | **Present** at product-root `engine/schemas/` (Option B SoT) | **Not inside ZIP** — same SoT only when product-root `engine/` is kept reachable | Not claimed | A3 files present under `engine/`; ZIP is skill door only |
 | Structural helper scripts | **Present** (`engine/scripts/` when product root kept; skill `scripts/` README only) | Same rule — needs product-root `engine/`, not the ZIP alone | Not included | STRUCTURAL_INTEGRITY_ONLY — proven via local Python on product tree; host activation unverified |
 | Persistent release-run state | Host and workspace dependent | Project/file dependent | Unknown | Not freshly host-verified |

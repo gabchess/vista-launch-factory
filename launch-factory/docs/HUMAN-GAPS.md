@@ -1,6 +1,6 @@
 # Human gaps (honesty first-class)
 
-Launch Factory v0.1.0 is an installable Augment with a **wired Option B engine**. Be explicit about what still needs a human and what is held.
+Launch Factory v0.1.1 is an installable Augment with a **wired Option B engine**. Be explicit about what still needs a human and what is held.
 
 ## Barry-required
 
@@ -26,7 +26,7 @@ Still human: Claims Lock, pack approve, publish/send decisions. Slots **1 / 5 / 
 
 ## Dual-host
 
-Claude ZIP is present (`claude/launch-factory-v0.1.0.zip`) with Codex skill door. Fresh-host activation remains unverified — see HOST-MATRIX. Folder/ZIP visible ≠ Augment active. Claude ZIP must not fork a second schema tree; canonical schemas stay under `engine/`.
+Claude ZIP is present (`claude/launch-factory-v0.1.1.zip`) with Codex skill door. Fresh-host activation remains unverified — see HOST-MATRIX. Folder/ZIP visible ≠ Augment active. Claude ZIP must not fork a second schema tree; canonical schemas stay under `engine/`.
 
 ## Still human for good reasons
 

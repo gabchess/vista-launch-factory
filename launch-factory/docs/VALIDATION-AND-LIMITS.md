@@ -1,6 +1,6 @@
 # Validation and limits
 
-## Claim ceilings (v0.1.0)
+## Claim ceilings (v0.1.1)
 
 - Every claim must trace to release-folder source (outline, transcript, approved brand doc).
 - **No invent pricing.** No invent features, limits, or competitive claims.

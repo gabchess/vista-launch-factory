@@ -1,10 +1,10 @@
-Launch Factory — T-NOVA v0.1.0
+Launch Factory — T-NOVA v0.1.1
 Vista Social GTM launch pack
 
 Authority / voice card
 ----------------------
 Product: Launch Factory
-Version: 0.1.0
+Version: 0.1.1
 Category: GTM launch operations Augment
 Promise: Release folder → review-ready launch package (gated)
 Spine: ingest → retrieve → Claims Lock (Barry once) → adapters → validate≤2 → Barry pack approve → package + honesty
@@ -22,7 +22,7 @@ Nothing auto-publishes. Nothing auto-sends.
 Writer / adapters ≠ Barry.
 CIO tooling ≠ Vista ESP.
 
-Holds (v0.1.0 honesty)
+Holds (v0.1.1 honesty)
 ----------------------
 Slot 1 social video + burned captions: HOLD stub
 Slot 5 login animation: HOLD stub

@@ -1,4 +1,4 @@
-# Launch Factory v0.1.0
+# Launch Factory v0.1.1
 
 **Vista Social GTM launch pack.** Release folder in → gated launch package out → Barry HITL.
 
@@ -32,4 +32,4 @@ Begin with [START-HERE.md](START-HERE.md). Engine run notes: [engine/README.md](
 
 ## Version
 
-`0.1.0` — Augment skeleton + **A3 engine wire** (Option B) + **A5 Barry HITL cards** under product-root `barry/`. A7/A8 video/asset tracks HOLD. No auto-publish.
+`0.1.1` — Augment skeleton + **A3 engine wire** (Option B) + **A5 Barry HITL cards** under product-root `barry/`. A7/A8 video/asset tracks HOLD. No auto-publish.

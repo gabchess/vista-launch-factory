@@ -24,7 +24,7 @@ Slots marked **HOLD** are **skipped for completion**, not blocked forever:
 - **First real adapter = blog (slot 2)** when the engine is live, then email (3) and changelog (4).
 - Never fake held outputs to look like a six-pack.
 
-## Slot map (v0.1.0)
+## Slot map (v0.1.1)
 
 | Slot | Output | Status | Operate rule |
 |---|---|---|---|

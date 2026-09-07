@@ -2,48 +2,48 @@
   "format": "cd-customer-release/v1",
   "product": "launch-factory",
   "product_name": "Launch Factory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "targets": [
     "codex",
     "claude"
   ],
   "license_status": "tbd-gabe",
   "engine_placement": "option-b-sibling-engine",
-  "notes": "A3 Option B engine + A4 mock-gtm-ship + A5 product-root barry/ HITL cards (Claims Lock \u2192 spot-check \u2192 pack approve). engine/barry templates retained. codex schemas = pointer. Hashes computed after write.",
+  "notes": "A3 Option B engine + A4 mock-gtm-ship + A5 product-root barry/ HITL cards (Claims Lock → spot-check → pack approve). engine/barry templates retained. codex schemas = pointer. 0.1.1: manifests exclude themselves (self-reference fix); regenerate with scripts/regen_manifests.py (STRUCTURAL_INTEGRITY_ONLY).",
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "3f3901a1094855a38b8f341c6d48a2bd502cc372fb5dc4a5dc9648a540de800f",
-      "bytes": 2125
+      "sha256": "4818ac8be096cb7d3e04e5694c3e3497b3fe5552597c03259ec7bbb376582d94",
+      "bytes": 3364
     },
     {
       "path": "HOST-MATRIX.md",
-      "sha256": "3d86bf924fc1cbd3c6c0fc2d1e4b5dc3e8ba2affc7a382e47899deadf3e74b12",
+      "sha256": "d2f72e21c14af4c18c3efed6071ab9e9c358837e5e779f3991c62bb299ec5af6",
       "bytes": 2017
     },
     {
       "path": "LICENSE-STATUS.md",
-      "sha256": "c4d46bcd135f9746c2951071e489105ef463ba968ccc6227133fcf47b472222b",
+      "sha256": "7899c76992cde15387319fb54cde54f2ad6b6fe72c36703b50c94a82caacdc5a",
       "bytes": 423
     },
     {
-      "path": "Launch Factory T-NOVA v0.1.0.txt",
-      "sha256": "be7825a89cf0b72f0a6a1e2890885fad6daa8a2267095e557a8bb216bf019680",
+      "path": "Launch Factory T-NOVA v0.1.1.txt",
+      "sha256": "fecdc76e55e137d61d1a095ebe88732e566294cd230f9cc55ac5151c58ef8fc7",
       "bytes": 1117
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "09a90b0a6ed8d9ca5c263cd16e1518ec15f8452a704dfd41992c770f459fcd0c",
+      "sha256": "07dafcc324fccf021a8f5943b98e759fe57bbdae626f0b716e4d24b756b95ba1",
       "bytes": 1419
     },
     {
       "path": "README.md",
-      "sha256": "63ed8ca7a23ed9853b0f8bebd3ccfbdd6bda6c78b374d9fef40d8103b23fa802",
+      "sha256": "7636ae4e75299ea19d0158c37d4c4ef57ba1b4cadbb5595cd1b317f682c40b01",
       "bytes": 1736
     },
     {
       "path": "START-HERE.md",
-      "sha256": "6c8ac72e7a1cad0c9cd550623421830618d4d3a7cde0e36ed76bc6d950824841",
+      "sha256": "5020cb87cb97b422db723f1bad285eac68cab35a85464311f14de8a51e2f950e",
       "bytes": 3148
     },
     {
@@ -68,17 +68,17 @@
     },
     {
       "path": "claude/README.md",
-      "sha256": "aebbd999f7355e807f143dcdc88f841dd13505e7617b170891d58a3051a889f0",
+      "sha256": "1ae76999c500a407813726bdcc479b406f2acd086f782f9db47024d41a3f1552",
       "bytes": 479
     },
     {
-      "path": "claude/launch-factory-v0.1.0.zip",
-      "sha256": "5e8a9f79659ab7a5b4e31ecbaf8bfe9dc33044e9714f05aed62655d0d15d43e9",
-      "bytes": 4990
+      "path": "claude/launch-factory-v0.1.1.zip",
+      "sha256": "126c4b23888a0a0cd01c92895d43136f8ebc6cf4c4de076db669b3b8ef763425",
+      "bytes": 23360
     },
     {
       "path": "codex/launch-factory/README.md",
-      "sha256": "040f063d2712c4bbdaa377142a75d6fbcd42ae0e8a156eb00b2638aa08b13f29",
+      "sha256": "9ad987ef678c614c43513255dfc1076ca4ef28a1b3220fedd67e55150dc3c419",
       "bytes": 1215
     },
     {
@@ -97,19 +97,39 @@
       "bytes": 0
     },
     {
-      "path": "codex/launch-factory/evals/.gitkeep",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "path": "codex/launch-factory/evals/core-transfer-cases.yaml",
+      "sha256": "db5b114e9bef9b11106df64bca5882a508a2241c46089a9897b670f256fd8cd8",
+      "bytes": 4854
     },
     {
-      "path": "codex/launch-factory/examples/.gitkeep",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "path": "codex/launch-factory/evals/eval-manifest.yaml",
+      "sha256": "52e79c0b8fbb545ea98c5477daa8901a5c490f2049d1bca03edb46124c01033f",
+      "bytes": 366
     },
     {
-      "path": "codex/launch-factory/fallbacks/.gitkeep",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "path": "codex/launch-factory/examples/01-claims-lock-walkthrough.md",
+      "sha256": "2c749aed13628b01a58e7086ffcf57cbaec2d0a8edd07078f2d8fad5d3e7d26c",
+      "bytes": 2435
+    },
+    {
+      "path": "codex/launch-factory/examples/02-blog-adapter-draft.md",
+      "sha256": "9242c647f5a2f3e32062440a43f4fac6e5071654ccb33d2dad515052bad58e59",
+      "bytes": 2317
+    },
+    {
+      "path": "codex/launch-factory/examples/03-held-slot-honesty.md",
+      "sha256": "69c64c2dc600799de38d3e6592aac7e71a1c86acd34aaa727cf37abefedf465b",
+      "bytes": 1873
+    },
+    {
+      "path": "codex/launch-factory/fallbacks/degraded-capability.md",
+      "sha256": "1a423b6359da07f963119f2d59d68b729c619370c8939ddf1af4e02e4f1e1ce9",
+      "bytes": 2143
+    },
+    {
+      "path": "codex/launch-factory/fallbacks/universal-copy-paste-workflow.md",
+      "sha256": "952f9a6e18ec3a4f9a6e14f9d20546e1c14b8ff6c8d0f3b1d3f4436c1719b8f2",
+      "bytes": 3648
     },
     {
       "path": "codex/launch-factory/knowledge/capability-and-authority.md",
@@ -118,18 +138,23 @@
     },
     {
       "path": "codex/launch-factory/manifest.json",
-      "sha256": "9339192ee616be7918a456a2017918ca2b9bf9dafbdec0f6d27fcf484e76110f",
+      "sha256": "41b8963db46c80848fa739761564e315e235bb077b045967971cc02b4d83bd3f",
       "bytes": 671
     },
     {
-      "path": "codex/launch-factory/personas/.gitkeep",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "path": "codex/launch-factory/personas/barry-seat.md",
+      "sha256": "6fbc105770ab03916082e2f4049c50bda6dcdf4716061e16474e4730e2e73897",
+      "bytes": 2564
     },
     {
-      "path": "codex/launch-factory/references/.gitkeep",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
+      "path": "codex/launch-factory/personas/writer-seat.md",
+      "sha256": "69f9cfac7c2fee47e8051e76fb78df9096e9906b1ea4d5a66e4637a19813fe3c",
+      "bytes": 2650
+    },
+    {
+      "path": "codex/launch-factory/references/run-log-template.md",
+      "sha256": "de7e1ac1ccc7664c5eeddf8f515ba27b87574b91a383b4e2ae54a90de62ced03",
+      "bytes": 3009
     },
     {
       "path": "codex/launch-factory/schemas/README.md",
@@ -142,23 +167,28 @@
       "bytes": 438
     },
     {
+      "path": "codex/launch-factory/trigger-evals.json",
+      "sha256": "6ac68b6c5898641a1f6b126a0a41ba472d32073976136d3c68c3ce52927cb25b",
+      "bytes": 1422
+    },
+    {
       "path": "docs/DOCUMENTATION-CUSTODY.md",
-      "sha256": "a56a17b7daaaf94c8e3405c38d60ff33430a66e0d8282472693979bbe312fe22",
+      "sha256": "75689665120bc0b7fe2bfbe25dbf5a73c83c96f2eb159422fb75744e80ee418c",
       "bytes": 974
     },
     {
       "path": "docs/FIRST-RUN.md",
-      "sha256": "8b1510a26b5a8eaaf461393e7075a0614603504a8934a28736c247e8282f18c4",
+      "sha256": "7aeadfebc6488e5ffa5fb0b29069cd81c2a42e0d84ca98c14639e808b2c05e84",
       "bytes": 2168
     },
     {
       "path": "docs/HUMAN-GAPS.md",
-      "sha256": "1f0fb7d940253d15f24d7fac9a968b8833e836070f15c34b5686a16463409c8b",
+      "sha256": "081400b364d690b0cedba4b2c664d049210a33f97055c2b768198a5e41fa0081",
       "bytes": 1796
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
-      "sha256": "c58bcdac3bcc61febc39aa62e9c762911283e9becaccfa8e95b7407fb1962360",
+      "sha256": "6d80c060bcd9645fa61940a3189ede662a3c6cc0da48896fe4de42cd63bb1c6f",
       "bytes": 1723
     },
     {
@@ -168,12 +198,12 @@
     },
     {
       "path": "docs/OPERATE-LAUNCH-FACTORY.md",
-      "sha256": "347a68f72cac5a8ab73f6a7aeca21052a40b9a44e70f05ef90b9ed2495b130af",
+      "sha256": "a553ef4f57628c872d356b90316ef9a69ad61f40b435be08c44bdb1c6cff8f88",
       "bytes": 2255
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
-      "sha256": "1eebe5f44904e13b6110ce1fb1e34e6ababbce6ea796727b858a5a4be6ea8b6e",
+      "sha256": "8488a2bb0caa00f828133e7412ecb78386430eea64dd33d44b1791c04962c2cd",
       "bytes": 1525
     },
     {
@@ -183,13 +213,8 @@
     },
     {
       "path": "docs/VALIDATION-AND-LIMITS.md",
-      "sha256": "deac4abb4abebae3bf249e8046a7500da3317b05c87ebdca07a5568987389621",
+      "sha256": "172343ff721b72ba57a1b91572dfab9da8b6940717235a69a92d43b22fe4ea27",
       "bytes": 1793
-    },
-    {
-      "path": "documentation-manifest.json",
-      "sha256": "e03c2668ec9c59d1e3baefb8d64300f883a1eee21c9ce5a81e8eb4de22ade6ff",
-      "bytes": 4247
     },
     {
       "path": "engine/README.md",
@@ -237,6 +262,11 @@
       "bytes": 651
     },
     {
+      "path": "engine/fixtures/README.md",
+      "sha256": "87fbf09688ea601d82a565f9041fcf7aa70652a244f0fdf78961761e93870004",
+      "bytes": 387
+    },
+    {
       "path": "engine/fixtures/demo-release/FIXTURE_LABEL.md",
       "sha256": "2b8c16b4861c9a1300c31bf84f9325942d1af2b6ca336664b10f11a408f2966d",
       "bytes": 405
@@ -270,6 +300,51 @@
       "path": "engine/fixtures/demo-release/sources/loom_transcript.txt",
       "sha256": "cd97de70e95c4fd5331694b11af72283eaca94cd5a022c787ed86e14d5b73bfd",
       "bytes": 229
+    },
+    {
+      "path": "engine/fixtures/mock-gtm-ship/FIXTURE_LABEL.md",
+      "sha256": "668c250c32a7a955346b4347f306f1ed7551836e05b1eca57e5a74bb3c591a5f",
+      "bytes": 836
+    },
+    {
+      "path": "engine/fixtures/mock-gtm-ship/README.md",
+      "sha256": "7ba5f35fdbd5d30a7c5f61ab531754f41ec5e9b086e3a95d576a252c36456f76",
+      "bytes": 578
+    },
+    {
+      "path": "engine/fixtures/mock-gtm-ship/augment/Quorum Desk T-NOVA v0.1.0.txt",
+      "sha256": "ab1ebb7febe62578bf15f03664ad242c8ffcc1e14235ef2e1fec3dc59e35a830",
+      "bytes": 383
+    },
+    {
+      "path": "engine/fixtures/mock-gtm-ship/augment/Quorum-Desk-Buyer-Decision-v0.1.0.zip",
+      "sha256": "615f0978d9984bfa697477e321582c47647229c69c713a2432c5947f1bcea05c",
+      "bytes": 10094
+    },
+    {
+      "path": "engine/fixtures/mock-gtm-ship/claim_hints.md",
+      "sha256": "c9e415950a151cbb0cd98bc190b71d30053ac1bea67f55f9cdad9415cf648bc9",
+      "bytes": 665
+    },
+    {
+      "path": "engine/fixtures/mock-gtm-ship/emails/changelog-whats-new.md",
+      "sha256": "33608af08f7b9a875e12ef9130c47835f6231f16225f2a5d1f3900026c6188d5",
+      "bytes": 752
+    },
+    {
+      "path": "engine/fixtures/mock-gtm-ship/sources/footage_index.json",
+      "sha256": "50494c334938a38f6c297f78abc50faa3c14ce37342927ca15355a932d3d109d",
+      "bytes": 425
+    },
+    {
+      "path": "engine/fixtures/mock-gtm-ship/sources/github_outline.md",
+      "sha256": "83acabf8a67b02e54257c391c65473ae4473e03059564f67439a0a5b53d50d02",
+      "bytes": 635
+    },
+    {
+      "path": "engine/fixtures/mock-gtm-ship/sources/loom_transcript.txt",
+      "sha256": "ec2eab90e813c1ee5377b862d4550e3b899197973696165111012a1219d8fa3a",
+      "bytes": 736
     },
     {
       "path": "engine/fixtures/vista-work/cadence_binder.json",
@@ -352,9 +427,10 @@
       "bytes": 343
     },
     {
-      "path": "release-manifest.json",
-      "sha256": "a87ccf8be9a76d81d725f79061350423e4d2937496ac522adfb72e7d1c0e95f0",
-      "bytes": 12047
+      "path": "scripts/regen_manifests.py",
+      "sha256": "141d3453ec8fe5a433efc77b79d7d284691f0745e59ff5996b71fa7379818af4",
+      "bytes": 3860
     }
-  ]
+  ],
+  "evidence_boundary": "Proves pack structure, file integrity (sha256/bytes), and documented Barry HITL gates only. Does not prove live host activation, semantic output quality, or customer outcomes; slots 1/5/6 are HELD and A7/A8 remain HOLD. See HOST-MATRIX.md."
 }

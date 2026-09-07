@@ -1,7 +1,7 @@
 {
   "name": "launch-factory",
   "product_name": "Launch Factory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "category": "GTM Launch Operations",
   "headline": "Release folder to review-ready launch package — Barry HITL.",
   "format": "cd-augment-skill/v1",

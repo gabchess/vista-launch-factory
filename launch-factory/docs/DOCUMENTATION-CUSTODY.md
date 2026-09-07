@@ -22,4 +22,4 @@ These must stay lockstep on HITL / non-goals:
 
 ## Version
 
-Documentation in this tree is for **Launch Factory v0.1.0** (skeleton). Update `CHANGELOG.md` and manifests when docs change claim boundaries.
+Documentation in this tree is for **Launch Factory v0.1.1** (skeleton). Update `CHANGELOG.md` and manifests when docs change claim boundaries.

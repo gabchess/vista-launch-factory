@@ -1,36 +1,36 @@
 {
   "format": "cd-documentation-manifest/v1",
   "product": "launch-factory",
-  "version": "0.1.0",
-  "claim_boundary": "Engine structural validate/package proves mechanics only \u2014 not host-activation proof, semantic quality proof, or all-six-slots claim. Slots 1/5/6 HOLD. A5 Barry HITL cards under product-root barry/ are human gates only \u2014 not publish authority.",
+  "version": "0.1.1",
+  "claim_boundary": "Engine structural validate/package proves mechanics only — not host-activation proof, semantic quality proof, or all-six-slots claim. Slots 1/5/6 HOLD. A5 Barry HITL cards under product-root barry/ are human gates only — not publish authority.",
   "files": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "3f3901a1094855a38b8f341c6d48a2bd502cc372fb5dc4a5dc9648a540de800f"
+      "sha256": "4818ac8be096cb7d3e04e5694c3e3497b3fe5552597c03259ec7bbb376582d94"
     },
     {
       "path": "HOST-MATRIX.md",
-      "sha256": "3d86bf924fc1cbd3c6c0fc2d1e4b5dc3e8ba2affc7a382e47899deadf3e74b12"
+      "sha256": "d2f72e21c14af4c18c3efed6071ab9e9c358837e5e779f3991c62bb299ec5af6"
     },
     {
       "path": "LICENSE-STATUS.md",
-      "sha256": "c4d46bcd135f9746c2951071e489105ef463ba968ccc6227133fcf47b472222b"
+      "sha256": "7899c76992cde15387319fb54cde54f2ad6b6fe72c36703b50c94a82caacdc5a"
     },
     {
-      "path": "Launch Factory T-NOVA v0.1.0.txt",
-      "sha256": "be7825a89cf0b72f0a6a1e2890885fad6daa8a2267095e557a8bb216bf019680"
+      "path": "Launch Factory T-NOVA v0.1.1.txt",
+      "sha256": "fecdc76e55e137d61d1a095ebe88732e566294cd230f9cc55ac5151c58ef8fc7"
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "09a90b0a6ed8d9ca5c263cd16e1518ec15f8452a704dfd41992c770f459fcd0c"
+      "sha256": "07dafcc324fccf021a8f5943b98e759fe57bbdae626f0b716e4d24b756b95ba1"
     },
     {
       "path": "README.md",
-      "sha256": "63ed8ca7a23ed9853b0f8bebd3ccfbdd6bda6c78b374d9fef40d8103b23fa802"
+      "sha256": "7636ae4e75299ea19d0158c37d4c4ef57ba1b4cadbb5595cd1b317f682c40b01"
     },
     {
       "path": "START-HERE.md",
-      "sha256": "6c8ac72e7a1cad0c9cd550623421830618d4d3a7cde0e36ed76bc6d950824841"
+      "sha256": "5020cb87cb97b422db723f1bad285eac68cab35a85464311f14de8a51e2f950e"
     },
     {
       "path": "barry/README.md",
@@ -50,19 +50,51 @@
     },
     {
       "path": "claude/README.md",
-      "sha256": "aebbd999f7355e807f143dcdc88f841dd13505e7617b170891d58a3051a889f0"
+      "sha256": "1ae76999c500a407813726bdcc479b406f2acd086f782f9db47024d41a3f1552"
     },
     {
       "path": "codex/launch-factory/README.md",
-      "sha256": "040f063d2712c4bbdaa377142a75d6fbcd42ae0e8a156eb00b2638aa08b13f29"
+      "sha256": "9ad987ef678c614c43513255dfc1076ca4ef28a1b3220fedd67e55150dc3c419"
     },
     {
       "path": "codex/launch-factory/SKILL.md",
       "sha256": "6f3ac44190783abfaba9402f6b4e84b30f2b0621bd31659cdd1f296b8809baf6"
     },
     {
+      "path": "codex/launch-factory/examples/01-claims-lock-walkthrough.md",
+      "sha256": "2c749aed13628b01a58e7086ffcf57cbaec2d0a8edd07078f2d8fad5d3e7d26c"
+    },
+    {
+      "path": "codex/launch-factory/examples/02-blog-adapter-draft.md",
+      "sha256": "9242c647f5a2f3e32062440a43f4fac6e5071654ccb33d2dad515052bad58e59"
+    },
+    {
+      "path": "codex/launch-factory/examples/03-held-slot-honesty.md",
+      "sha256": "69c64c2dc600799de38d3e6592aac7e71a1c86acd34aaa727cf37abefedf465b"
+    },
+    {
+      "path": "codex/launch-factory/fallbacks/degraded-capability.md",
+      "sha256": "1a423b6359da07f963119f2d59d68b729c619370c8939ddf1af4e02e4f1e1ce9"
+    },
+    {
+      "path": "codex/launch-factory/fallbacks/universal-copy-paste-workflow.md",
+      "sha256": "952f9a6e18ec3a4f9a6e14f9d20546e1c14b8ff6c8d0f3b1d3f4436c1719b8f2"
+    },
+    {
       "path": "codex/launch-factory/knowledge/capability-and-authority.md",
       "sha256": "d5ca24f5a1c67d421cd56cf9d294b2c7dd2c06b5b4eb5f4d5c3fc63b3aee5cf5"
+    },
+    {
+      "path": "codex/launch-factory/personas/barry-seat.md",
+      "sha256": "6fbc105770ab03916082e2f4049c50bda6dcdf4716061e16474e4730e2e73897"
+    },
+    {
+      "path": "codex/launch-factory/personas/writer-seat.md",
+      "sha256": "69f9cfac7c2fee47e8051e76fb78df9096e9906b1ea4d5a66e4637a19813fe3c"
+    },
+    {
+      "path": "codex/launch-factory/references/run-log-template.md",
+      "sha256": "de7e1ac1ccc7664c5eeddf8f515ba27b87574b91a383b4e2ae54a90de62ced03"
     },
     {
       "path": "codex/launch-factory/schemas/README.md",
@@ -74,19 +106,19 @@
     },
     {
       "path": "docs/DOCUMENTATION-CUSTODY.md",
-      "sha256": "a56a17b7daaaf94c8e3405c38d60ff33430a66e0d8282472693979bbe312fe22"
+      "sha256": "75689665120bc0b7fe2bfbe25dbf5a73c83c96f2eb159422fb75744e80ee418c"
     },
     {
       "path": "docs/FIRST-RUN.md",
-      "sha256": "8b1510a26b5a8eaaf461393e7075a0614603504a8934a28736c247e8282f18c4"
+      "sha256": "7aeadfebc6488e5ffa5fb0b29069cd81c2a42e0d84ca98c14639e808b2c05e84"
     },
     {
       "path": "docs/HUMAN-GAPS.md",
-      "sha256": "1f0fb7d940253d15f24d7fac9a968b8833e836070f15c34b5686a16463409c8b"
+      "sha256": "081400b364d690b0cedba4b2c664d049210a33f97055c2b768198a5e41fa0081"
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
-      "sha256": "c58bcdac3bcc61febc39aa62e9c762911283e9becaccfa8e95b7407fb1962360"
+      "sha256": "6d80c060bcd9645fa61940a3189ede662a3c6cc0da48896fe4de42cd63bb1c6f"
     },
     {
       "path": "docs/INSTALL-CODEX.md",
@@ -94,11 +126,11 @@
     },
     {
       "path": "docs/OPERATE-LAUNCH-FACTORY.md",
-      "sha256": "347a68f72cac5a8ab73f6a7aeca21052a40b9a44e70f05ef90b9ed2495b130af"
+      "sha256": "a553ef4f57628c872d356b90316ef9a69ad61f40b435be08c44bdb1c6cff8f88"
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
-      "sha256": "1eebe5f44904e13b6110ce1fb1e34e6ababbce6ea796727b858a5a4be6ea8b6e"
+      "sha256": "8488a2bb0caa00f828133e7412ecb78386430eea64dd33d44b1791c04962c2cd"
     },
     {
       "path": "docs/TRUST-PRIVACY-AND-AUTHORITY.md",
@@ -106,7 +138,7 @@
     },
     {
       "path": "docs/VALIDATION-AND-LIMITS.md",
-      "sha256": "deac4abb4abebae3bf249e8046a7500da3317b05c87ebdca07a5568987389621"
+      "sha256": "172343ff721b72ba57a1b91572dfab9da8b6940717235a69a92d43b22fe4ea27"
     },
     {
       "path": "engine/README.md",
