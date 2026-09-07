@@ -1,22 +1,27 @@
-# Install — Claude
+# Install in Claude
 
-## Status (v0.1.0 / A1)
+## Package
 
-The Claude host ZIP **`launch-factory-v0.1.0.zip`** ships in **A2**. This file is the stub door so dual-host layout is visible now.
+Use the ZIP:
 
-## When the ZIP arrives
+`claude/launch-factory-v0.1.0.zip`
 
-1. Download `claude/launch-factory-v0.1.0.zip` from this product root.
-2. Install per Claude’s project/skill ZIP convention for your workspace.
-3. Confirm the Augment loads (folder visible ≠ Augment active).
-4. Continue with [FIRST-RUN.md](FIRST-RUN.md).
+(one-root zip; same skill payload intent as `codex/launch-factory`)
 
-## Until A2
+## Steps
 
-- Use the [Codex install](INSTALL-CODEX.md) path if your host is Codex.
-- Do not invent a Claude ZIP or claim Claude parity is host-verified.
-- See [HOST-MATRIX.md](../HOST-MATRIX.md) for honest unknowns.
+1. Close any older Launch Factory project/skill copy in the workspace if present.
+2. Download or locate `claude/launch-factory-v0.1.0.zip` from this product root.
+3. Install per Claude’s project / skill ZIP convention for your workspace (unzip to a single root; do not scatter nested skill files).
+4. Confirm the Augment loads in a **fresh** chat/project. Folder visible ≠ Augment active until the host binds it.
+5. Ask: “Use Launch Factory. Run on this release folder.”
+6. Confirm it identifies as **Launch Factory**, routes to Claims Lock before fan-out, and refuses publish/send.
 
-## Parity intent
+This package was statically packed for dual-host parity. Live Claude activation was **not** freshly verified in this release — treat activation as a host-level check. See [HOST-MATRIX.md](../HOST-MATRIX.md).
 
-Same Claims Lock, Barry authority, non-goals, and slot HOLD honesty as Codex when the ZIP lands.
+If install fails, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md). Prefer [INSTALL-CODEX.md](INSTALL-CODEX.md) when your host is Codex.
+
+## After install
+
+- Read [TRUST-PRIVACY-AND-AUTHORITY.md](TRUST-PRIVACY-AND-AUTHORITY.md) before uploading release materials.
+- Same Barry / no auto-publish / slots 1·5·6 HOLD honesty as Codex.

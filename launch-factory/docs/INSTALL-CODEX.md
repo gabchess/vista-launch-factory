@@ -1,23 +1,31 @@
-# Install — Codex
+# Install in Codex
 
-## What you install
+## Package
 
-The Codex skill folder: `codex/launch-factory/`.
+Use the folder:
+
+`codex/launch-factory`
 
 ## Steps
 
-1. Confirm you have this release folder (product root containing `START-HERE.md`).
-2. Copy or symlink `codex/launch-factory/` into your Codex skills location per your host’s skill install convention.
-3. Restart or reload the host so the skill is discoverable.
-4. Verify the skill name `launch-factory` appears (folder visible ≠ skill active until the host loads it).
-5. Open [FIRST-RUN.md](FIRST-RUN.md) and run the first ask.
+1. Close any active use of an older `launch-factory` skill if you already tried a draft copy.
+2. Copy the **entire** folder `codex/launch-factory` into your Codex skills directory so the installed path ends in `skills/launch-factory`.
+3. Preserve the top folder name and **all** nested files. Do **not** copy only `SKILL.md` — `knowledge/`, `manifest.json`, schemas pointers, examples, evals, fallbacks, and `scripts/` are part of the product.
+4. Restart or refresh Codex so it discovers the skill.
+5. Start a **fresh** Codex task after installation.
+6. Ask: “Use Launch Factory. Run on this release folder.”
+7. Confirm the skill identifies itself as **Launch Factory**, begins with ingest / Claims Lock (not a six-output menu), and does **not** offer to publish or send.
+
+Installation paths vary by Codex environment. This package has not been freshly installed into your host during release verification, so discovery and activation remain host-level checks you must perform. Folder visible ≠ Augment active.
+
+If the skill is not found, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
 
 ## After install
 
 - Read [TRUST-PRIVACY-AND-AUTHORITY.md](TRUST-PRIVACY-AND-AUTHORITY.md) before uploading release materials.
-- Engine schemas under `../../engine/` are Option B SoT placeholders in v0.1.0 — full import comes later.
-- Structural scripts (when present) are **STRUCTURAL_INTEGRITY_ONLY** — they do not publish.
+- Engine SoT is Option B under `../../engine/` (sibling of `codex/`) — schemas import lands in later tickets; do not invent a third schema tree.
+- Any scripts under `codex/launch-factory/scripts/` are **STRUCTURAL_INTEGRITY_ONLY** — they never publish.
 
-## Dual-host note
+## Dual-host
 
-Claude install is a separate door: [INSTALL-CLAUDE.md](INSTALL-CLAUDE.md). Behavior parity (Claims Lock, Barry, HOLDs) is intended; identical prose is not required.
+Claude door: [INSTALL-CLAUDE.md](INSTALL-CLAUDE.md). Same Claims Lock / Barry / HOLD honesty; identical prose not required. See [HOST-MATRIX.md](../HOST-MATRIX.md).
