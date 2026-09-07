@@ -1,13 +1,13 @@
 {
   "campaign_id": "camp_vista_work_001",
   "title": "Vista Work \u2014 Wed hero (Barry email seed)",
-  "fixture_label": "",
-  "status": "packaged",
+  "fixture_label": "barry-email-seed",
+  "status": "review_ready_pre_claims_lock",
   "auto_publish": false,
   "barry_seat": "Barry VP Marketing",
   "hubspot_sandbox": {
     "draft_ids": [],
     "status": "not_started"
   },
-  "note": "STOP \u2014 humans publish out of band"
+  "note": "STOP \u2014 pre-Claims-Lock review bundle; Barry Claims Lock still required before pack-approve; humans publish out of band"
 }

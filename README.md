@@ -53,9 +53,11 @@ pytest -q
 
 ## Campaign status (camp_vista_work_001)
 
-- Slots **2 / 3 / 4** packaged from polished demo adapters.
+- Slots **2 / 3 / 4** review drafts from polished demo adapters.
 - Slots **1 / 5 / 6** HELD (no real footage / Lottie / popup source).
-- Status: `claims_gate` → package built as `packaged` in MANIFEST.
+- Campaign status: `claims_gate` (Claims Lock not recorded).
+- MANIFEST status: `review_ready_pre_claims_lock` (honest pre-Claims-Lock review bundle; not `packaged`).
+- Package root includes filled `BARRY.md` review card.
 - Video/demo recording: **PAUSED**.
 
 ## Language

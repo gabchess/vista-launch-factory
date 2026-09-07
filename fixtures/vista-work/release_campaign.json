@@ -1,9 +1,9 @@
 {
   "id": "camp_vista_work_001",
-  "title": "Vista Work — Wed hero (Barry email seed)",
+  "title": "Vista Work \u2014 Wed hero (Barry email seed)",
   "folder_id": "fixtures/vista-work",
   "status": "claims_gate",
-  "fixture_label": "",
+  "fixture_label": "barry-email-seed",
   "sources": {
     "loom": "sources/barry_email_transcript.txt",
     "transcript": "sources/barry_email_transcript.txt",
@@ -24,7 +24,7 @@
       "SMB",
       "Agency"
     ],
-    "affiliate_rules": "TBD from Reggie legal — do not invent affiliate claims in copy"
+    "affiliate_rules": "TBD from Reggie legal \u2014 do not invent affiliate claims in copy"
   },
   "artifacts": [
     {
@@ -35,7 +35,7 @@
       "validation": "pending",
       "barry_status": "held",
       "held": true,
-      "hold_reason": "NO video — no real Loom/UI footage; Demo Assets must not enter Claim Ledger (ADR 0001)"
+      "hold_reason": "NO video \u2014 no real Loom/UI footage; Demo Assets must not enter Claim Ledger (ADR 0001)"
     },
     {
       "slot": 2,
@@ -75,7 +75,7 @@
       "validation": "pending",
       "barry_status": "held",
       "held": true,
-      "hold_reason": "No real login footage/Lottie source — held for claim-safety"
+      "hold_reason": "No real login footage/Lottie source \u2014 held for claim-safety"
     },
     {
       "slot": 6,
@@ -85,7 +85,7 @@
       "validation": "pending",
       "barry_status": "held",
       "held": true,
-      "hold_reason": "No real popup graphic/copy source — held for claim-safety"
+      "hold_reason": "No real popup graphic/copy source \u2014 held for claim-safety"
     }
   ],
   "cadence_ref": "cadence_binder.json",
