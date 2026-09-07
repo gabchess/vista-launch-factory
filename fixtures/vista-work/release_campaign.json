@@ -1,0 +1,108 @@
+{
+  "id": "camp_vista_work_001",
+  "title": "Vista Work — Wed hero (Barry email seed)",
+  "folder_id": "fixtures/vista-work",
+  "status": "claims_gate",
+  "fixture_label": "",
+  "sources": {
+    "loom": "sources/barry_email_transcript.txt",
+    "transcript": "sources/barry_email_transcript.txt",
+    "github_outline": "sources/vista_work_outline.md",
+    "footage": [
+      "sources/footage_index.json"
+    ]
+  },
+  "claim_ledger_ref": "claim_ledger.json",
+  "voice_pack_ref": "voice-pack.md",
+  "segments": {
+    "leads": [
+      "SMB",
+      "Agency",
+      "Reseller_Affiliate"
+    ],
+    "customers": [
+      "SMB",
+      "Agency"
+    ],
+    "affiliate_rules": "TBD from Reggie legal — do not invent affiliate claims in copy"
+  },
+  "artifacts": [
+    {
+      "slot": 1,
+      "type": "social_video",
+      "version": 1,
+      "path": null,
+      "validation": "pending",
+      "barry_status": "held",
+      "held": true,
+      "hold_reason": "NO video — no real Loom/UI footage; Demo Assets must not enter Claim Ledger (ADR 0001)"
+    },
+    {
+      "slot": 2,
+      "type": "blog",
+      "version": 1,
+      "path": "adapters/02_blog.md",
+      "validation": "pending",
+      "barry_status": "not_submitted",
+      "held": false,
+      "hold_reason": null
+    },
+    {
+      "slot": 3,
+      "type": "email_segments",
+      "version": 1,
+      "path": "adapters/03_email_segments.md",
+      "validation": "pending",
+      "barry_status": "not_submitted",
+      "held": false,
+      "hold_reason": null
+    },
+    {
+      "slot": 4,
+      "type": "changelog",
+      "version": 1,
+      "path": "adapters/04_changelog.md",
+      "validation": "pending",
+      "barry_status": "not_submitted",
+      "held": false,
+      "hold_reason": null
+    },
+    {
+      "slot": 5,
+      "type": "login_animation",
+      "version": 1,
+      "path": null,
+      "validation": "pending",
+      "barry_status": "held",
+      "held": true,
+      "hold_reason": "No real login footage/Lottie source — held for claim-safety"
+    },
+    {
+      "slot": 6,
+      "type": "in_app_popup",
+      "version": 1,
+      "path": null,
+      "validation": "pending",
+      "barry_status": "held",
+      "held": true,
+      "hold_reason": "No real popup graphic/copy source — held for claim-safety"
+    }
+  ],
+  "cadence_ref": "cadence_binder.json",
+  "barry": {
+    "seat": "Barry VP Marketing",
+    "surface": "Notion + Drive pack (Email example 2 seed)",
+    "wip": 1
+  },
+  "hubspot_sandbox": {
+    "draft_ids": [],
+    "status": "not_started"
+  },
+  "still_needs_human": [
+    "Barry Claims Lock approve on this ledger",
+    "Reggie style guide / past newsletters for full voice encode",
+    "Real footage for social_video / login / popup (or keep held)",
+    "Segment / affiliate legal rules",
+    "Final publish (never auto)"
+  ]
+}

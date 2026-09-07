@@ -1,0 +1,67 @@
+process: "Vista Social Launch Factory — marketer handoff (release folder → Barry-ready pack)"
+assessed_at: "2026-09-07"
+version_bound: "0.1.1"
+sha256: "c38f1603c8de2b80c78229ecf2af234264bb6da5bd7346974ef03ecb093169e0"
+assessor: "sop-builder (evidence-led; not owner-certified)"
+factors:
+  severity: 4
+  occurrence: 3
+  lack_of_reversibility: 3
+score: 36
+tier: "Tier 2 Enhanced"
+factor_basis: >
+  S=4: false product claims, accidental publish, or CIO-as-ESP demo damages customer trust and sponsor eval.
+  O=3: repeats on every feature ship / rehearsal cadence.
+  V=3: published claims and live sends are costly to fully retract; drafts are more reversible.
+  R=36 → Tier 2 Enhanced. Score is decision support only; Barry/Gabe/Reggie retain claim and publish authority.
+critical_controls:
+  - control_id: "C-CLAIMS"
+    failure_consequence: "Invented pricing/limits/partner claims ship to Barry or customer channels"
+    control: "Claims Lock once with evidence spans; kill-switch; fixture label until Reggie; forbidden list"
+    owner: "Barry (approve); Reggie (off-limits seed); Marketer (do not invent)"
+    evidence: "Claims Lock card + ledger version in package"
+    exception_route: "E4 / E8"
+  - control_id: "C-HITL"
+    failure_consequence: "Writer self-approves; Slack thumbs launder ship gate"
+    control: "Writer ≠ Barry; Claims Lock → O1 spot-check → pack approve; WIP=1 awaiting_barry"
+    owner: "Barry"
+    evidence: "Notion/Drive pack decisions; barry_wip=1"
+    exception_route: "E3"
+  - control_id: "C-NOPUB"
+    failure_consequence: "Auto-publish or production HubSpot send from factory path"
+    control: "STOP after package; HubSpot sandbox draft-only last; MANIFEST auto_publish false"
+    owner: "Marketer (refuse); human publishers out of band"
+    evidence: "sandbox status draft_only|skipped; no /publish"
+    exception_route: "E6"
+  - control_id: "C-ESP"
+    failure_consequence: "Customer.io demoed as Vista ESP"
+    control: "CIO crew-only; never on Vista demo path"
+    owner: "Marketer / presenter"
+    evidence: "Recording shot-list must-not; sandbox checklist refuse"
+    exception_route: "E6"
+  - control_id: "C-SCOPE"
+    failure_consequence: "Quiet revert to thin C presented as Scope B"
+    control: "Cut-order labelled bonus partial; thin C only with Gabe yes"
+    owner: "Gabe"
+    evidence: "Package deferred list / cut-order note"
+    exception_route: "E7"
+human_authorities:
+  process_owner: "UNRESOLVED — propose Gabe pending Reggie ops confirmation"
+  approval_authority: "UNRESOLVED for SOP distribution; Barry for pack ship gate"
+  qualified_reviewers:
+    - "sop-reviewer (readiness verdict only)"
+    - "Barry VP Marketing (claims + creative)"
+review_cadence: "Post Wed Sep 9 E2E within 7 days; then on change triggers or quarterly"
+change_triggers:
+  - "Scope/HOW lock change"
+  - "Barry HITL sequence change"
+  - "Publish system or ESP change"
+  - "Reggie off-limits claims change"
+  - "Run trigger UI change"
+  - "Schema status/artifact enum change"
+  - "Elevated E4/E5/E6 rate"
+unresolved_risk_facts:
+  - "G1-G10 Reggie access/judgment unanswered"
+  - "G11 SOP owner/approver unnamed"
+  - "G12 durable post-Wed Run trigger not demonstrated"
+  - "Real forbidden-claims list not yet seeded for live Vista feature"
