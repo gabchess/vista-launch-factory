@@ -19,8 +19,8 @@
 - [ ] Start Run via demonstrated trigger **or** manual rehearsal — record `trigger_used` on the row
 - [ ] Confirm ingest/retrieve visible
 - [ ] Barry **Claims Lock** approve (not Slack thumbs) before adapters
-- [ ] O1 drafted → Barry spot-check
-- [ ] O2–O6 + cadence binder (same `campaign_id`); held slots have reasons
+- [ ] First real (non-HELD) slot drafted → Barry spot-check (skip O1 when O1 is HELD; for this campaign first-real-slot = O2 blog)
+- [ ] Remaining O2–O6 + cadence binder (same `campaign_id`); held slots have reasons; HELD slots are not the spot-check gate
 - [ ] Crew validate ≤2; marketer confirms pass/fail on row; no hard-fail advance
 - [ ] Submit pack `awaiting_barry` (WIP=1)
 - [ ] Barry pack approve **or** Request Changes on **named** slots only → re-run those slots
@@ -29,7 +29,7 @@
 
 ## Close
 
-- [ ] Status `packaged` or `sandbox_exported` (or documented `held`)
+- [ ] Status `packaged`, `review_ready_pre_claims_lock` (pre-Claims-Lock review bundle only), or `sandbox_exported` (or documented `held`)
 - [ ] No production publish; CIO not presented as Vista ESP
 - [ ] Honesty table included
 - [ ] If Request Changes path used: only named slots regenerated; versions bumped

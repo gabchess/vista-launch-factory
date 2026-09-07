@@ -1,6 +1,6 @@
 {
   "campaign_id": "camp_vista_work_001",
-  "fixture_label": "",
+  "fixture_label": "barry-email-seed",
   "cells": [
     {
       "order": 1,
@@ -11,7 +11,7 @@
         "utm_medium": "product",
         "utm_campaign": "camp_vista_work_001"
       },
-      "notes": "Vista Work bullets from vw1–vw4 only"
+      "notes": "Vista Work bullets from vw1\u2013vw4 only"
     },
     {
       "order": 2,
@@ -33,7 +33,7 @@
         "utm_medium": "video",
         "utm_campaign": "camp_vista_work_001"
       },
-      "notes": "HELD — no real footage (slot 1 held)"
+      "notes": "HELD \u2014 no real footage (slot 1 held)"
     },
     {
       "order": 4,
@@ -44,7 +44,7 @@
         "utm_medium": "social",
         "utm_campaign": "camp_vista_work_001"
       },
-      "notes": "written from locked claims + voice-pack"
+      "notes": "derive from blog / not separate written-social asset"
     },
     {
       "order": 5,
@@ -55,7 +55,7 @@
         "utm_medium": "social",
         "utm_campaign": "camp_vista_work_001"
       },
-      "notes": "written social"
+      "notes": "derive from blog / not separate written-social asset"
     },
     {
       "order": 6,
@@ -66,7 +66,7 @@
         "utm_medium": "social",
         "utm_campaign": "camp_vista_work_001"
       },
-      "notes": "written social"
+      "notes": "derive from blog / not separate written-social asset"
     },
     {
       "order": 7,
@@ -77,7 +77,7 @@
         "utm_medium": "video",
         "utm_campaign": "camp_vista_work_001"
       },
-      "notes": "HELD — no real footage"
+      "notes": "HELD \u2014 no real footage"
     },
     {
       "order": 8,
@@ -88,7 +88,7 @@
         "utm_medium": "video",
         "utm_campaign": "camp_vista_work_001"
       },
-      "notes": "HELD — no real footage"
+      "notes": "HELD \u2014 no real footage"
     }
   ]
 }

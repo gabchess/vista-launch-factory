@@ -1,5 +1,7 @@
 # Still needs a human — camp_vista_work_001
 
+**Honesty:** This pack is a **pre-Claims-Lock review bundle** (`review_ready_pre_claims_lock`). Barry Claims Lock is still required before pack-approve. Campaign status remains `claims_gate` — do not treat MANIFEST as Barry-approved or ship-ready.
+
 | Step | Why human |
 |---|---|
 | Barry Claims Lock approve | Ledger seeded from Barry email; Barry once-per-campaign yes still required |

@@ -48,6 +48,7 @@ Barry (VP Marketing) is the only copy/creative ship gate. Writer ≠ Barry.
 ```
 packages/camp_vista_work_001/
 ├── MANIFEST.json
+├── BARRY.md
 ├── 01_social_video/HELD.txt
 ├── 02_blog/02_blog.md
 ├── 03_email_segments/03_email_segments.md
@@ -62,7 +63,7 @@ packages/camp_vista_work_001/
     └── claim_ledger.json
 ```
 
-MANIFEST highlights: `status=packaged`, `auto_publish=false`, `barry_seat=Barry VP Marketing`, note = **STOP — humans publish out of band**.
+MANIFEST highlights: `status=review_ready_pre_claims_lock`, `auto_publish=false`, `fixture_label=barry-email-seed`, `barry_seat=Barry VP Marketing`, note = **STOP — pre-Claims-Lock review bundle; Barry Claims Lock still required before pack-approve**. Package root also has filled `BARRY.md`.
 
 ## How to re-run (from work/)
 
