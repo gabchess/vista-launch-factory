@@ -55,18 +55,18 @@
     },
     "artifacts": {
       "type": "array",
-      "minItems": 6,
-      "maxItems": 6,
+      "minItems": 7,
+      "maxItems": 7,
       "items": {
         "type": "object",
         "additionalProperties": false,
         "required": ["slot", "type", "version", "path", "validation", "barry_status", "held"],
         "properties": {
-          "slot": { "type": "integer", "minimum": 1, "maximum": 6 },
+          "slot": { "type": "integer", "minimum": 1, "maximum": 7 },
           "type": {
             "enum": [
               "social_video", "blog", "email_segments", "changelog",
-              "login_animation", "in_app_popup"
+              "login_animation", "in_app_popup", "campaign_plan"
             ]
           },
           "version": { "type": "integer", "minimum": 1 },

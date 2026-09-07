@@ -23,7 +23,8 @@
     {"slot": 3, "type": "email_segments", "version": 1, "path": "adapters/03_email_segments.md", "validation": "pending", "barry_status": "not_submitted", "held": false, "hold_reason": null},
     {"slot": 4, "type": "changelog", "version": 1, "path": "adapters/04_changelog.md", "validation": "pending", "barry_status": "not_submitted", "held": false, "hold_reason": null},
     {"slot": 5, "type": "login_animation", "version": 1, "path": "adapters/05_login_animation.md", "validation": "pending", "barry_status": "not_submitted", "held": false, "hold_reason": null},
-    {"slot": 6, "type": "in_app_popup", "version": 1, "path": "adapters/06_in_app_popup.md", "validation": "pending", "barry_status": "not_submitted", "held": false, "hold_reason": null}
+    {"slot": 6, "type": "in_app_popup", "version": 1, "path": "adapters/06_in_app_popup.md", "validation": "pending", "barry_status": "not_submitted", "held": false, "hold_reason": null},
+    {"slot": 7, "type": "campaign_plan", "version": 1, "path": "adapters/07_campaign_plan.md", "validation": "pending", "barry_status": "not_submitted", "held": false, "hold_reason": null}
   ],
   "cadence_ref": "cadence_binder.json",
   "barry": {

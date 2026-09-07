@@ -15,6 +15,7 @@ SLOT_DIRS = {
     4: "04_changelog",
     5: "05_login_animation",
     6: "06_in_app_popup",
+    7: "07_campaign_plan",
 }
 
 # Campaign statuses that mean Claims Lock has not been recorded yet.
@@ -101,7 +102,8 @@ def render_barry_card(campaign: dict[str, Any], *, package_status: str) -> str:
         "| Slot | Type | Package path | Spot-check | State |",
         "|---|---|---|---|---|",
         *rows,
-        "| — | cadence binder | cadence/ | after pack spot-check | binder |",
+        "| 7 | campaign_plan | 07_campaign_plan/ | in pack-approve gate | Campaign Plan |",
+        "| — | cadence binder (Campaign Plan data shape) | cadence/ | after pack spot-check | binder |",
         "",
         "## Review links (real drafts)",
         "",

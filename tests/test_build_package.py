@@ -18,6 +18,7 @@ def test_build_package_layout(work_root, tmp_path):
         "04_changelog",
         "05_login_animation",
         "06_in_app_popup",
+        "07_campaign_plan",
         "cadence",
         "provenance",
         "honesty",

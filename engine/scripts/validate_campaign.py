@@ -19,6 +19,7 @@ REQUIRED_TYPES = [
     "changelog",
     "login_animation",
     "in_app_popup",
+    "campaign_plan",
 ]
 
 REQUIRED_CADENCE_CHANNELS = [
@@ -51,7 +52,7 @@ def validate_campaign(
     artifacts = campaign.get("artifacts") or []
     by_slot = {a.get("slot"): a for a in artifacts if isinstance(a, dict)}
     types_seen = []
-    for slot in range(1, 7):
+    for slot in range(1, 8):
         art = by_slot.get(slot)
         if art is None:
             errors.append(f"missing artifact slot {slot}")

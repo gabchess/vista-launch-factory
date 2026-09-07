@@ -85,7 +85,17 @@
       "validation": "pending",
       "barry_status": "held",
       "held": true,
-      "hold_reason": "No real popup graphic/copy source \u2014 held for claim-safety"
+      "hold_reason": "No real popup graphic/copy source — held for claim-safety"
+    },
+    {
+      "slot": 7,
+      "type": "campaign_plan",
+      "version": 1,
+      "path": null,
+      "validation": "pending",
+      "barry_status": "held",
+      "held": true,
+      "hold_reason": "Campaign Plan drafts from the same Claims Lock — Barry Claims Lock not yet recorded (ADR 0016)"
     }
   ],
   "cadence_ref": "cadence_binder.json",

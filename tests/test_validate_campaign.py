@@ -5,6 +5,7 @@ REQUIRED_TYPES = [
     "changelog",
     "login_animation",
     "in_app_popup",
+    "campaign_plan",
 ]
 
 
@@ -56,7 +57,7 @@ def _minimal_campaign(**overrides):
     return base
 
 
-def test_validate_campaign_requires_six_slots():
+def test_validate_campaign_requires_seven_slots():
     from scripts.validate_campaign import validate_campaign
 
     result = validate_campaign(_minimal_campaign())
@@ -84,6 +85,16 @@ def test_validate_campaign_allows_held_slot_without_path():
     camp["artifacts"][4]["barry_status"] = "held"
     result = validate_campaign(camp)
     assert result["ok"] is True
+
+
+def test_validate_campaign_fails_when_campaign_plan_slot_missing():
+    from scripts.validate_campaign import validate_campaign
+
+    camp = _minimal_campaign()
+    camp["artifacts"] = [a for a in camp["artifacts"] if a["slot"] != 7]
+    result = validate_campaign(camp)
+    assert result["ok"] is False
+    assert any("slot 7" in e or "campaign_plan" in e for e in result["errors"])
 
 
 def test_fixture_campaign_validates(work_root):
