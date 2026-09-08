@@ -1,0 +1,106 @@
+{
+  "schema_version": "launch-baseline-checks/v1",
+  "checked_at": "2026-09-08T23:03:07.406823+00:00",
+  "mechanical": {
+    "status": "pass",
+    "scope": "offline evidence integrity and existing source/draft route checks",
+    "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
+    "file_hashes_checked": 7,
+    "committed_git_blobs_checked": 3,
+    "claim_spans_checked": 8,
+    "voice_spans_checked": 5,
+    "eligible_claims": 8,
+    "held_or_excluded_claims": 7,
+    "routes": [
+      {
+        "command": ".venv/bin/python engine/scripts/specialist_route.py route packages/camp_tix_launch_001/00_baseline/source-request.json --workspace packages/camp_tix_launch_001/00_baseline",
+        "exit_code": 0,
+        "status": "ready_for_protocol",
+        "roles": [
+          "evidence_editor"
+        ],
+        "context_digest": "92552f24276949fa48b3167b5be53eb9e0d2e64781d51558d1a89ce6db569072",
+        "subject": null,
+        "generation_authorized": false,
+        "human_approval_granted": false
+      },
+      {
+        "command": ".venv/bin/python engine/scripts/specialist_route.py route packages/camp_tix_launch_001/00_baseline/blog-request.json --workspace packages/camp_tix_launch_001/00_baseline",
+        "exit_code": 0,
+        "status": "ready_for_protocol",
+        "roles": [
+          "blog_editor"
+        ],
+        "context_digest": "92552f24276949fa48b3167b5be53eb9e0d2e64781d51558d1a89ce6db569072",
+        "subject": null,
+        "generation_authorized": false,
+        "human_approval_granted": false
+      }
+    ],
+    "media_file_reinspection": "Separate operator/Forge receipt; this portable check has no media files",
+    "human_approval_granted": false,
+    "provider_calls": 0
+  },
+  "editorial": {
+    "protocol": "lf-evidence-review",
+    "invocation": "operator inline fallback after source route and selected source read",
+    "record": "REVIEW.md",
+    "verdict": "Eight selected statements supported with their recorded qualifiers; seven held/excluded statements remain outside the writer request.",
+    "human_decision": "pending"
+  },
+  "media": {
+    "source": "Operator rehash of the two current approved files plus independent Forge check",
+    "current_hashes_match": true,
+    "private_media_bytes_copied_into_packet": false,
+    "subjects": [
+      {
+        "id": "product_film",
+        "sha256": "1e73f611ecaacaa9aabe1b3cfdc53f571888573ae876aebb65674ad2903604d2",
+        "bytes": 22428208
+      },
+      {
+        "id": "animation",
+        "sha256": "f16b7cfda2d6ef8671fc2add7a404cf77be321dffec56503a1326b387bb7b76a",
+        "bytes": 939941
+      }
+    ]
+  },
+  "independent_verification": {
+    "status": "pass",
+    "verifier": "Forge",
+    "checked_at_utc": "2026-09-08T23:09:09.640026+00:00",
+    "acceptance_results": {
+      "AC01": "pass",
+      "AC02": "pass",
+      "AC03": "pass",
+      "AC04": "pass",
+      "AC05": "pass",
+      "AC06": "pass",
+      "AC07": "pass",
+      "AC08": "pass",
+      "AC09": "pass",
+      "AC10": "pass",
+      "AC11": "pass",
+      "AC12": "pass"
+    },
+    "evidence_summary": {
+      "actual_git_commit_bytes_compared": 3,
+      "reparsed_retained_html_observations": 2,
+      "older_intake_text_comparisons": 2,
+      "source_qualifier_reviews": 8,
+      "held_or_excluded_claims_preserved": 7,
+      "voice_origin_spans_checked": 5,
+      "accepted_brand_source_match": true,
+      "accepted_media_hashes_matched": 2,
+      "existing_specialist_routes_passed": [
+        "evidence_editor",
+        "blog_editor"
+      ]
+    },
+    "receipt_location": "Separate operator verification records for N01; private paths and media are excluded from this packet.",
+    "scope": "Evidence baseline and editorial limits; no current live deployment, native role invocation, human approval or new media authority is inferred."
+  },
+  "claims_lock_status": "pending_human_review",
+  "new_output_generation": false,
+  "paid_provider_calls": 0
+}

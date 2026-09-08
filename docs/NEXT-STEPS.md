@@ -2,6 +2,8 @@
 
 Date: 8 September 2026. Status: original working plan for the user's latest continuation request. This checkpoint creates no implementation issues, starts no loop and makes no new paid calls. [CHECKPOINT.md](CHECKPOINT.md) records the completed milestone; [ADR 0019](adr/0019-testable-app-and-next-milestone.md) records the testable-app direction.
 
+Continuation update: Gabe resumed without manual compaction. N01 now has a [checked writing baseline](../packages/camp_tix_launch_001/00_baseline/baseline.json) and an [exact human review](../packages/camp_tix_launch_001/00_baseline/CLAIMS-LOCK-REVIEW.md). The current Claims Lock is pending; N02 is the next output after that decision. The original board snapshot below is historical.
+
 ## Outcome and current evidence
 
 A marketing, product or development operator can submit a release source, answer the missing brief questions, inspect the actual outputs, request a correction, approve the exact revision and download the package. An engineer configures the installation once. Routine use must succeed without that engineer operating an agent behind the chat.
@@ -69,11 +71,11 @@ These milestones are ordered work, not a promised delivery date. Paid generation
 
 ## Ordered ticket candidates
 
-These local IDs define the proposed sequence. GitHub Issues remains the execution board. **N01 is the sole local next candidate.** Every later candidate is queued. Forge reconciles existing issues before marking one live issue `ready-for-agent`; the board stays paused during this checkpoint. Each implementation ticket gets a fresh builder and independent verifier. If its selected platform makes it exceed one context window, split it before dispatch while retaining a complete observable result.
+These local IDs define the proposed sequence. GitHub Issues remains the execution board. **N01 is the current baseline phase; N02 follows its actual Claims Lock.** Every later candidate is queued. Forge reconciles existing issues before marking one live issue `ready-for-agent`. Each implementation ticket gets a fresh builder and independent verifier. If its selected platform makes it exceed one context window, split it before dispatch while retaining a complete observable result.
 
 ### N01. Freeze the active Tix source, voice and approval baseline
 
-**State:** next local candidate. **Blocked by:** none. **Owner:** Launch Factory operator with evidence editor. **Board relation:** reconcile #6, #12 and #26 without closing outstanding client gates.
+**State:** baseline prepared and locally checked; actual Claims Lock pending. **Blocked by:** none for baseline preparation. **Owner:** Launch Factory operator with evidence editor. **Board relation:** N01 is the bounded execution phase of #26; #6 and #12 retain their separate client scope.
 
 Deliver a campaign brief, selected source snapshot and Claim Ledger that the next writer can consume. Record the campaign's publisher, audience, CTA, factual/vision boundaries, voice references and unresolved evidence. Attach both accepted Tix media hashes with their actual approval scope. Check current source bytes against the older intake; a changed checkout is a new snapshot.
 
@@ -251,4 +253,4 @@ git log -1 --format='%H %s'
 gh issue list --repo gabchess/vista-launch-factory --state open --limit 100 --json number,title,labels,url
 ```
 
-Then execute **N01 only** in the resumed work: prepare the Tix source/voice/approval baseline, preserve the accepted files and report the first writer's grounded inputs. Forge reconciles its tracker mapping before a later Ralph dispatch. No app scaffold or paid media batch is the immediate next action.
+Then inspect the saved N01 baseline and its actual human Claims Lock. Present the recorded decision if pending; after an applicable approval, use the prepared blog request for N02. Forge reconciles the selected execution phase before a later Ralph dispatch. No app scaffold or paid media batch is the immediate next action.

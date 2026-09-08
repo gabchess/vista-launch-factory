@@ -633,8 +633,8 @@
     },
     {
       "path": "docs/AFTER-COMPACTION.md",
-      "sha256": "2fef8e2c1a2753fe350f89cc9490b8033c5825aad59456078c8056b9b112d6ad",
-      "bytes": 2629
+      "sha256": "4179e27b6a92fd24e58cbbad59b0aac2f6ad72175a3d5f7b94f63ce44f73b642",
+      "bytes": 3041
     },
     {
       "path": "docs/CHECKPOINT.md",
@@ -683,8 +683,8 @@
     },
     {
       "path": "docs/NEXT-STEPS.md",
-      "sha256": "0f294e98c5eadc207c7db7b44e1f74e3e53b3e5798b8f87def855858c38483c9",
-      "bytes": 29825
+      "sha256": "842d407b8a920782b4a5286e09f0c88660c90802d41096bed023776bafca2efa",
+      "bytes": 30310
     },
     {
       "path": "docs/OPERATE-LAUNCH-FACTORY.md",
@@ -765,6 +765,16 @@
       "path": "docs/agents/triage-labels.md",
       "sha256": "4f53c9b40ce2651e3611aa090eaedbd6dbc9b71ef8c5f7e65eac0d8263190d0d",
       "bytes": 1045
+    },
+    {
+      "path": "docs/specs/N01-tix-source-baseline.md",
+      "sha256": "b0544a61c8b4a44b7301b1f07f8bbae4e79235463589fccdeb95bc3810a63079",
+      "bytes": 12879
+    },
+    {
+      "path": "docs/tickets/N01-tix-source-baseline.md",
+      "sha256": "1533d0f2e17a504c0bb6b326189fecc1addd11dfd0660b350df78a36890eb2cc",
+      "bytes": 5701
     },
     {
       "path": "engine/README.md",
@@ -1243,8 +1253,8 @@
     },
     {
       "path": "findings.md",
-      "sha256": "1d4cf9bf9166834ed93e2a30535e2309a11dc5d4d2f460ff829f4eb3c7e35625",
-      "bytes": 1420
+      "sha256": "89ec1dcaa6a2da0d60d8972eb3ab554ff1ef2af50dbb1fc32920f79f7247c967",
+      "bytes": 1854
     },
     {
       "path": "handoff/README.md",
@@ -1323,8 +1333,8 @@
     },
     {
       "path": "progress.md",
-      "sha256": "b65e2a4855067bdc8354cfa9a0ddf8668b7be8d284904337aca17b565a25725d",
-      "bytes": 1104
+      "sha256": "2c93061331c5c77495cc28eb7778fcfe1a5061e5ee3fd32dd451ee69dc3d1bed",
+      "bytes": 2287
     },
     {
       "path": "pytest.ini",
@@ -1358,8 +1368,8 @@
     },
     {
       "path": "task_plan.md",
-      "sha256": "4420dd921db445e58eb63190505f837fb83b409b0bd7efde3770e1d8d7ef9b72",
-      "bytes": 1524
+      "sha256": "70093f781d945b59d9ac1f299b4b18417d905bd556d29c7663112d43da2159cc",
+      "bytes": 1856
     },
     {
       "path": "tests/conftest.py",

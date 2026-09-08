@@ -10,3 +10,5 @@ The [checkpoint](docs/CHECKPOINT.md) distinguishes creative approval, reusable i
 - The final six-output package must share one source revision. A recorded product-vision film does not establish actual account, payment or listing execution.
 
 Detailed run receipts, media, private review history and account configuration stay in the operator's workspace. Purchased skills are consulted locally; their prose and assets are excluded from this public package.
+
+N01 now supplies a frozen Tix source set and prepared blog request. Its eight supported statements distinguish product identity, source-stated preview behavior and future discovery/payment work. The current live pages matched the older intake text; they do not establish that the selected source revision is deployed. The waitlist CTA remains the approved creative decision, with collection verification required before publication.

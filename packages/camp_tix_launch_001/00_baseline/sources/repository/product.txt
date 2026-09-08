@@ -1,0 +1,62 @@
+# Product
+
+## Identity
+
+Sup, I’m Tix. Your garage sale flipper.
+
+Tix helps secondhand buyers and sellers make the next decision. A buyer can
+describe an item, location and limit. A seller can bring a listing and ask for
+help with the offer. The product starts as a conversation so the user does not
+have to learn a parser or fill a dashboard before Tix understands the job.
+
+## Current preview
+
+The preview starts with a clean account. Google sign-in establishes identity.
+The account owns its conversations, saved facts and preview records. Vercel AI
+Gateway supplies the language model.
+
+Marketplace search, listing retrieval, connector delivery, wallet funding and
+checkout are simulated services. They produce stored records from the user’s
+own item and location. The interface labels those records as simulated. It does
+not present synthetic listings or wallet actions as live external events.
+
+The price comparison is deterministic. Tix compares the asking price in a
+record with the user’s limit. Market value remains unknown until the product
+has a supported evidence source.
+
+## Release contract
+
+The recording build runs as a restricted preview. After recording, the public
+home page switches to a waitlist. Invited accounts keep access through a
+server-owned entitlement. The same entitlement is required during recording.
+The browser cannot grant itself access.
+
+## Product question
+
+The first question is whether repeat buyers will return to Tix with another
+item or listing. The launch video shows the intended workflow. It does not
+count as user demand, marketplace coverage or purchase evidence.
+
+## Payment direction
+
+Tixmancer has separate Base Sepolia evidence for an x402 payment through its
+own demo seller. A consumer wallet is optional. The planned flow gives the user
+a scoped spending permission with an amount cap, expiry, approval and
+revocation. Deposits and purchases stay outside the consumer preview until a
+supported seller and the full permission-to-receipt path are verified.
+
+## Next evidence
+
+1. Verify live CDP Google sign-in and AI Gateway conversation on a preview.
+2. Let people use Tix with their own items and locations.
+3. Measure whether they return, save a hunt or ask to connect a notification
+   channel.
+4. Add one supported source and one useful notification connector.
+5. Prove a capped purchase with one supported seller before widening wallet
+   access.
+
+## Operating constraints
+
+Base Sepolia only. No custody. No marketplace scraping or vendor-site browser
+automation. Account data and actions require server-verified ownership.
+Historical evidence remains unchanged.

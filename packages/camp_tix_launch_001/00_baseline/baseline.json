@@ -1,0 +1,105 @@
+{
+  "schema_version": "launch-baseline/v1",
+  "campaign_id": "camp_tix_launch_001",
+  "product_id": "tixmancer",
+  "baseline_version": 1,
+  "prepared_at": "2026-09-08T22:58:38.129436+00:00",
+  "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
+  "status": "verified_baseline_pending_human_claims_lock",
+  "files": {
+    "brief": "BRIEF.md",
+    "sources": "source-manifest.json",
+    "claims": "claim-ledger.json",
+    "voice_profile": "VOICE-PROFILE.md",
+    "approvals": "approvals.json",
+    "source_request": "source-request.json",
+    "writer_request": "blog-request.json",
+    "editorial_review": "REVIEW.md",
+    "checks": "checks.json",
+    "verification_script": "verify_baseline.py",
+    "human_review": "CLAIMS-LOCK-REVIEW.md"
+  },
+  "snapshot_binding": {
+    "brief": {
+      "path": "BRIEF.md",
+      "sha256": "34e28a0def9cbd0016484b5beb263a4d05ac7baa9b37e3eabb7c284d5a7214a1"
+    },
+    "sources": {
+      "path": "source-manifest.json",
+      "sha256": "4fb26fc4cd29edca89d2ac465a01b6882320ce6ddf8561bc149d21ce92d146c9"
+    },
+    "claims": {
+      "path": "claim-ledger.json",
+      "sha256": "4199b7f50f4fefaed1e5edf925de06fc4d12e342b36c802014d2d2ea44675ddb"
+    },
+    "voice_profile": {
+      "path": "VOICE-PROFILE.md",
+      "sha256": "b42e0f17a65d172e5c8f7a264d6044e231df85718d9410a83a78fcf07e3ace40"
+    },
+    "approvals": {
+      "path": "approvals.json",
+      "sha256": "0c4eae6cddbd7094f80181a30c89d5db44ac076190918c496cb94ee5fef1c4cd"
+    },
+    "source_request": {
+      "path": "source-request.json",
+      "sha256": "a901cf3882e00c54785b5d8ff3fb507abc03fd3eb8fd143036fe8337878010c7"
+    },
+    "writer_request": {
+      "path": "blog-request.json",
+      "sha256": "76c408356e145eede70ea1799f689daed350be34eba04b98d622307b6ed006e9"
+    },
+    "editorial_review": {
+      "path": "REVIEW.md",
+      "sha256": "27ad3b4d05e176b831b1de9f79c05333dd29afcfcfcda9483fbc92fbddb976f5"
+    },
+    "human_review": {
+      "path": "CLAIMS-LOCK-REVIEW.md",
+      "sha256": "8eec571a40bb7a970ae5bdd86f83660ab4ac09d0ca501db0904f9109b51433c3"
+    }
+  },
+  "first_writer": {
+    "ticket": "N02",
+    "deliverable": "blog",
+    "publisher": "Tixmancer",
+    "requested_reviewer": "gabe",
+    "request": "blog-request.json",
+    "eligible_claim_ids": [
+      "TIX-C01",
+      "TIX-C02",
+      "TIX-C03",
+      "TIX-C04",
+      "TIX-C05",
+      "TIX-C06",
+      "TIX-C07",
+      "TIX-C08"
+    ],
+    "held_claim_ids": [
+      "TIX-H01",
+      "TIX-H02",
+      "TIX-H03",
+      "TIX-H04",
+      "TIX-H05",
+      "TIX-H06",
+      "TIX-H07"
+    ],
+    "required_read": [
+      "BRIEF.md",
+      "VOICE-PROFILE.md",
+      "claim-ledger.json",
+      "approvals.json"
+    ],
+    "start_condition": "Gabe reviews this exact Claims Lock, brief and expression profile. Route success does not grant approval."
+  },
+  "five_email_test_audiences": [
+    "lead_smb",
+    "lead_agency",
+    "lead_reseller_affiliate",
+    "customer_smb",
+    "customer_agency"
+  ],
+  "current_output_count": 2,
+  "new_content_created_in_N01": false,
+  "paid_provider_calls_in_N01": 0,
+  "scope": "Internal Tix validation; separate from the Prospector client campaign.",
+  "checks_sha256": "8ed9b28202b72a8cea23b8795cc3c0cb9cffe1413265811ec7c418a87203f305"
+}

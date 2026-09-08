@@ -1,0 +1,70 @@
+{
+  "schema_version": "launch-baseline-approvals/v1",
+  "campaign_id": "camp_tix_launch_001",
+  "recorded_at": "2026-09-08T22:58:38.129436+00:00",
+  "media": [
+    {
+      "id": "product_film",
+      "filename": "Dinner-with-Tix-app-reveal-v3.mp4",
+      "version": "v3",
+      "sha256": "1e73f611ecaacaa9aabe1b3cfdc53f571888573ae876aebb65674ad2903604d2",
+      "bytes": 22428208,
+      "status": "approved_creative",
+      "actual_reviewer": "gabe",
+      "decision_source": "Explicit user acceptance in the active Codex conversation",
+      "decision_quote": "Love it. It's perfect now.",
+      "decision_record_kind": "session-linked human decision, not service-authenticated approval",
+      "scope": "Final assembled v3 picture, actor performance, authored UI, music, sound effects, narration, captions and waitlist CTA.",
+      "applies_to_current_writing_claims_lock": false,
+      "format": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30,
+        "video_seconds": 55
+      },
+      "preservation": "Original media remains outside the portable repository; unchanged hash verified at this baseline."
+    },
+    {
+      "id": "animation",
+      "filename": "tixmancer motion.mp4",
+      "version": "accepted-motion-master",
+      "sha256": "f16b7cfda2d6ef8671fc2add7a404cf77be321dffec56503a1326b387bb7b76a",
+      "bytes": 939941,
+      "status": "approved_creative",
+      "actual_reviewer": "gabe",
+      "decision_source": "Explicit user acceptance in the active Codex conversation",
+      "decision_quote": "Imho it's ready to ship.",
+      "decision_record_kind": "session-linked human decision, not service-authenticated approval",
+      "scope": "The exported ten-second square animation with its approved sound and finishing.",
+      "applies_to_current_writing_claims_lock": false,
+      "format": {
+        "width": 1080,
+        "height": 1080,
+        "fps": 30,
+        "video_seconds": 10
+      },
+      "preservation": "Original media remains outside the portable repository; unchanged hash verified at this baseline."
+    }
+  ],
+  "claims_lock": {
+    "status": "pending_human_review",
+    "actual_reviewer": "gabe",
+    "subject": {
+      "file": "claim-ledger.json",
+      "version": 1,
+      "sha256": "4199b7f50f4fefaed1e5edf925de06fc4d12e342b36c802014d2d2ea44675ddb"
+    },
+    "brief": {
+      "file": "BRIEF.md",
+      "sha256": "34e28a0def9cbd0016484b5beb263a4d05ac7baa9b37e3eabb7c284d5a7214a1"
+    },
+    "voice": {
+      "file": "VOICE-PROFILE.md",
+      "sha256": "b42e0f17a65d172e5c8f7a264d6044e231df85718d9410a83a78fcf07e3ace40"
+    },
+    "decision": null,
+    "next_decision": "Review the eight eligible statements with qualifiers, Tix expression profile, reader and waitlist CTA before N02 drafts the blog."
+  },
+  "publishing_authorized": false,
+  "new_media_authorized_by_this_record": false
+}

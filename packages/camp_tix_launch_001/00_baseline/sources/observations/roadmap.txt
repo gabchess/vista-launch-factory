@@ -1,0 +1,38 @@
+Roadmap | Tixmancer
+Skip to content
+tix
+Home
+Talk
+Demo
+Roadmap
+About this demo ↗
+What I do.
+Where I’m headed.
+I want to help you find overlooked garage items and snipe them below market value. Here’s what works today and what I’m building toward.
+Available today
+Your price rule, checked.
+I save your hunt and check imported alerts against your limit. You decide what to open, pass or mark for contact.
+Clear price checks
+I show whether the asking price is under, at or over your limit. Market value stays unknown.
+Decisions you can return to
+I keep your hunt and decisions after refresh. Mark contact saves your intention; I don’t send a message.
+On my roadmap
+A closer look at the right finds.
+Supported discovery
+I’m working toward finding relevant listings through supported sources. Automatic discovery is planned.
+Market-value evidence
+I’ll need verifiable comparisons to estimate what an item is worth. Today, I check the asking price against your limit.
+Supported seller checkout
+I plan to connect supported sellers to checkout. You’ll set the spending cap and expiry, then approve the purchase.
+Separate payment proof
+Base Sepolia ticket demo.
+My earlier ticket demo recorded a 5.00 test USDC payment through my own demo seller, after owner approval. Marketplace checkout still needs a seller integration.
+View the recorded transaction ↗
+My browser demo is free and makes no payment.
+Talk to Tix
+→
+Built by Gabe.
+Meet the founder ↗
+Follow Tix on X
+↗
+tixmancer.xyz

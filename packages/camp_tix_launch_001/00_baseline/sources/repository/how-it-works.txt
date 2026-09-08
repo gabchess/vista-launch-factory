@@ -1,0 +1,92 @@
+# How Tixmancer works
+
+## The product in one line
+
+A signed-in user tells Tix what they want, where they are and what they would
+pay. Tix keeps the conversation with that account and helps the user review the
+next listing or search result.
+
+## Account and conversation
+
+Coinbase Developer Platform handles Google OAuth. The server validates the CDP
+access token, checks that it belongs to the configured project and confirms the
+Google authentication method. Tix then creates its own opaque, revocable
+session cookie. Email is never used as authority.
+
+Every conversation, turn, message and memory fact carries the internal user
+ID. Reads and writes require the same account. The account owns all preview
+service records too, so another user cannot retrieve them by guessing an ID.
+The Deal Inbox session is bound to that same user ID, and sign-out clears both
+account cookies before another person can use the browser.
+
+## The model
+
+Tix uses Vercel AI SDK with an AI Gateway model identifier. The model writes the
+conversation and may call narrow tools. Code validates every tool input and
+output. Money math and preview provenance come from code, not model prose.
+
+The conversation has no scripted Sony or city branch. The first greeting is
+model-generated within a small contract, and later turns use the item, place,
+currency and limit supplied by the signed-in user.
+
+## Preview services
+
+The preview service layer covers search, listing details, notification
+preference, connector setup and wallet steps. It writes durable Postgres
+records with `mode = simulated`. These records demonstrate the product flow
+without claiming that an external marketplace, messaging provider or wallet
+changed state.
+
+The product can truthfully say that it saved a simulated search or rendered an
+in-app notification. It cannot say that it searched a live marketplace, sent a
+Telegram message, received USDC or bought an item.
+
+## Release access
+
+The server reads one release mode:
+
+- `preview`: the public home shows the recording entry.
+- `waitlist`: the public home collects launch interest.
+
+Any missing or unknown value becomes `waitlist`. The home page then collects
+consent for one launch notification. In both modes, protected routes require a
+signed-in account with an active server-side entitlement. The browser cannot
+grant itself access.
+
+The release mode applies to the account chat, consumer demo and their
+account-owned APIs. The existing fixture seller and pay-per-score endpoints
+remain public under their own x402 contracts. They cannot open or mutate the
+private account preview.
+
+## Installable web app
+
+The manifest starts at `/chat` and uses standalone display mode. On iPhone or
+iPad, a user can open the site in Safari, tap Share, and choose **Add to Home
+Screen**. This keeps the first product a web app while preserving a later path
+to native iOS features.
+
+## Separate Base Sepolia proof
+
+The repository still contains the earlier intent, watch, approval and ticket
+payment rail. One full test purchase settled 5.00 USDC over x402 on Base
+Sepolia through the project’s own demo seller. The durable Postgres stores and
+spending guards remain useful foundation work.
+
+That rail is supporting mechanism evidence. The consumer preview cannot use it,
+and the transaction does not establish a marketplace purchase or third-party
+seller adoption. The inherited payment lab and buyer APIs are disabled in
+production and require an explicit local test flag.
+
+## Database safety
+
+Production state lives in Postgres. Local end-to-end tests create a disposable
+database and remove it after the run. Keep a deployed `DATABASE_URL` out of
+`.env.local`; Next.js loads that file automatically, and Playwright would send
+test writes to whichever database it names.
+
+## Verification
+
+The release gate checks types, production build, unit and integration tests,
+browser journeys, lint, claim honesty and the deterministic conversation
+contract. The provider-backed model eval runs separately with an AI Gateway
+credential.
