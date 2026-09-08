@@ -1,32 +1,15 @@
-# Install in Claude
+# Use Launch Factory in Claude Code
 
-## Package
+Open the full repository as a Claude Code project. `.claude/skills/launch-factory/SKILL.md` reaches the canonical operator; `.claude/agents/*.md` supplies the named specialist roles. The shared `engine/specialists/` contracts and banks stay in the repository. Project wrappers are generated from one registry and must not be installed alone elsewhere.
 
-Skill ZIP (host door):
+Start a fresh session in the project and ask Launch Factory to inspect one source folder or supplied packet. Confirm the chosen skill path, product, human reviewer and source gate. If native delegation is unavailable, the operator reads the selected skill and bank and performs the role inline, stating that fallback.
 
-`claude/launch-factory-v0.2.0.zip`
+The project role fields follow [Claude Code's subagent documentation](https://code.claude.com/docs/en/sub-agents). Current local checks establish file consistency and offline routing. Destination-host discovery, actual delegation, tool access and first output need separate evidence. Consult the installed host's help before issuing host-management commands.
 
-(one-root zip; mirrors `codex/launch-factory` skill payload — **not** the Option B `engine/` tree)
+`claude/launch-factory-v0.2.0.zip` is retained as a **legacy skill-only archive**. It predates this specialist layer and excludes the engine and native project roles. It is not the current specialist handoff. Use the full repository project door described here. No refreshed whole-repository ZIP is claimed in this change.
 
-Engine SoT (structural validate/package):
+Inspect any older global/project skill collision and select the intended source path. Do not overwrite user-owned skills or credentials. For rollback, keep a separate checkout of the earlier version; preserve local changes before removing only this layer's generated project files.
 
-`engine/` at this **product root**. Keep it reachable after install, same rule as Codex.
+Provider access must be configured and verified with the operator's own account in this host. No automatic publishing, sending or paid retry is included. Actual Barry or Gabe decisions remain separate from model recommendations and the legacy structural record.
 
-## Steps
-
-1. Close any older Launch Factory project/skill copy in the workspace if present.
-2. Download or locate `claude/launch-factory-v0.2.0.zip` from this product root.
-3. Install per Claude’s project / skill ZIP convention for your workspace (unzip to a single root; do not scatter nested skill files).
-4. Confirm the Augment loads in a **fresh** chat/project. Folder visible ≠ Augment active until the host binds it.
-5. Ask: “Use Launch Factory. Run on this release folder.”
-6. Confirm it identifies as **Launch Factory**, routes to Claims Lock before fan-out, and refuses publish/send.
-
-This ZIP was statically packed for dual-host **skill-door** parity. It does **not** vendor `engine/`. Live Claude activation was **not** freshly verified — treat activation as a host-level check. See [HOST-MATRIX.md](../HOST-MATRIX.md).
-
-If install fails, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md). Prefer [INSTALL-CODEX.md](INSTALL-CODEX.md) when your host is Codex.
-
-## After install
-
-- Read [TRUST-PRIVACY-AND-AUTHORITY.md](TRUST-PRIVACY-AND-AUTHORITY.md) before uploading release materials.
-- Same Barry / no auto-publish / slots 1·5·6 HOLD honesty as Codex.
-- **ZIP = skill door.** Structural engine lives at product-root `engine/` until a later thin-copy / pointer follow-up. Without `engine/` reachable: chat-only Claims Lock draft — no invent paths, no invent claims/pricing.
+See [Codex](INSTALL-CODEX.md), [the offline fixture](../engine/specialists/README.md) and [current scope](adr/0017-specialist-routing-and-current-scope.md).

@@ -35,10 +35,12 @@ EXCLUDE_DIRS = {
 }
 
 EVIDENCE_BOUNDARY = (
-    "Proves pack structure, file integrity (sha256/bytes), and documented "
-    "Barry HITL gates only. Does not prove live host activation, semantic "
-    "output quality, or customer outcomes; slots 1/5/6 are HELD (ADR 0013) "
-    "and the Voice Bank brief is interim (ADR 0015). See HOST-MATRIX.md."
+    "Proves pack file integrity and includes the specialist 0.3.1 project "
+    "entry points, protocols and offline routing checks (ADR 0017). Does not "
+    "prove host invocation, provider access, human authentication, semantic "
+    "quality or customer outcomes. Historical fixtures and the Claude 0.2.0 "
+    "ZIP retain their legacy scope. Vista voice remains interim (ADR 0015). "
+    "See HOST-MATRIX.md."
 )
 
 
@@ -67,7 +69,7 @@ def is_doc(rel):
     if not rel.endswith((".md", ".txt")):
         return False
     if rel.startswith("engine/") and not (
-        rel == "engine/README.md" or rel.startswith("engine/adapters/")
+        rel == "engine/README.md" or rel.startswith(("engine/adapters/", "engine/specialists/"))
     ):
         return False
     return True
@@ -90,7 +92,9 @@ def main():
         "v0.2.0: pack envelope at repo root (ADR 0012 repo-link door); "
         "engine/ = single SoT (Option B); one release record + loop-shaped "
         "skill; Campaign Plan slot 7 (ADR 0016); interim Voice Bank "
-        "(ADR 0015); run.sh one-command door (ADR 0014). Manifests exclude "
+        "(ADR 0015); legacy run.sh door (ADR 0014). Specialist layer 0.3.1 "
+        "adds native project entry points and offline routing (ADR 0017); "
+        "the retained Claude ZIP is not refreshed. Manifests exclude "
         "themselves, runs/, and packages/; regenerate with "
         "scripts/regen_manifests.py (STRUCTURAL_INTEGRITY_ONLY)."
     )

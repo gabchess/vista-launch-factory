@@ -1,17 +1,24 @@
-# Host matrix
+# Host evidence
 
-| Capability | Codex package | Claude package | Grok-crew / leave-behind | Evidence level |
-|---|---:|---:|---:|---|
-| Skill / pack files included | Yes (`codex/launch-factory/`) | Yes (`claude/launch-factory-v0.2.0.zip`) | N/A for this pack | Package inspection |
-| Canonical engine schemas | **Present** at product-root `engine/schemas/` (Option B SoT) | **Not inside ZIP** — same SoT only when product-root `engine/` is kept reachable | Not claimed | A3 files present under `engine/`; ZIP is skill door only |
-| Structural helper scripts | **Present** (`engine/scripts/` when product root kept; skill `scripts/` README only) | Same rule — needs product-root `engine/`, not the ZIP alone | Not included | STRUCTURAL_INTEGRITY_ONLY — proven via local Python on product tree; host activation unverified |
-| Persistent release-run state | Host and workspace dependent | Project/file dependent | Unknown | Not freshly host-verified |
-| CMS, HubSpot, social, or external publishes | Not included | Not included | Not included | Explicit exclusion |
-| Auto-send / auto-publish | Not included | Not included | Not included | Explicit exclusion |
-| Semantic output parity across hosts | Intended | Intended | Not claimed | Not executed |
-| Fresh-host automatic activation | Not proven | Not proven | Not proven | Unverified |
-| Slots 1 / 5 / 6 real encode/assets | HOLD | HOLD | HOLD | Documented honesty |
+The full repository now includes the specialist layer described in [ADR 0017](docs/adr/0017-specialist-routing-and-current-scope.md). The retained Claude v0.2.0 ZIP is a legacy skill-only archive and does not contain this layer.
 
-Codex and Claude should preserve the same Claims Lock gate, Barry authority, non-goals, and HOLD honesty. Identical prose is neither required nor expected.
+| Evidence | Codex project | Claude Code project |
+| --- | --- | --- |
+| Operator skill | `.agents/skills/launch-factory/` | `.claude/skills/launch-factory/` |
+| Specialist skills | `.agents/skills/lf-*/` | `.claude/skills/lf-*/` |
+| Native roles | `.codex/agents/lf_*.toml` | `.claude/agents/lf-*.md` |
+| Shared protocol and banks | `engine/specialists/` | Same canonical files |
+| Entry-point consistency | Offline generated-file check | Offline generated-file check |
+| Packet routing and review binding | Offline Python fixture tests | Same helper; no host claim |
+| Project skill discovery | Observed: Codex CLI 0.153.3 app-server `skills/list` with `forceReload`, 14 enabled repo skills including `lf-short-motion-finishing`, zero missing names or target errors | Not executed for this layer |
+| Native role invocation | Not executed for this layer | Not executed for this layer |
+| Provider access and real first output | Not verified by these files | Not verified by these files |
+| Human authentication/event ledger | Not implemented by this layer | Not implemented by this layer |
+| Media quality and human acceptance | Require actual artifact inspection and decision | Same requirement |
+| Publish/send/schedule externally | Not included | Not included |
 
-**A3 honesty:** Option B `engine/` is populated in the product tree. Skill-only Codex install or Claude ZIP alone does **not** carry the engine — keep product root (or chat-only Claims Lock draft; fail closed on structural proof). Do **not** invent a third schema tree inside the ZIP. **Honest unknowns:** live host activation and semantic fan-out quality remain **not** verified — folder/ZIP visible ≠ Augment active. A7/A8 HOLD.
+The operator can perform a specialist protocol inline after reading its selected skill and bank. It must identify that fallback. Schema/hash checks do not measure copy quality. The legacy validators and fixtures retain their structural limits; a boolean flag or matching event envelope does not authenticate a human.
+
+The fresh 14-skill discovery probe ran after the finishing update on 8 September 2026. The earlier 13-skill receipt remains historical evidence. It made no model turn or provider call and changed no host configuration. Destination hosts still require their own discovery check.
+
+The actor-production contract added in layer 0.3.0 extends the existing video lead and keeps the same 14 skill names. The observed discovery receipt above predates this contract update; its code and prompts have only offline validation here. No native invocation, provider job, n8n adapter or actor-quality result is claimed by this update.

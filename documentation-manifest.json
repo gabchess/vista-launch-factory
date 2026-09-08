@@ -5,8 +5,168 @@
   "claim_boundary": "Engine structural validate/package proves mechanics only — not host-activation proof, semantic quality proof, or all-six-slots claim. Slots 1/5/6 HOLD. A5 Barry HITL cards under product-root barry/ are human gates only — not publish authority.",
   "files": [
     {
+      "path": ".agents/skills/launch-factory/SKILL.md",
+      "sha256": "375e626327870cea3f833de237fec218b3332ba8438ca18a89e2581297568c2a"
+    },
+    {
+      "path": ".agents/skills/lf-blog/SKILL.md",
+      "sha256": "37fddb0f67ce6199ac6307a8ae5f0f7a4b85e74d3e5c95cd63b9a1da981ea229"
+    },
+    {
+      "path": ".agents/skills/lf-campaign-calendar/SKILL.md",
+      "sha256": "ee7798c016ad9ee91bb201c43ba421c253d0bb594d15447848d4e70be4ab6ea2"
+    },
+    {
+      "path": ".agents/skills/lf-carousel/SKILL.md",
+      "sha256": "c37b8d558b3f91dbf85c6974b6c5dda89e5e676a0b9db5519544e4b06f60007c"
+    },
+    {
+      "path": ".agents/skills/lf-changelog/SKILL.md",
+      "sha256": "ec7a1e759ce496ccf46f71aa1cec3ff9793e72761de1c6be921b257d5e762cce"
+    },
+    {
+      "path": ".agents/skills/lf-deliverable-review/SKILL.md",
+      "sha256": "b1e134bbac920f11986babf7f69a12f01ff9824aaa5eefa10f6c021c6169e2d1"
+    },
+    {
+      "path": ".agents/skills/lf-email-segments/SKILL.md",
+      "sha256": "f8ebd711b8641ea524692aed88234fd912d31bccbc4d512eba197c75f9312c72"
+    },
+    {
+      "path": ".agents/skills/lf-evidence-review/SKILL.md",
+      "sha256": "a46948fd1fd1844184bea8e8dfddfd56c19c94472bb51c0651032512cb8ecfa4"
+    },
+    {
+      "path": ".agents/skills/lf-linkedin/SKILL.md",
+      "sha256": "cd762de4541be788c0d5bbf1ef53986ca7c4cd31932b78d11f03f0ef13e7162d"
+    },
+    {
+      "path": ".agents/skills/lf-login-animation/SKILL.md",
+      "sha256": "578a1898606e0a406026033889f72214cc5ae6b1b9dff7d8c14a6052ea14f502"
+    },
+    {
+      "path": ".agents/skills/lf-popup/SKILL.md",
+      "sha256": "223a91e3c60a8cfc6758b7a1079816b5f7c540aaba8304ef03561c001349ad70"
+    },
+    {
+      "path": ".agents/skills/lf-short-motion-finishing/SKILL.md",
+      "sha256": "53de21844c4fda659823e16eee0092a5a78695621c202349cf66bec0c78104a7"
+    },
+    {
+      "path": ".agents/skills/lf-video-production/SKILL.md",
+      "sha256": "271d0624f6bb2093329faaadc7f28ffd33865e7ee9d11e1803cb533144a5ca61"
+    },
+    {
+      "path": ".agents/skills/lf-written-social/SKILL.md",
+      "sha256": "1adabb5957d1f1df43cb3a3d004f305ade4f1b37aa00ab28fbf341e025328009"
+    },
+    {
+      "path": ".claude/agents/lf-blog-editor.md",
+      "sha256": "2460dc79cf9a0f2bb65935fb61eefa880bc27f59384fac27fc05a075b0d47b0e"
+    },
+    {
+      "path": ".claude/agents/lf-campaign-planner.md",
+      "sha256": "95a5303a36eb360688865297858905e0ec65f4ff0ba2ed569e29a40f73703bef"
+    },
+    {
+      "path": ".claude/agents/lf-carousel-designer.md",
+      "sha256": "45916e3d3490d112ded88127d69f02319d09ad0fc57682d75520ec63a0406644"
+    },
+    {
+      "path": ".claude/agents/lf-changelog-editor.md",
+      "sha256": "f8dbcc6b8ce452fcb58d3aa0499b4a23b5074359795cccefd21f71c795971952"
+    },
+    {
+      "path": ".claude/agents/lf-email-editor.md",
+      "sha256": "9115b8dd3f1efa62b36e1c1f6e64ff2ec35e91482896ac8304989f8ffd77b02a"
+    },
+    {
+      "path": ".claude/agents/lf-evidence-editor.md",
+      "sha256": "ba223bbe293d4092c2e66d3ca2f1e66bbdf538b975c3686887076f449577cf3d"
+    },
+    {
+      "path": ".claude/agents/lf-linkedin-editor.md",
+      "sha256": "b9bb1530e4cdb664d283f5bc66a822fcd1bb3d578fa15320c678d4abd5d852e3"
+    },
+    {
+      "path": ".claude/agents/lf-motion-designer.md",
+      "sha256": "a6bd69483d5373cb712fa405a5860b96426cc4d703a5edadeff5beb415c34a09"
+    },
+    {
+      "path": ".claude/agents/lf-popup-designer.md",
+      "sha256": "60e421e014030931561146f34cc1e69ffb9c75f838b26cfd9fa782a9d3628598"
+    },
+    {
+      "path": ".claude/agents/lf-quality-reviewer.md",
+      "sha256": "000900cc5823ee2d5556d2145af9a9babbd98c1cf65b0d2c92b5707e0480c399"
+    },
+    {
+      "path": ".claude/agents/lf-social-editor.md",
+      "sha256": "511536a8d68362f56a1ab04618fa310b52c6dcbe0768fc1d9c5d379b57c23c1d"
+    },
+    {
+      "path": ".claude/agents/lf-video-lead.md",
+      "sha256": "4d1419a8e39dadabb89dee00aff1115e097c059bd4e3c6da88d87637fabbe564"
+    },
+    {
+      "path": ".claude/skills/launch-factory/SKILL.md",
+      "sha256": "375e626327870cea3f833de237fec218b3332ba8438ca18a89e2581297568c2a"
+    },
+    {
+      "path": ".claude/skills/lf-blog/SKILL.md",
+      "sha256": "37fddb0f67ce6199ac6307a8ae5f0f7a4b85e74d3e5c95cd63b9a1da981ea229"
+    },
+    {
+      "path": ".claude/skills/lf-campaign-calendar/SKILL.md",
+      "sha256": "ee7798c016ad9ee91bb201c43ba421c253d0bb594d15447848d4e70be4ab6ea2"
+    },
+    {
+      "path": ".claude/skills/lf-carousel/SKILL.md",
+      "sha256": "c37b8d558b3f91dbf85c6974b6c5dda89e5e676a0b9db5519544e4b06f60007c"
+    },
+    {
+      "path": ".claude/skills/lf-changelog/SKILL.md",
+      "sha256": "ec7a1e759ce496ccf46f71aa1cec3ff9793e72761de1c6be921b257d5e762cce"
+    },
+    {
+      "path": ".claude/skills/lf-deliverable-review/SKILL.md",
+      "sha256": "b1e134bbac920f11986babf7f69a12f01ff9824aaa5eefa10f6c021c6169e2d1"
+    },
+    {
+      "path": ".claude/skills/lf-email-segments/SKILL.md",
+      "sha256": "f8ebd711b8641ea524692aed88234fd912d31bccbc4d512eba197c75f9312c72"
+    },
+    {
+      "path": ".claude/skills/lf-evidence-review/SKILL.md",
+      "sha256": "a46948fd1fd1844184bea8e8dfddfd56c19c94472bb51c0651032512cb8ecfa4"
+    },
+    {
+      "path": ".claude/skills/lf-linkedin/SKILL.md",
+      "sha256": "cd762de4541be788c0d5bbf1ef53986ca7c4cd31932b78d11f03f0ef13e7162d"
+    },
+    {
+      "path": ".claude/skills/lf-login-animation/SKILL.md",
+      "sha256": "578a1898606e0a406026033889f72214cc5ae6b1b9dff7d8c14a6052ea14f502"
+    },
+    {
+      "path": ".claude/skills/lf-popup/SKILL.md",
+      "sha256": "223a91e3c60a8cfc6758b7a1079816b5f7c540aaba8304ef03561c001349ad70"
+    },
+    {
+      "path": ".claude/skills/lf-short-motion-finishing/SKILL.md",
+      "sha256": "53de21844c4fda659823e16eee0092a5a78695621c202349cf66bec0c78104a7"
+    },
+    {
+      "path": ".claude/skills/lf-video-production/SKILL.md",
+      "sha256": "271d0624f6bb2093329faaadc7f28ffd33865e7ee9d11e1803cb533144a5ca61"
+    },
+    {
+      "path": ".claude/skills/lf-written-social/SKILL.md",
+      "sha256": "1adabb5957d1f1df43cb3a3d004f305ade4f1b37aa00ab28fbf341e025328009"
+    },
+    {
       "path": "AGENTS.md",
-      "sha256": "362d7e36251441069128ec1e66932d6ca35732994c7d1b388c2c31564702978c"
+      "sha256": "5c4792fa3006c7c0c91d6882a6a238529431d140b8a1939e0647bb863f3999c7"
     },
     {
       "path": "CHANGELOG.md",
@@ -14,11 +174,11 @@
     },
     {
       "path": "HOST-MATRIX.md",
-      "sha256": "e71a63f9eaf0b1c6aa5031279eecaaa4d98bf3ba755f0c2a43f6957e50b2931b"
+      "sha256": "36080ba1dded5648e25fa18f554d5f468cbf923bb45fbf3988887e7f80475746"
     },
     {
       "path": "LICENSE-STATUS.md",
-      "sha256": "ca95dfbfb9f22176dbb712b232ab84515fc7948537776b3d5bbb517da0eacb4a"
+      "sha256": "f2bd0c4c254491e92de7fe50d9551a1ffee49f94879cdddff7b7ee79a4499f0b"
     },
     {
       "path": "Launch Factory T-NOVA v0.2.0.txt",
@@ -26,11 +186,11 @@
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "b36a3a8be9a17e587eb9829275cad8359d073130a00e9e31abc25c882347f33c"
+      "sha256": "8933f9780f66610562b8eedd7bc8a205ef3b108319d1cc45dfad7e0dc7890fad"
     },
     {
       "path": "README.md",
-      "sha256": "18d81e1275d8c9c57f452156f9a2dc7b8ac5ac6eb80a11945cc2335d049c6b4f"
+      "sha256": "4b4fbba4bb63fbe958b316ccd8673cfca980974017a41cdb7b51f81b3c9bf975"
     },
     {
       "path": "SHOW-ME.md",
@@ -38,7 +198,11 @@
     },
     {
       "path": "START-HERE.md",
-      "sha256": "4de2057c97167622f6163cd07f68512d93935a93279bb7ee97285a992e536ee3"
+      "sha256": "180dadc07fc4c31c0b015ecc50049a959da254c1ab8c7082489c6ec5768e48d3"
+    },
+    {
+      "path": "automation/n8n/ugc-app-reveal/README.md",
+      "sha256": "b0bf56fd2178d4adb5d2b814b9c0a4daed7dad639b40f916198092fba6297698"
     },
     {
       "path": "barry/README.md",
@@ -66,7 +230,7 @@
     },
     {
       "path": "codex/launch-factory/SKILL.md",
-      "sha256": "ff018d7ba292937f870d74b4798f2c2a0027cf562ab3d8b6fe9a61ecbb7fa7be"
+      "sha256": "58daac60c391d7efbba6680db83940866a8e5d8e640922fc0d5b67ef05fb14ee"
     },
     {
       "path": "codex/launch-factory/examples/01-claims-lock-walkthrough.md",
@@ -129,6 +293,14 @@
       "sha256": "de14ad86dae7d1c3774e78c2d2f7b20768f03b212a9c631045afef9a8293d47a"
     },
     {
+      "path": "docs/AFTER-COMPACTION.md",
+      "sha256": "2fef8e2c1a2753fe350f89cc9490b8033c5825aad59456078c8056b9b112d6ad"
+    },
+    {
+      "path": "docs/CHECKPOINT.md",
+      "sha256": "52f8854272a9362ba27c58ffc711f993a38fc01c9a3a54a4397cbbf43b1d0ce5"
+    },
+    {
       "path": "docs/CONTEXT.md",
       "sha256": "3a00fb144839aa2f5e3f04f241829d320791c1cdff642da5eada8ecc7ce7787e"
     },
@@ -154,11 +326,15 @@
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
-      "sha256": "d885a598f46f8e80a50907ae1d82429b758d2faab442cea4e27e674d25c49882"
+      "sha256": "a4d6aa32b693145369d08550c72918bdd25707ae29e5ef700312fc2034ca3d0c"
     },
     {
       "path": "docs/INSTALL-CODEX.md",
-      "sha256": "39b15039b3b22178e2195f92f8a63906ff80128196ad20e98b9a40dcdb1d1e75"
+      "sha256": "7f494cf8a781c66cbeaf3b38e5d59e37deaab745e6e124fe9370dcc0d798811c"
+    },
+    {
+      "path": "docs/NEXT-STEPS.md",
+      "sha256": "0f294e98c5eadc207c7db7b44e1f74e3e53b3e5798b8f87def855858c38483c9"
     },
     {
       "path": "docs/OPERATE-LAUNCH-FACTORY.md",
@@ -195,6 +371,18 @@
     {
       "path": "docs/adr/0016-orchestrator-and-campaign-plan.md",
       "sha256": "b473edf25d41c86875bd956c9a1f89d27a60043ac3364284d14d1ae90e7a3cb4"
+    },
+    {
+      "path": "docs/adr/0017-specialist-routing-and-current-scope.md",
+      "sha256": "e70dbd6e021bfc015a0ff4c3719e39560d511637bd8d5f14985f870052b3ff97"
+    },
+    {
+      "path": "docs/adr/0018-ugc-app-reveal-preparation.md",
+      "sha256": "9eb682325283298ebc0847a545ede59c69cb0652bfafd1dca3a5b38b425c673f"
+    },
+    {
+      "path": "docs/adr/0019-testable-app-and-next-milestone.md",
+      "sha256": "885637c32ba3a3f1882eebf7a9acb703f7e79f218e0df3916e18ca1ba7345ff9"
     },
     {
       "path": "docs/agents/domain.md",
@@ -241,6 +429,134 @@
       "sha256": "15f823ae609c64d8eab038a094acc3c7d2bc9cbf0d5a0b76f6137297ae3ca335"
     },
     {
+      "path": "engine/specialists/CONTRACT.md",
+      "sha256": "c7236f98274bcb7c9728ac6b06e49510b4aa3e1a05517e6f74926f0b3e17d848"
+    },
+    {
+      "path": "engine/specialists/README.md",
+      "sha256": "cb141f91b0a04554f41d627800a1569f9da098b834b759bd0311512c78481ed0"
+    },
+    {
+      "path": "engine/specialists/finishing/SKILL.md",
+      "sha256": "75b6721b1c2e99211e945ba7d527f6cc897859ad69de798aa8fe64e86dbc9db7"
+    },
+    {
+      "path": "engine/specialists/references/animation.md",
+      "sha256": "a6538c0a0850ce7320643be521e1efe06dae6b2eea5d360d809a74443f711492"
+    },
+    {
+      "path": "engine/specialists/references/blog.md",
+      "sha256": "26f9811c774a907f8f8dad5704378263a6ce31b3fa6411864fbdb35dd2af3bc9"
+    },
+    {
+      "path": "engine/specialists/references/campaign.md",
+      "sha256": "0d7fc2e2bc3acc7f4ed7828a7befbee3927b0cd516ea65c41ca822921f772a83"
+    },
+    {
+      "path": "engine/specialists/references/carousel.md",
+      "sha256": "66b9160586dcdad9e55078ab998b4b28b1b0be22b0acbe2fe2a38054d1aaf342"
+    },
+    {
+      "path": "engine/specialists/references/changelog.md",
+      "sha256": "ea4410730bb0d7f389cb784f55bf728d0f47e87120370c39cff73cf7085ed522"
+    },
+    {
+      "path": "engine/specialists/references/email.md",
+      "sha256": "be53929d8daebebf6992bb8548b4c6fad84e0d806517288725e47c1b8cf4add5"
+    },
+    {
+      "path": "engine/specialists/references/evidence.md",
+      "sha256": "6e7bdbc9afddf71d3e28f292315f51526a93daf62ad60dbec2c3097ae70c2b90"
+    },
+    {
+      "path": "engine/specialists/references/linkedin.md",
+      "sha256": "5a2f7a9d138e60c0283260c49cc8ae6f39476e7b851903937b024ecbea8f2442"
+    },
+    {
+      "path": "engine/specialists/references/popup.md",
+      "sha256": "614ee1b4f888b807d6893f201bddd46651c64d3b415aec1c247b7760cab9e19e"
+    },
+    {
+      "path": "engine/specialists/references/review.md",
+      "sha256": "4321378aae6c188e58d0ce1f092066df4c2dc26f6286c0c4e57a7c58fdd87666"
+    },
+    {
+      "path": "engine/specialists/references/social.md",
+      "sha256": "34da3e3acc09c8d108ef4586d0d0035e648c603bce7f2136f749bcbfc8c72b46"
+    },
+    {
+      "path": "engine/specialists/references/video.md",
+      "sha256": "963b8f8e3da7dbe33440960dde8cf328dfc8d3fe33b930e209f38b86f5ffe00b"
+    },
+    {
+      "path": "engine/specialists/video-production/ELEVENLABS-DIRECT.md",
+      "sha256": "06e78bdc70b21eda4e06df35e608bffc49e8a95d7a8c3e49c90841f25739ce6b"
+    },
+    {
+      "path": "engine/specialists/video-production/PROMPTS.md",
+      "sha256": "f2a173e6c17b1576d42dfc6b0ce0bb41573c5adef356d6e291735ad494b642d0"
+    },
+    {
+      "path": "engine/specialists/video-production/PROTOCOL.md",
+      "sha256": "10289189829fcffaf88eaea2ded1ebe6ab0bbeb56281e9ff6b859ddbc1c4dc08"
+    },
+    {
+      "path": "engine/specialists/video-production/PROVIDER-NOTES.md",
+      "sha256": "8cc7c5d7760e794f98f5ed9373e53b54afba6906a4234290b0da8bf68c7df60e"
+    },
+    {
+      "path": "engine/specialists/video-production/example-workspace/angle.txt",
+      "sha256": "2089cd460f8c0448a1e482c55339e78c845b66bdf992e74c382e20cdf6f5af09"
+    },
+    {
+      "path": "engine/specialists/video-production/example-workspace/identity.txt",
+      "sha256": "1781b370931b2a8e1e29b9cce500ae03c170cae9870807ed12cbe801d8be5526"
+    },
+    {
+      "path": "engine/specialists/video-production/example-workspace/script.txt",
+      "sha256": "b855a26522cdc7239a587772aec1fc45324d8004a1ea98c7a54bc0d5a5db4d72"
+    },
+    {
+      "path": "engine/specialists/video-production/example-workspace/setting.txt",
+      "sha256": "4287a08b11783f13b146d2fc5aa4ff121647361df6ddabf89675647f8cac378d"
+    },
+    {
+      "path": "engine/specialists/video-production/example-workspace/sketch.txt",
+      "sha256": "67d06c1ea7ffcba3816de80466ad765e259d26a29f295417ca48e632098cbd79"
+    },
+    {
+      "path": "engine/specialists/video-production/example-workspace/voice.txt",
+      "sha256": "6ab63a7faa7764bca9a55fb7f572166f7b0d3907796e48dd6e72a3ded02aa7ed"
+    },
+    {
+      "path": "engine/specialists/video-production/recipes/ugc-app-reveal/01-discover-account-template.md",
+      "sha256": "209575033316c3037dda608830ebcf59350a6f304ee95a1f8b700aa45140a4dc"
+    },
+    {
+      "path": "engine/specialists/video-production/recipes/ugc-app-reveal/02-exact-actor-performance.md",
+      "sha256": "3615cbc32601ab7f69c49048ac196fa48173496696f5e6155c706010692d6ab6"
+    },
+    {
+      "path": "engine/specialists/video-production/recipes/ugc-app-reveal/03-authored-app-reveal.md",
+      "sha256": "46209bcd084ca72f768d20b6ff36850f6911028bb398148697e7a043a5eae544"
+    },
+    {
+      "path": "engine/specialists/video-production/recipes/ugc-app-reveal/04-assemble-audio-captions.md",
+      "sha256": "773fde29dc8ae697e9cd75f6a9cfa4dc0ed3ad0a7dd3e053dfaf3b25a28d5eac"
+    },
+    {
+      "path": "engine/specialists/video-production/recipes/ugc-app-reveal/05-evidence-qa-revision.md",
+      "sha256": "049bdea8f84143015d6e7bede64005796b1cc495b38bc3c0504c68e8f144d182"
+    },
+    {
+      "path": "engine/specialists/video-production/recipes/ugc-app-reveal/README.md",
+      "sha256": "be79f394471ce741cf2ad4fdc114e8edc27e770c400ef4a0276b31257b68eaf6"
+    },
+    {
+      "path": "findings.md",
+      "sha256": "1d4cf9bf9166834ed93e2a30535e2309a11dc5d4d2f460ff829f4eb3c7e35625"
+    },
+    {
       "path": "handoff/README.md",
       "sha256": "8247b9ac48baf73b82a1bcf95082396763221e785ed7e62b00f3e40b8e2b3e8b"
     },
@@ -285,12 +601,20 @@
       "sha256": "0b94b8e6d1c94129c00b6abc5e5bb388fdacbf6cd0dc459e4b2cb038d5cce8a0"
     },
     {
+      "path": "progress.md",
+      "sha256": "b65e2a4855067bdc8354cfa9a0ddf8668b7be8d284904337aca17b565a25725d"
+    },
+    {
       "path": "recording/shot-list.md",
-      "sha256": "95c5951ef1ef9f6a067121124b344994b4aa624fbc86e7220937152577be471b"
+      "sha256": "71972143716776494a075b8e6257e7a358094244dba5f7aabda7a59f3b7c8dbd"
     },
     {
       "path": "requirements.txt",
       "sha256": "1a2f59308b3e2898dcd510781b78749031809dc1521a9099be2edec41206edd6"
+    },
+    {
+      "path": "task_plan.md",
+      "sha256": "4420dd921db445e58eb63190505f837fb83b409b0bd7efde3770e1d8d7ef9b72"
     },
     {
       "path": "trigger/notion-run-leavebehind.md",

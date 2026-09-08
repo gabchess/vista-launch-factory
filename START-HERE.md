@@ -1,44 +1,15 @@
 # Start here
 
-**Launch Factory** turns a feature release folder into a review-ready launch package for Vista Social.
+Launch Factory provides an operator and specialist protocols for turning release evidence into six launch deliverables, LinkedIn and written social, plus a weekly campaign calendar. The actual human reviews the content and creative at the workflow's gates. Nothing auto-publishes or auto-sends.
 
-You ingest one release folder (Loom walkthrough, feature outline, raw footage). The run follows one loop: ingest → ground (facts + Voice Bank brief) → **Claims Lock (Barry once)** → create (adapters from locked claims only) → review (four gates) → package (+ honesty doc + Campaign Plan) → learn. Nothing auto-publishes. All state lives in one release record (`runs/<folder>/release-record.json`) — every run resumes from it.
+Open the full repository in [Codex](docs/INSTALL-CODEX.md) or [Claude Code](docs/INSTALL-CLAUDE.md), then invoke Launch Factory on one release source. The operator identifies the product and human reviewer, checks claims and selected voice material, and invokes the specialist for the current stage. A host without native delegation uses the same protocol inline and reports that fallback.
 
-## Fastest path to value
+Try the [offline specialist fixture](engine/specialists/README.md) to inspect the routing, actual draft text, exact review subject and dependency behavior. This makes no provider calls. It does not prove host invocation, real content quality or a finished campaign.
 
-1. Choose your host: [Codex](docs/INSTALL-CODEX.md) or [Claude](docs/INSTALL-CLAUDE.md).
-2. Install the matching package (repo root is the install door — ADR 0012).
-3. Read [First run](docs/FIRST-RUN.md).
-4. Point Launch Factory at one release folder with the strongest materials you have.
-5. Start with: **"Run Launch Factory on this release folder."**
+The new specialist layer lives in the full repository project doors. The retained `claude/launch-factory-v0.2.0.zip` predates it and remains a legacy skill-only archive. No updated whole-repository ZIP is claimed here.
 
-One-command door (ADR 0014), from repo root with Python 3 available:
+`run.sh`, the old release-record helpers and historical demo packages remain structural fixtures. They do not authenticate a reviewer or implement the new version-bound human workflow. Do not translate model recommendations or Gabe's decisions into a false Barry approval through `--human-confirmed`.
 
-```bash
-./run.sh engine/fixtures/demo-release
-```
+Current demo and media scope is recorded in [ADR 0017](docs/adr/0017-specialist-routing-and-current-scope.md), preserving older HOLD decisions as history. Each real provider run requires current source evidence, tool access and the actual human's authorized stage. A web app, deployed n8n service and authenticated event store remain separate work.
 
-After the first Run, expect a Claims Lock draft for Barry — not six finished assets yet.
-
-**v0.2.0 honesty:** The engine is the single source of truth at repo-root `engine/` (Option B). Keep the repo root reachable after host install — copying only `codex/launch-factory` into `skills/` does **not** bring `engine/` along. When `engine/` + Python are available, Run uses `engine/scripts/` structural helpers (`init_release`, `validate_record`, `transition_slot`, `validate_ledger`, `validate_campaign`, `build_package`) — **STRUCTURAL_INTEGRITY_ONLY**; no publish. If `engine/` is missing, Run is chat-only Claims Lock **draft shape** (fail closed; no invent claims/pricing). Barry remains the quality gate for copy and creative; only Barry's recorded decision moves anything to approved. Slots 1/5/6 HOLD (ADR 0013). Voice is interim (ADR 0015). Claude ZIP is a skill door only (engine not inside the ZIP). See [Trust, privacy, and authority](docs/TRUST-PRIVACY-AND-AUTHORITY.md) and [engine/README.md](engine/README.md).
-
-## What Launch Factory is not
-
-- **Not a CMS publisher.** It does not push to vistasocial.com, changelog, or social networks.
-- **Not auto-send.** It does not send HubSpot email or any outbound without Barry approval and separately authorized tooling.
-- **Not email-only SaaS.** Email is one adapter among several; CIO tooling is not Vista's ESP.
-- **Not inventing claims.** Every claim must trace to source docs or transcript. No invented features, limits, or pricing.
-- **Slots 1 / 5 / 6 are HOLD** (social video with burned captions; login animation; in-app popup). Honesty stubs only until encode/asset tracks land. Do not claim "all six review-ready" while they are held.
-- **Writer ≠ Barry.** Drafting adapters are not the approval role; the record tooling refuses self-approval.
-- **Folder visible ≠ Augment active.** Having files on disk does not mean the host skill is installed and live.
-
-## Next reads
-
-- [Operate Launch Factory](docs/OPERATE-LAUNCH-FACTORY.md)
-- [Validation and limits](docs/VALIDATION-AND-LIMITS.md)
-- [Human gaps](docs/HUMAN-GAPS.md)
-- [Host matrix](HOST-MATRIX.md)
-
-## Barry HITL
-
-After install, Runs stop for Barry three times: Claims Lock → spot-check (on the first real **draft**) → pack approve. Order: draft first real → spot-check → remaining adapters. Cards: `barry/claims-lock.md`, `barry/spot-check.md`, `barry/pack-approve.md` (humans; not `engine/barry-templates/`). Slack thumbs do not count. Nothing publishes from this pack alone.
+Read [the operator skill](codex/launch-factory/SKILL.md), [host evidence](HOST-MATRIX.md) and [the specialist contract](engine/specialists/CONTRACT.md) for the current path.

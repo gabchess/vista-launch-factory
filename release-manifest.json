@@ -9,8 +9,398 @@
   ],
   "license_status": "tbd-gabe",
   "engine_placement": "option-b-sibling-engine",
-  "notes": "v0.2.0: pack envelope at repo root (ADR 0012 repo-link door); engine/ = single SoT (Option B); one release record + loop-shaped skill; Campaign Plan slot 7 (ADR 0016); interim Voice Bank (ADR 0015); run.sh one-command door (ADR 0014). Manifests exclude themselves, runs/, and packages/; regenerate with scripts/regen_manifests.py (STRUCTURAL_INTEGRITY_ONLY).",
+  "notes": "v0.2.0: pack envelope at repo root (ADR 0012 repo-link door); engine/ = single SoT (Option B); one release record + loop-shaped skill; Campaign Plan slot 7 (ADR 0016); interim Voice Bank (ADR 0015); legacy run.sh door (ADR 0014). Specialist layer 0.3.1 adds native project entry points and offline routing (ADR 0017); the retained Claude ZIP is not refreshed. Manifests exclude themselves, runs/, and packages/; regenerate with scripts/regen_manifests.py (STRUCTURAL_INTEGRITY_ONLY).",
   "files": [
+    {
+      "path": ".agents/skills/launch-factory/SKILL.md",
+      "sha256": "375e626327870cea3f833de237fec218b3332ba8438ca18a89e2581297568c2a",
+      "bytes": 763
+    },
+    {
+      "path": ".agents/skills/lf-blog/SKILL.md",
+      "sha256": "37fddb0f67ce6199ac6307a8ae5f0f7a4b85e74d3e5c95cd63b9a1da981ea229",
+      "bytes": 1516
+    },
+    {
+      "path": ".agents/skills/lf-blog/trigger-evals.json",
+      "sha256": "a0497f179e4663ec5388c70af89819d17e689abdec808c595e1231a6a761fb08",
+      "bytes": 721
+    },
+    {
+      "path": ".agents/skills/lf-campaign-calendar/SKILL.md",
+      "sha256": "ee7798c016ad9ee91bb201c43ba421c253d0bb594d15447848d4e70be4ab6ea2",
+      "bytes": 1561
+    },
+    {
+      "path": ".agents/skills/lf-campaign-calendar/trigger-evals.json",
+      "sha256": "056d9bdbdfd5a2a238b6df71acf8c3b90a60f16d68d393ac99442c3fbac039cc",
+      "bytes": 752
+    },
+    {
+      "path": ".agents/skills/lf-carousel/SKILL.md",
+      "sha256": "c37b8d558b3f91dbf85c6974b6c5dda89e5e676a0b9db5519544e4b06f60007c",
+      "bytes": 1562
+    },
+    {
+      "path": ".agents/skills/lf-carousel/trigger-evals.json",
+      "sha256": "da62b310b817f49e80ff1f75c532b886f7224a6777a842449996d6968ada81a3",
+      "bytes": 735
+    },
+    {
+      "path": ".agents/skills/lf-changelog/SKILL.md",
+      "sha256": "ec7a1e759ce496ccf46f71aa1cec3ff9793e72761de1c6be921b257d5e762cce",
+      "bytes": 1536
+    },
+    {
+      "path": ".agents/skills/lf-changelog/trigger-evals.json",
+      "sha256": "4d0b18c266f20f8cdff6702a2c74d202490f552634cb5bc34292398ebff9ad87",
+      "bytes": 736
+    },
+    {
+      "path": ".agents/skills/lf-deliverable-review/SKILL.md",
+      "sha256": "b1e134bbac920f11986babf7f69a12f01ff9824aaa5eefa10f6c021c6169e2d1",
+      "bytes": 1561
+    },
+    {
+      "path": ".agents/skills/lf-deliverable-review/trigger-evals.json",
+      "sha256": "60ba6ed4a0f84176d287ff65240884cfa563fff38f4c21646dbbdd7d5b7648eb",
+      "bytes": 754
+    },
+    {
+      "path": ".agents/skills/lf-email-segments/SKILL.md",
+      "sha256": "f8ebd711b8641ea524692aed88234fd912d31bccbc4d512eba197c75f9312c72",
+      "bytes": 1537
+    },
+    {
+      "path": ".agents/skills/lf-email-segments/trigger-evals.json",
+      "sha256": "ee20ac24f971f495d6b5e17524b201a9a72fb4630722a57b27c67ea3f3ce3184",
+      "bytes": 742
+    },
+    {
+      "path": ".agents/skills/lf-evidence-review/SKILL.md",
+      "sha256": "a46948fd1fd1844184bea8e8dfddfd56c19c94472bb51c0651032512cb8ecfa4",
+      "bytes": 1540
+    },
+    {
+      "path": ".agents/skills/lf-evidence-review/trigger-evals.json",
+      "sha256": "1618b6ac42ac7a88bbb47c78ceeeff26287ac5b043bdaa23e42a146daf134cdb",
+      "bytes": 747
+    },
+    {
+      "path": ".agents/skills/lf-linkedin/SKILL.md",
+      "sha256": "cd762de4541be788c0d5bbf1ef53986ca7c4cd31932b78d11f03f0ef13e7162d",
+      "bytes": 1540
+    },
+    {
+      "path": ".agents/skills/lf-linkedin/trigger-evals.json",
+      "sha256": "ad4547f2fcc41a4f6ca59820eb6a196c3a5f6a51ffcb8a0e79e8146e5b2a9ae7",
+      "bytes": 733
+    },
+    {
+      "path": ".agents/skills/lf-login-animation/SKILL.md",
+      "sha256": "578a1898606e0a406026033889f72214cc5ae6b1b9dff7d8c14a6052ea14f502",
+      "bytes": 1786
+    },
+    {
+      "path": ".agents/skills/lf-login-animation/trigger-evals.json",
+      "sha256": "b65fceb62ee16c79920940ecf00f36d8317b15a8d0a9e6661358634124501fa8",
+      "bytes": 747
+    },
+    {
+      "path": ".agents/skills/lf-popup/SKILL.md",
+      "sha256": "223a91e3c60a8cfc6758b7a1079816b5f7c540aaba8304ef03561c001349ad70",
+      "bytes": 1533
+    },
+    {
+      "path": ".agents/skills/lf-popup/trigger-evals.json",
+      "sha256": "2d9b9ab789a3afd02789b7ba629a76c2fc2c760bd63e069cff5f127faab67fd6",
+      "bytes": 726
+    },
+    {
+      "path": ".agents/skills/lf-short-motion-finishing/SKILL.md",
+      "sha256": "53de21844c4fda659823e16eee0092a5a78695621c202349cf66bec0c78104a7",
+      "bytes": 624
+    },
+    {
+      "path": ".agents/skills/lf-short-motion-finishing/trigger-evals.json",
+      "sha256": "6a67ca816e36990199487bdeb07c2bf197349102ee8107ea2d5a7701fd74bca2",
+      "bytes": 768
+    },
+    {
+      "path": ".agents/skills/lf-video-production/SKILL.md",
+      "sha256": "271d0624f6bb2093329faaadc7f28ffd33865e7ee9d11e1803cb533144a5ca61",
+      "bytes": 2227
+    },
+    {
+      "path": ".agents/skills/lf-video-production/trigger-evals.json",
+      "sha256": "0bb3061fc2e7a14c9c2947ca80757031033f6a39268ec536bef338d551dfd814",
+      "bytes": 744
+    },
+    {
+      "path": ".agents/skills/lf-written-social/SKILL.md",
+      "sha256": "1adabb5957d1f1df43cb3a3d004f305ade4f1b37aa00ab28fbf341e025328009",
+      "bytes": 1521
+    },
+    {
+      "path": ".agents/skills/lf-written-social/trigger-evals.json",
+      "sha256": "e9cd39f8526a9b9aa5698b1780892a2b3b94b5da0cd6f40d598fbe2519109e07",
+      "bytes": 743
+    },
+    {
+      "path": ".claude/agents/lf-blog-editor.md",
+      "sha256": "2460dc79cf9a0f2bb65935fb61eefa880bc27f59384fac27fc05a075b0d47b0e",
+      "bytes": 679
+    },
+    {
+      "path": ".claude/agents/lf-campaign-planner.md",
+      "sha256": "95a5303a36eb360688865297858905e0ec65f4ff0ba2ed569e29a40f73703bef",
+      "bytes": 719
+    },
+    {
+      "path": ".claude/agents/lf-carousel-designer.md",
+      "sha256": "45916e3d3490d112ded88127d69f02319d09ad0fc57682d75520ec63a0406644",
+      "bytes": 719
+    },
+    {
+      "path": ".claude/agents/lf-changelog-editor.md",
+      "sha256": "f8dbcc6b8ce452fcb58d3aa0499b4a23b5074359795cccefd21f71c795971952",
+      "bytes": 694
+    },
+    {
+      "path": ".claude/agents/lf-email-editor.md",
+      "sha256": "9115b8dd3f1efa62b36e1c1f6e64ff2ec35e91482896ac8304989f8ffd77b02a",
+      "bytes": 699
+    },
+    {
+      "path": ".claude/agents/lf-evidence-editor.md",
+      "sha256": "ba223bbe293d4092c2e66d3ca2f1e66bbdf538b975c3686887076f449577cf3d",
+      "bytes": 699
+    },
+    {
+      "path": ".claude/agents/lf-linkedin-editor.md",
+      "sha256": "b9bb1530e4cdb664d283f5bc66a822fcd1bb3d578fa15320c678d4abd5d852e3",
+      "bytes": 699
+    },
+    {
+      "path": ".claude/agents/lf-motion-designer.md",
+      "sha256": "a6bd69483d5373cb712fa405a5860b96426cc4d703a5edadeff5beb415c34a09",
+      "bytes": 826
+    },
+    {
+      "path": ".claude/agents/lf-popup-designer.md",
+      "sha256": "60e421e014030931561146f34cc1e69ffb9c75f838b26cfd9fa782a9d3628598",
+      "bytes": 693
+    },
+    {
+      "path": ".claude/agents/lf-quality-reviewer.md",
+      "sha256": "000900cc5823ee2d5556d2145af9a9babbd98c1cf65b0d2c92b5707e0480c399",
+      "bytes": 719
+    },
+    {
+      "path": ".claude/agents/lf-social-editor.md",
+      "sha256": "511536a8d68362f56a1ab04618fa310b52c6dcbe0768fc1d9c5d379b57c23c1d",
+      "bytes": 682
+    },
+    {
+      "path": ".claude/agents/lf-video-lead.md",
+      "sha256": "4d1419a8e39dadabb89dee00aff1115e097c059bd4e3c6da88d87637fabbe564",
+      "bytes": 1122
+    },
+    {
+      "path": ".claude/skills/launch-factory/SKILL.md",
+      "sha256": "375e626327870cea3f833de237fec218b3332ba8438ca18a89e2581297568c2a",
+      "bytes": 763
+    },
+    {
+      "path": ".claude/skills/lf-blog/SKILL.md",
+      "sha256": "37fddb0f67ce6199ac6307a8ae5f0f7a4b85e74d3e5c95cd63b9a1da981ea229",
+      "bytes": 1516
+    },
+    {
+      "path": ".claude/skills/lf-blog/trigger-evals.json",
+      "sha256": "a0497f179e4663ec5388c70af89819d17e689abdec808c595e1231a6a761fb08",
+      "bytes": 721
+    },
+    {
+      "path": ".claude/skills/lf-campaign-calendar/SKILL.md",
+      "sha256": "ee7798c016ad9ee91bb201c43ba421c253d0bb594d15447848d4e70be4ab6ea2",
+      "bytes": 1561
+    },
+    {
+      "path": ".claude/skills/lf-campaign-calendar/trigger-evals.json",
+      "sha256": "056d9bdbdfd5a2a238b6df71acf8c3b90a60f16d68d393ac99442c3fbac039cc",
+      "bytes": 752
+    },
+    {
+      "path": ".claude/skills/lf-carousel/SKILL.md",
+      "sha256": "c37b8d558b3f91dbf85c6974b6c5dda89e5e676a0b9db5519544e4b06f60007c",
+      "bytes": 1562
+    },
+    {
+      "path": ".claude/skills/lf-carousel/trigger-evals.json",
+      "sha256": "da62b310b817f49e80ff1f75c532b886f7224a6777a842449996d6968ada81a3",
+      "bytes": 735
+    },
+    {
+      "path": ".claude/skills/lf-changelog/SKILL.md",
+      "sha256": "ec7a1e759ce496ccf46f71aa1cec3ff9793e72761de1c6be921b257d5e762cce",
+      "bytes": 1536
+    },
+    {
+      "path": ".claude/skills/lf-changelog/trigger-evals.json",
+      "sha256": "4d0b18c266f20f8cdff6702a2c74d202490f552634cb5bc34292398ebff9ad87",
+      "bytes": 736
+    },
+    {
+      "path": ".claude/skills/lf-deliverable-review/SKILL.md",
+      "sha256": "b1e134bbac920f11986babf7f69a12f01ff9824aaa5eefa10f6c021c6169e2d1",
+      "bytes": 1561
+    },
+    {
+      "path": ".claude/skills/lf-deliverable-review/trigger-evals.json",
+      "sha256": "60ba6ed4a0f84176d287ff65240884cfa563fff38f4c21646dbbdd7d5b7648eb",
+      "bytes": 754
+    },
+    {
+      "path": ".claude/skills/lf-email-segments/SKILL.md",
+      "sha256": "f8ebd711b8641ea524692aed88234fd912d31bccbc4d512eba197c75f9312c72",
+      "bytes": 1537
+    },
+    {
+      "path": ".claude/skills/lf-email-segments/trigger-evals.json",
+      "sha256": "ee20ac24f971f495d6b5e17524b201a9a72fb4630722a57b27c67ea3f3ce3184",
+      "bytes": 742
+    },
+    {
+      "path": ".claude/skills/lf-evidence-review/SKILL.md",
+      "sha256": "a46948fd1fd1844184bea8e8dfddfd56c19c94472bb51c0651032512cb8ecfa4",
+      "bytes": 1540
+    },
+    {
+      "path": ".claude/skills/lf-evidence-review/trigger-evals.json",
+      "sha256": "1618b6ac42ac7a88bbb47c78ceeeff26287ac5b043bdaa23e42a146daf134cdb",
+      "bytes": 747
+    },
+    {
+      "path": ".claude/skills/lf-linkedin/SKILL.md",
+      "sha256": "cd762de4541be788c0d5bbf1ef53986ca7c4cd31932b78d11f03f0ef13e7162d",
+      "bytes": 1540
+    },
+    {
+      "path": ".claude/skills/lf-linkedin/trigger-evals.json",
+      "sha256": "ad4547f2fcc41a4f6ca59820eb6a196c3a5f6a51ffcb8a0e79e8146e5b2a9ae7",
+      "bytes": 733
+    },
+    {
+      "path": ".claude/skills/lf-login-animation/SKILL.md",
+      "sha256": "578a1898606e0a406026033889f72214cc5ae6b1b9dff7d8c14a6052ea14f502",
+      "bytes": 1786
+    },
+    {
+      "path": ".claude/skills/lf-login-animation/trigger-evals.json",
+      "sha256": "b65fceb62ee16c79920940ecf00f36d8317b15a8d0a9e6661358634124501fa8",
+      "bytes": 747
+    },
+    {
+      "path": ".claude/skills/lf-popup/SKILL.md",
+      "sha256": "223a91e3c60a8cfc6758b7a1079816b5f7c540aaba8304ef03561c001349ad70",
+      "bytes": 1533
+    },
+    {
+      "path": ".claude/skills/lf-popup/trigger-evals.json",
+      "sha256": "2d9b9ab789a3afd02789b7ba629a76c2fc2c760bd63e069cff5f127faab67fd6",
+      "bytes": 726
+    },
+    {
+      "path": ".claude/skills/lf-short-motion-finishing/SKILL.md",
+      "sha256": "53de21844c4fda659823e16eee0092a5a78695621c202349cf66bec0c78104a7",
+      "bytes": 624
+    },
+    {
+      "path": ".claude/skills/lf-short-motion-finishing/trigger-evals.json",
+      "sha256": "6a67ca816e36990199487bdeb07c2bf197349102ee8107ea2d5a7701fd74bca2",
+      "bytes": 768
+    },
+    {
+      "path": ".claude/skills/lf-video-production/SKILL.md",
+      "sha256": "271d0624f6bb2093329faaadc7f28ffd33865e7ee9d11e1803cb533144a5ca61",
+      "bytes": 2227
+    },
+    {
+      "path": ".claude/skills/lf-video-production/trigger-evals.json",
+      "sha256": "0bb3061fc2e7a14c9c2947ca80757031033f6a39268ec536bef338d551dfd814",
+      "bytes": 744
+    },
+    {
+      "path": ".claude/skills/lf-written-social/SKILL.md",
+      "sha256": "1adabb5957d1f1df43cb3a3d004f305ade4f1b37aa00ab28fbf341e025328009",
+      "bytes": 1521
+    },
+    {
+      "path": ".claude/skills/lf-written-social/trigger-evals.json",
+      "sha256": "e9cd39f8526a9b9aa5698b1780892a2b3b94b5da0cd6f40d598fbe2519109e07",
+      "bytes": 743
+    },
+    {
+      "path": ".codex/agents/lf_blog_editor.toml",
+      "sha256": "85284e2f303816fe5a898794f466f9c7129c4ec26a130bc52aa974bff1e5e572",
+      "bytes": 689
+    },
+    {
+      "path": ".codex/agents/lf_campaign_planner.toml",
+      "sha256": "9d15ee3043e5051ce3f214873374c1e899e0894d48a80e000e44f02b8255fd91",
+      "bytes": 729
+    },
+    {
+      "path": ".codex/agents/lf_carousel_designer.toml",
+      "sha256": "54913b5a8811c4e53bf7e927cca6eb3523cb0c78ff290ec5d57c1cf076870629",
+      "bytes": 729
+    },
+    {
+      "path": ".codex/agents/lf_changelog_editor.toml",
+      "sha256": "a1a572fc435a23010061febd521de74e3b2c4924dc3fc97ab37928c2f4024534",
+      "bytes": 704
+    },
+    {
+      "path": ".codex/agents/lf_email_editor.toml",
+      "sha256": "8cad95a9169b36406d338b7c5f402af2e00e1a6b57dd5a7115797e0ebbc9dd9e",
+      "bytes": 709
+    },
+    {
+      "path": ".codex/agents/lf_evidence_editor.toml",
+      "sha256": "f840df4581f8f8077ebf0970510693eedf78ec9839c4f1e1e963c8e31217688c",
+      "bytes": 709
+    },
+    {
+      "path": ".codex/agents/lf_linkedin_editor.toml",
+      "sha256": "e006889314729820b64643fcb29de5fc12ec4a1c359c2652c0172e382847f6ae",
+      "bytes": 709
+    },
+    {
+      "path": ".codex/agents/lf_motion_designer.toml",
+      "sha256": "0d8f6149f9fd9c98d740dbdd351a8ae7d4e07c724b003450322e866f711fa30e",
+      "bytes": 836
+    },
+    {
+      "path": ".codex/agents/lf_popup_designer.toml",
+      "sha256": "a4b1bd34ab7cfb2aed68f7b2869ab5e0773c2e2eda22937f208d4c5223359790",
+      "bytes": 703
+    },
+    {
+      "path": ".codex/agents/lf_quality_reviewer.toml",
+      "sha256": "eef1f2919af9b3539a0ea49905e02fd2734f80fd48a3f85ac6cfafa05dcb481a",
+      "bytes": 729
+    },
+    {
+      "path": ".codex/agents/lf_social_editor.toml",
+      "sha256": "eaacbfe685f4db33234510add7ee4a558d5a6a0bbe6ec91006e1b551df04c860",
+      "bytes": 692
+    },
+    {
+      "path": ".codex/agents/lf_video_lead.toml",
+      "sha256": "2b0f91c2c9adb70e3a41535a33a9715e755d3b51c5901f40d479ae13339cbbc9",
+      "bytes": 1132
+    },
     {
       "path": ".gitignore",
       "sha256": "535b9d57158cdc6947a8475acdbf05529f360a5ba6e38b69b24e04f8c40b9929",
@@ -18,8 +408,8 @@
     },
     {
       "path": "AGENTS.md",
-      "sha256": "362d7e36251441069128ec1e66932d6ca35732994c7d1b388c2c31564702978c",
-      "bytes": 898
+      "sha256": "5c4792fa3006c7c0c91d6882a6a238529431d140b8a1939e0647bb863f3999c7",
+      "bytes": 1219
     },
     {
       "path": "CHANGELOG.md",
@@ -28,13 +418,13 @@
     },
     {
       "path": "HOST-MATRIX.md",
-      "sha256": "e71a63f9eaf0b1c6aa5031279eecaaa4d98bf3ba755f0c2a43f6957e50b2931b",
-      "bytes": 2017
+      "sha256": "36080ba1dded5648e25fa18f554d5f468cbf923bb45fbf3988887e7f80475746",
+      "bytes": 2452
     },
     {
       "path": "LICENSE-STATUS.md",
-      "sha256": "ca95dfbfb9f22176dbb712b232ab84515fc7948537776b3d5bbb517da0eacb4a",
-      "bytes": 423
+      "sha256": "f2bd0c4c254491e92de7fe50d9551a1ffee49f94879cdddff7b7ee79a4499f0b",
+      "bytes": 1047
     },
     {
       "path": "Launch Factory T-NOVA v0.2.0.txt",
@@ -43,13 +433,13 @@
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "b36a3a8be9a17e587eb9829275cad8359d073130a00e9e31abc25c882347f33c",
-      "bytes": 1763
+      "sha256": "8933f9780f66610562b8eedd7bc8a205ef3b108319d1cc45dfad7e0dc7890fad",
+      "bytes": 3192
     },
     {
       "path": "README.md",
-      "sha256": "18d81e1275d8c9c57f452156f9a2dc7b8ac5ac6eb80a11945cc2335d049c6b4f",
-      "bytes": 5197
+      "sha256": "4b4fbba4bb63fbe958b316ccd8673cfca980974017a41cdb7b51f81b3c9bf975",
+      "bytes": 6265
     },
     {
       "path": "SHOW-ME.md",
@@ -58,8 +448,43 @@
     },
     {
       "path": "START-HERE.md",
-      "sha256": "4de2057c97167622f6163cd07f68512d93935a93279bb7ee97285a992e536ee3",
-      "bytes": 3582
+      "sha256": "180dadc07fc4c31c0b015ecc50049a959da254c1ab8c7082489c6ec5768e48d3",
+      "bytes": 2014
+    },
+    {
+      "path": "automation/n8n/ugc-app-reveal/README.md",
+      "sha256": "b0bf56fd2178d4adb5d2b814b9c0a4daed7dad639b40f916198092fba6297698",
+      "bytes": 4575
+    },
+    {
+      "path": "automation/n8n/ugc-app-reveal/build_workflow.py",
+      "sha256": "08bcd34f48f4816ffe647c399a204b329c9c41cb4267779d72fbf6f658851b60",
+      "bytes": 3749
+    },
+    {
+      "path": "automation/n8n/ugc-app-reveal/prepare.js",
+      "sha256": "93730e06f82e377275692f75d6316b72344e1aa230eeb97c31a30773ebb527d6",
+      "bytes": 7835
+    },
+    {
+      "path": "automation/n8n/ugc-app-reveal/request.example.json",
+      "sha256": "b3f994d21761a0ff3b87289c3754fe5e79580953bd67955213643369cd1dd5a6",
+      "bytes": 3262
+    },
+    {
+      "path": "automation/n8n/ugc-app-reveal/test.mjs",
+      "sha256": "cc138a1bbdb38406b3b9ec33909f7f79fa9de9276b9f46d79cf715ac8cbc7142",
+      "bytes": 5306
+    },
+    {
+      "path": "automation/n8n/ugc-app-reveal/workflow.json",
+      "sha256": "e3715e019a1d37e9b6fc2533f564a32db370e74780a6ebc2fbe57d8d95c95efe",
+      "bytes": 30036
+    },
+    {
+      "path": "automation/n8n/ugc-app-reveal/workflow.sdk.js",
+      "sha256": "0ca6486051ecb2e2665c56e8e0b210638bee2b8387e5302f7b1bc1cf48e8144f",
+      "bytes": 29299
     },
     {
       "path": "barry/README.md",
@@ -98,8 +523,8 @@
     },
     {
       "path": "codex/launch-factory/SKILL.md",
-      "sha256": "ff018d7ba292937f870d74b4798f2c2a0027cf562ab3d8b6fe9a61ecbb7fa7be",
-      "bytes": 9756
+      "sha256": "58daac60c391d7efbba6680db83940866a8e5d8e640922fc0d5b67ef05fb14ee",
+      "bytes": 9053
     },
     {
       "path": "codex/launch-factory/agents/.gitkeep",
@@ -163,8 +588,8 @@
     },
     {
       "path": "codex/launch-factory/manifest.json",
-      "sha256": "c801781308564cb060db8a2c5cc3dfa6266d8ea437b7b9098210af50cf35d712",
-      "bytes": 671
+      "sha256": "f5a37a80996f468adcf0d4ba71717ac2022b05cc790f6a5d41b5f2b667f3b94b",
+      "bytes": 1614
     },
     {
       "path": "codex/launch-factory/personas/barry-seat.md",
@@ -207,6 +632,16 @@
       "bytes": 68422
     },
     {
+      "path": "docs/AFTER-COMPACTION.md",
+      "sha256": "2fef8e2c1a2753fe350f89cc9490b8033c5825aad59456078c8056b9b112d6ad",
+      "bytes": 2629
+    },
+    {
+      "path": "docs/CHECKPOINT.md",
+      "sha256": "52f8854272a9362ba27c58ffc711f993a38fc01c9a3a54a4397cbbf43b1d0ce5",
+      "bytes": 5904
+    },
+    {
       "path": "docs/CONTEXT.md",
       "sha256": "3a00fb144839aa2f5e3f04f241829d320791c1cdff642da5eada8ecc7ce7787e",
       "bytes": 4306
@@ -238,13 +673,18 @@
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
-      "sha256": "d885a598f46f8e80a50907ae1d82429b758d2faab442cea4e27e674d25c49882",
-      "bytes": 1723
+      "sha256": "a4d6aa32b693145369d08550c72918bdd25707ae29e5ef700312fc2034ca3d0c",
+      "bytes": 2096
     },
     {
       "path": "docs/INSTALL-CODEX.md",
-      "sha256": "39b15039b3b22178e2195f92f8a63906ff80128196ad20e98b9a40dcdb1d1e75",
-      "bytes": 2586
+      "sha256": "7f494cf8a781c66cbeaf3b38e5d59e37deaab745e6e124fe9370dcc0d798811c",
+      "bytes": 2407
+    },
+    {
+      "path": "docs/NEXT-STEPS.md",
+      "sha256": "0f294e98c5eadc207c7db7b44e1f74e3e53b3e5798b8f87def855858c38483c9",
+      "bytes": 29825
     },
     {
       "path": "docs/OPERATE-LAUNCH-FACTORY.md",
@@ -295,6 +735,21 @@
       "path": "docs/adr/0016-orchestrator-and-campaign-plan.md",
       "sha256": "b473edf25d41c86875bd956c9a1f89d27a60043ac3364284d14d1ae90e7a3cb4",
       "bytes": 1757
+    },
+    {
+      "path": "docs/adr/0017-specialist-routing-and-current-scope.md",
+      "sha256": "e70dbd6e021bfc015a0ff4c3719e39560d511637bd8d5f14985f870052b3ff97",
+      "bytes": 2602
+    },
+    {
+      "path": "docs/adr/0018-ugc-app-reveal-preparation.md",
+      "sha256": "9eb682325283298ebc0847a545ede59c69cb0652bfafd1dca3a5b38b425c673f",
+      "bytes": 2012
+    },
+    {
+      "path": "docs/adr/0019-testable-app-and-next-milestone.md",
+      "sha256": "885637c32ba3a3f1882eebf7a9acb703f7e79f218e0df3916e18ca1ba7345ff9",
+      "bytes": 2423
     },
     {
       "path": "docs/agents/domain.md",
@@ -452,6 +907,26 @@
       "bytes": 736
     },
     {
+      "path": "engine/fixtures/specialist-demo/linkedin.md",
+      "sha256": "7a1d7c5573f935bd1b6e1e1f72067d1b8ff5ba71b160adf695069d847c0bd9bf",
+      "bytes": 174
+    },
+    {
+      "path": "engine/fixtures/specialist-demo/request.json",
+      "sha256": "59827e599b94dd43d040beb1456a0ed64ce3622a6ca659d1f1c9302d83120392",
+      "bytes": 1297
+    },
+    {
+      "path": "engine/fixtures/specialist-demo/source.txt",
+      "sha256": "cfd85f640f634f33ee36ab036edd17cdfa27dd1a7ddc666e39a1e97a4e954413",
+      "bytes": 52
+    },
+    {
+      "path": "engine/fixtures/specialist-demo/voice.txt",
+      "sha256": "2094e24e50e1f887e7c67e2dff687df502ff29e9b97ee077f23ac6702138608d",
+      "bytes": 55
+    },
+    {
       "path": "engine/fixtures/vista-work/cadence_binder.json",
       "sha256": "e28e01f53f33dd069a7cc444531b2a07d9cc26cb6bebf9b9f23131391d38ecab",
       "bytes": 2418
@@ -522,6 +997,11 @@
       "bytes": 4108
     },
     {
+      "path": "engine/scripts/specialist_route.py",
+      "sha256": "80e07a562aaf049bb25264ebc2bb4e7d16a51862323a6ceb9a0eb29c6414c122",
+      "bytes": 12269
+    },
+    {
       "path": "engine/scripts/transition_slot.py",
       "sha256": "0cc742659b47e472835881c820b7f2e5c703519975f176b301fc1e7dbbbc39a7",
       "bytes": 4878
@@ -540,6 +1020,231 @@
       "path": "engine/scripts/validate_record.py",
       "sha256": "d5881ca31a479fef1f06d6889888d61ee12deb18a548752ee37ba178bd6d33db",
       "bytes": 3455
+    },
+    {
+      "path": "engine/specialists/CONTRACT.md",
+      "sha256": "c7236f98274bcb7c9728ac6b06e49510b4aa3e1a05517e6f74926f0b3e17d848",
+      "bytes": 6263
+    },
+    {
+      "path": "engine/specialists/README.md",
+      "sha256": "cb141f91b0a04554f41d627800a1569f9da098b834b759bd0311512c78481ed0",
+      "bytes": 4247
+    },
+    {
+      "path": "engine/specialists/finishing/SKILL.md",
+      "sha256": "75b6721b1c2e99211e945ba7d527f6cc897859ad69de798aa8fe64e86dbc9db7",
+      "bytes": 7827
+    },
+    {
+      "path": "engine/specialists/finishing/cue-sheet-10s.example.json",
+      "sha256": "2d8ae808c2d3f34d0259eeee63e24f72aac79209540d89d41900c0610cf28ba8",
+      "bytes": 1304
+    },
+    {
+      "path": "engine/specialists/finishing/generation-manifest.example.json",
+      "sha256": "8dc3d14b8dad9d096bf86c70ed4b78d405fa3e24281a9670907cd90ac0020e52",
+      "bytes": 1114
+    },
+    {
+      "path": "engine/specialists/finishing/schemas/captions.schema.json",
+      "sha256": "1a2c37a9747b6ef89c20bf58648489774eefbe0a48a91ca5f1571fe0144d105f",
+      "bytes": 1695
+    },
+    {
+      "path": "engine/specialists/finishing/schemas/cue-sheet.schema.json",
+      "sha256": "2f2435c70ad26b384659f0df35bcbb499ea93b4bb211da054ab7738f3fad51c2",
+      "bytes": 2146
+    },
+    {
+      "path": "engine/specialists/finishing/schemas/generation-manifest.schema.json",
+      "sha256": "61cbe5f32c629d59d5b8b87d06626627e087312bcf02af55ff9e4850c10241ae",
+      "bytes": 5013
+    },
+    {
+      "path": "engine/specialists/finishing/validate.py",
+      "sha256": "044acd4a452a620203d39da92e0afbce9e20fc41c39ce850aebb4a7a9cb137b7",
+      "bytes": 6607
+    },
+    {
+      "path": "engine/specialists/references/animation.md",
+      "sha256": "a6538c0a0850ce7320643be521e1efe06dae6b2eea5d360d809a74443f711492",
+      "bytes": 1034
+    },
+    {
+      "path": "engine/specialists/references/blog.md",
+      "sha256": "26f9811c774a907f8f8dad5704378263a6ce31b3fa6411864fbdb35dd2af3bc9",
+      "bytes": 619
+    },
+    {
+      "path": "engine/specialists/references/campaign.md",
+      "sha256": "0d7fc2e2bc3acc7f4ed7828a7befbee3927b0cd516ea65c41ca822921f772a83",
+      "bytes": 694
+    },
+    {
+      "path": "engine/specialists/references/carousel.md",
+      "sha256": "66b9160586dcdad9e55078ab998b4b28b1b0be22b0acbe2fe2a38054d1aaf342",
+      "bytes": 615
+    },
+    {
+      "path": "engine/specialists/references/changelog.md",
+      "sha256": "ea4410730bb0d7f389cb784f55bf728d0f47e87120370c39cff73cf7085ed522",
+      "bytes": 546
+    },
+    {
+      "path": "engine/specialists/references/email.md",
+      "sha256": "be53929d8daebebf6992bb8548b4c6fad84e0d806517288725e47c1b8cf4add5",
+      "bytes": 677
+    },
+    {
+      "path": "engine/specialists/references/evidence.md",
+      "sha256": "6e7bdbc9afddf71d3e28f292315f51526a93daf62ad60dbec2c3097ae70c2b90",
+      "bytes": 580
+    },
+    {
+      "path": "engine/specialists/references/linkedin.md",
+      "sha256": "5a2f7a9d138e60c0283260c49cc8ae6f39476e7b851903937b024ecbea8f2442",
+      "bytes": 620
+    },
+    {
+      "path": "engine/specialists/references/popup.md",
+      "sha256": "614ee1b4f888b807d6893f201bddd46651c64d3b415aec1c247b7760cab9e19e",
+      "bytes": 631
+    },
+    {
+      "path": "engine/specialists/references/review.md",
+      "sha256": "4321378aae6c188e58d0ce1f092066df4c2dc26f6286c0c4e57a7c58fdd87666",
+      "bytes": 900
+    },
+    {
+      "path": "engine/specialists/references/social.md",
+      "sha256": "34da3e3acc09c8d108ef4586d0d0035e648c603bce7f2136f749bcbfc8c72b46",
+      "bytes": 585
+    },
+    {
+      "path": "engine/specialists/references/video.md",
+      "sha256": "963b8f8e3da7dbe33440960dde8cf328dfc8d3fe33b930e209f38b86f5ffe00b",
+      "bytes": 5117
+    },
+    {
+      "path": "engine/specialists/registry.json",
+      "sha256": "c3708b96ffb7259c2aa6c05185621b143fcbcb5e88e83cc7573788f8d6cc89f1",
+      "bytes": 8040
+    },
+    {
+      "path": "engine/specialists/request.schema.json",
+      "sha256": "85a82436d61af88aa92a06f5e4ed416f6c48c706943731a3b84107b70f8db475",
+      "bytes": 2969
+    },
+    {
+      "path": "engine/specialists/result.schema.json",
+      "sha256": "043b027c24bf3b9ea787d3904a74d745b84503100671f0f2dec5407ca176f808",
+      "bytes": 1653
+    },
+    {
+      "path": "engine/specialists/video-production/ELEVENLABS-DIRECT.md",
+      "sha256": "06e78bdc70b21eda4e06df35e608bffc49e8a95d7a8c3e49c90841f25739ce6b",
+      "bytes": 5115
+    },
+    {
+      "path": "engine/specialists/video-production/PROMPTS.md",
+      "sha256": "f2a173e6c17b1576d42dfc6b0ce0bb41573c5adef356d6e291735ad494b642d0",
+      "bytes": 7397
+    },
+    {
+      "path": "engine/specialists/video-production/PROTOCOL.md",
+      "sha256": "10289189829fcffaf88eaea2ded1ebe6ab0bbeb56281e9ff6b859ddbc1c4dc08",
+      "bytes": 14825
+    },
+    {
+      "path": "engine/specialists/video-production/PROVIDER-NOTES.md",
+      "sha256": "8cc7c5d7760e794f98f5ed9373e53b54afba6906a4234290b0da8bf68c7df60e",
+      "bytes": 19502
+    },
+    {
+      "path": "engine/specialists/video-production/example-workspace/angle.txt",
+      "sha256": "2089cd460f8c0448a1e482c55339e78c845b66bdf992e74c382e20cdf6f5af09",
+      "bytes": 93
+    },
+    {
+      "path": "engine/specialists/video-production/example-workspace/identity.txt",
+      "sha256": "1781b370931b2a8e1e29b9cce500ae03c170cae9870807ed12cbe801d8be5526",
+      "bytes": 86
+    },
+    {
+      "path": "engine/specialists/video-production/example-workspace/script.txt",
+      "sha256": "b855a26522cdc7239a587772aec1fc45324d8004a1ea98c7a54bc0d5a5db4d72",
+      "bytes": 49
+    },
+    {
+      "path": "engine/specialists/video-production/example-workspace/setting.txt",
+      "sha256": "4287a08b11783f13b146d2fc5aa4ff121647361df6ddabf89675647f8cac378d",
+      "bytes": 87
+    },
+    {
+      "path": "engine/specialists/video-production/example-workspace/sketch.txt",
+      "sha256": "67d06c1ea7ffcba3816de80466ad765e259d26a29f295417ca48e632098cbd79",
+      "bytes": 88
+    },
+    {
+      "path": "engine/specialists/video-production/example-workspace/voice.txt",
+      "sha256": "6ab63a7faa7764bca9a55fb7f572166f7b0d3907796e48dd6e72a3ded02aa7ed",
+      "bytes": 95
+    },
+    {
+      "path": "engine/specialists/video-production/example.json",
+      "sha256": "4d4d387fc5dbf271a43d7aea13905b6c748cfb70e921d05d3904a81732bebe62",
+      "bytes": 4783
+    },
+    {
+      "path": "engine/specialists/video-production/production-job.schema.json",
+      "sha256": "2ed29dcd98216df2dc7ffa742fc5a83e3d4ebfc00880efb38c053bf4085416a4",
+      "bytes": 15039
+    },
+    {
+      "path": "engine/specialists/video-production/recipes/ugc-app-reveal/01-discover-account-template.md",
+      "sha256": "209575033316c3037dda608830ebcf59350a6f304ee95a1f8b700aa45140a4dc",
+      "bytes": 1884
+    },
+    {
+      "path": "engine/specialists/video-production/recipes/ugc-app-reveal/02-exact-actor-performance.md",
+      "sha256": "3615cbc32601ab7f69c49048ac196fa48173496696f5e6155c706010692d6ab6",
+      "bytes": 2085
+    },
+    {
+      "path": "engine/specialists/video-production/recipes/ugc-app-reveal/03-authored-app-reveal.md",
+      "sha256": "46209bcd084ca72f768d20b6ff36850f6911028bb398148697e7a043a5eae544",
+      "bytes": 2136
+    },
+    {
+      "path": "engine/specialists/video-production/recipes/ugc-app-reveal/04-assemble-audio-captions.md",
+      "sha256": "773fde29dc8ae697e9cd75f6a9cfa4dc0ed3ad0a7dd3e053dfaf3b25a28d5eac",
+      "bytes": 2432
+    },
+    {
+      "path": "engine/specialists/video-production/recipes/ugc-app-reveal/05-evidence-qa-revision.md",
+      "sha256": "049bdea8f84143015d6e7bede64005796b1cc495b38bc3c0504c68e8f144d182",
+      "bytes": 2295
+    },
+    {
+      "path": "engine/specialists/video-production/recipes/ugc-app-reveal/README.md",
+      "sha256": "be79f394471ce741cf2ad4fdc114e8edc27e770c400ef4a0276b31257b68eaf6",
+      "bytes": 7326
+    },
+    {
+      "path": "engine/specialists/video-production/recipes/ugc-app-reveal/recipe.json",
+      "sha256": "e50f3df9bf86a4eb663b85d0e0b9a2363fd33ec8bdc9cb44709b985c125a3bcc",
+      "bytes": 8003
+    },
+    {
+      "path": "engine/specialists/video-production/validate.py",
+      "sha256": "4d19704e4333a454b358b8d9c10ab00008ca7710f52a2b521d9654fd39e3e269",
+      "bytes": 12165
+    },
+    {
+      "path": "findings.md",
+      "sha256": "1d4cf9bf9166834ed93e2a30535e2309a11dc5d4d2f460ff829f4eb3c7e35625",
+      "bytes": 1420
     },
     {
       "path": "handoff/README.md",
@@ -617,14 +1322,19 @@
       "bytes": 1364
     },
     {
+      "path": "progress.md",
+      "sha256": "b65e2a4855067bdc8354cfa9a0ddf8668b7be8d284904337aca17b565a25725d",
+      "bytes": 1104
+    },
+    {
       "path": "pytest.ini",
       "sha256": "f983bd00110ad0489fbeae91385d6f198dd0dd6ac83165d89d9c2469d7f71239",
       "bytes": 49
     },
     {
       "path": "recording/shot-list.md",
-      "sha256": "95c5951ef1ef9f6a067121124b344994b4aa624fbc86e7220937152577be471b",
-      "bytes": 1019
+      "sha256": "71972143716776494a075b8e6257e7a358094244dba5f7aabda7a59f3b7c8dbd",
+      "bytes": 3194
     },
     {
       "path": "requirements.txt",
@@ -638,8 +1348,18 @@
     },
     {
       "path": "scripts/regen_manifests.py",
-      "sha256": "5dd1dfcd1c2b5368759e809023653cb76db591ebcbda3d7f3bbac2c10ff9ecdc",
-      "bytes": 4521
+      "sha256": "90420745f20c0832829db577be5b8e3bc33de9eefcf8e660076fca5d7ec7ddda",
+      "bytes": 4805
+    },
+    {
+      "path": "scripts/sync_specialists.py",
+      "sha256": "9d2bd5ae56fa75bb35dec204fa901da7a0902030cdef5c2ed5f6460eff6870cc",
+      "bytes": 9171
+    },
+    {
+      "path": "task_plan.md",
+      "sha256": "4420dd921db445e58eb63190505f837fb83b409b0bd7efde3770e1d8d7ef9b72",
+      "bytes": 1524
     },
     {
       "path": "tests/conftest.py",
@@ -662,9 +1382,19 @@
       "bytes": 702
     },
     {
+      "path": "tests/test_motion_finishing.py",
+      "sha256": "a3bb025ef772c2b115d318c3e9b1ce2f15d83130014b7666f2734fbbf7ab7d12",
+      "bytes": 6448
+    },
+    {
       "path": "tests/test_release_record.py",
       "sha256": "4fcc8f3bec6a5c6e73d291519992b299bd1dfc57da5c89177cf5d9883378e525",
       "bytes": 4486
+    },
+    {
+      "path": "tests/test_specialist_routing.py",
+      "sha256": "ba3ff26aa68ddddbf4bf149802f80464ece1cba776cb8961adf20439c2b3173d",
+      "bytes": 9548
     },
     {
       "path": "tests/test_validate_campaign.py",
@@ -675,6 +1405,11 @@
       "path": "tests/test_validate_ledger.py",
       "sha256": "7e2150b645bcbe51c087e6d42c4122059f71f5ceff9bc63193bcac99e3533877",
       "bytes": 2761
+    },
+    {
+      "path": "tests/test_video_production.py",
+      "sha256": "46135f3fbbd94aa76cb7961ca6abf57d2900a6c87ba11a3ad19b149522351334",
+      "bytes": 15074
     },
     {
       "path": "trigger/notion-run-leavebehind.md",
@@ -827,5 +1562,5 @@
       "bytes": 10649
     }
   ],
-  "evidence_boundary": "Proves pack structure, file integrity (sha256/bytes), and documented Barry HITL gates only. Does not prove live host activation, semantic output quality, or customer outcomes; slots 1/5/6 are HELD (ADR 0013) and the Voice Bank brief is interim (ADR 0015). See HOST-MATRIX.md."
+  "evidence_boundary": "Proves pack file integrity and includes the specialist 0.3.1 project entry points, protocols and offline routing checks (ADR 0017). Does not prove host invocation, provider access, human authentication, semantic quality or customer outcomes. Historical fixtures and the Claude 0.2.0 ZIP retain their legacy scope. Vista voice remains interim (ADR 0015). See HOST-MATRIX.md."
 }

@@ -1,37 +1,15 @@
-# Install in Codex
+# Use Launch Factory in Codex
 
-## Package
+Open the full repository as the Codex project. Keep `engine/`, `.agents/skills/`, `.codex/agents/`, `codex/`, `docs/` and the selected release workspace reachable. The generated project skill at `.agents/skills/launch-factory/SKILL.md` reads the canonical operator, which routes to the specialist skill and reference bank.
 
-Skill folder:
+Start a fresh task in this project and request Launch Factory on one source folder or supplied packet. Confirm the operator identifies the product, human reviewer and source stage, then reports the selected specialist and actual work. Native project roles are declared in `.codex/agents/*.toml`. A host that cannot delegate must read the same selected skill and bank and work inline with that limitation stated.
 
-`codex/launch-factory`
+These paths follow the current [Codex custom subagent contract](https://developers.openai.com/codex/multi-agent). Do not infer discovery from file presence. Check installation, discovery, invocation, tool access and first useful output separately on the destination host. The local offline checks described in [the specialist README](../engine/specialists/README.md) prove routing and file/reference integrity only.
 
-Engine (Option B SoT, **required for structural validate/package**):
+If an older global `launch-factory` skill exists, inspect the host's selected source path before invoking it. Keep the project version selected; do not overwrite or delete another installation without an explicit migration. To roll back this project layer, restore the prior tracked revision in a separate checkout or remove only this layer's generated project files after backing up local changes. Do not remove user skills or provider credentials.
 
-`engine/` at this **product root** (sibling of `codex/`, not inside the skill folder).
+The former install-by-copying `codex/launch-factory` door is a legacy skill-only route. Copying that folder alone cannot resolve the current specialist protocols. Restore the full repository project to use this layer. Host commands differ by version; inspect local help rather than assume a plugin validate/install command exists.
 
-## Steps
+Provider accounts and n8n configuration belong to the operator. No credentials ship in the pack. A successful MCP connection in another chat does not prove this host can use it. Actual Barry or Gabe decisions stay human; the legacy `--human-confirmed` flag supplies no authenticated authority.
 
-1. Close any active use of an older `launch-factory` skill if you already tried a draft copy.
-2. Copy the **entire** folder `codex/launch-factory` into your Codex skills directory so the installed path ends in `skills/launch-factory`.
-3. Preserve the top folder name and **all** nested files. Do **not** copy only `SKILL.md` — `knowledge/`, `manifest.json`, schemas **pointers**, examples, evals, fallbacks, and `scripts/` are part of the skill door.
-4. **Keep this product root on disk** (or otherwise keep `engine/` reachable). A skill-only copy does **not** carry `engine/`. Relative pointer `codex/launch-factory/schemas/ → ../../../engine/schemas/` only works while the product tree stays intact.
-5. Restart or refresh Codex so it discovers the skill.
-6. Start a **fresh** Codex task after installation.
-7. Ask: “Use Launch Factory. Run on this release folder.”
-8. Confirm the skill identifies itself as **Launch Factory**, begins with ingest / Claims Lock (not a six-output menu), and does **not** offer to publish or send.
-
-Installation paths vary by Codex environment. This package has not been freshly installed into your host during release verification, so discovery and activation remain host-level checks you must perform. Folder visible ≠ Augment active.
-
-If the skill is not found, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
-
-## After install — engine vs chat-only
-
-- Read [TRUST-PRIVACY-AND-AUTHORITY.md](TRUST-PRIVACY-AND-AUTHORITY.md) before uploading release materials.
-- **With product-root `engine/` reachable + Python + jsonschema:** run structural validators from `engine/scripts/` (`validate_ledger`, `validate_campaign`, `build_package`). **STRUCTURAL_INTEGRITY_ONLY** — they never publish. `codex/launch-factory/schemas/` is a pointer only; do not invent a third schema tree.
-- **Without `engine/` (skill-folder-only install):** Run is **chat-only** — gated Claims Lock **draft shape** for Barry. Do **not** invent a path to validators, do **not** claim package-validated output, do **not** invent claims/pricing. Fail closed on structural proof.
-- Claims Lock honesty still applies either way — Barry remains the gate.
-
-## Dual-host
-
-Claude door: [INSTALL-CLAUDE.md](INSTALL-CLAUDE.md). Same Claims Lock / Barry / HOLD honesty; identical prose not required. See [HOST-MATRIX.md](../HOST-MATRIX.md).
+See [Claude Code](INSTALL-CLAUDE.md), [host evidence](../HOST-MATRIX.md) and [current scope](adr/0017-specialist-routing-and-current-scope.md).

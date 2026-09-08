@@ -1,84 +1,76 @@
-# Launch Factory v0.2.0
+# Launch Factory
 
-**Vista Social GTM launch pack.** Release folder in → gated launch package out → Barry HITL. Nothing auto-publishes.
+Launch Factory gives an agent operator a reusable workflow for a release campaign: source review, specialist drafting, creative production gates and exact-version human review. Barry reviews Vista client work. Gabe reviews his own validation work.
 
-## Agent install door (AI agents: start here)
+The current repository contains a specialist layer over the v0.2.0 structural engine. It supplies 12 role protocols, channel reference banks, review rubrics and offline packet checks. The [UGC app reveal n8n subworkflow](automation/n8n/ugc-app-reveal/README.md) prepares the video lead's prompts and review context. The app, provider worker and authenticated approval store remain separate work.
 
-You are an AI agent asked to install this Augment. Do this:
+The [8 September checkpoint](docs/CHECKPOINT.md) records the two approved Tix creative outputs and the remaining deliverables. Continue through [the ordered next steps](docs/NEXT-STEPS.md); the full six-output app remains under development.
 
-1. Read [START-HERE.md](START-HERE.md) for what this pack is and is not.
-2. Install for your host:
-   - **Codex / file-based skill hosts:** copy the entire `codex/launch-factory/` folder into your host skills directory so the installed path ends in `skills/launch-factory`. Keep this repo root reachable — `engine/` (schemas, validators, adapters) is the source of truth and does not live inside the skill folder.
-   - **Claude / ZIP hosts:** unzip `claude/launch-factory-v0.2.0.zip` to a single root per your host's skill/project convention. The ZIP is a skill door only; keep `engine/` reachable for structural validation, or run chat-only (fail closed) per `codex/launch-factory/fallbacks/degraded-capability.md`.
-3. Verify: in a fresh session ask *"Use Launch Factory. Run on this release folder."* The skill must identify itself as **Launch Factory**, route to ingest → Claims Lock (never a menu of specialists), and refuse to publish or send. Folder visible ≠ Augment active until the host binds it.
+## Open the full project
 
-Honesty: live-host activation is not freshly verified — see [HOST-MATRIX.md](HOST-MATRIX.md).
+1. Read [Start here](START-HERE.md).
+2. Open the whole repository in [Codex](docs/INSTALL-CODEX.md) or [Claude Code](docs/INSTALL-CLAUDE.md). Keep the project skill folders, engine and reference banks together.
+3. Invoke Launch Factory on one source folder. The operator identifies the product and human reviewer, then routes the next stage to a concrete specialist.
+4. Inspect the actual draft or media at the human gate, with its version, hash, source references and remaining gaps.
 
-## What it is
+Codex uses `.agents/skills/` and `.codex/agents/`. Claude Code uses `.claude/skills/` and `.claude/agents/`. A host without native delegation can perform the selected role inline after reading its skill and bank. It must report that fallback.
 
-One launch-ops operator (never a panel): a sticky Augment wrapping a factory engine (schemas, validators, adapters, one release record). One visible loop — Ingest → Ground → Claims Lock (Barry once) → Create → Review → Package → Learn. Dual-host doors (Codex skill tree + Claude ZIP). Non-engineer runnable via `./run.sh RELEASE_FOLDER`. No auto-publish.
+The retained `claude/launch-factory-v0.2.0.zip` is a **legacy skill-only archive**. It excludes the new specialist layer and engine. Copying `codex/launch-factory/` alone also cannot resolve the current project protocols. Use the full repository for this version of the workflow.
 
-Spine one-liner: **ingest → ground (facts + Voice Bank brief) → Claims Lock (Barry once) → adapters (2/3/4 real + Campaign Plan; 1/5/6 HOLD stubs) → validate ≤2 → Barry pack approve → package + honesty.**
+## Deliverable routes
 
-## Repo layout (repo root IS the install door — ADR 0012)
+| Requested work | Owner |
+| --- | --- |
+| Social video for IG/TikTok, up to 30 seconds | Video lead |
+| Blog article | Blog editor |
+| Five segmented announcement emails | Email editor |
+| Changelog entry | Changelog editor |
+| Login animation | Motion designer |
+| In-app popup graphic and copy | Popup designer |
+| LinkedIn post | LinkedIn editor |
+| X and Threads copy | Social editor |
+| Campaign and weekly calendar | Campaign planner |
+| Carousel, when explicitly requested | Carousel designer |
+| Source claims and artifact review | Evidence editor and quality reviewer |
 
-| Path | Role |
-|---|---|
-| `START-HERE.md` | Install → first ask → Run → Claims Lock → Barry |
-| `codex/launch-factory/` | Codex skill (runtime); `schemas/` = thin pointer to engine |
-| `claude/` | Claude host door (ZIP; must not fork engine schemas) |
-| `docs/` | Install, operate, trust, limits, honesty + CONTEXT/ADRs |
-| `engine/` | **Option B single SoT** — schemas, scripts, adapters, fixtures, barry-templates, honesty |
-| `barry/` | **Human Barry HITL cards** — Claims Lock → spot-check → pack approve |
-| `scripts/regen_manifests.py` | Manifest regeneration (STRUCTURAL_INTEGRITY_ONLY) |
-| `voice-bank/` | Interim voice corpus plan (ADR 0015) |
-| `runs/` | Per-release workspaces (`release-record.json`) — run output, gitignored |
-| `packages/` | Built review packs — run output |
-| `maintainer-source/` | Maintenance only — **never ship as runtime** |
-| `run.sh` | One-command door (ADR 0014) |
-| `HOST-MATRIX.md` | Verified vs honest unknowns |
-| `PROVENANCE.md` / `LICENSE-STATUS.md` | Custody |
-| `release-manifest.json` / `documentation-manifest.json` | Integrity lists |
+The email route distinguishes lead SMB, lead Agency, lead Reseller/Affiliate, customer SMB and customer Agency. Each channel draws from selected product facts and its own voice context. The default campaign excludes carousel generation.
 
-Begin with [START-HERE.md](START-HERE.md). Engine run notes: [engine/README.md](engine/README.md). Developer ELI5: [SHOW-ME.md](SHOW-ME.md).
+## Try the offline route
 
-## Quick start (engine)
+With Python and the repository dependencies installed:
 
 ```bash
-cd <repo-root>
-python3 -m venv .venv && .venv/bin/pip install -r requirements.txt   # once
-
-# One-command door (ADR 0014)
-./run.sh engine/fixtures/demo-release
-
-# Or stage by stage
-.venv/bin/python engine/scripts/init_release.py engine/fixtures/demo-release
-.venv/bin/python engine/scripts/validate_ledger.py engine/fixtures/demo-release/claim_ledger.json
-.venv/bin/python engine/scripts/validate_campaign.py engine/fixtures/demo-release/release_campaign.json
-.venv/bin/python engine/scripts/build_package.py engine/fixtures/demo-release/release_campaign.json packages --work-root engine
-
-.venv/bin/pytest -q    # expect 22 passed
+.venv/bin/python engine/scripts/specialist_route.py route engine/fixtures/specialist-demo/request.json --workspace engine/fixtures/specialist-demo
+.venv/bin/python scripts/sync_specialists.py --check
+.venv/bin/pytest -q
 ```
 
-## Install pointers
+The fictional fixture returns the chosen skills, source read set, actual draft text and bound review subject. It makes no provider calls. Read [the specialist guide](engine/specialists/README.md) for packet fields and review validation.
 
-- Codex: [docs/INSTALL-CODEX.md](docs/INSTALL-CODEX.md)
-- Claude: [docs/INSTALL-CLAUDE.md](docs/INSTALL-CLAUDE.md)
+The finishing-layer baseline had 48 passing tests; current actor-production checks are described in the specialist guide. A fresh Codex CLI 0.153.3 `skills/list` probe with `forceReload` discovered all 14 enabled project skills, including `lf-short-motion-finishing`, with no missing names or target errors. This was a read-only discovery probe; it made no model turn or native skill invocation. Native role invocation, provider access and first-pass content quality remain untested for this layer. See [host evidence](HOST-MATRIX.md).
 
-## Hard stops
+## Human authority and source integrity
 
-1. **No inventing claims** — every allowed claim needs an evidence span; forbidden list is law.
-2. **No auto-publish / auto-send** — packages end at review-ready; humans publish out of band.
-3. **No HubSpot send** from this tree — sandbox draft-only, after Barry, with authorized tooling.
-4. **No pricing invent** — no seats, plan $, or dollar-savings claims.
-5. **Slots 1/5/6 HOLD** until the spine ships (ADR 0013) — never claim "all six review-ready."
-6. **Barry WIP=1** — the writer seat is never Barry; `approved`/`packaged` require a recorded human decision.
-7. **Do not git push** until Gabe says the Forge/review remote is ready.
+Every product claim needs an exact source reference. The helper checks hashes and quote spans; the specialist still reviews meaning. Voice samples supply expression guidance and cannot establish product facts. Missing tools and uninspected media remain visible gaps.
 
-## Language
+A human decision belongs to the exact artifact version and its relevant input bindings. Changing a shared script changes the dependent video's review subject. An unrelated calendar date edit does not rewrite the copy. The helper never authenticates or applies approval events, including repeated events. Actual Barry or Gabe decisions stay human.
 
-See `docs/CONTEXT.md` (Launch Factory, Release Campaign, Claim Ledger, Claims Lock, Adapter, Campaign Plan, Voice Bank, Run Log, Release Record, Barry, Held, Kill-switch, Honesty Doc).
+Legacy `run.sh`, release-record helpers and demo packages remain available as structural fixtures. Their caller-supplied `--human-confirmed` flag does not implement authenticated approvals or stale-event protection. The new layer does not project its recommendations into that flag. Publishing, sending and external scheduling are excluded.
 
-## Version
+## Repository map
 
-`0.2.0` — repo-root install door (ADR 0012), one release record + loop-shaped skill, Campaign Plan as slot 7 (ADR 0016), interim Voice Bank (ADR 0015), `run.sh` one-command door (ADR 0014). History: [CHANGELOG.md](CHANGELOG.md).
+| Path | Purpose |
+| --- | --- |
+| `codex/launch-factory/SKILL.md` | Canonical operator protocol |
+| `.agents/`, `.codex/`, `.claude/` | Generated project skill and role entry points |
+| `engine/specialists/` | Registry, schemas, shared contract and selected reference banks |
+| `engine/specialists/video-production/recipes/ugc-app-reveal/` | Reusable actor-and-app film recipe with five named prompts |
+| `automation/n8n/ugc-app-reveal/` | Importable n8n video preparation subworkflow, SDK source and tests |
+| `engine/scripts/specialist_route.py` | Offline route, recommendation and binding checks |
+| `scripts/sync_specialists.py` | Regenerate project wrappers or check for drift |
+| `voice-bank/` | Vista voice references and interim tone brief |
+| `docs/adr/0017-specialist-routing-and-current-scope.md` | Current scope with historical decisions preserved |
+| `engine/fixtures/`, `barry/` | Fixtures and human review templates |
+| `release-manifest.json`, `documentation-manifest.json` | File integrity lists |
+
+The original structural package remains version 0.2.0; the added specialist layer is 0.2.0, including the shared short-motion finishing skill. Current media work follows its own source and human stage approvals under [ADR 0017](docs/adr/0017-specialist-routing-and-current-scope.md). Historical HOLD decisions and the old archive are retained as history.
