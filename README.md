@@ -1,4 +1,4 @@
-# Vista Launch Factory — working tree
+# Vista Launch Factory
 
 Turns **one Vista feature-release folder** into **six review-ready launch artifacts** plus a **one-release cadence binder**, with **Barry** as the only copy/creative ship gate.
 
