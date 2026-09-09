@@ -41,7 +41,7 @@ Vista Work outputs, readable without a server: [blog](packages/camp_vista_work_p
 | Ground | Claims are extracted with a file, offset, and quote each; voice is checked against 25 items of Vista's own published writing. | System |
 | Claims Lock | Allowed, forbidden, and held claims are confirmed once. | Barry |
 | Create | Twelve specialist roles draft each asset from locked claims only. | System |
-| Review | Four gates run: accuracy, voice, completeness, authority. | System, then Barry spot-check |
+| Review | Scripts check evidence, slot completeness, and approval authority; a specialist checks voice and Barry makes the final call. | System, then Barry spot-check |
 | Package | A review page, honesty note, and campaign plan are assembled. | Barry approves |
 | Stop | Publishing, sending, and scheduling stay with a person. | Human |
 
@@ -50,9 +50,8 @@ Vista Work outputs, readable without a server: [blog](packages/camp_vista_work_p
 - A claim without an evidence span arms the kill-switch before any drafting starts.
 - Barry locks claims before fan-out, the cheapest point to stop a wrong promise.
 - The first blog draft gets a spot-check before the other assets are written.
-- An approval binds to the asset's hash, so editing an approved file reopens its gate.
-- The writer role can never approve; moving a slot to approved needs a `--human-confirmed` flag from a person.
-- Validators retry twice, then print the failed check and the safest re-entry point.
+- The writer role can never approve. Moving a slot to `approved` or `packaged` needs a `--human-confirmed` flag from a person, and `validate_record.py` refuses to accept either state unless a matching Barry decision is recorded.
+- Each validator runs once. On failure, `run.sh` prints the failed check and the safest re-entry point, then stops. Nothing retries automatically.
 
 ## Run it
 
@@ -99,9 +98,12 @@ Expected: 77 tests pass; 124 checks pass on the Vista Work package with 0 paid p
 
 - Barry has not approved any output; every asset is a review-ready draft.
 - Vista Work media is a concept preview because no private Vista footage, UI recording, or Loom was shared.
-- Today an engineer runs the media lane from Claude Code or Codex; the hosted app where marketing clicks a button is the next phase.
+- Today an engineer runs the media lane from Claude Code or Codex. A hosted app where a non-engineer clicks a button and gets a package back is the next phase (Phase B), not built yet.
+- The two built packages under `packages/` were hand-assembled by an engineer running the scripts and specialists step by step. The single command that ingests a folder and packages six outputs end to end, unattended, is still being closed.
 - Two n8n workflows prepare work packets; they do not yet dispatch a provider worker.
 - License is not yet set; see [LICENSE-STATUS.md](LICENSE-STATUS.md).
+
+Full detail on what still needs a human and why: [docs/HUMAN-GAPS.md](docs/HUMAN-GAPS.md).
 
 ## Layout
 
@@ -114,7 +116,7 @@ Expected: 77 tests pass; 124 checks pass on the Vista Work package with 0 paid p
 | `voice-bank/` | 25 items of Vista's public writing and the derived tone brief. |
 | `barry/` | The three human review cards: claims lock, spot-check, pack approve. |
 | `automation/n8n/` | Two importable preparation workflows. |
-| `handoff/` | The engineer handoff and marketer run checklist. |
+| `handoff/` | The engineer handoff; start at `handoff/ENGINEER-START-HERE.md`. |
 | `docs/` | Operating guide, first run, troubleshooting, and decision records. |
 
 Read [START-HERE.md](START-HERE.md) next, then the [engineer handoff](handoff/ENGINEER-START-HERE.md).

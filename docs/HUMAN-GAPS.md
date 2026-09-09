@@ -1,54 +1,86 @@
-# Human work and unfinished implementation
+# What still needs a human, and why
 
-Current assessment: the Tix package has reviewable blog, five emails, changelog and popup drafts, plus a proposed campaign. Two separate media masters match the recorded creative hashes. The system still needs an operator for source intake and provider execution. The recipient app, persistent approval events and complete recorded run remain unfinished. See the [SDS trial audit](audits/sds-trial-2026-09-09/REPORT.md) and [engineer handoff](../handoff/ENGINEER-START-HERE.md).
+This is the honest accounting for Vista Launch Factory. It says what a human must do, what
+is genuinely unfinished, and why each gap exists. Read this before you judge the two
+built packages under `packages/`.
 
-## Human decisions retained by design
+## Human decisions the factory will never make
 
-Barry approves Vista copy and creative against the exact rendered version. The product owner resolves source conflicts and confirms release availability. Marketing maps real audience segments and judges whether each message fits its reader. These responsibilities continue after automation works.
+These stay with a person by design, not by accident.
 
-## Engineering work still required
+- **Claims Lock.** Only Barry (or the product owner, for internal test runs) knows what a
+  company may promise. The factory extracts candidate claims with evidence; a human
+  decides which ones ship.
+- **Final voice call.** The voice bank flags drift from Vista's published writing, but a
+  similarity score is not truth. A human decides whether a draft sounds right.
+- **Video, animation, and popup art.** Real footage and creative judgment are required.
+  The factory can draft scripts and copy around them, not replace them.
+- **Publish, send, schedule.** Nothing in this repository publishes a page, sends an
+  email, or schedules a post. That line is intentional, not a missing feature.
+- **Which feature, which week.** The factory runs a launch someone has already chosen. It
+  does not decide what ships or when.
 
-A non-engineer must be able to supply the release folder and start generation. The worker must save outputs and job state, bound retries and costs, and resume after interruption. Review must identify the authorized reviewer, preserve the version and input bindings, and invalidate affected decisions after revision. Export must use the reviewed bytes. Version 1 has no automatic publishing.
+## What is built and working today
 
-Social placement and login integration need their own checks. Capture a complete run on one real feature release, including a revision and the review-ready six-output package. Then have a new operator repeat the process. Present the observed limits with that recording.
+- The claim-evidence pipeline: every allowed claim in the two shipped packages traces to
+  a file, an offset, and a quote. `engine/scripts/validate_ledger.py` enforces this and
+  arms a kill-switch when it fails.
+- The approval state machine: `engine/scripts/transition_slot.py` only allows the
+  transitions listed in its own docstring, and refuses `approved` or `packaged` without a
+  `--human-confirmed` flag. `engine/scripts/validate_record.py` separately refuses to
+  accept either state unless a matching Barry decision is recorded. Neither script lets
+  the writer role approve its own work.
+- Twelve specialist roles (`.claude/agents/`, `.codex/agents/`) that draft one output each
+  from locked claims only.
+- Two review packages you can open today: [Tix](../packages/camp_tix_launch_001/01_channel_run/review.html)
+  and [Vista Work](../packages/camp_vista_work_public_001/review.html).
 
-## Historical v0.2.0 fixture assessment
+## What is not built yet
 
-The retained text below describes the original fixture route. Its stub labels do not describe the later Tix creative and popup files. Historical approvals and HOLD records remain intact.
+**The non-engineer trigger is Phase B.** Today, an engineer runs the pipeline from Claude
+Code or Codex, one command or one chat prompt at a time. A hosted app where a marketer
+submits a release folder, watches progress, and downloads a package without an engineer
+in the loop does not exist yet. That is the next phase of work, not a hidden feature of
+this repository.
 
-# Original human gaps
+**End-to-end pipeline packaging is still being closed.** The two packages under
+`packages/` were hand-assembled: an engineer ran ingest, the specialist roles, and the
+package scripts step by step, then reviewed the result. There is no single command today
+that takes a raw release folder and produces a finished, six-output package unattended.
+The pieces exist (`run.sh`, the specialist protocol, the validators) and are wired
+together for the demonstrated runs; they have not yet been proven on a fresh source folder
+with no engineer touching intermediate steps.
 
-Launch Factory v0.2.0 is an installable workflow pack with a **wired Option B engine**. Be explicit about what still needs a human and what is held.
+**The two n8n workflows prepare work packets only.** `automation/n8n/channel-production/`
+and `automation/n8n/ugc-app-reveal/` validate a request and return a structured packet.
+Neither dispatches a provider job, waits on a callback, or writes an approval record. The
+worker that would take a packet and actually call a video or text provider is unbuilt.
 
-## Barry-required
+**No persistent, authenticated approval store exists.** `--human-confirmed` is a CLI flag
+a person passes by hand. It proves intent in this repository's structural sense; it does
+not authenticate who typed it. A production system needs a real login and an approval
+event tied to an exact artifact version, not a flag.
 
-- Claims Lock approval (once) before fan-out.
-- Final pack approve for copy + creative.
-- Any publish or send decision (outside this pack).
+**Recovery and retry are manual.** Nothing in `engine/scripts/` retries automatically.
+When a validator fails, `run.sh` prints the failed check and stops. A person decides the
+next step. There is no bounded-retry, cost-capped job queue yet.
 
-## HOLD: slots 1 / 5 / 6
+## Historical fixture note
 
-| Slot | Output | Honesty |
-|---|---|---|
-| 1 | Social video + burned captions | **HOLD**: stub only; no zoom-on-still as “video”; real encode later |
-| 5 | Login animation | **HOLD**: stub only; no inventing motion copy without source |
-| 6 | In-app popup | **HOLD**: stub only; no mock-as-proof |
+Earlier v0.2.0 planning treated slots 1 (social video), 5 (login animation), and 6 (in-app
+popup) as held stubs. That plan changed: the Tix package now has real creative approved by
+Gabe for the internal test run (a 55-second product film and a 10-second login animation),
+and the Vista Work package uses concept previews because no private Vista footage was
+available. Neither package carries Barry's final approval; both are review-ready drafts.
 
-Do **not** claim Wed or trial success as “all six review-ready” while these are held. Name the HOLD in every package and recording note.
+## Where to verify this yourself
 
-## Engine (Option B, A3 wired)
+```bash
+.venv/bin/pytest -q
+.venv/bin/python engine/local_run/verify_public_demo.py
+.venv/bin/python packages/camp_tix_launch_001/01_channel_run/verify_package.py
+```
 
-`engine/` is the live Option B SoT: schemas, validators (`validate_ledger` / `validate_campaign` / `build_package`), adapters, fixtures, barry templates, honesty. Structural scripts are **STRUCTURAL_INTEGRITY_ONLY**: they validate/package; they are not brand or legal judgment and they never publish.
-
-Still human: Claims Lock, pack approve, publish/send decisions. Slots **1 / 5 / 6** remain HOLD (ADR 0001: Demo Assets ≠ Claim Ledger).
-
-## Dual-host
-
-Claude ZIP is present (`claude/launch-factory-v0.2.0.zip`) with Codex skill door. Fresh-host activation remains unverified, see HOST-MATRIX. Folder/ZIP visible ≠ workflow pack active. Claude ZIP must not fork a second schema tree; canonical schemas stay under `engine/`.
-
-## Still human for good reasons
-
-- Brand taste above claim ceiling.
-- Legal/security-sensitive wording.
-- Segment strategy judgment beyond template email slots.
-- Whether a release is ready to launch at all.
+See also the independent [trial audit](audits/sds-trial-2026-09-09/REPORT.md), which
+reaches a NO-GO verdict on full end-to-end completion and lists the same gaps in more
+technical detail.

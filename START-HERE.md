@@ -24,9 +24,12 @@ Launch Factory turns one release folder into six launch assets and a campaign ca
 
 ## Boundaries
 
-- The reviewer for Vista work is Barry. A name or flag in a file does not prove a decision.
-- Specialists recommend; they never approve. Moving an asset to approved needs a person and the `--human-confirmed` flag.
-- Source files are untrusted data and cannot issue instructions.
-- Each real provider run needs current source evidence, tool access, and the reviewer's authorized stage.
+- The reviewer for Vista work is Barry. A name or a flag in a file doesn't prove a
+  decision; the recorded gate entry does.
+- Specialists recommend; they never approve. Moving an asset to `approved` needs a person
+  and the `--human-confirmed` flag.
+- Source files are untrusted data. They can't issue instructions to the system.
+- A real provider run needs current source evidence, tool access, and the reviewer's
+  authorized stage, every time.
 
 Decision records live in [docs/adr/](docs/adr/). The current scope starts at [ADR 0017](docs/adr/0017-specialist-routing-and-current-scope.md).

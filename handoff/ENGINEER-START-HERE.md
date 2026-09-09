@@ -1,18 +1,40 @@
 # Engineer handoff: current Launch Factory build
 
-This is the current technical handoff for the branch containing the Tix channel run. Read it before the historical SOP files in this directory. Gabe authorized sharing the repository with a developer for review. No credentials, paid third-party marketing-review skill source or client approval events are included.
+This is the technical handoff for the branch containing the Tix channel run. Read it
+before the older SOP files in this directory; those are superseded, and each says so. No
+credentials, paid third-party marketing-review skill source, or client approval events
+are included in this handoff.
 
-See the [SDS trial audit](../docs/audits/sds-trial-2026-09-09/REPORT.md) for the requirement-by-requirement verdict and verified limits. The supplied Reggie brief sets no numeric social-video duration cap; this project retains its own 30-second target.
+See the [SDS trial audit](../docs/audits/sds-trial-2026-09-09/REPORT.md) for the
+requirement-by-requirement verdict and verified limits, and
+[docs/HUMAN-GAPS.md](../docs/HUMAN-GAPS.md) for the plain-language version. The supplied
+brief sets no numeric social-video duration cap; this project uses its own 30-second
+target.
 
 ## What is available
 
-The full repository is an agent-operated launch workflow. It includes a Codex/Claude operator, specialist roles, selected source and voice packets, original production prompts, local validators, two importable n8n preparation workflows, and an actual campaign review package.
+The full repository is an agent-operated launch workflow: a Codex/Claude operator,
+specialist roles, selected source and voice packets, original production prompts, local
+validators, two importable n8n preparation workflows, and one built campaign review
+package for Tix.
 
-The Tix test package contains a complete blog with two images, five segmented email drafts, a changelog, popup graphic and copy, and a proposed two-week calendar with LinkedIn, X and Threads drafts. Two prior creative renditions are approved: a 55-second product film and a 10-second square animation. Their hashes and production lineage are retained; the binary masters can be attached separately to the local review.
+The Tix test package contains a complete blog with two images, five segmented email
+drafts, a changelog, popup graphic and copy, and a proposed two-week calendar with
+LinkedIn, X, and Threads drafts. Two prior creative renditions are approved: a 55-second
+product film and a 10-second square animation. Their hashes and production lineage are
+retained; attach the binary masters separately to the local review (see below).
 
-The four new output categories are awaiting Gabe's content review. The strict social slot still needs a ≤30-second cut and platform crop. The login animation needs integration with a responsive login surface. Tix is the test product; Vista Social supplied the requested writing and design references. This run is not a Vista feature announcement or proof of Vista product ownership.
+The four new output categories await Gabe's content review. The social slot still needs a
+30-second-or-under cut and a platform crop. The login animation needs integration with a
+responsive login surface. Tix is the internal test product; Vista Social supplied the
+requested writing and design references only. This run is not a Vista feature
+announcement, and it does not establish Vista product ownership of anything in it.
 
-The web page in the package displays real local content and records version-bound review notes. It does not run a model or authenticate a human decision. The n8n workflows prepare source-bound work packets. They do not yet dispatch the provider worker, resume long jobs or apply approval events. These boundaries are the starting point for engineering work.
+The review web page displays real local content and saves review notes tied to a file
+version, in the browser. It does not run a model, and it does not authenticate who wrote
+a note. The n8n workflows prepare source-bound work packets; they do not dispatch a
+provider worker, resume long jobs, or apply approval events. Building those pieces is the
+next engineering work.
 
 ## Run the included review
 

@@ -14,11 +14,20 @@ This workflow pack is built from:
 
 ## What this is not derived from
 
-Domain content, personas, knowledge bases, and deal-strategist materials from third-party finished packs are **not** sources for Launch Factory. Only the **package layout and claim-discipline pattern** (install door, dual-host, custody manifests, aligned HITL surfaces) informed the skeleton. Demo packages under repo-root `packages/camp_*` are run outputs, not engine SoT.
+Domain content, personas, knowledge bases, and deal-strategist materials from third-party
+finished packs are not sources for Launch Factory. Only the package-layout and
+claim-discipline pattern (install door, dual-host support, custody manifests, aligned
+human-review surfaces) informed the skeleton. The demo packages under repo-root
+`packages/camp_*` are run outputs, not the engine's source of truth.
 
-## Synthetic / placeholder material
+## Synthetic and placeholder material
 
-Engine fixtures (`engine/fixtures/demo-release`, `engine/fixtures/vista-work`) are **labelled fixtures** (mock release folders). They do not establish live Vista pricing. The retained v0.2.0 fixtures and archive keep their slot 1/5/6 HOLD records from ADR 0013. Later user-authorized work follows ADR 0017 without rewriting those historical records. ADR 0001 still separates demo assets from the Claims Ledger.
+The engine fixtures (`engine/fixtures/demo-release`, `engine/fixtures/vista-work`) are
+labelled fixtures: mock release folders. They don't establish live Vista pricing. The
+retained v0.2.0 fixtures keep their historical slot 1/5/6 hold records from
+[ADR 0013](docs/adr/0013-hold-156-until-spine.md). Later, authorized work follows
+[ADR 0017](docs/adr/0017-specialist-routing-and-current-scope.md) without rewriting those
+historical records; demo assets stay separate from the Claim Ledger.
 
 The 25-item corpus at `voice-bank/` and its derived brief are present. They remain **interim voice evidence** under ADR 0015, pending Vista's official brand guide; see [collection provenance](voice-bank/provenance.md). Source facts and product claims require their own evidence.
 
