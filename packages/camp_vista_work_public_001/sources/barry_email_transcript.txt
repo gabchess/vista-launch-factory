@@ -14,8 +14,8 @@ Content summary:
   approver goes hunting for the post, its feedback, and its stage before
   deciding. The search takes longer than the decision.
 - Product fact: in Vista Work, tasks and social posts are linked. Opening
-  the task shows the actual post content, not a card describing it, so
-  approvers see what needs a decision instead of hunting for it first.
+  the task shows the post itself rather than a summary card, so an approver
+  starts from the item awaiting judgment instead of searching for it.
 - It closes with a call to action to open Vista Work.
 
 Voice notes for generation: short stacked questions to dramatize the pain;

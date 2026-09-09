@@ -65,13 +65,13 @@
 
 ## 9. Barry-email-specific traits (the seed, `01`)
 
-1. Opens on the reader's screen, quoting their UI back at them ("a task that says 'Approve the next post.'").
+1. Opens on the reader's screen, mirroring the bare task title their UI shows them, before any setup.
 2. Follows with stacked short questions the reader can't answer, building the pain without adjectives.
 3. Names the hidden cost in one plain sentence (the search outlasting the decision).
-4. Introduces the product late, as relief, not as hero: "In Vista Work, the task and social posts are linked."
-5. Concrete contrast pairs: "the actual content, not a card describing it", "see what needs a decision instead of hunting for it first."
+4. Introduces the product late, as relief, not as hero: one plain sentence stating that tasks and posts are linked.
+5. Concrete contrast pairs: the real item versus a card that merely describes it; deciding versus hunting.
 6. Zero emoji, zero exclamation points, zero hype words.
-7. CTA = product name + arrow, one line, imperative: "Open Vista Work →".
+7. CTA = product name + arrow, one line, imperative.
 8. "someone, probably you", direct, mildly conspiratorial address of the reader's actual workload.
 
 ---

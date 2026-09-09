@@ -186,7 +186,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "a3a20cef04309bf89ff6e46cb9c17c3ed424e22333e300b95b7cfc7bbc498735"
+      "sha256": "b9cccd68bb998e08cb65f38c275a5ebf3f82bc13bab2c140edeb57fd24c8defa"
     },
     {
       "path": "START-HERE.md",
@@ -321,6 +321,10 @@
       "sha256": "f50aed722f2c225a1dfd99b609dd951ff220aae6be06a5d35cf91840873401c7"
     },
     {
+      "path": "docs/REFERENCE.md",
+      "sha256": "7e74e9789d1b714de3af39f802f3285a9857d81d94f0de9c6699515b4f62c0a1"
+    },
+    {
       "path": "docs/TROUBLESHOOTING.md",
       "sha256": "184c511a1cae0f3319f17e99715254dc8cd8227251835d0041faa5d43d044bb3"
     },
@@ -390,7 +394,7 @@
     },
     {
       "path": "docs/specs/N01-tix-source-baseline.md",
-      "sha256": "7aa84482927e856384fb5c70b1cc3a50ec150813e83789424a4e0480ccc1765c"
+      "sha256": "fb4a3ec9733a1ddef0460b2138f49c9a1b9e09dd1c21fd96fa64161db4630dbd"
     },
     {
       "path": "docs/tickets/N01-tix-source-baseline.md",
@@ -602,7 +606,7 @@
     },
     {
       "path": "voice-bank/corpus/01-email-barry-approval-queue.md",
-      "sha256": "58bb64bc0b8b65473c14f319b9c5488aa217ef1552b045fcb09c188f08c07fe3"
+      "sha256": "9f69c0c50075244cd6ef217b01568bb2dee596ea64ed7a864fc76158f306e193"
     },
     {
       "path": "voice-bank/corpus/02-website-homepage.md",
@@ -710,7 +714,7 @@
     },
     {
       "path": "voice-bank/tone-and-style-brief.md",
-      "sha256": "e5565988b3daeabc90f60ffaaa4426a92cfc4f814a54a0c553eea5d67f87f894"
+      "sha256": "80633997cb141657e67048074f8d14d7c2075d019dfd71f221bed5d9862bd0ea"
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 Status: scoped for the current N01 continuation. Acceptance evidence is produced by the baseline work. This specification does not record a completed Claims Lock or an approved first article.
 
-Plan: [N01 in NEXT-STEPS](../NEXT-STEPS.md#n01-freeze-the-active-tix-source-voice-and-approval-baseline). Current media evidence: [CHECKPOINT](../CHECKPOINT.md). Execution ticket: [N01 ticket](../tickets/N01-tix-source-baseline.md).
+Plan: [NEXT-STEPS (historical)](../NEXT-STEPS.md). Current media evidence: [CHECKPOINT](../CHECKPOINT.md). Execution ticket: [N01 ticket](../tickets/N01-tix-source-baseline.md).
 
 ## Problem and result
 

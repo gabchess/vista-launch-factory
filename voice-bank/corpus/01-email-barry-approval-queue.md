@@ -22,9 +22,9 @@ hunts for the post, its feedback, and its stage before deciding, and the
 search takes longer than the decision.
 
 Resolution: in Vista Work, tasks and social posts are linked. Opening the
-task shows the actual post content, not a card describing it, so approvers
-see what needs a decision instead of hunting for it. The email ends with a
-short call to action to open Vista Work.
+task shows the post itself rather than a summary card, so an approver starts
+from the item awaiting judgment instead of searching for it. The email ends
+with a short call to action to open Vista Work.
 
 ## Voice characteristics
 

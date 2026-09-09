@@ -117,6 +117,6 @@ Full detail on what still needs a human and why: [docs/HUMAN-GAPS.md](docs/HUMAN
 | `barry/` | The three human review cards: claims lock, spot-check, pack approve. |
 | `automation/n8n/` | Two importable preparation workflows. |
 | `handoff/` | The engineer handoff; start at `handoff/ENGINEER-START-HERE.md`. |
-| `docs/` | Operating guide, first run, troubleshooting, and decision records. |
+| `docs/` | Operating guide, first run, troubleshooting, decision records, and the [engine reference](docs/REFERENCE.md). |
 
 Read [START-HERE.md](START-HERE.md) next, then the [engineer handoff](handoff/ENGINEER-START-HERE.md).
