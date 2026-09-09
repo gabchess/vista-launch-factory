@@ -1,0 +1,37 @@
+=== SEO Content Analysis ===
+Overall SEO Score: 67/100
+Content Length: 837 words
+
+Content Structure:
+  Headings: 6
+  Paragraphs: 23
+  Avg Paragraph Length: 34.5 words
+  Internal Links: 0
+  External Links: 1
+
+Readability: Easy (Score: 90)
+
+Keyword Analysis:
+  Primary Keyword: Tixmancer
+  Count: 3
+  Density: 0.36%
+  In First Paragraph: No
+
+  Related Keywords Found:
+    • camera
+    • that
+    • your
+    • brief
+    • conversation
+
+Meta Tag Suggestions:
+  Title: Tixmancer - Complete Guide
+  Description: Learn everything about Tixmancer. # Meet Tix: Start Your Secondhand Hunt With a Conversation
+
+A used Sony camera in Brooklyn for under $950
+  URL Slug: tixmancer
+
+Recommendations:
+  • Increase keyword density for 'Tixmancer' (currently 0.36%)
+  • Include primary keyword in the first paragraph
+  • Add internal links to related content

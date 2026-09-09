@@ -1,0 +1,22 @@
+{
+  "artifact_id": "tix-in-app-popup",
+  "version": 1,
+  "files": {
+    "copy.json": {
+      "sha256": "3abd71895db12185585a042490df82f5ccb3a7ec6cf3da86d8ab3c604eb34643",
+      "bytes": 3774
+    },
+    "copy.md": {
+      "sha256": "3dba28970507a49ebfad8f509d850e8f59cae2177a793e5c50e6641f3df8b1c2",
+      "bytes": 914
+    },
+    "graphic.svg": {
+      "sha256": "4675ee87d1f2fe029e826729d5b8e0868dee012ee91dd957d0e7883b72a8ad0d",
+      "bytes": 71459
+    },
+    "popup.html": {
+      "sha256": "c2254ad3a876e051c6309b90b682ae714e00f164f62eec8394eb4ae26903b397",
+      "bytes": 512531
+    }
+  }
+}

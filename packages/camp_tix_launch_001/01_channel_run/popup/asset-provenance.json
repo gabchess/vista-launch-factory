@@ -1,0 +1,58 @@
+{
+  "retrieved_at": "2026-09-08T23:35:10.653725+00:00",
+  "assets": [
+    {
+      "path": "assets/Poppins-Regular.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/poppins/Poppins-Regular.ttf",
+      "sha256": "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba",
+      "bytes": 160316,
+      "license": "SIL Open Font License 1.1",
+      "modified": false
+    },
+    {
+      "path": "assets/Poppins-SemiBold.ttf",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/poppins/Poppins-SemiBold.ttf",
+      "sha256": "d3bf1bdaf0550e83da9ac0b1d1d9fe6db086835a83aa28578e609a394b9a0286",
+      "bytes": 157312,
+      "license": "SIL Open Font License 1.1",
+      "modified": false
+    },
+    {
+      "path": "assets/OFL.txt",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/poppins/OFL.txt",
+      "sha256": "6be04893d770899a015649c7aa3b582f871b272f8747a92b78b17c3e5c8b2573",
+      "bytes": 4385,
+      "license": "SIL Open Font License 1.1",
+      "modified": false
+    },
+    {
+      "path": "assets/tix-mascot-blue.svg",
+      "source_path": "work/tixmancer-app-film-v3/assets/tix-mascot-blue.svg",
+      "sha256": "7b2f8ea7bc7a4200027e7f8cdbd7d1f73a773f83f1c784476b35d903af800608",
+      "bytes": 707,
+      "license": "Original authored asset from accepted Tix film source; Tix internal campaign reuse",
+      "modified": false,
+      "source_role": "Historical working-asset lineage. Use the bundled path field to load this asset."
+    },
+    {
+      "path": "assets/inter.woff2",
+      "source_path": "work/tixmancer-app-film-v3/assets/fonts/inter.woff2",
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+      "bytes": 48256,
+      "license": "SIL Open Font License 1.1",
+      "modified": false,
+      "source_role": "Historical working-asset lineage. Use the bundled path field to load this asset."
+    },
+    {
+      "path": "assets/Inter-OFL.txt",
+      "source_path": "work/tixmancer-app-film-v3/assets/fonts/inter-LICENSE.txt",
+      "sha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
+      "bytes": 4477,
+      "license": "SIL Open Font License 1.1",
+      "modified": false,
+      "source_role": "Historical working-asset lineage. Use the bundled path field to load this asset."
+    }
+  ],
+  "font_source_reference": "https://github.com/google/fonts/tree/main/ofl/poppins",
+  "provider_generation_calls": 0
+}

@@ -1,0 +1,442 @@
+{
+  "schema_version": "campaign-file-manifest/v1",
+  "campaign_id": "camp_tix_launch_001",
+  "scope": "01_channel_run; source baseline checked through portable request routes",
+  "excluded": [
+    "PACKAGE-MANIFEST.json (self)",
+    "routing/*.json (host-local regenerated receipts)",
+    "__pycache__/"
+  ],
+  "files": [
+    {
+      "path": "AUTHORIZATION.md",
+      "bytes": 1064,
+      "sha256": "5477c7fcd448054ee1712dae2556d2ed32c4ab198a2c8e7cb8924b259d494c1e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4957,
+      "sha256": "da6224a84fdb68d7e850c845cc5cdc360685bbbe67648f6af5109fd7d964df74"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "bytes": 4737,
+      "sha256": "041817bbd004e4f84c40153824ce457c1f46277f7272b616bfc45ee9dac565f9"
+    },
+    {
+      "path": "bindings/blog.json",
+      "bytes": 1083,
+      "sha256": "442eea53b22adac88706e6d7b9a951b30abb6d9743e4d11f04f4e6d201ef3629"
+    },
+    {
+      "path": "bindings/campaign.json",
+      "bytes": 548,
+      "sha256": "bbbedefd71661116e523b53a9e7ea29e2ade0f986b75341f901a553112fdc435"
+    },
+    {
+      "path": "bindings/changelog.json",
+      "bytes": 1117,
+      "sha256": "4a682108bd490fb5434765062dbcf80780e310d6060289257359cc4b551f9034"
+    },
+    {
+      "path": "bindings/email-customer_agency.json",
+      "bytes": 708,
+      "sha256": "c60dfd60d5b535438d4e4966af2536fc15091d4706adfcbe225e81e62461de15"
+    },
+    {
+      "path": "bindings/email-customer_smb.json",
+      "bytes": 696,
+      "sha256": "f11f09fdf66a29a9cdd449621b84ccc809f2b5606d0a30769206ed36b1326bd9"
+    },
+    {
+      "path": "bindings/email-lead_agency.json",
+      "bytes": 692,
+      "sha256": "aa2ca07a6145fd5c5f623aaacb621f78005f7f33bbbb3d7d43390ad7fec05645"
+    },
+    {
+      "path": "bindings/email-lead_reseller_affiliate.json",
+      "bytes": 740,
+      "sha256": "e4fd7f3bcb9e64730c0dea6646e8426c2c9a0f12d407d1215bf22fae59d73597"
+    },
+    {
+      "path": "bindings/email-lead_smb.json",
+      "bytes": 680,
+      "sha256": "d20baeaaf1e542edc9671676a2a626ca2ac6519bd2086529fd0886618b7d7d81"
+    },
+    {
+      "path": "bindings/popup.json",
+      "bytes": 664,
+      "sha256": "4dffb60503d4ed0d5bfe39c77fc3740c3aac68676023bc3bd3a9b2285efb57cd"
+    },
+    {
+      "path": "blog/REVIEW.md",
+      "bytes": 4827,
+      "sha256": "a6eeeb1beac3e78406ad7f873d85a9f39f31beed512640887797b609922769c2"
+    },
+    {
+      "path": "blog/article.html",
+      "bytes": 9815,
+      "sha256": "4b93b9dff737ce63b8b3600072e60a8a11a7472892dfb362d880f346895bb026"
+    },
+    {
+      "path": "blog/article.md",
+      "bytes": 5137,
+      "sha256": "224babd3f960ee17afdb3c51d8f0826756c6523f39f8fa501cc9721f80de0599"
+    },
+    {
+      "path": "blog/assets/tix-camera-brief.png",
+      "bytes": 520565,
+      "sha256": "fc8dd3aff2052cfeeac76c4f455de924c500befc43f486a5b0d75805acc90f1c"
+    },
+    {
+      "path": "blog/assets/tix-hero.png",
+      "bytes": 200800,
+      "sha256": "16da5b6f2d2ce8794aae548eb064d75411549e007a450efa8ce0cf5499850279"
+    },
+    {
+      "path": "blog/evidence/brand-voice-analysis.json",
+      "bytes": 413,
+      "sha256": "56296acbd4a5d548f2ac9f566ae15506785f9de586153740ee0befe261f8707f"
+    },
+    {
+      "path": "blog/evidence/build_preview.py",
+      "bytes": 6185,
+      "sha256": "038817982c9b960e0bae2f8ae93cdb78c81cddbdb0b120f96f134f80ec410275"
+    },
+    {
+      "path": "blog/evidence/checks.json",
+      "bytes": 9565,
+      "sha256": "c0adf9b59ba07ab299b0506032dbe5bd70e61f0eb75c1d2e9355d1694393a40d"
+    },
+    {
+      "path": "blog/evidence/originality-check.json",
+      "bytes": 1091,
+      "sha256": "7cfffc416ec2660a86c8fc2eb836f0a6f893db3650fb0f9ba2458b2b3e41abcb"
+    },
+    {
+      "path": "blog/evidence/seo-analysis.txt",
+      "bytes": 858,
+      "sha256": "ea242745522815335a954ea72aba364ca6e4f5a4abf068bb8a2402425ba7d873"
+    },
+    {
+      "path": "blog/evidence/skill-use.json",
+      "bytes": 4561,
+      "sha256": "44d2a531a60377cf210459132f5ca6f5ccf1e0f6ef7cb1e0003d0e5953d3f15f"
+    },
+    {
+      "path": "blog/evidence/verify.py",
+      "bytes": 4139,
+      "sha256": "0daeb17f28305d718beda2dc38e96ca1c2fa1119b013abe2b2255fa15e19d657"
+    },
+    {
+      "path": "blog/evidence/vista-work-voice-analysis.json",
+      "bytes": 516,
+      "sha256": "496dff53d1fd79327a1072b37fb6ea989bc132be385595479e1b4a281742c5d1"
+    },
+    {
+      "path": "blog/image-provenance.json",
+      "bytes": 1813,
+      "sha256": "ca9ce7a10bf7beed762b1792e893ccac8d7ef2fd7312232ced35708253fe551a"
+    },
+    {
+      "path": "blog/metadata.json",
+      "bytes": 2784,
+      "sha256": "ac831b04ed968f490a840833d9fdc276f1f9b24a7bd90063b93089787d6d1f70"
+    },
+    {
+      "path": "blog/provenance.json",
+      "bytes": 27161,
+      "sha256": "3b34bf4b2ff2e0c61efe37ea4bfd530afdc5115710ae9edabb6b23aa2cc0bbe4"
+    },
+    {
+      "path": "build_review.py",
+      "bytes": 7535,
+      "sha256": "34afed12692d226c218c89b9e46d5a64eedd6d3e0ba2f0364d1bdd67f9fbb095"
+    },
+    {
+      "path": "campaign/calendar.csv",
+      "bytes": 3774,
+      "sha256": "9e4a966e7fc029d8149a71dfababdaaea2937def1b6da8195b11fae4f3889261"
+    },
+    {
+      "path": "campaign/calendar.json",
+      "bytes": 7478,
+      "sha256": "a110808058764cc689bb7ead6bf8679575e6f7a6682e95939c5ab59ce3f7c21b"
+    },
+    {
+      "path": "changelog/entry.html",
+      "bytes": 2195,
+      "sha256": "3dbf3fe64cbcdf1966cccd6bda2205a3e2f9adbfc216bf04c172f134f2a8a65d"
+    },
+    {
+      "path": "changelog/entry.json",
+      "bytes": 2210,
+      "sha256": "19012f82cab27e1369dd70b4338b17cd1ea4ca2d7545bffca1ffd647ec81e2ea"
+    },
+    {
+      "path": "changelog/entry.md",
+      "bytes": 927,
+      "sha256": "0e5b6bd648ad83ff5b6f63ac6fa137a1ef2306d8f70935910d21b5f82e7e0cac"
+    },
+    {
+      "path": "email/customer_agency.html",
+      "bytes": 2539,
+      "sha256": "197b820c825162e6e20b4103b492adfbdc66f50e1714159c9cd2346644c65857"
+    },
+    {
+      "path": "email/customer_agency.json",
+      "bytes": 2229,
+      "sha256": "77b94168719c0979890dc18d2c02a66572ce705329a6912e086c72e640e09172"
+    },
+    {
+      "path": "email/customer_agency.md",
+      "bytes": 934,
+      "sha256": "20a2344518b6db46ea9d80847a7ee0e4626c8eea28ccacb17026d4a46361384d"
+    },
+    {
+      "path": "email/customer_smb.html",
+      "bytes": 2593,
+      "sha256": "faf478209715a44b860f8d458be1d3138c430be523c28fa43da53d2ec762c753"
+    },
+    {
+      "path": "email/customer_smb.json",
+      "bytes": 2227,
+      "sha256": "afd8660e6ab11abfafbafb6b6b0231bc34eae69688aff165809f90a18b464a21"
+    },
+    {
+      "path": "email/customer_smb.md",
+      "bytes": 974,
+      "sha256": "f161cbb7c3728f091105e1284dbae2ffa11f450dcef042c83cbaafabb34a9380"
+    },
+    {
+      "path": "email/emails.json",
+      "bytes": 9435,
+      "sha256": "d165b9599780f6d89b8c8037912067e48eec7b69a3bda41e1c70253553f20b63"
+    },
+    {
+      "path": "email/lead_agency.html",
+      "bytes": 2546,
+      "sha256": "d12b4273a23b3c2ea8105e9e81521c9b67da94a888e4803070d350d4da935356"
+    },
+    {
+      "path": "email/lead_agency.json",
+      "bytes": 2174,
+      "sha256": "a7f0ef4f5b3fb98a7dd4995f8ff58d1ad4cc8fc64098ec84611de76228f92efb"
+    },
+    {
+      "path": "email/lead_agency.md",
+      "bytes": 929,
+      "sha256": "f746f174f602a1ad6337f19c2be1aa1098e8c4b3f31356ad79e8873f7cccf960"
+    },
+    {
+      "path": "email/lead_reseller_affiliate.html",
+      "bytes": 2575,
+      "sha256": "803fffacab4148e5c6ac08d5b59556e08662b5c32fda70c615d636710a6535e3"
+    },
+    {
+      "path": "email/lead_reseller_affiliate.json",
+      "bytes": 2320,
+      "sha256": "4790c5381cfb9e89f33f37668661c71a63c3dd017526e37c39991a135a78bcad"
+    },
+    {
+      "path": "email/lead_reseller_affiliate.md",
+      "bytes": 954,
+      "sha256": "ffa7df7db0c514a7a00d34e23bbef8033efc0fc78a04ac41f9df19eb537482aa"
+    },
+    {
+      "path": "email/lead_smb.html",
+      "bytes": 2559,
+      "sha256": "b769bff4253be05b401df83c9b74c443b91eb52396db754bf511115a643a167e"
+    },
+    {
+      "path": "email/lead_smb.json",
+      "bytes": 2182,
+      "sha256": "f877c2b859d75ab20d2b667736c3164b2dd3f3cf428e5b14205d8678c0499a3f"
+    },
+    {
+      "path": "email/lead_smb.md",
+      "bytes": 924,
+      "sha256": "de9abf0ea3cb98a5fce7c2f0c81bca1aa809a9d287bdc1125aaca0a4d3f5cb03"
+    },
+    {
+      "path": "popup/NOTES.md",
+      "bytes": 5132,
+      "sha256": "6595ac8b2c133abd1d935d103e79626723f6bc5f52658e202033f1f839602829"
+    },
+    {
+      "path": "popup/artifact-hashes.json",
+      "bytes": 596,
+      "sha256": "c4286f3a74a03dfeead491375a20b8e864830eeabb09bed65754b0521482563f"
+    },
+    {
+      "path": "popup/asset-provenance.json",
+      "bytes": 2482,
+      "sha256": "42e507ef462ee624b163ce2d36092ed89b40cfb03b985759fee5b95122daa3bc"
+    },
+    {
+      "path": "popup/assets/Inter-OFL.txt",
+      "bytes": 4477,
+      "sha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345"
+    },
+    {
+      "path": "popup/assets/OFL.txt",
+      "bytes": 4385,
+      "sha256": "6be04893d770899a015649c7aa3b582f871b272f8747a92b78b17c3e5c8b2573"
+    },
+    {
+      "path": "popup/assets/Poppins-Regular.ttf",
+      "bytes": 160316,
+      "sha256": "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba"
+    },
+    {
+      "path": "popup/assets/Poppins-SemiBold.ttf",
+      "bytes": 157312,
+      "sha256": "d3bf1bdaf0550e83da9ac0b1d1d9fe6db086835a83aa28578e609a394b9a0286"
+    },
+    {
+      "path": "popup/assets/inter.woff2",
+      "bytes": 48256,
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
+    },
+    {
+      "path": "popup/assets/tix-mascot-blue.svg",
+      "bytes": 707,
+      "sha256": "7b2f8ea7bc7a4200027e7f8cdbd7d1f73a773f83f1c784476b35d903af800608"
+    },
+    {
+      "path": "popup/build.py",
+      "bytes": 13251,
+      "sha256": "f6013bd11fd89895a2c55b71496d23812517bf13ec6a3b4bcc47e9206ddc776f"
+    },
+    {
+      "path": "popup/copy.json",
+      "bytes": 3774,
+      "sha256": "3abd71895db12185585a042490df82f5ccb3a7ec6cf3da86d8ab3c604eb34643"
+    },
+    {
+      "path": "popup/copy.md",
+      "bytes": 914,
+      "sha256": "3dba28970507a49ebfad8f509d850e8f59cae2177a793e5c50e6641f3df8b1c2"
+    },
+    {
+      "path": "popup/graphic.svg",
+      "bytes": 71459,
+      "sha256": "4675ee87d1f2fe029e826729d5b8e0868dee012ee91dd957d0e7883b72a8ad0d"
+    },
+    {
+      "path": "popup/popup.html",
+      "bytes": 512531,
+      "sha256": "c2254ad3a876e051c6309b90b682ae714e00f164f62eec8394eb4ae26903b397"
+    },
+    {
+      "path": "popup/qa/checks-before-embedded-focus-fix.json",
+      "bytes": 3619,
+      "sha256": "cc6af1dfeabb799f06dc76cbc73632ee9b5a0031069c58f3f178ed92f50a7f7f"
+    },
+    {
+      "path": "popup/qa/checks-initial.json",
+      "bytes": 3132,
+      "sha256": "a87c06fbc81a2db916ba370eb2e11629de7d7afa338d5ae59b22a8bb299503ff"
+    },
+    {
+      "path": "popup/qa/checks.json",
+      "bytes": 4040,
+      "sha256": "65199e8832262b1f7d14790f600472b82878b3817aa389edf5d854664d78f260"
+    },
+    {
+      "path": "render_copy.py",
+      "bytes": 4749,
+      "sha256": "2310cd3e15e05aadfaf1f85d0bb1f32c75738d159f85785391dc06c2bb7c4d3c"
+    },
+    {
+      "path": "requests/blog.json",
+      "bytes": 4318,
+      "sha256": "fdb6cf011089a6bdc17115d0543e5e37d3edb8121f6f731c3ec6286f825e8377"
+    },
+    {
+      "path": "requests/campaign_plan.json",
+      "bytes": 4347,
+      "sha256": "cea4275728804b6d095401a8edc5ba49264f376f53985997e078b80f83527b60"
+    },
+    {
+      "path": "requests/changelog.json",
+      "bytes": 4348,
+      "sha256": "e337809ba1838841a0e00713663c2e5bfbe4002e3776e642100e6615acd5c66f"
+    },
+    {
+      "path": "requests/email_segments.json",
+      "bytes": 4342,
+      "sha256": "463b9591dddcc58aeb6d037363807db72a87f69da8a306c99939a27db4b24dc9"
+    },
+    {
+      "path": "requests/in_app_popup.json",
+      "bytes": 4338,
+      "sha256": "6571a604ab21b4a6300814da0aaaa6907e189e403caa2d5d1d59bacf916f67d6"
+    },
+    {
+      "path": "review-data.json",
+      "bytes": 21745,
+      "sha256": "42a7984772671fb570354f2628a0be8494020a686cf27b563d92e37c7afd5f31"
+    },
+    {
+      "path": "review.html",
+      "bytes": 15619,
+      "sha256": "69877fc973618495532a4b9e19203cc8ad068cd567d203a6faaadfb371686c65"
+    },
+    {
+      "path": "route_packets.py",
+      "bytes": 793,
+      "sha256": "e4ea1d17c53cb00853b723f4e499574d1cb5f283eaf1721cbc160755e25b4244"
+    },
+    {
+      "path": "routing/README.md",
+      "bytes": 536,
+      "sha256": "ff2b77d2a848b573c53d772b10bdaee71ba6dad4f67ddd8caeaab52536d5d166"
+    },
+    {
+      "path": "serve_review.py",
+      "bytes": 3654,
+      "sha256": "9674f1be7222c548665987f5b578ce70ffae320f01edf9270ac88fe271f9e707"
+    },
+    {
+      "path": "verification/independent-review.md",
+      "bytes": 7447,
+      "sha256": "52efe9b21c94d2fa6b09c749b78433d33be86209724343924cc4c54d554989df"
+    },
+    {
+      "path": "verification/preparation-run.json",
+      "bytes": 1388,
+      "sha256": "00bc644797173ffc3fdffa6a8faf56606291f9a6f5fec85dd8b3b2ee6d44e1be"
+    },
+    {
+      "path": "verify_package.py",
+      "bytes": 5186,
+      "sha256": "5032c5b28587128618136a2f8c79a4eb9a4f0aeb97844abab3a014e41444a1a4"
+    },
+    {
+      "path": "voice/blog.md",
+      "bytes": 5895,
+      "sha256": "223badb41bf946125b62748dfc15a6070da90ffc81c48e450c2fe0223a707dad"
+    },
+    {
+      "path": "voice/campaign.md",
+      "bytes": 1322,
+      "sha256": "8ec4a228ec9e3743ddd685dff970e84981463f25a9ae63d162ff673c14c5046e"
+    },
+    {
+      "path": "voice/changelog.md",
+      "bytes": 2025,
+      "sha256": "cc8a4c28c2984548724d3accbbc7f2f2bd5e48163d5d0e728c8493cf93031593"
+    },
+    {
+      "path": "voice/email.md",
+      "bytes": 1950,
+      "sha256": "945529e9b6e63cae53b6bb4e3b4fb46d2683c84d7e3bb6611860bbe6247c1589"
+    },
+    {
+      "path": "voice/popup.md",
+      "bytes": 4056,
+      "sha256": "6c5dd8238d70f90f090c41657639402ad8711553be34b419b68f0806c8854705"
+    }
+  ]
+}

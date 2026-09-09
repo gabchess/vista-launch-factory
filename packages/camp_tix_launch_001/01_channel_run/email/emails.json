@@ -1,0 +1,92 @@
+{
+  "schema_version": "channel-email-drafts/v1",
+  "product_id": "tixmancer",
+  "campaign_id": "camp_tix_launch_001",
+  "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
+  "version": 1,
+  "state": "draft_for_human_review",
+  "voice_profile": "vista-email-adapted-for-tix-v1",
+  "sender_name": "The Tix team",
+  "greeting": "Hi there,",
+  "signoff": "The Tix team",
+  "variants": [
+    {
+      "id": "lead_smb",
+      "label": "Leads · SMB",
+      "reader_job": "Plan a secondhand equipment purchase for a small business while keeping a personal budget clear.",
+      "subject": "A used camera hunt can start with one message",
+      "preheader": "Meet Tix, a conversational approach to secondhand buying. Start with the item you need and the amount you can spend.",
+      "paragraphs": [
+        {"id": "p1", "text": "Your next product shoot needs a camera. You have a budget in mind, and a few minutes between everything else that needs doing.", "claim_ids": [], "basis": "Hypothetical reader situation"},
+        {"id": "p2", "text": "We're building Tix to start that secondhand hunt with a conversation. Tell it what you're looking for and where to look. Add the most you're willing to spend.", "claim_ids": ["TIX-C01", "TIX-C02"]},
+        {"id": "p3", "text": "For example: “I'm in Brooklyn, looking for a used Sony camera for less than $950.” That gives the conversation a useful starting point. In the preview, Tix compares an item's asking price with the limit you've chosen.", "claim_ids": ["TIX-C02", "TIX-C03"], "basis": "Approved illustrative buyer brief, not an offer or a result"},
+        {"id": "p4", "text": "The walkthrough shows how the conversation is designed to work. Live marketplace sources are part of the next stage. Join the waitlist to follow what we're building.", "claim_ids": ["TIX-C05", "TIX-C06", "TIX-C08"]}
+      ],
+      "cta": {"label": "Join the waitlist", "url": "https://tixmancer.xyz"}
+    },
+    {
+      "id": "lead_agency",
+      "label": "Leads · Agency",
+      "reader_job": "Turn a shoot's equipment need into a clear buying brief without inventing agency collaboration features.",
+      "subject": "Give your next camera hunt a clearer brief",
+      "preheader": "A client shoot starts with a brief. Tix brings that same clarity to the secondhand equipment you're looking for.",
+      "paragraphs": [
+        {"id": "p1", "text": "A client shoot can leave you with one small job that takes longer than expected: finding a used camera within the production budget.", "claim_ids": [], "basis": "Hypothetical agency use case"},
+        {"id": "p2", "text": "Tix is being built around a buying conversation. Start with the equipment you want, then explain your location and spending limit in your own words.", "claim_ids": ["TIX-C01", "TIX-C02"]},
+        {"id": "p3", "text": "The launch walkthrough follows someone looking for a used Sony in Brooklyn for less than $950. It's a specific brief you could adapt to your next shoot. The preview's price comparison uses the buyer's own limit.", "claim_ids": ["TIX-C02", "TIX-C03"], "basis": "Approved creative scenario, not a customer testimonial"},
+        {"id": "p4", "text": "Supported marketplace sources and chosen notification channels are on the roadmap. If secondhand equipment is part of how you plan a shoot, join the waitlist and follow the next stage of Tix.", "claim_ids": ["TIX-C06", "TIX-C08"]}
+      ],
+      "cta": {"label": "Join the waitlist", "url": "https://tixmancer.xyz"}
+    },
+    {
+      "id": "lead_reseller_affiliate",
+      "label": "Leads · Reseller / Affiliate",
+      "reader_job": "Evaluate and explain the buying workflow without invented resale margins, commissions or partner entitlements.",
+      "subject": "Before the next secondhand buy, set your limit",
+      "preheader": "See how Tix starts with a buyer's brief, and what its preview can tell you about a price before you go further.",
+      "paragraphs": [
+        {"id": "p1", "text": "When you're sizing up a secondhand item, the asking price is only part of the decision. You also need to know the most you're willing to pay.", "claim_ids": [], "basis": "General reader guidance; no resale outcome claimed"},
+        {"id": "p2", "text": "Tix starts with that context. The product is being built for secondhand buyers and sellers, with a conversation about an item or listing. In the preview, a price comparison uses the buyer's chosen limit. Market value still needs its own evidence.", "claim_ids": ["TIX-C01", "TIX-C02", "TIX-C03"]},
+        {"id": "p3", "text": "The camera walkthrough gives you a concrete way to understand the idea: a buyer in Brooklyn wants a used Sony for less than $950. It follows the intended experience from that first request.", "claim_ids": ["TIX-C02", "TIX-C05"], "basis": "Approved illustrative scenario"},
+        {"id": "p4", "text": "If you evaluate secondhand gear or share useful buying tools with your audience, join the waitlist to follow Tix as it develops.", "claim_ids": ["TIX-C08"], "basis": "Conditional audience relevance; no affiliate program or payout implied"}
+      ],
+      "cta": {"label": "Join the waitlist", "url": "https://tixmancer.xyz"}
+    },
+    {
+      "id": "customer_smb",
+      "label": "Customers · SMB",
+      "reader_job": "Give a returning preview reader a practical way to prepare the next equipment request.",
+      "subject": "Start your next Tix brief with a firm budget",
+      "preheader": "A useful way to explore the preview: choose one item for your business, then give Tix the buying limit you have in mind.",
+      "paragraphs": [
+        {"id": "p1", "text": "Before you buy the next piece of equipment for your business, write down the most you'd be comfortable spending. That number belongs in the first message.", "claim_ids": [], "basis": "Editorial exercise for a returning preview reader"},
+        {"id": "p2", "text": "Tix's preview is designed around a conversation about what you're looking for. You can describe the item and your location, then set a limit. The price comparison uses that limit when you review an asking price.", "claim_ids": ["TIX-C02", "TIX-C03"]},
+        {"id": "p3", "text": "The camera walkthrough starts with a used Sony in Brooklyn for less than $950. Think about the equivalent request for your business. A clear brief gives you a specific buying decision to explore.", "claim_ids": ["TIX-C02"], "basis": "Approved scenario followed by a suggested reader exercise"},
+        {"id": "p4", "text": "The preview demonstrates the flow with stored examples. Live sources are planned for the next stage. Join the waitlist if you'd like to follow that progress.", "claim_ids": ["TIX-C05", "TIX-C06", "TIX-C08"]}
+      ],
+      "cta": {"label": "Join the waitlist", "url": "https://tixmancer.xyz"}
+    },
+    {
+      "id": "customer_agency",
+      "label": "Customers · Agency",
+      "reader_job": "Help a returning agency reader prepare a shoot-specific purchasing exercise for the preview.",
+      "subject": "Use your next shoot to shape a Tix brief",
+      "preheader": "Use a real shoot to frame your next preview: decide which camera you need and what you'd be willing to pay for it.",
+      "paragraphs": [
+        {"id": "p1", "text": "Pick an upcoming shoot and the piece of equipment you'd consider buying used. Set aside a moment to agree on the spending limit before anyone starts looking.", "claim_ids": [], "basis": "Suggested agency exercise; no built-in team approval feature implied"},
+        {"id": "p2", "text": "That brief fits the way Tix is being designed. The conversation starts with an item and a location. From there, a buyer can explain the price limit they have in mind.", "claim_ids": ["TIX-C01", "TIX-C02"]},
+        {"id": "p3", "text": "In the preview, Tix compares the asking price with that limit. Use the walkthrough to see how the brief becomes a buying conversation, then consider which details your team would want to bring to it.", "claim_ids": ["TIX-C02", "TIX-C03"], "basis": "Suggested review of the walkthrough; no live preview access promised"},
+        {"id": "p4", "text": "The roadmap includes supported marketplace sources and notifications through channels the user chooses. Join the waitlist to follow those next steps as Tix develops.", "claim_ids": ["TIX-C06", "TIX-C08"]}
+      ],
+      "cta": {"label": "Join the waitlist", "url": "https://tixmancer.xyz"}
+    }
+  ],
+  "review_notes": {
+    "audience_status": "Five required test segments. Tix customer lists, paid plans and an affiliate program are unverified; these labels assert no existing commercial relationship. Customer variants use a returning-preview-reader context.",
+    "style_limit": "Vista public feature writing was inspected; no Vista newsletter corpus was available. Email expression is an adaptation, not a verified clone of a private newsletter.",
+    "send_prerequisites": ["Gabe approves each exact segment version", "Verify waitlist collection at the canonical domain", "Map each segment to a real opted-in audience", "Configure sender identity, postal address, unsubscribe and preference URLs in the chosen ESP", "Verify actual release/access details for any production customer announcement"],
+    "human_approved": false,
+    "sent": false,
+    "provider_generation": "operator drafted in Codex using installed email-sequence and LF email-editor protocol; no email API invoked"
+  }
+}

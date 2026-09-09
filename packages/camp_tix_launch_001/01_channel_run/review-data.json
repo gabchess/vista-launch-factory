@@ -1,0 +1,499 @@
+{
+  "schema_version": "campaign-review/v1",
+  "campaign_id": "camp_tix_launch_001",
+  "product_id": "tixmancer",
+  "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
+  "human_reviewer": "gabe",
+  "assets": [
+    {
+      "id": "blog",
+      "label": "Blog post",
+      "title": "Meet Tix: Start Your Secondhand Hunt With a Conversation",
+      "description": "Feature article · 4 minute read",
+      "type": "iframe",
+      "preview": "blog/article.html",
+      "source_file": "blog/article.md",
+      "version": 1,
+      "sha256": "0f6603fb523388fea0a22b736ef7f6cf19c20237e4e50483a9289eea3391dd2a",
+      "context_digest": "c546eb1f4913e1d0a82cd2f126812fec6488f16ea49333970a2409240f538085",
+      "claim_ids": [
+        "TIX-C01",
+        "TIX-C02",
+        "TIX-C03",
+        "TIX-C04",
+        "TIX-C05",
+        "TIX-C06",
+        "TIX-C07",
+        "TIX-C08"
+      ],
+      "approved": false,
+      "job": "Help a reader understand the conversation and form a useful buying brief.",
+      "style_note": "Based on four actual Vista Insights articles. Tix remains the product and publisher.",
+      "review_note": "Article, SEO fields and two images are included. Confirm copy and the waitlist destination before publishing.",
+      "voice_path": "voice/blog.md",
+      "preview_height": 1200,
+      "group": "Ready for review"
+    },
+    {
+      "id": "email-lead_smb",
+      "label": "Leads · SMB",
+      "title": "A used camera hunt can start with one message",
+      "description": "Meet Tix, a conversational approach to secondhand buying. Start with the item you need and the amount you can spend.",
+      "type": "iframe",
+      "preview": "email/lead_smb.html",
+      "source_file": "email/lead_smb.md",
+      "version": 1,
+      "sha256": "e960205eb524d6fae6dc31a34b33f1f9091990f83c3a3523257df4a3bc66a1de",
+      "context_digest": "92435ee1ede2fd60c2c97b170ff68a5e2835e2ce2d086ea9720c9781b8558376",
+      "claim_ids": [
+        "TIX-C01",
+        "TIX-C02",
+        "TIX-C03",
+        "TIX-C05",
+        "TIX-C06",
+        "TIX-C08"
+      ],
+      "approved": false,
+      "job": "Plan a secondhand equipment purchase for a small business while keeping a personal budget clear.",
+      "style_note": "Vista public feature register adapted for email. No private newsletter corpus was supplied.",
+      "review_note": "Audience labels are test contexts. Confirm the real list, waitlist collection and ESP footer before sending.",
+      "voice_path": "voice/email.md",
+      "preview_height": 1000,
+      "group": "Email variants"
+    },
+    {
+      "id": "email-lead_agency",
+      "label": "Leads · Agency",
+      "title": "Give your next camera hunt a clearer brief",
+      "description": "A client shoot starts with a brief. Tix brings that same clarity to the secondhand equipment you're looking for.",
+      "type": "iframe",
+      "preview": "email/lead_agency.html",
+      "source_file": "email/lead_agency.md",
+      "version": 1,
+      "sha256": "a3ed2ed19b47263436c3d222530ef41158d6d8266ab81b60d55f747f808b7119",
+      "context_digest": "92435ee1ede2fd60c2c97b170ff68a5e2835e2ce2d086ea9720c9781b8558376",
+      "claim_ids": [
+        "TIX-C01",
+        "TIX-C02",
+        "TIX-C03",
+        "TIX-C06",
+        "TIX-C08"
+      ],
+      "approved": false,
+      "job": "Turn a shoot's equipment need into a clear buying brief without inventing agency collaboration features.",
+      "style_note": "Vista public feature register adapted for email. No private newsletter corpus was supplied.",
+      "review_note": "Audience labels are test contexts. Confirm the real list, waitlist collection and ESP footer before sending.",
+      "voice_path": "voice/email.md",
+      "preview_height": 1000,
+      "group": "Email variants"
+    },
+    {
+      "id": "email-lead_reseller_affiliate",
+      "label": "Leads · Reseller / Affiliate",
+      "title": "Before the next secondhand buy, set your limit",
+      "description": "See how Tix starts with a buyer's brief, and what its preview can tell you about a price before you go further.",
+      "type": "iframe",
+      "preview": "email/lead_reseller_affiliate.html",
+      "source_file": "email/lead_reseller_affiliate.md",
+      "version": 1,
+      "sha256": "5a7ea76610ab87ddf4a68b744f7fd4d80f945be29865835639f19b36381c685f",
+      "context_digest": "92435ee1ede2fd60c2c97b170ff68a5e2835e2ce2d086ea9720c9781b8558376",
+      "claim_ids": [
+        "TIX-C01",
+        "TIX-C02",
+        "TIX-C03",
+        "TIX-C05",
+        "TIX-C08"
+      ],
+      "approved": false,
+      "job": "Evaluate and explain the buying workflow without invented resale margins, commissions or partner entitlements.",
+      "style_note": "Vista public feature register adapted for email. No private newsletter corpus was supplied.",
+      "review_note": "Audience labels are test contexts. Confirm the real list, waitlist collection and ESP footer before sending.",
+      "voice_path": "voice/email.md",
+      "preview_height": 1000,
+      "group": "Email variants"
+    },
+    {
+      "id": "email-customer_smb",
+      "label": "Customers · SMB",
+      "title": "Start your next Tix brief with a firm budget",
+      "description": "A useful way to explore the preview: choose one item for your business, then give Tix the buying limit you have in mind.",
+      "type": "iframe",
+      "preview": "email/customer_smb.html",
+      "source_file": "email/customer_smb.md",
+      "version": 1,
+      "sha256": "23e4a6f0d22fdc445b6dd20c14a676fa389f919bb101ddb16824f09617054e2d",
+      "context_digest": "92435ee1ede2fd60c2c97b170ff68a5e2835e2ce2d086ea9720c9781b8558376",
+      "claim_ids": [
+        "TIX-C02",
+        "TIX-C03",
+        "TIX-C05",
+        "TIX-C06",
+        "TIX-C08"
+      ],
+      "approved": false,
+      "job": "Give a returning preview reader a practical way to prepare the next equipment request.",
+      "style_note": "Vista public feature register adapted for email. No private newsletter corpus was supplied.",
+      "review_note": "Audience labels are test contexts. Confirm the real list, waitlist collection and ESP footer before sending.",
+      "voice_path": "voice/email.md",
+      "preview_height": 1000,
+      "group": "Email variants"
+    },
+    {
+      "id": "email-customer_agency",
+      "label": "Customers · Agency",
+      "title": "Use your next shoot to shape a Tix brief",
+      "description": "Use a real shoot to frame your next preview: decide which camera you need and what you'd be willing to pay for it.",
+      "type": "iframe",
+      "preview": "email/customer_agency.html",
+      "source_file": "email/customer_agency.md",
+      "version": 1,
+      "sha256": "244e735734c8a485b4081d2449e91c56a91c13d9cd92624700848ec916938acb",
+      "context_digest": "92435ee1ede2fd60c2c97b170ff68a5e2835e2ce2d086ea9720c9781b8558376",
+      "claim_ids": [
+        "TIX-C01",
+        "TIX-C02",
+        "TIX-C03",
+        "TIX-C06",
+        "TIX-C08"
+      ],
+      "approved": false,
+      "job": "Help a returning agency reader prepare a shoot-specific purchasing exercise for the preview.",
+      "style_note": "Vista public feature register adapted for email. No private newsletter corpus was supplied.",
+      "review_note": "Audience labels are test contexts. Confirm the real list, waitlist collection and ESP footer before sending.",
+      "voice_path": "voice/email.md",
+      "preview_height": 1000,
+      "group": "Email variants"
+    },
+    {
+      "id": "changelog",
+      "label": "Changelog",
+      "title": "Tix preview: start your secondhand hunt with a conversation",
+      "description": "Concise product preview update",
+      "type": "iframe",
+      "preview": "changelog/entry.html",
+      "source_file": "changelog/entry.md",
+      "version": 1,
+      "sha256": "d50d61e59a6ed8bdbb075b34dd22852c2fa14bba41e9a72317865ef15a4a2a94",
+      "context_digest": "81b3246992398dfebe4b8bac774345ca82138b7b6948f98e1a612ab2dbb43b88",
+      "claim_ids": [
+        "TIX-C01",
+        "TIX-C02",
+        "TIX-C03",
+        "TIX-C05",
+        "TIX-C06",
+        "TIX-C08"
+      ],
+      "approved": false,
+      "job": "Give returning readers a short account of the preview and a first useful action.",
+      "style_note": "Based on three rendered Vista changelog entries, including the current Vista Home update.",
+      "review_note": "Availability stays qualified as a preview. A public launch date has not been assigned.",
+      "voice_path": "voice/changelog.md",
+      "preview_height": 1020,
+      "group": "Ready for review"
+    },
+    {
+      "id": "popup",
+      "label": "In-app popup",
+      "title": "Your next find starts with a chat.",
+      "description": "Graphic + copy · Desktop and mobile preview",
+      "type": "iframe",
+      "preview": "popup/popup.html",
+      "source_file": "popup/copy.json",
+      "version": 1,
+      "sha256": "c954a2fb3db7613350c1e526d1c4cbc077f28c010e18833e1e04bd3bc25bf7f1",
+      "context_digest": "6469b873744dbfee7ab4b6221f1e5cb70c11c11496f89b9971365d110e76380b",
+      "claim_ids": [
+        "TIX-C01",
+        "TIX-C02",
+        "TIX-C08"
+      ],
+      "approved": false,
+      "job": "Introduce the conversation design to a prospective secondhand buyer and invite interest in Tix.",
+      "style_note": "Vista login typography and published palette informed the original popup layout.",
+      "review_note": "The modal is an original design. Review the message and artwork together; production targeting still needs integration.",
+      "voice_path": "voice/popup.md",
+      "preview_height": 700,
+      "group": "Ready for review"
+    },
+    {
+      "id": "campaign",
+      "label": "Campaign calendar",
+      "title": "Bring a better brief to the hunt",
+      "description": "Two proposed weeks · Includes LinkedIn, X and Threads drafts",
+      "type": "calendar",
+      "preview": "campaign/calendar.json",
+      "source_file": "campaign/calendar.csv",
+      "version": 1,
+      "sha256": "61629c6cf950b2e9f52fbd538b22f6e098f16405aa5326262de9696a01995be9",
+      "context_digest": "9801df760e91595f0f51dd1802710185c63e12c7d4dfdce972236e48ddbdb8d0",
+      "claim_ids": [
+        "TIX-C01",
+        "TIX-C02",
+        "TIX-C03",
+        "TIX-C05",
+        "TIX-C06",
+        "TIX-C08"
+      ],
+      "approved": false,
+      "job": "Move from the product story to practical buyer questions, then invite a real brief.",
+      "style_note": "One source, different channel jobs. Dates and times are planning choices for review.",
+      "review_note": "Nothing is scheduled. The social cut and login crop are named dependencies.",
+      "voice_path": "voice/campaign.md",
+      "preview_height": 920,
+      "group": "Ready for review"
+    },
+    {
+      "id": "social-video",
+      "group": "Approved creative",
+      "label": "Product launch video",
+      "title": "Dinner with Tix",
+      "description": "Approved master · 1920 × 1080 · 55 seconds",
+      "type": "video",
+      "preview": "/media/film.mp4",
+      "source_file": null,
+      "version": 3,
+      "sha256": "1e73f611ecaacaa9aabe1b3cfdc53f571888573ae876aebb65674ad2903604d2",
+      "context_digest": "accepted-dinner-with-tix-v3",
+      "approved": true,
+      "approval_quote": "Love it. It's perfect now.",
+      "note": "The accepted master is preserved. A ≤30-second cut and social crop still need a separate review for the strict Vista social slot.",
+      "job": "Show the human situation and the intended Tix buying conversation.",
+      "style_note": "Accepted creative from the prior video loop.",
+      "review_note": "Actual production used ChatCut, authored HyperFrames scenes and one Higgsfield enhancement. The handoff preserves that provider lineage."
+    },
+    {
+      "id": "animation",
+      "group": "Approved creative",
+      "label": "Short animation",
+      "title": "Tix motion",
+      "description": "Approved creative · 1080 × 1080 · 10 seconds",
+      "type": "video",
+      "preview": "/media/animation.mp4",
+      "source_file": null,
+      "version": 1,
+      "sha256": "f16b7cfda2d6ef8671fc2add7a404cf77be321dffec56503a1326b387bb7b76a",
+      "context_digest": "accepted-tix-motion-v1",
+      "approved": true,
+      "approval_quote": "Imho it's ready to ship.",
+      "note": "The accepted animation is preserved. Its login-page placement needs a responsive crop and a separate HTML action.",
+      "job": "Introduce Tix in a short visual sequence.",
+      "style_note": "Original Tix creative, reviewed and accepted by Gabe.",
+      "review_note": "Vista login research is saved for the future surface integration; this accepted square render was not altered."
+    }
+  ],
+  "calendar": {
+    "schema_version": "campaign-calendar-draft/v1",
+    "campaign_id": "camp_tix_launch_001",
+    "product_id": "tixmancer",
+    "version": 1,
+    "title": "Bring a better brief to the hunt",
+    "goal": "Help readers understand the conversation, then invite them to express interest in Tix. Measure confirmed waitlist submissions after collection and tracking are verified.",
+    "timezone": "America/New_York",
+    "schedule_note": "Proposed dates: 14–25 September 2026, America/New_York. Nothing is scheduled. Move this calendar to the actual launch window after human review.",
+    "state": "draft_for_human_review",
+    "slots": [
+      {
+        "date": "2026-09-14",
+        "local_time": "09:00",
+        "channel": "Blog",
+        "title": "Introduce the buying conversation",
+        "angle": "Use the complete article to explain the Sony brief, the personal limit and the product direction.",
+        "audience": "Secondhand buyers exploring Tix",
+        "asset_ids": [
+          "blog"
+        ],
+        "cta": "Join the waitlist",
+        "gate": "Approve article and verify the destination before CMS handoff."
+      },
+      {
+        "date": "2026-09-14",
+        "local_time": "10:00",
+        "channel": "Changelog",
+        "title": "Explain the preview",
+        "angle": "Give returning readers the short account of what the preview demonstrates and what is planned next.",
+        "audience": "Returning product readers",
+        "asset_ids": [
+          "changelog"
+        ],
+        "cta": "Join the waitlist",
+        "gate": "Confirm preview release state and approve the entry."
+      },
+      {
+        "date": "2026-09-14",
+        "local_time": "10:30",
+        "channel": "Login surface",
+        "title": "Introduce Tix in motion",
+        "angle": "Use the accepted short animation as the visual introduction.",
+        "audience": "Visitors to the intended entry surface",
+        "asset_ids": [
+          "animation"
+        ],
+        "cta": "Join the waitlist",
+        "gate": "Creative approved. Login aspect ratio, crop, muted behavior and HTML CTA integration still require packaging."
+      },
+      {
+        "date": "2026-09-15",
+        "local_time": "10:00",
+        "channel": "Email · leads",
+        "title": "Connect the product to the reader's work",
+        "angle": "Choose the SMB equipment, agency shoot or reseller evaluation variant from verified audience fields.",
+        "audience": "Opted-in leads, one mutually exclusive segment each",
+        "asset_ids": [
+          "email-lead_smb",
+          "email-lead_agency",
+          "email-lead_reseller_affiliate"
+        ],
+        "cta": "Join the waitlist",
+        "gate": "Approve each variant, map a real audience and configure the ESP footer. Do not infer a partner program."
+      },
+      {
+        "date": "2026-09-16",
+        "local_time": "11:00",
+        "channel": "LinkedIn",
+        "title": "Write the buying brief",
+        "angle": "Use the agency equipment example as a practical prompt readers can adapt.",
+        "audience": "People buying equipment for work",
+        "asset_ids": [
+          "social-linkedin"
+        ],
+        "cta": "Join the waitlist",
+        "gate": "Approve the written post and linked destination."
+      },
+      {
+        "date": "2026-09-17",
+        "local_time": "12:00",
+        "channel": "Instagram / TikTok",
+        "title": "Dinner with Tix",
+        "angle": "Show the human moment that starts the buying conversation.",
+        "audience": "Secondhand shoppers",
+        "asset_ids": [
+          "social-video"
+        ],
+        "cta": "Join the waitlist",
+        "gate": "The 55-second 1080p master is approved. Create and review a ≤30-second social version and platform crop before this placement."
+      },
+      {
+        "date": "2026-09-18",
+        "local_time": "10:00",
+        "channel": "In-app popup",
+        "title": "Invite the first brief",
+        "angle": "Show the conversation graphic when the reader opens product updates.",
+        "audience": "Eligible viewers who request the announcement",
+        "asset_ids": [
+          "popup"
+        ],
+        "cta": "Join the waitlist",
+        "gate": "Approve graphic and copy. Bind to real targeting and respect dismissal; suppress people already enrolled."
+      },
+      {
+        "date": "2026-09-21",
+        "local_time": "11:00",
+        "channel": "X",
+        "title": "What the price comparison means",
+        "angle": "Explain the role of the buyer's own limit in the preview.",
+        "audience": "Readers assessing the product",
+        "asset_ids": [
+          "social-x"
+        ],
+        "cta": "Join the waitlist",
+        "gate": "Approve the exact post and destination."
+      },
+      {
+        "date": "2026-09-23",
+        "local_time": "10:00",
+        "channel": "Email · returning readers",
+        "title": "Bring a real equipment need",
+        "angle": "Use the SMB or agency exercise to help readers form their own request.",
+        "audience": "Verified returning preview readers; required customer labels are test contexts",
+        "asset_ids": [
+          "email-customer_smb",
+          "email-customer_agency"
+        ],
+        "cta": "Join the waitlist",
+        "gate": "Verify audience relationship before mapping customer segments. Suppress confirmed waitlist members from this acquisition CTA."
+      },
+      {
+        "date": "2026-09-24",
+        "local_time": "11:00",
+        "channel": "Threads",
+        "title": "Ask what would change the decision",
+        "angle": "Invite specific buyer input about the details of a used-camera brief.",
+        "audience": "Secondhand buyers with a current purchase in mind",
+        "asset_ids": [
+          "social-threads"
+        ],
+        "cta": "Join the waitlist",
+        "gate": "Approve the exact post. Review replies manually."
+      },
+      {
+        "date": "2026-09-25",
+        "local_time": "14:00",
+        "channel": "Campaign review",
+        "title": "Learn from the first response",
+        "angle": "Review confirmed signups, source-tagged visits and the questions people ask. Use actual results to plan the next piece.",
+        "audience": "Gabe and the product owner",
+        "asset_ids": [
+          "campaign"
+        ],
+        "cta": "Review actual results",
+        "gate": "No results or conversion targets are claimed. Collect evidence only after a real launch."
+      }
+    ],
+    "social_drafts": [
+      {
+        "id": "social-linkedin",
+        "channel": "LinkedIn",
+        "version": 1,
+        "claim_ids": [
+          "TIX-C01",
+          "TIX-C02",
+          "TIX-C03",
+          "TIX-C06",
+          "TIX-C08"
+        ],
+        "text": "The next client shoot needs a camera. Before anyone starts browsing, write down the buying brief.\n\n“I'm in Brooklyn, looking for a used Sony camera for less than $950.”\n\nThat sentence gives the search a place to begin. You can add the model you have in mind or explain whether a lens needs to be included.\n\nTix is being built around this kind of conversation. Its preview compares an asking price with the buyer's chosen limit, while supported marketplace sources are part of the next stage.\n\nThink about the next piece of equipment you'd buy used. What would you put in that first message?\n\nJoin the waitlist: tixmancer.xyz"
+      },
+      {
+        "id": "social-x",
+        "channel": "X",
+        "version": 1,
+        "claim_ids": [
+          "TIX-C03",
+          "TIX-C08"
+        ],
+        "text": "A camera can fit your $950 budget and still need a closer look.\n\nTix's preview compares an asking price with your own limit. Assessing market value needs separate evidence.\n\nJoin the waitlist: tixmancer.xyz"
+      },
+      {
+        "id": "social-threads",
+        "channel": "Threads",
+        "version": 1,
+        "claim_ids": [
+          "TIX-C01",
+          "TIX-C02",
+          "TIX-C08"
+        ],
+        "text": "You're looking for a used Sony in Brooklyn, with $950 as your limit. Which detail would you ask about first?\n\nI'd start with what comes with the camera. A lens description can change the whole buying question.\n\nTix is being built to start that secondhand hunt with a conversation about what you need.\n\nJoin the waitlist: tixmancer.xyz"
+      }
+    ],
+    "measurement": {
+      "primary": "Confirmed waitlist submissions after the collection path is verified",
+      "secondary": [
+        "Destination visits by channel",
+        "Video completion where available",
+        "Useful buyer questions"
+      ],
+      "baseline": null,
+      "target": null,
+      "reporting": "Weekly after an actual launch; no invented performance benchmark"
+    },
+    "permissions": {
+      "human_approved": false,
+      "scheduled": false,
+      "publishing_authorized": false
+    },
+    "revision_rule": "Date changes reopen calendar review. Text or shared-source changes reopen the affected asset and the slots that use it. Approved source video remains intact."
+  },
+  "new_artifact_approvals": [],
+  "publishing_authorized": false
+}

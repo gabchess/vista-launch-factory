@@ -3,3 +3,4 @@
 __pycache__/
 .pytest_cache/
 runs/
+packages/camp_tix_launch_001/01_channel_run/routing/*.json

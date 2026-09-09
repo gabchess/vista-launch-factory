@@ -1,0 +1,33 @@
+{
+  "schema_version": "asset-review-binding/v1",
+  "asset_id": "changelog",
+  "version": 1,
+  "context_digest": "81b3246992398dfebe4b8bac774345ca82138b7b6948f98e1a612ab2dbb43b88",
+  "files": [
+    {
+      "path": "blog/assets/tix-camera-brief.png",
+      "sha256": "fc8dd3aff2052cfeeac76c4f455de924c500befc43f486a5b0d75805acc90f1c"
+    },
+    {
+      "path": "changelog/entry.html",
+      "sha256": "3dbf3fe64cbcdf1966cccd6bda2205a3e2f9adbfc216bf04c172f134f2a8a65d"
+    },
+    {
+      "path": "changelog/entry.json",
+      "sha256": "19012f82cab27e1369dd70b4338b17cd1ea4ca2d7545bffca1ffd647ec81e2ea"
+    },
+    {
+      "path": "changelog/entry.md",
+      "sha256": "0e5b6bd648ad83ff5b6f63ac6fa137a1ef2306d8f70935910d21b5f82e7e0cac"
+    },
+    {
+      "path": "popup/assets/Poppins-Regular.ttf",
+      "sha256": "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba"
+    },
+    {
+      "path": "popup/assets/Poppins-SemiBold.ttf",
+      "sha256": "d3bf1bdaf0550e83da9ac0b1d1d9fe6db086835a83aa28578e609a394b9a0286"
+    }
+  ],
+  "sha256": "d50d61e59a6ed8bdbb075b34dd22852c2fa14bba41e9a72317865ef15a4a2a94"
+}

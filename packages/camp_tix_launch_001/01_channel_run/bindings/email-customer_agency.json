@@ -1,0 +1,21 @@
+{
+  "schema_version": "asset-review-binding/v1",
+  "asset_id": "email-customer_agency",
+  "version": 1,
+  "context_digest": "92435ee1ede2fd60c2c97b170ff68a5e2835e2ce2d086ea9720c9781b8558376",
+  "files": [
+    {
+      "path": "email/customer_agency.html",
+      "sha256": "197b820c825162e6e20b4103b492adfbdc66f50e1714159c9cd2346644c65857"
+    },
+    {
+      "path": "email/customer_agency.json",
+      "sha256": "77b94168719c0979890dc18d2c02a66572ce705329a6912e086c72e640e09172"
+    },
+    {
+      "path": "email/customer_agency.md",
+      "sha256": "20a2344518b6db46ea9d80847a7ee0e4626c8eea28ccacb17026d4a46361384d"
+    }
+  ],
+  "sha256": "244e735734c8a485b4081d2449e91c56a91c13d9cd92624700848ec916938acb"
+}

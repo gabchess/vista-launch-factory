@@ -1,26 +1,29 @@
 # Launch Factory next steps
 
-Date: 8 September 2026. Status: original working plan for the user's latest continuation request. This checkpoint creates no implementation issues, starts no loop and makes no new paid calls. [CHECKPOINT.md](CHECKPOINT.md) records the completed milestone; [ADR 0019](adr/0019-testable-app-and-next-milestone.md) records the testable-app direction.
+Date: 8 September 2026. Current continuation: share, commit and push the campaign work for developer review, then set up and test the app/n8n path in the [engineer handoff](../handoff/ENGINEER-START-HERE.md). The runtime and complete non-engineer app remain unfinished. This document starts no loop and makes no paid calls.
 
-Continuation update: Gabe resumed without manual compaction. N01 now has a [checked writing baseline](../packages/camp_tix_launch_001/00_baseline/baseline.json) and an [exact human review](../packages/camp_tix_launch_001/00_baseline/CLAIMS-LOCK-REVIEW.md). The current Claims Lock is pending; N02 is the next output after that decision. The original board snapshot below is historical.
+The [current Tix package](../packages/camp_tix_launch_001/01_channel_run/README.md) contains a blog with two images, five emails, a changelog, popup graphic/copy and a proposed two-week calendar with written social drafts. Open the [local review](../packages/camp_tix_launch_001/01_channel_run/review.html) through the handoff's server. All new content awaits Gabe's consolidated review. Two previously approved creative renditions retain their exact decisions.
+
+[ADR 0020](adr/0020-vista-channel-draft-batch.md) records Gabe's instruction to draft every missing writing/popup lane using Vista channel references. It supersedes the earlier N02 drafting pause for this batch. The N01 baseline and its pending historical Claims Lock record remain intact. The ordered ticket candidates and board snapshot below preserve the earlier plan; they do not reopen settled drafting authorization. [ADR 0019](adr/0019-testable-app-and-next-milestone.md) supersedes the recorded-demo-only assumption.
 
 ## Outcome and current evidence
 
 A marketing, product or development operator can submit a release source, answer the missing brief questions, inspect the actual outputs, request a correction, approve the exact revision and download the package. An engineer configures the installation once. Routine use must succeed without that engineer operating an agent behind the chat.
 
-The current working tree contains the specialist layer and reusable UGC recipe. The branch observed during this audit was `nova/factory-house`, with HEAD `5ad464510d881cf1539d1f069811bba9b6d62595` before the checkpoint commit. Forge's final remote receipt establishes the later published checkpoint. Re-read branch and Issues on resume.
+The repository contains the specialist layer, reusable UGC recipe and current four-channel preparation. The earlier planning audit observed `nova/factory-house` at `5ad464510d881cf1539d1f069811bba9b6d62595`; that hash is historical. Forge's external push receipt establishes each later checkpoint. Re-read branch and Issues before a new dispatch.
 
 | Deliverable | Verified state | Remaining acceptance |
 | --- | --- | --- |
 | Tix product film | Gabe approved the exact 55-second video master; its media container is about 55.08 seconds. Current file hash matches the receipt in CHECKPOINT. | Preserve this standalone master. A separate social cut must meet the 30-second slot and its channel format. |
 | Tix animation | Gabe approved the exact 10-second, 1080-square animation with sound. Current file hash matches its receipt. | Verify login layout, loop seam, loading, sound behavior and reduced-motion fallback. A changed rendition has its own review. |
-| Blog | `packages/camp_vista_work_001/02_blog/` contains an older Vista Work draft. | Write and review the active Tix article, then generate the selected client example from its own source. |
-| Email announcement | The historical package has draft copy for five segments. | Review distinct leads SMB, leads Agency, leads Reseller/Affiliate, customers SMB and customers Agency variants. This is one output category. |
-| Changelog | An older Vista Work entry exists. | Produce the active release entry with evidenced availability and an accurate CTA. |
-| In-app popup | The historical package has a HELD file; a specialist route exists. | Produce the graphic and copy together, including CTA and dismissal behavior. |
-| Campaign and calendar | Adapters, schemas and historical cadence files exist. | Produce the current weekly plan and actual LinkedIn, X and Threads drafts; link each placement to an exact asset revision. |
+| Blog | Current Tix article with two images, source evidence and a preview is drafted. | Gabe's content/image review, then a separate client example from its own source. |
+| Email announcement | Five current Tix variants are drafted. | Review lead SMB, lead Agency, lead Reseller/Affiliate, customer SMB and customer Agency variants. This is one output category. |
+| Changelog | Current Tix entry and supported availability notes are drafted. | Gabe's review of the exact entry and CTA. |
+| In-app popup | Current graphic and copy are drafted with CTA and dismissal preview. | Gabe's visual and copy review. |
+| Campaign and calendar | A proposed two-week calendar includes LinkedIn, X and Threads drafts. | Campaign review and exact bindings to accepted assets; date changes retain unchanged copy. |
 | n8n | **Launch Factory \| UGC App Reveal \| Prepare** is saved, inactive and preparation-only. Its exact runtime identity is in the private installation receipt. Fifteen local tests and seven cloud input cases passed. | Build retrieval, real worker execution, six branches, validation, retries, persistent human decisions and package assembly. |
-| App and release ZIP | No complete non-engineer app is evidenced. The retained Claude v0.2.0 ZIP predates the current layer. | Prove app use, then build and test a fresh portable package. |
+| Four-channel n8n preparation | Importable inactive workflow passed 23 JavaScript cases, five loader cases and bounded independent review. | Wire prepared packets to a real worker and durable review service; caller-supplied counters grant no authority. |
+| App and release ZIP | Local review displays current artifacts and saves browser notes. The complete runtime is unfinished; the retained Claude v0.2.0 ZIP predates the current layer. | Prove authenticated app use and persistent decisions, then build and test a fresh portable package. |
 
 `camp_vista_work_001/MANIFEST.json` says `review_ready_pre_claims_lock`; its Barry card still requires Claims Lock. `camp_demo_001` is a labelled fixture. Neither package supplies approval of the current Tix or Prospector outputs. A route file establishes available instructions; first-pass content quality still needs measured editorial review.
 
@@ -28,7 +31,7 @@ The original client brief calls for all six outputs from one real feature-releas
 
 ## Source, voice and approval rules
 
-Use Tixmancer for internal validation and Prospector for the client demonstration. Every campaign carries a product ID, frozen source revision, source hashes, selected expression references and the actual reviewer identity. Separate source facts from voice samples. Reggie's public writing is the selected client-demo style reference; it establishes no Prospector features, pricing or personal experiences. Vista channel samples still need calibration for a claim of Vista house style. Tix uses its selected product expression references without silently inheriting Reggie's identity.
+Use Tixmancer for internal validation and Prospector for the client demonstration. Every campaign carries a product ID, frozen source revision, source hashes, selected expression references and the actual reviewer identity. The current Tix batch uses selected Vista Social channel examples as expression and design guidance under ADR 0020. Its claims still come from Tix source evidence. Human voice review is pending. Reggie's public writing remains a selected client-demo style reference; it establishes no Prospector features, pricing or personal experiences.
 
 The first baseline distinguishes implemented behavior, observed runtime behavior and explicitly approved product vision. The accepted Tix film includes authored UI. Its creative approval does not prove a real search, login, wallet operation or payment. Keep that distinction in claim evidence and presentation notes. Existing approved media can be reused only within compatible source and creative scope. Preserve the originals.
 
@@ -71,7 +74,7 @@ These milestones are ordered work, not a promised delivery date. Paid generation
 
 ## Ordered ticket candidates
 
-These local IDs define the proposed sequence. GitHub Issues remains the execution board. **N01 is the current baseline phase; N02 follows its actual Claims Lock.** Every later candidate is queued. Forge reconciles existing issues before marking one live issue `ready-for-agent`. Each implementation ticket gets a fresh builder and independent verifier. If its selected platform makes it exceed one context window, split it before dispatch while retaining a complete observable result.
+These local IDs retain the earlier proposed sequence. GitHub Issues remains the execution board. **N01's baseline is complete; current N02–N05 drafts and the proposed calendar await consolidated review under ADR 0020.** The user's latest instruction permits the app/n8n slice in the engineer handoff to proceed alongside that review. Reconcile the selected slice with existing issues before dispatch; the old serial dependencies below do not reopen drafting or block authorized setup. Each implementation ticket gets a fresh builder and independent verifier. Split work that exceeds one context window while retaining an observable result.
 
 ### N01. Freeze the active Tix source, voice and approval baseline
 
@@ -221,7 +224,7 @@ Package the current augment, original skills/prompts, schemas, worker/runtime se
 
 ## Existing issue map and execution discipline
 
-The read-only audit found 13 open issues and **zero** live `ready-for-agent` labels. Titles below are the actual titles at this checkpoint. Old scope text needs reconciliation before later dispatch.
+The earlier read-only audit found 13 open issues and **zero** live `ready-for-agent` labels. This is a historical snapshot. Titles below were the actual titles at that checkpoint; inspect the live board before later dispatch.
 
 | Existing issue | Plan use |
 | --- | --- |
@@ -253,4 +256,4 @@ git log -1 --format='%H %s'
 gh issue list --repo gabchess/vista-launch-factory --state open --limit 100 --json number,title,labels,url
 ```
 
-Then inspect the saved N01 baseline and its actual human Claims Lock. Present the recorded decision if pending; after an applicable approval, use the prepared blog request for N02. Forge reconciles the selected execution phase before a later Ralph dispatch. No app scaffold or paid media batch is the immediate next action.
+Follow the [engineer handoff's next slice](../handoff/ENGINEER-START-HERE.md#next-implementation-slice): authenticated intake, one actual blog-worker response, stored exact-version review and a revision that survives reload. Use the current consolidated draft review for editorial decisions while that authorized setup and testing proceeds. Keep N01's historical record intact and avoid repeating the settled drafting interview. Forge reconciles the selected execution phase before a later Ralph dispatch. Provider spend and publishing retain their own applicable limits.

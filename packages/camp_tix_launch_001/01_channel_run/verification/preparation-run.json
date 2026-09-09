@@ -1,0 +1,37 @@
+{
+  "schema_version": "channel-production-preparation/v1",
+  "status": "ready_for_operator",
+  "issues": [],
+  "batch_id": "tix-channels-v1",
+  "campaign_id": "camp_tix_launch_001",
+  "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
+  "execution_authorized": false,
+  "publishing_authorized": false,
+  "human_approval_granted": false,
+  "authentication_verified": false,
+  "preparation_sha256": "3014a20285442f025a3b0f791deed77a1673170a7dd1e305415181c878ff93cb",
+  "work_packets": [
+    {
+      "deliverable": "blog",
+      "assigned_role": "blog_editor",
+      "recipe_prompt_path": "engine/specialists/channel-production/prompts/blog.md"
+    },
+    {
+      "deliverable": "email_segments",
+      "assigned_role": "email_editor",
+      "recipe_prompt_path": "engine/specialists/channel-production/prompts/email.md"
+    },
+    {
+      "deliverable": "changelog",
+      "assigned_role": "changelog_editor",
+      "recipe_prompt_path": "engine/specialists/channel-production/prompts/changelog.md"
+    },
+    {
+      "deliverable": "in_app_popup",
+      "assigned_role": "popup_designer",
+      "recipe_prompt_path": "engine/specialists/channel-production/prompts/popup.md"
+    }
+  ],
+  "result_sha256": "a5bee97af7ae98683526a047fbe9344c337ca3df3492261792d5e3886da67ce2",
+  "method": "Local canonical loader plus the same JavaScript as the n8n Code node; no cloud execution"
+}

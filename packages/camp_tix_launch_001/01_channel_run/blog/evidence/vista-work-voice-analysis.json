@@ -1,0 +1,28 @@
+{
+  "word_count": 1688,
+  "readability_score": 52.53493984688302,
+  "voice_profile": {
+    "formality": {
+      "dominant": "casual",
+      "scores": {
+        "formal": 0,
+        "casual": 1
+      }
+    },
+    "tone": {
+      "dominant": "friendly",
+      "scores": {
+        "professional": 1,
+        "friendly": 3
+      }
+    }
+  },
+  "sentence_analysis": {
+    "average_length": 16.4,
+    "variety": "high",
+    "count": 103
+  },
+  "recommendations": [
+    "Maintain consistent voice across all content"
+  ]
+}

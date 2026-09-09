@@ -1,6 +1,8 @@
-# Launch Factory checkpoint: approved video recipe
+# Launch Factory checkpoint: Tix campaign drafts and engineer handoff
 
-Date: 8 September 2026. This document records a milestone, not a complete six-output app. The next plan is [NEXT-STEPS](NEXT-STEPS.md); resume through [AFTER-COMPACTION](AFTER-COMPACTION.md).
+Date: 8 September 2026. The [current package](../packages/camp_tix_launch_001/01_channel_run/README.md) contains four new output categories and a proposed two-week calendar. Gabe's consolidated content review is pending. His two earlier creative approvals remain valid for their exact files. The [engineer handoff](../handoff/ENGINEER-START-HERE.md) supplies setup commands for the [local review](../packages/camp_tix_launch_001/01_channel_run/review.html) and the next app/n8n slice. The complete six-output app remains unfinished.
+
+The latest user request authorizes sharing, committing and pushing this work for developer review, followed by app/n8n setup and testing. [NEXT-STEPS](NEXT-STEPS.md) records that continuation. Older checkpoint and SOP results retain their historical scope.
 
 ## Approved creative
 
@@ -23,6 +25,7 @@ The film combines accepted ChatCut performances, actor-picture enhancement throu
 - `ugc-app-reveal` 1.0.0 supplies five named prompts in [the recipe directory](../engine/specialists/video-production/recipes/ugc-app-reveal/README.md). The local `product-heygen-pipeline` skill is 0.6.0.
 - [The n8n component](../automation/n8n/ugc-app-reveal/README.md) embeds that recipe, checks request structure and returns full source/prompt context. It is a saved inactive preparation subworkflow, not the complete generation workflow.
 - Fifteen local preparation cases and seven cloud input cases passed. Independent review passed. The prompt bytes and installed Code node were checked against the portable sources. This evidence does not establish paid-provider execution or human authentication.
+- [Four-channel preparation](../automation/n8n/channel-production/README.md) adds source-bound packets for blog, five email variants, changelog and popup. Its inactive workflow passed 23 local JavaScript cases, five loader cases and bounded independent review. The current campaign used delegated and inline specialist protocols; neither workflow supplies the future provider worker or authority store.
 
 The retained Claude v0.2.0 ZIP remains a legacy skill archive. The full repository is the current project package. A fresh release ZIP and clean own-account onboarding verification remain deliverables.
 
@@ -30,16 +33,16 @@ The retained Claude v0.2.0 ZIP remains a legacy skill archive. The full reposito
 
 | Category | Current status | Needed result |
 | --- | --- | --- |
-| Blog | Protocol and older drafts exist | One source-grounded, on-brand article reviewed for the active campaign |
-| Email announcement | Segment rules and older drafts exist | Distinct lead SMB, lead Agency, lead Reseller/Affiliate, customer SMB and customer Agency variants |
-| Changelog | Adapter and older drafts exist | Accurate release entry with supported availability and usage details |
-| In-app popup | Specialist and finishing support exist | Reviewed graphic, copy, CTA and dismissal behavior |
-| Campaign bonus | Protocol and historical cadence exist | Weekly calendar tied to current artifacts, plus channel-specific written social |
+| Blog | Current Tix article, two images and claim evidence are drafted | Gabe's content and image review |
+| Email announcement | Five complete variants are drafted for the specified lead/customer segments | Gabe's review of the exact variants |
+| Changelog | Current Tix entry and availability evidence are drafted | Gabe's review of the entry and CTA |
+| In-app popup | Graphic, copy, CTA and dismissal preview are drafted | Gabe's visual and copy review |
+| Campaign bonus | Proposed two-week calendar with LinkedIn, X and Threads drafts | Campaign review and final bindings to accepted assets |
 | Social adaptation | Approved 55-second standalone master | A separate client/social rendition within the chosen 30-second constraint |
 | Login delivery | Approved square motion creative | Correct aspect, loop, duration, accessibility and export for the login surface |
-| Complete n8n runtime | Video preparation is tested | Retrieval, typed worker dispatch, six output branches, validation, bounded retries, persisted approval and package assembly |
-| Non-engineer app | Planned | Intake, actual asset previews, source context, revision history, human decisions, visible progress and clear recovery |
-| Presentation and handoff | Earlier planning material exists | Recorded same-source full run, accurate write-up, current ZIP and own-account installation proof |
+| Complete n8n runtime | Video and four-channel preparation are tested | Retrieval, typed worker dispatch, six output branches, validation, bounded retries, persisted approval and package assembly |
+| Non-engineer app | Local artifact review is available; runtime integration is next | Authenticated intake, actual worker output, persistent decisions, visible progress and recovery |
+| Presentation and handoff | Current engineer guide and campaign package are available | Recorded same-source full run, current ZIP and own-account installation proof |
 
 ## Scope to preserve
 
@@ -51,6 +54,6 @@ The latest user request calls for a testable app without an engineer in the loop
 
 ## Resume discipline
 
-The user authorized committing and pushing the current repository changes. Forge owns Git mutations; Gabe retains merge authority. No auto-publishing, email sends, purchases or new media generation occurs during this checkpoint. Ralph stays paused until the later continuation dispatch.
+The user authorized sharing, committing and pushing the current repository changes for developer review. App/n8n setup and testing follow the handoff's bounded implementation slice. Forge owns Git mutations; Gabe retains merge authority. New draft approval is still pending. No publishing, email sends, purchases or new media generation occurs during this checkpoint. Ralph stays paused until a later dispatch.
 
 Read current branch, remote and Issues before acting. The checkpoint commit is the commit containing this file; its final external receipt records the remote SHA without creating a self-referential Git document. Session-specific media paths and the pre-compact hook receipt remain in the operator's private handoff.

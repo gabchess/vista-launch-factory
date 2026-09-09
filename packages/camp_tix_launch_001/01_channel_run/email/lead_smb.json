@@ -1,0 +1,57 @@
+{
+  "schema_version": "channel-email-drafts/v1",
+  "product_id": "tixmancer",
+  "campaign_id": "camp_tix_launch_001",
+  "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
+  "version": 1,
+  "state": "draft_for_human_review",
+  "voice_profile": "vista-email-adapted-for-tix-v1",
+  "sender_name": "The Tix team",
+  "greeting": "Hi there,",
+  "signoff": "The Tix team",
+  "variant": {
+    "id": "lead_smb",
+    "label": "Leads · SMB",
+    "reader_job": "Plan a secondhand equipment purchase for a small business while keeping a personal budget clear.",
+    "subject": "A used camera hunt can start with one message",
+    "preheader": "Meet Tix, a conversational approach to secondhand buying. Start with the item you need and the amount you can spend.",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "Your next product shoot needs a camera. You have a budget in mind, and a few minutes between everything else that needs doing.",
+        "claim_ids": [],
+        "basis": "Hypothetical reader situation"
+      },
+      {
+        "id": "p2",
+        "text": "We're building Tix to start that secondhand hunt with a conversation. Tell it what you're looking for and where to look. Add the most you're willing to spend.",
+        "claim_ids": [
+          "TIX-C01",
+          "TIX-C02"
+        ]
+      },
+      {
+        "id": "p3",
+        "text": "For example: “I'm in Brooklyn, looking for a used Sony camera for less than $950.” That gives the conversation a useful starting point. In the preview, Tix compares an item's asking price with the limit you've chosen.",
+        "claim_ids": [
+          "TIX-C02",
+          "TIX-C03"
+        ],
+        "basis": "Approved illustrative buyer brief, not an offer or a result"
+      },
+      {
+        "id": "p4",
+        "text": "The walkthrough shows how the conversation is designed to work. Live marketplace sources are part of the next stage. Join the waitlist to follow what we're building.",
+        "claim_ids": [
+          "TIX-C05",
+          "TIX-C06",
+          "TIX-C08"
+        ]
+      }
+    ],
+    "cta": {
+      "label": "Join the waitlist",
+      "url": "https://tixmancer.xyz"
+    }
+  }
+}

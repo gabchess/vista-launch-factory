@@ -2,9 +2,11 @@
 
 Launch Factory gives an agent operator a reusable workflow for a release campaign: source review, specialist drafting, creative production gates and exact-version human review. Barry reviews Vista client work. Gabe reviews his own validation work.
 
-The current repository contains a specialist layer over the v0.2.0 structural engine. It supplies 12 role protocols, channel reference banks, review rubrics and offline packet checks. The [UGC app reveal n8n subworkflow](automation/n8n/ugc-app-reveal/README.md) prepares the video lead's prompts and review context. The app, provider worker and authenticated approval store remain separate work.
+The current [Tix review package](packages/camp_tix_launch_001/01_channel_run/README.md) contains a blog with two images, five segmented emails, a changelog, popup graphic and copy, and a proposed two-week calendar with written social drafts. All new content awaits Gabe's review. His earlier approvals remain bound to the 55-second product film and 10-second square animation.
 
-The [8 September checkpoint](docs/CHECKPOINT.md) records the two approved Tix creative outputs and the remaining deliverables. Continue through [the ordered next steps](docs/NEXT-STEPS.md); the full six-output app remains under development.
+Start with the [engineer handoff](handoff/ENGINEER-START-HERE.md) to run the [local review](packages/camp_tix_launch_001/01_channel_run/review.html), inspect the artifacts and prepare n8n work packets. The repository supplies 12 specialist roles, original prompts, source checks and two preparation workflows. The provider worker, authenticated approval store and complete non-engineer app remain unfinished.
+
+Gabe authorized repository sharing, commit and push, with app/n8n setup and testing next. The [checkpoint](docs/CHECKPOINT.md) records current evidence; [next steps](docs/NEXT-STEPS.md) links the implementation slice. Earlier recorded-demo-only assumptions are historical.
 
 ## Open the full project
 
@@ -66,6 +68,10 @@ Legacy `run.sh`, release-record helpers and demo packages remain available as st
 | `engine/specialists/` | Registry, schemas, shared contract and selected reference banks |
 | `engine/specialists/video-production/recipes/ugc-app-reveal/` | Reusable actor-and-app film recipe with five named prompts |
 | `automation/n8n/ugc-app-reveal/` | Importable n8n video preparation subworkflow, SDK source and tests |
+| `engine/specialists/channel-production/` | Original blog, email, changelog and popup prompts |
+| `automation/n8n/channel-production/` | Importable four-channel preparation, source loader and offline tests |
+| `packages/camp_tix_launch_001/01_channel_run/` | Current drafts, review page, proposed calendar and package checks |
+| `handoff/ENGINEER-START-HERE.md` | Current setup, evidence boundaries and next app/runtime slice |
 | `engine/scripts/specialist_route.py` | Offline route, recommendation and binding checks |
 | `scripts/sync_specialists.py` | Regenerate project wrappers or check for drift |
 | `voice-bank/` | Vista voice references and interim tone brief |
@@ -73,4 +79,4 @@ Legacy `run.sh`, release-record helpers and demo packages remain available as st
 | `engine/fixtures/`, `barry/` | Fixtures and human review templates |
 | `release-manifest.json`, `documentation-manifest.json` | File integrity lists |
 
-The original structural package remains version 0.2.0; the added specialist layer is 0.2.0, including the shared short-motion finishing skill. Current media work follows its own source and human stage approvals under [ADR 0017](docs/adr/0017-specialist-routing-and-current-scope.md). Historical HOLD decisions and the old archive are retained as history.
+The original structural package remains version 0.2.0; the specialist registry is version 0.3.1, including the shared short-motion finishing skill. Current media work follows its own source and human stage approvals under [ADR 0017](docs/adr/0017-specialist-routing-and-current-scope.md). Historical HOLD decisions and the old archive are retained as history.

@@ -1,0 +1,57 @@
+{
+  "schema_version": "channel-email-drafts/v1",
+  "product_id": "tixmancer",
+  "campaign_id": "camp_tix_launch_001",
+  "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
+  "version": 1,
+  "state": "draft_for_human_review",
+  "voice_profile": "vista-email-adapted-for-tix-v1",
+  "sender_name": "The Tix team",
+  "greeting": "Hi there,",
+  "signoff": "The Tix team",
+  "variant": {
+    "id": "lead_reseller_affiliate",
+    "label": "Leads · Reseller / Affiliate",
+    "reader_job": "Evaluate and explain the buying workflow without invented resale margins, commissions or partner entitlements.",
+    "subject": "Before the next secondhand buy, set your limit",
+    "preheader": "See how Tix starts with a buyer's brief, and what its preview can tell you about a price before you go further.",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "When you're sizing up a secondhand item, the asking price is only part of the decision. You also need to know the most you're willing to pay.",
+        "claim_ids": [],
+        "basis": "General reader guidance; no resale outcome claimed"
+      },
+      {
+        "id": "p2",
+        "text": "Tix starts with that context. The product is being built for secondhand buyers and sellers, with a conversation about an item or listing. In the preview, a price comparison uses the buyer's chosen limit. Market value still needs its own evidence.",
+        "claim_ids": [
+          "TIX-C01",
+          "TIX-C02",
+          "TIX-C03"
+        ]
+      },
+      {
+        "id": "p3",
+        "text": "The camera walkthrough gives you a concrete way to understand the idea: a buyer in Brooklyn wants a used Sony for less than $950. It follows the intended experience from that first request.",
+        "claim_ids": [
+          "TIX-C02",
+          "TIX-C05"
+        ],
+        "basis": "Approved illustrative scenario"
+      },
+      {
+        "id": "p4",
+        "text": "If you evaluate secondhand gear or share useful buying tools with your audience, join the waitlist to follow Tix as it develops.",
+        "claim_ids": [
+          "TIX-C08"
+        ],
+        "basis": "Conditional audience relevance; no affiliate program or payout implied"
+      }
+    ],
+    "cta": {
+      "label": "Join the waitlist",
+      "url": "https://tixmancer.xyz"
+    }
+  }
+}

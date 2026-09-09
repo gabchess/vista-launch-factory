@@ -1,0 +1,21 @@
+{
+  "schema_version": "asset-review-binding/v1",
+  "asset_id": "email-lead_reseller_affiliate",
+  "version": 1,
+  "context_digest": "92435ee1ede2fd60c2c97b170ff68a5e2835e2ce2d086ea9720c9781b8558376",
+  "files": [
+    {
+      "path": "email/lead_reseller_affiliate.html",
+      "sha256": "803fffacab4148e5c6ac08d5b59556e08662b5c32fda70c615d636710a6535e3"
+    },
+    {
+      "path": "email/lead_reseller_affiliate.json",
+      "sha256": "4790c5381cfb9e89f33f37668661c71a63c3dd017526e37c39991a135a78bcad"
+    },
+    {
+      "path": "email/lead_reseller_affiliate.md",
+      "sha256": "ffa7df7db0c514a7a00d34e23bbef8033efc0fc78a04ac41f9df19eb537482aa"
+    }
+  ],
+  "sha256": "5a7ea76610ab87ddf4a68b744f7fd4d80f945be29865835639f19b36381c685f"
+}

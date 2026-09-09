@@ -1,0 +1,56 @@
+{
+  "schema_version": "channel-email-drafts/v1",
+  "product_id": "tixmancer",
+  "campaign_id": "camp_tix_launch_001",
+  "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
+  "version": 1,
+  "state": "draft_for_human_review",
+  "voice_profile": "vista-email-adapted-for-tix-v1",
+  "sender_name": "The Tix team",
+  "greeting": "Hi there,",
+  "signoff": "The Tix team",
+  "variant": {
+    "id": "lead_agency",
+    "label": "Leads · Agency",
+    "reader_job": "Turn a shoot's equipment need into a clear buying brief without inventing agency collaboration features.",
+    "subject": "Give your next camera hunt a clearer brief",
+    "preheader": "A client shoot starts with a brief. Tix brings that same clarity to the secondhand equipment you're looking for.",
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": "A client shoot can leave you with one small job that takes longer than expected: finding a used camera within the production budget.",
+        "claim_ids": [],
+        "basis": "Hypothetical agency use case"
+      },
+      {
+        "id": "p2",
+        "text": "Tix is being built around a buying conversation. Start with the equipment you want, then explain your location and spending limit in your own words.",
+        "claim_ids": [
+          "TIX-C01",
+          "TIX-C02"
+        ]
+      },
+      {
+        "id": "p3",
+        "text": "The launch walkthrough follows someone looking for a used Sony in Brooklyn for less than $950. It's a specific brief you could adapt to your next shoot. The preview's price comparison uses the buyer's own limit.",
+        "claim_ids": [
+          "TIX-C02",
+          "TIX-C03"
+        ],
+        "basis": "Approved creative scenario, not a customer testimonial"
+      },
+      {
+        "id": "p4",
+        "text": "Supported marketplace sources and chosen notification channels are on the roadmap. If secondhand equipment is part of how you plan a shoot, join the waitlist and follow the next stage of Tix.",
+        "claim_ids": [
+          "TIX-C06",
+          "TIX-C08"
+        ]
+      }
+    ],
+    "cta": {
+      "label": "Join the waitlist",
+      "url": "https://tixmancer.xyz"
+    }
+  }
+}

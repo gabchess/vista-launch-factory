@@ -1,0 +1,148 @@
+{
+  "artifact_version": 1,
+  "html_sha256": "f2bc5fe3f79e3e9337a9201cd2f77a180c2587fccaf9ad5637eea9159a3e1f2f",
+  "context_digest": "6469b873744dbfee7ab4b6221f1e5cb70c11c11496f89b9971365d110e76380b",
+  "checks": [
+    {
+      "check": "source_hash",
+      "id": "src-readme",
+      "status": "pass",
+      "sha256": "dba3d7034dcbd12b838ab56341f8630f155d5d956270a55781df4f44846af854"
+    },
+    {
+      "check": "source_hash",
+      "id": "src-product",
+      "status": "pass",
+      "sha256": "7d42451581387d8cce25e9bd9c03f5671053cf93724b2bcae503758b37f7b708"
+    },
+    {
+      "check": "source_hash",
+      "id": "src-system",
+      "status": "pass",
+      "sha256": "c285838e5c092d338d119753084b1d7a0b856e482c1a1aa23339a4848519a7b2"
+    },
+    {
+      "check": "source_hash",
+      "id": "voice-vista-popup-adapted",
+      "status": "pass",
+      "sha256": "6c5dd8238d70f90f090c41657639402ad8711553be34b419b68f0806c8854705"
+    },
+    {
+      "check": "claim_span",
+      "id": "TIX-C01",
+      "status": "pass"
+    },
+    {
+      "check": "claim_span",
+      "id": "TIX-C02",
+      "status": "pass"
+    },
+    {
+      "check": "claim_span",
+      "id": "TIX-C03",
+      "status": "pass"
+    },
+    {
+      "check": "claim_span",
+      "id": "TIX-C04",
+      "status": "pass"
+    },
+    {
+      "check": "claim_span",
+      "id": "TIX-C05",
+      "status": "pass"
+    },
+    {
+      "check": "claim_span",
+      "id": "TIX-C06",
+      "status": "pass"
+    },
+    {
+      "check": "claim_span",
+      "id": "TIX-C07",
+      "status": "pass"
+    },
+    {
+      "check": "claim_span",
+      "id": "TIX-C08",
+      "status": "pass"
+    },
+    {
+      "check": "graphic_text_matches_copy",
+      "status": "pass",
+      "text": [
+        "Tix",
+        "What are you looking for?",
+        "A used Sony camera in Brooklyn.",
+        "Less than $950."
+      ]
+    },
+    {
+      "check": "cta_destination",
+      "status": "pass",
+      "hrefs": [
+        "https://tixmancer.xyz"
+      ]
+    },
+    {
+      "check": "self_contained_resources",
+      "status": "pass"
+    },
+    {
+      "check": "javascript_syntax",
+      "status": "pass",
+      "output": ""
+    },
+    {
+      "check": "build_python_syntax",
+      "status": "pass"
+    },
+    {
+      "check": "text_contrast",
+      "id": "body",
+      "ratio": 6.2,
+      "status": "pass"
+    },
+    {
+      "check": "text_contrast",
+      "id": "heading",
+      "ratio": 19.03,
+      "status": "pass"
+    },
+    {
+      "check": "text_contrast",
+      "id": "cta_blue",
+      "ratio": 5.39,
+      "status": "pass"
+    },
+    {
+      "check": "text_contrast",
+      "id": "cta_purple",
+      "ratio": 4.74,
+      "status": "pass",
+      "color": "#884DF5"
+    },
+    {
+      "check": "text_contrast",
+      "id": "graphic_request",
+      "ratio": 5.75,
+      "status": "pass"
+    },
+    {
+      "check": "browser_desktop_mobile_keyboard",
+      "status": "not_tested",
+      "reason": "Delegated to root existing IAB after research Chrome extension UI block."
+    },
+    {
+      "check": "actual_human_review",
+      "status": "not_tested",
+      "reason": "Draft awaits Gabe in combined review."
+    },
+    {
+      "check": "svg_text_advance_widths",
+      "status": "pass",
+      "evidence": "fontTools read embedded Inter metrics: prompt 462.01px within820px; buyer first line625.18px within748px; budget304.45px within748px. Letter spacing is negative, giving additional room."
+    }
+  ],
+  "correction": "Darkened inferred popup CTA endpoint from official #8C52FF to #884DF5. Minimum white-text endpoint contrast is now4.74:1. Official palette source unchanged."
+}

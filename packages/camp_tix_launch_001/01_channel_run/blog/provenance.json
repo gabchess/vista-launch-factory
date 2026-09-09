@@ -1,0 +1,691 @@
+{
+  "schema_version": "article-provenance/v1",
+  "artifact_id": "tix-blog-v1",
+  "version": 1,
+  "status": "ready_for_consolidated_human_review",
+  "product_id": "tixmancer",
+  "campaign_id": "camp_tix_launch_001",
+  "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
+  "voice_profile": "vista-blog-adapted-for-tix-v1",
+  "request": {
+    "path": "../requests/blog.json",
+    "sha256": "fdb6cf011089a6bdc17115d0543e5e37d3edb8121f6f731c3ec6286f825e8377"
+  },
+  "route": {
+    "path": "../routing/blog.json",
+    "sha256": "418db2726e37150ae2c74811f2becee09092bace73a4d3b21788551a2256648e",
+    "context_digest": "c546eb1f4913e1d0a82cd2f126812fec6488f16ea49333970a2409240f538085"
+  },
+  "drafting_authority": {
+    "path": "../AUTHORIZATION.md",
+    "sha256": "5477c7fcd448054ee1712dae2556d2ed32c4ab198a2c8e7cb8924b259d494c1e",
+    "scope": "The actual user authorized all four drafts now and one consolidated review. Earlier baseline pause remains historical; this draft does not grant Claims Lock or final approval."
+  },
+  "claim_ledger": {
+    "path": "../../00_baseline/claim-ledger.json",
+    "sha256": "4199b7f50f4fefaed1e5edf925de06fc4d12e342b36c802014d2d2ea44675ddb"
+  },
+  "source_path_base": "campaign root (../.. from this file)",
+  "sources": [
+    {
+      "id": "src-product",
+      "path": "00_baseline/sources/repository/product.txt",
+      "sha256": "7d42451581387d8cce25e9bd9c03f5671053cf93724b2bcae503758b37f7b708",
+      "product_id": "tixmancer",
+      "kind": "fact"
+    },
+    {
+      "id": "src-readme",
+      "path": "00_baseline/sources/repository/readme.txt",
+      "sha256": "dba3d7034dcbd12b838ab56341f8630f155d5d956270a55781df4f44846af854",
+      "product_id": "tixmancer",
+      "kind": "fact"
+    },
+    {
+      "id": "voice-vista-blog-adapted",
+      "path": "01_channel_run/voice/blog.md",
+      "sha256": "223badb41bf946125b62748dfc15a6070da90ffc81c48e450c2fe0223a707dad",
+      "product_id": "tixmancer",
+      "kind": "voice"
+    }
+  ],
+  "span_encoding": "zero-based Unicode characters, end exclusive; exact file bytes hashed separately",
+  "artifacts": [
+    {
+      "path": "article.md",
+      "sha256": "224babd3f960ee17afdb3c51d8f0826756c6523f39f8fa501cc9721f80de0599"
+    },
+    {
+      "path": "article.html",
+      "sha256": "4b93b9dff737ce63b8b3600072e60a8a11a7472892dfb362d880f346895bb026"
+    },
+    {
+      "path": "metadata.json",
+      "sha256": "ac831b04ed968f490a840833d9fdc276f1f9b24a7bd90063b93089787d6d1f70"
+    },
+    {
+      "path": "image-provenance.json",
+      "sha256": "ca9ce7a10bf7beed762b1792e893ccac8d7ef2fd7312232ced35708253fe551a"
+    }
+  ],
+  "images": [
+    {
+      "id": "tix-hero",
+      "path": "assets/tix-hero.png",
+      "sha256": "16da5b6f2d2ce8794aae548eb064d75411549e007a450efa8ce0cf5499850279",
+      "bytes": 200800,
+      "source_media_id": "animation",
+      "source_version": "accepted-motion-master",
+      "source_sha256": "f16b7cfda2d6ef8671fc2add7a404cf77be321dffec56503a1326b387bb7b76a",
+      "source_filename": "tixmancer-approved.mp4",
+      "source_frame_zero_based": 180,
+      "source_fps": 30,
+      "source_time_seconds": 6.0,
+      "derivation": "One decoded full frame from exact approved source. No crop, retouch, text replacement or generated pixels.",
+      "parent_approval_reference": "../../00_baseline/approvals.json",
+      "derived_asset_status": "pending_consolidated_human_review",
+      "depicts": "Approved authored creative; does not establish a live Tix interaction."
+    },
+    {
+      "id": "tix-camera-brief",
+      "path": "assets/tix-camera-brief.png",
+      "sha256": "fc8dd3aff2052cfeeac76c4f455de924c500befc43f486a5b0d75805acc90f1c",
+      "bytes": 520565,
+      "source_media_id": "product_film",
+      "source_version": "v3",
+      "source_sha256": "1e73f611ecaacaa9aabe1b3cfdc53f571888573ae876aebb65674ad2903604d2",
+      "source_filename": "Dinner-with-Tix-app-reveal-v3.mp4",
+      "source_frame_zero_based": 585,
+      "source_fps": 30,
+      "source_time_seconds": 19.5,
+      "derivation": "One decoded full frame from exact approved source. No crop, retouch, text replacement or generated pixels.",
+      "parent_approval_reference": "../../00_baseline/approvals.json",
+      "derived_asset_status": "pending_consolidated_human_review",
+      "depicts": "Approved authored creative; does not establish a live Tix interaction."
+    }
+  ],
+  "scenario": {
+    "item": "used Sony camera",
+    "location": "Brooklyn",
+    "buyer_limit_usd": 950,
+    "basis": "User-selected and accepted film scenario",
+    "use": "Illustrative buyer brief only; not a product cap, offer, result or testimonial"
+  },
+  "blocks": [
+    {
+      "block_id": "B01",
+      "paragraph_id": null,
+      "kind": "heading",
+      "line_start": 1,
+      "start_character": 0,
+      "end_character": 58,
+      "sha256": "721c9dcf32fcf5296e47b988f27c343144185b348adf5bee86b1673e5551a41e",
+      "text": "# Meet Tix: Start Your Secondhand Hunt With a Conversation",
+      "claim_ids": [
+        "TIX-C01",
+        "TIX-C02"
+      ],
+      "source_ids": [
+        "src-product",
+        "src-readme"
+      ],
+      "editorial_basis": "Product introduction using the source-stated conversational design. No access or shipping date is asserted."
+    },
+    {
+      "block_id": "B02",
+      "paragraph_id": "P01",
+      "kind": "dek",
+      "line_start": 3,
+      "start_character": 60,
+      "end_character": 176,
+      "sha256": "0f21d59d2e2044bf6d78472fe7b161594308ede35e32fb0aa80223828cd91905",
+      "text": "A used Sony camera in Brooklyn for under $950. Here’s how Tix is being built around the brief you bring to the hunt.",
+      "claim_ids": [
+        "TIX-C02"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "User-selected Sony/Brooklyn/under-$950 scenario, explicitly tied to what is being built."
+    },
+    {
+      "block_id": "B03",
+      "paragraph_id": null,
+      "kind": "image",
+      "line_start": 5,
+      "start_character": 178,
+      "end_character": 288,
+      "sha256": "62ca79d1cbc810403474a74af3874f7f21b7944162201aa3db0c99ef2e71f52c",
+      "text": "![The Tix pixel wizard on a blue background beside the words “Your garage sale flipper.”](assets/tix-hero.png)",
+      "claim_ids": [],
+      "source_ids": [],
+      "editorial_basis": "Exact full frame from approved Tix animation; brand expression only."
+    },
+    {
+      "block_id": "B04",
+      "paragraph_id": "P02",
+      "kind": "paragraph",
+      "line_start": 7,
+      "start_character": 290,
+      "end_character": 543,
+      "sha256": "b4528754e26528ef20a0eba037d0296a4434d46d77cf871dff6f67c906c34347",
+      "text": "You’re looking for a used Sony camera in Brooklyn and want to spend less than $950. A listing catches your eye. Before deciding whether to pursue it, you need to work out how well it fits the camera you had in mind and the amount you’re prepared to pay.",
+      "claim_ids": [],
+      "source_ids": [],
+      "editorial_basis": "Illustrative buyer situation from the selected scenario. A hypothetical candidate is not an actual Tix result."
+    },
+    {
+      "block_id": "B05",
+      "paragraph_id": "P03",
+      "kind": "paragraph",
+      "line_start": 9,
+      "start_character": 545,
+      "end_character": 791,
+      "sha256": "d547aaa8a6a93ca2b6d3372e46505795ff01524383f8c161687f1ac4d4752073",
+      "text": "Tixmancer is a conversational app for secondhand finds, designed around the buying question you bring to it. Describe what you’re after in your own words, with the details that matter to you, and use that brief to think through the next decision.",
+      "claim_ids": [
+        "TIX-C01",
+        "TIX-C02"
+      ],
+      "source_ids": [
+        "src-product",
+        "src-readme"
+      ],
+      "editorial_basis": "Source-stated product positioning and intended interaction; design qualifier remains."
+    },
+    {
+      "block_id": "B06",
+      "paragraph_id": "P04",
+      "kind": "paragraph",
+      "line_start": 11,
+      "start_character": 793,
+      "end_character": 1095,
+      "sha256": "c1925a0c31f2e96eea3a13bb7cf8ced707fa81e4034c08881d847ed9fd790468",
+      "text": "The current preview uses stored simulations for marketplace results, notifications and wallet steps. Its conversations and saved context are designed around each user’s account. The *Dinner with Tix* film illustrates the intended experience; live marketplace access and purchases remain on the roadmap.",
+      "claim_ids": [
+        "TIX-C04",
+        "TIX-C05",
+        "TIX-C06",
+        "TIX-C07"
+      ],
+      "source_ids": [
+        "src-product",
+        "src-readme"
+      ],
+      "editorial_basis": "Consolidated current-preview boundary, account-context design and future external actions. Film reference is authored creative, not execution evidence."
+    },
+    {
+      "block_id": "B07",
+      "paragraph_id": null,
+      "kind": "heading",
+      "line_start": 13,
+      "start_character": 1097,
+      "end_character": 1136,
+      "sha256": "d1f2ee4caadd98e911648315afe0a607df05a86e40328c2bfd79e55ccefd5fa4",
+      "text": "## Give the hunt a clear starting point",
+      "claim_ids": [
+        "TIX-C02"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "Reader-action heading for the supported input design."
+    },
+    {
+      "block_id": "B08",
+      "paragraph_id": "P05",
+      "kind": "blockquote",
+      "line_start": 15,
+      "start_character": 1138,
+      "end_character": 1202,
+      "sha256": "38eb9c445ec784a47e0a39a8c1d2e940e6e044f2dfce58a6f7a42f2cbef42253",
+      "text": "> I’m looking for a used Sony camera in Brooklyn for under $950.",
+      "claim_ids": [
+        "TIX-C02"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "Original illustrative input based on the human-selected scenario. No actual chat response is claimed."
+    },
+    {
+      "block_id": "B09",
+      "paragraph_id": "P06",
+      "kind": "paragraph",
+      "line_start": 17,
+      "start_character": 1204,
+      "end_character": 1444,
+      "sha256": "0405a7d409e26547b26c3c4d13c46426799e5acec405cb5321f04a252c32e539",
+      "text": "That gives the conversation enough direction to begin. “Sony camera” describes the item you want, while Brooklyn sets the location. The amount tells Tix what you’re comfortable spending. In this example, $950 is the buyer’s chosen boundary.",
+      "claim_ids": [
+        "TIX-C02"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "Explanation of the scenario input. $950 belongs to this buyer and is not a product cap or price."
+    },
+    {
+      "block_id": "B10",
+      "paragraph_id": "P07",
+      "kind": "paragraph",
+      "line_start": 19,
+      "start_character": 1446,
+      "end_character": 1764,
+      "sha256": "2d885abd7b58e5a02eaa22f0df20d904c66f87b0730aeb6a4361531ad6480115",
+      "text": "Add the details that would affect your decision. If you want a particular model with a lens included, say so in the brief. You can also explain what you plan to use the camera for while you’re still considering different models. Put that context into the conversation so it captures the decision you’re trying to make.",
+      "claim_ids": [
+        "TIX-C02"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "Editorial advice for making a buying request concrete. No technical model, marketplace source or answer accuracy is asserted."
+    },
+    {
+      "block_id": "B11",
+      "paragraph_id": "P08",
+      "kind": "paragraph",
+      "line_start": 21,
+      "start_character": 1766,
+      "end_character": 2023,
+      "sha256": "686080ceab9fb73cace063e74743ed5f2c50f9e8660a45fdaa9d471402aea7b6",
+      "text": "Tix’s design starts with this conversation. A buyer brings an item and a location, then sets a personal limit. Someone selling secondhand gear can start with a listing and ask for help thinking through an offer. The starting point follows the person’s task.",
+      "claim_ids": [
+        "TIX-C02"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "Buyer and seller entry points follow the selected product design. No offer delivery or automatic negotiation is asserted."
+    },
+    {
+      "block_id": "B12",
+      "paragraph_id": null,
+      "kind": "image",
+      "line_start": 23,
+      "start_character": 2025,
+      "end_character": 2150,
+      "sha256": "8f01657ef9f41aa0e3777729a69b784f80ac6ac03290c59b454fddd355dacffe",
+      "text": "![An authored Tix interface showing a used Sony camera brief, Brooklyn and a budget under $950.](assets/tix-camera-brief.png)",
+      "claim_ids": [
+        "TIX-C02"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "Approved film frame illustrates the selected buying brief. The visible search label is authored film UI; the adjacent preview paragraph and caption identify its scope."
+    },
+    {
+      "block_id": "B13",
+      "paragraph_id": "P09",
+      "kind": "caption",
+      "line_start": 25,
+      "start_character": 2152,
+      "end_character": 2221,
+      "sha256": "3cc370b73a154335b1f2870c95e9473e6048f14fe69dea1ef253475d4bf7e950",
+      "text": "*The buying brief as it appears in the Dinner with Tix product film.*",
+      "claim_ids": [],
+      "source_ids": [],
+      "editorial_basis": "Caption identifies the actual source film. This image is not described as a live product screenshot."
+    },
+    {
+      "block_id": "B14",
+      "paragraph_id": null,
+      "kind": "heading",
+      "line_start": 27,
+      "start_character": 2223,
+      "end_character": 2267,
+      "sha256": "876a52e88c251c9aed131ca0bf9230fcdad1215a779831de14fa1a0ec6fa0899",
+      "text": "## Check the asking price against your limit",
+      "claim_ids": [
+        "TIX-C03"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "Price comparison with a personal limit."
+    },
+    {
+      "block_id": "B15",
+      "paragraph_id": "P10",
+      "kind": "paragraph",
+      "line_start": 29,
+      "start_character": 2269,
+      "end_character": 2517,
+      "sha256": "8d191817f815115fae8ab60a4f5f9864029475c6b3916e85a685e4afa891d42d",
+      "text": "The price check in Tix’s preview compares a record’s asking price with the limit supplied by the buyer. For the camera example, that gives you a concrete question to answer when considering a candidate: does its asking price fit the amount you set?",
+      "claim_ids": [
+        "TIX-C03"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "Preserves the source-stated preview comparison of a record price and user limit."
+    },
+    {
+      "block_id": "B16",
+      "paragraph_id": "P11",
+      "kind": "paragraph",
+      "line_start": 31,
+      "start_character": 2519,
+      "end_character": 2808,
+      "sha256": "d82e9302a5770b1ddd8556c76b3b5fc8e9915d34d49055b9e4f3751ac018cc4f",
+      "text": "Keep the wording of your brief precise. “Under $950” means less than $950. If you decide that the exact model matters more than the original amount, make that a deliberate change to your buying brief. A price limit is useful when it represents a decision you’ve made about your own budget.",
+      "claim_ids": [
+        "TIX-C02",
+        "TIX-C03"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "The strict less-than interpretation is arithmetic/editorial reasoning about the chosen words, not an assertion about an independently tested comparison function."
+    },
+    {
+      "block_id": "B17",
+      "paragraph_id": "P12",
+      "kind": "paragraph",
+      "line_start": 33,
+      "start_character": 2810,
+      "end_character": 3072,
+      "sha256": "284ee4e045f78fdea1b796c5d6107785a6bcc56fe9f8c7383b718b61c22627b9",
+      "text": "Establishing market value requires supported evidence beyond that comparison. The preview leaves market value unknown. You can still use your personal limit to decide which candidates deserve more attention while you examine the details of an individual listing.",
+      "claim_ids": [
+        "TIX-C03"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "Explicitly preserves unknown market value and makes no savings or valuation claim."
+    },
+    {
+      "block_id": "B18",
+      "paragraph_id": "P13",
+      "kind": "paragraph",
+      "line_start": 35,
+      "start_character": 3074,
+      "end_character": 3334,
+      "sha256": "02a44273f828f405dd5c93845686a0b13fb463544e327d4d69af175381e89361",
+      "text": "For a camera, read the model name and what comes with it. Check the stated condition against the photographs and note anything you’d want the seller to explain. If the lens description is unclear, make that a question for the seller before assessing the offer.",
+      "claim_ids": [],
+      "source_ids": [],
+      "editorial_basis": "General editorial buying advice about reading a camera listing. No model-specific specification or Tix action is asserted."
+    },
+    {
+      "block_id": "B19",
+      "paragraph_id": null,
+      "kind": "heading",
+      "line_start": 37,
+      "start_character": 3336,
+      "end_character": 3369,
+      "sha256": "4c9e992bcd0c5d7347386bc92f8a50b56c2466502a0d947dd43fb244e2edb9fe",
+      "text": "## Keep the next decision in view",
+      "claim_ids": [
+        "TIX-C02"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "Reader-job heading for deciding what to pursue."
+    },
+    {
+      "block_id": "B20",
+      "paragraph_id": "P14",
+      "kind": "paragraph",
+      "line_start": 39,
+      "start_character": 3371,
+      "end_character": 3603,
+      "sha256": "0e2a97f1d4e72ad090595c69e2151407f8b859a73e26d521b1d499a83c1c5095",
+      "text": "A useful secondhand hunt has room for questions. In the Sony example, you might want to clarify what’s included before deciding whether to contact the seller. You could also decide to pass on a candidate and keep the original brief.",
+      "claim_ids": [],
+      "source_ids": [],
+      "editorial_basis": "Hypothetical buyer choices within the selected camera scenario. No successful purchase or real customer is asserted."
+    },
+    {
+      "block_id": "B21",
+      "paragraph_id": "P15",
+      "kind": "paragraph",
+      "line_start": 41,
+      "start_character": 3605,
+      "end_character": 3909,
+      "sha256": "9300da128fe1b49a6f94b7680d6d3117fc8f84655d8d1b373d8332dc2223b1f4",
+      "text": "Tix’s preview is designed to keep conversations and saved context with the person’s account. The goal is to let you return to the buying question with the details you’ve already supplied available in the conversation. That matters when you pause to check a model or reconsider how much you want to spend.",
+      "claim_ids": [
+        "TIX-C04"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "Explicit account-context design plus intended continuity benefit, not production or authenticated runtime acceptance."
+    },
+    {
+      "block_id": "B22",
+      "paragraph_id": "P16",
+      "kind": "paragraph",
+      "line_start": 43,
+      "start_character": 3911,
+      "end_character": 3962,
+      "sha256": "aee96a13d3a4929ec93aa4d311a364a194145d3091883e722ec9595168f488fc",
+      "text": "A useful follow-up for the camera example would be:",
+      "claim_ids": [],
+      "source_ids": [],
+      "editorial_basis": "Introduces an illustrative follow-up prompt, not a recorded interaction."
+    },
+    {
+      "block_id": "B23",
+      "paragraph_id": "P17",
+      "kind": "blockquote",
+      "line_start": 45,
+      "start_character": 3964,
+      "end_character": 4099,
+      "sha256": "9b48124f1ca30d80e380f597025c352a8bc7768b1e54393df2ea47ca25f2950c",
+      "text": "> Help me work through this listing against my camera brief. What details would I need to clarify before deciding whether to pursue it?",
+      "claim_ids": [
+        "TIX-C02"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "Original suggested input consistent with the next-decision design; it promises no particular generated answer."
+    },
+    {
+      "block_id": "B24",
+      "paragraph_id": null,
+      "kind": "heading",
+      "line_start": 47,
+      "start_character": 4101,
+      "end_character": 4128,
+      "sha256": "7cdfae9cef68084adbd73830e8f5b9979ca96e1591f5c93374dc95fbfbc040fa",
+      "text": "## Where Tix goes from here",
+      "claim_ids": [
+        "TIX-C06",
+        "TIX-C07"
+      ],
+      "source_ids": [
+        "src-product",
+        "src-readme"
+      ],
+      "editorial_basis": "Explicit future section controls the tense of the following roadmap paragraphs."
+    },
+    {
+      "block_id": "B25",
+      "paragraph_id": "P18",
+      "kind": "paragraph",
+      "line_start": 49,
+      "start_character": 4130,
+      "end_character": 4422,
+      "sha256": "0060e3413b9af10ffaac71ca1fc456818ed59f0ea43989071bb57c78a5cc1f49",
+      "text": "Tix’s roadmap includes active hunts connected to each account, along with photo and file attachments for listings. An active hunt would give the camera search a place to continue as the buyer considers candidates. Attachments would let people bring more of the listing into that conversation.",
+      "claim_ids": [
+        "TIX-C06"
+      ],
+      "source_ids": [
+        "src-readme"
+      ],
+      "editorial_basis": "Active hunts and attachments are identified as roadmap work; their intended use is conditional."
+    },
+    {
+      "block_id": "B26",
+      "paragraph_id": "P19",
+      "kind": "paragraph",
+      "line_start": 51,
+      "start_character": 4424,
+      "end_character": 4724,
+      "sha256": "31d1bdf0ee5b72b4961bd9bc4d552185144fa7d70f5d1035cdd661e322a55211",
+      "text": "Live access through supported marketplace sources is planned. The roadmap also includes notification connectors chosen by the user, so the intended workflow can continue through a channel the person selects. Source support and the notification connection both need to be in place for that experience.",
+      "claim_ids": [
+        "TIX-C06"
+      ],
+      "source_ids": [
+        "src-readme"
+      ],
+      "editorial_basis": "Marketplace sources and selected notifications stay planned with both connection prerequisites."
+    },
+    {
+      "block_id": "B27",
+      "paragraph_id": "P20",
+      "kind": "paragraph",
+      "line_start": 53,
+      "start_character": 4726,
+      "end_character": 4992,
+      "sha256": "436f55907f494543161291f078ee77e8b56ed7a2c8b76bc1129c4234361aa386",
+      "text": "An optional wallet is a later part of the plan. The proposed purchase flow requires a supported seller and verified steps from spending permission through to a receipt. A user’s permission would have an amount cap and an expiry, with approval and a way to revoke it.",
+      "claim_ids": [
+        "TIX-C07"
+      ],
+      "source_ids": [
+        "src-product"
+      ],
+      "editorial_basis": "Optional future wallet with supported seller and permission-through-receipt verification, cap, expiry, approval and revocation."
+    },
+    {
+      "block_id": "B28",
+      "paragraph_id": null,
+      "kind": "heading",
+      "line_start": 55,
+      "start_character": 4994,
+      "end_character": 5014,
+      "sha256": "2895952bfbaaa7c6854afba069044150d389bd995c59d79ca5dae1a05ad062b4",
+      "text": "## Join the waitlist",
+      "claim_ids": [
+        "TIX-C08"
+      ],
+      "source_ids": [
+        "src-readme"
+      ],
+      "editorial_basis": "Exact human-selected creative CTA, not a collection-functionality assertion."
+    },
+    {
+      "block_id": "B29",
+      "paragraph_id": "P21",
+      "kind": "cta",
+      "line_start": 57,
+      "start_character": 5016,
+      "end_character": 5079,
+      "sha256": "e17bbe61a8341d48c7b1d2db937b6c78540714ce28a83ccd02a11c80158c1c9a",
+      "text": "[Join the waitlist](https://tixmancer.xyz/) · **tixmancer.xyz**",
+      "claim_ids": [
+        "TIX-C08"
+      ],
+      "source_ids": [
+        "src-readme"
+      ],
+      "editorial_basis": "Uses approved CTA at the source-stated canonical home domain. Waitlist collection remains unverified before any publication."
+    }
+  ],
+  "metadata_claim_map": [
+    {
+      "fields": [
+        "title",
+        "dek",
+        "seo_title",
+        "meta_description",
+        "category",
+        "tags"
+      ],
+      "claim_ids": [
+        "TIX-C01",
+        "TIX-C02",
+        "TIX-C05"
+      ],
+      "basis": "Original editorial fields describing the Tix preview and selected illustrative buyer brief."
+    },
+    {
+      "fields": [
+        "publisher",
+        "proposed_byline"
+      ],
+      "claim_ids": [],
+      "basis": "Publisher assignment in the selected writing brief; no named Vista author or invented founder identity."
+    },
+    {
+      "fields": [
+        "cta"
+      ],
+      "claim_ids": [
+        "TIX-C08"
+      ],
+      "basis": "Canonical domain plus the human-selected creative CTA. Collection functionality remains unverified."
+    },
+    {
+      "fields": [
+        "estimated_reading_minutes"
+      ],
+      "claim_ids": [],
+      "basis": "Computed estimate at 225 whitespace tokens per minute, rounded up."
+    },
+    {
+      "fields": [
+        "hero",
+        "inline_images"
+      ],
+      "claim_ids": [],
+      "basis": "Exact inspected image files derived from the accepted creative; see image provenance."
+    }
+  ],
+  "external_style_sources": [
+    {
+      "url": "https://vistasocial.com/insights/vista-work-social-media-project-management/",
+      "published": "2026-08-24",
+      "used_for": "Primary practical launch structure and screenshot placement."
+    },
+    {
+      "url": "https://vistasocial.com/insights/introducing-advanced-social-listening/",
+      "published": "2026-06-10",
+      "used_for": "Action-led headings and specific reader decisions."
+    },
+    {
+      "url": "https://vistasocial.com/insights/ai-image-and-video-generation/",
+      "published": "2026-06-01",
+      "used_for": "Use a product demonstration where useful; no transfer of founder identity or metrics."
+    },
+    {
+      "url": "https://vistasocial.com/insights/social-media-project-management/",
+      "published": "2026-08-26",
+      "used_for": "Worked hypothetical example and practical detail."
+    }
+  ],
+  "excluded_claim_ids": [
+    "TIX-H01",
+    "TIX-H02",
+    "TIX-H03",
+    "TIX-H04",
+    "TIX-H05",
+    "TIX-H06",
+    "TIX-H07"
+  ],
+  "approval": {
+    "requested_reviewer": "gabe",
+    "status": "pending",
+    "decision": null
+  },
+  "limitations": [
+    "Writer self-review only; independent editorial judgment and final human review are separate.",
+    "Current website waitlist collection was not tested for this draft.",
+    "Rendered film UI provides creative context and no live marketplace proof.",
+    "No production publication, CMS import, mobile browser render or screen-reader journey was performed."
+  ],
+  "publishing_authorized": false,
+  "published": false,
+  "paid_generation_calls": 0
+}

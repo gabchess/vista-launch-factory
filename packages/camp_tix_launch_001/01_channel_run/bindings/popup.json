@@ -1,0 +1,21 @@
+{
+  "schema_version": "asset-review-binding/v1",
+  "asset_id": "popup",
+  "version": 1,
+  "context_digest": "6469b873744dbfee7ab4b6221f1e5cb70c11c11496f89b9971365d110e76380b",
+  "files": [
+    {
+      "path": "popup/copy.json",
+      "sha256": "3abd71895db12185585a042490df82f5ccb3a7ec6cf3da86d8ab3c604eb34643"
+    },
+    {
+      "path": "popup/graphic.svg",
+      "sha256": "4675ee87d1f2fe029e826729d5b8e0868dee012ee91dd957d0e7883b72a8ad0d"
+    },
+    {
+      "path": "popup/popup.html",
+      "sha256": "c2254ad3a876e051c6309b90b682ae714e00f164f62eec8394eb4ae26903b397"
+    }
+  ],
+  "sha256": "c954a2fb3db7613350c1e526d1c4cbc077f28c010e18833e1e04bd3bc25bf7f1"
+}

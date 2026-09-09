@@ -1,0 +1,33 @@
+{
+  "schema_version": "asset-review-binding/v1",
+  "asset_id": "blog",
+  "version": 1,
+  "context_digest": "c546eb1f4913e1d0a82cd2f126812fec6488f16ea49333970a2409240f538085",
+  "files": [
+    {
+      "path": "blog/article.html",
+      "sha256": "4b93b9dff737ce63b8b3600072e60a8a11a7472892dfb362d880f346895bb026"
+    },
+    {
+      "path": "blog/article.md",
+      "sha256": "224babd3f960ee17afdb3c51d8f0826756c6523f39f8fa501cc9721f80de0599"
+    },
+    {
+      "path": "blog/assets/tix-camera-brief.png",
+      "sha256": "fc8dd3aff2052cfeeac76c4f455de924c500befc43f486a5b0d75805acc90f1c"
+    },
+    {
+      "path": "blog/assets/tix-hero.png",
+      "sha256": "16da5b6f2d2ce8794aae548eb064d75411549e007a450efa8ce0cf5499850279"
+    },
+    {
+      "path": "blog/metadata.json",
+      "sha256": "ac831b04ed968f490a840833d9fdc276f1f9b24a7bd90063b93089787d6d1f70"
+    },
+    {
+      "path": "blog/provenance.json",
+      "sha256": "3b34bf4b2ff2e0c61efe37ea4bfd530afdc5115710ae9edabb6b23aa2cc0bbe4"
+    }
+  ],
+  "sha256": "0f6603fb523388fea0a22b736ef7f6cf19c20237e4e50483a9289eea3391dd2a"
+}

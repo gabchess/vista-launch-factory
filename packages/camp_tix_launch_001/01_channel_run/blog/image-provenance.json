@@ -1,0 +1,39 @@
+{
+  "schema_version": "article-image-provenance/v1",
+  "assets": [
+    {
+      "id": "tix-hero",
+      "path": "assets/tix-hero.png",
+      "sha256": "16da5b6f2d2ce8794aae548eb064d75411549e007a450efa8ce0cf5499850279",
+      "bytes": 200800,
+      "source_media_id": "animation",
+      "source_version": "accepted-motion-master",
+      "source_sha256": "f16b7cfda2d6ef8671fc2add7a404cf77be321dffec56503a1326b387bb7b76a",
+      "source_filename": "tixmancer-approved.mp4",
+      "source_frame_zero_based": 180,
+      "source_fps": 30,
+      "source_time_seconds": 6.0,
+      "derivation": "One decoded full frame from exact approved source. No crop, retouch, text replacement or generated pixels.",
+      "parent_approval_reference": "../../00_baseline/approvals.json",
+      "derived_asset_status": "pending_consolidated_human_review",
+      "depicts": "Approved authored creative; does not establish a live Tix interaction."
+    },
+    {
+      "id": "tix-camera-brief",
+      "path": "assets/tix-camera-brief.png",
+      "sha256": "fc8dd3aff2052cfeeac76c4f455de924c500befc43f486a5b0d75805acc90f1c",
+      "bytes": 520565,
+      "source_media_id": "product_film",
+      "source_version": "v3",
+      "source_sha256": "1e73f611ecaacaa9aabe1b3cfdc53f571888573ae876aebb65674ad2903604d2",
+      "source_filename": "Dinner-with-Tix-app-reveal-v3.mp4",
+      "source_frame_zero_based": 585,
+      "source_fps": 30,
+      "source_time_seconds": 19.5,
+      "derivation": "One decoded full frame from exact approved source. No crop, retouch, text replacement or generated pixels.",
+      "parent_approval_reference": "../../00_baseline/approvals.json",
+      "derived_asset_status": "pending_consolidated_human_review",
+      "depicts": "Approved authored creative; does not establish a live Tix interaction."
+    }
+  ]
+}

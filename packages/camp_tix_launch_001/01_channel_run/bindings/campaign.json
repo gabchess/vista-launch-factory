@@ -1,0 +1,17 @@
+{
+  "schema_version": "asset-review-binding/v1",
+  "asset_id": "campaign",
+  "version": 1,
+  "context_digest": "9801df760e91595f0f51dd1802710185c63e12c7d4dfdce972236e48ddbdb8d0",
+  "files": [
+    {
+      "path": "campaign/calendar.csv",
+      "sha256": "9e4a966e7fc029d8149a71dfababdaaea2937def1b6da8195b11fae4f3889261"
+    },
+    {
+      "path": "campaign/calendar.json",
+      "sha256": "a110808058764cc689bb7ead6bf8679575e6f7a6682e95939c5ab59ce3f7c21b"
+    }
+  ],
+  "sha256": "61629c6cf950b2e9f52fbd538b22f6e098f16405aa5326262de9696a01995be9"
+}
