@@ -1,4 +1,4 @@
-# Launch Factory
+# Vista Launch Factory
 
 Launch Factory gives an agent operator a reusable workflow for a release campaign: source review, specialist drafting, creative production gates and exact-version human review. Barry reviews Vista client work. Gabe reviews his own validation work.
 
