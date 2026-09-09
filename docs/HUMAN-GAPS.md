@@ -1,4 +1,22 @@
-# Human gaps (honesty first-class)
+# Human work and unfinished implementation
+
+Current assessment: the Tix package has reviewable blog, five emails, changelog and popup drafts, plus a proposed campaign. Two separate media masters match the recorded creative hashes. The system still needs an operator for source intake and provider execution. The recipient app, persistent approval events and complete recorded run remain unfinished. See the [SDS trial audit](audits/sds-trial-2026-09-09/REPORT.md) and [engineer handoff](../handoff/ENGINEER-START-HERE.md).
+
+## Human decisions retained by design
+
+Barry approves Vista copy and creative against the exact rendered version. The product owner resolves source conflicts and confirms release availability. Marketing maps real audience segments and judges whether each message fits its reader. These responsibilities continue after automation works.
+
+## Engineering work still required
+
+A non-engineer must be able to supply the release folder and start generation. The worker must save outputs and job state, bound retries and costs, and resume after interruption. Review must identify the authorized reviewer, preserve the version and input bindings, and invalidate affected decisions after revision. Export must use the reviewed bytes. Version 1 has no automatic publishing.
+
+Social placement and login integration need their own checks. Capture a complete run on one real feature release, including a revision and the review-ready six-output package. Then have a new operator repeat the process. Present the observed limits with that recording.
+
+## Historical v0.2.0 fixture assessment
+
+The retained text below describes the original fixture route. Its stub labels do not describe the later Tix creative and popup files. Historical approvals and HOLD records remain intact.
+
+# Original human gaps
 
 Launch Factory v0.2.0 is an installable Augment with a **wired Option B engine**. Be explicit about what still needs a human and what is held.
 

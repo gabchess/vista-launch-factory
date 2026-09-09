@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Recheck article bindings and local files. This cannot approve the writing."""
 from pathlib import Path
+import argparse
+import sys
 import hashlib
 import json
 import re
@@ -8,6 +10,14 @@ import struct
 
 ROOT = Path(__file__).resolve().parents[1]
 CAMPAIGN = ROOT.parents[1]
+REPO = ROOT.parents[3]
+sys.path.insert(0, str(REPO / 'engine'))
+from scripts.specialist_route import route_request
+
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--write-report', action='store_true', help='Explicitly refresh evidence/checks.json')
+args = parser.parse_args()
+
 digest = lambda path: hashlib.sha256(path.read_bytes()).hexdigest()
 receipt = json.loads((ROOT / "provenance.json").read_text())
 metadata = json.loads((ROOT / "metadata.json").read_text())
@@ -20,8 +30,14 @@ def check(name, condition, evidence):
     checks.append({"check": name, "status": "pass" if condition else "fail", "evidence": evidence})
 
 
-for binding in [receipt["request"], receipt["route"], receipt["drafting_authority"], receipt["claim_ledger"]] + receipt["artifacts"]:
+for binding in [receipt["request"], receipt["drafting_authority"], receipt["claim_ledger"]] + receipt["artifacts"]:
     check("bound_file", digest(ROOT / binding["path"]) == binding["sha256"], binding["path"])
+# A route receipt includes host-local absolute paths. Its original byte hash is
+# historical evidence. Recompute from the actual request and source bytes here.
+projection = route_request(request, CAMPAIGN)
+check("route_ready", projection["status"] == "ready_for_protocol", "fresh canonical route")
+check("route_context", projection["context_digest"] == receipt["route"]["context_digest"], "portable context digest")
+check("route_role", [item["role"] for item in projection["specialists"]] == ["blog_editor"], "blog_editor")
 for source in receipt["sources"]:
     check("selected_source_hash", digest(CAMPAIGN / source["path"]) == source["sha256"], source["id"])
 for claim in request["claims"]:
@@ -50,6 +66,7 @@ check("no_publishing_authority", receipt["publishing_authorized"] is False and m
 html = (ROOT / "article.html").read_text()
 check("preview_uses_local_assets", all(f'src="{image["path"]}"' in html for image in receipt["images"]) and "<script" not in html, "article.html")
 result = {"schema_version": "article-checks/v1", "artifact_sha256": digest(ROOT / "article.md"), "status": "pass" if all(item["status"] == "pass" for item in checks) else "fail", "checks": checks, "limits": "Local structural evidence. Semantic accuracy, tone and final human approval require review; browser layout and live CTA collection are not tested by this script."}
-(ROOT / "evidence/checks.json").write_text(json.dumps(result, indent=2) + "\n")
+if args.write_report:
+    (ROOT / "evidence/checks.json").write_text(json.dumps(result, indent=2) + "\n")
 print(json.dumps({"status": result["status"], "checks": len(checks), "artifact_sha256": result["artifact_sha256"]}))
 raise SystemExit(0 if result["status"] == "pass" else 1)

@@ -2,6 +2,8 @@
 
 This is the current technical handoff for the branch containing the Tix channel run. Read it before the historical SOP files in this directory. Gabe authorized sharing the repository with a developer for review. No credentials, paid AgentsKit source or client approval events are included.
 
+See the [SDS trial audit](../docs/audits/sds-trial-2026-09-09/REPORT.md) for the requirement-by-requirement verdict and verified limits. The supplied Reggie brief sets no numeric social-video duration cap; this project retains its own 30-second target.
+
 ## What is available
 
 The full repository is an agent-operated launch workflow. It includes a Codex/Claude operator, specialist roles, selected source and voice packets, original production prompts, local validators, two importable n8n preparation workflows, and an actual campaign review package.
@@ -119,6 +121,7 @@ node automation/n8n/channel-production/test.mjs
 .venv/bin/python automation/n8n/channel-production/test_loader.py
 python3 automation/n8n/channel-production/build_workflow.py --check
 python3 packages/camp_tix_launch_001/01_channel_run/verify_package.py
+.venv/bin/python packages/camp_tix_launch_001/01_channel_run/blog/evidence/verify.py
 ```
 
 Read [current verification](../packages/camp_tix_launch_001/01_channel_run/VERIFICATION.md) for the checks that actually ran. A structural pass does not grade copy, authenticate a reviewer or prove an external API worked.

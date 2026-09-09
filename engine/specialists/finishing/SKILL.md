@@ -11,7 +11,7 @@ Use this protocol after the story or sketch is approved, when the user requests 
 
 ## Lock the edit contract
 
-Record the target duration, dimensions, frame rate, audio branch, exact words and the current human request. A requested 10-second music-and-SFX revision preserves its approved story. A separately requested 60-second restaurant film uses a 60-second root composition and its own script/sketch gate. The old product-film default below 30 seconds cannot override that explicit brief. Vista Launch Factory's social-video slot remains capped at 30 seconds unless that client requirement itself is explicitly changed. A timeline length or CLI flag does not prove human authorization.
+Record the target duration, dimensions, frame rate, audio branch, exact words and the current human request. A requested 10-second music-and-SFX revision preserves its approved story. A separately requested 60-second restaurant film uses a 60-second root composition and its own script/sketch gate. The old product-film default below 30 seconds cannot override that explicit brief. Vista Launch Factory retains its internal 30-second social-video target unless the operator explicitly changes that target. Reggie's supplied v2 brief sets no numeric duration cap. A timeline length or CLI flag does not prove human authorization.
 
 For HyperFrames, choose duration, size and frame rate on the root composition. Declare typed brand/content variables before composing. Use a separate root when those compile-time settings differ. Keep color, type roles, spacing, motion and audio rules together. Strict variable validation checks names and types; inspect a rendered variation before claiming a successful re-skin.
 

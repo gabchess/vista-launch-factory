@@ -36,6 +36,8 @@ def main():
     check('only prior media carries approval',{a['id'] for a in data['assets'] if a['approved']}=={'social-video','animation'})
     check('no new approvals or publishing',data['new_artifact_approvals']==[] and data['publishing_authorized'] is False)
     interpreter=REPO/'.venv/bin/python'
+    article_check=subprocess.run([str(interpreter) if interpreter.exists() else sys.executable, str(ROOT/'blog/evidence/verify.py')],text=True,capture_output=True)
+    check('portable article provenance',article_check.returncode==0)
     routes={}
     for packet in sorted((ROOT/'requests').glob('*.json')):
         result=subprocess.run([str(interpreter) if interpreter.exists() else sys.executable,str(REPO/'engine/scripts/specialist_route.py'),'route',str(packet),'--workspace',str(ROOT.parent)],text=True,capture_output=True)

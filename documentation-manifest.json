@@ -214,7 +214,7 @@
     },
     {
       "path": "automation/n8n/ugc-app-reveal/README.md",
-      "sha256": "b0bf56fd2178d4adb5d2b814b9c0a4daed7dad639b40f916198092fba6297698"
+      "sha256": "8de53de144df667c7fafc34314155da46788138fad0535f6cb9ced521db4a1df"
     },
     {
       "path": "barry/README.md",
@@ -334,7 +334,7 @@
     },
     {
       "path": "docs/HUMAN-GAPS.md",
-      "sha256": "d87f31ded664107fd50a95083bcdb7e9f4a4ed0b02b63515facdd44fcd3bd0b9"
+      "sha256": "684950a020d3d4878b6ce0f581ca79ecfab6c8d4402aced56d14cf825d303628"
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
@@ -413,6 +413,26 @@
       "sha256": "4f53c9b40ce2651e3611aa090eaedbd6dbc9b71ef8c5f7e65eac0d8263190d0d"
     },
     {
+      "path": "docs/audits/sds-trial-2026-09-09/REPORT.md",
+      "sha256": "d8a88ef67c5e10164a24d145d6fa5618592b419afc2c187058275a6f2ed3e599"
+    },
+    {
+      "path": "docs/audits/sds-trial-2026-09-09/control-review.md",
+      "sha256": "73f00c26f536d5215030b97d87a39fd3199a087f9ec8aebb15c9631b5c0f97d5"
+    },
+    {
+      "path": "docs/audits/sds-trial-2026-09-09/epistemic-ledger.md",
+      "sha256": "45685330be8d3dc5cee234a3ca66a6d6a380fcf5dbaa989220217260542012da"
+    },
+    {
+      "path": "docs/audits/sds-trial-2026-09-09/interface-contract.md",
+      "sha256": "2510bc8ee2918b833c615c6a05ce3dc8fd08b8e1debc28b576da30e877134351"
+    },
+    {
+      "path": "docs/audits/sds-trial-2026-09-09/pre-mortem.md",
+      "sha256": "b20604e46fc9d81b040d1c26890797a4b83393c83fe620ede1a33d5f1f9ce41d"
+    },
+    {
       "path": "docs/research/agentskit-install-audit.md",
       "sha256": "4a90532fc864afe87ea96d3333fe8c481f9c85bd7472a0cbe828d26b5be77afb"
     },
@@ -486,7 +506,7 @@
     },
     {
       "path": "engine/specialists/finishing/SKILL.md",
-      "sha256": "75b6721b1c2e99211e945ba7d527f6cc897859ad69de798aa8fe64e86dbc9db7"
+      "sha256": "95938e10d45c632fefed38973bf939f1f7111d44d187f2a083dc18a3d9378dda"
     },
     {
       "path": "engine/specialists/references/animation.md",
@@ -534,7 +554,7 @@
     },
     {
       "path": "engine/specialists/references/video.md",
-      "sha256": "963b8f8e3da7dbe33440960dde8cf328dfc8d3fe33b930e209f38b86f5ffe00b"
+      "sha256": "b3250c61742c27da24779da15d3f458d28174b1d44691de08913be1911db5fd1"
     },
     {
       "path": "engine/specialists/video-production/ELEVENLABS-DIRECT.md",
@@ -606,7 +626,7 @@
     },
     {
       "path": "handoff/ENGINEER-START-HERE.md",
-      "sha256": "c153e30f47d55dafc938052a25a859bc59fe268cc06f399acf1748add1b961e2"
+      "sha256": "50ffe1e50ffa61873b88c9d6bcb74b31b2c2846fe8a746301b5d6a4c9de7d7c9"
     },
     {
       "path": "handoff/README.md",

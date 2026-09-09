@@ -1,0 +1,70 @@
+{
+  "baseline_commit": "34c887450dbf135bceb320c982f92b707e72f9a8",
+  "run_at": "2026-09-09T00:42:37.305419+00:00",
+  "python": "3.14.7",
+  "node": "v26.8.1",
+  "platform": "Darwin arm64",
+  "scope": "offline checks plus local portability fix; no provider execution",
+  "results": [
+    {
+      "command": ".venv/bin/pytest -q",
+      "exit_code": 0,
+      "stdout": "........................................................................ [ 93%]\n.....                                                                    [100%]\n77 passed in 10.85s\n",
+      "stderr": ""
+    },
+    {
+      "command": "python3 scripts/sync_specialists.py --check",
+      "exit_code": 0,
+      "stdout": "78 generated entry-point files match; native host execution remains untested\n",
+      "stderr": ""
+    },
+    {
+      "command": "node automation/n8n/ugc-app-reveal/test.mjs",
+      "exit_code": 0,
+      "stdout": "PASS complete brief returns five unmodified prompts and full source text\nPASS no inputs returns a hold with no generated content\nPASS missing source binding holds the request\nPASS invalid hashes and unsafe workspace paths hold the request\nPASS Vista social duration cap does not inherit the 60-second film allowance\nPASS 720p output request is held, without claiming upscaling occurred\nPASS caller approvals cannot authorize execution or publication\nPASS credentials are held and their values are omitted from outputs\nPASS multiple requests retain distinct product and source bindings\nPASS body-wrapped input works and empty batches do not invent work\nPASS non-string binding URI returns a hold instead of crashing\nPASS wrong recipe and unknown scopes are rejected\nPASS array hash values cannot pass string hash validation\nPASS binding URI rejects unsupported schemes and absolute Windows paths\nPASS long and malformed URLs cannot stall other requests\n{\"passed\":15,\"paid_calls\":0}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node automation/n8n/channel-production/test.mjs",
+      "exit_code": 0,
+      "stdout": "PASS four complete requests become four concrete role assignments for one review\nPASS missing or repeated lanes hold the batch\nPASS mixed campaign, product or source revision cannot combine\nPASS email segments must be the five exact contract IDs\nPASS source bytes and Unicode character spans are checked\nPASS voice files cannot supply product claims\nPASS empty claims and voice selection hold drafting\nPASS a source ID or path cannot silently change between lanes\nPASS unsafe paths, schema additions and duplicate task IDs are refused\nPASS malformed source and revision collections return a hold without crashing\nPASS missing crypto is an explicit hold with no fake verification\nPASS caller authority flags and replayed preparation grant no approval\nPASS secret-valued and non-finite inputs are held without echo\nPASS one changed article prepares only its revision and keeps other lanes\nPASS two revisions are allowed and the third requires a human stop\nPASS stale feedback hash or version cannot request a new revision\nPASS dependency cycles and uncounted affected revision targets hold\nPASS unrouted affected artifacts and dependencies absent from a packet hold\nPASS prototype-named request fields cannot bypass the closed schema\nPASS existing changed artifacts cannot masquerade as initial drafts\nPASS revision records cannot echo caller approval or execution fields\nPASS body input and batch pairing retain isolation\nPASS built inactive workflow executes the real preparation code\n{\"passed\":23,\"paid_calls\":0}\n",
+      "stderr": ""
+    },
+    {
+      "command": ".venv/bin/python automation/n8n/channel-production/test_loader.py",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.399s\n\nOK\n"
+    },
+    {
+      "command": "python3 automation/n8n/channel-production/build_workflow.py --check",
+      "exit_code": 0,
+      "stdout": "workflow.json matches the source, registry and schema\n",
+      "stderr": ""
+    },
+    {
+      "command": ".venv/bin/python packages/camp_tix_launch_001/00_baseline/verify_baseline.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"pass\",\n  \"scope\": \"offline evidence integrity and existing source/draft route checks\",\n  \"source_revision\": \"27826b0332fd1582108ac0081165a7dd360e7aa6\",\n  \"file_hashes_checked\": 7,\n  \"committed_git_blobs_checked\": 3,\n  \"claim_spans_checked\": 8,\n  \"voice_spans_checked\": 5,\n  \"eligible_claims\": 8,\n  \"held_or_excluded_claims\": 7,\n  \"routes\": [\n    {\n      \"command\": \".venv/bin/python engine/scripts/specialist_route.py route packages/camp_tix_launch_001/00_baseline/source-request.json --workspace packages/camp_tix_launch_001/00_baseline\",\n      \"exit_code\": 0,\n      \"status\": \"ready_for_protocol\",\n      \"roles\": [\n        \"evidence_editor\"\n      ],\n      \"context_digest\": \"92552f24276949fa48b3167b5be53eb9e0d2e64781d51558d1a89ce6db569072\",\n      \"subject\": null,\n      \"generation_authorized\": false,\n      \"human_approval_granted\": false\n    },\n    {\n      \"command\": \".venv/bin/python engine/scripts/specialist_route.py route packages/camp_tix_launch_001/00_baseline/blog-request.json --workspace packages/camp_tix_launch_001/00_baseline\",\n      \"exit_code\": 0,\n      \"status\": \"ready_for_protocol\",\n      \"roles\": [\n        \"blog_editor\"\n      ],\n      \"context_digest\": \"92552f24276949fa48b3167b5be53eb9e0d2e64781d51558d1a89ce6db569072\",\n      \"subject\": null,\n      \"generation_authorized\": false,\n      \"human_approval_granted\": false\n    }\n  ],\n  \"media_file_reinspection\": \"Separate operator/Forge receipt; this portable check has no media files\",\n  \"human_approval_granted\": false,\n  \"provider_calls\": 0\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": ".venv/bin/python packages/camp_tix_launch_001/01_channel_run/blog/evidence/verify.py",
+      "exit_code": 0,
+      "stdout": "{\"status\": \"pass\", \"checks\": 94, \"artifact_sha256\": \"224babd3f960ee17afdb3c51d8f0826756c6523f39f8fa501cc9721f80de0599\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": ".venv/bin/python packages/camp_tix_launch_001/01_channel_run/verify_package.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"pass\",\n  \"checks_passed\": 94,\n  \"manifest_files\": 86,\n  \"human_approval\": false,\n  \"external_execution_tested\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

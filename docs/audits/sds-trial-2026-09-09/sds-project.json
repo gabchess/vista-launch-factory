@@ -1,0 +1,311 @@
+{
+  "format": "cd-sds-project/v1",
+  "project_id": "PRJ-VISTA-TRIAL-AUDIT",
+  "title": "Reggie paid-trial acceptance audit",
+  "updated_at": "2026-09-09T00:43:20.023839+00:00",
+  "phase": "no-go",
+  "posture": "NO-GO",
+  "authority": {
+    "decision_owner": "Gabe; Barry approves Vista copy and creative",
+    "external_action_authorized": true,
+    "authorized_scope": "Audit in isolated clone, local suggested fixes, commit and open review PR. No merge, deployment, generation spend or sending."
+  },
+  "claims": [
+    {
+      "id": "CL-01",
+      "type": "fact",
+      "statement": "Supplied brief requires one real release folder to six outputs, human review, non-engineer trigger and full-run recording.",
+      "provenance": "stipulated",
+      "half_life": "stable",
+      "risk": "critical"
+    },
+    {
+      "id": "CL-02",
+      "type": "fact",
+      "statement": "PR 40 head is 34c887450dbf135bceb320c982f92b707e72f9a8 with two passing Socket checks.",
+      "provenance": "empirical",
+      "half_life": "time-decaying",
+      "risk": "manageable"
+    },
+    {
+      "id": "CL-03",
+      "type": "assumption",
+      "statement": "The handed-off package satisfies the trial.",
+      "provenance": "speculative",
+      "half_life": "context-decaying",
+      "risk": "critical",
+      "load_bearing": true,
+      "verification": "Trace each brief requirement to current artifacts and replay execution.",
+      "falsification": "Any required output or workflow boundary lacks working evidence.",
+      "assessment": "falsified: required execution and full-run evidence remain absent"
+    },
+    {
+      "id": "CL-04",
+      "type": "assumption",
+      "statement": "Recorded film approval satisfies the social output.",
+      "provenance": "speculative",
+      "half_life": "context-decaying",
+      "risk": "manageable",
+      "verification": "Inspect exact media, captions and target placement.",
+      "falsification": "Missing caption or accuracy/placement evidence.",
+      "assessment": "partial; hashes and decoded frames checked, standalone claim review open"
+    },
+    {
+      "id": "CL-05",
+      "type": "assumption",
+      "statement": "Exact citations establish semantic accuracy.",
+      "provenance": "speculative",
+      "half_life": "context-decaying",
+      "risk": "critical",
+      "load_bearing": true,
+      "verification": "Compare rendered statement meaning against quoted evidence.",
+      "falsification": "A valid quote is associated with an unsupported statement.",
+      "assessment": "not accepted; semantic review remains separate"
+    },
+    {
+      "id": "CL-06",
+      "type": "inference",
+      "statement": "The handoff cannot establish full-trial completion.",
+      "depends_on": [
+        "CL-01",
+        "CL-03",
+        "CL-04",
+        "CL-05"
+      ],
+      "risk": "critical",
+      "verification": "Inspect missing runtime boundaries and required output evidence.",
+      "falsification": "A retained complete same-source real-release run demonstrates every requirement.",
+      "assessment": "supported by inspected repo and tests"
+    }
+  ],
+  "constraints": [
+    {
+      "id": "CON-01",
+      "statement": "No auto-publishing in v1; human review before external release.",
+      "claim_ids": [
+        "CL-01"
+      ]
+    },
+    {
+      "id": "CON-02",
+      "statement": "Audit writes stay in isolated clone; only review PR is authorized.",
+      "claim_ids": [
+        "CL-01"
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "IF-ARTICLE-VERIFIER-CONTEXT",
+      "artifact": "interface-contract.md",
+      "status": "locally tested",
+      "claim_ids": [
+        "CL-03"
+      ],
+      "evidence_ids": [
+        "EV-TESTS"
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "id": "CTL-01",
+      "artifact": "control-review.md",
+      "loops": [
+        "L-01",
+        "L-02",
+        "L-03",
+        "L-04"
+      ],
+      "status": "mapped; future runtime unverified",
+      "claim_ids": [
+        "CL-03"
+      ]
+    }
+  ],
+  "hazards": [
+    {
+      "id": "HZ-01",
+      "statement": "Prepared status mistaken for completed provider execution",
+      "claim_ids": [
+        "CL-03"
+      ]
+    },
+    {
+      "id": "HZ-02",
+      "statement": "Creative approval mistaken for current product accuracy",
+      "claim_ids": [
+        "CL-04",
+        "CL-05"
+      ]
+    }
+  ],
+  "couplings": [
+    {
+      "id": "CP-01",
+      "statement": "Provider callbacks, artifact replacement and review state need a shared exact-version contract.",
+      "claim_ids": [
+        "CL-03"
+      ]
+    }
+  ],
+  "human_factors": [
+    {
+      "id": "HF-01",
+      "artifact": "control-review.md",
+      "statement": "Local notes persist; non-engineer generation and authenticated review remain open.",
+      "claim_ids": [
+        "CL-03"
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-01",
+      "statement": "Submit audit and bounded portability fix as review PR; leave full-trial completion NO-GO.",
+      "owner": "Codex recommendation; Gabe owns acceptance",
+      "claim_ids": [
+        "CL-06"
+      ],
+      "evidence_ids": [
+        "EV-REPORT",
+        "EV-TESTS"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EV-REPORT",
+      "path": "REPORT.md",
+      "kind": "inspection and requirement matrix"
+    },
+    {
+      "id": "EV-TESTS",
+      "path": "test-results.json",
+      "kind": "executed offline checks"
+    },
+    {
+      "id": "EV-PREMORTEM",
+      "path": "pre-mortem.md",
+      "kind": "hypothetical systemic failure analysis"
+    },
+    {
+      "id": "EV-UI",
+      "path": "REPORT.md",
+      "kind": "observed targeted browser exercise and media checks"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "ART-01",
+      "path": "REPORT.md",
+      "status": "retained"
+    },
+    {
+      "id": "ART-02",
+      "path": "epistemic-ledger.md",
+      "status": "retained"
+    },
+    {
+      "id": "ART-03",
+      "path": "interface-contract.md",
+      "status": "retained"
+    },
+    {
+      "id": "ART-04",
+      "path": "control-review.md",
+      "status": "retained"
+    },
+    {
+      "id": "ART-05",
+      "path": "pre-mortem.md",
+      "status": "retained"
+    },
+    {
+      "id": "ART-06",
+      "path": "test-results.json",
+      "status": "retained"
+    }
+  ],
+  "release_gates": [
+    {
+      "name": "blast_radius",
+      "status": "pass",
+      "evidence_ids": [
+        "EV-REPORT"
+      ],
+      "finding": "Isolated review-only audit; no provider calls or publication."
+    },
+    {
+      "name": "truth",
+      "status": "fail",
+      "evidence_ids": [
+        "EV-REPORT"
+      ],
+      "finding": "Full-trial completion contradicted by missing runtime and output acceptance evidence."
+    },
+    {
+      "name": "structure",
+      "status": "not-evidenced",
+      "evidence_ids": [
+        "EV-REPORT"
+      ],
+      "finding": "Provider, persistence and export interfaces lack integrated execution."
+    },
+    {
+      "name": "human",
+      "status": "pending",
+      "evidence_ids": [
+        "EV-UI"
+      ],
+      "finding": "Local feedback observed; non-engineer full run and assigned review remain open."
+    },
+    {
+      "name": "governance",
+      "status": "pending",
+      "evidence_ids": [
+        "EV-REPORT"
+      ],
+      "finding": "Review PR authorized; client scope acceptance and Barry approval remain open."
+    },
+    {
+      "name": "evidence",
+      "status": "not-evidenced",
+      "evidence_ids": [
+        "EV-TESTS"
+      ],
+      "finding": "Offline tests pass; no full-runtime worst-case test or operational rollback evidence."
+    },
+    {
+      "name": "kill_switch",
+      "status": "not-evidenced",
+      "evidence_ids": [
+        "EV-PREMORTEM"
+      ],
+      "finding": "No recipient worker available for stop/cancel/recovery testing."
+    }
+  ],
+  "blockers": [
+    {
+      "id": "BLK-01",
+      "owner": "Receiving engineer",
+      "action": "Implement and record same-source six-output generation with revision and recovery."
+    },
+    {
+      "id": "BLK-02",
+      "owner": "Gabe and Reggie",
+      "action": "Confirm any substitution for the original real-release trial scope."
+    },
+    {
+      "id": "BLK-03",
+      "owner": "Barry",
+      "action": "Review exact client copy and creative through the implemented human gate."
+    }
+  ],
+  "waivers": [],
+  "next_action": {
+    "action": "Engineer implements source-to-worker-to-review path, then records a full real-release six-output run and recovery.",
+    "owner": "Receiving engineer; Gabe coordinates Reggie and Barry",
+    "advance_when": "All seven gates have current passing evidence; local tests alone are insufficient."
+  }
+}

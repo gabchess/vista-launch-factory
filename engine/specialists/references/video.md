@@ -24,7 +24,7 @@ Before a disputed visual defect becomes a blocking finding, identify the exact a
 
 For render, review or revision work, read [short motion finishing](../finishing/SKILL.md) for kinetic type, exact music/SFX cues, speech Caption JSON and actual provider lineage. Preserve accepted story decisions during an authorized finishing revision. New UGC script/sketch approval remains separate.
 
-Vista's social-video slot remains capped at 30 seconds. A separate user-approved film can have another duration, such as a 60-second restaurant story; use its explicit brief and a separate composition, without changing the Vista slot's cap. Choose channel crops only after inspecting disclosure and caption survival. Every exported rendition has its own hash and human decision.
+The repository's Vista social-video route retains an internal 30-second target; the supplied Reggie v2 brief sets no numeric duration cap. A separate user-approved film can have another duration, such as a 60-second restaurant story; use its explicit brief and a separate composition, without changing the Vista slot's cap. Choose channel crops only after inspecting disclosure and caption survival. Every exported rendition has its own hash and human decision.
 
 These are original workflow rules informed by the user's UGC, viral-format and ad/deck notes on 8 September 2026. No course prose, templates, portraits, clips, brand styling or paid resources are distributed. Those private files are not runtime dependencies.
 

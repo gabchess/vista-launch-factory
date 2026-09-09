@@ -11,11 +11,6 @@
     {
       "check": "bound_file",
       "status": "pass",
-      "evidence": "../routing/blog.json"
-    },
-    {
-      "check": "bound_file",
-      "status": "pass",
       "evidence": "../AUTHORIZATION.md"
     },
     {
@@ -42,6 +37,21 @@
       "check": "bound_file",
       "status": "pass",
       "evidence": "image-provenance.json"
+    },
+    {
+      "check": "route_ready",
+      "status": "pass",
+      "evidence": "fresh canonical route"
+    },
+    {
+      "check": "route_context",
+      "status": "pass",
+      "evidence": "portable context digest"
+    },
+    {
+      "check": "route_role",
+      "status": "pass",
+      "evidence": "blog_editor"
     },
     {
       "check": "selected_source_hash",

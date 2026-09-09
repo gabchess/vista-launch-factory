@@ -105,8 +105,8 @@
     },
     {
       "path": "blog/evidence/checks.json",
-      "bytes": 9565,
-      "sha256": "c0adf9b59ba07ab299b0506032dbe5bd70e61f0eb75c1d2e9355d1694393a40d"
+      "bytes": 9778,
+      "sha256": "dc8087732f994f89dde01dacdaebc56e26a5a72ccdcf83ac8b3e9b7cd5443a3a"
     },
     {
       "path": "blog/evidence/originality-check.json",
@@ -125,8 +125,8 @@
     },
     {
       "path": "blog/evidence/verify.py",
-      "bytes": 4139,
-      "sha256": "0daeb17f28305d718beda2dc38e96ca1c2fa1119b013abe2b2255fa15e19d657"
+      "bytes": 5003,
+      "sha256": "81d06ff862b9c5587ca67bfd1a7ed37742cb90dd3e0c0bc331e307758e908913"
     },
     {
       "path": "blog/evidence/vista-work-voice-analysis.json",
@@ -410,8 +410,8 @@
     },
     {
       "path": "verify_package.py",
-      "bytes": 5186,
-      "sha256": "5032c5b28587128618136a2f8c79a4eb9a4f0aeb97844abab3a014e41444a1a4"
+      "bytes": 5419,
+      "sha256": "a91dcc8f8cd97027db80688686d99a2646537c1f5777ad04c061f4fb7cc3faef"
     },
     {
       "path": "voice/blog.md",
