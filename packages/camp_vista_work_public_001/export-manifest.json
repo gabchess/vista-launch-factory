@@ -8,8 +8,8 @@
   "files": [
     {
       "path": "README.md",
-      "sha256": "360465b39b71407aa77b38f3cff140b06c6eca1fa421ee2eb3270c26489c24d4",
-      "bytes": 390
+      "sha256": "b9cccd68bb998e08cb65f38c275a5ebf3f82bc13bab2c140edeb57fd24c8defa",
+      "bytes": 7475
     },
     {
       "path": "RUN.md",
@@ -223,13 +223,13 @@
     },
     {
       "path": "source-manifest.json",
-      "sha256": "434a525e1b9b6c0cb8871478053d073affe408b1a1b02657cb93eb3877083093",
+      "sha256": "07ac5863d80e219a7905ae859e3a459c79c80909e73691983941d0181154b2cd",
       "bytes": 1454
     },
     {
       "path": "sources/barry_email_transcript.txt",
-      "sha256": "a82e8952767e00d97e173d2cceb56bbb0e4e839defadbf5fb0585048cbb70c58",
-      "bytes": 1182
+      "sha256": "8309ecd792231bdf66342fee31c144827ffa0c0377f17ae292ac2d53876a9175",
+      "bytes": 1186
     },
     {
       "path": "sources/vista-work-insights.html",

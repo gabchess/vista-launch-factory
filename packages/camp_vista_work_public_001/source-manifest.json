@@ -10,8 +10,8 @@
     {
       "path": "sources/barry_email_transcript.txt",
       "source_type": "supplied_email_source_text",
-      "sha256": "a82e8952767e00d97e173d2cceb56bbb0e4e839defadbf5fb0585048cbb70c58",
-      "bytes": 1182,
+      "sha256": "8309ecd792231bdf66342fee31c144827ffa0c0377f17ae292ac2d53876a9175",
+      "bytes": 1186,
       "retrieved_at": "2026-09-09T11:59:37.619679+00:00"
     },
     {
