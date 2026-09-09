@@ -56,14 +56,6 @@ _Avoid_: FEATURE_NAME, generic social tool, Work (alone)
 A generated mockup/video/example made for the Wed recording so the system looks cool. Not evidence for Claims Lock. Not from Vista internal docs/access.
 _Avoid_: fixture (fixture = labelled fake claims pack), real output, production creative
 
-**Pilot MVP**:
-What the $1k buys: prove we understand the ask/pain, a clear Launch Factory design, and a cool recorded demo. Not a fully wired production system.
-_Avoid_: FTE scope, full automation, production HubSpot
-
-**Close Ask**:
-The end of the Wed demo: hire Gabe, fund a deeper build, or take the MVP handoff. Not part of Claims Lock.
-_Avoid_: soft CTA, next steps (when you mean this fork)
-
 **Tech Demo (Wed)**:
 A mocked/simulated interactive run of the Launch Factory with made-up data for a normie audience. Clips can feed the UGC open. Not Claims Lock evidence.
 _Avoid_: production app, live HubSpot, fixture (claims pack)

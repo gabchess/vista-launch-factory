@@ -7,18 +7,27 @@ item: 01
 title: "Barry email: approval queue / Vista Work (voice seed)"
 ---
 
-Internal email provided by Reggie, used as voice seed per ADR 0015. Copied verbatim from the repo fixture (read-only). This is the seed item: the approval-queue email.
+Internal email provided by Reggie, used as voice seed per ADR 0015. The
+verbatim text is withheld from the public repository; the fixture file now
+holds a paraphrased source record with the same product facts. This is the
+seed item: the approval-queue email.
 
-## Verbatim excerpt
+## Paraphrase
 
-Your approval queue has a task that says “Approve the next post.”
+The email dramatizes an approval-queue pain: a task says to approve "the
+next post" but shows nothing. The approver cannot tell which version it
+means, whether the client already commented elsewhere, or whether sign-off
+already happened. None of that context lives in the task, so the approver
+hunts for the post, its feedback, and its stage before deciding, and the
+search takes longer than the decision.
 
-Which one? The version from this morning, or the one still sitting in drafts? Has the client already commented on it somewhere else?
+Resolution: in Vista Work, tasks and social posts are linked. Opening the
+task shows the actual post content, not a card describing it, so approvers
+see what needs a decision instead of hunting for it. The email ends with a
+short call to action to open Vista Work.
 
-Did someone already sign off, or is that still pending?
+## Voice characteristics
 
-None of that lives in the task. So before anyone can approve anything, someone, probably you, goes off to find the actual post, checks who’s weighed in, then figures out what stage it’s at. That search takes longer than the decision does.
-
-In Vista Work, the task and social posts are linked. Open the task, and the post is right there: the actual content, not a card describing it. Your approvers see what needs a decision instead of hunting for it first.
-
-Open Vista Work →
+Short stacked questions that dramatize the pain. Second person throughout.
+Concrete nouns: drafts, client comments, sign-off. One-sentence product
+resolution after the problem build-up. Terse call to action.

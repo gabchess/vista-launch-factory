@@ -668,8 +668,8 @@
     },
     {
       "path": "docs/CONTEXT.md",
-      "sha256": "3a00fb144839aa2f5e3f04f241829d320791c1cdff642da5eada8ecc7ce7787e",
-      "bytes": 4306
+      "sha256": "891d4c7e00220a26fc7d8ee6d77e7a5dd127efb67ce3364c1f7c47cde8e63251",
+      "bytes": 3908
     },
     {
       "path": "docs/DOCUMENTATION-CUSTODY.md",
@@ -988,8 +988,8 @@
     },
     {
       "path": "engine/fixtures/vista-work/sources/barry_email_transcript.txt",
-      "sha256": "a6f96224e22861056bfdfa702d22413e50f190704f2b95c683475fb36cf3feba",
-      "bytes": 744
+      "sha256": "a82e8952767e00d97e173d2cceb56bbb0e4e839defadbf5fb0585048cbb70c58",
+      "bytes": 1182
     },
     {
       "path": "engine/fixtures/vista-work/sources/footage_index.json",
