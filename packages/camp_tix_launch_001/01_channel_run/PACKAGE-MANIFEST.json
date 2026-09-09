@@ -20,8 +20,8 @@
     },
     {
       "path": "VERIFICATION.md",
-      "bytes": 4737,
-      "sha256": "041817bbd004e4f84c40153824ce457c1f46277f7272b616bfc45ee9dac565f9"
+      "bytes": 4744,
+      "sha256": "cac571f4c08ec982b773b945be0b880f5924ac9e603e1d5df41ecbe4f3d58e09"
     },
     {
       "path": "bindings/blog.json",
@@ -400,8 +400,8 @@
     },
     {
       "path": "verification/independent-review.md",
-      "bytes": 7461,
-      "sha256": "0d03e832a7e0ff133d86738fd4580eed341ef53ecf1e199fa7781b8d617b6ce7"
+      "bytes": 7489,
+      "sha256": "a9ffa61cfab46ca0eb72685a9a9528350d5a4a942e78a31a4d7799a7af9d3cfd"
     },
     {
       "path": "verification/preparation-run.json",

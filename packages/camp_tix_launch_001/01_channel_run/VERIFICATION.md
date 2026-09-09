@@ -37,4 +37,4 @@ No cloud n8n run, model dispatch, provider render, authenticated approval event 
 
 Run `python3 packages/camp_tix_launch_001/01_channel_run/verify_package.py` to recheck the current files, source routes, channel counts, review bindings and full batch manifest. Review hashes cover the visible rendition and its supporting files. Current source/voice context is part of each binding. The two media records retain their accepted binary SHA-256 values.
 
-After intentional changes and review, `--write-manifest` records a new file snapshot. It does not approve the new version. The repository's tests and manifest checks are also run during Forge's commit closeout; the resulting commit receipt records their final counts.
+After intentional changes and review, `--write-manifest` records a new file snapshot. It does not approve the new version. The repository's tests and manifest checks are also run during the verifier's commit closeout; the resulting commit receipt records their final counts.

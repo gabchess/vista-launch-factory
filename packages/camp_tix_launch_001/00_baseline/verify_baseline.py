@@ -107,7 +107,7 @@ def main():
         routes.append({"command": ".venv/bin/python " + " ".join(args), "exit_code": completed.returncode, "status": projection["status"], "roles": [role], "context_digest": projection["context_digest"], "subject": None, "generation_authorized": False, "human_approval_granted": False})
 
     check(len(index["five_email_test_audiences"]) == 5, "Expected five email test contexts")
-    print(json.dumps({"status": "pass", "scope": "offline evidence integrity and existing source/draft route checks", "source_revision": index["source_revision"], "file_hashes_checked": len(files), "committed_git_blobs_checked": 3, "claim_spans_checked": len(ledger["claims"]), "voice_spans_checked": 5, "eligible_claims": len(eligible), "held_or_excluded_claims": len(held), "routes": routes, "media_file_reinspection": "Separate operator/Forge receipt; this portable check has no media files", "human_approval_granted": False, "provider_calls": 0}, indent=2))
+    print(json.dumps({"status": "pass", "scope": "offline evidence integrity and existing source/draft route checks", "source_revision": index["source_revision"], "file_hashes_checked": len(files), "committed_git_blobs_checked": 3, "claim_spans_checked": len(ledger["claims"]), "voice_spans_checked": 5, "eligible_claims": len(eligible), "held_or_excluded_claims": len(held), "routes": routes, "media_file_reinspection": "Separate operator/the verifier receipt; this portable check has no media files", "human_approval_granted": False, "provider_calls": 0}, indent=2))
 
 
 if __name__ == "__main__":
