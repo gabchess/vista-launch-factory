@@ -1323,8 +1323,8 @@
     },
     {
       "path": "skills/launch/SKILL.md",
-      "sha256": "de1f76de67013d0ebd64fea6d2c688f4f2e439ba6a4c0489fa964bda8a158f28",
-      "bytes": 6698
+      "sha256": "bde80041e5a1010cee13c6467892f0f577e19ddc632138d1af29ff53651ed164",
+      "bytes": 6695
     },
     {
       "path": "tests/conftest.py",
