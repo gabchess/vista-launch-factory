@@ -170,7 +170,7 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "9bef8b87d8816493903ab51183ffc4011e4721292f82c572175b414295721070"
+      "sha256": "251fe09aa7790176cc682b01397e19de3ce8b215eceeeb25d87e3251fbdab741"
     },
     {
       "path": "HOST-MATRIX.md",
@@ -186,11 +186,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "4777da7b2c2b3178b84fe0c8c10e38fbbebea5d2f5e5e8e5f74e001c270ef176"
+      "sha256": "d715206e353e62c8bff8fdbfa9f2692f9c2bd4b7ae8c21eca3fe234c1e48084d"
     },
     {
       "path": "START-HERE.md",
-      "sha256": "a48e6c42e3fb9ce2f1022fb4c8080289afc614f91eac34dfdd2c3cd2ca358d59"
+      "sha256": "2318c939f6cb1579745c1275f1fff1f1b33d19123c242505f53a844f79359ade"
     },
     {
       "path": "automation/n8n/channel-production/PLAN.md",
@@ -286,7 +286,7 @@
     },
     {
       "path": "docs/HUMAN-GAPS.md",
-      "sha256": "fbed492c5941f78b8e71625cebe5068aaa2d4165e797c24c6f676ee513e80881"
+      "sha256": "b7dde776ff985203cb3fcefa53fec6afe5631c639503309ef79236bddee32e6a"
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
@@ -306,7 +306,7 @@
     },
     {
       "path": "docs/REFERENCE.md",
-      "sha256": "4fbd642295a773d832d608f98586dc6f16eb073d6b10210b494d4a48d06201b3"
+      "sha256": "443c0ee7e0ae95d59f250a11fe1ce794ab9f16182f9e42f2f39b094c4414bad0"
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
@@ -538,7 +538,7 @@
     },
     {
       "path": "handoff/ENGINEER-START-HERE.md",
-      "sha256": "153375526b3ce766c803075e1a34d3668a4c0c2d4847f1cb42008f7af0e37d8a"
+      "sha256": "0d752a70c4b297cf9161aec973789803140e8a08b8a84d4685a1ec153d575fe2"
     },
     {
       "path": "handoff/README.md",
@@ -563,6 +563,10 @@
     {
       "path": "reviewer/spot-check.md",
       "sha256": "337caaf264266987e964f78234762d9505855103c277b27eb325d373cf669874"
+    },
+    {
+      "path": "skills/launch/SKILL.md",
+      "sha256": "de1f76de67013d0ebd64fea6d2c688f4f2e439ba6a4c0489fa964bda8a158f28"
     },
     {
       "path": "voice-bank/README.md",
