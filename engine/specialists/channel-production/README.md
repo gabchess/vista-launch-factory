@@ -9,7 +9,7 @@ Use this original prompt set to prepare complete blog, email, changelog and popu
 | Changelog | `changelog_editor` | [Changelog](prompts/changelog.md) |
 | In-app popup | `popup_designer` | [Popup](prompts/popup.md) |
 
-The operator supplies one `specialist-request/v1` packet and its existing route projection for each lane. Read the [shared protocol](../CONTRACT.md), selected role skill and reference bank, then the matching prompt. Source facts and exact claim spans travel separately from voice samples. A channel can use Vista's observed expression while the factual subject remains another explicitly named product.
+The operator supplies one `specialist-request/v1` packet and its existing route projection for each lane. Read the [shared protocol](../CONTRACT.md), selected role skill and reference bank, then the matching prompt. Source facts and exact claim spans travel separately from voice samples. A channel can use one voice-bank source's observed expression while the factual subject remains another explicitly named product.
 
 The [n8n preparation subworkflow](../../../automation/n8n/channel-production/README.md) can check a four-request batch and return these assignments with inline evidence. Its output is planning context for the operator. Run the existing workspace validator and invoke the selected role, or state that its protocol ran inline. Preparation itself creates no content and authenticates no decision.
 

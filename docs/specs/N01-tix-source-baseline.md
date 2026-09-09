@@ -20,7 +20,7 @@ Produce a checked baseline in `packages/camp_tix_launch_001/00_baseline`. Its `b
 
 ## Scope and decisions
 
-Use campaign `camp_tix_launch_001`, product `tixmancer` and requested reviewer `gabe`. Tixmancer is the internal validation product. Prospector remains the separate client-demonstration source. Vista and Reggie references supply expression context only when selected for that campaign; they cannot establish Tix facts or become the publisher's personal experiences.
+Use campaign `camp_tix_launch_001`, product `tixmancer` and requested reviewer `gabe`. Tixmancer is the internal validation product. Prospector remains the separate client-demonstration source. External style references supply expression context only when selected for that campaign; they cannot establish Tix facts or become the publisher's personal experiences.
 
 The source owner supplies the current Tix repository and revision. Freeze selected committed files through their Git revision, recording original repository-relative paths and exact file hashes. The older intake is comparison evidence. A dirty working tree, live page and test receipt each get their own dated entry rather than inheriting the commit's identity. A live page proves only the observed content or interaction described in its receipt. Code presence alone proves no deployed runtime behavior.
 
@@ -94,4 +94,4 @@ Completion means AC01 to AC12 pass and the baseline is ready for its recorded ne
 
 ## Outside N01
 
-Output drafting, new media, app code, n8n mutation, provider setup or spending, publishing, engineering-schema expansion and GitHub mutations are outside this evidence task. The operator owns board and Git changes under the existing authorization. The N01 phase does not close the later copy work in issue #26 or the client's source and Barry gates.
+Output drafting, new media, app code, n8n mutation, provider setup or spending, publishing, engineering-schema expansion and GitHub mutations are outside this evidence task. The operator owns board and Git changes under the existing authorization. The N01 phase does not close the later copy work in issue #26 or the client's source and Reviewer gates.

@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://vista.local/schemas/release-record.schema.json",
+  "$id": "https://launch-factory.local/schemas/release-record.schema.json",
   "title": "ReleaseRecord",
-  "description": "Canonical per-release state artifact for Launch Factory. One record per release folder; every run resumes from it. Only Barry (human) may move anything to approved; the writer seat never self-approves.",
+  "description": "Canonical per-release state artifact for Launch Factory. One record per release folder; every run resumes from it. Only Reviewer (human) may move anything to approved; the writer seat never self-approves.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -120,7 +120,7 @@
       "additionalProperties": false,
       "required": ["state", "locked_at"],
       "properties": {
-        "state": { "enum": ["drafted", "locked_by_barry"] },
+        "state": { "enum": ["drafted", "locked_by_reviewer"] },
         "locked_at": { "type": ["string", "null"] }
       }
     },
@@ -198,7 +198,7 @@
         "properties": {
           "gate": { "type": "string", "minLength": 1 },
           "decision": { "enum": ["approve", "request_changes", "reject", "hold"] },
-          "decided_by": { "enum": ["barry", "writer", "orchestrator"] },
+          "decided_by": { "enum": ["reviewer", "writer", "orchestrator"] },
           "at": { "type": "string", "minLength": 1 },
           "note": { "type": "string" }
         }

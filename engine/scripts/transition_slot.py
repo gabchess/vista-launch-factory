@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # STRUCTURAL_INTEGRITY_ONLY — applies permitted state transitions to one slot
 # of a release-record. Never publishes. `approved`/`packaged` require
-# --human-confirmed and are recorded as Barry gate decisions; the writer seat
+# --human-confirmed and are recorded as Reviewer gate decisions; the writer seat
 # never self-approves.
 """transition_slot RECORD SLOT STATUS [--human-confirmed] [--reason TEXT]
 
@@ -13,10 +13,10 @@ Permitted transitions:
   held      -> drafted      (un-hold: work begins; clears hold_reason)
   drafted   -> reviewed     (passed the four review gates)
   drafted   -> held         (--reason required)
-  reviewed  -> approved     (--human-confirmed required; records Barry gate)
+  reviewed  -> approved     (--human-confirmed required; records Reviewer gate)
   reviewed  -> held         (--reason required)
   reviewed  -> drafted      (request changes: back to the writer)
-  approved  -> packaged     (--human-confirmed required; records Barry gate)
+  approved  -> packaged     (--human-confirmed required; records Reviewer gate)
   approved  -> reviewed     (request changes after approve, before packaging)
 Everything else is refused.
 """
@@ -83,7 +83,7 @@ def transition_slot(
         )
     if status in HUMAN_CONFIRMED_TARGETS and not human_confirmed:
         raise SystemExit(
-            f"refused: `{status}` requires --human-confirmed — only Barry (human) "
+            f"refused: `{status}` requires --human-confirmed — only Reviewer (human) "
             "authorizes approved/packaged; the writer seat never self-approves"
         )
     if status == "held" and not reason:
@@ -101,7 +101,7 @@ def transition_slot(
             {
                 "gate": f"slot-{n}",
                 "decision": "approve",
-                "decided_by": "barry",
+                "decided_by": "reviewer",
                 "at": at,
                 "note": f"human-confirmed transition to {status}",
             }
@@ -118,7 +118,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("slot")
     parser.add_argument("status")
     parser.add_argument("--human-confirmed", action="store_true",
-                        help="required for approved/packaged — Barry's decision, recorded as a gate entry")
+                        help="required for approved/packaged — Reviewer's decision, recorded as a gate entry")
     parser.add_argument("--reason", default=None, help="hold_reason (required when status=held)")
     args = parser.parse_args(argv)
     record = json.loads(args.record.read_text(encoding="utf-8"))

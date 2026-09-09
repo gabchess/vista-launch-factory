@@ -23,7 +23,7 @@
     },
     {
       "check": "source_hash",
-      "id": "voice-vista-popup-adapted",
+      "id": "voice-external-popup-adapted",
       "status": "pass",
       "sha256": "6c5dd8238d70f90f090c41657639402ad8711553be34b419b68f0806c8854705"
     },

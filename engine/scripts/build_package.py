@@ -36,12 +36,12 @@ def manifest_status_for(campaign: dict[str, Any]) -> str:
     return "packaged"
 
 
-def render_barry_card(campaign: dict[str, Any], *, package_status: str) -> str:
-    """Fill a Barry review card from campaign + MANIFEST-facing state (not empty mustache)."""
+def render_reviewer_card(campaign: dict[str, Any], *, package_status: str) -> str:
+    """Fill a Reviewer review card from campaign + MANIFEST-facing state (not empty mustache)."""
     camp_id = campaign["id"]
     title = campaign["title"]
-    seat = campaign.get("barry", {}).get("seat", "Barry VP Marketing")
-    surface = campaign.get("barry", {}).get("surface", "Notion + Drive pack")
+    seat = campaign.get("reviewer", {}).get("seat", "Reviewer VP Marketing")
+    surface = campaign.get("reviewer", {}).get("surface", "Notion + Drive pack")
     claims_lock_done = campaign.get("status") not in PRE_CLAIMS_LOCK_STATUSES
     claims_state = (
         "RECORDED (campaign past claims_gate)"
@@ -77,22 +77,22 @@ def render_barry_card(campaign: dict[str, Any], *, package_status: str) -> str:
     )
 
     lines = [
-        f"# Barry review card — {camp_id}",
+        f"# Reviewer review card — {camp_id}",
         "",
         f"**Campaign:** {camp_id} — {title}",
-        f"**Seat:** {seat} (writer ≠ Barry)",
+        f"**Seat:** {seat} (writer ≠ Reviewer)",
         f"**Surface:** {surface}",
         f"**Package status:** `{package_status}`",
         f"**Campaign status:** `{campaign.get('status')}`",
         f"**Claims Lock:** {claims_state}",
         f"**First real (non-HELD) spot-check:** {first_real_label}",
-        f"**Fixture label:** `{campaign.get('fixture_label') or '(real Reggie folder)'}`",
+        f"**Fixture label:** `{campaign.get('fixture_label') or '(real customer folder)'}`",
         "",
         "## Honesty",
         "",
         (
             "This package is a **pre-Claims-Lock review bundle**. "
-            "Barry Claims Lock is still required before pack-approve."
+            "Reviewer Claims Lock is still required before pack-approve."
             if not claims_lock_done
             else "Claims Lock is recorded on the campaign; proceed to pack-approve gates."
         ),
@@ -112,8 +112,8 @@ def render_barry_card(campaign: dict[str, Any], *, package_status: str) -> str:
         "- Changelog (slot 4): `04_changelog/`",
         "- Claim ledger + sources: `provenance/`",
         "- Honesty table: `honesty/still-needs-human.md`",
-        "- Pack-approve template: repo `barry/approve-pack-template.md`",
-        "- Claims Lock template: repo `barry/claims-lock-template.md`",
+        "- Pack-approve template: repo `reviewer/approve-pack-template.md`",
+        "- Claims Lock template: repo `reviewer/claims-lock-template.md`",
         "",
         "## Decision",
         "",
@@ -125,7 +125,7 @@ def render_barry_card(campaign: dict[str, Any], *, package_status: str) -> str:
         "",
         "- Slack thumbs / emoji as Claims Lock or pack approve",
         "- Auto-publish / one-click ship",
-        "- HubSpot send (sandbox draft-only only after Barry pack approve)",
+        "- HubSpot send (sandbox draft-only only after Reviewer pack approve)",
         "- Inventing pricing, seats, or dollar-savings claims",
         "",
     ]
@@ -189,7 +189,7 @@ def build_package(
     note = "STOP — humans publish out of band"
     if pkg_status == "review_ready_pre_claims_lock":
         note = (
-            "STOP — pre-Claims-Lock review bundle; Barry Claims Lock still required "
+            "STOP — pre-Claims-Lock review bundle; Reviewer Claims Lock still required "
             "before pack-approve; humans publish out of band"
         )
 
@@ -199,13 +199,13 @@ def build_package(
         "fixture_label": campaign.get("fixture_label"),
         "status": pkg_status,
         "auto_publish": False,
-        "barry_seat": campaign["barry"]["seat"],
+        "reviewer_seat": campaign["reviewer"]["seat"],
         "hubspot_sandbox": campaign.get("hubspot_sandbox"),
         "note": note,
     }
     (root / "MANIFEST.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
-    (root / "BARRY.md").write_text(
-        render_barry_card(campaign, package_status=pkg_status), encoding="utf-8"
+    (root / "REVIEWER.md").write_text(
+        render_reviewer_card(campaign, package_status=pkg_status), encoding="utf-8"
     )
     return root
 

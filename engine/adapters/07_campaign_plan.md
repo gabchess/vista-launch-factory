@@ -29,7 +29,7 @@ channel, each pointing at an artifact slot that exists-or-is-held.
   the hold reason in `notes` and is marked HELD. The plan never fakes coverage
   for a slot that does not exist.
 - **UTM per cell** (`utm_source`, `utm_medium`, `utm_campaign` = campaign id).
-- **No publish.** The plan is a review artifact inside the Barry pack. Sending,
+- **No publish.** The plan is a review artifact inside the Reviewer pack. Sending,
   scheduling, or posting is human, out of band, after pack approve.
 
 ## Validation
@@ -40,8 +40,8 @@ cells present (HELD cells still appear, with hold notes). The release campaign
 must also carry a slot-7 `campaign_plan` artifact entry (exists-or-held, same
 rule as slots 1 to 6).
 
-## Barry gate
+## Reviewer gate
 
 The Campaign Plan is approved inside the same pack-approve gate as the six
-slots: one card, one WIP=1 queue. Writer drafts it; Barry approves it; no
+slots: one card, one WIP=1 queue. Writer drafts it; Reviewer approves it; no
 one self-approves.

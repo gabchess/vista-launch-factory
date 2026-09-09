@@ -2,7 +2,7 @@
   "schema_version": "asset-review-binding/v1",
   "asset_id": "email-lead_agency",
   "version": 1,
-  "context_digest": "92435ee1ede2fd60c2c97b170ff68a5e2835e2ce2d086ea9720c9781b8558376",
+  "context_digest": "7aae4acb16afd4b55988d30c0fef8bee9cb0bd3055671ba9d39fc986e9805f3d",
   "files": [
     {
       "path": "email/lead_agency.html",
@@ -10,12 +10,12 @@
     },
     {
       "path": "email/lead_agency.json",
-      "sha256": "a7f0ef4f5b3fb98a7dd4995f8ff58d1ad4cc8fc64098ec84611de76228f92efb"
+      "sha256": "22c7e2b982825c6f836582c66fe756b0437f1927a6865182887b0a7a6510be8b"
     },
     {
       "path": "email/lead_agency.md",
       "sha256": "f746f174f602a1ad6337f19c2be1aa1098e8c4b3f31356ad79e8873f7cccf960"
     }
   ],
-  "sha256": "a3ed2ed19b47263436c3d222530ef41158d6d8266ab81b60d55f747f808b7119"
+  "sha256": "4d7a3c63a15150a71084c002ab0ce0f11342c00c6d70d327eddd34f00f867687"
 }

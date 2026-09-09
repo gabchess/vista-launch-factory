@@ -1,35 +1,71 @@
-# Provenance: Voice Bank (INTERIM per ADR 0015)
+# Provenance: Voice Bank
 
-**Collection date:** 2026-09-07 (all items retrieved_date 2026-09-07).
-**Collector:** an internal research agent, for the Vista Launch Factory project.
-**Status:** INTERIM voice bank. Superseded when Vista's real brand guide arrives (ADR 0015).
+Fill this in once you build a real corpus in `corpus/`. It is the record of
+how you collected the material the tone-and-style brief is derived from, so a
+reviewer (or a future teammate) can check the brief's claims against a real
+paper trail instead of taking them on faith.
 
-## Method
+## What to record
 
-- **Web research tools only:** `web_search` (queries: `site:vistasocial.com insights`, `"Reggie Azevedo" "Vista Social"`, `site:x.com OR site:twitter.com vistasocialapp`, `site:linkedin.com/posts "Vista Social"`, `site:linkedin.com/posts/reggieaze`) and `web_extract` (direct fetch + text extraction of public URLs).
-- **One internal fixture:** the Barry approval-queue email, from `vista-launch-factory/fixtures/vista-work/sources/barry_email_transcript.txt`, internal email provided by Reggie, used as voice seed per ADR 0015. It is the only non-public item and is labeled as such in corpus item `01`. In the public repository the verbatim text is withheld: the fixture and corpus item `01` hold a paraphrased source record that preserves the cited product facts and voice characteristics.
-- **Excerpts are verbatim,** with one exception: corpus item `01` (the internal Barry email) is a paraphrase in the public repository and says so inline. For public-source items, where extraction introduced artifacts (line-break splits in headlines, mojibake on LinkedIn emoji), wording was preserved and artifacts normalized or marked `[sic]`. Elisions in long posts are explicit `[…]`. Nothing else is paraphrased inside an excerpt block.
-- **Login walls respected:** no logins were used anywhere. LinkedIn public-post views and search-indexed profile data were the limit; anything behind a login was logged in `gaps.md` instead of guessed. Instagram snippet (item `25`) is from a search index, marked LOW CONFIDENCE.
-- **No fabrication:** zero invented quotes. Items that could not be verified as real and current were excluded and noted in `gaps.md`.
+- **Collection date(s).** When each item was retrieved. Corpus items age; a
+  three-year-old blog post is weaker evidence of current voice than last
+  month's.
+- **Collector.** Who or what gathered the corpus (a person, a research
+  agent). Say so plainly if a tool did the collecting.
+- **Method.** Exactly what you did: which pages you pulled from, which search
+  queries you ran, whether you used a scraper or copied by hand. If you used
+  an internal document someone shared with you (an email, a Slack export),
+  name that explicitly and separately from public-web collection.
+- **What you excluded and why.** Logins you did not use, paywalls you did not
+  cross, platforms you decided not to attempt. This belongs here or in
+  `gaps.md`; do not silently omit it.
+- **Fabrication check.** A one-line statement that nothing in the corpus is
+  an invented or paraphrased-as-verbatim quote, except where explicitly
+  marked (see below).
+- **Corpus inventory.** A table of item counts by source type and by voice
+  attribution (company-voiced vs. a named individual's byline), so gaps in
+  channel or author coverage are visible at a glance.
 
-## Guarantees
+## Guarantees to state and hold to
 
-- **Public sources only** (except the single Barry fixture, provided to the project by Reggie).
-- **No Vista personal data:** no private customer data, no employee personal information, no contact details. Reggie's public professional headline/location as indexed by search engines is the most personal data present.
-- **No scraped private content:** nothing behind a login, paywall, or bot-wall was circumvented.
-- **Read-only discipline:** the vista-launch-factory repo was not modified; only the one fixture file was read. All work lives in the voice-bank staging workspace.
+- **Public sources only**, with the single exception of a non-public seed
+  item explicitly provided to you for this purpose (label it as such, and
+  paraphrase rather than reproduce it verbatim if the repository is public).
+- **No private personal data**, beyond what a person has made public
+  themselves.
+- **No login or paywall circumvention.** Anything behind one goes in
+  `gaps.md`, not in the corpus.
+- **Excerpts are verbatim**, aside from the one labeled exception above.
+  Where extraction introduces artifacts (broken line wraps, mangled
+  characters), preserve the wording and mark artifacts `[sic]`; mark
+  elisions in long items `[...]`.
 
-## Corpus inventory (25 items)
+## Worked example (fictional, for shape only)
 
-| source_type | count | items |
-|---|---|---|
-| email | 1 | 01 (Barry seed) |
-| website | 12 | 02 to 11, 23, 24 |
-| social (X + podcast transcript + Instagram snippet) | 8 | 12 to 16, 21, 22, 25 |
-| linkedin | 4 | 17 to 20 |
+The block below shows the shape of a filled-in provenance record for a
+fictional B2B product, Quorum Desk. Replace it entirely with your own.
 
-Voice attribution: 20 items company-voiced (Vista Social), 5 items Reggie-voiced (11, 20, 21, 22, 25, labeled in each file's notes), 1 Barry-voiced seed (01). Item 25 is dual-purpose (Reggie personal social). Podcast items 21 to 22 are Reggie spoken; the podcast host is Barry (Plugable).
+> **Collection date:** 2026-01-14 (all items retrieved that date).
+> **Collector:** the product marketing lead, by hand.
+> **Method:** direct copy from quorumdesk.example's public site (homepage,
+> pricing page, three blog posts) and the last four posts on the company
+> LinkedIn page. One internal onboarding email, shared by the founder as a
+> voice seed, is included as item `01` and paraphrased in this repository.
+> **Excluded:** the company's private Slack, its customer newsletter archive
+> (no export available yet, see `gaps.md`), and any personal social accounts
+> of employees.
+> **Fabrication check:** no invented quotes; two items with truncated
+> LinkedIn text are marked with trailing `[...]`.
+>
+> | source_type | count |
+> |---|---|
+> | website | 5 |
+> | blog | 3 |
+> | linkedin | 4 |
+> | email | 1 (paraphrased seed) |
 
 ## Derivation chain
 
-`tone-and-style-brief.md` is derived **only** from the corpus files; every observation cites the corpus filename(s) it came from. `gaps.md` records what could not be collected and what to request from Reggie.
+State plainly that `tone-and-style-brief.md` is derived only from the corpus
+files, with every observation citing the corpus filename(s) it came from, and
+that `gaps.md` records what could not be collected.

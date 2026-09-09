@@ -19,7 +19,7 @@ instead. See `claude/README.md`.
 
 **Symptom:** a user or the model proposes "just publish" or "send the email."
 
-**Fix:** refuse. That needs Barry's human review and authorized tooling. Re-read
+**Fix:** refuse. That needs Reviewer's human review and authorized tooling. Re-read
 [TRUST-PRIVACY-AND-AUTHORITY.md](TRUST-PRIVACY-AND-AUTHORITY.md) and the skill's
 "Trust / Do-not" section.
 

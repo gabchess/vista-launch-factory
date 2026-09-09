@@ -1,10 +1,10 @@
 {
-  "fixture_label": "LABELLED_FIXTURE_NOT_REAL_VISTA_PRODUCT",
+  "fixture_label": "LABELLED_FIXTURE_GENERIC_PLACEHOLDER",
   "assets": [
     {
       "id": "UI_SCREEN_A",
       "path": "PLACEHOLDER_FOOTAGE/ui_screen_a.mp4",
-      "notes": "fixture only — replace with Reggie footage"
+      "notes": "fixture only — replace with customer-supplied footage"
     }
   ]
 }

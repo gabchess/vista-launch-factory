@@ -1,8 +1,8 @@
 # Example 03: Held-slot honesty (fixture)
 
 **Fixture-only walkthrough** using the Quorum Desk mock GTM ship folder
-(`engine/fixtures/mock-gtm-ship/`). Synthetic demo. Not a real Vista Social
-feature.
+(`engine/fixtures/mock-gtm-ship/`). Synthetic demo, not a real feature of any
+live product.
 
 ## Situation
 
@@ -14,8 +14,8 @@ fixture's `sources/footage_index.json` points at placeholders only.
 ## What the pack does
 
 1. **HELD-skip, do not fabricate.** Each held slot ships as an explicit HELD
-   stub with a hold reason, the same shape as the real spine run output
-   (`packages/camp_vista_work_001/*/HELD.txt`):
+   stub with a hold reason, the same shape as a real spine run's output
+   (a `HELD.txt` file per slot):
    - Slot 1, HELD: no real Loom/UI footage; demo assets must not enter the
      claim ledger (ADR 0001).
    - Slot 5, HELD: no real login footage/Lottie source; held for claim-safety.
@@ -23,7 +23,7 @@ fixture's `sources/footage_index.json` points at placeholders only.
 2. **The honesty doc travels with the package**
    (`engine/honesty/still-needs-human.md` shape): what still needs a human,
    what is held, and why.
-3. **The Barry pack-approve card shows the holds**: the slot table lists
+3. **The Reviewer pack-approve card shows the holds**: the slot table lists
    1/5/6 as "HELD-skip," never as approved artifacts.
 4. **The package summary says it plainly:** three real drafts + cadence, three
    held slots. Never "all six review-ready."

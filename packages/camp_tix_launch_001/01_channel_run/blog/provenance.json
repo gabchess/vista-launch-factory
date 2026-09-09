@@ -6,19 +6,19 @@
   "product_id": "tixmancer",
   "campaign_id": "camp_tix_launch_001",
   "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
-  "voice_profile": "vista-blog-adapted-for-tix-v1",
+  "voice_profile": "external-blog-adapted-for-tix-v1",
   "request": {
     "path": "../requests/blog.json",
-    "sha256": "fdb6cf011089a6bdc17115d0543e5e37d3edb8121f6f731c3ec6286f825e8377"
+    "sha256": "896fa7c5e2365233c462211add8c2c1773792eb7a4abb63e00ca0d0bc0585d7a"
   },
   "route": {
     "path": "../routing/blog.json",
     "sha256": "418db2726e37150ae2c74811f2becee09092bace73a4d3b21788551a2256648e",
-    "context_digest": "c546eb1f4913e1d0a82cd2f126812fec6488f16ea49333970a2409240f538085"
+    "context_digest": "d5e4fea0022cfab1983b6c866ed774e0da6fa106abc06bba52deb70ea71a164b"
   },
   "drafting_authority": {
     "path": "../AUTHORIZATION.md",
-    "sha256": "5477c7fcd448054ee1712dae2556d2ed32c4ab198a2c8e7cb8924b259d494c1e",
+    "sha256": "ed1895fee6b9c944f4dde5339b10be2015f3c6c6e28da1202c9c760c521a5d54",
     "scope": "The actual user authorized all four drafts now and one consolidated review. Earlier baseline pause remains historical; this draft does not grant Claims Lock or final approval."
   },
   "claim_ledger": {
@@ -42,9 +42,9 @@
       "kind": "fact"
     },
     {
-      "id": "voice-vista-blog-adapted",
+      "id": "voice-external-blog-adapted",
       "path": "01_channel_run/voice/blog.md",
-      "sha256": "223badb41bf946125b62748dfc15a6070da90ffc81c48e450c2fe0223a707dad",
+      "sha256": "3c1252634add0e18996abdb7318ec3ecb06575427531c2cc924b2a8869d0b95e",
       "product_id": "tixmancer",
       "kind": "voice"
     }
@@ -616,7 +616,7 @@
         "proposed_byline"
       ],
       "claim_ids": [],
-      "basis": "Publisher assignment in the selected writing brief; no named Vista author or invented founder identity."
+      "basis": "Publisher assignment in the selected writing brief; no named external-source author or invented founder identity."
     },
     {
       "fields": [
@@ -645,23 +645,19 @@
   ],
   "external_style_sources": [
     {
-      "url": "https://vistasocial.com/insights/vista-work-social-media-project-management/",
-      "published": "2026-08-24",
+      "reference": "External feature-launch article 1 of 4, observed 8 September 2026.",
       "used_for": "Primary practical launch structure and screenshot placement."
     },
     {
-      "url": "https://vistasocial.com/insights/introducing-advanced-social-listening/",
-      "published": "2026-06-10",
+      "reference": "External feature-launch article 2 of 4, observed 8 September 2026.",
       "used_for": "Action-led headings and specific reader decisions."
     },
     {
-      "url": "https://vistasocial.com/insights/ai-image-and-video-generation/",
-      "published": "2026-06-01",
+      "reference": "External feature-launch article 3 of 4, observed 8 September 2026.",
       "used_for": "Use a product demonstration where useful; no transfer of founder identity or metrics."
     },
     {
-      "url": "https://vistasocial.com/insights/social-media-project-management/",
-      "published": "2026-08-26",
+      "reference": "External feature-launch article 4 of 4, observed 8 September 2026.",
       "used_for": "Worked hypothetical example and practical detail."
     }
   ],

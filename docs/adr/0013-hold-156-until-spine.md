@@ -12,8 +12,8 @@ after those three are ready. No zoom-on-still as hero video (existing hard stop 
 
 Fixture-grade fake video competes with the spine for the two days we have. The recorded
 demo proves the machine on the slots that are real (blog, email segments, changelog,
-cadence) and shows HELD honesty for the rest, which is itself the judgment Reggie is
-buying. Demo polish (fictional Vista Work UI, labeled on camera per GRILL-LOCK #5) still
+cadence) and shows HELD honesty for the rest, which is itself the judgment the buyer is
+buying. Demo polish (fictional product UI, labeled on camera per GRILL-LOCK #5) still
 exists for the cool-open cut; it never enters the Claim Ledger.
 
 ## Consequences

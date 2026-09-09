@@ -6,7 +6,7 @@
   "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
   "deliverable": "changelog",
   "stage": "draft",
-  "voice_profile": "vista-changelog-adapted-for-tix-v1",
+  "voice_profile": "external-changelog-adapted-for-tix-v1",
   "sources": [
     {
       "id": "src-readme",
@@ -30,9 +30,9 @@
       "kind": "fact"
     },
     {
-      "id": "voice-vista-changelog-adapted",
+      "id": "voice-external-changelog-adapted",
       "path": "01_channel_run/voice/changelog.md",
-      "sha256": "cc8a4c28c2984548724d3accbbc7f2f2bd5e48163d5d0e728c8493cf93031593",
+      "sha256": "d2d5e1d8e360bf7c0708fc0554eae9545937d55b149cfdb2afc3ee5e3a64ba9d",
       "product_id": "tixmancer",
       "kind": "voice"
     }
@@ -96,7 +96,7 @@
     }
   ],
   "voice_source_ids": [
-    "voice-vista-changelog-adapted"
+    "voice-external-changelog-adapted"
   ],
   "artifacts": [],
   "requested_reviewer": "gabe"

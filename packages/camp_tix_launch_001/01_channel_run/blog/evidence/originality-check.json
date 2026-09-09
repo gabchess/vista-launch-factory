@@ -3,7 +3,7 @@
   "article_sha256": "224babd3f960ee17afdb3c51d8f0826756c6523f39f8fa501cc9721f80de0599",
   "comparisons": [
     {
-      "source": "vista-work",
+      "source": "reference-work",
       "source_text_sha256": "df4e3b6ce3b2a480f4de6aa1b120a8d574bfb390897b3ec0b61baabcd8a52ed1",
       "matching_eight_word_sequences": 0,
       "matches": []

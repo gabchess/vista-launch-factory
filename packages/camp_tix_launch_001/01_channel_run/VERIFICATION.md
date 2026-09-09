@@ -4,7 +4,7 @@ Verified on 8 September 2026. New drafts are awaiting Gabe. These checks do not 
 
 ## Source and writing
 
-The existing specialist router accepted all five current packets: blog, email, changelog, popup and campaign. It checked the selected source files, exact SHA-256 values, Unicode quote spans and voice references against the frozen Tix workspace. Vista references are original style analysis, separate from product claims.
+The existing specialist router accepted all five current packets: blog, email, changelog, popup and campaign. It checked the selected source files, exact SHA-256 values, Unicode quote spans and voice references against the frozen Tix workspace. The external style references are original style analysis, separate from product claims.
 
 The blog has 837 whitespace-separated Markdown words and 29 mapped content blocks. Its own verifier passed 92 checks. Both article images came from the exact accepted creative and were inspected. The metadata includes a 57-character SEO title and a 142-character description. AgentsKit's brand and SEO helpers ran; their generic keyword suggestions did not override source accuracy or the observed feature-post format. See [blog review](blog/REVIEW.md).
 

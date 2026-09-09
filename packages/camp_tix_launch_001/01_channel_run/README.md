@@ -1,6 +1,10 @@
 # Tix: channel production and review
 
-This run completes the four missing output categories as drafts. Tix provides product facts; Vista Social's actual Insights, changelog and login pages provide the explicitly requested channel style. The two accepted video renditions remain unchanged.
+This run completes the four missing output categories as drafts. Tix provides product facts; a set of externally observed feature-launch, changelog and login pages provided the explicitly requested channel style, chosen for their structure rather than their brand. The two accepted video renditions remain unchanged.
+
+## Note on this published copy
+
+This package was rewritten on 2026-09-09 to remove references to the client whose channels originally guided the writing style, before this repository was made public. The voice guides, the source/authorization records and their integrity hashes were all updated together so the package stays internally consistent. Its approval records reflect that rewrite: no human decision is claimed over content nobody has actually reviewed. Do not mistake this for the untouched original audit trail; treat the rewritten bytes as the current record.
 
 Open [review.html](review.html) through `serve_review.py` to see all outputs in one place. The page includes the full article, five email previews, changelog and popup. A calendar connects them with proposed dates and written social drafts. Source, voice, version and hash records stay next to each asset.
 

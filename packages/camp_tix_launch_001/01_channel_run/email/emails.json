@@ -5,7 +5,7 @@
   "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
   "version": 1,
   "state": "draft_for_human_review",
-  "voice_profile": "vista-email-adapted-for-tix-v1",
+  "voice_profile": "external-email-adapted-for-tix-v1",
   "sender_name": "The Tix team",
   "greeting": "Hi there,",
   "signoff": "The Tix team",
@@ -83,7 +83,7 @@
   ],
   "review_notes": {
     "audience_status": "Five required test segments. Tix customer lists, paid plans and an affiliate program are unverified; these labels assert no existing commercial relationship. Customer variants use a returning-preview-reader context.",
-    "style_limit": "Vista public feature writing was inspected; no Vista newsletter corpus was available. Email expression is an adaptation, not a verified clone of a private newsletter.",
+    "style_limit": "Externally observed public feature writing was inspected; no matching newsletter corpus was available. Email expression is an adaptation, not a verified clone of a private newsletter.",
     "send_prerequisites": ["Gabe approves each exact segment version", "Verify waitlist collection at the canonical domain", "Map each segment to a real opted-in audience", "Configure sender identity, postal address, unsubscribe and preference URLs in the chosen ESP", "Verify actual release/access details for any production customer announcement"],
     "human_approved": false,
     "sent": false,

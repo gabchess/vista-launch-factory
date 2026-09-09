@@ -1,14 +1,23 @@
-# Voice Bank brief: INTERIM (ADR 0015)
+# Voice Bank brief: how voice checks work
 
-The live corpus has landed. Voice checks run against:
+Voice checks run against:
 
-- **Canonical brief:** `voice-bank/tone-and-style-brief.md` (INTERIM; 12 adapter-checkable voice rules at the end, under "Voice rules for adapters").
-- **Corpus:** `voice-bank/corpus/`: 25 verbatim items (Barry email seed, vistasocial.com pages, insights blog, public X/LinkedIn, Reggie podcast transcript) with source URLs and retrieval dates.
-- **Gaps:** `voice-bank/gaps.md`: what is missing vs a real brand guide (more Barry emails, Reggie's current written voice, approved-claims list). Ask Reggie; do not invent.
-- **Provenance:** `voice-bank/provenance.md`: public-only collection, no logins, no fabricated quotes.
+- **Canonical brief:** `voice-bank/tone-and-style-brief.md`, derived from your
+  own corpus, ending in a numbered "Voice rules for adapters" section.
+- **Corpus:** `voice-bank/corpus/`, the product's own writing you collected
+  yourself, each item with a source and a retrieval date. See
+  `voice-bank/README.md` for how to build it.
+- **Gaps:** `voice-bank/gaps.md`: what is missing versus a real brand guide.
+  Ask the brand owner for what closes the gap; do not invent.
+- **Provenance:** `voice-bank/provenance.md`: how the corpus was collected,
+  and the guarantees that collection meets (public sources, no fabricated
+  quotes, no login circumvention).
 
-Rules while interim:
+Rules while the bank is interim (before a canonical brand guide supersedes
+it):
 
 1. Every voice judgment cites a corpus item or a brief rule by number.
-2. The brief is a warning system, not a truth oracle: it flags drift; Barry decides.
-3. When Vista's real brand guide arrives (issue #6), it supersedes this brief; keep the corpus, re-derive, bump the version.
+2. The brief is a warning system, not a truth oracle: it flags drift; the
+   human reviewer decides.
+3. When a canonical brand guide arrives, it supersedes this brief: keep the
+   corpus, re-derive the brief against the real guide, and bump its version.

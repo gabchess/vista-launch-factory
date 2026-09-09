@@ -27,7 +27,7 @@ back, keep a separate checkout of the earlier version, and back up local changes
 you remove this layer's generated project files.
 
 Configure and verify provider access with your own account on this host. Nothing in this
-pack auto-publishes, auto-sends, or auto-retries a paid call. Barry's or Gabe's actual
+pack auto-publishes, auto-sends, or auto-retries a paid call. The human reviewer's actual
 decisions stay separate from a model's recommendation and from the legacy structural
 record.
 

@@ -6,7 +6,7 @@
   "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
   "deliverable": "email_segments",
   "stage": "draft",
-  "voice_profile": "vista-email-adapted-for-tix-v1",
+  "voice_profile": "external-email-adapted-for-tix-v1",
   "sources": [
     {
       "id": "src-readme",
@@ -30,9 +30,9 @@
       "kind": "fact"
     },
     {
-      "id": "voice-vista-email-adapted",
+      "id": "voice-external-email-adapted",
       "path": "01_channel_run/voice/email.md",
-      "sha256": "945529e9b6e63cae53b6bb4e3b4fb46d2683c84d7e3bb6611860bbe6247c1589",
+      "sha256": "5c533ec4882ee35ce9da6b96e578b6607d97338aabe91a9664a74e83005f8a5f",
       "product_id": "tixmancer",
       "kind": "voice"
     }
@@ -96,7 +96,7 @@
     }
   ],
   "voice_source_ids": [
-    "voice-vista-email-adapted"
+    "voice-external-email-adapted"
   ],
   "artifacts": [],
   "requested_reviewer": "gabe"

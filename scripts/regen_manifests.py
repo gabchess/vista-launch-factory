@@ -5,7 +5,7 @@
 #
 # Inclusion policy (v0.2.0 — repo root IS the pack, ADR 0012):
 #   - release-manifest.json: ALL shipped files under the repo root
-#     (envelope + codex/ + claude/ ZIP + engine/ + barry/ + docs/ +
+#     (envelope + codex/ + claude/ ZIP + engine/ + reviewer/ + docs/ +
 #     maintainer-source/ + voice-bank/ + this script), EXCLUDING:
 #       * .git, .venv, .pytest_cache, __pycache__, .DS_Store
 #       * runs/ and packages/ (run outputs, not pack surface)
@@ -39,7 +39,7 @@ EVIDENCE_BOUNDARY = (
     "entry points, protocols and offline routing checks (ADR 0017). Does not "
     "prove host invocation, provider access, human authentication, semantic "
     "quality or customer outcomes. Historical fixtures and the Claude 0.2.0 "
-    "ZIP retain their legacy scope. Vista voice remains interim (ADR 0015). "
+    "ZIP retain their legacy scope. Voice-bank content remains interim (ADR 0015). "
     "See HOST-MATRIX.md."
 )
 

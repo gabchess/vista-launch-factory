@@ -6,7 +6,7 @@
   "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
   "deliverable": "blog",
   "stage": "draft",
-  "voice_profile": "vista-blog-adapted-for-tix-v1",
+  "voice_profile": "external-blog-adapted-for-tix-v1",
   "sources": [
     {
       "id": "src-readme",
@@ -30,9 +30,9 @@
       "kind": "fact"
     },
     {
-      "id": "voice-vista-blog-adapted",
+      "id": "voice-external-blog-adapted",
       "path": "01_channel_run/voice/blog.md",
-      "sha256": "223badb41bf946125b62748dfc15a6070da90ffc81c48e450c2fe0223a707dad",
+      "sha256": "3c1252634add0e18996abdb7318ec3ecb06575427531c2cc924b2a8869d0b95e",
       "product_id": "tixmancer",
       "kind": "voice"
     }
@@ -96,7 +96,7 @@
     }
   ],
   "voice_source_ids": [
-    "voice-vista-blog-adapted"
+    "voice-external-blog-adapted"
   ],
   "artifacts": [],
   "requested_reviewer": "gabe"

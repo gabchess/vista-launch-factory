@@ -13,6 +13,6 @@ Scripts must **not**:
 - publish or send;
 - call HubSpot / CMS / social APIs to mutate production;
 - invent claims;
-- bypass Barry Claims Lock or pack approve.
+- bypass Reviewer Claims Lock or pack approve.
 
 A1 ships this README only, no executable helpers yet.

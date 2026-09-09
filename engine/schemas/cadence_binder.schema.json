@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://vista.local/schemas/cadence_binder.schema.json",
+  "$id": "https://launch-factory.local/schemas/cadence_binder.schema.json",
   "title": "CadenceBinder",
   "type": "object",
   "additionalProperties": false,

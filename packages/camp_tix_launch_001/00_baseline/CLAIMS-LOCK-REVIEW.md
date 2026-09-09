@@ -67,7 +67,10 @@ The exact waitlist CTA remains selected. Its collection flow needs verification 
 ## Exact review subjects
 
 - Claim Ledger v1: `4199b7f50f4fefaed1e5edf925de06fc4d12e342b36c802014d2d2ea44675ddb`
-- Brief: `34e28a0def9cbd0016484b5beb263a4d05ac7baa9b37e3eabb7c284d5a7214a1`
-- Voice profile: `b42e0f17a65d172e5c8f7a264d6044e231df85718d9410a83a78fcf07e3ace40`
+- Brief: `396829e07cf904060216c3252a8a76ac4da7d62a9ad111c2b32055a8480436da`
+- Voice profile: `8c432728bbd52005a1ef39ae25e0faab3148f37583809e1fb32826e22aa612dc`
 
 Decision is pending. The next action after Gabe’s review is N02, the complete blog draft.
+
+**Rewrite note:** BRIEF.md and VOICE-PROFILE.md were rewritten on 2026-09-09 to remove client-specific style references before public release. This review packet points at the rewritten bytes above. No human decision has been recorded on either the original or the rewritten bytes; the decision below is still pending.
+

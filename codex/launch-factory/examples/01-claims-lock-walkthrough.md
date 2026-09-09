@@ -2,7 +2,8 @@
 
 **All material below is the Quorum Desk mock GTM ship fixture**
 (`engine/fixtures/mock-gtm-ship/`). Quorum Desk is a synthetic demo product,
-**not** a real Vista Social feature. Every claim shown is labelled fixture.
+**not** a real feature of any live product this runs for. Every claim shown
+is labelled fixture.
 
 ## Input
 
@@ -21,7 +22,7 @@ First ask: `Use Launch Factory. Run on this release folder.`
    video assets are shippable in this fixture.
 2. **Retrieve.** Pull candidate claims from transcript + outline only.
    Demo assets (the ZIP, the one-pager) are **not** evidence: ADR 0001.
-3. **Draft the Claims Lock card for Barry**, and stop. No adapter draft yet.
+3. **Draft the Claims Lock card for Reviewer**, and stop. No adapter draft yet.
 
 ## The fixture Claims Lock draft (shape)
 
@@ -36,7 +37,7 @@ Allowed claims, each with an evidence span from fixture sources:
 
 Forbidden (from `claim_hints.md`, fixture):
 
-- Any Vista Social pricing, seat counts, or roadmap dates
+- Any pricing, seat counts, or roadmap dates
 - Win-probability scores or guaranteed outcomes
 - That slots 1/5/6 Launch Factory outputs are complete from this fixture
 
@@ -44,7 +45,7 @@ Kill-switch: not armed. Slots 1/5/6: **HOLD**, named on the card.
 
 ## Expected stop point
 
-The run hands Barry the card (`barry/claims-lock.md` shape) and waits. Adapters
+The run hands Reviewer the card (`reviewer/claims-lock.md` shape) and waits. Adapters
 fan out only after the written Claims Lock approve. A Slack thumbs-up does not
 count.
 

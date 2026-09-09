@@ -19,7 +19,7 @@ def _minimal_campaign(**overrides):
                 "version": 1,
                 "path": f"adapters/{i:02d}_{t}.md",
                 "validation": "pass",
-                "barry_status": "pending",
+                "reviewer_status": "pending",
                 "held": False,
                 "hold_reason": None,
             }
@@ -29,7 +29,7 @@ def _minimal_campaign(**overrides):
         "title": "FIXTURE — FEATURE_NAME launch",
         "folder_id": "fixture/demo-release",
         "status": "drafting",
-        "fixture_label": "LABELLED_FIXTURE_NOT_REAL_VISTA_PRODUCT",
+        "fixture_label": "LABELLED_FIXTURE_GENERIC_PLACEHOLDER",
         "sources": {
             "loom": "sources/loom_transcript.txt",
             "transcript": "sources/loom_transcript.txt",
@@ -41,12 +41,12 @@ def _minimal_campaign(**overrides):
         "segments": {
             "leads": ["SMB", "Agency", "Reseller_Affiliate"],
             "customers": ["SMB", "Agency"],
-            "affiliate_rules": "FIXTURE — legal TBD from Reggie",
+            "affiliate_rules": "FIXTURE — legal TBD from the customer",
         },
         "artifacts": artifacts,
         "cadence_ref": "cadence_binder.json",
-        "barry": {
-            "seat": "Barry VP Marketing",
+        "reviewer": {
+            "seat": "Reviewer VP Marketing",
             "surface": "Notion + Drive pack",
             "wip": 1,
         },
@@ -82,7 +82,7 @@ def test_validate_campaign_allows_held_slot_without_path():
     camp["artifacts"][4]["path"] = None
     camp["artifacts"][4]["held"] = True
     camp["artifacts"][4]["hold_reason"] = "claim missing — hold on camera"
-    camp["artifacts"][4]["barry_status"] = "held"
+    camp["artifacts"][4]["reviewer_status"] = "held"
     result = validate_campaign(camp)
     assert result["ok"] is True
 

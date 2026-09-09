@@ -8,6 +8,6 @@ Add an importable n8n preparation subworkflow under `automation/n8n/ugc-app-reve
 
 The parent app and provider worker remain separate implementation work. They must resolve actual human authority, check file bytes, enforce spend limits and commit idempotent dispatch through a durable store. Existing production-job validators retain their scope. This preparation step never writes a legacy human-confirmed flag or manufactures approval events.
 
-The standalone recipe can describe a film up to 60 seconds. Vista's social slot remains capped at 30 seconds. A finished product-vision film does not establish live product functionality or live transaction execution. Production provenance and presentation notes retain those facts without forcing unrequested on-screen labels.
+The standalone recipe can describe a film up to 60 seconds. the target social slot remains capped at 30 seconds. A finished product-vision film does not establish live product functionality or live transaction execution. Production provenance and presentation notes retain those facts without forcing unrequested on-screen labels.
 
 Local and n8n test evidence belongs to each installation. A successful preparation run proves that inputs became a consistent work packet. The six-output app and paid video rendering require their own end-to-end evidence.

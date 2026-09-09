@@ -2,7 +2,7 @@
   "schema_version": "asset-review-binding/v1",
   "asset_id": "email-lead_smb",
   "version": 1,
-  "context_digest": "92435ee1ede2fd60c2c97b170ff68a5e2835e2ce2d086ea9720c9781b8558376",
+  "context_digest": "7aae4acb16afd4b55988d30c0fef8bee9cb0bd3055671ba9d39fc986e9805f3d",
   "files": [
     {
       "path": "email/lead_smb.html",
@@ -10,12 +10,12 @@
     },
     {
       "path": "email/lead_smb.json",
-      "sha256": "f877c2b859d75ab20d2b667736c3164b2dd3f3cf428e5b14205d8678c0499a3f"
+      "sha256": "48a4559f821295fe276b73906bc7cddec22f4791b9c34493aac24d59fb16624f"
     },
     {
       "path": "email/lead_smb.md",
       "sha256": "de9abf0ea3cb98a5fce7c2f0c81bca1aa809a9d287bdc1125aaca0a4d3f5cb03"
     }
   ],
-  "sha256": "e960205eb524d6fae6dc31a34b33f1f9091990f83c3a3523257df4a3bc66a1de"
+  "sha256": "b481b29a903a1acec0ba8305157817865e037e1432192d32c64b896c631c0784"
 }

@@ -66,7 +66,7 @@
     {
       "check": "selected_source_hash",
       "status": "pass",
-      "evidence": "voice-vista-blog-adapted"
+      "evidence": "voice-external-blog-adapted"
     },
     {
       "check": "exact_claim_span",

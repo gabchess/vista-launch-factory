@@ -34,8 +34,8 @@ test('invalid hashes and unsafe workspace paths hold the request', () => {
   const result = run([alter(x => {x.bindings.story.sha256 = 'approved'; x.bindings.story.uri = '../secrets';})])[0].json;
   assert.equal(result.status, 'needs_inputs'); assert.equal(result.prompts, undefined);
 });
-test('Vista social duration cap does not inherit the 60-second film allowance', () => {
-  const result = run([alter(x => x.deliverable_scope = 'vista_social_video')])[0].json;
+test('Social duration cap does not inherit the 60-second film allowance', () => {
+  const result = run([alter(x => x.deliverable_scope = 'campaign_social_video')])[0].json;
   assert.ok(result.issues.includes('duration_must_be_within_30_seconds'));
 });
 test('720p output request is held, without claiming upscaling occurred', () => {

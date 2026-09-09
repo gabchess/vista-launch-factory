@@ -2,7 +2,7 @@
 
 **Execution phase:** current user-authorized continuation. **Blocked by:** none. **Owner:** the operator, with the evidence editor. **Independent verifier:** a release verifier. **Specification:** [N01-tix-source-baseline.md](../specs/N01-tix-source-baseline.md).
 
-**Tracker mapping:** execute this phase through [#26: [A12] Voice pack refresh then copy lane pass](https://github.com/gabchess/vista-launch-factory/issues/26). Link [#6](https://github.com/gabchess/vista-launch-factory/issues/6) for source/access context and [#12](https://github.com/gabchess/vista-launch-factory/issues/12) for the actual client Claims Lock. The release verifier reconciles the board and keeps one live ready execution phase. This document does not claim that a label changed. Completing N01 leaves the later copy work and outstanding client gates open.
+**Tracker mapping:** execute this phase through [#26: [A12] Voice pack refresh then copy lane pass](https://github.com/gabchess/launch-factory/issues/26). Link [#6](https://github.com/gabchess/launch-factory/issues/6) for source/access context and [#12](https://github.com/gabchess/launch-factory/issues/12) for the actual client Claims Lock. The release verifier reconciles the board and keeps one live ready execution phase. This document does not claim that a label changed. Completing N01 leaves the later copy work and outstanding client gates open.
 
 ## Result
 
@@ -12,7 +12,7 @@ Create a first-writer baseline at `packages/camp_tix_launch_001/00_baseline`. It
 
 1. Read the specification, current source-owner findings and CHECKPOINT. Confirm the selected Tix commit and compare it with the older intake. Freeze selected committed files without mixing dirty working-tree changes into that revision. Keep live observations separately dated.
 2. Build the source manifest and claim register. Hash exact bytes and check each eligible quote using zero-based Unicode character offsets. Review whether the statement follows from the evidence. Preserve qualifiers and held claims.
-3. Select the Tix expression references and write a brief with publisher, reader, purpose, proposed angle, scope and CTA. Record the five requested email audiences as later test contexts. Keep Reggie/Vista expression material separate from factual proof and from the actual publisher's experiences.
+3. Select the Tix expression references and write a brief with publisher, reader, purpose, proposed angle, scope and CTA. Record the five requested email audiences as later test contexts. Keep external expression material separate from factual proof and from the actual publisher's experiences.
 4. Verify both current media files against the approved hashes in CHECKPOINT. Index the existing decisions and exact scope. Record the current claim set's actual Claims Lock state independently.
 5. Prepare strict `specialist-request/v1` source-review and blog-draft packets. Map their actual filenames in `baseline.json`. Both use `product_id: tixmancer`, `campaign_id: camp_tix_launch_001`, `deliverable: blog` and `requested_reviewer: gabe`. No blog artifact exists yet.
 6. Run the existing route helper for both requests with this baseline as the workspace. Record concrete commands/results, then complete the editorial claim/voice check. Deliver the baseline and the next decision or first-writer action.

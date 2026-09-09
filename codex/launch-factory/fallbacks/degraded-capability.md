@@ -15,7 +15,7 @@ Claude ZIP alone, plain chat host).
 ## What never degrades
 
 - **Claims Lock before fan-out.** The run still stops at the claims gate.
-- **Writer ≠ Barry.** Approval still requires Barry's written lock on a card.
+- **Writer ≠ Reviewer.** Approval still requires Reviewer's written lock on a card.
 - **No invented claims, features, limits, or pricing.** Evidence gaps stay
   gaps: a missing source narrows the draft, it never licenses invention.
 - **HELD honesty for slots 1/5/6.** Held slots stay named and held.
@@ -23,7 +23,7 @@ Claude ZIP alone, plain chat host).
 
 ## Chat-only Claims Lock draft shape
 
-When degraded, produce this portable card in chat for Barry to copy:
+When degraded, produce this portable card in chat for Reviewer to copy:
 
 ```
 CLAIMS LOCK (draft — chat-only mode; structural validators NOT run)
@@ -38,7 +38,7 @@ ALLOWED claims (each with evidence span):
 FORBIDDEN (never drafted):
   - <claim> — reason: <no evidence / pricing invention / ADR 0001>
 
-GAPS for Barry:
+GAPS for Reviewer:
   - <claim someone wants but no source supports — held, not invented>
 
 Kill-switch: armed / not armed

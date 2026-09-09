@@ -5,7 +5,7 @@
   "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
   "version": 1,
   "state": "draft_for_human_review",
-  "voice_profile": "vista-email-adapted-for-tix-v1",
+  "voice_profile": "external-email-adapted-for-tix-v1",
   "sender_name": "The Tix team",
   "greeting": "Hi there,",
   "signoff": "The Tix team",

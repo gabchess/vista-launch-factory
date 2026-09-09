@@ -35,7 +35,7 @@ REQUIRED_CADENCE_CHANNELS = [
 
 FORBIDDEN_STATUS_TRANSITIONS_NOTE = (
     "Validators do not publish. Forbidden: drafting→published; "
-    "awaiting_barry→sandbox without Barry approve."
+    "awaiting_reviewer→sandbox without Reviewer approve."
 )
 
 
@@ -71,11 +71,11 @@ def validate_campaign(
         if required not in types_seen:
             errors.append(f"missing required artifact type {required}")
 
-    barry = campaign.get("barry") or {}
-    if barry.get("wip") != 1:
-        errors.append("barry.wip must be 1 (WIP=1 awaiting_barry)")
-    if barry.get("seat") != "Barry VP Marketing":
-        errors.append("barry.seat must be 'Barry VP Marketing'")
+    reviewer = campaign.get("reviewer") or {}
+    if reviewer.get("wip") != 1:
+        errors.append("reviewer.wip must be 1 (WIP=1 awaiting_reviewer)")
+    if reviewer.get("seat") != "Reviewer VP Marketing":
+        errors.append("reviewer.seat must be 'Reviewer VP Marketing'")
 
     segs = campaign.get("segments") or {}
     if not segs.get("leads"):
@@ -84,9 +84,9 @@ def validate_campaign(
         errors.append("segments.customers must be present")
 
     hs = campaign.get("hubspot_sandbox") or {}
-    if hs.get("status") == "draft_only" and campaign.get("status") == "awaiting_barry":
+    if hs.get("status") == "draft_only" and campaign.get("status") == "awaiting_reviewer":
         errors.append(
-            "hubspot sandbox draft blocked while awaiting_barry (Apiana hygiene)"
+            "hubspot sandbox draft blocked while awaiting_reviewer (Apiana hygiene)"
         )
 
     return {"ok": len(errors) == 0, "errors": errors, "note": FORBIDDEN_STATUS_TRANSITIONS_NOTE}

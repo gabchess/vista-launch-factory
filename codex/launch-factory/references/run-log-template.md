@@ -26,11 +26,11 @@ fixture_label:     <"LABELLED_FIXTURE…" / "live sources" / "n/a">
 
 ## Claims Lock
 state:             draft | approved | rejected | kill-switch armed
-card_ref:          <barry/claims-lock.md copy location>
+card_ref:          <reviewer/claims-lock.md copy location>
 allowed_claims:    <count + claim ids>
 forbidden_claims:  <count + claim ids>
 gaps_escalated:    <claims held for missing evidence — never invented>
-decision_by:       <Barry / delegate name>
+decision_by:       <Reviewer / delegate name>
 decision_when:     <ISO 8601>
 decision_form:     written lock on card (Slack thumbs NOT accepted)
 
@@ -50,7 +50,7 @@ rounds_used:       <n> (cap 2, then escalate)
 failures:
   - artifact: <slot>
     finding: <unsupported claim / forbidden phrase / auto-publish language>
-    action:  <regenerated | escalated to Barry as gap>
+    action:  <regenerated | escalated to Reviewer as gap>
 retries:           <count per artifact>
 
 ## Gate decisions
