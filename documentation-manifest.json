@@ -202,7 +202,7 @@
     },
     {
       "path": "automation/n8n/channel-production/VALIDATION.md",
-      "sha256": "b275008679f02a857cdca9a8cc327ef8018574f3642b79097c5afb325f862a43"
+      "sha256": "5e78b724111f3f6a718171cb6bad75986f9458d52bc1932bdc4bf085a5717bab"
     },
     {
       "path": "automation/n8n/ugc-app-reveal/README.md",
@@ -342,7 +342,7 @@
     },
     {
       "path": "docs/adr/0017-specialist-routing-and-current-scope.md",
-      "sha256": "870a8a62be5e54c1e82db2a3b4637d37ae107da7d3ff8b7f41f9bf29d60ff625"
+      "sha256": "0b2b40a2912569dbefd0117a8fc7975ee6e30e4c34997a2ccd92374fd5d658ad"
     },
     {
       "path": "docs/adr/0018-ugc-app-reveal-preparation.md",
@@ -350,15 +350,7 @@
     },
     {
       "path": "docs/adr/0019-testable-app-and-next-milestone.md",
-      "sha256": "030dbcd1212e8f70ce368f77105ab9892add3012442c642c4925e7fc21e80ebc"
-    },
-    {
-      "path": "docs/specs/N01-tix-source-baseline.md",
-      "sha256": "df9bdb7c59bdccc8355686137835ec49c426f7449c7d59713cc7dd4b7e5ccd04"
-    },
-    {
-      "path": "docs/tickets/N01-tix-source-baseline.md",
-      "sha256": "9c3256d076c94e4867072751806a1bfc491624d1953ba3358d253464fba5a1b0"
+      "sha256": "42dc1074ed390946f453f4693ef70110265fad94c6795a98f5592ecedbe2f03d"
     },
     {
       "path": "engine/README.md",
@@ -534,7 +526,7 @@
     },
     {
       "path": "engine/specialists/video-production/recipes/ugc-app-reveal/README.md",
-      "sha256": "ec523acf7b7d4accb64150f2d12a656c4af9594fdf71ce93e62b7089c622895c"
+      "sha256": "1d5504aea6779e24245d45badfda6b2f324186f55170f003e9c0f14709e34061"
     },
     {
       "path": "handoff/ENGINEER-START-HERE.md",

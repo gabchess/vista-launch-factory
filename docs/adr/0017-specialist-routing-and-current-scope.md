@@ -4,9 +4,9 @@ Date: 8 September 2026. Status: accepted for the bounded local implementation re
 
 ## Scope override
 
-The later user instruction selects Prospector for the client recording and Tixmancer for separate internal validation. Quorum Desk and ADR 0013's blanket media hold remain historical fixture decisions. Reusable routes for slots 1, 5 and 6 may proceed when their actual sources, capability checks and human stage approvals support the work. A route's availability does not establish a finished asset or provider connection.
+A later instruction selected separate products for the client recording and for internal validation. Quorum Desk and ADR 0013's blanket media hold remain historical fixture decisions. Reusable routes for slots 1, 5 and 6 may proceed when their actual sources, capability checks and human stage approvals support the work. A route's availability does not establish a finished asset or provider connection.
 
-In the current session Gabe approved one eight-second Tix animation render. Customer-role UGC direction was accepted; the revised exact UGC script and sketch still need their next human gate. These session facts do not become reusable default permissions. Each future run must carry its own source and actual human authority. No live product checkout path, credentials or current media is bundled as default input.
+In that session the owner approved one eight-second animation render. Customer-role UGC direction was accepted; the revised exact UGC script and sketch still need their next human gate. These session facts do not become reusable default permissions. Each future run must carry its own source and actual human authority. No live product checkout path, credentials or current media is bundled as default input.
 
 ## Specialist layer
 
