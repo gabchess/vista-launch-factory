@@ -2,7 +2,7 @@
 
 ## Honesty (read first)
 
-v0.2.0 is a **bounded** Augment: Claims Lock + Barry HITL are real doors; slots **1 / 5 / 6** (social video, login animation, in-app popup) are **HOLD stubs** — not review-ready outputs. **A3:** engine is live under product-root `engine/` (schemas + structural validators + adapters). The first **real** adapter is **blog (slot 2)**. When Python is available, structural validate/package helpers in `engine/scripts/` may be used — they never publish. Do not claim a full six-pack ship from this version.
+v0.2.0 is a **bounded** workflow pack: Claims Lock + Barry HITL are real doors; slots **1 / 5 / 6** (social video, login animation, in-app popup) are **HOLD stubs**, not review-ready outputs. **A3:** engine is live under product-root `engine/` (schemas + structural validators + adapters). The first **real** adapter is **blog (slot 2)**. When Python is available, structural validate/package helpers in `engine/scripts/` may be used, but they never publish. Do not claim a full six-pack ship from this version.
 
 ## Goal
 
@@ -18,15 +18,15 @@ Complete one gated Run that ends in a **Claims Lock draft for Barry**, not a pub
 
 > Use Launch Factory. Run on this release folder.
 
-(Or run the one-command door: `./run.sh <release-folder>` — ADR 0014.)
+(Or run the one-command door: `./run.sh <release-folder>`, ADR 0014.)
 
 ## Expected flow
 
 1. Ingest / retrieve from the folder.
-2. Draft Claims Lock (traceable claims only — no invent pricing/features).
+2. Draft Claims Lock (traceable claims only, no invent pricing/features).
 3. **Stop for Barry** on Claims Lock (`barry/claims-lock.md`) before fan-out.
-4. **Draft first real** — blog (slot 2) when O1 is HELD (engine adapters under `engine/adapters/`). **Skip / stub** slots 1, 5, 6 — do not block waiting on held slots.
-5. **Barry spot-check** that draft (`barry/spot-check.md`) — order is **draft first real → spot-check → remaining adapters** (never spot-check before a draft exists).
+4. **Draft first real**: blog (slot 2) when O1 is HELD (engine adapters under `engine/adapters/`). **Skip / stub** slots 1, 5, 6: do not block waiting on held slots.
+5. **Barry spot-check** that draft (`barry/spot-check.md`): order is **draft first real → spot-check → remaining adapters** (never spot-check before a draft exists).
 6. Remaining non-HELD adapters: email (3), changelog (4), Campaign Plan (7). Optional: run `engine/scripts/validate_*.py` when **product-root `engine/` + Python + jsonschema** are available (skill folder alone is not enough).
 7. Validate ≤2 loops.
 8. Barry pack approve (`barry/pack-approve.md`) → package + honesty note (**name the HOLDs**).
@@ -34,7 +34,7 @@ Complete one gated Run that ends in a **Claims Lock draft for Barry**, not a pub
 ## Do not
 
 - Ask the pack to publish, send, or “just push to HubSpot.”
-- Treat Writer output as Barry approval.
+- Treat drafted output as Barry approval.
 - Claim all six outputs are review-ready while 1/5/6 are held.
 - Invent fill-ins for held slots to look complete.
 

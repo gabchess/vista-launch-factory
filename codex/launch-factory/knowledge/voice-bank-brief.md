@@ -1,11 +1,11 @@
-# Voice Bank brief — INTERIM (ADR 0015)
+# Voice Bank brief: INTERIM (ADR 0015)
 
 The live corpus has landed. Voice checks run against:
 
 - **Canonical brief:** `voice-bank/tone-and-style-brief.md` (INTERIM; 12 adapter-checkable voice rules at the end, under "Voice rules for adapters").
-- **Corpus:** `voice-bank/corpus/` — 25 verbatim items (Barry email seed, vistasocial.com pages, insights blog, public X/LinkedIn, Reggie podcast transcript) with source URLs and retrieval dates.
-- **Gaps:** `voice-bank/gaps.md` — what is missing vs a real brand guide (more Barry emails, Reggie's current written voice, approved-claims list). Ask Reggie; do not invent.
-- **Provenance:** `voice-bank/provenance.md` — public-only collection, no logins, no fabricated quotes.
+- **Corpus:** `voice-bank/corpus/`: 25 verbatim items (Barry email seed, vistasocial.com pages, insights blog, public X/LinkedIn, Reggie podcast transcript) with source URLs and retrieval dates.
+- **Gaps:** `voice-bank/gaps.md`: what is missing vs a real brand guide (more Barry emails, Reggie's current written voice, approved-claims list). Ask Reggie; do not invent.
+- **Provenance:** `voice-bank/provenance.md`: public-only collection, no logins, no fabricated quotes.
 
 Rules while interim:
 

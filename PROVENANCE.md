@@ -2,15 +2,15 @@
 
 ## Canonical sources
 
-This Augment pack is built from:
+This workflow pack is built from:
 
-1. **Vista Social trial brief** — feature-release folder → launch outputs + Campaign Plan; Barry VP Marketing as HITL gate.
-2. **Factory engine (vista/work SHOW-ME spine)** — schemas, validators, adapters, fixtures, barry templates, and honesty notes, consolidated under repo-root `engine/` (Option B single SoT; ADR 0012 moved the pack envelope to the repo root in v0.2.0, and the former repo-root developer spine was deduplicated into `engine/` — hashes compared, one copy kept).
-3. **This pack** — customer envelope, skill door, docs, manifests, and honesty surfaces authored for Launch Factory v0.2.0, with the later specialist and recipe additions below.
-4. **ADR 0012–0016** (`docs/adr/`) — recorded-run hero + repo-link door, HOLD discipline, one-command door, interim Voice Bank, Campaign Plan as seventh output.
-5. **[ADR 0017](docs/adr/0017-specialist-routing-and-current-scope.md)** — specialist routing, selective evidence and voice references, project host entry points, and offline consistency checks. These checks grant no human approval or provider authority.
-6. **[UGC App Reveal](engine/specialists/video-production/recipes/ugc-app-reveal/README.md)** — original reusable prompts drawn from one approved production run. The recipe records the actual provider roles and source-adaptation method; private media, credentials, job IDs and review conversation remain outside the portable pack. Third-party source packs informed patterns only; their prose and assets were not copied into these prompts.
-7. **[ADR 0018](docs/adr/0018-ugc-app-reveal-preparation.md)** — the n8n preparation subworkflow packages the recipe and source bindings for an operator. **[ADR 0019](docs/adr/0019-testable-app-and-next-milestone.md)** records the next app milestone. This package does not implement an authenticated approval store or unattended media dispatch.
+1. **Vista Social trial brief:** feature-release folder to launch outputs + Campaign Plan; Barry VP Marketing as HITL gate.
+2. **Factory engine (the engine spine):** schemas, validators, adapters, fixtures, barry templates, and honesty notes, consolidated under repo-root `engine/` (Option B single SoT; ADR 0012 moved the pack envelope to the repo root in v0.2.0, and the former repo-root developer spine was deduplicated into `engine/`, hashes compared, one copy kept).
+3. **This pack:** customer envelope, skill door, docs, manifests, and honesty surfaces authored for Launch Factory v0.2.0, with the later specialist and recipe additions below.
+4. **ADR 0012 to 0016** (`docs/adr/`): recorded-run hero + repo-link door, HOLD discipline, one-command door, interim Voice Bank, Campaign Plan as seventh output.
+5. **[ADR 0017](docs/adr/0017-specialist-routing-and-current-scope.md):** specialist routing, selective evidence and voice references, project host entry points, and offline consistency checks. These checks grant no human approval or provider authority.
+6. **[UGC App Reveal](engine/specialists/video-production/recipes/ugc-app-reveal/README.md):** original reusable prompts drawn from one approved production run. The recipe records the actual provider roles and source-adaptation method; private media, credentials, job IDs and review conversation remain outside the portable pack. Third-party source packs informed patterns only; their prose and assets were not copied into these prompts.
+7. **[ADR 0018](docs/adr/0018-ugc-app-reveal-preparation.md):** the n8n preparation subworkflow packages the recipe and source bindings for an operator. **[ADR 0019](docs/adr/0019-testable-app-and-next-milestone.md)** records the next app milestone. This package does not implement an authenticated approval store or unattended media dispatch.
 
 ## What this is not derived from
 

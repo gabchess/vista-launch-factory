@@ -90,8 +90,8 @@ Set the helper workspace to `packages/camp_tix_launch_001/00_baseline`. Resolve 
 
 The check receipt records the concrete commands used, their outputs and the baseline source hashes. Confirm that the source route selects `evidence_editor`, the draft route selects `blog_editor`, and both outputs retain `generation_authorized: false` and `human_approval_granted: false`. Inspect the quotes for meaning after the mechanical pass. No broad test-suite run or live provider call is needed for this evidence-only ticket.
 
-Completion means AC01–AC12 pass and the baseline is ready for its recorded next decision or N02 preparation. It does not mean the article is written or the Claims Lock was granted. Report the selected source revision, the two preserved approvals, eligible versus held claims, voice limitations and the exact next action.
+Completion means AC01 to AC12 pass and the baseline is ready for its recorded next decision or N02 preparation. It does not mean the article is written or the Claims Lock was granted. Report the selected source revision, the two preserved approvals, eligible versus held claims, voice limitations and the exact next action.
 
 ## Outside N01
 
-Output drafting, new media, app code, n8n mutation, provider setup or spending, publishing, engineering-schema expansion and GitHub mutations are outside this evidence task. Forge owns board and Git changes under the existing authorization. The N01 phase does not close the later copy work in issue #26 or the client's source and Barry gates.
+Output drafting, new media, app code, n8n mutation, provider setup or spending, publishing, engineering-schema expansion and GitHub mutations are outside this evidence task. The operator owns board and Git changes under the existing authorization. The N01 phase does not close the later copy work in issue #26 or the client's source and Barry gates.

@@ -7,7 +7,7 @@ item: 19
 title: "LinkedIn company post, ~2025 (shown as '1y' at retrieval): affiliate program"
 ---
 
-Retrieved via web_extract on the public post URL without login. STALE (~1 year old) — kept for register comparison, flagged in gaps.md.
+Retrieved via web_extract on the public post URL without login. STALE (~1 year old), kept for register comparison, flagged in gaps.md.
 
 ## Verbatim excerpt
 

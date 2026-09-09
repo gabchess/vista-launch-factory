@@ -17,7 +17,7 @@ Claude ZIP alone, plain chat host).
 - **Claims Lock before fan-out.** The run still stops at the claims gate.
 - **Writer ≠ Barry.** Approval still requires Barry's written lock on a card.
 - **No invented claims, features, limits, or pricing.** Evidence gaps stay
-  gaps — a missing source narrows the draft, it never licenses invention.
+  gaps: a missing source narrows the draft, it never licenses invention.
 - **HELD honesty for slots 1/5/6.** Held slots stay named and held.
 - **No auto-publish / no auto-send.** Drafting is not publishing in any mode.
 
@@ -52,5 +52,5 @@ Slack thumbs ≠ approve. Written lock on this card only.
 
 Tell the user what would restore full capability: keep the product root on
 disk so `engine/` is reachable, and a host with Python + jsonschema. Until
-then, state the mode at the top of every run output — degraded runs must be
+then, state the mode at the top of every run output: degraded runs must be
 visibly degraded.

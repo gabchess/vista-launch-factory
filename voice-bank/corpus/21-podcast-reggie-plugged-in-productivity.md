@@ -4,10 +4,10 @@ source_type: social
 author: Reggie Azevedo
 retrieved_date: 2026-09-07
 item: 21
-title: "Plugged In Podcast (Plugable), Apr 10, 2026 — Reggie interview: remote work, context switching, discipline"
+title: "Plugged In Podcast (Plugable), Apr 10, 2026: Reggie interview: remote work, context switching, discipline"
 ---
 
-Public YouTube video; official transcript retrieved via web_extract, no login. REGGIE-VOICED (spoken, auto-captioned — minor caption artifacts kept verbatim with [sic]). Host is Barry (Plugable) — the same Barry who wrote the seed email.
+Public YouTube video; official transcript retrieved via web_extract, no login. REGGIE-VOICED (spoken, auto-captioned, minor caption artifacts kept verbatim with [sic]). Host is Barry (Plugable), the same Barry who wrote the seed email.
 
 ## Verbatim excerpt
 
@@ -15,11 +15,11 @@ On remote work from the start:
 
 > Well, Barry, thank you for having me first of all. Excited to be here. I love Pluggable. I'll be honest, the day that you reached out, probably last year, you you changed my world and subsequently my wife. She She's very grateful that my home office is no longer a mess of cables everywhere. So, thank you.
 
-> it's crazy, right? Vista we've been at this for 5 years and and my CEO and I partnered at a previous similar software company. We were fully remote before. Really, it was it was popular. [sic — likely "before it was popular"] I joined them in 2016, I believe, and we never really looked back.
+> it's crazy, right? Vista we've been at this for 5 years and and my CEO and I partnered at a previous similar software company. We were fully remote before. Really, it was it was popular. [sic, likely "before it was popular"] I joined them in 2016, I believe, and we never really looked back.
 
-On his leadership tenant [sic — transcript reads "tenant" for "tenet"]:
+On his leadership tenant [sic, transcript reads "tenant" for "tenet"]:
 
-> We're not a not-for-profit company. And I like to tell my team that a lot, right? Like, hey, we are a for-profit organization. But one of my biggest tenants in life is I want to make sure that as I bring in people into any company that I oversee and lead is that I get to have them leave Vistaprint or whatever company better than I found them. [sic — "Vistaprint" appears to be a caption artifact] And so giving them skills, giving them education, whatever it is so that their resume and their next gig is strong as a result of their time here.
+> We're not a not-for-profit company. And I like to tell my team that a lot, right? Like, hey, we are a for-profit organization. But one of my biggest tenants in life is I want to make sure that as I bring in people into any company that I oversee and lead is that I get to have them leave Vistaprint or whatever company better than I found them. [sic, "Vistaprint" appears to be a caption artifact] And so giving them skills, giving them education, whatever it is so that their resume and their next gig is strong as a result of their time here.
 
 On context switching:
 

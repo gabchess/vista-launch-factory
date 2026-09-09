@@ -4,10 +4,10 @@ source_type: linkedin
 author: Reggie Azevedo
 retrieved_date: 2026-09-07
 item: 20
-title: "Reggie Azevedo LinkedIn profile — public indexed headline and title"
+title: "Reggie Azevedo LinkedIn profile: public indexed headline and title"
 ---
 
-Public indexed profile data retrieved without login (profile body/activity feed is login-walled — only the indexed headline, title, and location were visible; see gaps.md). REGGIE-VOICED (his own headline).
+Public indexed profile data retrieved without login (profile body/activity feed is login-walled, only the indexed headline, title, and location were visible; see gaps.md). REGGIE-VOICED (his own headline).
 
 ## Verbatim excerpt
 

@@ -1,11 +1,11 @@
-# ADR 0013 — Slots 1/5/6 stay HOLD until spine ships
+# ADR 0013: Slots 1/5/6 stay HOLD until spine ships
 
 Date: 2026-09-07. Status: accepted (Gabe, grill round 1).
 
 ## Decision
 
 Social video, login animation, and in-app popup remain HELD stubs with honesty lines
-while the repo, presentation, and Augment are completed. Real encode/asset work resumes
+while the repo, presentation, and workflow pack are completed. Real encode/asset work resumes
 after those three are ready. No zoom-on-still as hero video (existing hard stop stands).
 
 ## Why

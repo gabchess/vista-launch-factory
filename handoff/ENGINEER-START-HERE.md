@@ -1,6 +1,6 @@
 # Engineer handoff: current Launch Factory build
 
-This is the current technical handoff for the branch containing the Tix channel run. Read it before the historical SOP files in this directory. Gabe authorized sharing the repository with a developer for review. No credentials, paid AgentsKit source or client approval events are included.
+This is the current technical handoff for the branch containing the Tix channel run. Read it before the historical SOP files in this directory. Gabe authorized sharing the repository with a developer for review. No credentials, paid third-party marketing-review skill source or client approval events are included.
 
 See the [SDS trial audit](../docs/audits/sds-trial-2026-09-09/REPORT.md) for the requirement-by-requirement verdict and verified limits. The supplied Reggie brief sets no numeric social-video duration cap; this project retains its own 30-second target.
 
@@ -52,7 +52,7 @@ For a new product, create a separate campaign workspace. Ingest its source docum
 
 Where native role delegation is available, the host invokes the selected specialist. Otherwise the operator reads the same role protocol and performs the work inline, reporting that path. The current writing run used delegated and inline protocol execution. Role discovery and schema validation are recorded separately from provider execution.
 
-AgentsKit's relevant skills were verified as installed in Codex on the builder's host. Recipients need their own permitted installation to use that optional library. The original channel prompts bundled here work without copying the purchased kit. See the [installation audit](../docs/research/agentskit-install-audit.md).
+The relevant skills from a third-party marketing-review skill package were verified as installed in Codex on the builder's host. Recipients need their own permitted installation to use that optional library. The original channel prompts bundled here work without copying the purchased kit.
 
 ## Prepare the four n8n lanes
 

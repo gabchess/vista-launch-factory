@@ -1,8 +1,8 @@
-# Barry — Claims Lock (once per campaign)
+# Barry: Claims Lock (once per campaign)
 
-**Campaign:** {{campaign_id}} — {{title}}
+**Campaign:** {{campaign_id}}: {{title}}
 **Seat:** Barry VP Marketing (writer ≠ Barry)
-**Surface:** Notion approve card + linked ledger
+**Surface:** approval card + linked ledger
 
 ## Ledger summary
 - Allowed claims: {{allowed_count}}
@@ -10,8 +10,8 @@
 - Kill-switch armed: {{kill_switch.armed}}
 
 ## Decision
-- [ ] **Approve Claims Lock** — adapters may run
-- [ ] **Reject / kill-switch** — fix source; do not draft
+- [ ] **Approve Claims Lock**: adapters may run
+- [ ] **Reject / kill-switch**: fix source; do not draft
 
 ## Rules
 - Every allowed claim must show evidence span (transcript or outline).

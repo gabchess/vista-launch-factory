@@ -1,4 +1,4 @@
-# Example 01 — Claims Lock walkthrough (fixture)
+# Example 01: Claims Lock walkthrough (fixture)
 
 **All material below is the Quorum Desk mock GTM ship fixture**
 (`engine/fixtures/mock-gtm-ship/`). Quorum Desk is a synthetic demo product,
@@ -8,9 +8,9 @@
 
 One release folder, exactly as shipped in the fixture:
 
-- `sources/loom_transcript.txt` — 2:25 walkthrough transcript (fixture)
-- `sources/github_outline.md` — ship outline with contents and non-goals (fixture)
-- `claim_hints.md` — allowed/forbidden seeds derived from sources only (fixture)
+- `sources/loom_transcript.txt`: 2:25 walkthrough transcript (fixture)
+- `sources/github_outline.md`: ship outline with contents and non-goals (fixture)
+- `claim_hints.md`: allowed/forbidden seeds derived from sources only (fixture)
 - `augment/` ZIP + one-pager, `emails/changelog-whats-new.md`, `footage_index.json` (fixture)
 
 First ask: `Use Launch Factory. Run on this release folder.`
@@ -20,8 +20,8 @@ First ask: `Use Launch Factory. Run on this release folder.`
 1. **Ingest.** List every file; note that footage pointers exist but no real
    video assets are shippable in this fixture.
 2. **Retrieve.** Pull candidate claims from transcript + outline only.
-   Demo assets (the ZIP, the one-pager) are **not** evidence — ADR 0001.
-3. **Draft the Claims Lock card for Barry** — and stop. No adapter draft yet.
+   Demo assets (the ZIP, the one-pager) are **not** evidence: ADR 0001.
+3. **Draft the Claims Lock card for Barry**, and stop. No adapter draft yet.
 
 ## The fixture Claims Lock draft (shape)
 
@@ -29,7 +29,7 @@ Allowed claims, each with an evidence span from fixture sources:
 
 | Claim (fixture) | Evidence |
 |---|---|
-| Quorum Desk helps decide the next move on a live B2B opportunity (advance / validate / recover / hold / disqualify / exit) | transcript [00:45]–[01:10] |
+| Quorum Desk helps decide the next move on a live B2B opportunity (advance / validate / recover / hold / disqualify / exit) | transcript [00:45]-[01:10] |
 | Every claim is tagged: observed, buyer-stated, inferred, assumed, unknown, disputed, disconfirmed | transcript [00:45] |
 | It does not send mail, update CRM, or schedule meetings without separate authorized tooling | transcript [01:35] |
 | Install doors: Codex skill folder + Claude ZIP | transcript [02:00], outline "Contents" |
@@ -40,7 +40,7 @@ Forbidden (from `claim_hints.md`, fixture):
 - Win-probability scores or guaranteed outcomes
 - That slots 1/5/6 Launch Factory outputs are complete from this fixture
 
-Kill-switch: not armed. Slots 1/5/6: **HOLD** — named on the card.
+Kill-switch: not armed. Slots 1/5/6: **HOLD**, named on the card.
 
 ## Expected stop point
 

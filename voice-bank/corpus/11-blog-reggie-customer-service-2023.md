@@ -7,7 +7,7 @@ item: 11
 title: "Blog: Industry-Leading Customer Service: What It Means and How Vista Social Delivers (March 22, 2023, byline: Reggie Azevedo)"
 ---
 
-Retrieved via web_extract, public blog post. REGGIE-VOICED (his author byline), but 2023 — older register, more formal/corporate than current company copy. Embeds a GIF, a humor signal.
+Retrieved via web_extract, public blog post. REGGIE-VOICED (his author byline), but 2023, older register, more formal/corporate than current company copy. Embeds a GIF, a humor signal.
 
 ## Verbatim excerpt
 

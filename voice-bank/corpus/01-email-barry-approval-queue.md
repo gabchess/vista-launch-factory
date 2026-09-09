@@ -4,7 +4,7 @@ source_type: email
 author: Barry
 retrieved_date: 2026-09-07
 item: 01
-title: "Barry email — approval queue / Vista Work (voice seed)"
+title: "Barry email: approval queue / Vista Work (voice seed)"
 ---
 
 Internal email provided by Reggie, used as voice seed per ADR 0015. Copied verbatim from the repo fixture (read-only). This is the seed item: the approval-queue email.

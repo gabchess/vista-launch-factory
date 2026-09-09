@@ -1,6 +1,6 @@
 # ADR 0017: specialist routing and current scope
 
-Date: 8 September 2026. Status: accepted for the bounded local implementation requested by Gabe in this session. No push, deployment, publication or full-app/Ralph activation is authorized by this ADR.
+Date: 8 September 2026. Status: accepted for the bounded local implementation requested by Gabe in this session. No push, deployment, publication or full-app/automated build loop activation is authorized by this ADR.
 
 ## Scope override
 

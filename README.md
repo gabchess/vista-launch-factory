@@ -1,82 +1,120 @@
 # Vista Launch Factory
 
-Launch Factory gives an agent operator a reusable workflow for a release campaign: source review, specialist drafting, creative production gates and exact-version human review. Barry reviews Vista client work. Gabe reviews his own validation work.
+One feature-release folder in. A review-ready launch package out. A person approves every word before anything leaves.
 
-The current [Tix review package](packages/camp_tix_launch_001/01_channel_run/README.md) contains a blog with two images, five segmented emails, a changelog, popup graphic and copy, and a proposed two-week calendar with written social drafts. All new content awaits Gabe's review. His earlier approvals remain bound to the 55-second product film and 10-second square animation.
+Hand your AI agent this repository and one release folder: a Loom transcript, a feature outline, raw screen and social footage. It returns six launch assets and a campaign plan. Every product claim traces to a quoted source. Every asset waits for the reviewer's decision. Nothing publishes, sends, or schedules.
 
-Start with the [engineer handoff](handoff/ENGINEER-START-HERE.md) to run the [local review](packages/camp_tix_launch_001/01_channel_run/review.html), inspect the artifacts and prepare n8n work packets. The repository supplies 12 specialist roles, original prompts, source checks and two preparation workflows. The provider worker, authenticated approval store and complete non-engineer app remain unfinished.
+First ask, in Claude Code or Codex from this folder:
 
-Gabe authorized repository sharing, commit and push, with app/n8n setup and testing next. The [checkpoint](docs/CHECKPOINT.md) records current evidence; [next steps](docs/NEXT-STEPS.md) links the implementation slice. Earlier recorded-demo-only assumptions are historical.
-
-## Open the full project
-
-1. Read [Start here](START-HERE.md).
-2. Open the whole repository in [Codex](docs/INSTALL-CODEX.md) or [Claude Code](docs/INSTALL-CLAUDE.md). Keep the project skill folders, engine and reference banks together.
-3. Invoke Launch Factory on one source folder. The operator identifies the product and human reviewer, then routes the next stage to a concrete specialist.
-4. Inspect the actual draft or media at the human gate, with its version, hash, source references and remaining gaps.
-
-Codex uses `.agents/skills/` and `.codex/agents/`. Claude Code uses `.claude/skills/` and `.claude/agents/`. A host without native delegation can perform the selected role inline after reading its skill and bank. It must report that fallback.
-
-The retained `claude/launch-factory-v0.2.0.zip` is a **legacy skill-only archive**. It excludes the new specialist layer and engine. Copying `codex/launch-factory/` alone also cannot resolve the current project protocols. Use the full repository for this version of the workflow.
-
-## Deliverable routes
-
-| Requested work | Owner |
-| --- | --- |
-| Social video for IG/TikTok, up to 30 seconds | Video lead |
-| Blog article | Blog editor |
-| Five segmented announcement emails | Email editor |
-| Changelog entry | Changelog editor |
-| Login animation | Motion designer |
-| In-app popup graphic and copy | Popup designer |
-| LinkedIn post | LinkedIn editor |
-| X and Threads copy | Social editor |
-| Campaign and weekly calendar | Campaign planner |
-| Carousel, when explicitly requested | Carousel designer |
-| Source claims and artifact review | Evidence editor and quality reviewer |
-
-The email route distinguishes lead SMB, lead Agency, lead Reseller/Affiliate, customer SMB and customer Agency. Each channel draws from selected product facts and its own voice context. The default campaign excludes carousel generation.
-
-## Try the offline route
-
-With Python and the repository dependencies installed:
-
-```bash
-.venv/bin/python engine/scripts/specialist_route.py route engine/fixtures/specialist-demo/request.json --workspace engine/fixtures/specialist-demo
-.venv/bin/python scripts/sync_specialists.py --check
-.venv/bin/pytest -q
+```
+Run Launch Factory on this release folder.
 ```
 
-The fictional fixture returns the chosen skills, source read set, actual draft text and bound review subject. It makes no provider calls. Read [the specialist guide](engine/specialists/README.md) for packet fields and review validation.
+## What comes out
 
-The finishing-layer baseline had 48 passing tests; current actor-production checks are described in the specialist guide. A fresh Codex CLI 0.153.3 `skills/list` probe with `forceReload` discovered all 14 enabled project skills, including `lf-short-motion-finishing`, with no missing names or target errors. This was a read-only discovery probe; it made no model turn or native skill invocation. Native role invocation, provider access and first-pass content quality remain untested for this layer. See [host evidence](HOST-MATRIX.md).
+| # | Output | What you get |
+| --- | --- | --- |
+| 1 | Social video | A short cut with burned-in captions, plus the IG/TikTok script and shot plan. |
+| 2 | Blog post | Markdown and HTML for vistasocial.com/insights, with images. |
+| 3 | Email announcement | Five variants: SMB, agency, and reseller/affiliate leads; SMB and agency customers. |
+| 4 | Changelog post | A short versioned entry for suggestions.vistasocial.com/changelog. |
+| 5 | Login animation | A short looping motion piece for vistasocial.com/login. |
+| 6 | In-app popup | Graphic, copy, and a working dialog preview. |
+| 7 | Campaign plan | A two-week calendar across email, popup, blog, LinkedIn, X, Threads, and IG/TikTok, with a human gate on every row. |
 
-## Human authority and source integrity
+## Two runs you can open now
 
-Every product claim needs an exact source reference. The helper checks hashes and quote spans; the specialist still reviews meaning. Voice samples supply expression guidance and cannot establish product facts. Missing tools and uninspected media remain visible gaps.
+| Run | Source | Media | Open |
+| --- | --- | --- | --- |
+| Tix | Gabe's own product, run by an engineer from Claude Code with local tools | 55-second product film and 10-second login animation, both approved creative | [review page](packages/camp_tix_launch_001/01_channel_run/review.html) |
+| Vista Work | Vista's public Insights article plus one Barry email, 4 grounded claims | Concept previews only, because no private Vista footage was available | [review page](packages/camp_vista_work_public_001/review.html) |
 
-A human decision belongs to the exact artifact version and its relevant input bindings. Changing a shared script changes the dependent video's review subject. An unrelated calendar date edit does not rewrite the copy. The helper never authenticates or applies approval events, including repeated events. Actual Barry or Gabe decisions stay human.
+Tix media, playable in the browser: [product film](packages/camp_tix_launch_001/media/tix-product-film-v3.mp4) and [login animation](packages/camp_tix_launch_001/media/tix-login-animation.mp4). Tix package guide: [01_channel_run/README.md](packages/camp_tix_launch_001/01_channel_run/README.md).
 
-Legacy `run.sh`, release-record helpers and demo packages remain available as structural fixtures. Their caller-supplied `--human-confirmed` flag does not implement authenticated approvals or stale-event protection. The new layer does not project its recommendations into that flag. Publishing, sending and external scheduling are excluded.
+Vista Work outputs, readable without a server: [blog](packages/camp_vista_work_public_001/artifacts/blog.md), [emails](packages/camp_vista_work_public_001/artifacts/emails/), [changelog](packages/camp_vista_work_public_001/artifacts/changelog-v2.md), [social drafts](packages/camp_vista_work_public_001/artifacts/social/), [popup copy](packages/camp_vista_work_public_001/artifacts/popup/copy.md), [calendar](packages/camp_vista_work_public_001/campaign/calendar.csv), [claim ledger](packages/camp_vista_work_public_001/claims/claim-ledger.json).
 
-## Repository map
+## How a run works
 
-| Path | Purpose |
+| Stage | What happens | Who decides |
+| --- | --- | --- |
+| Ingest | Every source file is hashed into one release record. | System |
+| Ground | Claims are extracted with a file, offset, and quote each; voice is checked against 25 items of Vista's own published writing. | System |
+| Claims Lock | Allowed, forbidden, and held claims are confirmed once. | Barry |
+| Create | Twelve specialist roles draft each asset from locked claims only. | System |
+| Review | Four gates run: accuracy, voice, completeness, authority. | System, then Barry spot-check |
+| Package | A review page, honesty note, and campaign plan are assembled. | Barry approves |
+| Stop | Publishing, sending, and scheduling stay with a person. | Human |
+
+## Where the checks live
+
+- A claim without an evidence span arms the kill-switch before any drafting starts.
+- Barry locks claims before fan-out, the cheapest point to stop a wrong promise.
+- The first blog draft gets a spot-check before the other assets are written.
+- An approval binds to the asset's hash, so editing an approved file reopens its gate.
+- The writer role can never approve; moving a slot to approved needs a `--human-confirmed` flag from a person.
+- Validators retry twice, then print the failed check and the safest re-entry point.
+
+## Run it
+
+```bash
+git clone https://github.com/gabchess/vista-launch-factory.git
+cd vista-launch-factory
+./run.sh engine/fixtures/vista-work
+```
+
+`run.sh` creates a virtual environment on first use, then runs ingest, validation, and packaging with stage banners. The same spine runs from a chat prompt in Claude Code or Codex.
+
+Open the Tix review with its media:
+
+```bash
+python3 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt
+python3 packages/camp_tix_launch_001/01_channel_run/serve_review.py --port 8770 \
+  --film packages/camp_tix_launch_001/media/tix-product-film-v3.mp4 \
+  --animation packages/camp_tix_launch_001/media/tix-login-animation.mp4
+```
+
+Then open `http://127.0.0.1:8770/01_channel_run/review.html`. The server binds to loopback and checks each video against its approved SHA-256.
+
+## Verify
+
+```bash
+.venv/bin/pytest -q
+.venv/bin/python engine/local_run/verify_public_demo.py
+.venv/bin/python packages/camp_tix_launch_001/01_channel_run/verify_package.py
+```
+
+Expected: 77 tests pass; 124 checks pass on the Vista Work package with 0 paid provider calls; 94 checks pass on the Tix package.
+
+## What still needs a human
+
+| Job | Why |
 | --- | --- |
-| `codex/launch-factory/SKILL.md` | Canonical operator protocol |
-| `.agents/`, `.codex/`, `.claude/` | Generated project skill and role entry points |
-| `engine/specialists/` | Registry, schemas, shared contract and selected reference banks |
-| `engine/specialists/video-production/recipes/ugc-app-reveal/` | Reusable actor-and-app film recipe with five named prompts |
-| `automation/n8n/ugc-app-reveal/` | Importable n8n video preparation subworkflow, SDK source and tests |
-| `engine/specialists/channel-production/` | Original blog, email, changelog and popup prompts |
-| `automation/n8n/channel-production/` | Importable four-channel preparation, source loader and offline tests |
-| `packages/camp_tix_launch_001/01_channel_run/` | Current drafts, review page, proposed calendar and package checks |
-| `handoff/ENGINEER-START-HERE.md` | Current setup, evidence boundaries and next app/runtime slice |
-| `engine/scripts/specialist_route.py` | Offline route, recommendation and binding checks |
-| `scripts/sync_specialists.py` | Regenerate project wrappers or check for drift |
-| `voice-bank/` | Vista voice references and interim tone brief |
-| `docs/adr/0017-specialist-routing-and-current-scope.md` | Current scope with historical decisions preserved |
-| `engine/fixtures/`, `barry/` | Fixtures and human review templates |
-| `release-manifest.json`, `documentation-manifest.json` | File integrity lists |
+| Claims Lock | Only Barry knows what Vista may promise. |
+| Final voice call | The voice bank flags drift; taste decides. |
+| Video, animation, and popup art | Real footage and creative judgment are required. |
+| Publish, send, schedule | Never automated in v1, by design. |
+| Which feature, which week | The factory runs launches; it does not choose them. |
 
-The original structural package remains version 0.2.0; the specialist registry is version 0.3.1, including the shared short-motion finishing skill. Current media work follows its own source and human stage approvals under [ADR 0017](docs/adr/0017-specialist-routing-and-current-scope.md). Historical HOLD decisions and the old archive are retained as history.
+## Status and limits
+
+- Barry has not approved any output; every asset is a review-ready draft.
+- Vista Work media is a concept preview because no private Vista footage, UI recording, or Loom was shared.
+- Today an engineer runs the media lane from Claude Code or Codex; the hosted app where marketing clicks a button is the next phase.
+- Two n8n workflows prepare work packets; they do not yet dispatch a provider worker.
+- License is not yet set; see [LICENSE-STATUS.md](LICENSE-STATUS.md).
+
+## Layout
+
+| Path | Role |
+| --- | --- |
+| `engine/` | Schemas, validators, specialist protocols, fixtures, and the package builder. |
+| `codex/launch-factory/` | The operator skill an agent reads first. |
+| `.claude/`, `.agents/`, `.codex/` | Native entry points for Claude Code and Codex. |
+| `packages/` | The two built review packages. |
+| `voice-bank/` | 25 items of Vista's public writing and the derived tone brief. |
+| `barry/` | The three human review cards: claims lock, spot-check, pack approve. |
+| `automation/n8n/` | Two importable preparation workflows. |
+| `handoff/` | The engineer handoff and marketer run checklist. |
+| `docs/` | Operating guide, first run, troubleshooting, and decision records. |
+
+Read [START-HERE.md](START-HERE.md) next, then the [engineer handoff](handoff/ENGINEER-START-HERE.md).

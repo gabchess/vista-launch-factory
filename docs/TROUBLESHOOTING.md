@@ -1,9 +1,9 @@
 # Troubleshooting
 
-## Skill / Augment not active
+## Skill / workflow pack not active
 
 **Symptom:** Files are on disk but the host does not behave like Launch Factory.  
-**Check:** Folder visible ≠ Augment active. Re-run install ([INSTALL-CODEX.md](INSTALL-CODEX.md) / [INSTALL-CLAUDE.md](INSTALL-CLAUDE.md)), reload host, confirm skill name.
+**Check:** Folder visible ≠ workflow pack active. Re-run install ([INSTALL-CODEX.md](INSTALL-CODEX.md) / [INSTALL-CLAUDE.md](INSTALL-CLAUDE.md)), reload host, confirm skill name.
 
 ## Claude ZIP missing
 
@@ -23,9 +23,9 @@
 ## Expecting all six assets
 
 **Symptom:** Reviewer expects video / login / popup as final.  
-**Expected:** Slots 1/5/6 are HOLD stubs — see [HUMAN-GAPS.md](HUMAN-GAPS.md). Package must name the HOLD.
+**Expected:** Slots 1/5/6 are HOLD stubs, see [HUMAN-GAPS.md](HUMAN-GAPS.md). Package must name the HOLD.
 
 ## Engine schemas empty or forked
 
 **Symptom:** `engine/schemas/` missing, or a second schema set under `codex/launch-factory/schemas/` / Claude ZIP.  
-**Expected (A3+):** Option B SoT lives under product-root `engine/` (schemas + `engine/scripts/` validators). Codex `schemas/` is a pointer only — do not invent a parallel tree. If `engine/` looks empty, you are on a pre-A3 checkout; pull main / this PR.
+**Expected (A3+):** Option B SoT lives under product-root `engine/` (schemas + `engine/scripts/` validators). Codex `schemas/` is a pointer only: do not invent a parallel tree. If `engine/` looks empty, you are on a pre-A3 checkout; pull main / this PR.

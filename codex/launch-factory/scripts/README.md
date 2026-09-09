@@ -15,4 +15,4 @@ Scripts must **not**:
 - invent claims;
 - bypass Barry Claims Lock or pack approve.
 
-A1 ships this README only — no executable helpers yet.
+A1 ships this README only, no executable helpers yet.

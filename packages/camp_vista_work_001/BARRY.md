@@ -23,7 +23,9 @@ This package is a **pre-Claims-Lock review bundle**. Barry Claims Lock is still 
 | 4 | changelog | 04_changelog | after first-real spot-check | real draft |
 | 5 | login_animation | 05_login_animation/HELD.txt | skip (HELD) | HELD — No real login footage/Lottie source — held for claim-safety |
 | 6 | in_app_popup | 06_in_app_popup/HELD.txt | skip (HELD) | HELD — No real popup graphic/copy source — held for claim-safety |
-| — | cadence binder | cadence/ | after pack spot-check | binder |
+| 7 | campaign_plan | 07_campaign_plan/HELD.txt | skip (HELD) | HELD — Campaign Plan drafts from the same Claims Lock — Barry Claims Lock not yet recorded (ADR 0016) |
+| 7 | campaign_plan | 07_campaign_plan/ | in pack-approve gate | Campaign Plan |
+| — | cadence binder (Campaign Plan data shape) | cadence/ | after pack spot-check | binder |
 
 ## Review links (real drafts)
 

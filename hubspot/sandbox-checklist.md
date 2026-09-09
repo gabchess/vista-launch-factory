@@ -1,8 +1,8 @@
-# HubSpot sandbox — last step checklist (Apiana hygiene)
+# HubSpot sandbox: last step checklist (Apiana hygiene)
 
 **Order:** only after Barry pack approve on email artifacts.
-**Account:** Reggie sandbox invite — not production.
-**CIO:** ours only — never demo as Vista ESP.
+**Account:** Reggie sandbox invite, not production.
+**CIO:** ours only, never demo as Vista ESP.
 
 ## Before opening HubSpot
 - [ ] Campaign status is `approved` or `packaged` (not `awaiting_barry`)

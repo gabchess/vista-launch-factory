@@ -10,7 +10,7 @@ Observed locally on 2026-09-08. This evidence covers preparation and file valida
 | Current four Tix requests through loader, then `run.mjs` | `ready_for_operator`; four lanes; three selected source records per lane. |
 | Human assignment / schedule | `gabe` / `consolidated_end`; review remains pending actual artifacts and the human. |
 | Authority | Execution, publication, human approval and authentication remain false. |
-| Independent review | Matt rechecked feedback/count/authority; Egdod rechecked schema and revision routing. Both bounded reviews passed after fixes. |
+| Independent review | One reviewer rechecked feedback/count/authority; a second rechecked schema and revision routing. Both bounded reviews passed after fixes. |
 | n8n cloud execution | Not run. Importable workflow is inactive and has no credentials or provider node. |
 
 The real input came from `packages/camp_tix_launch_001/01_channel_run/requests/` with release workspace `packages/camp_tix_launch_001`. Source revision was `27826b0332fd1582108ac0081165a7dd360e7aa6`. Preparation digest was `119a9371be48dba104027d3eb3bc349b23af690de8da6bfe380aac34f2080a11`. The temporary inline-source payload was discarded after this check; the portable example remains fictional.

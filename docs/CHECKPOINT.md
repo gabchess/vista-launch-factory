@@ -54,6 +54,6 @@ The latest user request calls for a testable app without an engineer in the loop
 
 ## Resume discipline
 
-The user authorized sharing, committing and pushing the current repository changes for developer review. App/n8n setup and testing follow the handoff's bounded implementation slice. Forge owns Git mutations; Gabe retains merge authority. New draft approval is still pending. No publishing, email sends, purchases or new media generation occurs during this checkpoint. Ralph stays paused until a later dispatch.
+The user authorized sharing, committing and pushing the current repository changes for developer review. App/n8n setup and testing follow the handoff's bounded implementation slice. The operator owns Git mutations; merge authority stays with the human reviewer. New draft approval is still pending. No publishing, email sends, purchases or new media generation occurs during this checkpoint. The automated run stays paused until a later dispatch.
 
 Read current branch, remote and Issues before acting. The checkpoint commit is the commit containing this file; its final external receipt records the remote SHA without creating a self-referential Git document. Session-specific media paths and the pre-compact hook receipt remain in the operator's private handoff.

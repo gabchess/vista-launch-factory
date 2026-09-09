@@ -1,4 +1,4 @@
-# FIXTURE — NOT REAL VISTA PRODUCT FACTS
+# FIXTURE: NOT REAL VISTA PRODUCT FACTS
 
 This folder is **Vista-shaped** for Wed recording rehearsal until Reggie shares the real release folder.
 

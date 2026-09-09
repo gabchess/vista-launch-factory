@@ -10,7 +10,7 @@ The [current Tix package](../packages/camp_tix_launch_001/01_channel_run/README.
 
 A marketing, product or development operator can submit a release source, answer the missing brief questions, inspect the actual outputs, request a correction, approve the exact revision and download the package. An engineer configures the installation once. Routine use must succeed without that engineer operating an agent behind the chat.
 
-The repository contains the specialist layer, reusable UGC recipe and current four-channel preparation. The earlier planning audit observed `nova/factory-house` at `5ad464510d881cf1539d1f069811bba9b6d62595`; that hash is historical. Forge's external push receipt establishes each later checkpoint. Re-read branch and Issues before a new dispatch.
+The repository contains the specialist layer, reusable UGC recipe and current four-channel preparation. The earlier planning audit observed `nova/factory-house` at `5ad464510d881cf1539d1f069811bba9b6d62595`; that hash is historical. The operator's external push receipt establishes each later checkpoint. Re-read branch and Issues before a new dispatch.
 
 | Deliverable | Verified state | Remaining acceptance |
 | --- | --- | --- |
@@ -65,16 +65,16 @@ The existing `transition_slot.py --human-confirmed` path records a structural as
 
 | Milestone | Work | Exit evidence |
 | --- | --- | --- |
-| A. Complete the internal method | N01–N08 | Current Tix content, compatible media renditions, actual reviews and original reusable recipes |
-| B. Complete the n8n flow | N09–N14 | A durable run through all six branches and the campaign, with source, retry, cost and review records |
-| C. Make the app usable | N15–N16 | Browser intake, actual previews, revision and recovery through the same runtime |
-| D. Prove and hand off | N17–N18 | Recorded same-source Prospector run, non-engineer test, accurate gap write-up and clean-install evidence |
+| A. Complete the internal method | N01 to N08 | Current Tix content, compatible media renditions, actual reviews and original reusable recipes |
+| B. Complete the n8n flow | N09 to N14 | A durable run through all six branches and the campaign, with source, retry, cost and review records |
+| C. Make the app usable | N15 to N16 | Browser intake, actual previews, revision and recovery through the same runtime |
+| D. Prove and hand off | N17 to N18 | Recorded same-source Prospector run, non-engineer test, accurate gap write-up and clean-install evidence |
 
 These milestones are ordered work, not a promised delivery date. Paid generation stays behind the applicable human gate. Use offline and fixture checks for failures first, then the minimum authorized real calls needed to prove the selected route.
 
 ## Ordered ticket candidates
 
-These local IDs retain the earlier proposed sequence. GitHub Issues remains the execution board. **N01's baseline is complete; current N02–N05 drafts and the proposed calendar await consolidated review under ADR 0020.** The user's latest instruction permits the app/n8n slice in the engineer handoff to proceed alongside that review. Reconcile the selected slice with existing issues before dispatch; the old serial dependencies below do not reopen drafting or block authorized setup. Each implementation ticket gets a fresh builder and independent verifier. Split work that exceeds one context window while retaining an observable result.
+These local IDs retain the earlier proposed sequence. GitHub Issues remains the execution board. **N01's baseline is complete; current N02 to N05 drafts and the proposed calendar await consolidated review under ADR 0020.** The user's latest instruction permits the app/n8n slice in the engineer handoff to proceed alongside that review. Reconcile the selected slice with existing issues before dispatch; the old serial dependencies below do not reopen drafting or block authorized setup. Each implementation ticket gets a fresh builder and independent verifier. Split work that exceeds one context window while retaining an observable result.
 
 ### N01. Freeze the active Tix source, voice and approval baseline
 
@@ -136,15 +136,15 @@ Prepare a source-grounded short story/cut and channel framing. Reuse accepted pe
 
 ### N08. Bind the weekly campaign and write the social placements
 
-**Blocked by:** N02–N07. **Owner:** `lf-campaign-calendar`, `lf-linkedin`, `lf-written-social`. **Board relation:** #23.
+**Blocked by:** N02 to N07. **Owner:** `lf-campaign-calendar`, `lf-linkedin`, `lf-written-social`. **Board relation:** #23.
 
 Deliver the campaign angle, audience journey, weekly calendar and actual channel copy. Cover email, blog, popup, LinkedIn, X, Threads and the IG/TikTok video placements. Use different angles from the shared source. An optional carousel remains optional.
 
-**Acceptance/evidence:** each calendar item resolves to its exact asset/variant, channel, purpose, intended audience and review state. Include timing/timezone, CTA and dependencies. No placeholder card can stand in for an unwritten post. Validate changed-asset propagation and date-only edits, then record the campaign review. Export portable JSON/CSV and a readable calendar without requiring Notion, Miro or another account.
+**Acceptance/evidence:** each calendar item resolves to its exact asset/variant, channel, purpose, intended audience and review state. Include timing/timezone, CTA and dependencies. No placeholder card can stand in for an unwritten post. Validate changed-asset propagation and date-only edits, then record the campaign review. Export portable JSON/CSV and a readable calendar without requiring a third-party planning tool or another account.
 
 ### N09. Prove the deployment contract for one worker route
 
-**Blocked by:** N08. **Owner:** Forge; architecture review through the installed `api-design-principles` skill.
+**Blocked by:** N08. **Owner:** the operator; architecture review through the installed `api-design-principles` skill.
 
 Select the recipient-runnable worker/model route and durable store using current provider and host evidence. Define campaign, artifact version, decision, job, cost and run-status resources. Plan the app as a consumer of the same versioned contract. Compare Base44/Replit against authenticated calls, long jobs, callbacks and persisted review; retain the choice with its actual constraints.
 
@@ -216,11 +216,11 @@ Run the selected Prospector source through the complete system. Preserve Prospec
 
 ### N18. Build and prove the portable handoff
 
-**Blocked by:** N17. **Owner:** Forge release builder; fresh installation verifier. **Board relation:** #24, #25, #27.
+**Blocked by:** N17. **Owner:** the release builder; fresh installation verifier. **Board relation:** #24, #25, #27.
 
-Package the current augment, original skills/prompts, schemas, worker/runtime setup, n8n exports, examples, recovery notes and the standalone plain-text onboarding companion. Keep app packaging and hosting obligations explicit. Recipients supply their own keys and MCP connections; ordinary app users do not perform engineer setup.
+Package the current project, original skills/prompts, schemas, worker/runtime setup, n8n exports, examples, recovery notes and the standalone plain-text onboarding companion. Keep app packaging and hosting obligations explicit. Recipients supply their own keys and MCP connections; ordinary app users do not perform engineer setup.
 
-**Acceptance/evidence:** fresh ZIP extracted into a clean directory; manifest/hash checks pass; Codex discovers and invokes the current entry point; the installed workflow reaches its first actual output and review through documented setup. Run without the author workspace paths. Label Claude/GPT/Hermes activation and provider routes by observed evidence. Exclude credentials, personal media, private transcripts and purchased kit content. Supply editable sources that the client is entitled to receive. Record the release SHA, ZIP hash, clean-install transcript and remaining gaps. Forge pushes only within the user's authorization; Gabe retains merge authority.
+**Acceptance/evidence:** fresh ZIP extracted into a clean directory; manifest/hash checks pass; Codex discovers and invokes the current entry point; the installed workflow reaches its first actual output and review through documented setup. Run without the author workspace paths. Label Claude/GPT activation and provider routes by observed evidence. Exclude credentials, personal media, private transcripts and purchased kit content. Supply editable sources that the client is entitled to receive. Record the release SHA, ZIP hash, clean-install transcript and remaining gaps. Pushes happen only within the user's authorization; merge authority stays with the human reviewer.
 
 ## Existing issue map and execution discipline
 
@@ -228,26 +228,26 @@ The earlier read-only audit found 13 open issues and **zero** live `ready-for-ag
 
 | Existing issue | Plan use |
 | --- | --- |
-| [#6 — [HOLD] Reggie questions + access chase (+ SoT ingest)](https://github.com/gabchess/vista-launch-factory/issues/6) | Retain actual source/access gaps; follow the selected Tix/Prospector inputs. |
-| [#7 — [HOLD] Barry HITL — copy+creative approve](https://github.com/gabchess/vista-launch-factory/issues/7), [#12 — [HOLD] Claims Lock — Barry once-per-campaign (still open)](https://github.com/gabchess/vista-launch-factory/issues/12) | Human gates remain real; distinguish demo reviewer from client authority. |
-| [#8 — [HOLD] Video/demo — PAUSED until Reggie + polish](https://github.com/gabchess/vista-launch-factory/issues/8) | Historical pause; reconcile against current approved media and later app plan. |
-| [#20 — [A6] E2E adapters — blog + email segments + changelog on mock ship](https://github.com/gabchess/vista-launch-factory/issues/20) | N02–N04 and N11; update source and evidence requirements. |
-| [#21 — [A7] Social video — HOLD stub + honesty now; real encode AFTER spine](https://github.com/gabchess/vista-launch-factory/issues/21) | N07/N12; preserve the distinction between an approved film and capped social output. |
-| [#22 — [A8] Login + in-app popup — HOLD stubs + honesty now; real AFTER spine](https://github.com/gabchess/vista-launch-factory/issues/22) | N05/N06/N13; original animation approval stays valid. |
-| [#23 — [A9] One-release campaign cadence binder from same source](https://github.com/gabchess/vista-launch-factory/issues/23) | N08/N14. |
-| [#24 — [A10] Honesty human-gaps write-up (Wed bring #3)](https://github.com/gabchess/vista-launch-factory/issues/24) | N17/N18. |
-| [#25 — [A11] Recorded-run shot list + SHOW-ME (install → pack out)](https://github.com/gabchess/vista-launch-factory/issues/25) | N17/N18; replace old mock-slot assumptions in the next revision. |
-| [#26 — [A12] Voice pack refresh then copy lane pass](https://github.com/gabchess/vista-launch-factory/issues/26) | N01–N04; separate publisher/style evidence from facts. |
-| [#27 — [A13] Design lock Augment wrap + Gabe show-me before Ralph loop](https://github.com/gabchess/vista-launch-factory/issues/27) | Reconcile plan and release gates; a historical design lock does not approve new app code. |
-| [#39 — Demo: show the conversation through asset review and revision](https://github.com/gabchess/vista-launch-factory/issues/39) | N16/N17; retain exact review history and distinguish replay from live execution. |
+| [#6: [HOLD] Reggie questions + access chase (+ SoT ingest)](https://github.com/gabchess/vista-launch-factory/issues/6) | Retain actual source/access gaps; follow the selected Tix/Prospector inputs. |
+| [#7: [HOLD] Barry HITL: copy+creative approve](https://github.com/gabchess/vista-launch-factory/issues/7), [#12: [HOLD] Claims Lock: Barry once-per-campaign (still open)](https://github.com/gabchess/vista-launch-factory/issues/12) | Human gates remain real; distinguish demo reviewer from client authority. |
+| [#8: [HOLD] Video/demo: PAUSED until Reggie + polish](https://github.com/gabchess/vista-launch-factory/issues/8) | Historical pause; reconcile against current approved media and later app plan. |
+| [#20: [A6] E2E adapters: blog + email segments + changelog on mock ship](https://github.com/gabchess/vista-launch-factory/issues/20) | N02 to N04 and N11; update source and evidence requirements. |
+| [#21: [A7] Social video: HOLD stub + honesty now; real encode AFTER spine](https://github.com/gabchess/vista-launch-factory/issues/21) | N07/N12; preserve the distinction between an approved film and capped social output. |
+| [#22: [A8] Login + in-app popup: HOLD stubs + honesty now; real AFTER spine](https://github.com/gabchess/vista-launch-factory/issues/22) | N05/N06/N13; original animation approval stays valid. |
+| [#23: [A9] One-release campaign cadence binder from same source](https://github.com/gabchess/vista-launch-factory/issues/23) | N08/N14. |
+| [#24: [A10] Honesty human-gaps write-up (Wed bring #3)](https://github.com/gabchess/vista-launch-factory/issues/24) | N17/N18. |
+| [#25: [A11] Recorded-run shot list (install to pack out)](https://github.com/gabchess/vista-launch-factory/issues/25) | N17/N18; replace old mock-slot assumptions in the next revision. |
+| [#26: [A12] Voice pack refresh then copy lane pass](https://github.com/gabchess/vista-launch-factory/issues/26) | N01 to N04; separate publisher/style evidence from facts. |
+| [#27: [A13] Design lock workflow-pack wrap + Gabe show-me before the automated loop](https://github.com/gabchess/vista-launch-factory/issues/27) | Reconcile plan and release gates; a historical design lock does not approve new app code. |
+| [#39: Demo: show the conversation through asset review and revision](https://github.com/gabchess/vista-launch-factory/issues/39) | N16/N17; retain exact review history and distinguish replay from live execution. |
 
-Forge should update or link these issues rather than create duplicates. Runtime/app work needs its own bounded tickets once the selected slice is specified. Later dispatch follows spec, issue, fresh builder, independent verifier, relevant tests and manual QA. Human creative or cost gates remain in the flow. A verifier reports tested scope; it cannot grant Barry's approval or declare unmeasured first-pass quality. Keep one live ready ticket and one active build at a time.
+The operator should update or link these issues rather than create duplicates. Runtime/app work needs its own bounded tickets once the selected slice is specified. Later dispatch follows spec, issue, fresh builder, independent verifier, relevant tests and manual QA. Human creative or cost gates remain in the flow. A verifier reports tested scope; it cannot grant Barry's approval or declare unmeasured first-pass quality. Keep one live ready ticket and one active build at a time.
 
 ## Suggested skills and next action after compaction
 
-Use the installed Matt Skills Curated `to-spec` for settled decisions, then `to-tickets` for the selected slice. The present document applies their planning structure; it does not publish tickets or claim a completed design-approval gate. Use `agentskit` to select one specialist for each concrete implementation job. `api-design-principles` fits N09's service contract. Use the stage-specific Launch Factory roles for content, and `product-heygen-pipeline` with `ugc-app-reveal` when a new film task is reached. Purchased skill prose stays outside this repository.
+Use the installed skill set's `to-spec` for settled decisions, then `to-tickets` for the selected slice. The present document applies their planning structure; it does not publish tickets or claim a completed design-approval gate. Use `agentskit` to select one specialist for each concrete implementation job. `api-design-principles` fits N09's service contract. Use the stage-specific Launch Factory roles for content, and `product-heygen-pipeline` with `ugc-app-reveal` when a new film task is reached. Purchased skill prose stays outside this repository.
 
-Read [AFTER-COMPACTION.md](AFTER-COMPACTION.md) and recheck the working tree and board:
+Recheck the working tree and board:
 
 ```bash
 git status --short
@@ -256,4 +256,4 @@ git log -1 --format='%H %s'
 gh issue list --repo gabchess/vista-launch-factory --state open --limit 100 --json number,title,labels,url
 ```
 
-Follow the [engineer handoff's next slice](../handoff/ENGINEER-START-HERE.md#next-implementation-slice): authenticated intake, one actual blog-worker response, stored exact-version review and a revision that survives reload. Use the current consolidated draft review for editorial decisions while that authorized setup and testing proceeds. Keep N01's historical record intact and avoid repeating the settled drafting interview. Forge reconciles the selected execution phase before a later Ralph dispatch. Provider spend and publishing retain their own applicable limits.
+Follow the [engineer handoff's next slice](../handoff/ENGINEER-START-HERE.md#next-implementation-slice): authenticated intake, one actual blog-worker response, stored exact-version review and a revision that survives reload. Use the current consolidated draft review for editorial decisions while that authorized setup and testing proceeds. Keep N01's historical record intact and avoid repeating the settled drafting interview. The operator reconciles the selected execution phase before a later automated dispatch. Provider spend and publishing retain their own applicable limits.

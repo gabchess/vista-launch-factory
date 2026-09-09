@@ -1,7 +1,7 @@
-# Vista Work — claim outline (seed sources only)
+# Vista Work: claim outline (seed sources only)
 
 Hero: Vista Work (ADR 0001). Evidence parent: Barry email Email example 2 (Aug 26, 2026) + trial brief hero lock.
-Not Claims Lock approve yet — seed ledger for Barry.
+Not Claims Lock approve yet, seed ledger for Barry.
 
 ## Product claims supported by Barry email body
 - In Vista Work, the task and social posts are linked.
@@ -9,7 +9,7 @@ Not Claims Lock approve yet — seed ledger for Barry.
 - Approvers see what needs a decision instead of hunting for it first.
 - A context-free approval-queue task (“Approve the next post”) forces a search that takes longer than the decision.
 
-## Trial brief (process — not product features)
+## Trial brief (process, not product features)
 - Barry VP of Marketing is the quality gate for copy/creative.
 - Accuracy: no invented features/limits/pricing; every claim traces to source.
 - HITL: nothing auto-publishes v1.

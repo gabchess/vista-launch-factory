@@ -1,16 +1,16 @@
 # Barry seat (approval gate)
 
 Barry is the VP Marketing HITL gate. This file defines **what the Barry gate
-checks** and what counts as approval. The skill never acts as Barry — it
+checks** and what counts as approval. The skill never acts as Barry: it
 prepares cards for a human Barry (or delegated authorized human) to fill.
 
 ## The three gates (in order)
 
-1. **Claims Lock** (`barry/claims-lock.md`) — once per campaign, before any
+1. **Claims Lock** (`barry/claims-lock.md`): once per campaign, before any
    adapter fan-out.
-2. **Spot-check** (`barry/spot-check.md`) — on the first **real** (non-HELD)
+2. **Spot-check** (`barry/spot-check.md`): on the first **real** (non-HELD)
    draft; with slots 1/5/6 held, that is the blog (slot 2).
-3. **Pack approve** (`barry/pack-approve.md`) — copy + creative for the whole
+3. **Pack approve** (`barry/pack-approve.md`): copy + creative for the whole
    package; WIP=1 in `awaiting_barry`.
 
 ## What the gate checks
@@ -34,7 +34,7 @@ prepares cards for a human Barry (or delegated authorized human) to fill.
   named artifact only. No silent rewrite-as-approve.
 
 ### Held-slot honesty
-- Slots 1/5/6 appear as HELD stubs with reasons — never as approved assets,
+- Slots 1/5/6 appear as HELD stubs with reasons: never as approved assets,
   never quietly omitted.
 - The package never claims "all six review-ready" while holds stand.
 
@@ -46,7 +46,7 @@ prepares cards for a human Barry (or delegated authorized human) to fill.
   praise are not gate decisions; status stays `awaiting_barry`.
 - **Request Changes** names the slot(s) to regenerate; the writer seat fixes
   only those, then re-submits.
-- Kill-switch: Barry can arm it at Claims Lock — adapters stay cold, campaign
+- Kill-switch: Barry can arm it at Claims Lock, adapters stay cold, campaign
   status → `needs_source_fix`.
 
 ## What Barry's approval does NOT authorize

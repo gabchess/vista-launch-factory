@@ -1,7 +1,7 @@
 Quorum Desk T-NOVA v0.1.0 (FIXTURE)
 
 Install only via documented Codex skills/quorum-desk or Claude ZIP path. Do not improvise layout.
-Folder visible ≠ Augment active.
+Folder visible ≠ workflow pack active.
 
 Onboard: Quorum Desk decides the next move on a live B2B opportunity. Humans keep send/CRM authority.
 First ask: Tell me what opportunity we are actually in.

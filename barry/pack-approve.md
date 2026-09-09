@@ -1,4 +1,4 @@
-# Barry — Pack approve (copy + creative)
+# Barry: Pack approve (copy + creative)
 
 **Campaign:** {{campaign_id}}  
 **Prerequisite:** Claims Lock approved; spot-check on first real (non-HELD) slot done; validate ≤2 done  
@@ -13,11 +13,11 @@
 | 4 | changelog | | | Approve / Request Changes |
 | 5 | login_animation | | HELD-skip | skip |
 | 6 | in_app_popup | | HELD-skip | skip |
-| — | cadence binder | | one-release cells | Approve / Request Changes |
+| - | cadence binder | | one-release cells | Approve / Request Changes |
 
 ## Decision
 - [ ] **Approve pack** → status `approved` → package + honesty doc (name HOLDs)
-- [ ] **Request Changes** — list **named** slot(s) to regenerate only (no silent rewrite-as-approve)
+- [ ] **Request Changes**: list **named** slot(s) to regenerate only (no silent rewrite-as-approve)
 
 ## Forbidden
 - One-click ship / auto-publish

@@ -1,11 +1,11 @@
 # Run log template
 
-One log per Launch Factory run. The skill fills this in as the run proceeds —
+One log per Launch Factory run. The skill fills this in as the run proceeds:
 inputs, outputs, failures, retries, and approvals in one place. Copy the
 template below; never backfill from memory, fill each field at the moment it
 happens. Save per team convention (e.g. alongside the package, or pasted into
 the run record). In degraded/chat-only mode, produce this log in chat and tell
-the user to save it — do not claim it was persisted.
+the user to save it: do not claim it was persisted.
 
 ```
 # Launch Factory run log
@@ -67,7 +67,7 @@ notes:             <anything a reviewer must know>
 
 ## Rules
 
-- A run with no Claims Lock decision logged stops at `claims_gate` — the log
+- A run with no Claims Lock decision logged stops at `claims_gate`: the log
   says so plainly.
 - HELD slots always appear with reasons; never omit rows.
 - `published:` is always NOTHING for this pack; publishing happens outside it.

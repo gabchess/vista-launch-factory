@@ -4,7 +4,7 @@ source_type: website
 author: Vista Social
 retrieved_date: 2026-09-07
 item: 08
-title: "Blog: Intoducing Vista Work: Project Management Built Into Social (Aug 24, 2026, byline: Orion Macapella) [sic — typo 'Intoducing' is on the live page]"
+title: "Blog: Intoducing Vista Work: Project Management Built Into Social (Aug 24, 2026, byline: Orion Macapella) [sic, typo 'Intoducing' is on the live page]"
 ---
 
 Retrieved via web_extract, public blog post. Company-voiced.

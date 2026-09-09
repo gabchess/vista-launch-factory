@@ -1,8 +1,8 @@
 # N01: prepare the Tix source, voice and approval baseline
 
-**Execution phase:** current user-authorized continuation. **Blocked by:** none. **Owner:** Nova/operator with the evidence editor. **Independent verifier:** Forge. **Specification:** [N01-tix-source-baseline.md](../specs/N01-tix-source-baseline.md).
+**Execution phase:** current user-authorized continuation. **Blocked by:** none. **Owner:** the operator, with the evidence editor. **Independent verifier:** a release verifier. **Specification:** [N01-tix-source-baseline.md](../specs/N01-tix-source-baseline.md).
 
-**Tracker mapping:** execute this phase through [#26 — [A12] Voice pack refresh then copy lane pass](https://github.com/gabchess/vista-launch-factory/issues/26). Link [#6](https://github.com/gabchess/vista-launch-factory/issues/6) for source/access context and [#12](https://github.com/gabchess/vista-launch-factory/issues/12) for the actual client Claims Lock. Forge reconciles the board and keeps one live ready execution phase. This document does not claim that a label changed. Completing N01 leaves the later copy work and outstanding client gates open.
+**Tracker mapping:** execute this phase through [#26: [A12] Voice pack refresh then copy lane pass](https://github.com/gabchess/vista-launch-factory/issues/26). Link [#6](https://github.com/gabchess/vista-launch-factory/issues/6) for source/access context and [#12](https://github.com/gabchess/vista-launch-factory/issues/12) for the actual client Claims Lock. The release verifier reconciles the board and keeps one live ready execution phase. This document does not claim that a label changed. Completing N01 leaves the later copy work and outstanding client gates open.
 
 ## Result
 
@@ -32,14 +32,14 @@ Create a first-writer baseline at `packages/camp_tix_launch_001/00_baseline`. It
 - [x] The packet contains no secrets, private account details, private conversation dump or purchased skill text.
 - [x] N02 can locate its prepared request, brief, eligible claims, voice inputs, qualifiers and any pending human decision from the index.
 
-These checkboxes correspond to AC01–AC12 in the specification. A remaining human Claims Lock can be the next action after N01 completes; it does not require a new product interview. A missing core source or usable voice input is an explicit held result and leaves its acceptance item open.
+These checkboxes correspond to AC01 to AC12 in the specification. A remaining human Claims Lock can be the next action after N01 completes; it does not require a new product interview. A missing core source or usable voice input is an explicit held result and leaves its acceptance item open.
 
 ## Verification and handoff
 
 Use `.venv/bin/python engine/scripts/specialist_route.py route` on the concrete request files with `--workspace packages/camp_tix_launch_001/00_baseline`. Record both exact commands in the check receipt. Mechanical success covers hashes, paths, selected source kinds and quote spans. The evidence editor separately assesses meaning and qualifiers.
 
-Return the baseline path, chosen source revision, eligible/held claim summary, two media-hash checks, voice limitations and exact next action. Forge independently verifies the evidence and reconciles this phase on #26. Keep only this execution phase active until it is handed off.
+Return the baseline path, chosen source revision, eligible/held claim summary, two media-hash checks, voice limitations and exact next action. The release verifier independently verifies the evidence and reconciles this phase on #26. Keep only this execution phase active until it is handed off.
 
-No output drafting, paid work, new media, n8n changes, app scaffolding, production schema changes or publication belongs to this ticket. Other agents own their files; preserve concurrent work. GitHub and Git mutations remain Forge's responsibility.
+No output drafting, paid work, new media, n8n changes, app scaffolding, production schema changes or publication belongs to this ticket. Other agents own their files; preserve concurrent work. GitHub and Git mutations remain the release verifier's responsibility.
 
-Independent verification: Forge passed AC01–AC12 for the completed baseline. Both specialist routes retain false generation and approval authority. The actual writing Claims Lock remains pending; later copy work and client gates remain open.
+Independent verification: the release verifier passed AC01 to AC12 for the completed baseline. Both specialist routes retain false generation and approval authority. The actual writing Claims Lock remains pending; later copy work and client gates remain open.

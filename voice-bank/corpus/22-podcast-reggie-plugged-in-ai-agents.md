@@ -4,7 +4,7 @@ source_type: social
 author: Reggie Azevedo
 retrieved_date: 2026-09-07
 item: 22
-title: "Plugged In Podcast (Plugable), Apr 10, 2026 — Reggie interview: AI agents, vibe coding, Cursor"
+title: "Plugged In Podcast (Plugable), Apr 10, 2026: Reggie interview: AI agents, vibe coding, Cursor"
 ---
 
 Public YouTube video; official transcript retrieved via web_extract, no login. REGGIE-VOICED (spoken, auto-captioned).

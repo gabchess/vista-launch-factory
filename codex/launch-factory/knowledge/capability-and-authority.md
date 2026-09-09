@@ -4,13 +4,13 @@ Launch Factory can help structure a release folder into draft launch artifacts, 
 
 Launch Factory cannot know unstated product behavior, invent pricing, publish to Vista surfaces, or send email. Scripts validate structure only; they do not confer brand or legal truth.
 
-## Barry HITL — three gates (A5)
+## Barry HITL: three gates (A5)
 
-1. **Claims Lock** (`barry/claims-lock.md`) — Barry once before fan-out; kill-switch on reject  
-2. **Spot-check** (`barry/spot-check.md`) — first real non-HELD slot (blog when slot 1 HELD)  
-3. **Pack approve** (`barry/pack-approve.md`) — WIP=1 in `awaiting_barry`; named Request Changes only  
+1. **Claims Lock** (`barry/claims-lock.md`): Barry once before fan-out; kill-switch on reject  
+2. **Spot-check** (`barry/spot-check.md`): first real non-HELD slot (blog when slot 1 HELD)  
+3. **Pack approve** (`barry/pack-approve.md`): WIP=1 in `awaiting_barry`; named Request Changes only  
 
-Writer / adapter roles draft only — they are **not** Barry. Slack thumbs ≠ any gate.
+Writer / adapter roles draft only. They are **not** Barry. Slack thumbs ≠ any gate.
 
 ## External actions
 

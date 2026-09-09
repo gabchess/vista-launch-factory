@@ -1,4 +1,4 @@
-# ADR 0014 — One command, one chat prompt, one spine
+# ADR 0014: One command, one chat prompt, one spine
 
 Date: 2026-09-07. Status: accepted (Gabe, grill round 1).
 
@@ -6,7 +6,7 @@ Date: 2026-09-07. Status: accepted (Gabe, grill round 1).
 
 The operator surface is two doors over the same spine:
 
-1. `./run.sh <release-folder>` — venv, ingest, brief, Claims Lock draft, adapters,
+1. `./run.sh <release-folder>`: venv, ingest, brief, Claims Lock draft, adapters,
    validation, Barry package, run log. Non-engineers never open code.
 2. A chat-prompt door: "Run Launch Factory on this release folder" inside any host
    agent, backed by the installed skill; when Python/engine is unavailable it falls back

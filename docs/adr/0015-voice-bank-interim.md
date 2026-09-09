@@ -1,4 +1,4 @@
-# ADR 0015 — Voice Bank from public + Barry material, labeled interim
+# ADR 0015: Voice Bank from public + Barry material, labeled interim
 
 Date: 2026-09-07. Status: accepted (Gabe, grill round 1).
 

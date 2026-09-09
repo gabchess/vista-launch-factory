@@ -1,4 +1,4 @@
-# Barry — Pack approve (copy + creative)
+# Barry: Pack approve (copy + creative)
 
 **Campaign:** {{campaign_id}}
 **Prerequisite:** Claims Lock approved; spot-check the **first real (non-HELD) slot** (for this campaign: O2 blog), not O1 when O1 is HELD; validate ≤2 done
@@ -13,7 +13,7 @@
 | 4 | changelog | | | |
 | 5 | login_animation | | skip if HELD | |
 | 6 | in_app_popup | | skip if HELD | |
-| — | cadence binder | | | |
+| - | cadence binder | | | |
 
 ## Spot-check rule
 - If O1 is HELD, skip O1 spot-check; first required spot-check = first non-HELD real slot (blog / slot 2 for non-video packs).
@@ -21,7 +21,7 @@
 
 ## Decision
 - [ ] **Approve pack** → status `approved` → package + honesty doc
-- [ ] **Request Changes** — list artifact slot(s) to regenerate (named only; no silent rewrite-as-approve)
+- [ ] **Request Changes**: list artifact slot(s) to regenerate (named only; no silent rewrite-as-approve)
 
 ## Forbidden
 - One click to ship / auto-publish

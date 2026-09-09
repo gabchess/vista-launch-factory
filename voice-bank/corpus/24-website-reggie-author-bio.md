@@ -7,7 +7,7 @@ item: 24
 title: "Reggie Azevedo author page on vistasocial.com"
 ---
 
-Retrieved via web_extract, public page, no login. Bio line is REGGIE-associated (site-stated role); article list documents his authored posts (2023–2024).
+Retrieved via web_extract, public page, no login. Bio line is REGGIE-associated (site-stated role); article list documents his authored posts (2023 to 2024).
 
 ## Verbatim excerpt
 

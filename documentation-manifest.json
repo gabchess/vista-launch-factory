@@ -166,11 +166,11 @@
     },
     {
       "path": "AGENTS.md",
-      "sha256": "5c4792fa3006c7c0c91d6882a6a238529431d140b8a1939e0647bb863f3999c7"
+      "sha256": "fe62692d1ec45b15ea04369a5ccb0108ddc6ed9d1577fa1952177f4612cacb8f"
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "f2b30950693ea070389c1cf9f0d9673b15652fd7e3bdd4db154af907fb563031"
+      "sha256": "28eaa8a0fd87dc0e29195991b545d74270ead26c5054c3cc5176318cf27a2fc2"
     },
     {
       "path": "HOST-MATRIX.md",
@@ -178,27 +178,19 @@
     },
     {
       "path": "LICENSE-STATUS.md",
-      "sha256": "f2bd0c4c254491e92de7fe50d9551a1ffee49f94879cdddff7b7ee79a4499f0b"
-    },
-    {
-      "path": "Launch Factory T-NOVA v0.2.0.txt",
-      "sha256": "2257d83237bd51cd03bdb95d65a427e7156545b019dd9228eff21d6fc38b7444"
+      "sha256": "9c1a79d45279830322ed24f8dbf047c1188788e96117cf3f3af0db7f2cf877ea"
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "8933f9780f66610562b8eedd7bc8a205ef3b108319d1cc45dfad7e0dc7890fad"
+      "sha256": "4e12903304d321309c6a6d15436859dd3f2ffbc9a467ca55062970fc22e97bbd"
     },
     {
       "path": "README.md",
-      "sha256": "eea57ffd48c4c1e24506c73c04a044c6519f4a72dc8659c0063776caa1a987c5"
-    },
-    {
-      "path": "SHOW-ME.md",
-      "sha256": "cba2d557be426fa0b0da0f95066b7591b7793a4c4882d34ea6f7fd5a32747a06"
+      "sha256": "c8a3784d97dc72fbdb46d226b3ca13d13ec86b009f361b9edbb4291b24c93f92"
     },
     {
       "path": "START-HERE.md",
-      "sha256": "b6c860a0973b66d9cc5d76167776b5c6361a35f190defa2630f45626e1b94d9a"
+      "sha256": "026d09e7132e515ce04b9e0ef8dc9b45c9113715a97f2ad7c34d414fcf6d7a69"
     },
     {
       "path": "automation/n8n/channel-production/PLAN.md",
@@ -210,7 +202,7 @@
     },
     {
       "path": "automation/n8n/channel-production/VALIDATION.md",
-      "sha256": "e0e76c896038332a3a887a16438b6631473ca923793ea12dfb12b5f1a4282e0f"
+      "sha256": "d3eb69de8ee16e3ab6137e9b0b7baf9626e4c434caf532a8b6275ccfc5c83935"
     },
     {
       "path": "automation/n8n/ugc-app-reveal/README.md",
@@ -218,27 +210,23 @@
     },
     {
       "path": "barry/README.md",
-      "sha256": "20b8f6e785fb821164cfe95e66414d5e9f92a7dd62606611116dc774b4387317"
+      "sha256": "7286dc65ecb749a30ee48f5ceff62e0ce24d1b0b11c84226f806ec411e5c9cda"
     },
     {
       "path": "barry/claims-lock.md",
-      "sha256": "4b8738c864d12b617700c914942dd3c39d27d35dd110dfb3b3034f81da0bd5d2"
+      "sha256": "d1dbc0bb7528d8ed05f8cbe434baf7d49d9c105966c350dabb7ecbf79ac0d0c9"
     },
     {
       "path": "barry/pack-approve.md",
-      "sha256": "33abea2e28608de7fe2060ee322e219aaaed1cf6c59726ed4cdfd6e6529da73b"
+      "sha256": "4d085a9bb97242166d46f46c850365bce3867198d4658c3db106853fe7f68549"
     },
     {
       "path": "barry/spot-check.md",
-      "sha256": "d3c8929a8a700494b1440ec43d923a7745176de0a387415d8494e81d072786fa"
-    },
-    {
-      "path": "claude/README.md",
-      "sha256": "43f4b12bb4d638a03bd1b53caead91df9af331dde94b13118cfddc41fff7e6f3"
+      "sha256": "81ce0037a00a455fd2aaf8b54d02d61aa7686a14da193728e47c59457ca54b04"
     },
     {
       "path": "codex/launch-factory/README.md",
-      "sha256": "b14b209e545df569acb41611e126ff5648196a25fa5aedb5a41125097cc5fa23"
+      "sha256": "08933f302ef585a72bc88b97b7f7b1ee3f3906430ac14f07bab59abd896cce5b"
     },
     {
       "path": "codex/launch-factory/SKILL.md",
@@ -246,95 +234,75 @@
     },
     {
       "path": "codex/launch-factory/examples/01-claims-lock-walkthrough.md",
-      "sha256": "2c749aed13628b01a58e7086ffcf57cbaec2d0a8edd07078f2d8fad5d3e7d26c"
+      "sha256": "1a63d760077c66d5e57d13dba2194ecb83b707addd2aa80cdea7dd810d3df4af"
     },
     {
       "path": "codex/launch-factory/examples/02-blog-adapter-draft.md",
-      "sha256": "9242c647f5a2f3e32062440a43f4fac6e5071654ccb33d2dad515052bad58e59"
+      "sha256": "1aa75bb030718d8bf6c6d2a9dbde255b8c1f4f1c58a33a72b09cd68304f9dd7e"
     },
     {
       "path": "codex/launch-factory/examples/03-held-slot-honesty.md",
-      "sha256": "69c64c2dc600799de38d3e6592aac7e71a1c86acd34aaa727cf37abefedf465b"
+      "sha256": "18c2a178de21bf596e575a91765ff2f6afb83d0912cf2c5b42c298c6f519457f"
     },
     {
       "path": "codex/launch-factory/fallbacks/degraded-capability.md",
-      "sha256": "1a423b6359da07f963119f2d59d68b729c619370c8939ddf1af4e02e4f1e1ce9"
+      "sha256": "4259abafe4877d219906f65b32378581334988f1f370aa16a307d01d86e8621a"
     },
     {
       "path": "codex/launch-factory/fallbacks/universal-copy-paste-workflow.md",
-      "sha256": "952f9a6e18ec3a4f9a6e14f9d20546e1c14b8ff6c8d0f3b1d3f4436c1719b8f2"
+      "sha256": "bb4d4bac29097e3e4c411d340fb5e1fc61ce9681c8344b2b8cd00d341054ad89"
     },
     {
       "path": "codex/launch-factory/knowledge/capability-and-authority.md",
-      "sha256": "d5ca24f5a1c67d421cd56cf9d294b2c7dd2c06b5b4eb5f4d5c3fc63b3aee5cf5"
+      "sha256": "199095ba9bd9e974fd099403e7027f53447920a665357b174ffa3894f6f301dc"
     },
     {
       "path": "codex/launch-factory/knowledge/operating-doctrine.md",
-      "sha256": "901657deaea9cc5caf1217f9d46b8d7cc254371f4fdd67b746851da7658e41cf"
+      "sha256": "22fffa86372130eab3706e9361856e1842a60062232fd1d1e897fe63aafbf953"
     },
     {
       "path": "codex/launch-factory/knowledge/voice-bank-brief.md",
-      "sha256": "3235f890aa6295abede3a06ff95c67f26fa2e648dc24bd98ef210d9579866461"
+      "sha256": "8ba90e99ea507d906583612d5374c125722268576b0119ad6ee9ce56a616b645"
     },
     {
       "path": "codex/launch-factory/personas/barry-seat.md",
-      "sha256": "6fbc105770ab03916082e2f4049c50bda6dcdf4716061e16474e4730e2e73897"
+      "sha256": "1e9b7682a7763205ec5bba182ce06666d5dc35f61c355b2f498c16478781b4c7"
     },
     {
       "path": "codex/launch-factory/personas/writer-seat.md",
-      "sha256": "69f9cfac7c2fee47e8051e76fb78df9096e9906b1ea4d5a66e4637a19813fe3c"
+      "sha256": "4f8253cc2e625592422b342e1525ece348cbca2d1dc933ddb56855eec3854b0f"
     },
     {
       "path": "codex/launch-factory/references/run-log-template.md",
-      "sha256": "de7e1ac1ccc7664c5eeddf8f515ba27b87574b91a383b4e2ae54a90de62ced03"
+      "sha256": "b00a651de3802b66f0cc126440f824ad2d89fafa2027ccb9b254afc41be02cf0"
     },
     {
       "path": "codex/launch-factory/schemas/README.md",
-      "sha256": "f1c85e6e7a94d6a8955c270bcd81977fc955978769ce279eaebff49c8d33e44a"
+      "sha256": "a8ae06637e57bf941764b9f6ae47e986d4ae66f40ec609d96618fddf0b031e26"
     },
     {
       "path": "codex/launch-factory/scripts/README.md",
-      "sha256": "6cd33cd01665101066fc8da9e5153d3fe1a21deb45ed689cf6dd2a2a9c936240"
-    },
-    {
-      "path": "docs/2026-09-07-vista-launch-factory-design.md",
-      "sha256": "c6b72714de8e19902e2ff85039316cc6b628b972f07201ec7626e5c092c84ee5"
-    },
-    {
-      "path": "docs/2026-09-07-vista-launch-factory-plan.md",
-      "sha256": "de14ad86dae7d1c3774e78c2d2f7b20768f03b212a9c631045afef9a8293d47a"
-    },
-    {
-      "path": "docs/AFTER-COMPACTION.md",
-      "sha256": "4179e27b6a92fd24e58cbbad59b0aac2f6ad72175a3d5f7b94f63ce44f73b642"
+      "sha256": "ade3388e56d01bedd3f78e277a6d16ec8e1fcca1d74d74310cffe84a1f294d02"
     },
     {
       "path": "docs/CHECKPOINT.md",
-      "sha256": "2f6d21bf1ce0b401727e7933a4db659d4a2aeb4b05e80d78cf1b7b027b394c71"
+      "sha256": "9f05c9803a3c17cdd32f5938f004bed07b81cb8c21ef82331aa5f4da58df0fda"
     },
     {
       "path": "docs/CONTEXT.md",
       "sha256": "3a00fb144839aa2f5e3f04f241829d320791c1cdff642da5eada8ecc7ce7787e"
     },
     {
-      "path": "docs/DESIGN-LOCK.md",
-      "sha256": "4742e6df5cea4adc178bd082512d1398dbcb657955dcda9f5e8caa3c7745d5d3"
-    },
-    {
       "path": "docs/DOCUMENTATION-CUSTODY.md",
-      "sha256": "5fd22b1e8de9b0411bf295ffac9344b1dea7b94de8b105a779774d81e1adddcf"
+      "sha256": "9db82f2bb2ed4e7de079429199eeaa0e785eda4edbb3561503d3409a130f800a"
     },
     {
       "path": "docs/FIRST-RUN.md",
-      "sha256": "46dbd0f1d751b8b739f498e3af222c5ca266039b91dfab205ed81c4c02a0d51e"
-    },
-    {
-      "path": "docs/GRILL-LOCK.md",
-      "sha256": "7faac1466f61eddd98812654f8acfdfc2b402a19ad2d7aa61658c1f56b153b4d"
+      "sha256": "6e8b7d703608482a3783bef91475bd542ee6b910420754c21ac03db404dff274"
     },
     {
       "path": "docs/HUMAN-GAPS.md",
-      "sha256": "684950a020d3d4878b6ce0f581ca79ecfab6c8d4402aced56d14cf825d303628"
+      "sha256": "68a87815b785a7b14516a3bd074652acd51a027da2c756887306291e46ff6f9f"
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
@@ -346,47 +314,47 @@
     },
     {
       "path": "docs/NEXT-STEPS.md",
-      "sha256": "8a04a51cdf025bcc2eea5ed9d45fa6bc17730aafd7cbbbd1aa5c447b1e30fcb2"
+      "sha256": "378719d4de59ebbbf5a22326b54fa825639fc56594251545b593ef17da09fb99"
     },
     {
       "path": "docs/OPERATE-LAUNCH-FACTORY.md",
-      "sha256": "33722be313615a108df8ffd86e8e50dde315b50b67695b17d3ce8c5897caa0a5"
+      "sha256": "7de02eeb6308012f00945d9d216813a6ab9b8c76f63c33df638726b4ed50bee6"
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
-      "sha256": "574626cbc8b16e92330d1c787df1653502febdc677303b4cc1e73d66bd3ed84e"
+      "sha256": "885554be86498444ee3cc531a6fd7c81d59dc9c22cb0cd2c11349e3b1140bd81"
     },
     {
       "path": "docs/TRUST-PRIVACY-AND-AUTHORITY.md",
-      "sha256": "2b070f63ff2996ad20ad885111b0f9b57f00e19fe8f1dfe3ffb351a825795940"
+      "sha256": "e9d3b546c367ffcee2c21deeed53fa5a365bcfa4ccb4d4fa316e0e875dd3a46d"
     },
     {
       "path": "docs/VALIDATION-AND-LIMITS.md",
-      "sha256": "c5b292e8d7b74885c48905a434fedf28c6c770517588b6b7317a0cabf51dab54"
+      "sha256": "c16c7a6dfe0f2bc584a363b0c0b4c0d75805e0200e64a583ac7aaee3062850be"
     },
     {
       "path": "docs/adr/0012-recorded-run-hero-repo-link-door.md",
-      "sha256": "e0030086dd1fbf62f4682922cdd943d4622a86ad61dd9e6393c53be635ee1b17"
+      "sha256": "1f347d950b634f688af715b117093f2c980c47422221ed529f66438e1dd3a56c"
     },
     {
       "path": "docs/adr/0013-hold-156-until-spine.md",
-      "sha256": "e237a244641cb0c5851ee2ec3cb165dc1b112987c8364f4d8412bfa9b96462b3"
+      "sha256": "115e5cf0757ea11fcee7abfc14b3ad31df73c846c1bc5925bbc789ee09b63ecf"
     },
     {
       "path": "docs/adr/0014-one-command-one-prompt.md",
-      "sha256": "d18624fdb4eb30e3296f4154f76c23502778f29654e34b8ed7730e5ab706183d"
+      "sha256": "28ba2177ac71e0158699dd7ded26e03cca0660bdea7d95b96489e18dc44fbd7e"
     },
     {
       "path": "docs/adr/0015-voice-bank-interim.md",
-      "sha256": "7ac586128586659c84762302f4cb54ca88ff64e987d2b3f2c2bcd81fbeff52b9"
+      "sha256": "4c2b7ccebfe7042007b3266201842ab963d25b3c6dc2c2bddd4ea8ba352291c2"
     },
     {
       "path": "docs/adr/0016-orchestrator-and-campaign-plan.md",
-      "sha256": "b473edf25d41c86875bd956c9a1f89d27a60043ac3364284d14d1ae90e7a3cb4"
+      "sha256": "d0a41ee52014486235b835df4028b5ef7687935431dc474eaa0b5b942bcacfc0"
     },
     {
       "path": "docs/adr/0017-specialist-routing-and-current-scope.md",
-      "sha256": "e70dbd6e021bfc015a0ff4c3719e39560d511637bd8d5f14985f870052b3ff97"
+      "sha256": "1ef023fce51c688a532252c9e4d4d8b147ba64f5002008453751ad8c8ffed6d2"
     },
     {
       "path": "docs/adr/0018-ugc-app-reveal-preparation.md",
@@ -398,19 +366,7 @@
     },
     {
       "path": "docs/adr/0020-vista-channel-draft-batch.md",
-      "sha256": "8c7d1cd781d507d44b5d652e367d4b316e5e81c8f05108b60d18febb5488e052"
-    },
-    {
-      "path": "docs/agents/domain.md",
-      "sha256": "3493be161291ea9ede766c7db6eb6e3d74b546c43c77a41b38bf23236c50f288"
-    },
-    {
-      "path": "docs/agents/issue-tracker.md",
-      "sha256": "afd6852a80185217bd28aa5cbe456bef1e85be25be7bd1fba382d5b8ee428325"
-    },
-    {
-      "path": "docs/agents/triage-labels.md",
-      "sha256": "4f53c9b40ce2651e3611aa090eaedbd6dbc9b71ef8c5f7e65eac0d8263190d0d"
+      "sha256": "7e3b63a6c707c1f810433c51f23438fbdcbf230d4498b47f7ea09ad4e6b732f8"
     },
     {
       "path": "docs/audits/sds-trial-2026-09-09/REPORT.md",
@@ -433,24 +389,20 @@
       "sha256": "b20604e46fc9d81b040d1c26890797a4b83393c83fe620ede1a33d5f1f9ce41d"
     },
     {
-      "path": "docs/research/agentskit-install-audit.md",
-      "sha256": "4a90532fc864afe87ea96d3333fe8c481f9c85bd7472a0cbe828d26b5be77afb"
-    },
-    {
       "path": "docs/specs/N01-tix-source-baseline.md",
-      "sha256": "b0544a61c8b4a44b7301b1f07f8bbae4e79235463589fccdeb95bc3810a63079"
+      "sha256": "7aa84482927e856384fb5c70b1cc3a50ec150813e83789424a4e0480ccc1765c"
     },
     {
       "path": "docs/tickets/N01-tix-source-baseline.md",
-      "sha256": "1533d0f2e17a504c0bb6b326189fecc1addd11dfd0660b350df78a36890eb2cc"
+      "sha256": "a40486bd38af31be05a421fd1a887b59f63dabc14bf6d1ad1f58a7fc0da00a63"
     },
     {
       "path": "engine/README.md",
-      "sha256": "e4eaca2af591ae68d8557c83f6128845c6b7f03ef46a252e13b6ecdcd1494ad4"
+      "sha256": "adc6bc4cdaefaedd45675ff6ccb20947d8a850fe24271681d1fd321e8e74cd21"
     },
     {
       "path": "engine/adapters/01_social_video.md",
-      "sha256": "c1c4e85d92eab4acac4a0a07cffed7ccb9937429382d01f2658c725833a15f59"
+      "sha256": "69b5c9dd27369b89f27b14b1779b7d884086d74520b7aa577157dd6ceb676a79"
     },
     {
       "path": "engine/adapters/02_blog.md",
@@ -466,15 +418,15 @@
     },
     {
       "path": "engine/adapters/05_login_animation.md",
-      "sha256": "b8204ec5c61d27435ca611ebffed879bc67fda6965e2a056f31527d2c3295e5e"
+      "sha256": "1987d83f8ab01adacc2817356590612293e03c4bed54a287cb610d1b913ad373"
     },
     {
       "path": "engine/adapters/06_in_app_popup.md",
-      "sha256": "3c2ddfaeb114f82e1257d85db8c4b73da820109210b61fbf445fa7a6641a7fa8"
+      "sha256": "4e97cf0989c15bfd4efb595d7852ddef220b1ab81ae46b655f4ca16eccd64ffc"
     },
     {
       "path": "engine/adapters/07_campaign_plan.md",
-      "sha256": "15f823ae609c64d8eab038a094acc3c7d2bc9cbf0d5a0b76f6137297ae3ca335"
+      "sha256": "773a16a991322a72c1cbdedb241f31441a06d85e45fcbf37249101fb37ccc4e7"
     },
     {
       "path": "engine/specialists/CONTRACT.md",
@@ -498,7 +450,7 @@
     },
     {
       "path": "engine/specialists/channel-production/prompts/email.md",
-      "sha256": "13760673196793f1f2a9579885c57ff7bc6d7ddc33ad5402da6bc270d8c717ce"
+      "sha256": "4966ddd8e351597b153abc9def799c2cf121f74a585e212da0bfccac7c17aec9"
     },
     {
       "path": "engine/specialists/channel-production/prompts/popup.md",
@@ -621,84 +573,36 @@
       "sha256": "be79f394471ce741cf2ad4fdc114e8edc27e770c400ef4a0276b31257b68eaf6"
     },
     {
-      "path": "findings.md",
-      "sha256": "89ec1dcaa6a2da0d60d8972eb3ab554ff1ef2af50dbb1fc32920f79f7247c967"
-    },
-    {
       "path": "handoff/ENGINEER-START-HERE.md",
-      "sha256": "50ffe1e50ffa61873b88c9d6bcb74b31b2c2846fe8a746301b5d6a4c9de7d7c9"
+      "sha256": "ec49b05bea4a98a0538e385e3568124ecfc1003fdc7f211a08894b59d34a60cf"
     },
     {
       "path": "handoff/README.md",
-      "sha256": "8247b9ac48baf73b82a1bcf95082396763221e785ed7e62b00f3e40b8e2b3e8b"
-    },
-    {
-      "path": "handoff/REVIEW-PACKET.md",
-      "sha256": "ef7af7167c43c96da34df66a7ced894bf3106be333c5bc36f274748e72717b8e"
+      "sha256": "130c7608d106a466ede7205fefbe5a9199411aeac433d622bc268d53bdd43a0e"
     },
     {
       "path": "handoff/VISTA-LAUNCH-FACTORY-HANDOFF-SOP.md",
-      "sha256": "c38f1603c8de2b80c78229ecf2af234264bb6da5bd7346974ef03ecb093169e0"
+      "sha256": "064a14c9b9b1aaf488a760ee2bd2564875272cbd4f90979595c2145b42cc4350"
     },
     {
       "path": "handoff/marketer-run-checklist.md",
-      "sha256": "69f272e2a59f2bc355e0c99c6702beb7ac26612a056d809dc0944f06b6959d10"
-    },
-    {
-      "path": "handoff/review-report-v0.1.1.md",
-      "sha256": "fc537a2ad0740c37cd4079413c6f92acfa3ff1fd0677b3634a462f19ef0cf152"
-    },
-    {
-      "path": "handoff/review-report.md",
-      "sha256": "3deece443fdbdd551b05a83804e59bf56e4e769a7700282a2fd58a465851d432"
+      "sha256": "4f9c70639842b0d956614df68f93278f7bb1faa38f4d74de968c3fa4c91b4958"
     },
     {
       "path": "hubspot/sandbox-checklist.md",
-      "sha256": "8624231548ed7831fa7612084092f07454b1cd878948c098187b095a7c91110a"
-    },
-    {
-      "path": "maintainer-source/README.md",
-      "sha256": "de695f8e585037ba9120770726d33a2afadde5c423e248ceab862323620f374e"
-    },
-    {
-      "path": "notion/campaign-template.md",
-      "sha256": "41b4c45ea6d4484378bc4e7cd96f4dfb6e8dd99aad74233a60f0fa154b2d1501"
-    },
-    {
-      "path": "optional/hyperbots-stack-note.md",
-      "sha256": "0d510b1bec0c8aaa55879fd3f7bdd9c31d778d9f1b3d60e8307a9263d1bdcdbd"
-    },
-    {
-      "path": "prep/tue-wed-checklist.md",
-      "sha256": "0b94b8e6d1c94129c00b6abc5e5bb388fdacbf6cd0dc459e4b2cb038d5cce8a0"
-    },
-    {
-      "path": "progress.md",
-      "sha256": "2c93061331c5c77495cc28eb7778fcfe1a5061e5ee3fd32dd451ee69dc3d1bed"
-    },
-    {
-      "path": "recording/shot-list.md",
-      "sha256": "71972143716776494a075b8e6257e7a358094244dba5f7aabda7a59f3b7c8dbd"
+      "sha256": "c2618a734b26e3e974b23c3b35ddbdca99c5bb481d3551d0af7659a2f165a2d0"
     },
     {
       "path": "requirements.txt",
       "sha256": "1a2f59308b3e2898dcd510781b78749031809dc1521a9099be2edec41206edd6"
     },
     {
-      "path": "task_plan.md",
-      "sha256": "70093f781d945b59d9ac1f299b4b18417d905bd556d29c7663112d43da2159cc"
-    },
-    {
-      "path": "trigger/notion-run-leavebehind.md",
-      "sha256": "da733f6283b54e1e635fb7ed51695dd14d15e5fcaced91328d3699dd62d1f944"
-    },
-    {
       "path": "voice-bank/README.md",
-      "sha256": "179a4e8fc0b9171b448f900a441bad874774d953106e2c23d09c69f0fda5e3c3"
+      "sha256": "0412a0f3d405f24a130e7c81456d01aa0069897e87e5df26ec36f936d9899a1a"
     },
     {
       "path": "voice-bank/corpus/01-email-barry-approval-queue.md",
-      "sha256": "d819d4e083cde8eabacceb0ae818b85920d67d6d042f9d294c3b065a9bdf8702"
+      "sha256": "155e028806007d2dd877aa4aaea4aa795982f6c7eef3e8e694afc34e58126177"
     },
     {
       "path": "voice-bank/corpus/02-website-homepage.md",
@@ -726,7 +630,7 @@
     },
     {
       "path": "voice-bank/corpus/08-blog-introducing-vista-work.md",
-      "sha256": "1d05b744aab37c5f9a57bf09a34c99983ebfc90e153ce3519de657b28da179cd"
+      "sha256": "d5419c890e2eb8dbfdda983714fc99be8758854d5173082ba448de637f0554ca"
     },
     {
       "path": "voice-bank/corpus/09-blog-advanced-social-listening.md",
@@ -738,7 +642,7 @@
     },
     {
       "path": "voice-bank/corpus/11-blog-reggie-customer-service-2023.md",
-      "sha256": "90202c4ffa20efff0b9516630bf0700d09085c15a698fe1efbe7acfacfe09618"
+      "sha256": "5ec3fa7782e21e8fa7649938fc27ffec370d51fc2e9ca4be32ac89af96db78a4"
     },
     {
       "path": "voice-bank/corpus/12-social-x-everything-is-a-task.md",
@@ -770,19 +674,19 @@
     },
     {
       "path": "voice-bank/corpus/19-linkedin-company-affiliate.md",
-      "sha256": "01615ec59ab03cfde13b150a63773c75873d34e8bcb3ab0cbe33b48b134a9a24"
+      "sha256": "a6524498a5303a86f0aaccc1337ed9b3141de12b0665c704bfe941782319f847"
     },
     {
       "path": "voice-bank/corpus/20-linkedin-reggie-profile-headline.md",
-      "sha256": "0c90454c14788f6615602ffff78343073048abf8349072ed8d99006caceb98df"
+      "sha256": "fc3fc8d316ffb3fe59317c9373b0a7c565ad7577c462d0cb028e574ad2650787"
     },
     {
       "path": "voice-bank/corpus/21-podcast-reggie-plugged-in-productivity.md",
-      "sha256": "47dc1548312624b967e54bafc5b6aa96adff1e1cc3037675688bec6865a51035"
+      "sha256": "a8aa1778d8ffb8d7ba98de84a856302e6950f8d15c5017340e06e7ba85db8267"
     },
     {
       "path": "voice-bank/corpus/22-podcast-reggie-plugged-in-ai-agents.md",
-      "sha256": "f24d694c60b58a0703d000ed1bda7160a4153584a138f75dd12ddcf60447190e"
+      "sha256": "90abf3aab5d1c5422e69f404f15034569fdf44fd7b60ad9a2b5411e680194e01"
     },
     {
       "path": "voice-bank/corpus/23-website-podcast-page.md",
@@ -790,23 +694,23 @@
     },
     {
       "path": "voice-bank/corpus/24-website-reggie-author-bio.md",
-      "sha256": "2ef43260d4cd86cb4cd5852de0f0fc39c29e101fef74843b6c3fdab4a493115d"
+      "sha256": "77c204712942e4155786901ffaceb35551c30c1f8978b554bfc03068477c4974"
     },
     {
       "path": "voice-bank/corpus/25-social-instagram-reggie-snippet.md",
-      "sha256": "a5252355909ab454e6121208d2634ee4eba6f878f3d9fa89b65660d66a6d660f"
+      "sha256": "8e5c75dd24038bff097bbb7b6d7abc0a54c4cc374ae1533308f0a74caf7fd569"
     },
     {
       "path": "voice-bank/gaps.md",
-      "sha256": "e78839031517bd9bd37875dbeae18a68456f6ca495286f0d8a41e75e3918a4cf"
+      "sha256": "0bd67d67964b1ba9e231e9bf2bc75fac841924faaa07e5cc6b8bc13638923fa5"
     },
     {
       "path": "voice-bank/provenance.md",
-      "sha256": "6f6f9c7cd3fba82a3422d66457f99096d3b73c6fc451060bac7ed8bb009923d8"
+      "sha256": "d00272aab2b1182a44303dde2d7269cd32a6234b5c4fe12ea31347810f7b39b9"
     },
     {
       "path": "voice-bank/tone-and-style-brief.md",
-      "sha256": "d62f47f960df747206d8909c6c7ab00dd9c549ef64def95a10d66744aa46cfc8"
+      "sha256": "583ba21b9f4b0661267b1dbbd5d0c3d9ae76c7255c7ff30799017536ed6e86d3"
     }
   ]
 }

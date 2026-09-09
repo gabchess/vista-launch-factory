@@ -150,7 +150,7 @@
   "run_log": [
     {
       "at": "2026-09-07T22:14:51+00:00",
-      "entry": "init_release: ingested /Users/gava/projects/vlf/vista-launch-factory/engine/fixtures/demo-release"
+      "entry": "init_release: ingested engine/fixtures/demo-release"
     },
     {
       "at": "2026-09-07T22:14:51+00:00",
