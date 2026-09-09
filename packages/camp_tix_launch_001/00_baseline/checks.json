@@ -37,7 +37,7 @@
         "human_approval_granted": false
       }
     ],
-    "media_file_reinspection": "Separate operator/Forge receipt; this portable check has no media files",
+    "media_file_reinspection": "Separate operator and verifier receipt; this portable check has no media files",
     "human_approval_granted": false,
     "provider_calls": 0
   },
@@ -49,7 +49,7 @@
     "human_decision": "pending"
   },
   "media": {
-    "source": "Operator rehash of the two current approved files plus independent Forge check",
+    "source": "Operator rehash of the two current approved files plus an independent verifier check",
     "current_hashes_match": true,
     "private_media_bytes_copied_into_packet": false,
     "subjects": [
@@ -67,7 +67,7 @@
   },
   "independent_verification": {
     "status": "pass",
-    "verifier": "Forge",
+    "verifier": "independent verifier",
     "checked_at_utc": "2026-09-08T23:09:09.640026+00:00",
     "acceptance_results": {
       "AC01": "pass",

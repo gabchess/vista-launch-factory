@@ -1,1 +1,0 @@
-NO video — no real Loom/UI footage; Demo Assets must not enter Claim Ledger (ADR 0001)

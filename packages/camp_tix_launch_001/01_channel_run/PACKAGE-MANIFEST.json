@@ -260,8 +260,8 @@
     },
     {
       "path": "popup/NOTES.md",
-      "bytes": 5132,
-      "sha256": "6595ac8b2c133abd1d935d103e79626723f6bc5f52658e202033f1f839602829"
+      "bytes": 5139,
+      "sha256": "53dc9c40cc1a95c4125ee1202970afb91e69ecc42fad7338ecd075b9e95077b7"
     },
     {
       "path": "popup/artifact-hashes.json",
@@ -400,8 +400,8 @@
     },
     {
       "path": "verification/independent-review.md",
-      "bytes": 7447,
-      "sha256": "52efe9b21c94d2fa6b09c749b78433d33be86209724343924cc4c54d554989df"
+      "bytes": 7461,
+      "sha256": "0d03e832a7e0ff133d86738fd4580eed341ef53ecf1e199fa7781b8d617b6ce7"
     },
     {
       "path": "verification/preparation-run.json",

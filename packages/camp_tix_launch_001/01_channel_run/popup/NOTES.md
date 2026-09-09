@@ -6,7 +6,7 @@ Open [popup.html](popup.html) for the finished preview. It contains its fonts, g
 
 ## Role and source binding
 
-Egdod performed the `popup_designer` role inline after reading the generated LF popup skill, shared contract, popup bank, AgentsKit popup-CRO skill and the operator’s request/route. This was not a native `lf_popup_designer` agent invocation. The source revision is `27826b0332fd1582108ac0081165a7dd360e7aa6`. The route context digest is in `copy.json`.
+The operator performed the `popup_designer` role inline after reading the generated LF popup skill, shared contract, popup bank, AgentsKit popup-CRO skill and the operator’s request/route. This was not a native `lf_popup_designer` agent invocation. The source revision is `27826b0332fd1582108ac0081165a7dd360e7aa6`. The route context digest is in `copy.json`.
 
 The current user instruction authorizes drafts of all missing outputs before one review. No human decision was written into the older baseline or routing records. The source packet’s pending Claims Lock remains visible in review metadata.
 
