@@ -41,7 +41,7 @@ The server binds to `127.0.0.1` and supplies GET content without a publishing or
 
 ## Related browser finding from root
 
-The reviewer observed that the popup's embedded `dialog.show()` moved focus to its close control and scrolled the outer review page. the operator made the authorized narrow correction: iframe mode sets the `open` attribute; standalone mode retains `showModal()`. Copy and graphic hashes stayed unchanged. Script syntax passed. Root then reloaded and selected the popup in the in-app browser: focus remained in the outer web area and no forced scroll occurred. Root also reported legible desktop/mobile artwork and copy. This browser result is attributed to root, not an independent full-browser pass by the operator.
+The reviewer observed that the popup's embedded `dialog.show()` moved focus to its close control and scrolled the outer review page. The operator made the authorized narrow correction: iframe mode sets the `open` attribute; standalone mode retains `showModal()`. Copy and graphic hashes stayed unchanged. Script syntax passed. Root then reloaded and selected the popup in the in-app browser: focus remained in the outer web area and no forced scroll occurred. Root also reported legible desktop/mobile artwork and copy. This browser result is attributed to root, not an independent full-browser pass by the operator.
 
 Corrected popup HTML SHA-256: `c2254ad3a876e051c6309b90b682ae714e00f164f62eec8394eb4ae26903b397`.
 
