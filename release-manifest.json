@@ -1573,8 +1573,8 @@
     },
     {
       "path": "voice-bank/tone-and-style-brief.md",
-      "sha256": "583ba21b9f4b0661267b1dbbd5d0c3d9ae76c7255c7ff30799017536ed6e86d3",
-      "bytes": 10588
+      "sha256": "e5565988b3daeabc90f60ffaaa4426a92cfc4f814a54a0c553eea5d67f87f894",
+      "bytes": 10630
     }
   ],
   "evidence_boundary": "Proves pack file integrity and includes the specialist 0.3.1 project entry points, protocols and offline routing checks (ADR 0017). Does not prove host invocation, provider access, human authentication, semantic quality or customer outcomes. Historical fixtures and the Claude 0.2.0 ZIP retain their legacy scope. Vista voice remains interim (ADR 0015). See HOST-MATRIX.md."

@@ -7,9 +7,9 @@
 ## 1. Sentence length & rhythm
 
 - **Short declaratives stacked for punch.** "One workspace. One login. One source of truth." (`08-blog-introducing-vista-work.md`). "Not anymore." as a standalone paragraph (`15-social-x-ai-image-video.md`). "No hunting." (`08`).
-- **The pain-scene → pivot → product three-beat.** Barry email seed: three rhetorical questions, then "None of that lives in the task." then the Vista Work fix (`01-email-barry-approval-queue.md`). The SMM-project-management blog opens identically: "Count the tabs open on your second monitor." → "That repeated explanation is the translation tax." → bolded pivot sentence (`07-blog-smm-project-management.md`).
+- **The pain-scene → pivot → product three-beat.** Barry email seed: three stacked rhetorical questions, then a one-line pivot naming what the task lacks, then the Vista Work fix (`01-email-barry-approval-queue.md`, paraphrased). The SMM-project-management blog opens identically: "Count the tabs open on your second monitor." → "That repeated explanation is the translation tax." → bolded pivot sentence (`07-blog-smm-project-management.md`).
 - **Longer, multi-clause sentences appear in body/blog prose but stay plain**, subordination is used for cause-and-effect, never for flourish (`06-blog-vista-social-vs-later.md`, `16-social-x-hootsuite-five-reasons.md`).
-- **Rhetorical questions are a signature device**, in the seed email ("Which one? The version from this morning, or the one still sitting in drafts?") and in social ("Does it get any better? 😌", `14-social-x-3-features.md`; "Using AI just for captions? Boring.", `13`).
+- **Rhetorical questions are a signature device**, in the seed email (short stacked which-version questions; see `01`, paraphrased) and in social ("Does it get any better? 😌", `14-social-x-3-features.md`; "Using AI just for captions? Boring.", `13`).
 
 ## 2. Vocabulary register
 
@@ -24,7 +24,7 @@
 - **Homepage/product pages: benefit-as-headline, often with attitude.** "That other tab where you manage your work? Closed." (`03`). "Your brand, impossible to ignore on social media" (`02`).
 - **Blog posts: open inside the reader's pain scene, second person, present tense.** "Count the tabs open on your second monitor." (`07`). "Every social team runs the same split: content lives in Vista Social, but the work about that content lives somewhere else." (`08`).
 - **Launch posts: straight announcement, first-person proud.** "Today, I'm proud to announce…" (`10`); "Today we're launching…" (`09-blog-advanced-social-listening.md`).
-- **The Barry email seed opens with the reader's exact moment of confusion**: "Your approval queue has a task that says 'Approve the next post.' Which one?" (`01`), no greeting, no product name until the fix.
+- **The Barry email seed opens with the reader's exact moment of confusion**: an approval task that names a post without showing it, followed immediately by which-version questions (`01`, paraphrased), no greeting, no product name until the fix.
 
 ## 4. Emoji & punctuation habits
 
@@ -56,7 +56,7 @@
 
 ## 8. Register differences: blog vs email vs social vs Reggie
 
-- **Email (Barry seed, `01`)**: most restrained. No emoji, no exclamation marks, no greeting/sign-off. Opens mid-confusion, asks short questions, states the cost ("That search takes longer than the decision does."), then the fix in two plain sentences, then a two-word arrow CTA. Closest thing to a person thinking out loud with the reader.
+- **Email (Barry seed, `01`)**: most restrained. No emoji, no exclamation marks, no greeting/sign-off. Opens mid-confusion, asks short questions, states the cost in one plain sentence (the search outlasting the decision), then the fix in two plain sentences, then a two-word arrow CTA. Closest thing to a person thinking out loud with the reader.
 - **Blog (`06` to `10`)**: pain scene → "short version" bullets → sectioned argument → bolded thesis sentences. Authoritative, comparative, still conversational. CEO-bylined posts use first person ("That's the gap I kept coming back to", `10`).
 - **Website (`02` to `05`)**: headline attitude + subhead promise + reassurance trio + arrow CTAs. Shortest sentences of any channel.
 - **X/LinkedIn (`12` to `19`)**: hooks first ("Everything is a task now. ✅"), emoji as rhythm markers, listicles, hashtags only on X/LinkedIn promo posts, occasional lowercase informality on LinkedIn.
@@ -67,7 +67,7 @@
 
 1. Opens on the reader's screen, quoting their UI back at them ("a task that says 'Approve the next post.'").
 2. Follows with stacked short questions the reader can't answer, building the pain without adjectives.
-3. Names the hidden cost in one plain sentence: "That search takes longer than the decision does."
+3. Names the hidden cost in one plain sentence (the search outlasting the decision).
 4. Introduces the product late, as relief, not as hero: "In Vista Work, the task and social posts are linked."
 5. Concrete contrast pairs: "the actual content, not a card describing it", "see what needs a decision instead of hunting for it first."
 6. Zero emoji, zero exclamation points, zero hype words.
