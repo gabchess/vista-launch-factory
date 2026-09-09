@@ -2,16 +2,11 @@
 
 Launch Factory turns one release folder into six launch assets and a campaign calendar. A person reviews every asset at a gate before it moves. Nothing auto-publishes or auto-sends.
 
-## If you are reviewing the work
-
-1. Open the [Tix review page](packages/camp_tix_launch_001/01_channel_run/review.html) for the full run.
-2. Read the [claim ledger](packages/camp_tix_launch_001/00_baseline/claim-ledger.json) to see how each claim traces to a quote.
-
 ## If you are running it
 
-1. Open this repository in [Claude Code](docs/INSTALL-CLAUDE.md) or [Codex](docs/INSTALL-CODEX.md).
-2. Ask: `Run Launch Factory on this release folder.` The operator identifies the product and the human reviewer, then routes each stage to a specialist.
-3. Or run `./run.sh engine/fixtures/demo-release` for the one-command door.
+1. Install the plugin (`/plugin install launch-factory --source .` after cloning, or `claude --plugin-dir .`), then run `/launch-factory:launch` in Claude Code. Or open this repository in [Claude Code](docs/INSTALL-CLAUDE.md) or [Codex](docs/INSTALL-CODEX.md) and ask: `Run Launch Factory on this release folder.`
+2. The operator identifies the product and the human reviewer, then routes each stage to a specialist.
+3. Or run `./run.sh engine/fixtures/demo-release` for the one-command door, no agent required.
 4. Review each draft or media file at its gate, with its version, hash, sources, and remaining gaps.
 
 ## If you are maintaining it

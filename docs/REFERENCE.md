@@ -2,10 +2,9 @@
 
 This is a from-source reference for operating the Launch Factory engine. Every
 claim below was checked against the code in this checkout (`run.sh`,
-`engine/scripts/*.py`, `engine/schemas/*.json`, and
-the package under `packages/`). Where the code and the existing prose
-docs (`README.md`, `docs/OPERATE-LAUNCH-FACTORY.md`) disagree, this file
-follows the code and calls out the gap.
+`engine/scripts/*.py`, `engine/schemas/*.json`). Where the code and the
+existing prose docs (`README.md`, `docs/OPERATE-LAUNCH-FACTORY.md`) disagree,
+this file follows the code and calls out the gap.
 
 ## 1. Commands
 
@@ -92,35 +91,33 @@ every referenced file, and returns `status: held` with named reasons, or
 `generation_authorized`, and `authentication_verified` are `false` in every
 code path. Any error prints `{"status": "refused", ...}` and exits 2.
 
-### Package-embedded scripts (not general engine commands)
+## 2. Package layout (ground truth: `engine/scripts/build_package.py`)
 
-`packages/camp_tix_launch_001/01_channel_run/serve_review.py --port PORT
-[--film PATH] [--animation PATH]` and `verify_package.py [--write-manifest]`
-are copied into that one package, hardcode paths relative to it, and are not
-reusable across campaigns. The server range-serves two named videos only
-after a sha256 check against `review-data.json`'s `approved` entries.
+No package ships in this repository. `packages/` fills in only once you run
+`run.sh` or `build_package.py` against your own release folder. Two hand-assembled
+worked examples shipped here in earlier snapshots; both were removed along with the
+client and product material they held. This section describes what
+`build_package.py` actually writes, checked against its source.
 
-## 2. Package layout (ground truth: `packages/`)
+`build_package.py CAMPAIGN_JSON OUT_DIR` writes `OUT_DIR/<campaign id>/`:
 
-One package is checked in today: `packages/camp_tix_launch_001/`. It does not
-match the `build_package.py` shape described in §1.
-
-A second example package once shipped here, shaped as
-`artifacts/{blog,emails,changelog,social,login,popup}/` plus `campaign/`,
-`claims/`, `costs/`, `events/`, `jobs/`, `reviews/`, `requests/`, `sources/`,
-and `voice/`. It was removed along with the client material it held, and the
-bespoke scripts that built it went with it, because they fetched that client's
-pages live. To produce an equivalent example, run `./run.sh` against your own
-release folder.
-
-**`packages/camp_tix_launch_001/`** uses an unrelated, older two-stage
-layout: `00_baseline/` (source manifest, claim-ledger.json, voice profile,
-`approvals.json`), then `01_channel_run/` (per-channel dirs `blog/`,
-`email/`, `changelog/`, `popup/`, `campaign/calendar.{json,csv}`, plus
-`bindings/`, `requests/`, `routing/`, `verification/`,
-`PACKAGE-MANIFEST.json`, `review.html`, and the §1 package-embedded
-scripts). No script here builds this shape; treat it as hand-assembled, not
-`build_package.py` output.
+- `01_social_video/`, `02_blog/`, `03_email_segments/`, `04_changelog/`,
+  `05_login_animation/`, `06_in_app_popup/`, `07_campaign_plan/`: one directory
+  per slot. A held slot gets `HELD.txt` (the hold reason); a slot whose artifact
+  path is missing gets `MISSING.txt` (the expected path); otherwise the artifact
+  file is copied in under its own name.
+- `cadence/`: a copy of the campaign's cadence file (`cadence_ref`, default
+  `cadence_binder.json`), if it exists.
+- `provenance/`: copies of the campaign's `sources.transcript`,
+  `sources.github_outline`, and claim ledger (`claim_ledger_ref`), if they exist.
+- `honesty/still-needs-human.md`: copied from `work_root/honesty/still-needs-human.md`
+  if present, else generated from the campaign's `still_needs_human` list.
+- `MANIFEST.json`: `campaign_id, title, fixture_label, status
+  (review_ready_pre_claims_lock | packaged), auto_publish: false, reviewer_seat,
+  hubspot_sandbox, note`.
+- `REVIEWER.md`: a generated review card with campaign, seat, surface, package
+  and Claims Lock status, the first non-held slot due for spot-check, a
+  slot table, review links, a decision checklist, and a forbidden-actions list.
 
 ## 3. State machine (`engine/scripts/transition_slot.py`)
 
