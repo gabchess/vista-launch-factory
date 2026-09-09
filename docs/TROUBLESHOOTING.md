@@ -1,31 +1,50 @@
 # Troubleshooting
 
-## Skill / workflow pack not active
+## Skill or workflow pack not active
 
-**Symptom:** Files are on disk but the host does not behave like Launch Factory.  
-**Check:** Folder visible ≠ workflow pack active. Re-run install ([INSTALL-CODEX.md](INSTALL-CODEX.md) / [INSTALL-CLAUDE.md](INSTALL-CLAUDE.md)), reload host, confirm skill name.
+**Symptom:** the files are on disk, but the host doesn't behave like Launch Factory.
+
+**Fix:** having the folder present doesn't mean the workflow pack is active. Re-run
+install ([INSTALL-CODEX.md](INSTALL-CODEX.md) or [INSTALL-CLAUDE.md](INSTALL-CLAUDE.md)),
+reload the host, and confirm the skill name.
 
 ## Claude ZIP missing
 
-**Symptom:** No `claude/launch-factory-v0.2.0.zip`.  
-**Expected in v0.2.0:** the ZIP ships in `claude/`. Use the Codex door if it is missing. See `claude/README.md`.
+**Symptom:** no `claude/launch-factory-v0.2.0.zip`.
 
-## Pack tries to publish or send
+**Fix:** the ZIP ships in `claude/` in v0.2.0. If it's missing, use the Codex door
+instead. See `claude/README.md`.
 
-**Symptom:** User or model proposes “just publish” / “send the email.”  
-**Correct behavior:** Refuse. Barry HITL + authorized tooling required. Re-read TRUST and SKILL Do-not.
+## The pack tries to publish or send
+
+**Symptom:** a user or the model proposes "just publish" or "send the email."
+
+**Fix:** refuse. That needs Barry's human review and authorized tooling. Re-read
+[TRUST-PRIVACY-AND-AUTHORITY.md](TRUST-PRIVACY-AND-AUTHORITY.md) and the skill's
+"Trust / Do-not" section.
 
 ## Invented claims or pricing
 
-**Symptom:** Output includes features/prices not in the release folder.  
-**Correct behavior:** Strip to Claims Lock; escalate; do not ship. Validate ≤2 then human gap list.
+**Symptom:** the output includes features or prices not in the release folder.
 
-## Expecting all six assets
+**Fix:** strip the claim back to what Claims Lock allows, and escalate. Don't ship it. If
+validation still fails after one fix-and-retry, hand the reviewer a clear gap list
+instead of looping.
 
-**Symptom:** Reviewer expects video / login / popup as final.  
-**Expected:** Slots 1/5/6 are HOLD stubs, see [HUMAN-GAPS.md](HUMAN-GAPS.md). Package must name the HOLD.
+## Expecting all outputs to be ready
 
-## Engine schemas empty or forked
+**Symptom:** a reviewer expects video, login animation, or the popup as finished, final
+assets.
 
-**Symptom:** `engine/schemas/` missing, or a second schema set under `codex/launch-factory/schemas/` / Claude ZIP.  
-**Expected (A3+):** Option B SoT lives under product-root `engine/` (schemas + `engine/scripts/` validators). Codex `schemas/` is a pointer only: do not invent a parallel tree. If `engine/` looks empty, you are on a pre-A3 checkout; pull main / this PR.
+**Fix:** these need real footage and creative judgment. Some may be held with a reason;
+see [HUMAN-GAPS.md](HUMAN-GAPS.md). Every package must name what's held.
+
+## Engine schemas missing or forked
+
+**Symptom:** `engine/schemas/` is missing, or a second schema set has appeared under
+`codex/launch-factory/schemas/` or in the Claude ZIP.
+
+**Fix:** the canonical schema set lives under repo-root `engine/`
+(`engine/schemas/` plus the validators in `engine/scripts/`). `codex/launch-factory/schemas/`
+is a pointer only; don't invent a parallel tree. If `engine/` looks empty, you're on an
+old checkout; pull the latest `main`.

@@ -1,6 +1,8 @@
-# Vista Launch Factory
+# Vista Launch Factory: glossary
 
-The bounded context for turning one Vista feature-release folder into six review-ready launch artifacts plus a one-release campaign cadence, with Barry as the only copy/creative ship gate.
+Domain language for turning one Vista feature-release folder into review-ready launch
+artifacts plus a one-release campaign plan, with Barry as the only copy-and-creative ship
+gate.
 
 ## Language
 
