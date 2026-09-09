@@ -408,8 +408,8 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "83437676e09fba725cb259697622f5fa90c551d5799a7f7b21bdee8e2218b30c",
-      "bytes": 106
+      "sha256": "b6c9ee51bdb2771d737384d3f0a632cbac4444ba6789b563c833cf36f1b0961f",
+      "bytes": 187
     },
     {
       "path": "AGENTS.md",
@@ -423,28 +423,28 @@
     },
     {
       "path": "HOST-MATRIX.md",
-      "sha256": "36080ba1dded5648e25fa18f554d5f468cbf923bb45fbf3988887e7f80475746",
-      "bytes": 2452
+      "sha256": "3d57c6eff48f7ed3ba3b412d301962fe066b4e9d2e4f4e059fb7abe81193b26e",
+      "bytes": 2384
     },
     {
       "path": "LICENSE-STATUS.md",
-      "sha256": "9c1a79d45279830322ed24f8dbf047c1188788e96117cf3f3af0db7f2cf877ea",
-      "bytes": 1044
+      "sha256": "13c0c51b42ec02d179ac3d64c404d79c81fe40419f647b243abc03bff2d90a98",
+      "bytes": 1048
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "4e12903304d321309c6a6d15436859dd3f2ffbc9a467ca55062970fc22e97bbd",
-      "bytes": 3161
+      "sha256": "efd020082548352ae7d88c8ed3bf340a6ea764fde33a1eb322978d485b776794",
+      "bytes": 3272
     },
     {
       "path": "README.md",
-      "sha256": "c8a3784d97dc72fbdb46d226b3ca13d13ec86b009f361b9edbb4291b24c93f92",
-      "bytes": 6871
+      "sha256": "a3a20cef04309bf89ff6e46cb9c17c3ed424e22333e300b95b7cfc7bbc498735",
+      "bytes": 7432
     },
     {
       "path": "START-HERE.md",
-      "sha256": "026d09e7132e515ce04b9e0ef8dc9b45c9113715a97f2ad7c34d414fcf6d7a69",
-      "bytes": 2011
+      "sha256": "564f654c05f595c4218499b7a4153c407fcdf2b32238d47e304310714f3d40ed",
+      "bytes": 2074
     },
     {
       "path": "automation/n8n/channel-production/PLAN.md",
@@ -663,63 +663,63 @@
     },
     {
       "path": "docs/CHECKPOINT.md",
-      "sha256": "9f05c9803a3c17cdd32f5938f004bed07b81cb8c21ef82331aa5f4da58df0fda",
-      "bytes": 7094
+      "sha256": "f00cca82c537c141e42d470196c3e13931389f031486e4e8809977b2caed6c16",
+      "bytes": 545
     },
     {
       "path": "docs/CONTEXT.md",
-      "sha256": "891d4c7e00220a26fc7d8ee6d77e7a5dd127efb67ce3364c1f7c47cde8e63251",
-      "bytes": 3908
+      "sha256": "a3aff3b6faa4b1fc52181803a2d0e597cea34fbdef68f0b4f4af0e53ef2568a7",
+      "bytes": 3911
     },
     {
       "path": "docs/DOCUMENTATION-CUSTODY.md",
-      "sha256": "9db82f2bb2ed4e7de079429199eeaa0e785eda4edbb3561503d3409a130f800a",
-      "bytes": 979
+      "sha256": "3a804c2d96a346ce4b15ead81dcf37d4a43f79852223b4b2fcabb1aa773af2cf",
+      "bytes": 825
     },
     {
       "path": "docs/FIRST-RUN.md",
-      "sha256": "6e8b7d703608482a3783bef91475bd542ee6b910420754c21ac03db404dff274",
-      "bytes": 2251
+      "sha256": "7e53d62da76005f4552fbd6907fa9b8f8b9885163904b99cedb9d4ec83350d8e",
+      "bytes": 2362
     },
     {
       "path": "docs/HUMAN-GAPS.md",
-      "sha256": "68a87815b785a7b14516a3bd074652acd51a027da2c756887306291e46ff6f9f",
-      "bytes": 3563
+      "sha256": "85457c77269c54b34c625a190e273d65f315fefef0cd09aa07a699aaed034b9b",
+      "bytes": 4853
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
-      "sha256": "a4d6aa32b693145369d08550c72918bdd25707ae29e5ef700312fc2034ca3d0c",
-      "bytes": 2096
+      "sha256": "dc5bde74a362bb24edda12887aceaf69d5e7fad9b2899b6495f4802b785960b9",
+      "bytes": 2145
     },
     {
       "path": "docs/INSTALL-CODEX.md",
-      "sha256": "7f494cf8a781c66cbeaf3b38e5d59e37deaab745e6e124fe9370dcc0d798811c",
-      "bytes": 2407
+      "sha256": "2eded939b2371660b93fdbd1eb229dc69e958c86c1d3b8851d7329cad6cac1aa",
+      "bytes": 2492
     },
     {
       "path": "docs/NEXT-STEPS.md",
-      "sha256": "378719d4de59ebbbf5a22326b54fa825639fc56594251545b593ef17da09fb99",
-      "bytes": 31489
+      "sha256": "ad5a1ee65c800f4776d7dd228b056a23dc5bd686b6f457775689dbb44b887c9e",
+      "bytes": 641
     },
     {
       "path": "docs/OPERATE-LAUNCH-FACTORY.md",
-      "sha256": "7de02eeb6308012f00945d9d216813a6ab9b8c76f63c33df638726b4ed50bee6",
-      "bytes": 2816
+      "sha256": "f50aed722f2c225a1dfd99b609dd951ff220aae6be06a5d35cf91840873401c7",
+      "bytes": 3335
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
-      "sha256": "885554be86498444ee3cc531a6fd7c81d59dc9c22cb0cd2c11349e3b1140bd81",
-      "bytes": 1546
+      "sha256": "184c511a1cae0f3319f17e99715254dc8cd8227251835d0041faa5d43d044bb3",
+      "bytes": 1927
     },
     {
       "path": "docs/TRUST-PRIVACY-AND-AUTHORITY.md",
-      "sha256": "e9d3b546c367ffcee2c21deeed53fa5a365bcfa4ccb4d4fa316e0e875dd3a46d",
-      "bytes": 1619
+      "sha256": "c9035ec1d1341b400935fc944ea7d5d8ce498d1a8b812d68e1efbaecabbf45af",
+      "bytes": 1682
     },
     {
       "path": "docs/VALIDATION-AND-LIMITS.md",
-      "sha256": "c16c7a6dfe0f2bc584a363b0c0b4c0d75805e0200e64a583ac7aaee3062850be",
-      "bytes": 1844
+      "sha256": "56d017331f4066cd82c7bf668cffdbd42bbc696565bba613a6fa20d1e25f2325",
+      "bytes": 1966
     },
     {
       "path": "docs/adr/0012-recorded-run-hero-repo-link-door.md",
@@ -1323,18 +1323,18 @@
     },
     {
       "path": "handoff/ENGINEER-START-HERE.md",
-      "sha256": "ec49b05bea4a98a0538e385e3568124ecfc1003fdc7f211a08894b59d34a60cf",
-      "bytes": 11229
+      "sha256": "f641ebf71dd3ce0b43149a525390682736b1aee75a43b4dbecb0f40833c2e03c",
+      "bytes": 11330
     },
     {
       "path": "handoff/README.md",
-      "sha256": "130c7608d106a466ede7205fefbe5a9199411aeac433d622bc268d53bdd43a0e",
-      "bytes": 1128
+      "sha256": "20e40f1610a96be0d4045fd3f63a2eaf95af301e70aa8a7943cdb5774ce49451",
+      "bytes": 379
     },
     {
       "path": "handoff/VISTA-LAUNCH-FACTORY-HANDOFF-SOP.md",
-      "sha256": "064a14c9b9b1aaf488a760ee2bd2564875272cbd4f90979595c2145b42cc4350",
-      "bytes": 27707
+      "sha256": "3f020f0c12f78c863ff2c576cb62a35d11e676f38edf11cd029350dcc16b4283",
+      "bytes": 988
     },
     {
       "path": "handoff/assumption-and-gap-log.csv",
@@ -1343,8 +1343,8 @@
     },
     {
       "path": "handoff/marketer-run-checklist.md",
-      "sha256": "4f9c70639842b0d956614df68f93278f7bb1faa38f4d74de968c3fa4c91b4958",
-      "bytes": 2631
+      "sha256": "07314ca4d439473f5c8d1dddc753970684f093e0033437d59eb3c7bfea14e3b3",
+      "bytes": 502
     },
     {
       "path": "hubspot/sandbox-checklist.md",
@@ -1438,8 +1438,8 @@
     },
     {
       "path": "voice-bank/corpus/01-email-barry-approval-queue.md",
-      "sha256": "155e028806007d2dd877aa4aaea4aa795982f6c7eef3e8e694afc34e58126177",
-      "bytes": 1181
+      "sha256": "58bb64bc0b8b65473c14f319b9c5488aa217ef1552b045fcb09c188f08c07fe3",
+      "bytes": 1429
     },
     {
       "path": "voice-bank/corpus/02-website-homepage.md",
@@ -1568,8 +1568,8 @@
     },
     {
       "path": "voice-bank/provenance.md",
-      "sha256": "d00272aab2b1182a44303dde2d7269cd32a6234b5c4fe12ea31347810f7b39b9",
-      "bytes": 3011
+      "sha256": "b8fdbad7df22a6d4bcfd3d2e53d686053ccbfc12ce0f46537544c0f875946663",
+      "bytes": 3328
     },
     {
       "path": "voice-bank/tone-and-style-brief.md",
