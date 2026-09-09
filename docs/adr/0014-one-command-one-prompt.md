@@ -7,7 +7,7 @@ Date: 2026-09-07. Status: accepted (Gabe, grill round 1).
 The operator surface is two doors over the same spine:
 
 1. `./run.sh <release-folder>`: venv, ingest, brief, Claims Lock draft, adapters,
-   validation, Barry package, run log. Non-engineers never open code.
+   validation, Reviewer package, run log. Non-engineers never open code.
 2. A chat-prompt door: "Run Launch Factory on this release folder" inside any host
    agent, backed by the installed skill; when Python/engine is unavailable it falls back
    to the chat-only Claims Lock draft shape, fail closed (already documented).
@@ -16,7 +16,7 @@ The operator surface is two doors over the same spine:
 
 The brief: "marketing, dev, or product should all be able to trigger it." One spine,
 two triggers, means the gates (Claims Lock, spot-check, pack approve) are identical no
-matter which door runs, so Barry reviews the same artifact shapes.
+matter which door runs, so Reviewer reviews the same artifact shapes.
 
 ## Consequences
 

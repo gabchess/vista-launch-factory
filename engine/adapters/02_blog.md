@@ -1,16 +1,16 @@
-# Blog - Vista Work (insights draft)
-**Campaign:** `camp_vista_work_001`  
+# Blog - TaskLink (insights draft)
+**Campaign:** `camp_demo_001`  
 **Slot:** 2 · blog · v1  
-**Status:** review-ready body · **not submitted to Barry** · not published  
+**Status:** review-ready body · **not submitted to Reviewer** · not published  
 **Brief:** `adapters/blog-brief.md` (SEO & AEO Desk)  
 **Voice:** `voice-pack.md` (2026 sharp essay register)  
-**Claims used:** vw1, vw2, vw3, vw4 only (`claim_ledger.json`)  
-**Forbidden:** pricing · seats · $ savings · auto-publish · Barry zero-edit · Gantt · Demo Assets as evidence · Work collapsed into Approvals  
+**Claims used:** tl1, tl2, tl3, tl4 only (`claim_ledger.json`)  
+**Forbidden:** pricing · seats · $ savings · auto-publish · Reviewer zero-edit · Gantt · Demo Assets as evidence · Work collapsed into Approvals  
 
 **H1 (pick):** “Approve the next post” doesn’t tell you which one  
-**Meta (≤155):** Bare approval tasks hide the post. Vista Work links the task to the actual content so approvers decide instead of hunt.  
-**Target:** vistasocial.com/insights/ (slug TBD)  
-**CTA:** Open Vista Work →
+**Meta (≤155):** Bare approval tasks hide the post. TaskLink links the task to the actual content so approvers decide instead of hunt.  
+**Target:** tasklink.example/insights/ (slug TBD)  
+**CTA:** Open TaskLink →
 
 ---
 
@@ -36,17 +36,17 @@ The cost shows up as search, not as a dollar line on a spreadsheet. You pay in t
 
 Agencies feel this hardest because the same pattern multiplies across clients. SMB leads feel it when they are the approver and the maker at once. Either way, the queue becomes a map of work about the work, while the social post still lives somewhere else.
 
-### What Vista Work changes
+### What TaskLink changes
 
-In Vista Work, the task and social posts are linked.
+In TaskLink, the task and social posts are linked.
 
 That single link is the mechanism. You are not maintaining a second project board that describes posts that live in another tool. You open the task, and the social item that started it is attached to the work.
 
-Opening a Vista Work task shows the actual post content, not a card describing it. Approvers can see what needs a decision instead of hunting for the post first.
+Opening a TaskLink task shows the actual post content, not a card describing it. Approvers can see what needs a decision instead of hunting for the post first.
 
 Read that again slowly. The task is not a sticky note that says “go find the post.” The task carries the post. The content you need to judge is in the place where the decision is supposed to happen.
 
-That is different from a generic approval workflow story. Approvals (who must sign, in what order, before something goes live) can still matter as a publishing path. Vista Work’s job in this story is narrower and more practical: keep the work about the post next to the post, so the review starts with the asset, not with a scavenger hunt. Do not collapse those into one product name. Related collaboration story. Different job.
+That is different from a generic approval workflow story. Approvals (who must sign, in what order, before something goes live) can still matter as a publishing path. TaskLink’s job in this story is narrower and more practical: keep the work about the post next to the post, so the review starts with the asset, not with a scavenger hunt. Do not collapse those into one product name. Related collaboration story. Different job.
 
 ### What approvers actually need
 
@@ -64,29 +64,29 @@ One workspace. One login. One source of truth for “what am I approving?” Tha
 
 ### Soft close
 
-If your queue still hands you “Approve the next post” with no post attached, you already know the feeling. Vista Work is built so the task and the social posts are linked, so opening the task shows the actual content, and so approvers can decide instead of hunt.
+If your queue still hands you “Approve the next post” with no post attached, you already know the feeling. TaskLink is built so the task and the social posts are linked, so opening the task shows the actual content, and so approvers can decide instead of hunt.
 
-Open Vista Work →
+Open TaskLink →
 
 ---
 
 ## Claim map
 | Section | claim_id |
 |---|---|
-| Hunt / time tax | vw4 |
-| Mechanism linked | vw1 |
-| Actual content not a card | vw2 |
-| Approvers see what needs a decision | vw3 |
+| Hunt / time tax | tl4 |
+| Mechanism linked | tl1 |
+| Actual content not a card | tl2 |
+| Approvers see what needs a decision | tl3 |
 
 ## AEO answer blocks (liftable)
-1. **Problem (vw4):** When an approval-queue task only says “Approve the next post,” finding the real post and context can take longer than the decision itself.  
-2. **Mechanism (vw1 + vw2):** In Vista Work, the task and social posts are linked. Opening a Vista Work task shows the actual post content, not a card describing it.  
-3. **Outcome (vw3):** Approvers can see what needs a decision instead of hunting for the post first.
+1. **Problem (tl4):** When an approval-queue task only says “Approve the next post,” finding the real post and context can take longer than the decision itself.  
+2. **Mechanism (tl1 + tl2):** In TaskLink, the task and social posts are linked. Opening a TaskLink task shows the actual post content, not a card describing it.  
+3. **Outcome (tl3):** Approvers can see what needs a decision instead of hunting for the post first.
 
 ## Still needs human
-- Barry light-edit pack  
+- Reviewer light-edit pack  
 - Confirm insights slug + internal links live  
-- Claims Lock re-check before Barry  
+- Claims Lock re-check before Reviewer  
 - Final publish (never auto)
 
 ## Word count

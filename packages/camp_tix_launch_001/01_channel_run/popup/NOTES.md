@@ -14,11 +14,11 @@ The headline and body use `TIX-C01` and `TIX-C02`. The canonical CTA destination
 
 ## Design and expression
 
-The selected channel reference is `../voice/popup.md`, derived from the live [Vista login](https://vistasocial.com/login) and [Brand Assets](https://vistasocial.com/brand-assets/). The login’s Poppins, restrained hierarchy and blue-purple primary action informed the modal. The Tix character, blue and buying conversation give the artwork its product identity. Tixmancer is the publisher.
+The selected channel reference is `../voice/popup.md`, derived from an externally observed login page and its public brand-assets page. That login’s Poppins, restrained hierarchy and blue-purple primary action informed the modal. The Tix character, blue and buying conversation give the artwork its product identity. Tixmancer is the publisher.
 
-No Vista announcement popup was visually verified. A public article contains a task-dialog image, but only its article and alt text were accessed. The 560px modal, 24px radius, graphic placement and mobile sheet are original design decisions.
+No feature-announcement popup from the reference source was visually verified. A public article contains a task-dialog image, but only its article and alt text were accessed. The 560px modal, 24px radius, graphic placement and mobile sheet are original design decisions.
 
-The actual CTA uses `#0063E3` to `#884DF5`. This slightly darker purple preserves readable small white text at the gradient endpoint, measured at 4.74:1. The official Vista palette still records `#8C52FF`. No logo or promotional video from Vista was copied into the creative.
+The actual CTA uses `#0063E3` to `#884DF5`. This slightly darker purple preserves readable small white text at the gradient endpoint, measured at 4.74:1. The reference site's published palette still records `#8C52FF`. No logo or promotional video from the reference source was copied into the creative.
 
 ## Placement and behavior
 

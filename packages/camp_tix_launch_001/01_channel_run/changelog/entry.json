@@ -18,7 +18,7 @@
   "cta": {"label": "Join the waitlist", "url": "https://tixmancer.xyz"},
   "review_notes": {
     "publication_status": "Preview announcement. No verified production release date or open access is asserted.",
-    "style_source": "Three actual Vista public changelog entries; see ../voice/changelog.md.",
+    "style_source": "Three externally observed public changelog entries; see ../voice/changelog.md.",
     "before_publication": ["Approve the exact copy", "Verify the waitlist destination", "Confirm release state and access with the product owner"],
     "human_approved": false,
     "published": false,

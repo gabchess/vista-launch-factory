@@ -6,7 +6,7 @@
   "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
   "deliverable": "in_app_popup",
   "stage": "draft",
-  "voice_profile": "vista-popup-adapted-for-tix-v1",
+  "voice_profile": "external-popup-adapted-for-tix-v1",
   "sources": [
     {
       "id": "src-readme",
@@ -30,9 +30,9 @@
       "kind": "fact"
     },
     {
-      "id": "voice-vista-popup-adapted",
+      "id": "voice-external-popup-adapted",
       "path": "01_channel_run/voice/popup.md",
-      "sha256": "6c5dd8238d70f90f090c41657639402ad8711553be34b419b68f0806c8854705",
+      "sha256": "518a5525d6281e36d2ba0acef9ed42abe5e366f9f3c9db38018e9a088ac7a7ac",
       "product_id": "tixmancer",
       "kind": "voice"
     }
@@ -96,7 +96,7 @@
     }
   ],
   "voice_source_ids": [
-    "voice-vista-popup-adapted"
+    "voice-external-popup-adapted"
   ],
   "artifacts": [],
   "requested_reviewer": "gabe"

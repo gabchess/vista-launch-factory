@@ -20,4 +20,4 @@ Alt text: Tix asks what the buyer is looking for. The buyer describes a used Son
 
 Claims: TIX-C01 and TIX-C02 support the conversation positioning. TIX-C08 supports the canonical domain. The buyer’s Sony/Brooklyn/$950 brief comes from the accepted campaign scenario.
 
-Vista supplies the selected design/expression reference. Product facts and publisher identity belong to Tixmancer. Review metadata, source qualifiers and the destination check are recorded in copy.json.
+An externally observed page supplies the selected design/expression reference. Product facts and publisher identity belong to Tixmancer. Review metadata, source qualifiers and the destination check are recorded in copy.json.

@@ -2,7 +2,7 @@
 # run.sh — Launch Factory one-command door (ADR 0014).
 # Usage: ./run.sh RELEASE_FOLDER
 # Ingest → validate → package. STRUCTURAL_INTEGRITY_ONLY: nothing publishes.
-# Barry review cards land in the built package (BARRY.md) and barry/ at root.
+# Reviewer review cards land in the built package (REVIEWER.md) and reviewer/ at root.
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -85,15 +85,15 @@ echo "campaign: $CAMPAIGN"
 banner 2 "validate_ledger — evidence spans + kill-switch"
 if [ -n "$LEDGER" ]; then
   "$PY" engine/scripts/validate_ledger.py "$LEDGER" \
-    || fail "validate_ledger on $LEDGER" "kill-switch armed or evidence missing — fix the ledger (Claims Lock draft for Barry), then re-run ./run.sh $RELEASE_FOLDER"
+    || fail "validate_ledger on $LEDGER" "kill-switch armed or evidence missing — fix the ledger (Claims Lock draft for Reviewer), then re-run ./run.sh $RELEASE_FOLDER"
 else
-  echo "no claim_ledger.json found — SKIP (draft the ledger with Barry before packaging for real)"
+  echo "no claim_ledger.json found — SKIP (draft the ledger with Reviewer before packaging for real)"
 fi
 
 # ---- stage 3: validate_campaign --------------------------------------------
-banner 3 "validate_campaign — seven slots exist-or-held, Barry WIP=1"
+banner 3 "validate_campaign — seven slots exist-or-held, Reviewer WIP=1"
 "$PY" engine/scripts/validate_campaign.py "$CAMPAIGN" \
-  || fail "validate_campaign on $CAMPAIGN" "a slot is missing/held-without-reason or Barry WIP≠1 — fix the campaign JSON, then re-run ./run.sh $RELEASE_FOLDER"
+  || fail "validate_campaign on $CAMPAIGN" "a slot is missing/held-without-reason or Reviewer WIP≠1 — fix the campaign JSON, then re-run ./run.sh $RELEASE_FOLDER"
 
 CADENCE_DIR="$(dirname "$CAMPAIGN")"
 if [ -f "$CADENCE_DIR/cadence_binder.json" ]; then
@@ -112,8 +112,8 @@ echo ""
 echo "=================================================================="
 echo "== DONE — package: $PKG"
 echo "== Record: $RECORD"
-echo "== Barry review cards:"
-echo "==   - this run:  $PKG/BARRY.md"
-echo "==   - gates:     barry/claims-lock.md → barry/spot-check.md → barry/pack-approve.md"
-echo "== Nothing publishes. Barry (human) is the gate."
+echo "== Reviewer review cards:"
+echo "==   - this run:  $PKG/REVIEWER.md"
+echo "==   - gates:     reviewer/claims-lock.md → reviewer/spot-check.md → reviewer/pack-approve.md"
+echo "== Nothing publishes. Reviewer (human) is the gate."
 echo "=================================================================="

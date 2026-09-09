@@ -46,14 +46,14 @@ function prepare(raw) {
     if (!text(input[key]) || input[key].length > 160) issues.push('missing_or_invalid_' + key);
   }
   if (input.recipe_id !== bundle.recipe.recipe_id) issues.push('recipe_id_must_be_ugc-app-reveal');
-  if (!['standalone_product_film', 'vista_social_video'].includes(input.deliverable_scope)) {
+  if (!['standalone_product_film', 'campaign_social_video'].includes(input.deliverable_scope)) {
     issues.push('invalid_deliverable_scope');
   }
   if (!object(input.product) || !text(input.product.name) || !publicUrl(input.product.url)) {
     issues.push('product_name_and_https_url_required');
   }
   const format = object(input.format) ? input.format : {};
-  const maxDuration = input.deliverable_scope === 'vista_social_video' ? 30 : 60;
+  const maxDuration = input.deliverable_scope === 'campaign_social_video' ? 30 : 60;
   if (!Number.isFinite(format.duration_seconds) || format.duration_seconds <= 0 || format.duration_seconds > maxDuration) {
     issues.push('duration_must_be_within_' + maxDuration + '_seconds');
   }

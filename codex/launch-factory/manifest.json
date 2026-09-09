@@ -3,7 +3,7 @@
   "product_name": "Launch Factory",
   "version": "0.2.0",
   "category": "GTM Launch Operations",
-  "headline": "Release folder to review-ready launch package \u2014 Barry HITL.",
+  "headline": "Release folder to review-ready launch package \u2014 Reviewer HITL.",
   "format": "cd-augment-skill/v1",
   "entrypoint": "SKILL.md",
   "targets": [
@@ -12,7 +12,7 @@
   ],
   "engine_placement": "option-b-sibling-engine",
   "third_party_runtime_dependencies": [],
-  "license_status": "tbd-gabe",
+  "license_status": "mit",
   "live_host_verification": false,
   "holds": [
     "slot-1-social-video",

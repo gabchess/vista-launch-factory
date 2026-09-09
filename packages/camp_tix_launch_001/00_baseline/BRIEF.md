@@ -16,7 +16,7 @@ Publisher: Tixmancer. Use the product team's voice for an article. Attribute fir
 - Preserve the accepted 10-second animation and 55-second product film. They are creative references; neither establishes a new runtime capability.
 - Keep the exact CTA: **Join the waitlist** followed by **tixmancer.xyz**. Its intended destination is `https://tixmancer.xyz/`. The current website's collection flow needs verification before publication; an unverified `/waitlist` URL must not be substituted.
 - Brand treatment follows the accepted creative: Tix blue `#0052FF`, white `#FFFFFF`, paper `#F7F5F2`, Inter and JetBrains Mono. A new visual rendition receives its own review.
-- Sources establish claims. Voice examples guide expression. The client demonstration later uses Prospector source material and its selected Vista/Reggie expression references in a separate campaign.
+- Sources establish claims. Voice examples guide expression. The client demonstration later uses Prospector source material and its own selected expression references in a separate campaign.
 
 ## First writer's assignment
 

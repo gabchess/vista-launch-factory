@@ -119,13 +119,13 @@
   "format_policy": {
     "deliverable_scopes": [
       "standalone_product_film",
-      "vista_social_video"
+      "campaign_social_video"
     ],
     "suggested_native_width": 1920,
     "suggested_native_height": 1080,
     "suggested_fps": 30,
     "duration_source": "Explicit approved run_context.format.duration_seconds",
-    "vista_social_video_max_seconds": 30,
+    "campaign_social_video_max_seconds": 30,
     "source_enhancement": "Optional separately authorized actor-picture operation; preserve accepted audio and source offsets"
   },
   "review_policy": {

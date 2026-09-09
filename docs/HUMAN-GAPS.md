@@ -1,6 +1,6 @@
 # What still needs a human, and why
 
-This is the honest accounting for Vista Launch Factory. It says what a human must do, what
+This is the honest accounting for Launch Factory. It says what a human must do, what
 is genuinely unfinished, and why each gap exists. Read this before you judge the two
 built packages under `packages/`.
 
@@ -8,11 +8,11 @@ built packages under `packages/`.
 
 These stay with a person by design, not by accident.
 
-- **Claims Lock.** Only Barry (or the product owner, for internal test runs) knows what a
+- **Claims Lock.** Only Reviewer (or the product owner, for internal test runs) knows what a
   company may promise. The factory extracts candidate claims with evidence; a human
   decides which ones ship.
-- **Final voice call.** The voice bank flags drift from Vista's published writing, but a
-  similarity score is not truth. A human decides whether a draft sounds right.
+- **Final voice call.** The voice bank flags drift from the product's own published writing,
+  but a similarity score is not truth. A human decides whether a draft sounds right.
 - **Video, animation, and popup art.** Real footage and creative judgment are required.
   The factory can draft scripts and copy around them, not replace them.
 - **Publish, send, schedule.** Nothing in this repository publishes a page, sends an
@@ -28,12 +28,11 @@ These stay with a person by design, not by accident.
 - The approval state machine: `engine/scripts/transition_slot.py` only allows the
   transitions listed in its own docstring, and refuses `approved` or `packaged` without a
   `--human-confirmed` flag. `engine/scripts/validate_record.py` separately refuses to
-  accept either state unless a matching Barry decision is recorded. Neither script lets
+  accept either state unless a matching Reviewer decision is recorded. Neither script lets
   the writer role approve its own work.
 - Twelve specialist roles (`.claude/agents/`, `.codex/agents/`) that draft one output each
   from locked claims only.
-- Two review packages you can open today: [Tix](../packages/camp_tix_launch_001/01_channel_run/review.html)
-  and [Vista Work](../packages/camp_vista_work_public_001/review.html).
+- A review package you can open today: [the internal test-product run](../packages/camp_tix_launch_001/01_channel_run/review.html).
 
 ## What is not built yet
 
@@ -68,19 +67,15 @@ next step. There is no bounded-retry, cost-capped job queue yet.
 ## Historical fixture note
 
 Earlier v0.2.0 planning treated slots 1 (social video), 5 (login animation), and 6 (in-app
-popup) as held stubs. That plan changed: the Tix package now has real creative approved by
-Gabe for the internal test run (a 55-second product film and a 10-second login animation),
-and the Vista Work package uses concept previews because no private Vista footage was
-available. Neither package carries Barry's final approval; both are review-ready drafts.
+popup) as held stubs. That plan changed for the internal test-product package, which now
+has real creative approved by the product owner for that test run (a 55-second product film
+and a 10-second login animation). A package built for a real client product would instead use
+concept previews when no private footage is available. Neither approach carries Reviewer's
+final approval on its own; both are review-ready drafts until Reviewer signs off.
 
 ## Where to verify this yourself
 
 ```bash
 .venv/bin/pytest -q
-.venv/bin/python engine/local_run/verify_public_demo.py
 .venv/bin/python packages/camp_tix_launch_001/01_channel_run/verify_package.py
 ```
-
-See also the independent [trial audit](audits/sds-trial-2026-09-09/REPORT.md), which
-reaches a NO-GO verdict on full end-to-end completion and lists the same gaps in more
-technical detail.

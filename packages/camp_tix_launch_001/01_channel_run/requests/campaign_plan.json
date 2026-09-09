@@ -6,7 +6,7 @@
   "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
   "deliverable": "campaign_plan",
   "stage": "draft",
-  "voice_profile": "vista-campaign-adapted-for-tix-v1",
+  "voice_profile": "external-campaign-adapted-for-tix-v1",
   "sources": [
     {
       "id": "src-readme",
@@ -30,9 +30,9 @@
       "kind": "fact"
     },
     {
-      "id": "voice-vista-campaign-adapted",
+      "id": "voice-external-campaign-adapted",
       "path": "01_channel_run/voice/campaign.md",
-      "sha256": "8ec4a228ec9e3743ddd685dff970e84981463f25a9ae63d162ff673c14c5046e",
+      "sha256": "f7ef0d2e7cca653450e74dbc1b7b6c1499bfbca47cced2062ea87b044fd35779",
       "product_id": "tixmancer",
       "kind": "voice"
     }
@@ -96,7 +96,7 @@
     }
   ],
   "voice_source_ids": [
-    "voice-vista-campaign-adapted"
+    "voice-external-campaign-adapted"
   ],
   "artifacts": [],
   "requested_reviewer": "gabe"

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://vista.local/schemas/claim_ledger.schema.json",
+  "$id": "https://launch-factory.local/schemas/claim_ledger.schema.json",
   "title": "ClaimLedger",
   "type": "object",
   "additionalProperties": false,

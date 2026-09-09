@@ -1,8 +1,8 @@
-# FIXTURE: NOT REAL VISTA PRODUCT FACTS
+# FIXTURE: NOT REAL PRODUCT FACTS
 
-This folder is **Vista-shaped** for Wed recording rehearsal until Reggie shares the real release folder.
+This folder is a **generic placeholder** until the customer shares the real release folder.
 
 Rules:
-- Do not replace placeholders with guessed Vista features, pricing, limits, or partner claims.
-- When Reggie access lands, swap sources and re-run Claims Lock; delete or archive this fixture label.
-- Label on camera: "fixture until Reggie folder".
+- Do not replace placeholders with guessed features, pricing, limits, or partner claims.
+- When customer access lands, swap sources and re-run Claims Lock; delete or archive this fixture label.
+- Label on camera: "fixture until customer folder".

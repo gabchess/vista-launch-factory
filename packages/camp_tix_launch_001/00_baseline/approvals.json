@@ -56,14 +56,15 @@
     },
     "brief": {
       "file": "BRIEF.md",
-      "sha256": "34e28a0def9cbd0016484b5beb263a4d05ac7baa9b37e3eabb7c284d5a7214a1"
+      "sha256": "396829e07cf904060216c3252a8a76ac4da7d62a9ad111c2b32055a8480436da"
     },
     "voice": {
       "file": "VOICE-PROFILE.md",
-      "sha256": "b42e0f17a65d172e5c8f7a264d6044e231df85718d9410a83a78fcf07e3ace40"
+      "sha256": "8c432728bbd52005a1ef39ae25e0faab3148f37583809e1fb32826e22aa612dc"
     },
     "decision": null,
-    "next_decision": "Review the eight eligible statements with qualifiers, Tix expression profile, reader and waitlist CTA before N02 drafts the blog."
+    "next_decision": "Review the eight eligible statements with qualifiers, Tix expression profile, reader and waitlist CTA before N02 drafts the blog.",
+    "rewrite_note": "BRIEF.md and VOICE-PROFILE.md were rewritten on 2026-09-09 to remove client-specific style references before public release. No human decision has ever been recorded on this claims_lock, on either the original bytes or the bytes rewritten for release; status remains pending_human_review and decision remains null."
   },
   "publishing_authorized": false,
   "new_media_authorized_by_this_record": false

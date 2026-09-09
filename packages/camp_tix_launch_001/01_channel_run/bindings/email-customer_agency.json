@@ -2,7 +2,7 @@
   "schema_version": "asset-review-binding/v1",
   "asset_id": "email-customer_agency",
   "version": 1,
-  "context_digest": "92435ee1ede2fd60c2c97b170ff68a5e2835e2ce2d086ea9720c9781b8558376",
+  "context_digest": "7aae4acb16afd4b55988d30c0fef8bee9cb0bd3055671ba9d39fc986e9805f3d",
   "files": [
     {
       "path": "email/customer_agency.html",
@@ -10,12 +10,12 @@
     },
     {
       "path": "email/customer_agency.json",
-      "sha256": "77b94168719c0979890dc18d2c02a66572ce705329a6912e086c72e640e09172"
+      "sha256": "cedcd6aa0af9048e8f2c7c6921f52e156ef224dbb2791875c90dc653e21faa60"
     },
     {
       "path": "email/customer_agency.md",
       "sha256": "20a2344518b6db46ea9d80847a7ee0e4626c8eea28ccacb17026d4a46361384d"
     }
   ],
-  "sha256": "244e735734c8a485b4081d2449e91c56a91c13d9cd92624700848ec916938acb"
+  "sha256": "396d5dd459b0d997eec33d69943b0e4fbfd80e89ed01879659f694ede1f29761"
 }

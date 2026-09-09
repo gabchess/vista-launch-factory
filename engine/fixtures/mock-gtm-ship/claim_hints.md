@@ -9,6 +9,6 @@ ALLOWED to draft into Claims Lock only if supported by loom/outline/email below:
 
 FORBIDDEN (do not invent):
 
-- Any Vista Social pricing, seat counts, or roadmap dates
+- Any Quorum Desk pricing, seat counts, or roadmap dates
 - Win-probability scores or guaranteed outcomes
 - That slots 1/5/6 Launch Factory outputs are complete from this fixture

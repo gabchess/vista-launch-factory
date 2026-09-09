@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # STRUCTURAL_INTEGRITY_ONLY — validates a release-record against
 # release-record.schema.json plus authority gates. Never publishes, never
-# mutates the record, never substitutes for Barry's human judgment.
+# mutates the record, never substitutes for Reviewer's human judgment.
 """validate_record RECORD
 
 Schema check + authority gates:
-- no slot may be `approved` or `packaged` without a recorded Barry gate entry
-  (gate `slot-N`, decided_by barry, decision approve);
-- `claims_lock.state == locked_by_barry` requires a locked_at timestamp and a
-  recorded Barry gate entry (gate `claims_lock`, decision approve).
+- no slot may be `approved` or `packaged` without a recorded Reviewer gate entry
+  (gate `slot-N`, decided_by reviewer, decision approve);
+- `claims_lock.state == locked_by_reviewer` requires a locked_at timestamp and a
+  recorded Reviewer gate entry (gate `claims_lock`, decision approve).
 """
 from __future__ import annotations
 
@@ -23,11 +23,11 @@ from jsonschema import Draft202012Validator
 SCHEMA_PATH = Path(__file__).resolve().parents[1] / "schemas" / "release-record.schema.json"
 
 
-def _barry_approved(gates: list[dict[str, Any]], gate: str) -> bool:
+def _reviewer_approved(gates: list[dict[str, Any]], gate: str) -> bool:
     return any(
         isinstance(g, dict)
         and g.get("gate") == gate
-        and g.get("decided_by") == "barry"
+        and g.get("decided_by") == "reviewer"
         and g.get("decision") == "approve"
         for g in gates
     )
@@ -44,13 +44,13 @@ def validate_record(record: dict[str, Any], *, schema_path: Path | None = None) 
     gates = record.get("gates") or []
 
     lock = record.get("claims_lock") or {}
-    if lock.get("state") == "locked_by_barry":
+    if lock.get("state") == "locked_by_reviewer":
         if not lock.get("locked_at"):
-            errors.append("claims_lock locked_by_barry without locked_at timestamp")
-        if not _barry_approved(gates, "claims_lock"):
+            errors.append("claims_lock locked_by_reviewer without locked_at timestamp")
+        if not _reviewer_approved(gates, "claims_lock"):
             errors.append(
-                "authority: claims_lock locked_by_barry without a recorded Barry "
-                "gate entry (gate=claims_lock, decided_by=barry, decision=approve)"
+                "authority: claims_lock locked_by_reviewer without a recorded Reviewer "
+                "gate entry (gate=claims_lock, decided_by=reviewer, decision=approve)"
             )
 
     for slot in record.get("slots") or []:
@@ -59,10 +59,10 @@ def validate_record(record: dict[str, Any], *, schema_path: Path | None = None) 
         state = slot.get("state")
         n = slot.get("slot")
         if state in ("approved", "packaged"):
-            if not _barry_approved(gates, f"slot-{n}"):
+            if not _reviewer_approved(gates, f"slot-{n}"):
                 errors.append(
-                    f"authority: slot {n} is `{state}` without a recorded Barry gate "
-                    f"entry (gate=slot-{n}, decided_by=barry, decision=approve) — "
+                    f"authority: slot {n} is `{state}` without a recorded Reviewer gate "
+                    f"entry (gate=slot-{n}, decided_by=reviewer, decision=approve) — "
                     "the writer seat never self-approves"
                 )
         if state == "held" and not slot.get("hold_reason"):

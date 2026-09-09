@@ -11,7 +11,7 @@ Version **0.2.0**: Launch Factory workflow pack (A3 engine wired Option B).
 | Auto-publish or auto-send | **No** |
 | All six slots review-ready in v0.2.0 | **No**: 1/5/6 HOLD |
 | Structural self_check proves marketing quality | **No**: structure only |
-| Barry replaced by Writer | **No** |
+| Reviewer replaced by Writer | **No** |
 
 ## self_check
 

@@ -53,7 +53,7 @@ def test_validate_record_blocks_self_approved_slot(fresh_record):
     from scripts.validate_record import validate_record
 
     record = _load(fresh_record)
-    record["slots"][1]["state"] = "approved"  # writer moved itself — no Barry gate
+    record["slots"][1]["state"] = "approved"  # writer moved itself — no Reviewer gate
     result = validate_record(record)
     assert result["ok"] is False
     assert any("authority" in e and "slot 2" in e for e in result["errors"])
@@ -63,7 +63,7 @@ def test_validate_record_blocks_fake_claims_lock(fresh_record):
     from scripts.validate_record import validate_record
 
     record = _load(fresh_record)
-    record["claims_lock"] = {"state": "locked_by_barry", "locked_at": None}
+    record["claims_lock"] = {"state": "locked_by_reviewer", "locked_at": None}
     result = validate_record(record)
     assert result["ok"] is False
     assert any("claims_lock" in e for e in result["errors"])
@@ -89,7 +89,7 @@ def test_transition_slot_permitted_and_refused(fresh_record):
     assert "not permitted" in str(exc.value)
 
 
-def test_transition_slot_human_confirmed_records_barry_gate(fresh_record):
+def test_transition_slot_human_confirmed_records_reviewer_gate(fresh_record):
     from scripts.transition_slot import transition_slot
     from scripts.validate_record import validate_record
 
@@ -98,12 +98,12 @@ def test_transition_slot_human_confirmed_records_barry_gate(fresh_record):
     record = transition_slot(record, "2", "reviewed")
     record = transition_slot(record, "2", "approved", human_confirmed=True)
     assert record["slots"][1]["state"] == "approved"
-    barry_gates = [
+    reviewer_gates = [
         g for g in record["gates"]
-        if g["gate"] == "slot-2" and g["decided_by"] == "barry" and g["decision"] == "approve"
+        if g["gate"] == "slot-2" and g["decided_by"] == "reviewer" and g["decision"] == "approve"
     ]
-    assert len(barry_gates) == 1
-    # now the authority gate passes because Barry's decision is recorded
+    assert len(reviewer_gates) == 1
+    # now the authority gate passes because Reviewer's decision is recorded
     result = validate_record(record)
     assert result["ok"] is True, result["errors"]
 

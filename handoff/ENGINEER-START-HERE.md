@@ -5,9 +5,7 @@ before the older SOP files in this directory; those are superseded, and each say
 credentials, paid third-party marketing-review skill source, or client approval events
 are included in this handoff.
 
-See the [SDS trial audit](../docs/audits/sds-trial-2026-09-09/REPORT.md) for the
-requirement-by-requirement verdict and verified limits, and
-[docs/HUMAN-GAPS.md](../docs/HUMAN-GAPS.md) for the plain-language version. The supplied
+See [docs/HUMAN-GAPS.md](../docs/HUMAN-GAPS.md) for what still needs a human, in plain language. The supplied
 brief sets no numeric social-video duration cap; this project uses its own 30-second
 target.
 
@@ -24,11 +22,12 @@ LinkedIn, X, and Threads drafts. Two prior creative renditions are approved: a 5
 product film and a 10-second square animation. Their hashes and production lineage are
 retained; attach the binary masters separately to the local review (see below).
 
-The four new output categories await Gabe's content review. The social slot still needs a
-30-second-or-under cut and a platform crop. The login animation needs integration with a
-responsive login surface. Tix is the internal test product; Vista Social supplied the
-requested writing and design references only. This run is not a Vista feature
-announcement, and it does not establish Vista product ownership of anything in it.
+The four new output categories await the product owner's content review. The social slot
+still needs a 30-second-or-under cut and a platform crop. The login animation needs
+integration with a responsive login surface. Tix is the internal test product; an external
+product supplied writing and design references only, at this project's request. This run
+is not a feature announcement for that external product, and it does not establish that
+product's ownership of anything in it.
 
 The review web page displays real local content and saves review notes tied to a file
 version, in the browser. It does not run a model, and it does not authenticate who wrote
@@ -68,9 +67,9 @@ Open the full checkout as the project and follow [Codex installation](../docs/IN
 
 Use the current campaign as an example:
 
-> Read the Launch Factory operator. Use `packages/camp_tix_launch_001` as the release workspace and the packets under `01_channel_run/requests`. Review the current artifacts and their source claims. Preserve the two accepted media files. Return requested revisions to Gabe as exact new versions. No publishing or sending.
+> Read the Launch Factory operator. Use `packages/camp_tix_launch_001` as the release workspace and the packets under `01_channel_run/requests`. Review the current artifacts and their source claims. Preserve the two accepted media files. Return requested revisions to the assigned reviewer as exact new versions. No publishing or sending.
 
-For a new product, create a separate campaign workspace. Ingest its source documents, retain immutable source bytes and source revision, extract claim spans, select its voice reference, and identify the human reviewer. Barry is the required approver for Vista work. The Tix review history grants no authority for a new product or source.
+For a new product, create a separate campaign workspace. Ingest its source documents, retain immutable source bytes and source revision, extract claim spans, select its voice reference, and identify the human reviewer. Reviewer is the required approver for the target product's work. The Tix review history grants no authority for a new product or source.
 
 Where native role delegation is available, the host invokes the selected specialist. Otherwise the operator reads the same role protocol and performs the work inline, reporting that path. The current writing run used delegated and inline protocol execution. Role discovery and schema validation are recorded separately from provider execution.
 
@@ -110,7 +109,7 @@ An engineer configures the recipient's own accounts once. Routine operators shou
 | Human review | Auth provider, reviewer assignment and durable event store | Backend configuration and database |
 | Delivery | CMS/ESP credentials only when export adapters are implemented | Server-side draft/export adapters |
 
-Gabe's cloned voice is for his own founder or educator dialogue. Fictional UGC speakers use a separately chosen voice. The reusable instructions retain this preference. The handoff includes no account keys or implicit access to Gabe's paid subscriptions.
+A project owner's own cloned voice is for that person's own founder or educator dialogue, never for a fictional UGC speaker. Fictional UGC speakers use a separately chosen voice. The reusable instructions retain this preference. The handoff includes no account keys or implicit access to anyone's paid subscriptions.
 
 Missing configuration should produce a useful setup state in the app. Do not present a silent chat as a working integration. Provider account identity, access and cost must be verified before each paid generation route is first used.
 

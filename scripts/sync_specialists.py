@@ -18,7 +18,7 @@ def generated_files():
             support = REGISTRY["support_skills"][support_id]
             finishing += f"\nFor stages {', '.join(support['stages'])}, read [{support['skill']}](../../../{support['source']}) when finishing or inspecting motion. Preserve the existing story approval; new script or paid rendition authority remains separate.\n"
         if spec.get("production_protocol"):
-            finishing += f"\nFor actor-led films, read [the one-rendition production protocol](../../../{spec['production_protocol']}) and its prompt/job contracts. A standalone film uses production-job/v1 directly with this same role; the campaign specialist-request/v1 social-video route keeps Vista's 30-second rubric. Preserve locked speech, named actor/voice references and the explicit whole-film audio plan. Return each new sample to human review.\n"
+            finishing += f"\nFor actor-led films, read [the one-rendition production protocol](../../../{spec['production_protocol']}) and its prompt/job contracts. A standalone film uses production-job/v1 directly with this same role; the campaign specialist-request/v1 social-video route keeps the campaign's 30-second rubric. Preserve locked speech, named actor/voice references and the explicit whole-film audio plan. Return each new sample to human review.\n"
         body = f'''---
 name: {skill}
 description: "{spec['description']} Use for the Launch Factory {role.replace('_', ' ')} stage, including explicit review of that deliverable. Return work to the launch-factory operator; do not approve, publish or execute providers."

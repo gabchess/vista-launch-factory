@@ -1,13 +1,13 @@
 # Example 02: Blog adapter draft (fixture)
 
 **Fixture-only walkthrough.** Product = Quorum Desk from the mock GTM ship
-fixture (`engine/fixtures/mock-gtm-ship/`). Synthetic demo. Not a real Vista
-Social feature. The draft shape below mirrors the real spine output style seen
-in repo-root run outputs (`packages/camp_vista_work_001/02_blog/`).
+fixture (`engine/fixtures/mock-gtm-ship/`). Synthetic demo, not a real feature
+of any live product. The draft shape below mirrors the real spine output
+style seen in a real run's package output.
 
 ## Prerequisite
 
-Claims Lock **approved in writing by Barry** on the fixture ledger
+Claims Lock **approved in writing by Reviewer** on the fixture ledger
 (see `examples/01-claims-lock-walkthrough.md`). Without that lock, the blog
 adapter does not run. Slot 1 (social video) is HOLD, so **blog (slot 2) is the
 first real draft and the spot-check target**.
@@ -20,9 +20,9 @@ Header block, same discipline as the real spine:
 # Blog — Quorum Desk (fixture insights draft)
 Campaign: camp_mock_gtm_ship (FIXTURE)
 Slot: 2 · blog · v1
-Status: draft · NOT submitted to Barry · not published
+Status: draft · NOT submitted to Reviewer · not published
 Claims used: only allowed rows from the fixture claim ledger
-Forbidden: Vista pricing · seat counts · roadmap dates · win-probability
+Forbidden: pricing · seat counts · roadmap dates · win-probability
   scores · guaranteed outcomes · "slots 1/5/6 complete" claims
 ```
 
@@ -40,11 +40,11 @@ Body moves, each tied to an allowed claim:
 
 ## What the writer seat does after drafting
 
-- Marks status `awaiting_barry`, fills the spot-check card
-  (`barry/spot-check.md` shape) for Barry on **this** artifact.
-- Never marks its own draft approved. Writer ≠ Barry.
+- Marks status `awaiting_reviewer`, fills the spot-check card
+  (`reviewer/spot-check.md` shape) for Reviewer on **this** artifact.
+- Never marks its own draft approved. Writer ≠ Reviewer.
 - If a sentence cannot cite an allowed claim, the sentence is cut or the claim
-  goes back to Barry as a gap. It is never "smoothed over."
+  goes back to Reviewer as a gap. It is never "smoothed over."
 
 **Failure shape:** inventing a Quorum Desk pricing tier, claiming it "closes
 deals faster," or publishing language ("goes live Tuesday") instead of

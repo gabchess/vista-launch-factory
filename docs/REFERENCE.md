@@ -2,8 +2,8 @@
 
 This is a from-source reference for operating the Launch Factory engine. Every
 claim below was checked against the code in this checkout (`run.sh`,
-`engine/scripts/*.py`, `engine/local_run/*.py`, `engine/schemas/*.json`, and
-the two packages under `packages/`). Where the code and the existing prose
+`engine/scripts/*.py`, `engine/schemas/*.json`, and
+the package under `packages/`). Where the code and the existing prose
 docs (`README.md`, `docs/OPERATE-LAUNCH-FACTORY.md`) disagree, this file
 follows the code and calls out the gap.
 
@@ -26,13 +26,16 @@ stderr and exits 1. It does not retry.
 | 0 | Creates `.venv/`, installs `requirements.txt` if needed | exits 1 |
 | 1 | `init_release.py`, then `validate_record.py` on the fresh record | resumes if a record already exists at `runs/<name>/` |
 | 2 | `validate_ledger.py` on the release folder's `claim_ledger.json` | skipped with a warning if no ledger file is found |
-| 3 | `validate_campaign.py` on `release_campaign.json` | exits 1 on any missing slot or bad `barry.wip` |
+| 3 | `validate_campaign.py` on `release_campaign.json` | exits 1 on any missing slot or bad `reviewer.wip` |
 | 4 | `build_package.py` into `packages/<campaign id>/` | exits 1 if an adapter path is missing |
 
-Verified working example: `./run.sh engine/fixtures/vista-work`. Every path
-`build_package.py` needs from this fixture (`cadence_binder.json`,
-`sources/*`, `claim_ledger.json`, `engine/adapters/02_blog.md`, and
-`engine/honesty/still-needs-human.md`) resolves correctly in this checkout.
+The fixture previously verified here (the original client fixture) has been
+removed from this checkout along with the client material it held. Before
+relying on `./run.sh FIXTURE`, confirm your target fixture under
+`engine/fixtures/` actually has every path `build_package.py` needs
+(`cadence_binder.json`, `sources/*`, `claim_ledger.json`,
+`engine/adapters/02_blog.md`, and `engine/honesty/still-needs-human.md`);
+do not assume a fixture is complete just because it is present.
 
 ### `engine/scripts/*.py`: the six STRUCTURAL_INTEGRITY_ONLY scripts
 
@@ -56,8 +59,8 @@ What each one does:
   1/5/6 get a fixed ADR-0013 hold reason), and refuses to overwrite an
   existing record.
 - **`validate_record.py`**: schema-checks the record, then confirms no slot
-  is `approved`/`packaged` without a matching Barry `gates` entry, and that
-  a `locked_by_barry` claims lock has its own timestamp and gate entry.
+  is `approved`/`packaged` without a matching Reviewer `gates` entry, and that
+  a `locked_by_reviewer` claims lock has its own timestamp and gate entry.
   Read-only.
 - **`transition_slot.py`**: applies one permitted state transition to one
   slot and rewrites `RECORD` in place; see §3. `SLOT` accepts `1`-`7` or a
@@ -68,11 +71,11 @@ What each one does:
   `kill_switch.armed` and exits 2.
 - **`validate_campaign.py`**: schema-checks the campaign, then confirms all
   7 slots exist with a `path` or `hold_reason`, all 7 artifact types are
-  present, `barry.wip == 1`, and both segment lists are non-empty. Also
+  present, `reviewer.wip == 1`, and both segment lists are non-empty. Also
   exposes `validate_cadence_binder()`, unused by `run.sh`.
 - **`build_package.py`**: builds `OUT_DIR/<campaign id>/` with one directory
   per slot, `cadence/` and `provenance/` copies, an `honesty/` stub,
-  `MANIFEST.json` (`auto_publish: false` always), and a generated `BARRY.md`
+  `MANIFEST.json` (`auto_publish: false` always), and a generated `REVIEWER.md`
   card. This shape matches neither package checked into `packages/` today;
   see §2.
 
@@ -89,13 +92,6 @@ every referenced file, and returns `status: held` with named reasons, or
 `generation_authorized`, and `authentication_verified` are `false` in every
 code path. Any error prints `{"status": "refused", ...}` and exits 2.
 
-### `engine/local_run/*.py`: the scripts that built `camp_vista_work_public_001`
-
-| Script | Usage | Requires | What it does |
-| --- | --- | --- | --- |
-| `build_public_demo.py` | no args, from repo root | `ffmpeg`, one live network fetch | Wipes and rewrites the package: sources, claim ledger, two rendered H.264 concept videos, every file in §2 |
-| `verify_public_demo.py` | no args | `ffprobe` | Read-only: re-hashes files, checks claim IDs, email distinctness, video codec/duration, popup `<dialog>`, calendar bindings, zero paid calls |
-
 ### Package-embedded scripts (not general engine commands)
 
 `packages/camp_tix_launch_001/01_channel_run/serve_review.py --port PORT
@@ -106,43 +102,16 @@ after a sha256 check against `review-data.json`'s `approved` entries.
 
 ## 2. Package layout (ground truth: `packages/`)
 
-Two packages are checked in, built by two different, incompatible pipelines.
-Neither matches the `build_package.py` shape described in §1.
+One package is checked in today: `packages/camp_tix_launch_001/`. It does not
+match the `build_package.py` shape described in §1.
 
-**`packages/camp_vista_work_public_001/`** (built by
-`engine/local_run/build_public_demo.py`) is the fuller of the two examples:
-
-```
-artifacts/
-  blog.md, blog.html
-  emails/{lead_smb,lead_agency,lead_reseller_affiliate,customer_smb,customer_agency}.{md,html}
-  email_segments.md                      # bundle of all five
-  changelog.md, changelog-v2.md, changelog.html
-  social/{linkedin,x,threads,tiktok,storyboard}.md
-  social/vista-work-social-concept.mp4   # 1080x1920, h264, >=12s
-  login/README.md, login/vista-work-login-concept.mp4  # 1920x1080, h264, >=8s
-  popup/{copy.md,preview.html,vista-work-popup.svg}
-campaign/calendar.json, calendar.csv     # the two-week plan; see §4
-claims/claim-ledger.json                 # see §4, does not match the schema
-costs/costs.json                         # see §4
-events/events.jsonl                      # one JSON object per line
-jobs/jobs.json                           # {"jobs": [...]}
-reviews/
-  delegated-marketing-review-v1.json     # provisional verdict, barry pending
-  revision-v2.json                       # before/after sha256 of one revision
-  local-recheck-v2.md, local-verification.md
-requests/run-brief.md
-sources/                                 # captured/copied source files
-voice/barry-seed.md, public-vista-work.md
-README.md, RUN.md, run.json, review.html, source-manifest.json,
-export-manifest.json, recording-pending.md
-```
-
-The "six outputs" live under `artifacts/`: social video is
-`artifacts/social/`, blog is `artifacts/blog.*`, email is
-`artifacts/emails/`, changelog is `artifacts/changelog*`, login animation is
-`artifacts/login/`, in-app popup is `artifacts/popup/`. The 7th slot, the
-campaign plan, is `campaign/calendar.{json,csv}`.
+A second example package once shipped here, shaped as
+`artifacts/{blog,emails,changelog,social,login,popup}/` plus `campaign/`,
+`claims/`, `costs/`, `events/`, `jobs/`, `reviews/`, `requests/`, `sources/`,
+and `voice/`. It was removed along with the client material it held, and the
+bespoke scripts that built it went with it, because they fetched that client's
+pages live. To produce an equivalent example, run `./run.sh` against your own
+release folder.
 
 **`packages/camp_tix_launch_001/`** uses an unrelated, older two-stage
 layout: `00_baseline/` (source manifest, claim-ledger.json, voice profile,
@@ -175,18 +144,18 @@ Every other `(from, to)` pair, including any transition into `held` without
 `--reason`, is refused: the script raises `SystemExit("refused: ...")`,
 printed to stderr, exit 1, and nothing is written to disk. A transition into
 `approved`/`packaged` without `--human-confirmed` refuses the same way; only
-Barry, the human, authorizes those two states, and the writer seat never
+Reviewer, the human, authorizes those two states, and the writer seat never
 self-approves.
 
 On success the script always appends one `run_log` entry, and, only for
 transitions into `approved`/`packaged`, one `gates` entry
-(`decided_by: "barry"`, `decision: "approve"`). This gate entry is what
+(`decided_by: "reviewer"`, `decision: "approve"`). This gate entry is what
 `validate_record.py` later checks for, and it is written by the CLI flag
 alone, not by any identity check (see §5).
 
-`claims_lock.state` (`drafted` to `locked_by_barry`) is a separate record
+`claims_lock.state` (`drafted` to `locked_by_reviewer`) is a separate record
 field that no script in `engine/scripts/` transitions. `validate_record.py`
-only checks that, once already `locked_by_barry`, a matching `locked_at`
+only checks that, once already `locked_by_reviewer`, a matching `locked_at`
 timestamp and `gates` entry (`gate: "claims_lock"`) both exist.
 
 ## 4. Data files
@@ -209,26 +178,30 @@ Redacted shape:
 }
 ```
 
-`engine/fixtures/vista-work/claim_ledger.json` conforms to this schema. The
-shipped `packages/camp_vista_work_public_001/claims/claim-ledger.json` does
-not: its `evidence[].source` values (`supplied_email_source_text`,
-`repository_source_text`, `public_web_capture`) are not in the schema enum,
-so `validate_ledger.py` would fail against that real file.
+A fixture that previously shipped here (the original client fixture)
+conformed to this schema, while the fuller example package's ledger did not:
+its `evidence[].source` values (`supplied_email_source_text`,
+`repository_source_text`, `public_web_capture`) were not in the schema enum,
+so `validate_ledger.py` would fail against that file. Both were removed from
+this checkout with the client material they held; check any fixture you add
+against the schema's closed `evidence[].source` enum before assuming
+`validate_ledger.py` will pass.
 
 **`release-record.schema.json`** (`release-record/v1`): a record has
 `record_id, release_folder{path,files[]}, ingest{state,at},
 claims{allowed,forbidden,held}, claims_lock{state,locked_at}, slots[7],
 voice_check, validations[], gates[], package_path, run_log[]`. Each slot is
 `{slot,name,state,hold_reason}`; each gate is
-`{gate,decision,decided_by,at}` with `decided_by` one of `barry | writer |
+`{gate,decision,decided_by,at}` with `decided_by` one of `reviewer | writer |
 orchestrator`.
 
 **`release_campaign.schema.json`**: `id, title, folder_id, status` (13-value
 enum), `sources{loom,transcript,github_outline,footage[]}, claim_ledger_ref,
 voice_pack_ref, segments{leads,customers,affiliate_rules}, artifacts[7],
-cadence_ref, barry{seat,surface,wip}, hubspot_sandbox{draft_ids,status},
-still_needs_human[]`. Each artifact is
-`{slot,type,version,path,validation,barry_status,held,hold_reason}`.
+cadence_ref, reviewer{seat,surface,wip}, hubspot_sandbox{draft_ids,status}`
+(the field is literally named `hubspot_sandbox` in the schema regardless of
+which CRM or ESP you actually use), `still_needs_human[]`. Each artifact is
+`{slot,type,version,path,validation,reviewer_status,held,hold_reason}`.
 
 **`cadence_binder.schema.json`**: `campaign_id, fixture_label, cells[]`,
 each cell `{order,channel,artifact_slot,utm{utm_source,utm_medium,
@@ -236,12 +209,12 @@ utm_campaign},notes}`. `channel` is one of 8 fixed cadence values
 (`changelog, email_interrupt, story_video, linkedin_written, x_written,
 threads_written, instagram_video, tiktok_video`).
 
-**`campaign/calendar.csv`** columns, from the real
-`camp_vista_work_public_001` file: `week, proposed_day, order, timezone,
-channel, audience, asset_id, asset_path, action, review_state`. One real row:
+**`campaign/calendar.csv`** columns: `week, proposed_day, order, timezone,
+channel, audience, asset_id, asset_path, action, review_state`. Illustrative
+row, from a package removed with the client material it held:
 
 ```
-1,Mon (proposed),1,America/Sao_Paulo,blog,all social managers,blog-v1,artifacts/blog.html,read linked-task story,delegated_review_pending_barry
+1,Mon (proposed),1,America/Sao_Paulo,blog,all social managers,blog-v1,artifacts/blog.html,read linked-task story,delegated_review_pending_reviewer
 ```
 
 `campaign/calendar.json` wraps the same rows, plus `scheduled: false`, a
@@ -261,10 +234,10 @@ channel, audience, asset_id, asset_path, action, review_state`. One real row:
 ```
 
 **`jobs/jobs.json`** shape: `{"jobs": [{"id","state","provider","paid"}]}`.
-Every recorded job in the real package has `"state": "completed"` and
-`"paid": false`.
+In the removed example package, every recorded job had `"state": "completed"`
+and `"paid": false`.
 
-**`events/events.jsonl`**: one JSON object per line, for example
+**`events/events.jsonl`**: one JSON object per line, illustrative example
 `{"event": "local_package_built", "at": "...", "paid_provider_call": false,
 "route": "..."}`.
 

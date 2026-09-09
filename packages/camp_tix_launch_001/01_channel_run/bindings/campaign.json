@@ -2,7 +2,7 @@
   "schema_version": "asset-review-binding/v1",
   "asset_id": "campaign",
   "version": 1,
-  "context_digest": "9801df760e91595f0f51dd1802710185c63e12c7d4dfdce972236e48ddbdb8d0",
+  "context_digest": "d480fd9e5249a2055d2db58ef760a5427ed03a7aef49ac47b0fa3aeadec5a712",
   "files": [
     {
       "path": "campaign/calendar.csv",
@@ -13,5 +13,5 @@
       "sha256": "a110808058764cc689bb7ead6bf8679575e6f7a6682e95939c5ab59ce3f7c21b"
     }
   ],
-  "sha256": "61629c6cf950b2e9f52fbd538b22f6e098f16405aa5326262de9696a01995be9"
+  "sha256": "e93216c280d2bc7d261beefd8a1f78015aabddb7012d9ef4c6137b867c334876"
 }

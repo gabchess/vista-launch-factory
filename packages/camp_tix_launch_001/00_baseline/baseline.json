@@ -22,7 +22,7 @@
   "snapshot_binding": {
     "brief": {
       "path": "BRIEF.md",
-      "sha256": "34e28a0def9cbd0016484b5beb263a4d05ac7baa9b37e3eabb7c284d5a7214a1"
+      "sha256": "396829e07cf904060216c3252a8a76ac4da7d62a9ad111c2b32055a8480436da"
     },
     "sources": {
       "path": "source-manifest.json",
@@ -34,11 +34,11 @@
     },
     "voice_profile": {
       "path": "VOICE-PROFILE.md",
-      "sha256": "b42e0f17a65d172e5c8f7a264d6044e231df85718d9410a83a78fcf07e3ace40"
+      "sha256": "8c432728bbd52005a1ef39ae25e0faab3148f37583809e1fb32826e22aa612dc"
     },
     "approvals": {
       "path": "approvals.json",
-      "sha256": "0c4eae6cddbd7094f80181a30c89d5db44ac076190918c496cb94ee5fef1c4cd"
+      "sha256": "135c1d5e12584b76d80d92942b4b668ae73429b68ce35afcf7e8e4ee10e5b8de"
     },
     "source_request": {
       "path": "source-request.json",
@@ -54,7 +54,7 @@
     },
     "human_review": {
       "path": "CLAIMS-LOCK-REVIEW.md",
-      "sha256": "8eec571a40bb7a970ae5bdd86f83660ab4ac09d0ca501db0904f9109b51433c3"
+      "sha256": "43a468c2129149e66ffa6c9b77298dffbe7d6f143d2ccdd735a1ce1d2e7d40ce"
     }
   },
   "first_writer": {

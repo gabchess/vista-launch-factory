@@ -7,8 +7,8 @@ Observed locally on 2026-09-08. This evidence covers preparation and file valida
 | `node automation/n8n/channel-production/test.mjs` | 23 cases passed, including execution of the built workflow's Code node. |
 | `.venv/bin/python automation/n8n/channel-production/test_loader.py` | 5 cases passed using temporary files and the existing specialist router. |
 | `python3 automation/n8n/channel-production/build_workflow.py --check` | Generated workflow matches its code, registry and schema. |
-| Current four Tix requests through loader, then `run.mjs` | `ready_for_operator`; four lanes; three selected source records per lane. |
-| Human assignment / schedule | `gabe` / `consolidated_end`; review remains pending actual artifacts and the human. |
+| Current four internal-test-product requests through loader, then `run.mjs` | `ready_for_operator`; four lanes; three selected source records per lane. |
+| Human assignment / schedule | the requested reviewer's identifier / `consolidated_end`; review remains pending actual artifacts and the human. |
 | Authority | Execution, publication, human approval and authentication remain false. |
 | Independent review | One reviewer rechecked feedback/count/authority; a second rechecked schema and revision routing. Both bounded reviews passed after fixes. |
 | n8n cloud execution | Not run. Importable workflow is inactive and has no credentials or provider node. |

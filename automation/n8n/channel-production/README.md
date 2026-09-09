@@ -52,7 +52,7 @@ Read the canonical [channel prompts](../../../engine/specialists/channel-product
 
 The current batch was authorized for all four drafts before a consolidated human review. `review_mode` carries that requested schedule; its value does not authenticate a human or record four approvals. Preserve settled session decisions. After drafting, save the real content, popup graphic and editable source. Give each artifact an ID, version, SHA-256 and dependencies, rerun the existing specialist route, then produce review recommendations under `specialist-result/v1`.
 
-The review view must show the article, all five emails, changelog and popup preview with their sources and exact versions. An actual Gabe or Barry decision is required for acceptance. Revisions reopen only affected subjects. A name, boolean, matching hash or replayed preparation result grants no approval. Durable event ordering, counter enforcement and an export-time authority check belong to the later app service. This preparation always returns false for execution, publication, human approval and authentication.
+The review view must show the article, all five emails, changelog and popup preview with their sources and exact versions. An actual decision from the assigned human reviewer is required for acceptance. Revisions reopen only affected subjects. A name, boolean, matching hash or replayed preparation result grants no approval. Durable event ordering, counter enforcement and an export-time authority check belong to the later app service. This preparation always returns false for execution, publication, human approval and authentication.
 
 ## Build and validation
 

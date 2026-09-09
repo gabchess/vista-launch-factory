@@ -55,12 +55,12 @@
     {
       "entrypoint": "~/.agents/skills/content-creator/scripts/brand_voice_analyzer.py",
       "sha256": "ac1b43b9a76ca63f62005c123ba71d9c98e21a6562ebf9f7f8eae62f0a01b8b0",
-      "input": "Privately fetched Vista Work launch article text",
+      "input": "Privately fetched external reference-launch article text",
       "arguments": [
         "json"
       ],
       "exit_code": 0,
-      "output": "evidence/vista-work-voice-analysis.json"
+      "output": "evidence/external-reference-voice-analysis.json"
     },
     {
       "entrypoint": "~/.agents/skills/content-creator/scripts/seo_optimizer.py",

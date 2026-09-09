@@ -20,4 +20,4 @@ Use “your limit” when discussing the buyer's chosen amount. Reserve market-v
 - Planned behavior remains visibly planned in the prose.
 - The ending uses the approved waitlist CTA without inventing availability or a deadline.
 
-This profile does not assert that Reggie's LinkedIn archive has been retrieved or that Vista house style is calibrated. Those expression sources belong to the later client campaign.
+This profile does not assert that a separate client's executive LinkedIn archive has been retrieved or that a separate client's house style is calibrated. Those expression sources belong to the later client campaign.

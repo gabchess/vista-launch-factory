@@ -1,6 +1,6 @@
 {
   "campaign_id": "camp_demo_001",
-  "fixture_label": "LABELLED_FIXTURE_NOT_REAL_VISTA_PRODUCT",
+  "fixture_label": "LABELLED_FIXTURE_GENERIC_PLACEHOLDER",
   "cells": [
     {"order": 1, "channel": "changelog", "artifact_slot": 4, "utm": {"utm_source": "changelog", "utm_medium": "product", "utm_campaign": "camp_demo_001"}, "notes": "floor — FEATURE_NAME bullets only"},
     {"order": 2, "channel": "email_interrupt", "artifact_slot": 3, "utm": {"utm_source": "hubspot_sandbox", "utm_medium": "email", "utm_campaign": "camp_demo_001"}, "notes": "segmented announcement; draft only"},

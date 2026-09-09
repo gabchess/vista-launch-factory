@@ -2,7 +2,7 @@
   "schema_version": "asset-review-binding/v1",
   "asset_id": "blog",
   "version": 1,
-  "context_digest": "c546eb1f4913e1d0a82cd2f126812fec6488f16ea49333970a2409240f538085",
+  "context_digest": "d5e4fea0022cfab1983b6c866ed774e0da6fa106abc06bba52deb70ea71a164b",
   "files": [
     {
       "path": "blog/article.html",
@@ -26,8 +26,8 @@
     },
     {
       "path": "blog/provenance.json",
-      "sha256": "3b34bf4b2ff2e0c61efe37ea4bfd530afdc5115710ae9edabb6b23aa2cc0bbe4"
+      "sha256": "eb437134afeb063e03a2bec11b8a76caf6ba2315a55e0dde4ff154a41466e5e9"
     }
   ],
-  "sha256": "0f6603fb523388fea0a22b736ef7f6cf19c20237e4e50483a9289eea3391dd2a"
+  "sha256": "3530ea048436fe188d4a9418ace82e31404a4d578064194fa051e7f6c4dc79c0"
 }

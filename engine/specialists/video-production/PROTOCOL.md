@@ -10,7 +10,7 @@ Load the selected product evidence, voice brief, angle, exact script and sketch.
 
 Every spoken number has an approved plain-language form. Keep units, currency and qualifiers such as “less than” intact. An illustrative listing is not proof of savings, availability or market value. A strict price ceiling excludes a listing equal to that ceiling. The checker verifies selected numeric examples and literal source spans; a person still reviews their meaning and listens to the performance.
 
-Keep the film target, each edit slot, requested source-take length and quoted billing length separate. A 60-second film can begin with a five-second sample. If a verified provider requires a longer take, document the trim and its cost. Keep the approved words and pacing within the accepted edit slot. Vista social slot 1 remains at most 30 seconds; a separate film brief does not change that rule.
+Keep the film target, each edit slot, requested source-take length and quoted billing length separate. A 60-second film can begin with a five-second sample. If a verified provider requires a longer take, document the trim and its cost. Keep the approved words and pacing within the accepted edit slot. TaskLink social slot 1 remains at most 30 seconds; a separate film brief does not change that rule.
 
 ## Give references named jobs
 
@@ -70,7 +70,7 @@ python3 engine/specialists/video-production/validate.py JOB.json --workspace REL
 
 The distributed [example](example.json) is a held fictional preparation record. Copy the `example-workspace/` files into a recipient-owned release workspace to inspect it. It has no live account IDs or human approvals. The local skill mirrors this bundle next to `short-motion-finishing/`; use that bundle's `validate.py` from its installed location.
 
-A standalone film enters this existing video-lead protocol with `production-job/v1`. The campaign's `specialist-request/v1` social-video route retains Vista's 30-second rubric. Do not assign a longer standalone film to that slot or silently weaken its rubric. This branch adds a prompt/job protocol, without a new agent or campaign route.
+A standalone film enters this existing video-lead protocol with `production-job/v1`. The campaign's `specialist-request/v1` social-video route retains TaskLink's 30-second rubric. Do not assign a longer standalone film to that slot or silently weaken its rubric. This branch adds a prompt/job protocol, without a new agent or campaign route.
 
 `prepared`, `submitted`, `returned` and `failed` are reported job observations. The checker verifies file bindings, literal script spans, timing, references, cost consistency and returned-media lineage. Its projection always grants **zero** execution or approval authority. An output or matching/replayed review record stays at human review. Supplied receipts are evidence records whose authenticity, freshness, rights and quality remain outside the checker.
 

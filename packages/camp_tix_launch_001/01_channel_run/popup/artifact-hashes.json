@@ -3,20 +3,20 @@
   "version": 1,
   "files": {
     "copy.json": {
-      "sha256": "3abd71895db12185585a042490df82f5ccb3a7ec6cf3da86d8ab3c604eb34643",
-      "bytes": 3774
+      "sha256": "995f1f0379a5475319cfefdb376a7b0191ec517213ff394fbebc98003177f165",
+      "bytes": 3836
     },
     "copy.md": {
-      "sha256": "3dba28970507a49ebfad8f509d850e8f59cae2177a793e5c50e6641f3df8b1c2",
-      "bytes": 914
+      "sha256": "21db6349a470193683132e15f5ef8ff93c1ddeb19ddafea7ff14c59a57fc84ca",
+      "bytes": 936
     },
     "graphic.svg": {
       "sha256": "4675ee87d1f2fe029e826729d5b8e0868dee012ee91dd957d0e7883b72a8ad0d",
       "bytes": 71459
     },
     "popup.html": {
-      "sha256": "c2254ad3a876e051c6309b90b682ae714e00f164f62eec8394eb4ae26903b397",
-      "bytes": 512531
+      "sha256": "2f2692f25e76b2f5bf02c9d12e10f1f22ea5afb110ce505d4ba4ab01258c5f99",
+      "bytes": 512550
     }
   }
 }

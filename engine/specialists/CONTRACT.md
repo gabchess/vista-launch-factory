@@ -8,11 +8,11 @@ The Launch Factory operator keeps the campaign brief and routes one stage throug
 
 On a host with native delegation, invoke the named native role and pass the original request plus the route projection. The projection carries `workspace_root` and each selected source's `resolved_path`; source paths in the request are relative to that release workspace, not the repository. On a host without delegation, the operator reads the same skill and bank and performs that role's work inline. State which path ran. A role file or routing result alone does not prove invocation. If Python is unavailable, check the packet visibly and label hashes and schemas unverified. Do not claim a helper ran.
 
-The role returns concrete draft content, an exact-version review or a specific hold. Read any routed `support_skills` for the requested stage; video and motion finishing share one protocol without adding another role. The operator assembles the result, invokes the next needed role and shows the human the actual content or playable media. No specialist acts as Gabe or Barry.
+The role returns concrete draft content, an exact-version review or a specific hold. Read any routed `support_skills` for the requested stage; video and motion finishing share one protocol without adding another role. The operator assembles the result, invokes the next needed role and shows the human the actual content or playable media. No specialist acts as Gabe or Reviewer.
 
 ## Required context
 
-Bind the request to one product, campaign, source revision and selected voice profile. Fact records have exact byte hashes and character spans. Voice samples inform expression and supply no product evidence. Load the chosen samples only. An absent voice profile requires selection; the Vista bank is available for Vista work and does not silently become another product's voice.
+Bind the request to one product, campaign, source revision and selected voice profile. Fact records have exact byte hashes and character spans. Voice samples inform expression and supply no product evidence. Load the chosen samples only. An absent voice profile requires selection; a shipped voice-bank source is scoped to its own product and does not silently become another product's voice.
 
 All factual statements must cite the supplied claim IDs. Keep limits, availability and pricing qualifiers. A matching quote verifies a reference, not truth or semantic entailment. The evidence editor must reject unsupported claims, invented first-person experience and screenshots that imply an unverified action. Clearly label illustrations and simulations. Do not copy private course prose, paid templates, actors or brand assets into the reusable package.
 
@@ -34,9 +34,9 @@ Authorization already given by the actual human in the session remains valid for
 
 Use `result.schema.json` for a review recommendation and `validate-result` to compare it with the current request. Each rubric item needs `pass`, `fail` or `not_tested` and specific evidence. The result names the specialist and exact artifact subject. It cannot contain approval, publishing or human-identity fields. Drafts can be returned inline first; the operator saves the actual content and hashes it before requesting review.
 
-The review packet contains the assigned human (`gabe` or `barry`), actual artifact content or media path, version, SHA-256, source/voice context digest, findings and unresolved gates. A typed reviewer name is assignment only. The actual human makes the decision. `check-binding` only compares an external decision's subject against the current subject; it never authenticates, orders, stores or applies that event. Even a matching or repeated event grants no approval here. An authenticated event ledger and export-time authority recheck remain future engine work.
+The review packet contains the assigned human (`gabe` or `reviewer`), actual artifact content or media path, version, SHA-256, source/voice context digest, findings and unresolved gates. A typed reviewer name is assignment only. The actual human makes the decision. `check-binding` only compares an external decision's subject against the current subject; it never authenticates, orders, stores or applies that event. Even a matching or repeated event grants no approval here. An authenticated event ledger and export-time authority recheck remain future engine work.
 
-Do not use `transition_slot.py --human-confirmed` to project these recommendations or Gabe's decisions into Barry's legacy record. Existing legacy checks are structural and do not implement this authority contract.
+Do not use `transition_slot.py --human-confirmed` to project these recommendations or Gabe's decisions into Reviewer's legacy record. Existing legacy checks are structural and do not implement this authority contract.
 
 ## Revision scope
 

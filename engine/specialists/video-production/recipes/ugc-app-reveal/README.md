@@ -4,7 +4,7 @@ Recipe ID: `ugc-app-reveal`. Version: `1.0.0`.
 
 Use for a film that starts with a human situation, demonstrates the product in an authored app scene, then returns to the people and a clear CTA. The umbrella skill is `product-heygen-pipeline`; Launch Factory uses its existing `lf-video-production` lead. This recipe adds no agent or provider service.
 
-Read [the actor protocol](../../PROTOCOL.md) and [provider notes](../../PROVIDER-NOTES.md). Reuse an accepted story, script, cast and performance within their exact approved scope. A new product or changed script needs its own evidence and affected decision. The film duration comes from the current brief; Vista social remains capped at 30 seconds.
+Read [the actor protocol](../../PROTOCOL.md) and [provider notes](../../PROVIDER-NOTES.md). Reuse an accepted story, script, cast and performance within their exact approved scope. A new product or changed script needs its own evidence and affected decision. The film duration comes from the current brief; the campaign's social-video slot remains capped at 30 seconds.
 
 ## Prompt index
 

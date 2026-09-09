@@ -2,7 +2,7 @@
   "schema_version": "asset-review-binding/v1",
   "asset_id": "changelog",
   "version": 1,
-  "context_digest": "81b3246992398dfebe4b8bac774345ca82138b7b6948f98e1a612ab2dbb43b88",
+  "context_digest": "024df641324b358ceb9f09b05344335ae2feae6679d966393ecc101f42123ce3",
   "files": [
     {
       "path": "blog/assets/tix-camera-brief.png",
@@ -14,7 +14,7 @@
     },
     {
       "path": "changelog/entry.json",
-      "sha256": "19012f82cab27e1369dd70b4338b17cd1ea4ca2d7545bffca1ffd647ec81e2ea"
+      "sha256": "968442368e248815fb2bf0a23f3ea8dd3689a98a9d568afee3f45312e2e6e765"
     },
     {
       "path": "changelog/entry.md",
@@ -29,5 +29,5 @@
       "sha256": "d3bf1bdaf0550e83da9ac0b1d1d9fe6db086835a83aa28578e609a394b9a0286"
     }
   ],
-  "sha256": "d50d61e59a6ed8bdbb075b34dd22852c2fa14bba41e9a72317865ef15a4a2a94"
+  "sha256": "df7c4f1000d8c6d34ea47899ff3f1a4d0acbd45ba2f3d8df03106d077e55790a"
 }

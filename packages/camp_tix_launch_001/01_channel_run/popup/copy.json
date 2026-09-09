@@ -7,8 +7,8 @@
   "product_id": "tixmancer",
   "publisher": "Tixmancer",
   "source_revision": "27826b0332fd1582108ac0081165a7dd360e7aa6",
-  "voice_profile": "vista-popup-adapted-for-tix-v1",
-  "context_digest": "6469b873744dbfee7ab4b6221f1e5cb70c11c11496f89b9971365d110e76380b",
+  "voice_profile": "external-popup-adapted-for-tix-v1",
+  "context_digest": "3313e4a26ac7debc76637b4c644ff7e9119100d10ccbe666e23e609e1af5ec3a",
   "specialist": "popup_designer",
   "invocation": "Delegated Egdod performed the LF popup role inline after reading its generated skill, protocol, bank and supplied request/route.",
   "purpose": "Introduce the conversation design to a prospective secondhand buyer and invite interest in Tix.",
@@ -44,8 +44,8 @@
     "creation_authority": "User directed creation of all missing outputs with one review at the end. The route projection does not grant authority.",
     "source_claims_lock_record": "00_baseline still records pending review; no approval event was manufactured.",
     "next_step_before_publication": "Verify that https://tixmancer.xyz has the intended waitlist collection path. That interaction was not tested in this run.",
-    "style_boundary": "Vista supplies layout and expression references. Tixmancer is the product and publisher; no Vista ownership or endorsement is implied.",
-    "popup_reference_boundary": "Observed Vista login, published palette and a public task-dialog reference. No Vista feature-announcement popup was visually verified; modal dimensions are original design choices.",
+    "style_boundary": "An externally observed source supplies layout and expression references. Tixmancer is the product and publisher; no ownership or endorsement by that source is implied.",
+    "popup_reference_boundary": "Observed an external login page, its published palette and a public task-dialog reference. No feature-announcement popup from that source was visually verified; modal dimensions are original design choices.",
     "targeting_and_frequency": "Manual preview only. Production targeting and dismissal persistence are integration decisions, not verified product features."
   },
   "dependencies": {
