@@ -41,7 +41,7 @@ cd <repo-root>
 Repo prove:
 
 ```bash
-.venv/bin/pytest -q        # expect 22 passed
+.venv/bin/pytest -q        # expect 77 passed
 ```
 
 ## Hard stops

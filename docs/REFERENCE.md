@@ -276,13 +276,11 @@ Verified against the actual scripts in this checkout:
 - **No retries.** `run.sh`'s `fail()` exits on the first failure; no script
   under `engine/scripts/` loops or retries. The schemas carry a `retries`
   counter and a `retryable_fail` enum value, but nothing increments or acts
-  on them. `docs/OPERATE-LAUNCH-FACTORY.md` and `README.md` currently claim
-  "Validators retry twice"; not true of this code.
+  on them yet.
 - **No hash-bound approval invalidation.** `transition_slot.py` never reads
   or compares a file hash on approval. Nothing here reopens a gate when an
-  approved file's content changes. `README.md` currently claims "An
-  approval binds to the asset's hash, so editing an approved file reopens
-  its gate"; not implemented.
+  approved file's content changes. The narrow exception is the video
+  production validator, which binds its own approval to content bytes.
 - **No auto-publish.** True as claimed: `build_package.py` hardcodes
   `"auto_publish": false` always, and nothing under `engine/` calls a send,
   publish, or schedule API.
