@@ -326,6 +326,21 @@ def main() -> None:
     # delegated reviewer, never a Barry approval.
     write(OUT / "reviews/delegated-marketing-review-v1.json", json.dumps({"schema_version": "delegated-review/v1", "reviewer": "AgentsKit executing-marketing-campaigns", "roleplay_subject": "Barry", "authority": "Gabe-delegated provisional demo review", "barry_approval": "pending", "verdict": "recommend_review", "findings": ["Make the changelog title more direct", "Keep all three concept previews visibly labelled", "Preserve the five segment actions"], "at": now}, indent=2) + "\n")
     write(OUT / "reviews/revision-v2.json", json.dumps({"asset": "changelog", "from": "v1", "to": "v2", "feedback": "Make the changelog title more direct", "reviewer": "AgentsKit delegated provisional reviewer", "barry_approval": "pending", "changed_file": "artifacts/changelog-v2.md", "before_sha256": digest(OUT / "artifacts/changelog.md"), "after_sha256": digest(OUT / "artifacts/changelog-v2.md"), "rendered_sha256": digest(OUT / "artifacts/changelog.html")}, indent=2) + "\n")
+    write(OUT / "reviews/local-recheck-v2.md", """# Local recheck, v2
+
+This recheck was performed after the first delegated marketing review held the initial package. The package now exposes the corrected consumer artifacts and passes the local verifier.
+
+- MR01: source roles are explicit. Barry's supplied text is a voice seed; the public Insights capture supplies linked-task and source-navigation evidence. No plan, price or entitlement claim is used in the consumer copy.
+- MR02: the blog preview contains the selected article body only. Authoring metadata, claim maps and internal review notes remain outside the consumer preview.
+- MR03: all five email files have distinct subjects, preheaders, segment intros and actions. Internal notes and claim IDs are removed from the message bodies.
+- MR04: changelog v2 has its own title, rendered HTML and before/after hashes. v1 remains available as history.
+- MR05: the two-week calendar resolves every asset, includes LinkedIn, X, Threads and TikTok, and carries proposed day, order and America/Sao_Paulo timezone fields. Scheduling and tracking remain disabled/proposed.
+- MR06: the popup preview composes the SVG and includes a dismissible dialog with close, backdrop and Escape handling.
+- MR07: the social concept now closes with an Open Vista Work action and a more legible concept label. It remains silent local concept media.
+- MR08: the review page exposes all five email previews and the revision/recheck records. The delegated v1 review is historical; Barry approval remains pending.
+
+Remaining gates are explicit: Gabe's manual screen recording, Barry's copy and creative decision, private Vista footage or provider execution, receiving-surface integration, and any send, schedule, publish or deploy action. None is claimed by this package.
+""")
 
     write(OUT / "recording-pending.md", "# Recording checklist\n\nThe retained screen recording is pending Gabe's manual walkthrough. The package contains no fake recording receipt.\n\nRecord the local `review.html` page, open the source/run brief, review the blog, five email variants, changelog, concept media and popup, open the campaign calendar, show the delegated review and revision record, then end with Barry approval pending and publishing disabled.\n")
 
@@ -347,12 +362,13 @@ def main() -> None:
         ("In-app popup concept", "artifacts/popup/preview.html"),
         ("Campaign calendar", "campaign/calendar.csv"),
         ("Revision record", "reviews/revision-v2.json"),
+        ("Local recheck", "reviews/local-recheck-v2.md"),
         ("Recording checklist", "recording-pending.md"),
     ]
     cards = "".join(f"<li><a href='{html.escape(path)}'>{html.escape(label)}</a><span> · delegated review provisional; Barry pending</span></li>" for label, path in review_cards)
     write(OUT / "review.html", f"""<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Vista Work local review</title><style>body{{margin:0;background:#f5f7fb;color:#14233c;font:16px/1.6 -apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif}}main{{max-width:820px;margin:40px auto;padding:36px;background:#fff;border:1px solid #dae4f2;border-radius:18px}}h1{{margin-top:0;color:#0052ff}}li{{margin:14px 0}}a{{color:#0052ff;font-weight:700}}span{{color:#718098;font-size:13px}}</style></head><body><main><h1>Vista Work · local review package</h1><p>One public-source run with seven output groups and a two-week campaign. Media marked concept preview uses local documentary motion because private UI footage was not supplied.</p><p><strong>Barry approval: pending.</strong> Nothing sends, schedules or publishes.</p><ul>{cards}</ul><p><a href='RUN.md'>Run record</a> · <a href='source-manifest.json'>Source manifest</a> · <a href='export-manifest.json'>Export manifest</a></p></main></body></html>""")
     write(OUT / "README.md", "# camp_vista_work_public_001\n\nLocal review bundle for the public Vista Work source. Open `review.html` first. This package contains a blog, five email segments, a changelog, social and login concept previews, a popup concept and a two-week calendar. The media is explicitly documentary/concept work because no private Vista footage was supplied. Barry approval and publication are pending.\n")
-    write(OUT / "reviews/local-verification.md", "# Local verification receipt\n\nThe package builder ran locally with no paid provider calls. `verify_public_demo.py` checks the run status, three source hashes, public claim evidence, five distinct email subjects and bodies with preheaders, both H.264 media files, the accessible popup interaction, campaign channel and planning fields, every review link, the delegated revision hashes, the cost boundary, the no-publish boundary and every export hash. A delegated AgentsKit marketing reviewer supplied provisional copy feedback. Barry approval remains pending.\n")
+    write(OUT / "reviews/local-verification.md", "# Local verification receipt\n\nThe package builder ran locally with no paid provider calls. `verify_public_demo.py` checks the run status, three source hashes, public claim evidence, five distinct email subjects and bodies with preheaders, both H.264 media files, the accessible popup interaction, campaign channel and planning fields, every review link, the delegated revision hashes, the cost boundary, the no-publish boundary and every export hash. A delegated AgentsKit marketing reviewer supplied provisional copy feedback; `local-recheck-v2.md` records the post-fix recheck. Barry approval remains pending.\n")
 
     records = []
     for path in sorted(p for p in OUT.rglob("*") if p.is_file() and p.name not in {"export-manifest.json"}):

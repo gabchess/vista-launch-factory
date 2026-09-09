@@ -66,7 +66,7 @@ def main() -> None:
     require("<dialog" in popup and "showModal" in popup and "Escape" in popup and "vista-work-popup.svg" in popup, "popup interaction preview")
 
     review = (PKG / "review.html").read_text()
-    for required in ("blog.html", "lead_smb.html", "lead_agency.html", "lead_reseller_affiliate.html", "customer_smb.html", "customer_agency.html", "changelog.html", "linkedin.md", "x.md", "threads.md", "tiktok.md", "vista-work-social-concept.mp4", "vista-work-login-concept.mp4", "preview.html", "calendar.csv", "revision-v2.json", "recording-pending.md"):
+    for required in ("blog.html", "lead_smb.html", "lead_agency.html", "lead_reseller_affiliate.html", "customer_smb.html", "customer_agency.html", "changelog.html", "linkedin.md", "x.md", "threads.md", "tiktok.md", "vista-work-social-concept.mp4", "vista-work-login-concept.mp4", "preview.html", "calendar.csv", "revision-v2.json", "local-recheck-v2.md", "recording-pending.md"):
         require(required in review, f"review link {required}")
     calendar = json.loads((PKG / "campaign/calendar.json").read_text())
     require(calendar["scheduled"] is False and calendar["timezone"] == "America/Sao_Paulo", "campaign scheduling boundary")

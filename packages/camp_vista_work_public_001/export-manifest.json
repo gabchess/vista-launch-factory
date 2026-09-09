@@ -13,7 +13,7 @@
     },
     {
       "path": "RUN.md",
-      "sha256": "04400d836b66e36a7fb94c8add9adf016eefb377d7b1cfcd578e89e738384e0c",
+      "sha256": "31232a4071f410d866d5a55561fd498cebeb9eb00cbb9bdd02543aba91fd121c",
       "bytes": 911
     },
     {
@@ -173,7 +173,7 @@
     },
     {
       "path": "events/events.jsonl",
-      "sha256": "c17601957eda0b68c06d6c8c35784d97aea3dd957fdcad8af3e9efa7fc1ccabb",
+      "sha256": "030a99114f959f4fc0f0553432391d46b197fc9c2e292a154ef7b15c8aae3d89",
       "bytes": 163
     },
     {
@@ -193,18 +193,23 @@
     },
     {
       "path": "review.html",
-      "sha256": "6c3cbd7ccefef65d91debc5bc71b87428ce9fb79386a1d38c9b690af4d5e3184",
-      "bytes": 3389
+      "sha256": "f717418df5e6828c24cf8716a70bde4780741f21d590eb81c659f83818b9938d",
+      "bytes": 3513
     },
     {
       "path": "reviews/delegated-marketing-review-v1.json",
-      "sha256": "4dd1feb3bf915c478751b73d470f7df146edf62a929fab5084e7ad6e361a1337",
+      "sha256": "3ee60e214a2cb11a12f9afcd18806f09343b4f985bf463b71e440ca0bcfd437c",
       "bytes": 460
     },
     {
+      "path": "reviews/local-recheck-v2.md",
+      "sha256": "eb4cd36473e18d773780f220e99c0291c42736acf6d50d1867be2f7a76329b04",
+      "bytes": 1753
+    },
+    {
       "path": "reviews/local-verification.md",
-      "sha256": "69218ba8a57787853e9e26231271cf02e7d1fdeb76d22a081c962b212c0e728a",
-      "bytes": 560
+      "sha256": "7245222b8d16e43d417cc283a790f71d105aef8f40e3f8fa163d1aca8349bed6",
+      "bytes": 612
     },
     {
       "path": "reviews/revision-v2.json",
@@ -218,7 +223,7 @@
     },
     {
       "path": "source-manifest.json",
-      "sha256": "f46b6b3bcf0882d1193d295d5afef8a7e3c9878c3b0e9835cc8eb1d2eed89c57",
+      "sha256": "434a525e1b9b6c0cb8871478053d073affe408b1a1b02657cb93eb3877083093",
       "bytes": 1454
     },
     {

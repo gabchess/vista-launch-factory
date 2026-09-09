@@ -2,7 +2,7 @@
 
 Run ID: camp_vista_work_public_001
 Mode: local-assisted
-Started: 2026-09-09T11:56:18.273042+00:00
+Started: 2026-09-09T11:59:37.619679+00:00
 
 The run uses the public Vista Work announcement, supplied Barry expression seed and the repository claim ledger. Blog, five email segments, changelog, LinkedIn/X/Threads/TikTok drafts, social concept, login concept, popup concept and a two-week campaign are present. The concept media is documentary motion, created locally from source-backed copy because no private UI footage was supplied.
 
