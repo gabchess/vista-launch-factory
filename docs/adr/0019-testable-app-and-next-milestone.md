@@ -8,7 +8,7 @@ Keep the sequence: validate content and media methods with internal product inpu
 
 An initial engineer configures own-account credentials and infrastructure. A marketing, product or development operator must then complete routine intake, preview, correction, approval and package download without an engineer acting behind the chat. The provider worker runs outside browser requests when jobs are long. Progress and pending human decisions survive reloads.
 
-The six-output trial and a coherent campaign remain the target. The currently approved Tix animation and standalone film establish two creative methods. They do not prove all target format requirements or an end-to-end run. Historical fixture and sample approvals remain historical.
+The six-output trial and a coherent campaign remain the target. Two approved creative renditions from an earlier internal run establish two creative methods. They do not prove all target format requirements or an end-to-end run. Historical fixture and sample approvals remain historical.
 
 Keep trial access bounded by explicit account, time and cost controls. The existing budget ceiling does not grant unlimited hosting or retries. Pick Base44 or Replit after checking a real authenticated request, background job, callback and persisted review against the intended deployment. The current request authorizes planning, checkpointing and repository push; it does not activate providers or deploy the app during this checkpoint.
 

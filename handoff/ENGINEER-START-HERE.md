@@ -1,9 +1,8 @@
 # Engineer handoff: current Launch Factory build
 
-This is the technical handoff for the branch containing the Tix channel run. Read it
-before the older SOP files in this directory; those are superseded, and each says so. No
-credentials, paid third-party marketing-review skill source, or client approval events
-are included in this handoff.
+This is the technical handoff for maintaining this repository. Read it before the older
+SOP files in this directory; those are superseded, and each says so. No credentials or
+approval events are included in this handoff.
 
 See [docs/HUMAN-GAPS.md](../docs/HUMAN-GAPS.md) for what still needs a human, in plain language. The supplied
 brief sets no numeric social-video duration cap; this project uses its own 30-second
@@ -12,88 +11,50 @@ target.
 ## What is available
 
 The full repository is an agent-operated launch workflow: a Codex/Claude operator,
-specialist roles, selected source and voice packets, original production prompts, local
-validators, two importable n8n preparation workflows, and one built campaign review
-package for Tix.
+specialist roles, local validators, two importable n8n preparation workflows, and the
+`build_package.py` script that assembles a review package from a release folder. No
+pre-built example package ships in this repository; see [docs/REFERENCE.md](../docs/REFERENCE.md)
+for the exact package shape and `packages/README.md` for where a built package lands.
 
-The Tix test package contains a complete blog with two images, five segmented email
-drafts, a changelog, popup graphic and copy, and a proposed two-week calendar with
-LinkedIn, X, and Threads drafts. Two prior creative renditions are approved: a 55-second
-product film and a 10-second square animation. Their hashes and production lineage are
-retained; attach the binary masters separately to the local review (see below).
-
-The four new output categories await the product owner's content review. The social slot
-still needs a 30-second-or-under cut and a platform crop. The login animation needs
-integration with a responsive login surface. Tix is the internal test product; an external
-product supplied writing and design references only, at this project's request. This run
-is not a feature announcement for that external product, and it does not establish that
-product's ownership of anything in it.
-
-The review web page displays real local content and saves review notes tied to a file
-version, in the browser. It does not run a model, and it does not authenticate who wrote
-a note. The n8n workflows prepare source-bound work packets; they do not dispatch a
-provider worker, resume long jobs, or apply approval events. Building those pieces is the
-next engineering work.
-
-## Run the included review
-
-Requirements: Python 3.11 or later, Node.js with ESM support, Git and a modern browser. Install the repository's Python dependencies in a virtual environment:
-
-```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-python3 packages/camp_tix_launch_001/01_channel_run/route_packets.py
-python3 packages/camp_tix_launch_001/01_channel_run/render_copy.py
-python3 packages/camp_tix_launch_001/01_channel_run/build_review.py
-python3 packages/camp_tix_launch_001/01_channel_run/serve_review.py --port 8770
-```
-
-Open `http://127.0.0.1:8770/01_channel_run/review.html`. All four new deliverables and the calendar work without credentials. The approved videos need their separate master files:
-
-```bash
-python3 packages/camp_tix_launch_001/01_channel_run/serve_review.py \
-  --port 8770 \
-  --film /path/to/Dinner-with-Tix-app-reveal-v3.mp4 \
-  --animation '/path/to/tixmancer motion.mp4'
-```
-
-The server binds to loopback and verifies each attached video against its approved SHA-256. Review notes remain local browser intent until exported. They do not apply approvals to a backend. Changing asset bytes or source/voice context prevents reuse of an old note.
-
-The [campaign README](../packages/camp_tix_launch_001/01_channel_run/README.md) maps the outputs, checks and review procedure. `PACKAGE-MANIFEST.json` covers the committed campaign files; repository manifests cover the reusable engine and documentation. Local routing receipts are regenerated on the recipient's host.
+The review web page a built package generates displays real local content and saves
+review notes tied to a file version, in the browser. It does not run a model, and it does
+not authenticate who wrote a note. The n8n workflows prepare source-bound work packets;
+they do not dispatch a provider worker, resume long jobs, or apply approval events.
+Building those pieces is the next engineering work.
 
 ## Operate it through Codex
 
 Open the full checkout as the project and follow [Codex installation](../docs/INSTALL-CODEX.md). The operator entry is [launch-factory](../codex/launch-factory/SKILL.md). Generated role wrappers live in `.agents/skills/` and `.codex/agents/`; copying a single skill folder omits its engine and references.
 
-Use the current campaign as an example:
+For a new product, create a campaign workspace. Ingest its source documents, retain
+immutable source bytes and source revision, extract claim spans, select its voice
+reference, and identify the human reviewer. Reviewer is the required approver for the
+target product's work.
 
-> Read the Launch Factory operator. Use `packages/camp_tix_launch_001` as the release workspace and the packets under `01_channel_run/requests`. Review the current artifacts and their source claims. Preserve the two accepted media files. Return requested revisions to the assigned reviewer as exact new versions. No publishing or sending.
-
-For a new product, create a separate campaign workspace. Ingest its source documents, retain immutable source bytes and source revision, extract claim spans, select its voice reference, and identify the human reviewer. Reviewer is the required approver for the target product's work. The Tix review history grants no authority for a new product or source.
-
-Where native role delegation is available, the host invokes the selected specialist. Otherwise the operator reads the same role protocol and performs the work inline, reporting that path. The current writing run used delegated and inline protocol execution. Role discovery and schema validation are recorded separately from provider execution.
-
-The relevant skills from a third-party marketing-review skill package were verified as installed in Codex on the builder's host. Recipients need their own permitted installation to use that optional library. The original channel prompts bundled here work without copying the purchased kit.
+Where native role delegation is available, the host invokes the selected specialist.
+Otherwise the operator reads the same role protocol and performs the work inline,
+reporting that path. Role discovery and schema validation are recorded separately from
+provider execution.
 
 ## Prepare the four n8n lanes
 
 ```bash
 .venv/bin/python automation/n8n/channel-production/load_requests.py \
-  --workspace packages/camp_tix_launch_001 \
-  --batch-id tix-channels-v1 \
+  --workspace RELEASE_WORKSPACE \
+  --batch-id my-channels-v1 \
   --requests \
-    packages/camp_tix_launch_001/01_channel_run/requests/blog.json \
-    packages/camp_tix_launch_001/01_channel_run/requests/email_segments.json \
-    packages/camp_tix_launch_001/01_channel_run/requests/changelog.json \
-    packages/camp_tix_launch_001/01_channel_run/requests/in_app_popup.json \
-  --output /tmp/tix-channel-input.json
+    RELEASE_WORKSPACE/requests/blog.json \
+    RELEASE_WORKSPACE/requests/email_segments.json \
+    RELEASE_WORKSPACE/requests/changelog.json \
+    RELEASE_WORKSPACE/requests/in_app_popup.json \
+  --output /tmp/channel-input.json
 node automation/n8n/channel-production/run.mjs \
-  /tmp/tix-channel-input.json /tmp/tix-channel-work-packets.json
+  /tmp/channel-input.json /tmp/channel-work-packets.json
 ```
 
 Import [Four Channels Prepare](../automation/n8n/channel-production/workflow.json) into your n8n instance. A parent calls it with Execute Sub-workflow and passes the validated batch. Follow the [workflow README](../automation/n8n/channel-production/README.md) for the envelope, source checks, revision rules and required `crypto` built-in. Leave it inactive until a controlled host test passes.
 
-The separate [UGC App Reveal preparation](../automation/n8n/ugc-app-reveal/README.md) supplies the video lead's five prompts. The accepted film used ChatCut performances and assembly, HyperFrames scenes, and one Higgsfield enhancement. An in-house HeyGen/HyperFrames/Remotion adapter is an implementation direction. It must establish its own working output before anyone describes it as equivalent to the accepted route.
+The separate [UGC App Reveal preparation](../automation/n8n/ugc-app-reveal/README.md) supplies the video lead's five prompts. A prior build used ChatCut performances and assembly, HyperFrames scenes, and one Higgsfield enhancement to fill this route. An in-house HeyGen/HyperFrames/Remotion adapter is an implementation direction. It must establish its own working output before anyone describes it as equivalent to that route.
 
 ## Credentials and configuration for the next stage
 
@@ -126,11 +87,12 @@ Build one working app-to-worker path before adding every output to the UI:
 
 Replit or Base44 can supply the user interface and application host after a thin slice verifies authenticated requests, background work, callbacks and persistent state. The repository's [app scope decision](../docs/adr/0019-testable-app-and-next-milestone.md) remains the product target. The latest user instruction authorizes setup and testing next; it does not establish that those runtime paths are already implemented.
 
-## Acceptance for the client demo
+## Acceptance for a new build
 
-Use the Prospector source only after the Tix method and app slice are verified. The operator must complete source ingest, the required human decisions, six output previews, a revision and package download from the app. A refresh must preserve progress. Errors must name the failed step and a recoverable action. Record provider job receipts and actual output hashes.
-
-The client trial calls for a real feature release with all six outputs. The current Tix artifacts validate the method internally. A source swap, voice calibration and recipient infrastructure test are still required for the client's own release. Keep the demo's provider lineage and infrastructure ownership explicit. Hosting, in-house API setup, support and training are separate commitments from this repository snapshot.
+The operator must complete source ingest, the required human decisions, output previews,
+and a package build end to end. A refresh must preserve progress. Errors must name the
+failed step and a recoverable action. Record provider job receipts and actual output
+hashes for any real generation run.
 
 ## Verification commands
 
@@ -141,8 +103,8 @@ node automation/n8n/ugc-app-reveal/test.mjs
 node automation/n8n/channel-production/test.mjs
 .venv/bin/python automation/n8n/channel-production/test_loader.py
 python3 automation/n8n/channel-production/build_workflow.py --check
-python3 packages/camp_tix_launch_001/01_channel_run/verify_package.py
-.venv/bin/python packages/camp_tix_launch_001/01_channel_run/blog/evidence/verify.py
+./run.sh engine/fixtures/demo-release
 ```
 
-Read [current verification](../packages/camp_tix_launch_001/01_channel_run/VERIFICATION.md) for the checks that actually ran. A structural pass does not grade copy, authenticate a reviewer or prove an external API worked.
+A structural pass does not grade copy, authenticate a reviewer, or prove an external API
+worked.

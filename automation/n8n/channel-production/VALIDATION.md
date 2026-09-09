@@ -13,7 +13,7 @@ Observed locally on 2026-09-08. This evidence covers preparation and file valida
 | Independent review | One reviewer rechecked feedback/count/authority; a second rechecked schema and revision routing. Both bounded reviews passed after fixes. |
 | n8n cloud execution | Not run. Importable workflow is inactive and has no credentials or provider node. |
 
-The real input came from `packages/camp_tix_launch_001/01_channel_run/requests/` with release workspace `packages/camp_tix_launch_001`. Source revision was `27826b0332fd1582108ac0081165a7dd360e7aa6`. Preparation digest was `119a9371be48dba104027d3eb3bc349b23af690de8da6bfe380aac34f2080a11`. The temporary inline-source payload was discarded after this check; the portable example remains fictional.
+The real input came from a since-removed example package's request folder. Source revision was `27826b0332fd1582108ac0081165a7dd360e7aa6`. Preparation digest was `119a9371be48dba104027d3eb3bc349b23af690de8da6bfe380aac34f2080a11`. The temporary inline-source payload was discarded after this check; the portable example remains fictional.
 
 The test-first baseline returned `not_implemented` and failed the first assignment assertion. Loader fixtures also failed before implementation. Later focused checks reproduced malformed collection crashes, an uncaught schema error and an unrouted affected artifact. Independent review then found prototype-named field acceptance, changed-artifact drafts bypassing revision handling, and extra revision fields echoing caller authority flags. Each has a regression and the corrected cases pass.
 

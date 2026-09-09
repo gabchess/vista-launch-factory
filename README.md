@@ -9,6 +9,26 @@ It runs two ways:
 - **From an agent.** Open this repository in Claude Code or Codex, then ask, in plain language: `Run Launch Factory on this release folder.` The operator reads the release folder, drafts each asset, and stops at every gate below for a human decision.
 - **From the command line.** Run `./run.sh RELEASE_FOLDER` for the same ingest, validate, and package steps, no agent required.
 
+## Install
+
+As a Claude Code plugin, from a clone of this repository:
+
+```bash
+git clone https://github.com/gabchess/launch-factory.git
+cd launch-factory
+claude
+```
+
+Then, inside Claude Code:
+
+```
+/plugin install launch-factory --source .
+```
+
+Or point Claude Code at the checkout directly, without installing: `claude --plugin-dir .`. Either way, the plugin adds one skill, `/launch-factory:launch`, that runs the operator flow described below inside a chat session.
+
+The command-line door needs no agent and no install: `./run.sh RELEASE_FOLDER` (see Run it, below).
+
 ## What comes out
 
 | # | Output | What you get |
@@ -21,15 +41,15 @@ It runs two ways:
 | 6 | In-app popup | Graphic, copy, and a working dialog preview. |
 | 7 | Campaign plan | A two-week calendar across email, popup, blog, LinkedIn, X, Threads, and IG/TikTok, with a human gate on every row. |
 
-## A run you can open now
+## Try it
 
-| Run | Source | Media | Open |
-| --- | --- | --- | --- |
-| Tix | A real product release, run by an engineer from Claude Code with local tools | Two accepted video renditions, each referenced by exact hash | [review page](packages/camp_tix_launch_001/01_channel_run/review.html) |
+No example run ships in this repository. Try it on the bundled fixture first:
 
-Both finished videos ship in this repository and play in the browser: [product film](packages/camp_tix_launch_001/media/tix-product-film-v3.mp4) and [login animation](packages/camp_tix_launch_001/media/tix-login-animation.mp4).
+```bash
+./run.sh engine/fixtures/demo-release
+```
 
-Tix outputs, readable without a server: [blog](packages/camp_tix_launch_001/01_channel_run/blog/article.md), [emails](packages/camp_tix_launch_001/01_channel_run/email/), [changelog](packages/camp_tix_launch_001/01_channel_run/changelog/entry.md), [popup copy](packages/camp_tix_launch_001/01_channel_run/popup/copy.md), [calendar](packages/camp_tix_launch_001/01_channel_run/campaign/calendar.csv), [claim ledger](packages/camp_tix_launch_001/00_baseline/claim-ledger.json). Package guide: [01_channel_run/README.md](packages/camp_tix_launch_001/01_channel_run/README.md).
+Or, from Claude Code with the plugin installed, run `/launch-factory:launch engine/fixtures/demo-release` and pick a channel or two when it asks.
 
 ## How a run works
 
@@ -61,25 +81,13 @@ cd launch-factory
 
 `run.sh` creates a virtual environment on first use, then runs ingest, validation, and packaging with stage banners. `engine/fixtures/` also has `mock-gtm-ship` (a fuller sample release) and `specialist-demo` (routing only, no packaging). The same spine runs from a chat prompt in Claude Code or Codex.
 
-Open the Tix review:
-
-```bash
-python3 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt
-python3 packages/camp_tix_launch_001/01_channel_run/serve_review.py --port 8770 \
-  --film packages/camp_tix_launch_001/media/tix-product-film-v3.mp4 \
-  --animation packages/camp_tix_launch_001/media/tix-login-animation.mp4
-```
-
-Then open `http://127.0.0.1:8770/01_channel_run/review.html`. The server binds to loopback and checks each video against its recorded SHA-256 before serving it. Drop both flags and the four drafted outputs (blog, email, changelog, popup) still render on their own.
-
 ## Verify
 
 ```bash
 .venv/bin/pytest -q
-.venv/bin/python packages/camp_tix_launch_001/01_channel_run/verify_package.py
 ```
 
-Expected: every test passes, and the Tix package verifier prints `"status": "pass"` with no human approval recorded yet.
+Expected: every test passes.
 
 ## What still needs a human
 
@@ -95,7 +103,7 @@ Expected: every test passes, and the Tix package verifier prints `"status": "pas
 
 - Reviewer has not approved any output; every asset is a review-ready draft.
 - Today an engineer runs the media lane from Claude Code or Codex. A hosted app where a non-engineer clicks a button and gets a package back is the next phase (Phase B), not built yet.
-- The built package under `packages/` was hand-assembled by an engineer running the scripts and specialists step by step. The single command that ingests a folder and packages six outputs end to end, unattended, is still being closed.
+- No pre-built example package ships in this repository. `packages/` fills in with `build_package.py` output once you run the pipeline against your own release folder. The single command that ingests a folder and packages six outputs end to end, unattended, is still being closed.
 - Two n8n workflows prepare work packets; they do not yet dispatch a provider worker.
 - No voice-bank corpus ships with this repository. Bring your own if you want the voice check; the pipeline runs without one.
 
@@ -112,7 +120,8 @@ MIT. See [LICENSE](LICENSE). Fork it, change it, ship it commercially; keep the 
 | `engine/` | Schemas, validators, specialist protocols, fixtures, and the package builder. |
 | `codex/launch-factory/` | The operator skill an agent reads first. |
 | `.claude/`, `.agents/`, `.codex/` | Native entry points for Claude Code and Codex. |
-| `packages/` | The one built review package (Tix). |
+| `.claude-plugin/`, `skills/launch/` | The installable Claude Code plugin manifest and its `/launch-factory:launch` skill. |
+| `packages/` | Where `build_package.py` writes your finished package. |
 | `voice-bank/` | Where a voice-bank corpus and its derived tone brief go, if you provide one. |
 | `reviewer/` | The three human review cards: claims lock, spot-check, pack approve. |
 | `automation/n8n/` | Two importable preparation workflows. |

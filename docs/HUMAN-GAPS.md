@@ -1,8 +1,8 @@
 # What still needs a human, and why
 
 This is the honest accounting for Launch Factory. It says what a human must do, what
-is genuinely unfinished, and why each gap exists. Read this before you judge the two
-built packages under `packages/`.
+is genuinely unfinished, and why each gap exists. No pre-built package ships in this
+repository; read this before you judge one you build yourself.
 
 ## Human decisions the factory will never make
 
@@ -22,7 +22,7 @@ These stay with a person by design, not by accident.
 
 ## What is built and working today
 
-- The claim-evidence pipeline: every allowed claim in the two shipped packages traces to
+- The claim-evidence pipeline: every allowed claim in a built package traces to
   a file, an offset, and a quote. `engine/scripts/validate_ledger.py` enforces this and
   arms a kill-switch when it fails.
 - The approval state machine: `engine/scripts/transition_slot.py` only allows the
@@ -32,7 +32,8 @@ These stay with a person by design, not by accident.
   the writer role approve its own work.
 - Twelve specialist roles (`.claude/agents/`, `.codex/agents/`) that draft one output each
   from locked claims only.
-- A review package you can open today: [the internal test-product run](../packages/camp_tix_launch_001/01_channel_run/review.html).
+- Run `./run.sh engine/fixtures/demo-release` to see a package built end to end against a
+  fixture; no pre-built example ships with this repository.
 
 ## What is not built yet
 
@@ -42,9 +43,10 @@ submits a release folder, watches progress, and downloads a package without an e
 in the loop does not exist yet. That is the next phase of work, not a hidden feature of
 this repository.
 
-**End-to-end pipeline packaging is still being closed.** The two packages under
+**End-to-end pipeline packaging is still being closed.** Prior worked examples under
 `packages/` were hand-assembled: an engineer ran ingest, the specialist roles, and the
-package scripts step by step, then reviewed the result. There is no single command today
+package scripts step by step, then reviewed the result. None ship in this repository.
+There is no single command today
 that takes a raw release folder and produces a finished, six-output package unattended.
 The pieces exist (`run.sh`, the specialist protocol, the validators) and are wired
 together for the demonstrated runs; they have not yet been proven on a fresh source folder
@@ -67,15 +69,16 @@ next step. There is no bounded-retry, cost-capped job queue yet.
 ## Historical fixture note
 
 Earlier v0.2.0 planning treated slots 1 (social video), 5 (login animation), and 6 (in-app
-popup) as held stubs. That plan changed for the internal test-product package, which now
-has real creative approved by the product owner for that test run (a 55-second product film
-and a 10-second login animation). A package built for a real client product would instead use
-concept previews when no private footage is available. Neither approach carries Reviewer's
-final approval on its own; both are review-ready drafts until Reviewer signs off.
+popup) as held stubs by default. A prior internal build later demonstrated the pipeline
+with real creative approved by the product owner instead (a product film and a login
+animation), proving those slots do not need to stay held forever. A package built from
+your own release folder holds slots 1, 5, and 6 by default unless you supply real media
+and get it approved. Neither approach carries Reviewer's final approval on its own; both
+are review-ready drafts until Reviewer signs off.
 
 ## Where to verify this yourself
 
 ```bash
 .venv/bin/pytest -q
-.venv/bin/python packages/camp_tix_launch_001/01_channel_run/verify_package.py
+./run.sh engine/fixtures/demo-release
 ```
