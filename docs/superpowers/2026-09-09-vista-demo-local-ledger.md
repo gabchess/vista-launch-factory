@@ -18,11 +18,11 @@ Task section extraction: the Superpowers task brief helper expects headings in t
 
 | Task | Exact plan section | State | Issue | Builder | Verifier | Evidence and next gate |
 | --- | --- | --- | --- | --- | --- | --- |
-| D00 | `## D00. Start from the audit fix` | Prepared, verification pending | #27 | Forge | Nova | Isolated worktree, copied plan snapshot, local audit checks and read-only hash receipt. Keep PR #41 unmerged. |
-| D01 | `## D01. Capture the public source and select its voice` | Pending | To record at activation | Fresh source builder | Independent verifier | Root records the public source package. Capture recording before retained execution. |
-| D02 | `## D02. Generate writing, campaign and media brief locally` | Pending | To record at activation | Fresh content builder | Independent marketing reviewer | Delegated review can be provisional for this demo run. Barry remains pending. |
-| D03 | `## D03. Produce simple media and receiving examples` | Pending | To record at activation | Fresh media builder | Independent media verifier | Reconcile cost before paid generation. Preserve missing private footage disclosure. |
-| D04 | `## D04. Assemble the review and take a real revision` | Pending | To record at activation | Fresh review builder | AgentsKit marketing reviewer plus independent technical verifier | Store provisional decision with bound hashes. Do not record a Barry approval. |
+| D00 | `## D00. Start from the audit fix` | Complete | #27 | Forge | Nova | Isolated worktree, copied plan snapshot, local audit checks and read-only hash receipt. Keep PR #41 unmerged. Nova reran 5 portability tests, 94 article checks, 94 package checks and 78 generated-entry checks, all passing. |
+| D01 | `## D01. Capture the public source and select its voice` | Complete, provisional | #27 | Nova | Nova | Public Insights bytes, supplied Barry seed and claim ledger captured in `packages/camp_vista_work_public_001`; source manifest records support URLs whose local response was not stable. |
+| D02 | `## D02. Generate writing, campaign and media brief locally` | Complete, provisional | #27 | Nova | AgentsKit marketing reviewer | Blog, five distinct email files with segment subjects/preheaders, changelog v1/v2, popup copy, LinkedIn/X/Threads/TikTok drafts and campaign calendar generated locally. Barry remains pending. |
+| D03 | `## D03. Produce simple media and receiving examples` | Complete, provisional | #27 | Nova | Independent media verifier | Social and login H.264 concept previews, popup SVG/HTML with local dialog behavior and media metadata generated with no paid provider calls. Private footage remains absent. |
+| D04 | `## D04. Assemble the review and take a real revision` | Complete, provisional | #27 | Nova | AgentsKit marketing reviewer plus independent technical verifier | Regenerated package has 48 hashed files, public-source claim evidence, all five email previews, campaign channel/day/order/timezone fields, a clean changelog v2 hash pair and a recording-pending record. Local verifier passes; the independent v1 hold is retained as review history until the v2 marketing recheck is written. |
 | D05 | `## D05. Keep the recording and package the handoff` | Pending | To record at activation | Fresh handoff builder | Independent verifier | Reserve final review and recording window. No send, publish, deploy or merge. |
 
 ## D00 receipts
@@ -30,8 +30,16 @@ Task section extraction: the Superpowers task brief helper expects headings in t
 - Worktree preparation: complete.
 - Plan snapshot: copied from the six approved untracked Markdown files in the canonical checkout.
 - Screen recorder preparation: pending with the retained run operator before D01.
-- Final recording and review window: pending confirmation from the run operator.
+- Final recording and review window: pending Gabe's manual walkthrough. Shotbase is not part of the agent loop.
 - Focused audit verification: complete. Five recipient portability and read-only regression tests passed. Article verification passed 94 checks. Package verification passed 94 checks over 86 files. All 78 generated entry points match.
 - Read-only receipt: the committed-file aggregate SHA-256 stayed `6d42b1213f773015d0bce5b3cecece10b098a253edd2dadde108f90d4b4c956c`. The evidence report SHA-256 stayed `dc8087732f994f89dde01dacdaebc56e26a5a72ccdcf83ac8b3e9b7cd5443a3a`. Default verification created no route file.
 - GitHub activation: issue #27 is the only open issue labelled `ready-for-agent`. The D00 activation comment is `https://github.com/gabchess/vista-launch-factory/issues/27#issuecomment-5601091861`.
 - D00 completion: withheld until independent verification.
+
+## Local package receipt
+
+- Build command: `python3 engine/local_run/build_public_demo.py`.
+- Package verifier: `python3 engine/local_run/verify_public_demo.py` passed 122 checks over 48 export files; Barry approval is false, publishing is false and incremental paid provider calls are zero.
+- HTTP smoke check: a local `python3 -m http.server` served `review.html` and exposed the email, campaign and recording links. The server was stopped after the check.
+- Media receipt: social concept is H.264 1080×1920, 12 seconds; login concept is H.264 1920×1080, 8 seconds. Both are silent local concept previews. No provider execution or private UI footage is claimed.
+- Marketing review history: `outputs/vista-local-loop/marketing-review-v1.md` held the first generated package. The package now includes the listed corrections; a v2 independent recheck remains a documentation follow-up.

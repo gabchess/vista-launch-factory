@@ -1,0 +1,9 @@
+{
+  "currency": "USD",
+  "incremental_paid_calls_this_run": 0,
+  "observed_usd_this_run": 0,
+  "prior_observed_usd": 0.235,
+  "prior_provider_credit_usd_unknown": true,
+  "ceiling_usd": 500,
+  "note": "Existing provider receipts include unknown later charges. No new paid generation was requested in this local build."
+}

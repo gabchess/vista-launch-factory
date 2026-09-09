@@ -1,0 +1,147 @@
+{
+  "campaign_id": "camp_vista_work_public_001",
+  "allowed": [
+    {
+      "claim_id": "vw1",
+      "text": "In Vista Work, the task and social posts are linked."
+    },
+    {
+      "claim_id": "vw2",
+      "text": "Opening a Vista Work task shows the actual post content, not a card describing it."
+    },
+    {
+      "claim_id": "vw3",
+      "text": "Approvers can see what needs a decision instead of hunting for the post first."
+    },
+    {
+      "claim_id": "vw4",
+      "text": "When an approval-queue task only says “Approve the next post,” finding the real post/context can take longer than the decision itself."
+    }
+  ],
+  "forbidden": [
+    {
+      "claim_id": "f1",
+      "text": "unlimited seats for $0",
+      "reason": "pricing invention — never invent seats or $"
+    },
+    {
+      "claim_id": "f2",
+      "text": "saves $",
+      "reason": "dollar savings invent — Barry email states time tax only"
+    },
+    {
+      "claim_id": "f3",
+      "text": "auto-publish",
+      "reason": "trial brief HITL: nothing auto-publishes v1"
+    },
+    {
+      "claim_id": "f4",
+      "text": "Barry zero-edit",
+      "reason": "not evidenced; contradicts HITL / light-edits eval bar"
+    },
+    {
+      "claim_id": "f5",
+      "text": "Gantt charts in Vista Work",
+      "reason": "not in Barry email; site anti-Gantt is marketing voice not this ledger seed"
+    },
+    {
+      "claim_id": "f6",
+      "text": "Demo Asset as product evidence",
+      "reason": "ADR 0001 — Demo Assets never enter Claim Ledger"
+    }
+  ],
+  "needs_disclaimer": [
+    {
+      "claim_id": "d1",
+      "text": "Vista Work is included on paid plans / trial packaging",
+      "disclaimer": "Not claimed in Barry Email example 2 seed. If used later, cite live pricing/insights page only — do not invent $ or seats. Out of scope for this ledger seed."
+    }
+  ],
+  "evidence": [
+    {
+      "claim_id": "vw1",
+      "source": "supplied_email_source_text",
+      "path": "sources/barry_email_transcript.txt",
+      "span_start": 498,
+      "span_end": 550,
+      "quote": "In Vista Work, the task and social posts are linked.",
+      "source_label": "Supplied Barry email source text"
+    },
+    {
+      "claim_id": "vw1",
+      "source": "repository_source_text",
+      "path": "sources/vista_work_outline.md",
+      "span_start": 268,
+      "span_end": 320,
+      "quote": "In Vista Work, the task and social posts are linked.",
+      "source_label": "Repository source text with no captured GitHub URL"
+    },
+    {
+      "claim_id": "vw2",
+      "source": "supplied_email_source_text",
+      "path": "sources/barry_email_transcript.txt",
+      "span_start": 595,
+      "span_end": 639,
+      "quote": "the actual content, not a card describing it",
+      "source_label": "Supplied Barry email source text"
+    },
+    {
+      "claim_id": "vw3",
+      "source": "supplied_email_source_text",
+      "path": "sources/barry_email_transcript.txt",
+      "span_start": 641,
+      "span_end": 714,
+      "quote": "Your approvers see what needs a decision instead of hunting for it first.",
+      "source_label": "Supplied Barry email source text"
+    },
+    {
+      "claim_id": "vw4",
+      "source": "supplied_email_source_text",
+      "path": "sources/barry_email_transcript.txt",
+      "span_start": 448,
+      "span_end": 496,
+      "quote": "That search takes longer than the decision does.",
+      "source_label": "Supplied Barry email source text"
+    },
+    {
+      "claim_id": "d1",
+      "source": "repository_source_text",
+      "path": "sources/vista_work_outline.md",
+      "span_start": 723,
+      "span_end": 758,
+      "quote": "no invented features/limits/pricing",
+      "source_label": "Repository source text with no captured GitHub URL"
+    },
+    {
+      "claim_id": "vw1",
+      "source": "public_web_capture",
+      "source_label": "Captured Vista Social Insights page",
+      "path": "sources/vista-work-insights.html",
+      "span_start": 213985,
+      "span_end": 214085,
+      "quote": "Every task links to the post, inbox conversation, review, report, listener, or automation behind it."
+    },
+    {
+      "claim_id": "vw3",
+      "source": "public_web_capture",
+      "source_label": "Captured Vista Social Insights page",
+      "path": "sources/vista-work-insights.html",
+      "span_start": 214086,
+      "span_end": 214131,
+      "quote": "Click a task, land on the source. No hunting."
+    },
+    {
+      "claim_id": "vw3",
+      "source": "public_web_capture",
+      "source_label": "Captured Vista Social Insights page",
+      "path": "sources/vista-work-insights.html",
+      "span_start": 211368,
+      "span_end": 211413,
+      "quote": "Access it from the Work menu in your sidebar."
+    }
+  ],
+  "kill_switch": {
+    "armed": false,
+    "reason": null
+  }
+}

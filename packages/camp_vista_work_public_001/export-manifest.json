@@ -1,0 +1,250 @@
+{
+  "schema_version": "export-manifest/v1",
+  "campaign_id": "camp_vista_work_public_001",
+  "product_id": "vista-work",
+  "human_approval": false,
+  "publishing_authorized": false,
+  "delegated_review": "provisional only",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "360465b39b71407aa77b38f3cff140b06c6eca1fa421ee2eb3270c26489c24d4",
+      "bytes": 390
+    },
+    {
+      "path": "RUN.md",
+      "sha256": "04400d836b66e36a7fb94c8add9adf016eefb377d7b1cfcd578e89e738384e0c",
+      "bytes": 911
+    },
+    {
+      "path": "artifacts/blog.html",
+      "sha256": "a9b410240c54bf1dd9bdd056280a1b8dc41247c9af360c2658c12d6257599a56",
+      "bytes": 5134
+    },
+    {
+      "path": "artifacts/blog.md",
+      "sha256": "64a4a10b14f7edea4407382dff47d48aa91acd6cc82b5bcd6d6fa101dfe27989",
+      "bytes": 4067
+    },
+    {
+      "path": "artifacts/changelog-v2.md",
+      "sha256": "a2821ae9bb7c5ababe5e1e6b5bf600fc0f64ffd764f78834283a12af030f5023",
+      "bytes": 437
+    },
+    {
+      "path": "artifacts/changelog.html",
+      "sha256": "0574a65c765e14cefbfc1f3de25c81bbfb419ed66c36d6f12c10b6df4ede0851",
+      "bytes": 1401
+    },
+    {
+      "path": "artifacts/changelog.md",
+      "sha256": "4c210ef573537f0cf01c9ef9b43b9ebb6cd7dae2a327142deb8b30bda82aefe3",
+      "bytes": 437
+    },
+    {
+      "path": "artifacts/email_segments.md",
+      "sha256": "344e36d15637b078d5d157907b63ecb2b33413e3962a72ade8aba395161bdf10",
+      "bytes": 4909
+    },
+    {
+      "path": "artifacts/emails/customer_agency.html",
+      "sha256": "d476387657f3b28a88892a9308cae6543adbd3dff6b428750a4f63594c36af49",
+      "bytes": 1898
+    },
+    {
+      "path": "artifacts/emails/customer_agency.md",
+      "sha256": "d98ed4afe55051b5034007ff6a5294f7cd19af2c9c1d77f15b299b12a6963538",
+      "bytes": 956
+    },
+    {
+      "path": "artifacts/emails/customer_smb.html",
+      "sha256": "01e1dad2db0f9c03bae587a101d5792232581b3b2be311959eb3fb4d2928c4dd",
+      "bytes": 1863
+    },
+    {
+      "path": "artifacts/emails/customer_smb.md",
+      "sha256": "21690274d761a39590c4d262a1a2ff92dc0ab74ddd8a632813edb7a057e697b1",
+      "bytes": 917
+    },
+    {
+      "path": "artifacts/emails/lead_agency.html",
+      "sha256": "dba745f0fb62cfa6d619f346d3a80fdd72658840d9566d90566f776d71351d48",
+      "bytes": 1970
+    },
+    {
+      "path": "artifacts/emails/lead_agency.md",
+      "sha256": "ddd483605499e7588127c3837ca84dc85c8b6be20edd5d271ef6dff28bb19bba",
+      "bytes": 970
+    },
+    {
+      "path": "artifacts/emails/lead_reseller_affiliate.html",
+      "sha256": "514968ea94f4f12a8d8badcbeb25510162e3403df60455a1182f045ed08c88be",
+      "bytes": 1924
+    },
+    {
+      "path": "artifacts/emails/lead_reseller_affiliate.md",
+      "sha256": "8894a5778e1cf09119e4c04fb85dd798cfae3c51a187a55aafa48a870098f66c",
+      "bytes": 933
+    },
+    {
+      "path": "artifacts/emails/lead_smb.html",
+      "sha256": "10616d1849b3a04f4803b1612993e099ae160c9cc2c8205d4f080c2b394d7a2c",
+      "bytes": 1924
+    },
+    {
+      "path": "artifacts/emails/lead_smb.md",
+      "sha256": "81dbc28bfe45915b85fdee4c80b0240dff4f61c719e826054339c05befdc45d4",
+      "bytes": 934
+    },
+    {
+      "path": "artifacts/login/README.md",
+      "sha256": "718ac362e2897f23a103e018c99d0cdb2afd4b1e877e77f483799bc6637234ee",
+      "bytes": 245
+    },
+    {
+      "path": "artifacts/login/vista-work-login-concept.mp4",
+      "sha256": "53c36d6b7ebffa5e0e106c8633e1ca1dd36231a5211f4b243be063bcc197cb61",
+      "bytes": 46618
+    },
+    {
+      "path": "artifacts/popup/copy.md",
+      "sha256": "d4b93c8ab3927cd90a502854930b324e638fb392b8c29e2613cb5fc855073f15",
+      "bytes": 286
+    },
+    {
+      "path": "artifacts/popup/preview.html",
+      "sha256": "b4128dfa4d80c3aeeb3545768c9c28bd4383712413e1ca5e2253f0453e4e8116",
+      "bytes": 2032
+    },
+    {
+      "path": "artifacts/popup/vista-work-popup.svg",
+      "sha256": "42238f2fec702f8cdb2baa3f8ffef438cb6d4a73da7f600c9ed26240f9ecfcf9",
+      "bytes": 1078
+    },
+    {
+      "path": "artifacts/social/linkedin.md",
+      "sha256": "a9e960bdf7d6bb978bae45559c0bb773eda173202ca23072c83d3c0f382e3b5e",
+      "bytes": 239
+    },
+    {
+      "path": "artifacts/social/storyboard.md",
+      "sha256": "5c5bb78bb04b33945de4c53d4e6379c098d7cad7f172bff52f64859d7b15ca4c",
+      "bytes": 247
+    },
+    {
+      "path": "artifacts/social/threads.md",
+      "sha256": "3c7cb0c1e6f09a98fd2eb4cee57bf7baea25b2266111ef38dd7c050499dcf45b",
+      "bytes": 173
+    },
+    {
+      "path": "artifacts/social/tiktok.md",
+      "sha256": "379de37b17af30980d9ea031c8e5c269e1e7d4484960354471c2c47e1080bc07",
+      "bytes": 168
+    },
+    {
+      "path": "artifacts/social/vista-work-social-concept.mp4",
+      "sha256": "788c4d774f41ba6eb9fb832e7ea7431a712075ae893ed4f14f98f60d3f797f68",
+      "bytes": 101910
+    },
+    {
+      "path": "artifacts/social/x.md",
+      "sha256": "2ff0060c046b2944de865f1ab118f77153ad24c3d3b41794eca5ed01fbbff81f",
+      "bytes": 159
+    },
+    {
+      "path": "campaign/calendar.csv",
+      "sha256": "8b3bbf74dabc1ea922194997afe799fc586af52733d818f81f5cafff9d7ab8da",
+      "bytes": 2261
+    },
+    {
+      "path": "campaign/calendar.json",
+      "sha256": "f860ed028ee2dc3a02609638801b4bc914e61855d49e154370d601bbc00b1b52",
+      "bytes": 6411
+    },
+    {
+      "path": "claims/claim-ledger.json",
+      "sha256": "b3f3ed49c0b1a10323f29f37a5798b29858de5a062fba3df103959bf76b30675",
+      "bytes": 4790
+    },
+    {
+      "path": "costs/costs.json",
+      "sha256": "eebc4ae418e125e92d2aaec40d6b91066128793c12968b4228964c2123b8cde6",
+      "bytes": 321
+    },
+    {
+      "path": "events/events.jsonl",
+      "sha256": "c17601957eda0b68c06d6c8c35784d97aea3dd957fdcad8af3e9efa7fc1ccabb",
+      "bytes": 163
+    },
+    {
+      "path": "jobs/jobs.json",
+      "sha256": "18b461b71a3b16c42412087cd17f936bcdf081ddd56f7e9226bd8ce8d185bc23",
+      "bytes": 271
+    },
+    {
+      "path": "recording-pending.md",
+      "sha256": "46093b4b4d580e7bee9cc4f2c49ca9c1ba194a5ef133ab16d31f590386c864ae",
+      "bytes": 415
+    },
+    {
+      "path": "requests/run-brief.md",
+      "sha256": "f2a26f3bd142b5fdfb6b80f7ba5e2b4e01f1f788a31d08292106598968eb719d",
+      "bytes": 311
+    },
+    {
+      "path": "review.html",
+      "sha256": "6c3cbd7ccefef65d91debc5bc71b87428ce9fb79386a1d38c9b690af4d5e3184",
+      "bytes": 3389
+    },
+    {
+      "path": "reviews/delegated-marketing-review-v1.json",
+      "sha256": "4dd1feb3bf915c478751b73d470f7df146edf62a929fab5084e7ad6e361a1337",
+      "bytes": 460
+    },
+    {
+      "path": "reviews/local-verification.md",
+      "sha256": "69218ba8a57787853e9e26231271cf02e7d1fdeb76d22a081c962b212c0e728a",
+      "bytes": 560
+    },
+    {
+      "path": "reviews/revision-v2.json",
+      "sha256": "1eea67afc3783d176493f5a591b86a2398e7257a6e2cbb0ce39cd9a67d89a439",
+      "bytes": 509
+    },
+    {
+      "path": "run.json",
+      "sha256": "1ea9e6d0ec2761f54bf9f3e30455fb5dd434c55a26ecb6d105bc2b7f16e8627e",
+      "bytes": 548
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "f46b6b3bcf0882d1193d295d5afef8a7e3c9878c3b0e9835cc8eb1d2eed89c57",
+      "bytes": 1454
+    },
+    {
+      "path": "sources/barry_email_transcript.txt",
+      "sha256": "a6f96224e22861056bfdfa702d22413e50f190704f2b95c683475fb36cf3feba",
+      "bytes": 744
+    },
+    {
+      "path": "sources/vista-work-insights.html",
+      "sha256": "302a170b3c13b1b87d5695f32b91a2c5122975c7be573c6686dc47a37c90adba",
+      "bytes": 297433
+    },
+    {
+      "path": "sources/vista_work_outline.md",
+      "sha256": "9a7be89968d84425e8e86949f42f563e42aae12dbe8fc0228bb76e912768a63e",
+      "bytes": 1151
+    },
+    {
+      "path": "voice/barry-seed.md",
+      "sha256": "0530249f48c3bc07145906b8892ca8061c82fe67ea2881eb5d712e3b369647fb",
+      "bytes": 271
+    },
+    {
+      "path": "voice/public-vista-work.md",
+      "sha256": "706cb15bef1fcc08d59f0e74f62aeeb1d255443a0c506928fe5b36f10c1851ef",
+      "bytes": 192
+    }
+  ]
+}

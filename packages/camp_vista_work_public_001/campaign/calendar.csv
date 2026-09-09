@@ -1,0 +1,15 @@
+week,proposed_day,order,timezone,channel,audience,asset_id,asset_path,action,review_state
+1,Mon (proposed),1,America/Sao_Paulo,blog,all social managers,blog-v1,artifacts/blog.html,read linked-task story,delegated_review_pending_barry
+1,Tue (proposed),2,America/Sao_Paulo,email,lead_smb,email-lead-smb-v1,artifacts/emails/lead_smb.html,open Vista Work,delegated_review_pending_barry
+1,Wed (proposed),3,America/Sao_Paulo,email,lead_agency,email-lead-agency-v1,artifacts/emails/lead_agency.html,open Vista Work,delegated_review_pending_barry
+1,Thu (proposed),4,America/Sao_Paulo,email,lead_reseller_affiliate,email-lead-reseller-affiliate-v1,artifacts/emails/lead_reseller_affiliate.html,open Vista Work,legal_context_pending
+2,Fri (proposed),5,America/Sao_Paulo,email,customer_smb,email-customer-smb-v1,artifacts/emails/customer_smb.html,review a task,delegated_review_pending_barry
+2,Mon (proposed),6,America/Sao_Paulo,email,customer_agency,email-customer-agency-v1,artifacts/emails/customer_agency.html,review a task,delegated_review_pending_barry
+2,Tue (proposed),7,America/Sao_Paulo,changelog,existing users,changelog-v2,artifacts/changelog.html,read what changed,delegated_review_pending_barry
+2,Wed (proposed),8,America/Sao_Paulo,linkedin,social directors,linkedin-v1,artifacts/social/linkedin.md,open Vista Work,delegated_review_pending_barry
+2,Thu (proposed),9,America/Sao_Paulo,x,social teams,x-v1,artifacts/social/x.md,open Vista Work,delegated_review_pending_barry
+2,Fri (proposed),10,America/Sao_Paulo,threads,social teams,threads-v1,artifacts/social/threads.md,open Vista Work,delegated_review_pending_barry
+2,Mon (proposed),11,America/Sao_Paulo,tiktok,social teams,tiktok-v1,artifacts/social/tiktok.md,see review workflow,delegated_review_pending_barry
+2,Tue (proposed),12,America/Sao_Paulo,instagram,social teams,social-video-v1,artifacts/social/vista-work-social-concept.mp4,see review workflow,concept_preview_pending_barry
+2,Wed (proposed),13,America/Sao_Paulo,login,returning users,login-animation-v1,artifacts/login/vista-work-login-concept.mp4,open login,concept_preview_pending_barry
+2,Thu (proposed),14,America/Sao_Paulo,in_app,active users,popup-v1,artifacts/popup/preview.html,open Vista Work,concept_preview_pending_barry
